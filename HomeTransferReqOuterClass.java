@@ -23,6 +23,12 @@ public final class HomeTransferReqOuterClass {
      * @return The guid.
      */
     int getGuid();
+
+    /**
+     * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
+     * @return The unk3100KEMFDDMEBIG.
+     */
+    boolean getUnk3100KEMFDDMEBIG();
   }
   /**
    * <pre>
@@ -81,6 +87,11 @@ public final class HomeTransferReqOuterClass {
               guid_ = input.readUInt32();
               break;
             }
+            case 96: {
+
+              unk3100KEMFDDMEBIG_ = input.readBool();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -124,6 +135,17 @@ public final class HomeTransferReqOuterClass {
       return guid_;
     }
 
+    public static final int UNK3100_KEMFDDMEBIG_FIELD_NUMBER = 12;
+    private boolean unk3100KEMFDDMEBIG_;
+    /**
+     * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
+     * @return The unk3100KEMFDDMEBIG.
+     */
+    @java.lang.Override
+    public boolean getUnk3100KEMFDDMEBIG() {
+      return unk3100KEMFDDMEBIG_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -141,6 +163,9 @@ public final class HomeTransferReqOuterClass {
       if (guid_ != 0) {
         output.writeUInt32(1, guid_);
       }
+      if (unk3100KEMFDDMEBIG_ != false) {
+        output.writeBool(12, unk3100KEMFDDMEBIG_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -153,6 +178,10 @@ public final class HomeTransferReqOuterClass {
       if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, guid_);
+      }
+      if (unk3100KEMFDDMEBIG_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, unk3100KEMFDDMEBIG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -171,6 +200,8 @@ public final class HomeTransferReqOuterClass {
 
       if (getGuid()
           != other.getGuid()) return false;
+      if (getUnk3100KEMFDDMEBIG()
+          != other.getUnk3100KEMFDDMEBIG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -184,6 +215,9 @@ public final class HomeTransferReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + getGuid();
+      hash = (37 * hash) + UNK3100_KEMFDDMEBIG_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3100KEMFDDMEBIG());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -326,6 +360,8 @@ public final class HomeTransferReqOuterClass {
         super.clear();
         guid_ = 0;
 
+        unk3100KEMFDDMEBIG_ = false;
+
         return this;
       }
 
@@ -353,6 +389,7 @@ public final class HomeTransferReqOuterClass {
       public emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq buildPartial() {
         emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq result = new emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq(this);
         result.guid_ = guid_;
+        result.unk3100KEMFDDMEBIG_ = unk3100KEMFDDMEBIG_;
         onBuilt();
         return result;
       }
@@ -403,6 +440,9 @@ public final class HomeTransferReqOuterClass {
         if (other == emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq.getDefaultInstance()) return this;
         if (other.getGuid() != 0) {
           setGuid(other.getGuid());
+        }
+        if (other.getUnk3100KEMFDDMEBIG() != false) {
+          setUnk3100KEMFDDMEBIG(other.getUnk3100KEMFDDMEBIG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -460,6 +500,37 @@ public final class HomeTransferReqOuterClass {
       public Builder clearGuid() {
         
         guid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3100KEMFDDMEBIG_ ;
+      /**
+       * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
+       * @return The unk3100KEMFDDMEBIG.
+       */
+      @java.lang.Override
+      public boolean getUnk3100KEMFDDMEBIG() {
+        return unk3100KEMFDDMEBIG_;
+      }
+      /**
+       * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
+       * @param value The unk3100KEMFDDMEBIG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3100KEMFDDMEBIG(boolean value) {
+        
+        unk3100KEMFDDMEBIG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3100KEMFDDMEBIG() {
+        
+        unk3100KEMFDDMEBIG_ = false;
         onChanged();
         return this;
       }
@@ -530,9 +601,10 @@ public final class HomeTransferReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025HomeTransferReq.proto\"\037\n\017HomeTransferR" +
-      "eq\022\014\n\004guid\030\001 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\025HomeTransferReq.proto\"<\n\017HomeTransferR" +
+      "eq\022\014\n\004guid\030\001 \001(\r\022\033\n\023Unk3100_KEMFDDMEBIG\030" +
+      "\014 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -543,7 +615,7 @@ public final class HomeTransferReqOuterClass {
     internal_static_HomeTransferReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeTransferReq_descriptor,
-        new java.lang.String[] { "Guid", });
+        new java.lang.String[] { "Guid", "Unk3100KEMFDDMEBIG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

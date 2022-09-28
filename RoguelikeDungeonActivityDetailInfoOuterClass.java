@@ -1722,8 +1722,8 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(RoguelikeDungeonActivityDetailInfo.pro" +
-      "to\032\024RogueStageInfo.proto\032\036RoguelikeShiki" +
-      "gamiRecord.proto\"\342\001\n\"RoguelikeDungeonAct" +
+      "to\032\036RoguelikeShikigamiRecord.proto\032\024Rogu" +
+      "eStageInfo.proto\"\342\001\n\"RoguelikeDungeonAct" +
       "ivityDetailInfo\022#\n\nstage_list\030\010 \003(\0132\017.Ro" +
       "gueStageInfo\0221\n\016shikigami_list\030\005 \003(\0132\031.R" +
       "oguelikeShikigamiRecord\022\032\n\022equipped_rune" +
@@ -1735,8 +1735,8 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.RogueStageInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.RogueStageInfoOuterClass.getDescriptor(),
         });
     internal_static_RoguelikeDungeonActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1744,8 +1744,8 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoguelikeDungeonActivityDetailInfo_descriptor,
         new java.lang.String[] { "StageList", "ShikigamiList", "EquippedRuneList", "ContentCloseTime", "IsContentClosed", "RuneList", });
-    emu.grasscutter.net.proto.RogueStageInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.RogueStageInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

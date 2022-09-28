@@ -255,6 +255,10 @@ public final class AbilityInvokeArgumentOuterClass {
      * <code>ABILITY_INVOKE_ARGUMENT_Unk3000_EFJIGCEGHJG = 119;</code>
      */
     ABILITY_INVOKE_ARGUMENT_Unk3000_EFJIGCEGHJG(119),
+    /**
+     * <code>ABILITY_INVOKE_ARGUMENT_Unk3100_NLIPBBOINEO = 120;</code>
+     */
+    ABILITY_INVOKE_ARGUMENT_Unk3100_NLIPBBOINEO(120),
     UNRECOGNIZED(-1),
     ;
 
@@ -494,6 +498,10 @@ public final class AbilityInvokeArgumentOuterClass {
      * <code>ABILITY_INVOKE_ARGUMENT_Unk3000_EFJIGCEGHJG = 119;</code>
      */
     public static final int ABILITY_INVOKE_ARGUMENT_Unk3000_EFJIGCEGHJG_VALUE = 119;
+    /**
+     * <code>ABILITY_INVOKE_ARGUMENT_Unk3100_NLIPBBOINEO = 120;</code>
+     */
+    public static final int ABILITY_INVOKE_ARGUMENT_Unk3100_NLIPBBOINEO_VALUE = 120;
 
 
     public final int getNumber() {
@@ -579,6 +587,7 @@ public final class AbilityInvokeArgumentOuterClass {
         case 117: return ABILITY_INVOKE_ARGUMENT_Unk3000_BNECPACGKHP;
         case 118: return ABILITY_INVOKE_ARGUMENT_Unk3000_LGIPOCBHKAL;
         case 119: return ABILITY_INVOKE_ARGUMENT_Unk3000_EFJIGCEGHJG;
+        case 120: return ABILITY_INVOKE_ARGUMENT_Unk3100_NLIPBBOINEO;
         default: return null;
       }
     }
@@ -644,7 +653,7 @@ public final class AbilityInvokeArgumentOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033AbilityInvokeArgument.proto*\240\030\n\025Abilit" +
+      "\n\033AbilityInvokeArgument.proto*\321\030\n\025Abilit" +
       "yInvokeArgument\022 \n\034ABILITY_INVOKE_ARGUME" +
       "NT_NONE\020\000\0220\n,ABILITY_INVOKE_ARGUMENT_MET" +
       "A_MODIFIER_CHANGE\020\001\022@\n<ABILITY_INVOKE_AR" +
@@ -722,8 +731,9 @@ public final class AbilityInvokeArgumentOuterClass {
       "_INVOKE_ARGUMENT_Unk3000_BNECPACGKHP\020u\022/" +
       "\n+ABILITY_INVOKE_ARGUMENT_Unk3000_LGIPOC" +
       "BHKAL\020v\022/\n+ABILITY_INVOKE_ARGUMENT_Unk30" +
-      "00_EFJIGCEGHJG\020wB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "00_EFJIGCEGHJG\020w\022/\n+ABILITY_INVOKE_ARGUM" +
+      "ENT_Unk3100_NLIPBBOINEO\020xB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -1100,6 +1100,51 @@ public final class ActivityInfoOuterClass {
      */
     emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfoOrBuilder getTreasureSeelieInfoOrBuilder();
 
+    /**
+     * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+     * @return Whether the rockBoardExploreInfo field is set.
+     */
+    boolean hasRockBoardExploreInfo();
+    /**
+     * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+     * @return The rockBoardExploreInfo.
+     */
+    emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo getRockBoardExploreInfo();
+    /**
+     * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+     */
+    emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfoOrBuilder getRockBoardExploreInfoOrBuilder();
+
+    /**
+     * <code>.VintageDetailInfo vintage_info = 445;</code>
+     * @return Whether the vintageInfo field is set.
+     */
+    boolean hasVintageInfo();
+    /**
+     * <code>.VintageDetailInfo vintage_info = 445;</code>
+     * @return The vintageInfo.
+     */
+    emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo getVintageInfo();
+    /**
+     * <code>.VintageDetailInfo vintage_info = 445;</code>
+     */
+    emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfoOrBuilder getVintageInfoOrBuilder();
+
+    /**
+     * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+     * @return Whether the windFieldInfo field is set.
+     */
+    boolean hasWindFieldInfo();
+    /**
+     * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+     * @return The windFieldInfo.
+     */
+    emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo getWindFieldInfo();
+    /**
+     * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+     */
+    emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfoOrBuilder getWindFieldInfoOrBuilder();
+
     public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.DetailCase getDetailCase();
   }
   /**
@@ -1410,6 +1455,20 @@ public final class ActivityInfoOuterClass {
               input.popLimit(limit);
               break;
             }
+            case 2818: {
+              emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.Builder subBuilder = null;
+              if (detailCase_ == 352) {
+                subBuilder = ((emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 352;
+              break;
+            }
             case 3130: {
               emu.grasscutter.net.proto.EffigyActivityDetailInfoOuterClass.EffigyActivityDetailInfo.Builder subBuilder = null;
               if (detailCase_ == 391) {
@@ -1450,6 +1509,20 @@ public final class ActivityInfoOuterClass {
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 427;
+              break;
+            }
+            case 3562: {
+              emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.Builder subBuilder = null;
+              if (detailCase_ == 445) {
+                subBuilder = ((emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 445;
               break;
             }
             case 3682: {
@@ -1748,6 +1821,20 @@ public final class ActivityInfoOuterClass {
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 1043;
+              break;
+            }
+            case 8626: {
+              emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.Builder subBuilder = null;
+              if (detailCase_ == 1078) {
+                subBuilder = ((emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 1078;
               break;
             }
             case 8666: {
@@ -2226,6 +2313,9 @@ public final class ActivityInfoOuterClass {
       INSTABLE_SPRAY_INFO(1043),
       MUQADAS_POTION_INFO(1157),
       TREASURE_SEELIE_INFO(966),
+      ROCK_BOARD_EXPLORE_INFO(1078),
+      VINTAGE_INFO(445),
+      WIND_FIELD_INFO(352),
       DETAIL_NOT_SET(0);
       private final int value;
       private DetailCase(int value) {
@@ -2298,6 +2388,9 @@ public final class ActivityInfoOuterClass {
           case 1043: return INSTABLE_SPRAY_INFO;
           case 1157: return MUQADAS_POTION_INFO;
           case 966: return TREASURE_SEELIE_INFO;
+          case 1078: return ROCK_BOARD_EXPLORE_INFO;
+          case 445: return VINTAGE_INFO;
+          case 352: return WIND_FIELD_INFO;
           case 0: return DETAIL_NOT_SET;
           default: return null;
         }
@@ -4509,6 +4602,99 @@ public final class ActivityInfoOuterClass {
       return emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance();
     }
 
+    public static final int ROCK_BOARD_EXPLORE_INFO_FIELD_NUMBER = 1078;
+    /**
+     * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+     * @return Whether the rockBoardExploreInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasRockBoardExploreInfo() {
+      return detailCase_ == 1078;
+    }
+    /**
+     * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+     * @return The rockBoardExploreInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo getRockBoardExploreInfo() {
+      if (detailCase_ == 1078) {
+         return (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfoOrBuilder getRockBoardExploreInfoOrBuilder() {
+      if (detailCase_ == 1078) {
+         return (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance();
+    }
+
+    public static final int VINTAGE_INFO_FIELD_NUMBER = 445;
+    /**
+     * <code>.VintageDetailInfo vintage_info = 445;</code>
+     * @return Whether the vintageInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasVintageInfo() {
+      return detailCase_ == 445;
+    }
+    /**
+     * <code>.VintageDetailInfo vintage_info = 445;</code>
+     * @return The vintageInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo getVintageInfo() {
+      if (detailCase_ == 445) {
+         return (emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.VintageDetailInfo vintage_info = 445;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfoOrBuilder getVintageInfoOrBuilder() {
+      if (detailCase_ == 445) {
+         return (emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.getDefaultInstance();
+    }
+
+    public static final int WIND_FIELD_INFO_FIELD_NUMBER = 352;
+    /**
+     * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+     * @return Whether the windFieldInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasWindFieldInfo() {
+      return detailCase_ == 352;
+    }
+    /**
+     * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+     * @return The windFieldInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo getWindFieldInfo() {
+      if (detailCase_ == 352) {
+         return (emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfoOrBuilder getWindFieldInfoOrBuilder() {
+      if (detailCase_ == 352) {
+         return (emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -4605,6 +4791,9 @@ public final class ActivityInfoOuterClass {
       for (int i = 0; i < takenRewardList_.size(); i++) {
         output.writeUInt32NoTag(takenRewardList_.getInt(i));
       }
+      if (detailCase_ == 352) {
+        output.writeMessage(352, (emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_);
+      }
       if (detailCase_ == 391) {
         output.writeMessage(391, (emu.grasscutter.net.proto.EffigyActivityDetailInfoOuterClass.EffigyActivityDetailInfo) detail_);
       }
@@ -4613,6 +4802,9 @@ public final class ActivityInfoOuterClass {
       }
       if (detailCase_ == 427) {
         output.writeMessage(427, (emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo) detail_);
+      }
+      if (detailCase_ == 445) {
+        output.writeMessage(445, (emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_);
       }
       if (detailCase_ == 460) {
         output.writeMessage(460, (emu.grasscutter.net.proto.MusicGameActivityDetailInfoOuterClass.MusicGameActivityDetailInfo) detail_);
@@ -4685,6 +4877,9 @@ public final class ActivityInfoOuterClass {
       }
       if (detailCase_ == 1043) {
         output.writeMessage(1043, (emu.grasscutter.net.proto.InstableSprayDetailInfoOuterClass.InstableSprayDetailInfo) detail_);
+      }
+      if (detailCase_ == 1078) {
+        output.writeMessage(1078, (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_);
       }
       if (detailCase_ == 1083) {
         output.writeMessage(1083, (emu.grasscutter.net.proto.WinterCampActivityDetailInfoOuterClass.WinterCampActivityDetailInfo) detail_);
@@ -4904,6 +5099,10 @@ public final class ActivityInfoOuterClass {
         }
         takenRewardListMemoizedSerializedSize = dataSize;
       }
+      if (detailCase_ == 352) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(352, (emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_);
+      }
       if (detailCase_ == 391) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(391, (emu.grasscutter.net.proto.EffigyActivityDetailInfoOuterClass.EffigyActivityDetailInfo) detail_);
@@ -4915,6 +5114,10 @@ public final class ActivityInfoOuterClass {
       if (detailCase_ == 427) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(427, (emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo) detail_);
+      }
+      if (detailCase_ == 445) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(445, (emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_);
       }
       if (detailCase_ == 460) {
         size += com.google.protobuf.CodedOutputStream
@@ -5013,6 +5216,10 @@ public final class ActivityInfoOuterClass {
       if (detailCase_ == 1043) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1043, (emu.grasscutter.net.proto.InstableSprayDetailInfoOuterClass.InstableSprayDetailInfo) detail_);
+      }
+      if (detailCase_ == 1078) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1078, (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_);
       }
       if (detailCase_ == 1083) {
         size += com.google.protobuf.CodedOutputStream
@@ -5413,6 +5620,18 @@ public final class ActivityInfoOuterClass {
           if (!getTreasureSeelieInfo()
               .equals(other.getTreasureSeelieInfo())) return false;
           break;
+        case 1078:
+          if (!getRockBoardExploreInfo()
+              .equals(other.getRockBoardExploreInfo())) return false;
+          break;
+        case 445:
+          if (!getVintageInfo()
+              .equals(other.getVintageInfo())) return false;
+          break;
+        case 352:
+          if (!getWindFieldInfo()
+              .equals(other.getWindFieldInfo())) return false;
+          break;
         case 0:
         default:
       }
@@ -5711,6 +5930,18 @@ public final class ActivityInfoOuterClass {
         case 966:
           hash = (37 * hash) + TREASURE_SEELIE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getTreasureSeelieInfo().hashCode();
+          break;
+        case 1078:
+          hash = (37 * hash) + ROCK_BOARD_EXPLORE_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getRockBoardExploreInfo().hashCode();
+          break;
+        case 445:
+          hash = (37 * hash) + VINTAGE_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getVintageInfo().hashCode();
+          break;
+        case 352:
+          hash = (37 * hash) + WIND_FIELD_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getWindFieldInfo().hashCode();
           break;
         case 0:
         default:
@@ -6392,6 +6623,27 @@ public final class ActivityInfoOuterClass {
             result.detail_ = treasureSeelieInfoBuilder_.build();
           }
         }
+        if (detailCase_ == 1078) {
+          if (rockBoardExploreInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = rockBoardExploreInfoBuilder_.build();
+          }
+        }
+        if (detailCase_ == 445) {
+          if (vintageInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = vintageInfoBuilder_.build();
+          }
+        }
+        if (detailCase_ == 352) {
+          if (windFieldInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = windFieldInfoBuilder_.build();
+          }
+        }
         result.detailCase_ = detailCase_;
         onBuilt();
         return result;
@@ -6791,6 +7043,18 @@ public final class ActivityInfoOuterClass {
           }
           case TREASURE_SEELIE_INFO: {
             mergeTreasureSeelieInfo(other.getTreasureSeelieInfo());
+            break;
+          }
+          case ROCK_BOARD_EXPLORE_INFO: {
+            mergeRockBoardExploreInfo(other.getRockBoardExploreInfo());
+            break;
+          }
+          case VINTAGE_INFO: {
+            mergeVintageInfo(other.getVintageInfo());
+            break;
+          }
+          case WIND_FIELD_INFO: {
+            mergeWindFieldInfo(other.getWindFieldInfo());
             break;
           }
           case DETAIL_NOT_SET: {
@@ -16034,6 +16298,429 @@ public final class ActivityInfoOuterClass {
         onChanged();;
         return treasureSeelieInfoBuilder_;
       }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo, emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.Builder, emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfoOrBuilder> rockBoardExploreInfoBuilder_;
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       * @return Whether the rockBoardExploreInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasRockBoardExploreInfo() {
+        return detailCase_ == 1078;
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       * @return The rockBoardExploreInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo getRockBoardExploreInfo() {
+        if (rockBoardExploreInfoBuilder_ == null) {
+          if (detailCase_ == 1078) {
+            return (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 1078) {
+            return rockBoardExploreInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       */
+      public Builder setRockBoardExploreInfo(emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo value) {
+        if (rockBoardExploreInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          rockBoardExploreInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1078;
+        return this;
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       */
+      public Builder setRockBoardExploreInfo(
+          emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.Builder builderForValue) {
+        if (rockBoardExploreInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          rockBoardExploreInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 1078;
+        return this;
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       */
+      public Builder mergeRockBoardExploreInfo(emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo value) {
+        if (rockBoardExploreInfoBuilder_ == null) {
+          if (detailCase_ == 1078 &&
+              detail_ != emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.newBuilder((emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 1078) {
+            rockBoardExploreInfoBuilder_.mergeFrom(value);
+          }
+          rockBoardExploreInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1078;
+        return this;
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       */
+      public Builder clearRockBoardExploreInfo() {
+        if (rockBoardExploreInfoBuilder_ == null) {
+          if (detailCase_ == 1078) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 1078) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          rockBoardExploreInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       */
+      public emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.Builder getRockBoardExploreInfoBuilder() {
+        return getRockBoardExploreInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfoOrBuilder getRockBoardExploreInfoOrBuilder() {
+        if ((detailCase_ == 1078) && (rockBoardExploreInfoBuilder_ != null)) {
+          return rockBoardExploreInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 1078) {
+            return (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo, emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.Builder, emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfoOrBuilder> 
+          getRockBoardExploreInfoFieldBuilder() {
+        if (rockBoardExploreInfoBuilder_ == null) {
+          if (!(detailCase_ == 1078)) {
+            detail_ = emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance();
+          }
+          rockBoardExploreInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo, emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.Builder, emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 1078;
+        onChanged();;
+        return rockBoardExploreInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo, emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.Builder, emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfoOrBuilder> vintageInfoBuilder_;
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       * @return Whether the vintageInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasVintageInfo() {
+        return detailCase_ == 445;
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       * @return The vintageInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo getVintageInfo() {
+        if (vintageInfoBuilder_ == null) {
+          if (detailCase_ == 445) {
+            return (emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 445) {
+            return vintageInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       */
+      public Builder setVintageInfo(emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo value) {
+        if (vintageInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          vintageInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 445;
+        return this;
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       */
+      public Builder setVintageInfo(
+          emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.Builder builderForValue) {
+        if (vintageInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          vintageInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 445;
+        return this;
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       */
+      public Builder mergeVintageInfo(emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo value) {
+        if (vintageInfoBuilder_ == null) {
+          if (detailCase_ == 445 &&
+              detail_ != emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.newBuilder((emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 445) {
+            vintageInfoBuilder_.mergeFrom(value);
+          }
+          vintageInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 445;
+        return this;
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       */
+      public Builder clearVintageInfo() {
+        if (vintageInfoBuilder_ == null) {
+          if (detailCase_ == 445) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 445) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          vintageInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       */
+      public emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.Builder getVintageInfoBuilder() {
+        return getVintageInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfoOrBuilder getVintageInfoOrBuilder() {
+        if ((detailCase_ == 445) && (vintageInfoBuilder_ != null)) {
+          return vintageInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 445) {
+            return (emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.VintageDetailInfo vintage_info = 445;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo, emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.Builder, emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfoOrBuilder> 
+          getVintageInfoFieldBuilder() {
+        if (vintageInfoBuilder_ == null) {
+          if (!(detailCase_ == 445)) {
+            detail_ = emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.getDefaultInstance();
+          }
+          vintageInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo, emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo.Builder, emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.VintageDetailInfoOuterClass.VintageDetailInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 445;
+        onChanged();;
+        return vintageInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo, emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.Builder, emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfoOrBuilder> windFieldInfoBuilder_;
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       * @return Whether the windFieldInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasWindFieldInfo() {
+        return detailCase_ == 352;
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       * @return The windFieldInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo getWindFieldInfo() {
+        if (windFieldInfoBuilder_ == null) {
+          if (detailCase_ == 352) {
+            return (emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 352) {
+            return windFieldInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       */
+      public Builder setWindFieldInfo(emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo value) {
+        if (windFieldInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          windFieldInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 352;
+        return this;
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       */
+      public Builder setWindFieldInfo(
+          emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.Builder builderForValue) {
+        if (windFieldInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          windFieldInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 352;
+        return this;
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       */
+      public Builder mergeWindFieldInfo(emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo value) {
+        if (windFieldInfoBuilder_ == null) {
+          if (detailCase_ == 352 &&
+              detail_ != emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.newBuilder((emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 352) {
+            windFieldInfoBuilder_.mergeFrom(value);
+          }
+          windFieldInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 352;
+        return this;
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       */
+      public Builder clearWindFieldInfo() {
+        if (windFieldInfoBuilder_ == null) {
+          if (detailCase_ == 352) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 352) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          windFieldInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       */
+      public emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.Builder getWindFieldInfoBuilder() {
+        return getWindFieldInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfoOrBuilder getWindFieldInfoOrBuilder() {
+        if ((detailCase_ == 352) && (windFieldInfoBuilder_ != null)) {
+          return windFieldInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 352) {
+            return (emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WindFieldDetailInfo wind_field_info = 352;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo, emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.Builder, emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfoOrBuilder> 
+          getWindFieldInfoFieldBuilder() {
+        if (windFieldInfoBuilder_ == null) {
+          if (!(detailCase_ == 352)) {
+            detail_ = emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance();
+          }
+          windFieldInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo, emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.Builder, emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 352;
+        onChanged();;
+        return windFieldInfoBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -16145,122 +16832,128 @@ public final class ActivityInfoOuterClass {
       "o.proto\032!MusicGameActivityDetailInfo.pro" +
       "to\032\035PhotoActivityDetailInfo.proto\032#Plant" +
       "FlowerActivityDetailInfo.proto\032\036PotionAc" +
-      "tivityDetailInfo.proto\032\"RogueDiaryActivi" +
-      "tyDetailInfo.proto\032(RoguelikeDungeonActi" +
-      "vityDetailInfo.proto\032 SalesmanActivityDe" +
-      "tailInfo.proto\032\037SeaLampActivityDetailInf" +
-      "o.proto\032\031SeaLampActivityInfo.proto\032\035Spic" +
-      "eActivityDetailInfo.proto\032\032SummerTimeDet" +
-      "ailInfo.proto\032\034SummerTimeV2DetailInfo.pr" +
-      "oto\032\034SumoActivityDetailInfo.proto\032$Tanuk" +
-      "iTravelActivityDetailInfo.proto\032#Treasur" +
-      "eMapActivityDetailInfo.proto\032\036TreasureSe" +
-      "elieDetailInfo.proto\032#TrialAvatarActivit" +
-      "yDetailInfo.proto\032\033UgcActivityDetailInfo" +
-      ".proto\032\031Unk2800_PHPHMILPOLC.proto\032#Water" +
-      "SpiritActivityDetailInfo.proto\032\"WinterCa" +
-      "mpActivityDetailInfo.proto\"\222\037\n\014ActivityI" +
-      "nfo\022\031\n\021is_play_open_anim\030\r \001(\010\022\023\n\013schedu" +
-      "le_id\030\017 \001(\r\022\022\n\tcur_score\030\362\016 \001(\r\022\023\n\013is_st" +
-      "arting\030\t \001(\010\022\032\n\021taken_reward_list\030\311\002 \003(\r" +
-      "\022\033\n\023Unk2700_NONJFHAIFLA\030f \001(\010\022\"\n\031selecte" +
-      "d_avatar_reward_id\030\212\n \001(\r\022\035\n\024first_day_s" +
-      "tart_time\030\320\004 \001(\r\022\024\n\013score_limit\030\246\017 \001(\r\022\023" +
-      "\n\013is_finished\030\006 \001(\010\022\022\n\tis_hidden\030\227\007 \001(\010\022" +
-      "\022\n\nbegin_time\030\010 \001(\r\022\020\n\010end_time\030\005 \001(\r\022>\n" +
-      "\021activity_coin_map\030\252\005 \003(\0132\".ActivityInfo" +
-      ".ActivityCoinMapEntry\022\025\n\ractivity_type\030\004" +
-      " \001(\r\022\034\n\023Unk2700_EDKLLHBEEGE\030\251\013 \001(\010\0222\n\023Un" +
-      "k2800_KOMIPKKKOBE\030\340\006 \003(\0132\024.Unk2800_PHPHM" +
-      "ILPOLC\022\026\n\016meet_cond_list\030\n \003(\r\022C\n\023Unk270" +
-      "0_IFPBCNLCKLG\030\367\n \003(\0132%.ActivityInfo.Unk2" +
-      "700IFPBCNLCKLGEntry\022\030\n\020expire_cond_list\030" +
-      "\003 \003(\r\022/\n\021watcher_info_list\030\002 \003(\0132\024.Activ" +
-      "ityWatcherInfo\022\023\n\013activity_id\030\014 \001(\r\0223\n\rs" +
-      "am_lamp_info\030\007 \001(\0132\032.SeaLampActivityDeta" +
-      "ilInfoH\000\0224\n\rcrucible_info\030\016 \001(\0132\033.Crucib" +
-      "leActivityDetailInfoH\000\0224\n\rsalesman_info\030" +
-      "\013 \001(\0132\033.SalesmanActivityDetailInfoH\000\022;\n\021" +
-      "trial_avatar_info\030\001 \001(\0132\036.TrialAvatarAct" +
-      "ivityDetailInfoH\000\0225\n\rdelivery_info\030\304\010 \001(" +
-      "\0132\033.DeliveryActivityDetailInfoH\000\022/\n\naste" +
-      "r_info\030\255\004 \001(\0132\030.AsterActivityDetailInfoH" +
-      "\000\0221\n\013flight_info\030\325\n \001(\0132\031.FlightActivity" +
-      "DetailInfoH\000\022<\n\021dragon_spine_info\030\277\r \001(\013" +
-      "2\036.DragonSpineActivityDetailInfoH\000\0221\n\013ef" +
-      "figy_info\030\207\003 \001(\0132\031.EffigyActivityDetailI" +
-      "nfoH\000\022<\n\021treasure_map_info\030\332\010 \001(\0132\036.Trea" +
-      "sureMapActivityDetailInfoH\000\0225\n\rblessing_" +
-      "info\030\315\016 \001(\0132\033.BlessingActivityDetailInfo" +
-      "H\000\022.\n\rsea_lamp_info\030\356\003 \001(\0132\024.SeaLampActi" +
-      "vityInfoH\000\0229\n\017expedition_info\030\312\001 \001(\0132\035.E" +
-      "xpeditionActivityDetailInfoH\000\022B\n\024arena_c" +
-      "hallenge_info\030\333\006 \001(\0132!.ArenaChallengeAct" +
-      "ivityDetailInfoH\000\0228\n\017fleur_fair_info\030\331\006 " +
-      "\001(\0132\034.FleurFairActivityDetailInfoH\000\022<\n\021w" +
-      "ater_spirit_info\030\213\r \001(\0132\036.WaterSpiritAct" +
-      "ivityDetailInfoH\000\022@\n\023channeler_slab_info" +
-      "\030\367\007 \001(\0132 .ChannelerSlabActivityDetailInf" +
-      "oH\000\022A\n\030mist_trial_activity_info\030\234\001 \001(\0132\034" +
-      ".MistTrialActivityDetailInfoH\000\022=\n\022hide_a" +
-      "nd_seek_info\030\253\003 \001(\0132\036.HideAndSeekActivit" +
-      "yDetailInfoH\000\0228\n\023find_hilichurl_info\030\203\013 " +
-      "\001(\0132\030.FindHilichurlDetailInfoH\000\0222\n\020summe" +
-      "r_time_info\030\334\n \001(\0132\025.SummerTimeDetailInf" +
-      "oH\000\0228\n\023buoyant_combat_info\030\262\016 \001(\0132\030.Buoy" +
-      "antCombatDetailInfoH\000\0220\n\017echo_shell_info" +
-      "\030\331\010 \001(\0132\024.EchoShellDetailInfoH\000\022D\n\025bounc" +
-      "e_conjuring_info\030\377\005 \001(\0132\".BounceConjurin" +
-      "gActivityDetailInfoH\000\0228\n\017blitz_rush_info" +
-      "\030\232\006 \001(\0132\034.BlitzRushActivityDetailInfoH\000\022" +
-      "/\n\nchess_info\030\237\007 \001(\0132\030.ChessActivityDeta" +
-      "ilInfoH\000\022-\n\tsumo_info\030\355\t \001(\0132\027.SumoActiv" +
-      "ityDetailInfoH\000\022>\n\022moonfin_trial_info\030\264\014" +
-      " \001(\0132\037.MoonfinTrialActivityDetailInfoH\000\022" +
-      ".\n\016luna_rite_info\030\256\006 \001(\0132\023.LunaRiteDetai" +
-      "lInfoH\000\022;\n\021plant_flower_info\0306 \001(\0132\036.Pla" +
-      "ntFlowerActivityDetailInfoH\000\0228\n\017music_ga" +
-      "me_info\030\314\003 \001(\0132\034.MusicGameActivityDetail" +
-      "InfoH\000\022F\n\026roguelike_dungeon_info\030\333\001 \001(\0132" +
-      "#.RoguelikeDungeonActivityDetailInfoH\000\022+" +
-      "\n\010dig_info\030\223\003 \001(\0132\026.DigActivityDetailInf" +
-      "oH\000\022/\n\nhachi_info\030\353\003 \001(\0132\030.HachiActivity" +
-      "DetailInfoH\000\022:\n\020winter_camp_info\030\273\010 \001(\0132" +
-      "\035.WinterCampActivityDetailInfoH\000\0221\n\013poti" +
-      "on_info\030\371\t \001(\0132\031.PotionActivityDetailInf" +
-      "oH\000\022G\n\033tanuki_travel_activity_info\030\204\016 \001(" +
-      "\0132\037.TanukiTravelActivityDetailInfoH\000\022E\n\032" +
-      "lantern_rite_activity_info\030\324\016 \001(\0132\036.Lant" +
-      "ernRiteActivityDetailInfoH\000\022B\n\024michiae_m" +
-      "atsuri_info\030\302\001 \001(\0132!.MichiaeMatsuriActiv" +
-      "ityDetailInfoH\000\0227\n\016bartender_info\030\275\r \001(\013" +
-      "2\034.BartenderActivityDetailInfoH\000\022+\n\010ugc_" +
-      "info\030\277\005 \001(\0132\026.UgcActivityDetailInfoH\000\022<\n" +
-      "\021crystal_link_info\030\312\t \001(\0132\036.CrystalLinkA" +
-      "ctivityDetailInfoH\000\0223\n\014irodori_info\030\356\005 \001" +
-      "(\0132\032.IrodoriActivityDetailInfoH\000\022/\n\nphot" +
-      "o_info\030\310\002 \001(\0132\030.PhotoActivityDetailInfoH" +
-      "\000\022/\n\nspice_info\030\343\016 \001(\0132\030.SpiceActivityDe" +
-      "tailInfoH\000\022/\n\ngacha_info\030\271\006 \001(\0132\030.GachaA" +
-      "ctivityDetailInfoH\000\022U\n\036luminance_stone_c" +
-      "hallenge_info\030\234\n \001(\0132*.LuminanceStoneCha" +
-      "llengeActivityDetailInfoH\000\022:\n\020rogue_diar" +
-      "y_info\030\254\006 \001(\0132\035.RogueDiaryActivityDetail" +
-      "InfoH\000\0227\n\023summer_time_v2_info\030\356\004 \001(\0132\027.S" +
-      "ummerTimeV2DetailInfoH\000\022<\n\021island_party_" +
-      "info\030\335\016 \001(\0132\036.IslandPartyActivityDetailI" +
-      "nfoH\000\022-\n\tgear_info\030\322\005 \001(\0132\027.GearActivity" +
-      "DetailInfoH\000\022<\n\025graven_innocence_info\030\367\016" +
-      " \001(\0132\032.GravenInnocenceDetailInfoH\000\0228\n\023in" +
-      "stable_spray_info\030\223\010 \001(\0132\030.InstableSpray" +
-      "DetailInfoH\000\0228\n\023muqadas_potion_info\030\205\t \001" +
-      "(\0132\030.MuqadasPotionDetailInfoH\000\022:\n\024treasu" +
-      "re_seelie_info\030\306\007 \001(\0132\031.TreasureSeelieDe" +
-      "tailInfoH\000\0326\n\024ActivityCoinMapEntry\022\013\n\003ke" +
-      "y\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0329\n\027Unk2700IFP" +
-      "BCNLCKLGEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(" +
-      "\r:\0028\001B\010\n\006detailB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "tivityDetailInfo.proto\032 RockBoardExplore" +
+      "DetailInfo.proto\032\"RogueDiaryActivityDeta" +
+      "ilInfo.proto\032(RoguelikeDungeonActivityDe" +
+      "tailInfo.proto\032 SalesmanActivityDetailIn" +
+      "fo.proto\032\037SeaLampActivityDetailInfo.prot" +
+      "o\032\031SeaLampActivityInfo.proto\032\035SpiceActiv" +
+      "ityDetailInfo.proto\032\032SummerTimeDetailInf" +
+      "o.proto\032\034SummerTimeV2DetailInfo.proto\032\034S" +
+      "umoActivityDetailInfo.proto\032$TanukiTrave" +
+      "lActivityDetailInfo.proto\032#TreasureMapAc" +
+      "tivityDetailInfo.proto\032\036TreasureSeelieDe" +
+      "tailInfo.proto\032#TrialAvatarActivityDetai" +
+      "lInfo.proto\032\033UgcActivityDetailInfo.proto" +
+      "\032\031Unk2800_PHPHMILPOLC.proto\032\027VintageDeta" +
+      "ilInfo.proto\032#WaterSpiritActivityDetailI" +
+      "nfo.proto\032\031WindFieldDetailInfo.proto\032\"Wi" +
+      "nterCampActivityDetailInfo.proto\"\262 \n\014Act" +
+      "ivityInfo\022\031\n\021is_play_open_anim\030\r \001(\010\022\023\n\013" +
+      "schedule_id\030\017 \001(\r\022\022\n\tcur_score\030\362\016 \001(\r\022\023\n" +
+      "\013is_starting\030\t \001(\010\022\032\n\021taken_reward_list\030" +
+      "\311\002 \003(\r\022\033\n\023Unk2700_NONJFHAIFLA\030f \001(\010\022\"\n\031s" +
+      "elected_avatar_reward_id\030\212\n \001(\r\022\035\n\024first" +
+      "_day_start_time\030\320\004 \001(\r\022\024\n\013score_limit\030\246\017" +
+      " \001(\r\022\023\n\013is_finished\030\006 \001(\010\022\022\n\tis_hidden\030\227" +
+      "\007 \001(\010\022\022\n\nbegin_time\030\010 \001(\r\022\020\n\010end_time\030\005 " +
+      "\001(\r\022>\n\021activity_coin_map\030\252\005 \003(\0132\".Activi" +
+      "tyInfo.ActivityCoinMapEntry\022\025\n\ractivity_" +
+      "type\030\004 \001(\r\022\034\n\023Unk2700_EDKLLHBEEGE\030\251\013 \001(\010" +
+      "\0222\n\023Unk2800_KOMIPKKKOBE\030\340\006 \003(\0132\024.Unk2800" +
+      "_PHPHMILPOLC\022\026\n\016meet_cond_list\030\n \003(\r\022C\n\023" +
+      "Unk2700_IFPBCNLCKLG\030\367\n \003(\0132%.ActivityInf" +
+      "o.Unk2700IFPBCNLCKLGEntry\022\030\n\020expire_cond" +
+      "_list\030\003 \003(\r\022/\n\021watcher_info_list\030\002 \003(\0132\024" +
+      ".ActivityWatcherInfo\022\023\n\013activity_id\030\014 \001(" +
+      "\r\0223\n\rsam_lamp_info\030\007 \001(\0132\032.SeaLampActivi" +
+      "tyDetailInfoH\000\0224\n\rcrucible_info\030\016 \001(\0132\033." +
+      "CrucibleActivityDetailInfoH\000\0224\n\rsalesman" +
+      "_info\030\013 \001(\0132\033.SalesmanActivityDetailInfo" +
+      "H\000\022;\n\021trial_avatar_info\030\001 \001(\0132\036.TrialAva" +
+      "tarActivityDetailInfoH\000\0225\n\rdelivery_info" +
+      "\030\304\010 \001(\0132\033.DeliveryActivityDetailInfoH\000\022/" +
+      "\n\naster_info\030\255\004 \001(\0132\030.AsterActivityDetai" +
+      "lInfoH\000\0221\n\013flight_info\030\325\n \001(\0132\031.FlightAc" +
+      "tivityDetailInfoH\000\022<\n\021dragon_spine_info\030" +
+      "\277\r \001(\0132\036.DragonSpineActivityDetailInfoH\000" +
+      "\0221\n\013effigy_info\030\207\003 \001(\0132\031.EffigyActivityD" +
+      "etailInfoH\000\022<\n\021treasure_map_info\030\332\010 \001(\0132" +
+      "\036.TreasureMapActivityDetailInfoH\000\0225\n\rble" +
+      "ssing_info\030\315\016 \001(\0132\033.BlessingActivityDeta" +
+      "ilInfoH\000\022.\n\rsea_lamp_info\030\356\003 \001(\0132\024.SeaLa" +
+      "mpActivityInfoH\000\0229\n\017expedition_info\030\312\001 \001" +
+      "(\0132\035.ExpeditionActivityDetailInfoH\000\022B\n\024a" +
+      "rena_challenge_info\030\333\006 \001(\0132!.ArenaChalle" +
+      "ngeActivityDetailInfoH\000\0228\n\017fleur_fair_in" +
+      "fo\030\331\006 \001(\0132\034.FleurFairActivityDetailInfoH" +
+      "\000\022<\n\021water_spirit_info\030\213\r \001(\0132\036.WaterSpi" +
+      "ritActivityDetailInfoH\000\022@\n\023channeler_sla" +
+      "b_info\030\367\007 \001(\0132 .ChannelerSlabActivityDet" +
+      "ailInfoH\000\022A\n\030mist_trial_activity_info\030\234\001" +
+      " \001(\0132\034.MistTrialActivityDetailInfoH\000\022=\n\022" +
+      "hide_and_seek_info\030\253\003 \001(\0132\036.HideAndSeekA" +
+      "ctivityDetailInfoH\000\0228\n\023find_hilichurl_in" +
+      "fo\030\203\013 \001(\0132\030.FindHilichurlDetailInfoH\000\0222\n" +
+      "\020summer_time_info\030\334\n \001(\0132\025.SummerTimeDet" +
+      "ailInfoH\000\0228\n\023buoyant_combat_info\030\262\016 \001(\0132" +
+      "\030.BuoyantCombatDetailInfoH\000\0220\n\017echo_shel" +
+      "l_info\030\331\010 \001(\0132\024.EchoShellDetailInfoH\000\022D\n" +
+      "\025bounce_conjuring_info\030\377\005 \001(\0132\".BounceCo" +
+      "njuringActivityDetailInfoH\000\0228\n\017blitz_rus" +
+      "h_info\030\232\006 \001(\0132\034.BlitzRushActivityDetailI" +
+      "nfoH\000\022/\n\nchess_info\030\237\007 \001(\0132\030.ChessActivi" +
+      "tyDetailInfoH\000\022-\n\tsumo_info\030\355\t \001(\0132\027.Sum" +
+      "oActivityDetailInfoH\000\022>\n\022moonfin_trial_i" +
+      "nfo\030\264\014 \001(\0132\037.MoonfinTrialActivityDetailI" +
+      "nfoH\000\022.\n\016luna_rite_info\030\256\006 \001(\0132\023.LunaRit" +
+      "eDetailInfoH\000\022;\n\021plant_flower_info\0306 \001(\013" +
+      "2\036.PlantFlowerActivityDetailInfoH\000\0228\n\017mu" +
+      "sic_game_info\030\314\003 \001(\0132\034.MusicGameActivity" +
+      "DetailInfoH\000\022F\n\026roguelike_dungeon_info\030\333" +
+      "\001 \001(\0132#.RoguelikeDungeonActivityDetailIn" +
+      "foH\000\022+\n\010dig_info\030\223\003 \001(\0132\026.DigActivityDet" +
+      "ailInfoH\000\022/\n\nhachi_info\030\353\003 \001(\0132\030.HachiAc" +
+      "tivityDetailInfoH\000\022:\n\020winter_camp_info\030\273" +
+      "\010 \001(\0132\035.WinterCampActivityDetailInfoH\000\0221" +
+      "\n\013potion_info\030\371\t \001(\0132\031.PotionActivityDet" +
+      "ailInfoH\000\022G\n\033tanuki_travel_activity_info" +
+      "\030\204\016 \001(\0132\037.TanukiTravelActivityDetailInfo" +
+      "H\000\022E\n\032lantern_rite_activity_info\030\324\016 \001(\0132" +
+      "\036.LanternRiteActivityDetailInfoH\000\022B\n\024mic" +
+      "hiae_matsuri_info\030\302\001 \001(\0132!.MichiaeMatsur" +
+      "iActivityDetailInfoH\000\0227\n\016bartender_info\030" +
+      "\275\r \001(\0132\034.BartenderActivityDetailInfoH\000\022+" +
+      "\n\010ugc_info\030\277\005 \001(\0132\026.UgcActivityDetailInf" +
+      "oH\000\022<\n\021crystal_link_info\030\312\t \001(\0132\036.Crysta" +
+      "lLinkActivityDetailInfoH\000\0223\n\014irodori_inf" +
+      "o\030\356\005 \001(\0132\032.IrodoriActivityDetailInfoH\000\022/" +
+      "\n\nphoto_info\030\310\002 \001(\0132\030.PhotoActivityDetai" +
+      "lInfoH\000\022/\n\nspice_info\030\343\016 \001(\0132\030.SpiceActi" +
+      "vityDetailInfoH\000\022/\n\ngacha_info\030\271\006 \001(\0132\030." +
+      "GachaActivityDetailInfoH\000\022U\n\036luminance_s" +
+      "tone_challenge_info\030\234\n \001(\0132*.LuminanceSt" +
+      "oneChallengeActivityDetailInfoH\000\022:\n\020rogu" +
+      "e_diary_info\030\254\006 \001(\0132\035.RogueDiaryActivity" +
+      "DetailInfoH\000\0227\n\023summer_time_v2_info\030\356\004 \001" +
+      "(\0132\027.SummerTimeV2DetailInfoH\000\022<\n\021island_" +
+      "party_info\030\335\016 \001(\0132\036.IslandPartyActivityD" +
+      "etailInfoH\000\022-\n\tgear_info\030\322\005 \001(\0132\027.GearAc" +
+      "tivityDetailInfoH\000\022<\n\025graven_innocence_i" +
+      "nfo\030\367\016 \001(\0132\032.GravenInnocenceDetailInfoH\000" +
+      "\0228\n\023instable_spray_info\030\223\010 \001(\0132\030.Instabl" +
+      "eSprayDetailInfoH\000\0228\n\023muqadas_potion_inf" +
+      "o\030\205\t \001(\0132\030.MuqadasPotionDetailInfoH\000\022:\n\024" +
+      "treasure_seelie_info\030\306\007 \001(\0132\031.TreasureSe" +
+      "elieDetailInfoH\000\022?\n\027rock_board_explore_i" +
+      "nfo\030\266\010 \001(\0132\033.RockBoardExploreDetailInfoH" +
+      "\000\022+\n\014vintage_info\030\275\003 \001(\0132\022.VintageDetail" +
+      "InfoH\000\0220\n\017wind_field_info\030\340\002 \001(\0132\024.WindF" +
+      "ieldDetailInfoH\000\0326\n\024ActivityCoinMapEntry" +
+      "\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0329\n\027Unk2" +
+      "700IFPBCNLCKLGEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005valu" +
+      "e\030\002 \001(\r:\0028\001B\010\n\006detailB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -16305,6 +16998,7 @@ public final class ActivityInfoOuterClass {
           emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PotionActivityDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SalesmanActivityDetailInfoOuterClass.getDescriptor(),
@@ -16320,7 +17014,9 @@ public final class ActivityInfoOuterClass {
           emu.grasscutter.net.proto.TrialAvatarActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.getDescriptor(),
+          emu.grasscutter.net.proto.VintageDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WaterSpiritActivityDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WinterCampActivityDetailInfoOuterClass.getDescriptor(),
         });
     internal_static_ActivityInfo_descriptor =
@@ -16328,7 +17024,7 @@ public final class ActivityInfoOuterClass {
     internal_static_ActivityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityInfo_descriptor,
-        new java.lang.String[] { "IsPlayOpenAnim", "ScheduleId", "CurScore", "IsStarting", "TakenRewardList", "Unk2700NONJFHAIFLA", "SelectedAvatarRewardId", "FirstDayStartTime", "ScoreLimit", "IsFinished", "IsHidden", "BeginTime", "EndTime", "ActivityCoinMap", "ActivityType", "Unk2700EDKLLHBEEGE", "Unk2800KOMIPKKKOBE", "MeetCondList", "Unk2700IFPBCNLCKLG", "ExpireCondList", "WatcherInfoList", "ActivityId", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "Detail", });
+        new java.lang.String[] { "IsPlayOpenAnim", "ScheduleId", "CurScore", "IsStarting", "TakenRewardList", "Unk2700NONJFHAIFLA", "SelectedAvatarRewardId", "FirstDayStartTime", "ScoreLimit", "IsFinished", "IsHidden", "BeginTime", "EndTime", "ActivityCoinMap", "ActivityType", "Unk2700EDKLLHBEEGE", "Unk2800KOMIPKKKOBE", "MeetCondList", "Unk2700IFPBCNLCKLG", "ExpireCondList", "WatcherInfoList", "ActivityId", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "RockBoardExploreInfo", "VintageInfo", "WindFieldInfo", "Detail", });
     internal_static_ActivityInfo_ActivityCoinMapEntry_descriptor =
       internal_static_ActivityInfo_descriptor.getNestedTypes().get(0);
     internal_static_ActivityInfo_ActivityCoinMapEntry_fieldAccessorTable = new
@@ -16381,6 +17077,7 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PotionActivityDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SalesmanActivityDetailInfoOuterClass.getDescriptor();
@@ -16396,7 +17093,9 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.TrialAvatarActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.getDescriptor();
+    emu.grasscutter.net.proto.VintageDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WaterSpiritActivityDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WinterCampActivityDetailInfoOuterClass.getDescriptor();
   }
 

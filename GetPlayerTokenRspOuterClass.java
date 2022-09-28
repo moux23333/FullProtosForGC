@@ -193,10 +193,10 @@ public final class GetPlayerTokenRspOuterClass {
     boolean getIsProficientPlayer();
 
     /**
-     * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-     * @return The unk2800BPJOBLNCBEI.
+     * <code>uint32 key_id = 1172;</code>
+     * @return The keyId.
      */
-    int getUnk2800BPJOBLNCBEI();
+    int getKeyId();
 
     /**
      * <code>uint32 uid = 1;</code>
@@ -461,7 +461,7 @@ public final class GetPlayerTokenRspOuterClass {
             }
             case 9376: {
 
-              unk2800BPJOBLNCBEI_ = input.readUInt32();
+              keyId_ = input.readUInt32();
               break;
             }
             case 11946: {
@@ -1011,15 +1011,15 @@ public final class GetPlayerTokenRspOuterClass {
       return isProficientPlayer_;
     }
 
-    public static final int UNK2800_BPJOBLNCBEI_FIELD_NUMBER = 1172;
-    private int unk2800BPJOBLNCBEI_;
+    public static final int KEY_ID_FIELD_NUMBER = 1172;
+    private int keyId_;
     /**
-     * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-     * @return The unk2800BPJOBLNCBEI.
+     * <code>uint32 key_id = 1172;</code>
+     * @return The keyId.
      */
     @java.lang.Override
-    public int getUnk2800BPJOBLNCBEI() {
-      return unk2800BPJOBLNCBEI_;
+    public int getKeyId() {
+      return keyId_;
     }
 
     public static final int UID_FIELD_NUMBER = 1;
@@ -1297,8 +1297,8 @@ public final class GetPlayerTokenRspOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(seedSignature_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1140, seedSignature_);
       }
-      if (unk2800BPJOBLNCBEI_ != 0) {
-        output.writeUInt32(1172, unk2800BPJOBLNCBEI_);
+      if (keyId_ != 0) {
+        output.writeUInt32(1172, keyId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(encryptedSeed_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1493, encryptedSeed_);
@@ -1417,9 +1417,9 @@ public final class GetPlayerTokenRspOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(seedSignature_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1140, seedSignature_);
       }
-      if (unk2800BPJOBLNCBEI_ != 0) {
+      if (keyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1172, unk2800BPJOBLNCBEI_);
+          .computeUInt32Size(1172, keyId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(encryptedSeed_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1493, encryptedSeed_);
@@ -1520,8 +1520,8 @@ public final class GetPlayerTokenRspOuterClass {
           .equals(other.getEncryptedSeed())) return false;
       if (getIsProficientPlayer()
           != other.getIsProficientPlayer()) return false;
-      if (getUnk2800BPJOBLNCBEI()
-          != other.getUnk2800BPJOBLNCBEI()) return false;
+      if (getKeyId()
+          != other.getKeyId()) return false;
       if (getUid()
           != other.getUid()) return false;
       if (!getAccountUid()
@@ -1596,8 +1596,8 @@ public final class GetPlayerTokenRspOuterClass {
       hash = (37 * hash) + IS_PROFICIENT_PLAYER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsProficientPlayer());
-      hash = (37 * hash) + UNK2800_BPJOBLNCBEI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800BPJOBLNCBEI();
+      hash = (37 * hash) + KEY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getKeyId();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
       hash = (37 * hash) + ACCOUNT_UID_FIELD_NUMBER;
@@ -1801,7 +1801,7 @@ public final class GetPlayerTokenRspOuterClass {
 
         isProficientPlayer_ = false;
 
-        unk2800BPJOBLNCBEI_ = 0;
+        keyId_ = 0;
 
         uid_ = 0;
 
@@ -1869,7 +1869,7 @@ public final class GetPlayerTokenRspOuterClass {
         result.unk2700FLBKPCPGPDH_ = unk2700FLBKPCPGPDH_;
         result.encryptedSeed_ = encryptedSeed_;
         result.isProficientPlayer_ = isProficientPlayer_;
-        result.unk2800BPJOBLNCBEI_ = unk2800BPJOBLNCBEI_;
+        result.keyId_ = keyId_;
         result.uid_ = uid_;
         result.accountUid_ = accountUid_;
         result.isGuest_ = isGuest_;
@@ -2002,8 +2002,8 @@ public final class GetPlayerTokenRspOuterClass {
         if (other.getIsProficientPlayer() != false) {
           setIsProficientPlayer(other.getIsProficientPlayer());
         }
-        if (other.getUnk2800BPJOBLNCBEI() != 0) {
-          setUnk2800BPJOBLNCBEI(other.getUnk2800BPJOBLNCBEI());
+        if (other.getKeyId() != 0) {
+          setKeyId(other.getKeyId());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
@@ -3089,33 +3089,33 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private int unk2800BPJOBLNCBEI_ ;
+      private int keyId_ ;
       /**
-       * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-       * @return The unk2800BPJOBLNCBEI.
+       * <code>uint32 key_id = 1172;</code>
+       * @return The keyId.
        */
       @java.lang.Override
-      public int getUnk2800BPJOBLNCBEI() {
-        return unk2800BPJOBLNCBEI_;
+      public int getKeyId() {
+        return keyId_;
       }
       /**
-       * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-       * @param value The unk2800BPJOBLNCBEI to set.
+       * <code>uint32 key_id = 1172;</code>
+       * @param value The keyId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800BPJOBLNCBEI(int value) {
+      public Builder setKeyId(int value) {
         
-        unk2800BPJOBLNCBEI_ = value;
+        keyId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
+       * <code>uint32 key_id = 1172;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800BPJOBLNCBEI() {
+      public Builder clearKeyId() {
         
-        unk2800BPJOBLNCBEI_ = 0;
+        keyId_ = 0;
         onChanged();
         return this;
       }
@@ -3648,7 +3648,7 @@ public final class GetPlayerTokenRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GetPlayerTokenRsp.proto\"\337\005\n\021GetPlayerT" +
+      "\n\027GetPlayerTokenRsp.proto\"\322\005\n\021GetPlayerT" +
       "okenRsp\022\021\n\010birthday\030\251\007 \001(\t\022\017\n\007retcode\030\002 " +
       "\001(\005\022\033\n\023security_cmd_buffer\030\006 \001(\014\022\027\n\017secr" +
       "et_key_seed\030\r \001(\004\022\025\n\014country_code\030\335\017 \001(\t" +
@@ -3660,14 +3660,14 @@ public final class GetPlayerTokenRspOuterClass {
       "tr\030\334\006 \001(\t\022\013\n\003msg\030\007 \001(\t\022\024\n\014account_type\030\005" +
       " \001(\r\022\027\n\016sub_channel_id\030\212\016 \001(\r\022\034\n\023Unk2700" +
       "_FLBKPCPGPDH\030\354\017 \001(\010\022\027\n\016encrypted_seed\030\325\013" +
-      " \001(\t\022\034\n\024is_proficient_player\030\t \001(\010\022\034\n\023Un" +
-      "k2800_BPJOBLNCBEI\030\224\t \001(\r\022\013\n\003uid\030\001 \001(\r\022\023\n" +
-      "\013account_uid\030\014 \001(\t\022\020\n\010is_guest\030\004 \001(\010\022\"\n\031" +
-      "client_version_random_key\030\371\013 \001(\t\022\034\n\023Unk2" +
-      "800_NNBFCEAOEPB\030\350\014 \003(\r\022\025\n\rplatform_type\030" +
-      "\010 \001(\r\022\025\n\014reg_platform\030\330\010 \001(\r\022\034\n\023is_login" +
-      "_white_list\030\275\004 \001(\010\022\027\n\016seed_signature\030\364\010 " +
-      "\001(\tB\033\n\031emu.grasscutter.net.protob\006proto3"
+      " \001(\t\022\034\n\024is_proficient_player\030\t \001(\010\022\017\n\006ke" +
+      "y_id\030\224\t \001(\r\022\013\n\003uid\030\001 \001(\r\022\023\n\013account_uid\030" +
+      "\014 \001(\t\022\020\n\010is_guest\030\004 \001(\010\022\"\n\031client_versio" +
+      "n_random_key\030\371\013 \001(\t\022\034\n\023Unk2800_NNBFCEAOE" +
+      "PB\030\350\014 \003(\r\022\025\n\rplatform_type\030\010 \001(\r\022\025\n\014reg_" +
+      "platform\030\330\010 \001(\r\022\034\n\023is_login_white_list\030\275" +
+      "\004 \001(\010\022\027\n\016seed_signature\030\364\010 \001(\tB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3678,7 +3678,7 @@ public final class GetPlayerTokenRspOuterClass {
     internal_static_GetPlayerTokenRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetPlayerTokenRsp_descriptor,
-        new java.lang.String[] { "Birthday", "Retcode", "SecurityCmdBuffer", "SecretKeySeed", "CountryCode", "ExtraBinData", "SecretKey", "Unk2700NOJPEHIBDJH", "BlackUidEndTime", "Tag", "Token", "GmUid", "ChannelId", "PsnId", "ClientIpStr", "Msg", "AccountType", "SubChannelId", "Unk2700FLBKPCPGPDH", "EncryptedSeed", "IsProficientPlayer", "Unk2800BPJOBLNCBEI", "Uid", "AccountUid", "IsGuest", "ClientVersionRandomKey", "Unk2800NNBFCEAOEPB", "PlatformType", "RegPlatform", "IsLoginWhiteList", "SeedSignature", });
+        new java.lang.String[] { "Birthday", "Retcode", "SecurityCmdBuffer", "SecretKeySeed", "CountryCode", "ExtraBinData", "SecretKey", "Unk2700NOJPEHIBDJH", "BlackUidEndTime", "Tag", "Token", "GmUid", "ChannelId", "PsnId", "ClientIpStr", "Msg", "AccountType", "SubChannelId", "Unk2700FLBKPCPGPDH", "EncryptedSeed", "IsProficientPlayer", "KeyId", "Uid", "AccountUid", "IsGuest", "ClientVersionRandomKey", "Unk2800NNBFCEAOEPB", "PlatformType", "RegPlatform", "IsLoginWhiteList", "SeedSignature", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

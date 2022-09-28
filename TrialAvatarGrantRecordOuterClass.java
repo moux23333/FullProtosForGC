@@ -170,6 +170,10 @@ public final class TrialAvatarGrantRecordOuterClass {
        * <code>GRANT_REASON_Unk3000_AJIFFOLFKLO = 11;</code>
        */
       GRANT_REASON_Unk3000_AJIFFOLFKLO(11),
+      /**
+       * <code>GRANT_REASON_Unk3100_CKJJFGCFGEE = 12;</code>
+       */
+      GRANT_REASON_Unk3100_CKJJFGCFGEE(12),
       UNRECOGNIZED(-1),
       ;
 
@@ -221,6 +225,10 @@ public final class TrialAvatarGrantRecordOuterClass {
        * <code>GRANT_REASON_Unk3000_AJIFFOLFKLO = 11;</code>
        */
       public static final int GRANT_REASON_Unk3000_AJIFFOLFKLO_VALUE = 11;
+      /**
+       * <code>GRANT_REASON_Unk3100_CKJJFGCFGEE = 12;</code>
+       */
+      public static final int GRANT_REASON_Unk3100_CKJJFGCFGEE_VALUE = 12;
 
 
       public final int getNumber() {
@@ -259,6 +267,7 @@ public final class TrialAvatarGrantRecordOuterClass {
           case 9: return GRANT_REASON_Unk2800_FIIDJHAKMOI;
           case 10: return GRANT_REASON_Unk3000_ANPCNHCADHG;
           case 11: return GRANT_REASON_Unk3000_AJIFFOLFKLO;
+          case 12: return GRANT_REASON_Unk3100_CKJJFGCFGEE;
           default: return null;
         }
       }
@@ -784,9 +793,9 @@ public final class TrialAvatarGrantRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TrialAvatarGrantRecord.proto\"\233\004\n\026Trial" +
+      "\n\034TrialAvatarGrantRecord.proto\"\301\004\n\026Trial" +
       "AvatarGrantRecord\022\024\n\014grant_reason\030\001 \001(\r\022" +
-      "\034\n\024from_parent_quest_id\030\002 \001(\r\"\314\003\n\013GrantR" +
+      "\034\n\024from_parent_quest_id\030\002 \001(\r\"\362\003\n\013GrantR" +
       "eason\022\030\n\024GRANT_REASON_INVALID\020\000\022\031\n\025GRANT" +
       "_REASON_BY_QUEST\020\001\022)\n%GRANT_REASON_BY_TR" +
       "IAL_AVATAR_ACTIVITY\020\002\022-\n)GRANT_REASON_BY" +
@@ -798,8 +807,9 @@ public final class TrialAvatarGrantRecordOuterClass {
       "2700_GAMADMGGMBC\020\010\022$\n GRANT_REASON_Unk28" +
       "00_FIIDJHAKMOI\020\t\022$\n GRANT_REASON_Unk3000" +
       "_ANPCNHCADHG\020\n\022$\n GRANT_REASON_Unk3000_A" +
-      "JIFFOLFKLO\020\013B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "JIFFOLFKLO\020\013\022$\n GRANT_REASON_Unk3100_CKJ" +
+      "JFGCFGEE\020\014B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

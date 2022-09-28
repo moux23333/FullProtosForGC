@@ -43,18 +43,6 @@ public final class HomeMarkPointSceneDataOuterClass {
         int index);
 
     /**
-     * <code>uint32 module_id = 5;</code>
-     * @return The moduleId.
-     */
-    int getModuleId();
-
-    /**
-     * <code>uint32 scene_id = 2;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
      * <code>.Vector teapot_spirit_pos = 4;</code>
      * @return Whether the teapotSpiritPos field is set.
      */
@@ -68,6 +56,33 @@ public final class HomeMarkPointSceneDataOuterClass {
      * <code>.Vector teapot_spirit_pos = 4;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder();
+
+    /**
+     * <code>uint32 scene_id = 2;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
+     * <code>uint32 module_id = 5;</code>
+     * @return The moduleId.
+     */
+    int getModuleId();
+
+    /**
+     * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+     * @return Whether the unk3100ABBFBELGECB field is set.
+     */
+    boolean hasUnk3100ABBFBELGECB();
+    /**
+     * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+     * @return The unk3100ABBFBELGECB.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3100ABBFBELGECB();
+    /**
+     * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3100ABBFBELGECBOrBuilder();
   }
   /**
    * Protobuf type {@code HomeMarkPointSceneData}
@@ -148,6 +163,19 @@ public final class HomeMarkPointSceneDataOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.parser(), extensionRegistry));
               break;
             }
+            case 90: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (unk3100ABBFBELGECB_ != null) {
+                subBuilder = unk3100ABBFBELGECB_.toBuilder();
+              }
+              unk3100ABBFBELGECB_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(unk3100ABBFBELGECB_);
+                unk3100ABBFBELGECB_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -223,28 +251,6 @@ public final class HomeMarkPointSceneDataOuterClass {
       return furnitureList_.get(index);
     }
 
-    public static final int MODULE_ID_FIELD_NUMBER = 5;
-    private int moduleId_;
-    /**
-     * <code>uint32 module_id = 5;</code>
-     * @return The moduleId.
-     */
-    @java.lang.Override
-    public int getModuleId() {
-      return moduleId_;
-    }
-
-    public static final int SCENE_ID_FIELD_NUMBER = 2;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 2;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
     public static final int TEAPOT_SPIRIT_POS_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector teapotSpiritPos_;
     /**
@@ -269,6 +275,54 @@ public final class HomeMarkPointSceneDataOuterClass {
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder() {
       return getTeapotSpiritPos();
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 2;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 2;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int MODULE_ID_FIELD_NUMBER = 5;
+    private int moduleId_;
+    /**
+     * <code>uint32 module_id = 5;</code>
+     * @return The moduleId.
+     */
+    @java.lang.Override
+    public int getModuleId() {
+      return moduleId_;
+    }
+
+    public static final int UNK3100_ABBFBELGECB_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector unk3100ABBFBELGECB_;
+    /**
+     * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+     * @return Whether the unk3100ABBFBELGECB field is set.
+     */
+    @java.lang.Override
+    public boolean hasUnk3100ABBFBELGECB() {
+      return unk3100ABBFBELGECB_ != null;
+    }
+    /**
+     * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+     * @return The unk3100ABBFBELGECB.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3100ABBFBELGECB() {
+      return unk3100ABBFBELGECB_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3100ABBFBELGECB_;
+    }
+    /**
+     * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3100ABBFBELGECBOrBuilder() {
+      return getUnk3100ABBFBELGECB();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -297,6 +351,9 @@ public final class HomeMarkPointSceneDataOuterClass {
       for (int i = 0; i < furnitureList_.size(); i++) {
         output.writeMessage(6, furnitureList_.get(i));
       }
+      if (unk3100ABBFBELGECB_ != null) {
+        output.writeMessage(11, getUnk3100ABBFBELGECB());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -322,6 +379,10 @@ public final class HomeMarkPointSceneDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, furnitureList_.get(i));
       }
+      if (unk3100ABBFBELGECB_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, getUnk3100ABBFBELGECB());
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -339,14 +400,19 @@ public final class HomeMarkPointSceneDataOuterClass {
 
       if (!getFurnitureListList()
           .equals(other.getFurnitureListList())) return false;
-      if (getModuleId()
-          != other.getModuleId()) return false;
-      if (getSceneId()
-          != other.getSceneId()) return false;
       if (hasTeapotSpiritPos() != other.hasTeapotSpiritPos()) return false;
       if (hasTeapotSpiritPos()) {
         if (!getTeapotSpiritPos()
             .equals(other.getTeapotSpiritPos())) return false;
+      }
+      if (getSceneId()
+          != other.getSceneId()) return false;
+      if (getModuleId()
+          != other.getModuleId()) return false;
+      if (hasUnk3100ABBFBELGECB() != other.hasUnk3100ABBFBELGECB()) return false;
+      if (hasUnk3100ABBFBELGECB()) {
+        if (!getUnk3100ABBFBELGECB()
+            .equals(other.getUnk3100ABBFBELGECB())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -363,13 +429,17 @@ public final class HomeMarkPointSceneDataOuterClass {
         hash = (37 * hash) + FURNITURE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFurnitureListList().hashCode();
       }
-      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModuleId();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
       if (hasTeapotSpiritPos()) {
         hash = (37 * hash) + TEAPOT_SPIRIT_POS_FIELD_NUMBER;
         hash = (53 * hash) + getTeapotSpiritPos().hashCode();
+      }
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getModuleId();
+      if (hasUnk3100ABBFBELGECB()) {
+        hash = (37 * hash) + UNK3100_ABBFBELGECB_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3100ABBFBELGECB().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -511,15 +581,21 @@ public final class HomeMarkPointSceneDataOuterClass {
         } else {
           furnitureListBuilder_.clear();
         }
-        moduleId_ = 0;
-
-        sceneId_ = 0;
-
         if (teapotSpiritPosBuilder_ == null) {
           teapotSpiritPos_ = null;
         } else {
           teapotSpiritPos_ = null;
           teapotSpiritPosBuilder_ = null;
+        }
+        sceneId_ = 0;
+
+        moduleId_ = 0;
+
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          unk3100ABBFBELGECB_ = null;
+        } else {
+          unk3100ABBFBELGECB_ = null;
+          unk3100ABBFBELGECBBuilder_ = null;
         }
         return this;
       }
@@ -557,12 +633,17 @@ public final class HomeMarkPointSceneDataOuterClass {
         } else {
           result.furnitureList_ = furnitureListBuilder_.build();
         }
-        result.moduleId_ = moduleId_;
-        result.sceneId_ = sceneId_;
         if (teapotSpiritPosBuilder_ == null) {
           result.teapotSpiritPos_ = teapotSpiritPos_;
         } else {
           result.teapotSpiritPos_ = teapotSpiritPosBuilder_.build();
+        }
+        result.sceneId_ = sceneId_;
+        result.moduleId_ = moduleId_;
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          result.unk3100ABBFBELGECB_ = unk3100ABBFBELGECB_;
+        } else {
+          result.unk3100ABBFBELGECB_ = unk3100ABBFBELGECBBuilder_.build();
         }
         onBuilt();
         return result;
@@ -638,14 +719,17 @@ public final class HomeMarkPointSceneDataOuterClass {
             }
           }
         }
-        if (other.getModuleId() != 0) {
-          setModuleId(other.getModuleId());
+        if (other.hasTeapotSpiritPos()) {
+          mergeTeapotSpiritPos(other.getTeapotSpiritPos());
         }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
-        if (other.hasTeapotSpiritPos()) {
-          mergeTeapotSpiritPos(other.getTeapotSpiritPos());
+        if (other.getModuleId() != 0) {
+          setModuleId(other.getModuleId());
+        }
+        if (other.hasUnk3100ABBFBELGECB()) {
+          mergeUnk3100ABBFBELGECB(other.getUnk3100ABBFBELGECB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -917,68 +1001,6 @@ public final class HomeMarkPointSceneDataOuterClass {
         return furnitureListBuilder_;
       }
 
-      private int moduleId_ ;
-      /**
-       * <code>uint32 module_id = 5;</code>
-       * @return The moduleId.
-       */
-      @java.lang.Override
-      public int getModuleId() {
-        return moduleId_;
-      }
-      /**
-       * <code>uint32 module_id = 5;</code>
-       * @param value The moduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModuleId(int value) {
-        
-        moduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 module_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModuleId() {
-        
-        moduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 2;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 2;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector teapotSpiritPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> teapotSpiritPosBuilder_;
@@ -1097,6 +1119,187 @@ public final class HomeMarkPointSceneDataOuterClass {
         }
         return teapotSpiritPosBuilder_;
       }
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int moduleId_ ;
+      /**
+       * <code>uint32 module_id = 5;</code>
+       * @return The moduleId.
+       */
+      @java.lang.Override
+      public int getModuleId() {
+        return moduleId_;
+      }
+      /**
+       * <code>uint32 module_id = 5;</code>
+       * @param value The moduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModuleId(int value) {
+        
+        moduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 module_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModuleId() {
+        
+        moduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector unk3100ABBFBELGECB_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> unk3100ABBFBELGECBBuilder_;
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       * @return Whether the unk3100ABBFBELGECB field is set.
+       */
+      public boolean hasUnk3100ABBFBELGECB() {
+        return unk3100ABBFBELGECBBuilder_ != null || unk3100ABBFBELGECB_ != null;
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       * @return The unk3100ABBFBELGECB.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getUnk3100ABBFBELGECB() {
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          return unk3100ABBFBELGECB_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3100ABBFBELGECB_;
+        } else {
+          return unk3100ABBFBELGECBBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       */
+      public Builder setUnk3100ABBFBELGECB(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          unk3100ABBFBELGECB_ = value;
+          onChanged();
+        } else {
+          unk3100ABBFBELGECBBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       */
+      public Builder setUnk3100ABBFBELGECB(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          unk3100ABBFBELGECB_ = builderForValue.build();
+          onChanged();
+        } else {
+          unk3100ABBFBELGECBBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       */
+      public Builder mergeUnk3100ABBFBELGECB(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          if (unk3100ABBFBELGECB_ != null) {
+            unk3100ABBFBELGECB_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(unk3100ABBFBELGECB_).mergeFrom(value).buildPartial();
+          } else {
+            unk3100ABBFBELGECB_ = value;
+          }
+          onChanged();
+        } else {
+          unk3100ABBFBELGECBBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       */
+      public Builder clearUnk3100ABBFBELGECB() {
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          unk3100ABBFBELGECB_ = null;
+          onChanged();
+        } else {
+          unk3100ABBFBELGECB_ = null;
+          unk3100ABBFBELGECBBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getUnk3100ABBFBELGECBBuilder() {
+        
+        onChanged();
+        return getUnk3100ABBFBELGECBFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getUnk3100ABBFBELGECBOrBuilder() {
+        if (unk3100ABBFBELGECBBuilder_ != null) {
+          return unk3100ABBFBELGECBBuilder_.getMessageOrBuilder();
+        } else {
+          return unk3100ABBFBELGECB_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : unk3100ABBFBELGECB_;
+        }
+      }
+      /**
+       * <code>.Vector Unk3100_ABBFBELGECB = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getUnk3100ABBFBELGECBFieldBuilder() {
+        if (unk3100ABBFBELGECBBuilder_ == null) {
+          unk3100ABBFBELGECBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getUnk3100ABBFBELGECB(),
+                  getParentForChildren(),
+                  isClean());
+          unk3100ABBFBELGECB_ = null;
+        }
+        return unk3100ABBFBELGECBBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1165,12 +1368,13 @@ public final class HomeMarkPointSceneDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034HomeMarkPointSceneData.proto\032 HomeMark" +
-      "PointFurnitureData.proto\032\014Vector.proto\"\226" +
+      "PointFurnitureData.proto\032\014Vector.proto\"\274" +
       "\001\n\026HomeMarkPointSceneData\0223\n\016furniture_l" +
-      "ist\030\006 \003(\0132\033.HomeMarkPointFurnitureData\022\021" +
-      "\n\tmodule_id\030\005 \001(\r\022\020\n\010scene_id\030\002 \001(\r\022\"\n\021t" +
-      "eapot_spirit_pos\030\004 \001(\0132\007.VectorB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "ist\030\006 \003(\0132\033.HomeMarkPointFurnitureData\022\"" +
+      "\n\021teapot_spirit_pos\030\004 \001(\0132\007.Vector\022\020\n\010sc" +
+      "ene_id\030\002 \001(\r\022\021\n\tmodule_id\030\005 \001(\r\022$\n\023Unk31" +
+      "00_ABBFBELGECB\030\013 \001(\0132\007.VectorB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1183,7 +1387,7 @@ public final class HomeMarkPointSceneDataOuterClass {
     internal_static_HomeMarkPointSceneData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeMarkPointSceneData_descriptor,
-        new java.lang.String[] { "FurnitureList", "ModuleId", "SceneId", "TeapotSpiritPos", });
+        new java.lang.String[] { "FurnitureList", "TeapotSpiritPos", "SceneId", "ModuleId", "Unk3100ABBFBELGECB", });
     emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }

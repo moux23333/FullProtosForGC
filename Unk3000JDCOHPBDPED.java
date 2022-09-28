@@ -19,6 +19,30 @@ public final class Unk3000JDCOHPBDPED {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
+        getUnk3100HFOFIMOGDBDList();
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3100HFOFIMOGDBD(int index);
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    int getUnk3100HFOFIMOGDBDCount();
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3100HFOFIMOGDBDOrBuilderList();
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3100HFOFIMOGDBDOrBuilder(
+        int index);
+
+    /**
      * <code>.Unk3000_PKHPBOIDLEA Unk3000_CNOABNNCPOL = 6;</code>
      * @return The enum numeric value on the wire for unk3000CNOABNNCPOL.
      */
@@ -28,6 +52,12 @@ public final class Unk3000JDCOHPBDPED {
      * @return The unk3000CNOABNNCPOL.
      */
     emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.Unk3000_PKHPBOIDLEA getUnk3000CNOABNNCPOL();
+
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
 
     /**
      * <code>repeated .CompoundQueueData compound_que_data_list = 1;</code>
@@ -52,12 +82,6 @@ public final class Unk3000JDCOHPBDPED {
      */
     emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder getCompoundQueDataListOrBuilder(
         int index);
-
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
@@ -78,6 +102,7 @@ public final class Unk3000JDCOHPBDPED {
       super(builder);
     }
     private Unk3000_JDCOHPBDPED() {
+      unk3100HFOFIMOGDBD_ = java.util.Collections.emptyList();
       unk3000CNOABNNCPOL_ = 0;
       compoundQueDataList_ = java.util.Collections.emptyList();
     }
@@ -114,12 +139,21 @@ public final class Unk3000JDCOHPBDPED {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 compoundQueDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               compoundQueDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.parser(), extensionRegistry));
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3100HFOFIMOGDBD_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              unk3100HFOFIMOGDBD_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
             case 48: {
@@ -148,8 +182,11 @@ public final class Unk3000JDCOHPBDPED {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           compoundQueDataList_ = java.util.Collections.unmodifiableList(compoundQueDataList_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          unk3100HFOFIMOGDBD_ = java.util.Collections.unmodifiableList(unk3100HFOFIMOGDBD_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -166,6 +203,46 @@ public final class Unk3000JDCOHPBDPED {
       return emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.internal_static_Unk3000_JDCOHPBDPED_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED.class, emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED.Builder.class);
+    }
+
+    public static final int UNK3100_HFOFIMOGDBD_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3100HFOFIMOGDBD_;
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3100HFOFIMOGDBDList() {
+      return unk3100HFOFIMOGDBD_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3100HFOFIMOGDBDOrBuilderList() {
+      return unk3100HFOFIMOGDBD_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    @java.lang.Override
+    public int getUnk3100HFOFIMOGDBDCount() {
+      return unk3100HFOFIMOGDBD_.size();
+    }
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3100HFOFIMOGDBD(int index) {
+      return unk3100HFOFIMOGDBD_.get(index);
+    }
+    /**
+     * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3100HFOFIMOGDBDOrBuilder(
+        int index) {
+      return unk3100HFOFIMOGDBD_.get(index);
     }
 
     public static final int UNK3000_CNOABNNCPOL_FIELD_NUMBER = 6;
@@ -185,6 +262,17 @@ public final class Unk3000JDCOHPBDPED {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.Unk3000_PKHPBOIDLEA result = emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.Unk3000_PKHPBOIDLEA.valueOf(unk3000CNOABNNCPOL_);
       return result == null ? emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.Unk3000_PKHPBOIDLEA.UNRECOGNIZED : result;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     public static final int COMPOUND_QUE_DATA_LIST_FIELD_NUMBER = 1;
@@ -227,17 +315,6 @@ public final class Unk3000JDCOHPBDPED {
       return compoundQueDataList_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -254,6 +331,9 @@ public final class Unk3000JDCOHPBDPED {
                         throws java.io.IOException {
       for (int i = 0; i < compoundQueDataList_.size(); i++) {
         output.writeMessage(1, compoundQueDataList_.get(i));
+      }
+      for (int i = 0; i < unk3100HFOFIMOGDBD_.size(); i++) {
+        output.writeMessage(2, unk3100HFOFIMOGDBD_.get(i));
       }
       if (unk3000CNOABNNCPOL_ != emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.Unk3000_PKHPBOIDLEA.Unk3000_PKHPBOIDLEA_Unk3000_KANMGBLJEHC.getNumber()) {
         output.writeEnum(6, unk3000CNOABNNCPOL_);
@@ -273,6 +353,10 @@ public final class Unk3000JDCOHPBDPED {
       for (int i = 0; i < compoundQueDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, compoundQueDataList_.get(i));
+      }
+      for (int i = 0; i < unk3100HFOFIMOGDBD_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, unk3100HFOFIMOGDBD_.get(i));
       }
       if (unk3000CNOABNNCPOL_ != emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.Unk3000_PKHPBOIDLEA.Unk3000_PKHPBOIDLEA_Unk3000_KANMGBLJEHC.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
@@ -297,11 +381,13 @@ public final class Unk3000JDCOHPBDPED {
       }
       emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED other = (emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED) obj;
 
+      if (!getUnk3100HFOFIMOGDBDList()
+          .equals(other.getUnk3100HFOFIMOGDBDList())) return false;
       if (unk3000CNOABNNCPOL_ != other.unk3000CNOABNNCPOL_) return false;
-      if (!getCompoundQueDataListList()
-          .equals(other.getCompoundQueDataListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getCompoundQueDataListList()
+          .equals(other.getCompoundQueDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -313,14 +399,18 @@ public final class Unk3000JDCOHPBDPED {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getUnk3100HFOFIMOGDBDCount() > 0) {
+        hash = (37 * hash) + UNK3100_HFOFIMOGDBD_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3100HFOFIMOGDBDList().hashCode();
+      }
       hash = (37 * hash) + UNK3000_CNOABNNCPOL_FIELD_NUMBER;
       hash = (53 * hash) + unk3000CNOABNNCPOL_;
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getCompoundQueDataListCount() > 0) {
         hash = (37 * hash) + COMPOUND_QUE_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCompoundQueDataListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -455,22 +545,29 @@ public final class Unk3000JDCOHPBDPED {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getUnk3100HFOFIMOGDBDFieldBuilder();
           getCompoundQueDataListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          unk3100HFOFIMOGDBD_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.clear();
+        }
         unk3000CNOABNNCPOL_ = 0;
+
+        retcode_ = 0;
 
         if (compoundQueDataListBuilder_ == null) {
           compoundQueDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           compoundQueDataListBuilder_.clear();
         }
-        retcode_ = 0;
-
         return this;
       }
 
@@ -498,17 +595,26 @@ public final class Unk3000JDCOHPBDPED {
       public emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED buildPartial() {
         emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED result = new emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED(this);
         int from_bitField0_ = bitField0_;
-        result.unk3000CNOABNNCPOL_ = unk3000CNOABNNCPOL_;
-        if (compoundQueDataListBuilder_ == null) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            compoundQueDataList_ = java.util.Collections.unmodifiableList(compoundQueDataList_);
+            unk3100HFOFIMOGDBD_ = java.util.Collections.unmodifiableList(unk3100HFOFIMOGDBD_);
             bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.unk3100HFOFIMOGDBD_ = unk3100HFOFIMOGDBD_;
+        } else {
+          result.unk3100HFOFIMOGDBD_ = unk3100HFOFIMOGDBDBuilder_.build();
+        }
+        result.unk3000CNOABNNCPOL_ = unk3000CNOABNNCPOL_;
+        result.retcode_ = retcode_;
+        if (compoundQueDataListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            compoundQueDataList_ = java.util.Collections.unmodifiableList(compoundQueDataList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.compoundQueDataList_ = compoundQueDataList_;
         } else {
           result.compoundQueDataList_ = compoundQueDataListBuilder_.build();
         }
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -557,14 +663,43 @@ public final class Unk3000JDCOHPBDPED {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED other) {
         if (other == emu.grasscutter.net.proto.Unk3000JDCOHPBDPED.Unk3000_JDCOHPBDPED.getDefaultInstance()) return this;
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          if (!other.unk3100HFOFIMOGDBD_.isEmpty()) {
+            if (unk3100HFOFIMOGDBD_.isEmpty()) {
+              unk3100HFOFIMOGDBD_ = other.unk3100HFOFIMOGDBD_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureUnk3100HFOFIMOGDBDIsMutable();
+              unk3100HFOFIMOGDBD_.addAll(other.unk3100HFOFIMOGDBD_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.unk3100HFOFIMOGDBD_.isEmpty()) {
+            if (unk3100HFOFIMOGDBDBuilder_.isEmpty()) {
+              unk3100HFOFIMOGDBDBuilder_.dispose();
+              unk3100HFOFIMOGDBDBuilder_ = null;
+              unk3100HFOFIMOGDBD_ = other.unk3100HFOFIMOGDBD_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              unk3100HFOFIMOGDBDBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUnk3100HFOFIMOGDBDFieldBuilder() : null;
+            } else {
+              unk3100HFOFIMOGDBDBuilder_.addAllMessages(other.unk3100HFOFIMOGDBD_);
+            }
+          }
+        }
         if (other.unk3000CNOABNNCPOL_ != 0) {
           setUnk3000CNOABNNCPOLValue(other.getUnk3000CNOABNNCPOLValue());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (compoundQueDataListBuilder_ == null) {
           if (!other.compoundQueDataList_.isEmpty()) {
             if (compoundQueDataList_.isEmpty()) {
               compoundQueDataList_ = other.compoundQueDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureCompoundQueDataListIsMutable();
               compoundQueDataList_.addAll(other.compoundQueDataList_);
@@ -577,7 +712,7 @@ public final class Unk3000JDCOHPBDPED {
               compoundQueDataListBuilder_.dispose();
               compoundQueDataListBuilder_ = null;
               compoundQueDataList_ = other.compoundQueDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               compoundQueDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCompoundQueDataListFieldBuilder() : null;
@@ -585,9 +720,6 @@ public final class Unk3000JDCOHPBDPED {
               compoundQueDataListBuilder_.addAllMessages(other.compoundQueDataList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -618,6 +750,246 @@ public final class Unk3000JDCOHPBDPED {
         return this;
       }
       private int bitField0_;
+
+      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3100HFOFIMOGDBD_ =
+        java.util.Collections.emptyList();
+      private void ensureUnk3100HFOFIMOGDBDIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unk3100HFOFIMOGDBD_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(unk3100HFOFIMOGDBD_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> unk3100HFOFIMOGDBDBuilder_;
+
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3100HFOFIMOGDBDList() {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3100HFOFIMOGDBD_);
+        } else {
+          return unk3100HFOFIMOGDBDBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public int getUnk3100HFOFIMOGDBDCount() {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          return unk3100HFOFIMOGDBD_.size();
+        } else {
+          return unk3100HFOFIMOGDBDBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3100HFOFIMOGDBD(int index) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          return unk3100HFOFIMOGDBD_.get(index);
+        } else {
+          return unk3100HFOFIMOGDBDBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder setUnk3100HFOFIMOGDBD(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          unk3100HFOFIMOGDBD_.set(index, value);
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder setUnk3100HFOFIMOGDBD(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          unk3100HFOFIMOGDBD_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder addUnk3100HFOFIMOGDBD(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          unk3100HFOFIMOGDBD_.add(value);
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder addUnk3100HFOFIMOGDBD(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          unk3100HFOFIMOGDBD_.add(index, value);
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder addUnk3100HFOFIMOGDBD(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          unk3100HFOFIMOGDBD_.add(builderForValue.build());
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder addUnk3100HFOFIMOGDBD(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          unk3100HFOFIMOGDBD_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder addAllUnk3100HFOFIMOGDBD(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, unk3100HFOFIMOGDBD_);
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder clearUnk3100HFOFIMOGDBD() {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          unk3100HFOFIMOGDBD_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public Builder removeUnk3100HFOFIMOGDBD(int index) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          ensureUnk3100HFOFIMOGDBDIsMutable();
+          unk3100HFOFIMOGDBD_.remove(index);
+          onChanged();
+        } else {
+          unk3100HFOFIMOGDBDBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getUnk3100HFOFIMOGDBDBuilder(
+          int index) {
+        return getUnk3100HFOFIMOGDBDFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3100HFOFIMOGDBDOrBuilder(
+          int index) {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          return unk3100HFOFIMOGDBD_.get(index);  } else {
+          return unk3100HFOFIMOGDBDBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+           getUnk3100HFOFIMOGDBDOrBuilderList() {
+        if (unk3100HFOFIMOGDBDBuilder_ != null) {
+          return unk3100HFOFIMOGDBDBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(unk3100HFOFIMOGDBD_);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3100HFOFIMOGDBDBuilder() {
+        return getUnk3100HFOFIMOGDBDFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3100HFOFIMOGDBDBuilder(
+          int index) {
+        return getUnk3100HFOFIMOGDBDFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3100_HFOFIMOGDBD = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
+           getUnk3100HFOFIMOGDBDBuilderList() {
+        return getUnk3100HFOFIMOGDBDFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getUnk3100HFOFIMOGDBDFieldBuilder() {
+        if (unk3100HFOFIMOGDBDBuilder_ == null) {
+          unk3100HFOFIMOGDBDBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  unk3100HFOFIMOGDBD_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          unk3100HFOFIMOGDBD_ = null;
+        }
+        return unk3100HFOFIMOGDBDBuilder_;
+      }
 
       private int unk3000CNOABNNCPOL_ = 0;
       /**
@@ -673,12 +1045,43 @@ public final class Unk3000JDCOHPBDPED {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData> compoundQueDataList_ =
         java.util.Collections.emptyList();
       private void ensureCompoundQueDataListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           compoundQueDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData>(compoundQueDataList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -828,7 +1231,7 @@ public final class Unk3000JDCOHPBDPED {
       public Builder clearCompoundQueDataList() {
         if (compoundQueDataListBuilder_ == null) {
           compoundQueDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           compoundQueDataListBuilder_.clear();
@@ -905,43 +1308,12 @@ public final class Unk3000JDCOHPBDPED {
           compoundQueDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder>(
                   compoundQueDataList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           compoundQueDataList_ = null;
         }
         return compoundQueDataListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1011,17 +1383,19 @@ public final class Unk3000JDCOHPBDPED {
   static {
     java.lang.String[] descriptorData = {
       "\n\031Unk3000_JDCOHPBDPED.proto\032\027CompoundQue" +
-      "ueData.proto\032\031Unk3000_PKHPBOIDLEA.proto\"" +
-      "\215\001\n\023Unk3000_JDCOHPBDPED\0221\n\023Unk3000_CNOAB" +
-      "NNCPOL\030\006 \001(\0162\024.Unk3000_PKHPBOIDLEA\0222\n\026co" +
-      "mpound_que_data_list\030\001 \003(\0132\022.CompoundQue" +
-      "ueData\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "ueData.proto\032\017ItemParam.proto\032\031Unk3000_P" +
+      "KHPBOIDLEA.proto\"\266\001\n\023Unk3000_JDCOHPBDPED" +
+      "\022\'\n\023Unk3100_HFOFIMOGDBD\030\002 \003(\0132\n.ItemPara" +
+      "m\0221\n\023Unk3000_CNOABNNCPOL\030\006 \001(\0162\024.Unk3000" +
+      "_PKHPBOIDLEA\022\017\n\007retcode\030\007 \001(\005\0222\n\026compoun" +
+      "d_que_data_list\030\001 \003(\0132\022.CompoundQueueDat" +
+      "aB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.CompoundQueueDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.getDescriptor(),
         });
     internal_static_Unk3000_JDCOHPBDPED_descriptor =
@@ -1029,8 +1403,9 @@ public final class Unk3000JDCOHPBDPED {
     internal_static_Unk3000_JDCOHPBDPED_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Unk3000_JDCOHPBDPED_descriptor,
-        new java.lang.String[] { "Unk3000CNOABNNCPOL", "CompoundQueDataList", "Retcode", });
+        new java.lang.String[] { "Unk3100HFOFIMOGDBD", "Unk3000CNOABNNCPOL", "Retcode", "CompoundQueDataList", });
     emu.grasscutter.net.proto.CompoundQueueDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
     emu.grasscutter.net.proto.Unk3000PKHPBOIDLEA.getDescriptor();
   }
 

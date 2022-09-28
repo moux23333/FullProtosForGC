@@ -1939,8 +1939,8 @@ public final class RogueStageInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024RogueStageInfo.proto\032\035RogueShowAvatarT" +
-      "eamInfo.proto\032\031RoguelikeRuneRecord.proto" +
+      "\n\024RogueStageInfo.proto\032\031RoguelikeRuneRec" +
+      "ord.proto\032\035RogueShowAvatarTeamInfo.proto" +
       "\"\232\003\n\016RogueStageInfo\022-\n\013avatar_team\030\002 \001(\013" +
       "2\030.RogueShowAvatarTeamInfo\022\021\n\tis_passed\030" +
       "\005 \001(\010\022\020\n\010stage_id\030\007 \001(\r\022\035\n\024revise_monste" +
@@ -1957,8 +1957,8 @@ public final class RogueStageInfoOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.RogueShowAvatarTeamInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.RogueShowAvatarTeamInfoOuterClass.getDescriptor(),
         });
     internal_static_RogueStageInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1966,8 +1966,8 @@ public final class RogueStageInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueStageInfo_descriptor,
         new java.lang.String[] { "AvatarTeam", "IsPassed", "StageId", "ReviseMonsterLevel", "RuneRecordList", "IsOpen", "CurLevel", "CachedCoinCNum", "IsTakenReward", "IsInCombat", "CachedCoinBNum", "ExploreCellNum", "CoinCNum", "IsExplored", "MaxPassedLevel", });
-    emu.grasscutter.net.proto.RogueShowAvatarTeamInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.RogueShowAvatarTeamInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

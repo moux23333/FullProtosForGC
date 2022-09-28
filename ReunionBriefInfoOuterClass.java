@@ -19,52 +19,16 @@ public final class ReunionBriefInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_taken_first_gift = 8;</code>
-     * @return The isTakenFirstGift.
+     * <code>uint32 first_gift_reward_id = 15;</code>
+     * @return The firstGiftRewardId.
      */
-    boolean getIsTakenFirstGift();
-
-    /**
-     * <code>bool mission_has_reward = 9;</code>
-     * @return The missionHasReward.
-     */
-    boolean getMissionHasReward();
+    int getFirstGiftRewardId();
 
     /**
      * <code>uint32 privilege_id = 5;</code>
      * @return The privilegeId.
      */
     int getPrivilegeId();
-
-    /**
-     * <code>uint32 start_time = 7;</code>
-     * @return The startTime.
-     */
-    int getStartTime();
-
-    /**
-     * <code>string version = 13;</code>
-     * @return The version.
-     */
-    java.lang.String getVersion();
-    /**
-     * <code>string version = 13;</code>
-     * @return The bytes for version.
-     */
-    com.google.protobuf.ByteString
-        getVersionBytes();
-
-    /**
-     * <code>bool sign_in_has_reward = 2;</code>
-     * @return The signInHasReward.
-     */
-    boolean getSignInHasReward();
-
-    /**
-     * <code>uint32 first_gift_reward_id = 15;</code>
-     * @return The firstGiftRewardId.
-     */
-    int getFirstGiftRewardId();
 
     /**
      * <code>uint32 mission_id = 10;</code>
@@ -79,16 +43,67 @@ public final class ReunionBriefInfoOuterClass {
     int getFirstDayStartTime();
 
     /**
-     * <code>uint32 sign_in_config_id = 6;</code>
-     * @return The signInConfigId.
+     * <code>bool sign_in_has_reward = 2;</code>
+     * @return The signInHasReward.
      */
-    int getSignInConfigId();
+    boolean getSignInHasReward();
+
+    /**
+     * <code>uint32 start_time = 7;</code>
+     * @return The startTime.
+     */
+    int getStartTime();
+
+    /**
+     * <code>bool is_taken_first_gift = 8;</code>
+     * @return The isTakenFirstGift.
+     */
+    boolean getIsTakenFirstGift();
 
     /**
      * <code>uint32 finish_time = 12;</code>
      * @return The finishTime.
      */
     int getFinishTime();
+
+    /**
+     * <code>bool mission_has_reward = 9;</code>
+     * @return The missionHasReward.
+     */
+    boolean getMissionHasReward();
+
+    /**
+     * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+     * @return Whether the privilegeInfo field is set.
+     */
+    boolean hasPrivilegeInfo();
+    /**
+     * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+     * @return The privilegeInfo.
+     */
+    emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo getPrivilegeInfo();
+    /**
+     * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+     */
+    emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder getPrivilegeInfoOrBuilder();
+
+    /**
+     * <code>string version = 13;</code>
+     * @return The version.
+     */
+    java.lang.String getVersion();
+    /**
+     * <code>string version = 13;</code>
+     * @return The bytes for version.
+     */
+    com.google.protobuf.ByteString
+        getVersionBytes();
+
+    /**
+     * <code>uint32 sign_in_config_id = 6;</code>
+     * @return The signInConfigId.
+     */
+    int getSignInConfigId();
   }
   /**
    * Protobuf type {@code ReunionBriefInfo}
@@ -187,6 +202,19 @@ public final class ReunionBriefInfoOuterClass {
               version_ = s;
               break;
             }
+            case 114: {
+              emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder subBuilder = null;
+              if (privilegeInfo_ != null) {
+                subBuilder = privilegeInfo_.toBuilder();
+              }
+              privilegeInfo_ = input.readMessage(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(privilegeInfo_);
+                privilegeInfo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             case 120: {
 
               firstGiftRewardId_ = input.readUInt32();
@@ -224,26 +252,15 @@ public final class ReunionBriefInfoOuterClass {
               emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.class, emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.Builder.class);
     }
 
-    public static final int IS_TAKEN_FIRST_GIFT_FIELD_NUMBER = 8;
-    private boolean isTakenFirstGift_;
+    public static final int FIRST_GIFT_REWARD_ID_FIELD_NUMBER = 15;
+    private int firstGiftRewardId_;
     /**
-     * <code>bool is_taken_first_gift = 8;</code>
-     * @return The isTakenFirstGift.
+     * <code>uint32 first_gift_reward_id = 15;</code>
+     * @return The firstGiftRewardId.
      */
     @java.lang.Override
-    public boolean getIsTakenFirstGift() {
-      return isTakenFirstGift_;
-    }
-
-    public static final int MISSION_HAS_REWARD_FIELD_NUMBER = 9;
-    private boolean missionHasReward_;
-    /**
-     * <code>bool mission_has_reward = 9;</code>
-     * @return The missionHasReward.
-     */
-    @java.lang.Override
-    public boolean getMissionHasReward() {
-      return missionHasReward_;
+    public int getFirstGiftRewardId() {
+      return firstGiftRewardId_;
     }
 
     public static final int PRIVILEGE_ID_FIELD_NUMBER = 5;
@@ -257,6 +274,39 @@ public final class ReunionBriefInfoOuterClass {
       return privilegeId_;
     }
 
+    public static final int MISSION_ID_FIELD_NUMBER = 10;
+    private int missionId_;
+    /**
+     * <code>uint32 mission_id = 10;</code>
+     * @return The missionId.
+     */
+    @java.lang.Override
+    public int getMissionId() {
+      return missionId_;
+    }
+
+    public static final int FIRST_DAY_START_TIME_FIELD_NUMBER = 3;
+    private int firstDayStartTime_;
+    /**
+     * <code>uint32 first_day_start_time = 3;</code>
+     * @return The firstDayStartTime.
+     */
+    @java.lang.Override
+    public int getFirstDayStartTime() {
+      return firstDayStartTime_;
+    }
+
+    public static final int SIGN_IN_HAS_REWARD_FIELD_NUMBER = 2;
+    private boolean signInHasReward_;
+    /**
+     * <code>bool sign_in_has_reward = 2;</code>
+     * @return The signInHasReward.
+     */
+    @java.lang.Override
+    public boolean getSignInHasReward() {
+      return signInHasReward_;
+    }
+
     public static final int START_TIME_FIELD_NUMBER = 7;
     private int startTime_;
     /**
@@ -266,6 +316,65 @@ public final class ReunionBriefInfoOuterClass {
     @java.lang.Override
     public int getStartTime() {
       return startTime_;
+    }
+
+    public static final int IS_TAKEN_FIRST_GIFT_FIELD_NUMBER = 8;
+    private boolean isTakenFirstGift_;
+    /**
+     * <code>bool is_taken_first_gift = 8;</code>
+     * @return The isTakenFirstGift.
+     */
+    @java.lang.Override
+    public boolean getIsTakenFirstGift() {
+      return isTakenFirstGift_;
+    }
+
+    public static final int FINISH_TIME_FIELD_NUMBER = 12;
+    private int finishTime_;
+    /**
+     * <code>uint32 finish_time = 12;</code>
+     * @return The finishTime.
+     */
+    @java.lang.Override
+    public int getFinishTime() {
+      return finishTime_;
+    }
+
+    public static final int MISSION_HAS_REWARD_FIELD_NUMBER = 9;
+    private boolean missionHasReward_;
+    /**
+     * <code>bool mission_has_reward = 9;</code>
+     * @return The missionHasReward.
+     */
+    @java.lang.Override
+    public boolean getMissionHasReward() {
+      return missionHasReward_;
+    }
+
+    public static final int PRIVILEGE_INFO_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo privilegeInfo_;
+    /**
+     * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+     * @return Whether the privilegeInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasPrivilegeInfo() {
+      return privilegeInfo_ != null;
+    }
+    /**
+     * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+     * @return The privilegeInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo getPrivilegeInfo() {
+      return privilegeInfo_ == null ? emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.getDefaultInstance() : privilegeInfo_;
+    }
+    /**
+     * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder getPrivilegeInfoOrBuilder() {
+      return getPrivilegeInfo();
     }
 
     public static final int VERSION_FIELD_NUMBER = 13;
@@ -306,50 +415,6 @@ public final class ReunionBriefInfoOuterClass {
       }
     }
 
-    public static final int SIGN_IN_HAS_REWARD_FIELD_NUMBER = 2;
-    private boolean signInHasReward_;
-    /**
-     * <code>bool sign_in_has_reward = 2;</code>
-     * @return The signInHasReward.
-     */
-    @java.lang.Override
-    public boolean getSignInHasReward() {
-      return signInHasReward_;
-    }
-
-    public static final int FIRST_GIFT_REWARD_ID_FIELD_NUMBER = 15;
-    private int firstGiftRewardId_;
-    /**
-     * <code>uint32 first_gift_reward_id = 15;</code>
-     * @return The firstGiftRewardId.
-     */
-    @java.lang.Override
-    public int getFirstGiftRewardId() {
-      return firstGiftRewardId_;
-    }
-
-    public static final int MISSION_ID_FIELD_NUMBER = 10;
-    private int missionId_;
-    /**
-     * <code>uint32 mission_id = 10;</code>
-     * @return The missionId.
-     */
-    @java.lang.Override
-    public int getMissionId() {
-      return missionId_;
-    }
-
-    public static final int FIRST_DAY_START_TIME_FIELD_NUMBER = 3;
-    private int firstDayStartTime_;
-    /**
-     * <code>uint32 first_day_start_time = 3;</code>
-     * @return The firstDayStartTime.
-     */
-    @java.lang.Override
-    public int getFirstDayStartTime() {
-      return firstDayStartTime_;
-    }
-
     public static final int SIGN_IN_CONFIG_ID_FIELD_NUMBER = 6;
     private int signInConfigId_;
     /**
@@ -359,17 +424,6 @@ public final class ReunionBriefInfoOuterClass {
     @java.lang.Override
     public int getSignInConfigId() {
       return signInConfigId_;
-    }
-
-    public static final int FINISH_TIME_FIELD_NUMBER = 12;
-    private int finishTime_;
-    /**
-     * <code>uint32 finish_time = 12;</code>
-     * @return The finishTime.
-     */
-    @java.lang.Override
-    public int getFinishTime() {
-      return finishTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -415,6 +469,9 @@ public final class ReunionBriefInfoOuterClass {
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(version_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 13, version_);
+      }
+      if (privilegeInfo_ != null) {
+        output.writeMessage(14, getPrivilegeInfo());
       }
       if (firstGiftRewardId_ != 0) {
         output.writeUInt32(15, firstGiftRewardId_);
@@ -467,6 +524,10 @@ public final class ReunionBriefInfoOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(version_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, version_);
       }
+      if (privilegeInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getPrivilegeInfo());
+      }
       if (firstGiftRewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, firstGiftRewardId_);
@@ -486,28 +547,33 @@ public final class ReunionBriefInfoOuterClass {
       }
       emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo other = (emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo) obj;
 
-      if (getIsTakenFirstGift()
-          != other.getIsTakenFirstGift()) return false;
-      if (getMissionHasReward()
-          != other.getMissionHasReward()) return false;
-      if (getPrivilegeId()
-          != other.getPrivilegeId()) return false;
-      if (getStartTime()
-          != other.getStartTime()) return false;
-      if (!getVersion()
-          .equals(other.getVersion())) return false;
-      if (getSignInHasReward()
-          != other.getSignInHasReward()) return false;
       if (getFirstGiftRewardId()
           != other.getFirstGiftRewardId()) return false;
+      if (getPrivilegeId()
+          != other.getPrivilegeId()) return false;
       if (getMissionId()
           != other.getMissionId()) return false;
       if (getFirstDayStartTime()
           != other.getFirstDayStartTime()) return false;
-      if (getSignInConfigId()
-          != other.getSignInConfigId()) return false;
+      if (getSignInHasReward()
+          != other.getSignInHasReward()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
+      if (getIsTakenFirstGift()
+          != other.getIsTakenFirstGift()) return false;
       if (getFinishTime()
           != other.getFinishTime()) return false;
+      if (getMissionHasReward()
+          != other.getMissionHasReward()) return false;
+      if (hasPrivilegeInfo() != other.hasPrivilegeInfo()) return false;
+      if (hasPrivilegeInfo()) {
+        if (!getPrivilegeInfo()
+            .equals(other.getPrivilegeInfo())) return false;
+      }
+      if (!getVersion()
+          .equals(other.getVersion())) return false;
+      if (getSignInConfigId()
+          != other.getSignInConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -519,31 +585,35 @@ public final class ReunionBriefInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_TAKEN_FIRST_GIFT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTakenFirstGift());
-      hash = (37 * hash) + MISSION_HAS_REWARD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMissionHasReward());
-      hash = (37 * hash) + PRIVILEGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPrivilegeId();
-      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + VERSION_FIELD_NUMBER;
-      hash = (53 * hash) + getVersion().hashCode();
-      hash = (37 * hash) + SIGN_IN_HAS_REWARD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getSignInHasReward());
       hash = (37 * hash) + FIRST_GIFT_REWARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFirstGiftRewardId();
+      hash = (37 * hash) + PRIVILEGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPrivilegeId();
       hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMissionId();
       hash = (37 * hash) + FIRST_DAY_START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getFirstDayStartTime();
-      hash = (37 * hash) + SIGN_IN_CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSignInConfigId();
+      hash = (37 * hash) + SIGN_IN_HAS_REWARD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getSignInHasReward());
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
+      hash = (37 * hash) + IS_TAKEN_FIRST_GIFT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTakenFirstGift());
       hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getFinishTime();
+      hash = (37 * hash) + MISSION_HAS_REWARD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getMissionHasReward());
+      if (hasPrivilegeInfo()) {
+        hash = (37 * hash) + PRIVILEGE_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getPrivilegeInfo().hashCode();
+      }
+      hash = (37 * hash) + VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getVersion().hashCode();
+      hash = (37 * hash) + SIGN_IN_CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSignInConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -677,27 +747,33 @@ public final class ReunionBriefInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isTakenFirstGift_ = false;
-
-        missionHasReward_ = false;
+        firstGiftRewardId_ = 0;
 
         privilegeId_ = 0;
-
-        startTime_ = 0;
-
-        version_ = "";
-
-        signInHasReward_ = false;
-
-        firstGiftRewardId_ = 0;
 
         missionId_ = 0;
 
         firstDayStartTime_ = 0;
 
-        signInConfigId_ = 0;
+        signInHasReward_ = false;
+
+        startTime_ = 0;
+
+        isTakenFirstGift_ = false;
 
         finishTime_ = 0;
+
+        missionHasReward_ = false;
+
+        if (privilegeInfoBuilder_ == null) {
+          privilegeInfo_ = null;
+        } else {
+          privilegeInfo_ = null;
+          privilegeInfoBuilder_ = null;
+        }
+        version_ = "";
+
+        signInConfigId_ = 0;
 
         return this;
       }
@@ -725,17 +801,22 @@ public final class ReunionBriefInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo buildPartial() {
         emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo result = new emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo(this);
-        result.isTakenFirstGift_ = isTakenFirstGift_;
-        result.missionHasReward_ = missionHasReward_;
-        result.privilegeId_ = privilegeId_;
-        result.startTime_ = startTime_;
-        result.version_ = version_;
-        result.signInHasReward_ = signInHasReward_;
         result.firstGiftRewardId_ = firstGiftRewardId_;
+        result.privilegeId_ = privilegeId_;
         result.missionId_ = missionId_;
         result.firstDayStartTime_ = firstDayStartTime_;
-        result.signInConfigId_ = signInConfigId_;
+        result.signInHasReward_ = signInHasReward_;
+        result.startTime_ = startTime_;
+        result.isTakenFirstGift_ = isTakenFirstGift_;
         result.finishTime_ = finishTime_;
+        result.missionHasReward_ = missionHasReward_;
+        if (privilegeInfoBuilder_ == null) {
+          result.privilegeInfo_ = privilegeInfo_;
+        } else {
+          result.privilegeInfo_ = privilegeInfoBuilder_.build();
+        }
+        result.version_ = version_;
+        result.signInConfigId_ = signInConfigId_;
         onBuilt();
         return result;
       }
@@ -784,27 +865,11 @@ public final class ReunionBriefInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo other) {
         if (other == emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.getDefaultInstance()) return this;
-        if (other.getIsTakenFirstGift() != false) {
-          setIsTakenFirstGift(other.getIsTakenFirstGift());
-        }
-        if (other.getMissionHasReward() != false) {
-          setMissionHasReward(other.getMissionHasReward());
+        if (other.getFirstGiftRewardId() != 0) {
+          setFirstGiftRewardId(other.getFirstGiftRewardId());
         }
         if (other.getPrivilegeId() != 0) {
           setPrivilegeId(other.getPrivilegeId());
-        }
-        if (other.getStartTime() != 0) {
-          setStartTime(other.getStartTime());
-        }
-        if (!other.getVersion().isEmpty()) {
-          version_ = other.version_;
-          onChanged();
-        }
-        if (other.getSignInHasReward() != false) {
-          setSignInHasReward(other.getSignInHasReward());
-        }
-        if (other.getFirstGiftRewardId() != 0) {
-          setFirstGiftRewardId(other.getFirstGiftRewardId());
         }
         if (other.getMissionId() != 0) {
           setMissionId(other.getMissionId());
@@ -812,11 +877,30 @@ public final class ReunionBriefInfoOuterClass {
         if (other.getFirstDayStartTime() != 0) {
           setFirstDayStartTime(other.getFirstDayStartTime());
         }
-        if (other.getSignInConfigId() != 0) {
-          setSignInConfigId(other.getSignInConfigId());
+        if (other.getSignInHasReward() != false) {
+          setSignInHasReward(other.getSignInHasReward());
+        }
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getIsTakenFirstGift() != false) {
+          setIsTakenFirstGift(other.getIsTakenFirstGift());
         }
         if (other.getFinishTime() != 0) {
           setFinishTime(other.getFinishTime());
+        }
+        if (other.getMissionHasReward() != false) {
+          setMissionHasReward(other.getMissionHasReward());
+        }
+        if (other.hasPrivilegeInfo()) {
+          mergePrivilegeInfo(other.getPrivilegeInfo());
+        }
+        if (!other.getVersion().isEmpty()) {
+          version_ = other.version_;
+          onChanged();
+        }
+        if (other.getSignInConfigId() != 0) {
+          setSignInConfigId(other.getSignInConfigId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -847,64 +931,33 @@ public final class ReunionBriefInfoOuterClass {
         return this;
       }
 
-      private boolean isTakenFirstGift_ ;
+      private int firstGiftRewardId_ ;
       /**
-       * <code>bool is_taken_first_gift = 8;</code>
-       * @return The isTakenFirstGift.
+       * <code>uint32 first_gift_reward_id = 15;</code>
+       * @return The firstGiftRewardId.
        */
       @java.lang.Override
-      public boolean getIsTakenFirstGift() {
-        return isTakenFirstGift_;
+      public int getFirstGiftRewardId() {
+        return firstGiftRewardId_;
       }
       /**
-       * <code>bool is_taken_first_gift = 8;</code>
-       * @param value The isTakenFirstGift to set.
+       * <code>uint32 first_gift_reward_id = 15;</code>
+       * @param value The firstGiftRewardId to set.
        * @return This builder for chaining.
        */
-      public Builder setIsTakenFirstGift(boolean value) {
+      public Builder setFirstGiftRewardId(int value) {
         
-        isTakenFirstGift_ = value;
+        firstGiftRewardId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_taken_first_gift = 8;</code>
+       * <code>uint32 first_gift_reward_id = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsTakenFirstGift() {
+      public Builder clearFirstGiftRewardId() {
         
-        isTakenFirstGift_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean missionHasReward_ ;
-      /**
-       * <code>bool mission_has_reward = 9;</code>
-       * @return The missionHasReward.
-       */
-      @java.lang.Override
-      public boolean getMissionHasReward() {
-        return missionHasReward_;
-      }
-      /**
-       * <code>bool mission_has_reward = 9;</code>
-       * @param value The missionHasReward to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMissionHasReward(boolean value) {
-        
-        missionHasReward_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool mission_has_reward = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMissionHasReward() {
-        
-        missionHasReward_ = false;
+        firstGiftRewardId_ = 0;
         onChanged();
         return this;
       }
@@ -940,6 +993,99 @@ public final class ReunionBriefInfoOuterClass {
         return this;
       }
 
+      private int missionId_ ;
+      /**
+       * <code>uint32 mission_id = 10;</code>
+       * @return The missionId.
+       */
+      @java.lang.Override
+      public int getMissionId() {
+        return missionId_;
+      }
+      /**
+       * <code>uint32 mission_id = 10;</code>
+       * @param value The missionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMissionId(int value) {
+        
+        missionId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mission_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMissionId() {
+        
+        missionId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int firstDayStartTime_ ;
+      /**
+       * <code>uint32 first_day_start_time = 3;</code>
+       * @return The firstDayStartTime.
+       */
+      @java.lang.Override
+      public int getFirstDayStartTime() {
+        return firstDayStartTime_;
+      }
+      /**
+       * <code>uint32 first_day_start_time = 3;</code>
+       * @param value The firstDayStartTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFirstDayStartTime(int value) {
+        
+        firstDayStartTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 first_day_start_time = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFirstDayStartTime() {
+        
+        firstDayStartTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean signInHasReward_ ;
+      /**
+       * <code>bool sign_in_has_reward = 2;</code>
+       * @return The signInHasReward.
+       */
+      @java.lang.Override
+      public boolean getSignInHasReward() {
+        return signInHasReward_;
+      }
+      /**
+       * <code>bool sign_in_has_reward = 2;</code>
+       * @param value The signInHasReward to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSignInHasReward(boolean value) {
+        
+        signInHasReward_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool sign_in_has_reward = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSignInHasReward() {
+        
+        signInHasReward_ = false;
+        onChanged();
+        return this;
+      }
+
       private int startTime_ ;
       /**
        * <code>uint32 start_time = 7;</code>
@@ -969,6 +1115,218 @@ public final class ReunionBriefInfoOuterClass {
         startTime_ = 0;
         onChanged();
         return this;
+      }
+
+      private boolean isTakenFirstGift_ ;
+      /**
+       * <code>bool is_taken_first_gift = 8;</code>
+       * @return The isTakenFirstGift.
+       */
+      @java.lang.Override
+      public boolean getIsTakenFirstGift() {
+        return isTakenFirstGift_;
+      }
+      /**
+       * <code>bool is_taken_first_gift = 8;</code>
+       * @param value The isTakenFirstGift to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsTakenFirstGift(boolean value) {
+        
+        isTakenFirstGift_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_taken_first_gift = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsTakenFirstGift() {
+        
+        isTakenFirstGift_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int finishTime_ ;
+      /**
+       * <code>uint32 finish_time = 12;</code>
+       * @return The finishTime.
+       */
+      @java.lang.Override
+      public int getFinishTime() {
+        return finishTime_;
+      }
+      /**
+       * <code>uint32 finish_time = 12;</code>
+       * @param value The finishTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishTime(int value) {
+        
+        finishTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finish_time = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishTime() {
+        
+        finishTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean missionHasReward_ ;
+      /**
+       * <code>bool mission_has_reward = 9;</code>
+       * @return The missionHasReward.
+       */
+      @java.lang.Override
+      public boolean getMissionHasReward() {
+        return missionHasReward_;
+      }
+      /**
+       * <code>bool mission_has_reward = 9;</code>
+       * @param value The missionHasReward to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMissionHasReward(boolean value) {
+        
+        missionHasReward_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool mission_has_reward = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMissionHasReward() {
+        
+        missionHasReward_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo privilegeInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder> privilegeInfoBuilder_;
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       * @return Whether the privilegeInfo field is set.
+       */
+      public boolean hasPrivilegeInfo() {
+        return privilegeInfoBuilder_ != null || privilegeInfo_ != null;
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       * @return The privilegeInfo.
+       */
+      public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo getPrivilegeInfo() {
+        if (privilegeInfoBuilder_ == null) {
+          return privilegeInfo_ == null ? emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.getDefaultInstance() : privilegeInfo_;
+        } else {
+          return privilegeInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       */
+      public Builder setPrivilegeInfo(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo value) {
+        if (privilegeInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          privilegeInfo_ = value;
+          onChanged();
+        } else {
+          privilegeInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       */
+      public Builder setPrivilegeInfo(
+          emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder builderForValue) {
+        if (privilegeInfoBuilder_ == null) {
+          privilegeInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          privilegeInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       */
+      public Builder mergePrivilegeInfo(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo value) {
+        if (privilegeInfoBuilder_ == null) {
+          if (privilegeInfo_ != null) {
+            privilegeInfo_ =
+              emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.newBuilder(privilegeInfo_).mergeFrom(value).buildPartial();
+          } else {
+            privilegeInfo_ = value;
+          }
+          onChanged();
+        } else {
+          privilegeInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       */
+      public Builder clearPrivilegeInfo() {
+        if (privilegeInfoBuilder_ == null) {
+          privilegeInfo_ = null;
+          onChanged();
+        } else {
+          privilegeInfo_ = null;
+          privilegeInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       */
+      public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder getPrivilegeInfoBuilder() {
+        
+        onChanged();
+        return getPrivilegeInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       */
+      public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder getPrivilegeInfoOrBuilder() {
+        if (privilegeInfoBuilder_ != null) {
+          return privilegeInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return privilegeInfo_ == null ?
+              emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.getDefaultInstance() : privilegeInfo_;
+        }
+      }
+      /**
+       * <code>.ReunionPrivilegeInfo privilege_info = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder> 
+          getPrivilegeInfoFieldBuilder() {
+        if (privilegeInfoBuilder_ == null) {
+          privilegeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder>(
+                  getPrivilegeInfo(),
+                  getParentForChildren(),
+                  isClean());
+          privilegeInfo_ = null;
+        }
+        return privilegeInfoBuilder_;
       }
 
       private java.lang.Object version_ = "";
@@ -1047,130 +1405,6 @@ public final class ReunionBriefInfoOuterClass {
         return this;
       }
 
-      private boolean signInHasReward_ ;
-      /**
-       * <code>bool sign_in_has_reward = 2;</code>
-       * @return The signInHasReward.
-       */
-      @java.lang.Override
-      public boolean getSignInHasReward() {
-        return signInHasReward_;
-      }
-      /**
-       * <code>bool sign_in_has_reward = 2;</code>
-       * @param value The signInHasReward to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSignInHasReward(boolean value) {
-        
-        signInHasReward_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool sign_in_has_reward = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSignInHasReward() {
-        
-        signInHasReward_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int firstGiftRewardId_ ;
-      /**
-       * <code>uint32 first_gift_reward_id = 15;</code>
-       * @return The firstGiftRewardId.
-       */
-      @java.lang.Override
-      public int getFirstGiftRewardId() {
-        return firstGiftRewardId_;
-      }
-      /**
-       * <code>uint32 first_gift_reward_id = 15;</code>
-       * @param value The firstGiftRewardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFirstGiftRewardId(int value) {
-        
-        firstGiftRewardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 first_gift_reward_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFirstGiftRewardId() {
-        
-        firstGiftRewardId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int missionId_ ;
-      /**
-       * <code>uint32 mission_id = 10;</code>
-       * @return The missionId.
-       */
-      @java.lang.Override
-      public int getMissionId() {
-        return missionId_;
-      }
-      /**
-       * <code>uint32 mission_id = 10;</code>
-       * @param value The missionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMissionId(int value) {
-        
-        missionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mission_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMissionId() {
-        
-        missionId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int firstDayStartTime_ ;
-      /**
-       * <code>uint32 first_day_start_time = 3;</code>
-       * @return The firstDayStartTime.
-       */
-      @java.lang.Override
-      public int getFirstDayStartTime() {
-        return firstDayStartTime_;
-      }
-      /**
-       * <code>uint32 first_day_start_time = 3;</code>
-       * @param value The firstDayStartTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFirstDayStartTime(int value) {
-        
-        firstDayStartTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 first_day_start_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFirstDayStartTime() {
-        
-        firstDayStartTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int signInConfigId_ ;
       /**
        * <code>uint32 sign_in_config_id = 6;</code>
@@ -1198,37 +1432,6 @@ public final class ReunionBriefInfoOuterClass {
       public Builder clearSignInConfigId() {
         
         signInConfigId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int finishTime_ ;
-      /**
-       * <code>uint32 finish_time = 12;</code>
-       * @return The finishTime.
-       */
-      @java.lang.Override
-      public int getFinishTime() {
-        return finishTime_;
-      }
-      /**
-       * <code>uint32 finish_time = 12;</code>
-       * @param value The finishTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishTime(int value) {
-        
-        finishTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finish_time = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishTime() {
-        
-        finishTime_ = 0;
         onChanged();
         return this;
       }
@@ -1299,26 +1502,30 @@ public final class ReunionBriefInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026ReunionBriefInfo.proto\"\242\002\n\020ReunionBrie" +
-      "fInfo\022\033\n\023is_taken_first_gift\030\010 \001(\010\022\032\n\022mi" +
-      "ssion_has_reward\030\t \001(\010\022\024\n\014privilege_id\030\005" +
-      " \001(\r\022\022\n\nstart_time\030\007 \001(\r\022\017\n\007version\030\r \001(" +
-      "\t\022\032\n\022sign_in_has_reward\030\002 \001(\010\022\034\n\024first_g" +
-      "ift_reward_id\030\017 \001(\r\022\022\n\nmission_id\030\n \001(\r\022" +
-      "\034\n\024first_day_start_time\030\003 \001(\r\022\031\n\021sign_in" +
-      "_config_id\030\006 \001(\r\022\023\n\013finish_time\030\014 \001(\rB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\026ReunionBriefInfo.proto\032\032ReunionPrivile" +
+      "geInfo.proto\"\321\002\n\020ReunionBriefInfo\022\034\n\024fir" +
+      "st_gift_reward_id\030\017 \001(\r\022\024\n\014privilege_id\030" +
+      "\005 \001(\r\022\022\n\nmission_id\030\n \001(\r\022\034\n\024first_day_s" +
+      "tart_time\030\003 \001(\r\022\032\n\022sign_in_has_reward\030\002 " +
+      "\001(\010\022\022\n\nstart_time\030\007 \001(\r\022\033\n\023is_taken_firs" +
+      "t_gift\030\010 \001(\010\022\023\n\013finish_time\030\014 \001(\r\022\032\n\022mis" +
+      "sion_has_reward\030\t \001(\010\022-\n\016privilege_info\030" +
+      "\016 \001(\0132\025.ReunionPrivilegeInfo\022\017\n\007version\030" +
+      "\r \001(\t\022\031\n\021sign_in_config_id\030\006 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.getDescriptor(),
         });
     internal_static_ReunionBriefInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ReunionBriefInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionBriefInfo_descriptor,
-        new java.lang.String[] { "IsTakenFirstGift", "MissionHasReward", "PrivilegeId", "StartTime", "Version", "SignInHasReward", "FirstGiftRewardId", "MissionId", "FirstDayStartTime", "SignInConfigId", "FinishTime", });
+        new java.lang.String[] { "FirstGiftRewardId", "PrivilegeId", "MissionId", "FirstDayStartTime", "SignInHasReward", "StartTime", "IsTakenFirstGift", "FinishTime", "MissionHasReward", "PrivilegeInfo", "Version", "SignInConfigId", });
+    emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

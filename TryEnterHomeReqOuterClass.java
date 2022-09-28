@@ -25,6 +25,12 @@ public final class TryEnterHomeReqOuterClass {
     int getTargetUid();
 
     /**
+     * <code>bool Unk3100_KEMFDDMEBIG = 10;</code>
+     * @return The unk3100KEMFDDMEBIG.
+     */
+    boolean getUnk3100KEMFDDMEBIG();
+
+    /**
      * <code>uint32 target_point = 9;</code>
      * @return The targetPoint.
      */
@@ -92,6 +98,11 @@ public final class TryEnterHomeReqOuterClass {
               targetPoint_ = input.readUInt32();
               break;
             }
+            case 80: {
+
+              unk3100KEMFDDMEBIG_ = input.readBool();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -135,6 +146,17 @@ public final class TryEnterHomeReqOuterClass {
       return targetUid_;
     }
 
+    public static final int UNK3100_KEMFDDMEBIG_FIELD_NUMBER = 10;
+    private boolean unk3100KEMFDDMEBIG_;
+    /**
+     * <code>bool Unk3100_KEMFDDMEBIG = 10;</code>
+     * @return The unk3100KEMFDDMEBIG.
+     */
+    @java.lang.Override
+    public boolean getUnk3100KEMFDDMEBIG() {
+      return unk3100KEMFDDMEBIG_;
+    }
+
     public static final int TARGET_POINT_FIELD_NUMBER = 9;
     private int targetPoint_;
     /**
@@ -166,6 +188,9 @@ public final class TryEnterHomeReqOuterClass {
       if (targetPoint_ != 0) {
         output.writeUInt32(9, targetPoint_);
       }
+      if (unk3100KEMFDDMEBIG_ != false) {
+        output.writeBool(10, unk3100KEMFDDMEBIG_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -182,6 +207,10 @@ public final class TryEnterHomeReqOuterClass {
       if (targetPoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, targetPoint_);
+      }
+      if (unk3100KEMFDDMEBIG_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, unk3100KEMFDDMEBIG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -200,6 +229,8 @@ public final class TryEnterHomeReqOuterClass {
 
       if (getTargetUid()
           != other.getTargetUid()) return false;
+      if (getUnk3100KEMFDDMEBIG()
+          != other.getUnk3100KEMFDDMEBIG()) return false;
       if (getTargetPoint()
           != other.getTargetPoint()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -215,6 +246,9 @@ public final class TryEnterHomeReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
+      hash = (37 * hash) + UNK3100_KEMFDDMEBIG_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3100KEMFDDMEBIG());
       hash = (37 * hash) + TARGET_POINT_FIELD_NUMBER;
       hash = (53 * hash) + getTargetPoint();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -359,6 +393,8 @@ public final class TryEnterHomeReqOuterClass {
         super.clear();
         targetUid_ = 0;
 
+        unk3100KEMFDDMEBIG_ = false;
+
         targetPoint_ = 0;
 
         return this;
@@ -388,6 +424,7 @@ public final class TryEnterHomeReqOuterClass {
       public emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq buildPartial() {
         emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq result = new emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq(this);
         result.targetUid_ = targetUid_;
+        result.unk3100KEMFDDMEBIG_ = unk3100KEMFDDMEBIG_;
         result.targetPoint_ = targetPoint_;
         onBuilt();
         return result;
@@ -439,6 +476,9 @@ public final class TryEnterHomeReqOuterClass {
         if (other == emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.getDefaultInstance()) return this;
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
+        }
+        if (other.getUnk3100KEMFDDMEBIG() != false) {
+          setUnk3100KEMFDDMEBIG(other.getUnk3100KEMFDDMEBIG());
         }
         if (other.getTargetPoint() != 0) {
           setTargetPoint(other.getTargetPoint());
@@ -499,6 +539,37 @@ public final class TryEnterHomeReqOuterClass {
       public Builder clearTargetUid() {
         
         targetUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3100KEMFDDMEBIG_ ;
+      /**
+       * <code>bool Unk3100_KEMFDDMEBIG = 10;</code>
+       * @return The unk3100KEMFDDMEBIG.
+       */
+      @java.lang.Override
+      public boolean getUnk3100KEMFDDMEBIG() {
+        return unk3100KEMFDDMEBIG_;
+      }
+      /**
+       * <code>bool Unk3100_KEMFDDMEBIG = 10;</code>
+       * @param value The unk3100KEMFDDMEBIG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3100KEMFDDMEBIG(boolean value) {
+        
+        unk3100KEMFDDMEBIG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3100_KEMFDDMEBIG = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3100KEMFDDMEBIG() {
+        
+        unk3100KEMFDDMEBIG_ = false;
         onChanged();
         return this;
       }
@@ -600,10 +671,10 @@ public final class TryEnterHomeReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025TryEnterHomeReq.proto\";\n\017TryEnterHomeR" +
-      "eq\022\022\n\ntarget_uid\030\003 \001(\r\022\024\n\014target_point\030\t" +
-      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "\n\025TryEnterHomeReq.proto\"X\n\017TryEnterHomeR" +
+      "eq\022\022\n\ntarget_uid\030\003 \001(\r\022\033\n\023Unk3100_KEMFDD" +
+      "MEBIG\030\n \001(\010\022\024\n\014target_point\030\t \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -614,7 +685,7 @@ public final class TryEnterHomeReqOuterClass {
     internal_static_TryEnterHomeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TryEnterHomeReq_descriptor,
-        new java.lang.String[] { "TargetUid", "TargetPoint", });
+        new java.lang.String[] { "TargetUid", "Unk3100KEMFDDMEBIG", "TargetPoint", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
