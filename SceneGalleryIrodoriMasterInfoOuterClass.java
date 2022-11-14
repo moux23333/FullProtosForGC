@@ -31,10 +31,10 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
     int getDifficulty();
 
     /**
-     * <code>bool Unk2700_FKDMOBOGMCM = 5;</code>
-     * @return The unk2700FKDMOBOGMCM.
+     * <code>bool is_cg_viewed = 5;</code>
+     * @return The isCgViewed.
      */
-    boolean getUnk2700FKDMOBOGMCM();
+    boolean getIsCgViewed();
   }
   /**
    * Protobuf type {@code SceneGalleryIrodoriMasterInfo}
@@ -88,7 +88,7 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
             }
             case 40: {
 
-              unk2700FKDMOBOGMCM_ = input.readBool();
+              isCgViewed_ = input.readBool();
               break;
             }
             case 64: {
@@ -150,15 +150,15 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int UNK2700_FKDMOBOGMCM_FIELD_NUMBER = 5;
-    private boolean unk2700FKDMOBOGMCM_;
+    public static final int IS_CG_VIEWED_FIELD_NUMBER = 5;
+    private boolean isCgViewed_;
     /**
-     * <code>bool Unk2700_FKDMOBOGMCM = 5;</code>
-     * @return The unk2700FKDMOBOGMCM.
+     * <code>bool is_cg_viewed = 5;</code>
+     * @return The isCgViewed.
      */
     @java.lang.Override
-    public boolean getUnk2700FKDMOBOGMCM() {
-      return unk2700FKDMOBOGMCM_;
+    public boolean getIsCgViewed() {
+      return isCgViewed_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -178,8 +178,8 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       if (difficulty_ != 0) {
         output.writeUInt32(1, difficulty_);
       }
-      if (unk2700FKDMOBOGMCM_ != false) {
-        output.writeBool(5, unk2700FKDMOBOGMCM_);
+      if (isCgViewed_ != false) {
+        output.writeBool(5, isCgViewed_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(8, levelId_);
@@ -197,9 +197,9 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, difficulty_);
       }
-      if (unk2700FKDMOBOGMCM_ != false) {
+      if (isCgViewed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, unk2700FKDMOBOGMCM_);
+          .computeBoolSize(5, isCgViewed_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -224,8 +224,8 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
           != other.getLevelId()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
-      if (getUnk2700FKDMOBOGMCM()
-          != other.getUnk2700FKDMOBOGMCM()) return false;
+      if (getIsCgViewed()
+          != other.getIsCgViewed()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,9 +241,9 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + UNK2700_FKDMOBOGMCM_FIELD_NUMBER;
+      hash = (37 * hash) + IS_CG_VIEWED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700FKDMOBOGMCM());
+          getIsCgViewed());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -381,7 +381,7 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
 
         difficulty_ = 0;
 
-        unk2700FKDMOBOGMCM_ = false;
+        isCgViewed_ = false;
 
         return this;
       }
@@ -411,7 +411,7 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo result = new emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo(this);
         result.levelId_ = levelId_;
         result.difficulty_ = difficulty_;
-        result.unk2700FKDMOBOGMCM_ = unk2700FKDMOBOGMCM_;
+        result.isCgViewed_ = isCgViewed_;
         onBuilt();
         return result;
       }
@@ -466,8 +466,8 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
         }
-        if (other.getUnk2700FKDMOBOGMCM() != false) {
-          setUnk2700FKDMOBOGMCM(other.getUnk2700FKDMOBOGMCM());
+        if (other.getIsCgViewed() != false) {
+          setIsCgViewed(other.getIsCgViewed());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -560,33 +560,33 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         return this;
       }
 
-      private boolean unk2700FKDMOBOGMCM_ ;
+      private boolean isCgViewed_ ;
       /**
-       * <code>bool Unk2700_FKDMOBOGMCM = 5;</code>
-       * @return The unk2700FKDMOBOGMCM.
+       * <code>bool is_cg_viewed = 5;</code>
+       * @return The isCgViewed.
        */
       @java.lang.Override
-      public boolean getUnk2700FKDMOBOGMCM() {
-        return unk2700FKDMOBOGMCM_;
+      public boolean getIsCgViewed() {
+        return isCgViewed_;
       }
       /**
-       * <code>bool Unk2700_FKDMOBOGMCM = 5;</code>
-       * @param value The unk2700FKDMOBOGMCM to set.
+       * <code>bool is_cg_viewed = 5;</code>
+       * @param value The isCgViewed to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700FKDMOBOGMCM(boolean value) {
+      public Builder setIsCgViewed(boolean value) {
         
-        unk2700FKDMOBOGMCM_ = value;
+        isCgViewed_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_FKDMOBOGMCM = 5;</code>
+       * <code>bool is_cg_viewed = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700FKDMOBOGMCM() {
+      public Builder clearIsCgViewed() {
         
-        unk2700FKDMOBOGMCM_ = false;
+        isCgViewed_ = false;
         onChanged();
         return this;
       }
@@ -657,11 +657,11 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#SceneGalleryIrodoriMasterInfo.proto\"b\n" +
+      "\n#SceneGalleryIrodoriMasterInfo.proto\"[\n" +
       "\035SceneGalleryIrodoriMasterInfo\022\020\n\010level_" +
-      "id\030\010 \001(\r\022\022\n\ndifficulty\030\001 \001(\r\022\033\n\023Unk2700_" +
-      "FKDMOBOGMCM\030\005 \001(\010B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "id\030\010 \001(\r\022\022\n\ndifficulty\030\001 \001(\r\022\024\n\014is_cg_vi" +
+      "ewed\030\005 \001(\010B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -672,7 +672,7 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
     internal_static_SceneGalleryIrodoriMasterInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIrodoriMasterInfo_descriptor,
-        new java.lang.String[] { "LevelId", "Difficulty", "Unk2700FKDMOBOGMCM", });
+        new java.lang.String[] { "LevelId", "Difficulty", "IsCgViewed", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

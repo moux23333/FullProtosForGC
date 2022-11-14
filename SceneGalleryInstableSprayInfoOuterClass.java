@@ -25,27 +25,27 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
     int getScore();
 
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB> 
-        getUnk2700INIBKFPMCFOList();
+    java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> 
+        getBuffInfoListList();
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
-    emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB getUnk2700INIBKFPMCFO(int index);
+    emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo getBuffInfoList(int index);
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
-    int getUnk2700INIBKFPMCFOCount();
+    int getBuffInfoListCount();
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder> 
-        getUnk2700INIBKFPMCFOOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+        getBuffInfoListOrBuilderList();
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
-    emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder getUnk2700INIBKFPMCFOOrBuilder(
+    emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder getBuffInfoListOrBuilder(
         int index);
   }
   /**
@@ -61,7 +61,7 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
       super(builder);
     }
     private SceneGalleryInstableSprayInfo() {
-      unk2700INIBKFPMCFO_ = java.util.Collections.emptyList();
+      buffInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -102,11 +102,11 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
             }
             case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700INIBKFPMCFO_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB>();
+                buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700INIBKFPMCFO_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.parser(), extensionRegistry));
+              buffInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -125,7 +125,7 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700INIBKFPMCFO_ = java.util.Collections.unmodifiableList(unk2700INIBKFPMCFO_);
+          buffInfoList_ = java.util.Collections.unmodifiableList(buffInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -155,44 +155,44 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
       return score_;
     }
 
-    public static final int UNK2700_INIBKFPMCFO_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB> unk2700INIBKFPMCFO_;
+    public static final int BUFF_INFO_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> buffInfoList_;
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB> getUnk2700INIBKFPMCFOList() {
-      return unk2700INIBKFPMCFO_;
+    public java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> getBuffInfoListList() {
+      return buffInfoList_;
     }
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder> 
-        getUnk2700INIBKFPMCFOOrBuilderList() {
-      return unk2700INIBKFPMCFO_;
+    public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+        getBuffInfoListOrBuilderList() {
+      return buffInfoList_;
     }
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
     @java.lang.Override
-    public int getUnk2700INIBKFPMCFOCount() {
-      return unk2700INIBKFPMCFO_.size();
+    public int getBuffInfoListCount() {
+      return buffInfoList_.size();
     }
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB getUnk2700INIBKFPMCFO(int index) {
-      return unk2700INIBKFPMCFO_.get(index);
+    public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo getBuffInfoList(int index) {
+      return buffInfoList_.get(index);
     }
     /**
-     * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder getUnk2700INIBKFPMCFOOrBuilder(
+    public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder getBuffInfoListOrBuilder(
         int index) {
-      return unk2700INIBKFPMCFO_.get(index);
+      return buffInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,8 +212,8 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
       if (score_ != 0) {
         output.writeUInt32(5, score_);
       }
-      for (int i = 0; i < unk2700INIBKFPMCFO_.size(); i++) {
-        output.writeMessage(12, unk2700INIBKFPMCFO_.get(i));
+      for (int i = 0; i < buffInfoList_.size(); i++) {
+        output.writeMessage(12, buffInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -228,9 +228,9 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, score_);
       }
-      for (int i = 0; i < unk2700INIBKFPMCFO_.size(); i++) {
+      for (int i = 0; i < buffInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, unk2700INIBKFPMCFO_.get(i));
+          .computeMessageSize(12, buffInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,8 +249,8 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
 
       if (getScore()
           != other.getScore()) return false;
-      if (!getUnk2700INIBKFPMCFOList()
-          .equals(other.getUnk2700INIBKFPMCFOList())) return false;
+      if (!getBuffInfoListList()
+          .equals(other.getBuffInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -264,9 +264,9 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      if (getUnk2700INIBKFPMCFOCount() > 0) {
-        hash = (37 * hash) + UNK2700_INIBKFPMCFO_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700INIBKFPMCFOList().hashCode();
+      if (getBuffInfoListCount() > 0) {
+        hash = (37 * hash) + BUFF_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getBuffInfoListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -396,7 +396,7 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2700INIBKFPMCFOFieldBuilder();
+          getBuffInfoListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -404,11 +404,11 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
         super.clear();
         score_ = 0;
 
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          unk2700INIBKFPMCFO_ = java.util.Collections.emptyList();
+        if (buffInfoListBuilder_ == null) {
+          buffInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2700INIBKFPMCFOBuilder_.clear();
+          buffInfoListBuilder_.clear();
         }
         return this;
       }
@@ -438,14 +438,14 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
         emu.grasscutter.net.proto.SceneGalleryInstableSprayInfoOuterClass.SceneGalleryInstableSprayInfo result = new emu.grasscutter.net.proto.SceneGalleryInstableSprayInfoOuterClass.SceneGalleryInstableSprayInfo(this);
         int from_bitField0_ = bitField0_;
         result.score_ = score_;
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
+        if (buffInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2700INIBKFPMCFO_ = java.util.Collections.unmodifiableList(unk2700INIBKFPMCFO_);
+            buffInfoList_ = java.util.Collections.unmodifiableList(buffInfoList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2700INIBKFPMCFO_ = unk2700INIBKFPMCFO_;
+          result.buffInfoList_ = buffInfoList_;
         } else {
-          result.unk2700INIBKFPMCFO_ = unk2700INIBKFPMCFOBuilder_.build();
+          result.buffInfoList_ = buffInfoListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -498,29 +498,29 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          if (!other.unk2700INIBKFPMCFO_.isEmpty()) {
-            if (unk2700INIBKFPMCFO_.isEmpty()) {
-              unk2700INIBKFPMCFO_ = other.unk2700INIBKFPMCFO_;
+        if (buffInfoListBuilder_ == null) {
+          if (!other.buffInfoList_.isEmpty()) {
+            if (buffInfoList_.isEmpty()) {
+              buffInfoList_ = other.buffInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2700INIBKFPMCFOIsMutable();
-              unk2700INIBKFPMCFO_.addAll(other.unk2700INIBKFPMCFO_);
+              ensureBuffInfoListIsMutable();
+              buffInfoList_.addAll(other.buffInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700INIBKFPMCFO_.isEmpty()) {
-            if (unk2700INIBKFPMCFOBuilder_.isEmpty()) {
-              unk2700INIBKFPMCFOBuilder_.dispose();
-              unk2700INIBKFPMCFOBuilder_ = null;
-              unk2700INIBKFPMCFO_ = other.unk2700INIBKFPMCFO_;
+          if (!other.buffInfoList_.isEmpty()) {
+            if (buffInfoListBuilder_.isEmpty()) {
+              buffInfoListBuilder_.dispose();
+              buffInfoListBuilder_ = null;
+              buffInfoList_ = other.buffInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2700INIBKFPMCFOBuilder_ = 
+              buffInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700INIBKFPMCFOFieldBuilder() : null;
+                   getBuffInfoListFieldBuilder() : null;
             } else {
-              unk2700INIBKFPMCFOBuilder_.addAllMessages(other.unk2700INIBKFPMCFO_);
+              buffInfoListBuilder_.addAllMessages(other.buffInfoList_);
             }
           }
         }
@@ -585,244 +585,244 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB> unk2700INIBKFPMCFO_ =
+      private java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> buffInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700INIBKFPMCFOIsMutable() {
+      private void ensureBuffInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700INIBKFPMCFO_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB>(unk2700INIBKFPMCFO_);
+          buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo>(buffInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder> unk2700INIBKFPMCFOBuilder_;
+          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> buffInfoListBuilder_;
 
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB> getUnk2700INIBKFPMCFOList() {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700INIBKFPMCFO_);
+      public java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> getBuffInfoListList() {
+        if (buffInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(buffInfoList_);
         } else {
-          return unk2700INIBKFPMCFOBuilder_.getMessageList();
+          return buffInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public int getUnk2700INIBKFPMCFOCount() {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          return unk2700INIBKFPMCFO_.size();
+      public int getBuffInfoListCount() {
+        if (buffInfoListBuilder_ == null) {
+          return buffInfoList_.size();
         } else {
-          return unk2700INIBKFPMCFOBuilder_.getCount();
+          return buffInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB getUnk2700INIBKFPMCFO(int index) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          return unk2700INIBKFPMCFO_.get(index);
+      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo getBuffInfoList(int index) {
+        if (buffInfoListBuilder_ == null) {
+          return buffInfoList_.get(index);
         } else {
-          return unk2700INIBKFPMCFOBuilder_.getMessage(index);
+          return buffInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder setUnk2700INIBKFPMCFO(
-          int index, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB value) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
+      public Builder setBuffInfoList(
+          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo value) {
+        if (buffInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700INIBKFPMCFOIsMutable();
-          unk2700INIBKFPMCFO_.set(index, value);
+          ensureBuffInfoListIsMutable();
+          buffInfoList_.set(index, value);
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.setMessage(index, value);
+          buffInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder setUnk2700INIBKFPMCFO(
-          int index, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder builderForValue) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          ensureUnk2700INIBKFPMCFOIsMutable();
-          unk2700INIBKFPMCFO_.set(index, builderForValue.build());
+      public Builder setBuffInfoList(
+          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder builderForValue) {
+        if (buffInfoListBuilder_ == null) {
+          ensureBuffInfoListIsMutable();
+          buffInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.setMessage(index, builderForValue.build());
+          buffInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder addUnk2700INIBKFPMCFO(emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB value) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
+      public Builder addBuffInfoList(emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo value) {
+        if (buffInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700INIBKFPMCFOIsMutable();
-          unk2700INIBKFPMCFO_.add(value);
+          ensureBuffInfoListIsMutable();
+          buffInfoList_.add(value);
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.addMessage(value);
+          buffInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder addUnk2700INIBKFPMCFO(
-          int index, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB value) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
+      public Builder addBuffInfoList(
+          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo value) {
+        if (buffInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700INIBKFPMCFOIsMutable();
-          unk2700INIBKFPMCFO_.add(index, value);
+          ensureBuffInfoListIsMutable();
+          buffInfoList_.add(index, value);
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.addMessage(index, value);
+          buffInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder addUnk2700INIBKFPMCFO(
-          emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder builderForValue) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          ensureUnk2700INIBKFPMCFOIsMutable();
-          unk2700INIBKFPMCFO_.add(builderForValue.build());
+      public Builder addBuffInfoList(
+          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder builderForValue) {
+        if (buffInfoListBuilder_ == null) {
+          ensureBuffInfoListIsMutable();
+          buffInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.addMessage(builderForValue.build());
+          buffInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder addUnk2700INIBKFPMCFO(
-          int index, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder builderForValue) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          ensureUnk2700INIBKFPMCFOIsMutable();
-          unk2700INIBKFPMCFO_.add(index, builderForValue.build());
+      public Builder addBuffInfoList(
+          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder builderForValue) {
+        if (buffInfoListBuilder_ == null) {
+          ensureBuffInfoListIsMutable();
+          buffInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.addMessage(index, builderForValue.build());
+          buffInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder addAllUnk2700INIBKFPMCFO(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB> values) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          ensureUnk2700INIBKFPMCFOIsMutable();
+      public Builder addAllBuffInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> values) {
+        if (buffInfoListBuilder_ == null) {
+          ensureBuffInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700INIBKFPMCFO_);
+              values, buffInfoList_);
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.addAllMessages(values);
+          buffInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder clearUnk2700INIBKFPMCFO() {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          unk2700INIBKFPMCFO_ = java.util.Collections.emptyList();
+      public Builder clearBuffInfoList() {
+        if (buffInfoListBuilder_ == null) {
+          buffInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.clear();
+          buffInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public Builder removeUnk2700INIBKFPMCFO(int index) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          ensureUnk2700INIBKFPMCFOIsMutable();
-          unk2700INIBKFPMCFO_.remove(index);
+      public Builder removeBuffInfoList(int index) {
+        if (buffInfoListBuilder_ == null) {
+          ensureBuffInfoListIsMutable();
+          buffInfoList_.remove(index);
           onChanged();
         } else {
-          unk2700INIBKFPMCFOBuilder_.remove(index);
+          buffInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder getUnk2700INIBKFPMCFOBuilder(
+      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder getBuffInfoListBuilder(
           int index) {
-        return getUnk2700INIBKFPMCFOFieldBuilder().getBuilder(index);
+        return getBuffInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder getUnk2700INIBKFPMCFOOrBuilder(
+      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder getBuffInfoListOrBuilder(
           int index) {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          return unk2700INIBKFPMCFO_.get(index);  } else {
-          return unk2700INIBKFPMCFOBuilder_.getMessageOrBuilder(index);
+        if (buffInfoListBuilder_ == null) {
+          return buffInfoList_.get(index);  } else {
+          return buffInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder> 
-           getUnk2700INIBKFPMCFOOrBuilderList() {
-        if (unk2700INIBKFPMCFOBuilder_ != null) {
-          return unk2700INIBKFPMCFOBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+           getBuffInfoListOrBuilderList() {
+        if (buffInfoListBuilder_ != null) {
+          return buffInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700INIBKFPMCFO_);
+          return java.util.Collections.unmodifiableList(buffInfoList_);
         }
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder addUnk2700INIBKFPMCFOBuilder() {
-        return getUnk2700INIBKFPMCFOFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.getDefaultInstance());
+      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder addBuffInfoListBuilder() {
+        return getBuffInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder addUnk2700INIBKFPMCFOBuilder(
+      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder addBuffInfoListBuilder(
           int index) {
-        return getUnk2700INIBKFPMCFOFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.getDefaultInstance());
+        return getBuffInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3000_OMCBMAHOLHB Unk2700_INIBKFPMCFO = 12;</code>
+       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder> 
-           getUnk2700INIBKFPMCFOBuilderList() {
-        return getUnk2700INIBKFPMCFOFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder> 
+           getBuffInfoListBuilderList() {
+        return getBuffInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder> 
-          getUnk2700INIBKFPMCFOFieldBuilder() {
-        if (unk2700INIBKFPMCFOBuilder_ == null) {
-          unk2700INIBKFPMCFOBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHB.Builder, emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.Unk3000_OMCBMAHOLHBOrBuilder>(
-                  unk2700INIBKFPMCFO_,
+          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+          getBuffInfoListFieldBuilder() {
+        if (buffInfoListBuilder_ == null) {
+          buffInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder>(
+                  buffInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700INIBKFPMCFO_ = null;
+          buffInfoList_ = null;
         }
-        return unk2700INIBKFPMCFOBuilder_;
+        return buffInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -891,24 +891,25 @@ public final class SceneGalleryInstableSprayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#SceneGalleryInstableSprayInfo.proto\032\031U" +
-      "nk3000_OMCBMAHOLHB.proto\"a\n\035SceneGallery" +
-      "InstableSprayInfo\022\r\n\005score\030\005 \001(\r\0221\n\023Unk2" +
-      "700_INIBKFPMCFO\030\014 \003(\0132\024.Unk3000_OMCBMAHO" +
-      "LHBB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n#SceneGalleryInstableSprayInfo.proto\032\'S" +
+      "ceneGalleryInstableSprayBuffInfo.proto\"j" +
+      "\n\035SceneGalleryInstableSprayInfo\022\r\n\005score" +
+      "\030\005 \001(\r\022:\n\016buff_info_list\030\014 \003(\0132\".SceneGa" +
+      "lleryInstableSprayBuffInfoB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.getDescriptor(),
+          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneGalleryInstableSprayInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneGalleryInstableSprayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryInstableSprayInfo_descriptor,
-        new java.lang.String[] { "Score", "Unk2700INIBKFPMCFO", });
-    emu.grasscutter.net.proto.Unk3000OMCBMAHOLHB.getDescriptor();
+        new java.lang.String[] { "Score", "BuffInfoList", });
+    emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

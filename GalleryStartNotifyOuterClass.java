@@ -19,12 +19,6 @@ public final class GalleryStartNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 13;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
-
-    /**
      * <code>uint32 end_time = 6;</code>
      * @return The endTime.
      */
@@ -41,6 +35,18 @@ public final class GalleryStartNotifyOuterClass {
      * @return The ownerUid.
      */
     int getOwnerUid();
+
+    /**
+     * <code>uint32 gallery_id = 13;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
+
+    /**
+     * <code>uint32 start_time = 5;</code>
+     * @return The startTime.
+     */
+    int getStartTime();
 
     /**
      * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
@@ -110,6 +116,11 @@ public final class GalleryStartNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 40: {
+
+              startTime_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               endTime_ = input.readUInt32();
@@ -215,17 +226,6 @@ public final class GalleryStartNotifyOuterClass {
           detailCase_);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 13;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 13;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
-    }
-
     public static final int END_TIME_FIELD_NUMBER = 6;
     private int endTime_;
     /**
@@ -257,6 +257,28 @@ public final class GalleryStartNotifyOuterClass {
     @java.lang.Override
     public int getOwnerUid() {
       return ownerUid_;
+    }
+
+    public static final int GALLERY_ID_FIELD_NUMBER = 13;
+    private int galleryId_;
+    /**
+     * <code>uint32 gallery_id = 13;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
+    }
+
+    public static final int START_TIME_FIELD_NUMBER = 5;
+    private int startTime_;
+    /**
+     * <code>uint32 start_time = 5;</code>
+     * @return The startTime.
+     */
+    @java.lang.Override
+    public int getStartTime() {
+      return startTime_;
     }
 
     public static final int FLOWER_START_PARAM_FIELD_NUMBER = 15;
@@ -304,6 +326,9 @@ public final class GalleryStartNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (startTime_ != 0) {
+        output.writeUInt32(5, startTime_);
+      }
       if (endTime_ != 0) {
         output.writeUInt32(6, endTime_);
       }
@@ -328,6 +353,10 @@ public final class GalleryStartNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (startTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, startTime_);
+      }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, endTime_);
@@ -363,14 +392,16 @@ public final class GalleryStartNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify other = (emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify) obj;
 
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
       if (getPlayerCount()
           != other.getPlayerCount()) return false;
       if (getOwnerUid()
           != other.getOwnerUid()) return false;
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
       if (!getDetailCase().equals(other.getDetailCase())) return false;
       switch (detailCase_) {
         case 15:
@@ -391,14 +422,16 @@ public final class GalleryStartNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
       hash = (37 * hash) + PLAYER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getPlayerCount();
       hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
       hash = (53 * hash) + getOwnerUid();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
       switch (detailCase_) {
         case 15:
           hash = (37 * hash) + FLOWER_START_PARAM_FIELD_NUMBER;
@@ -546,13 +579,15 @@ public final class GalleryStartNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        galleryId_ = 0;
-
         endTime_ = 0;
 
         playerCount_ = 0;
 
         ownerUid_ = 0;
+
+        galleryId_ = 0;
+
+        startTime_ = 0;
 
         detailCase_ = 0;
         detail_ = null;
@@ -582,10 +617,11 @@ public final class GalleryStartNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify result = new emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify(this);
-        result.galleryId_ = galleryId_;
         result.endTime_ = endTime_;
         result.playerCount_ = playerCount_;
         result.ownerUid_ = ownerUid_;
+        result.galleryId_ = galleryId_;
+        result.startTime_ = startTime_;
         if (detailCase_ == 15) {
           if (flowerStartParamBuilder_ == null) {
             result.detail_ = detail_;
@@ -642,9 +678,6 @@ public final class GalleryStartNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify other) {
         if (other == emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify.getDefaultInstance()) return this;
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
-        }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
         }
@@ -653,6 +686,12 @@ public final class GalleryStartNotifyOuterClass {
         }
         if (other.getOwnerUid() != 0) {
           setOwnerUid(other.getOwnerUid());
+        }
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
+        }
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
         }
         switch (other.getDetailCase()) {
           case FLOWER_START_PARAM: {
@@ -706,37 +745,6 @@ public final class GalleryStartNotifyOuterClass {
         return this;
       }
 
-
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 13;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 13;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
-        onChanged();
-        return this;
-      }
 
       private int endTime_ ;
       /**
@@ -827,6 +835,68 @@ public final class GalleryStartNotifyOuterClass {
       public Builder clearOwnerUid() {
         
         ownerUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 13;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 13;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int startTime_ ;
+      /**
+       * <code>uint32 start_time = 5;</code>
+       * @return The startTime.
+       */
+      @java.lang.Override
+      public int getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <code>uint32 start_time = 5;</code>
+       * @param value The startTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartTime(int value) {
+        
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 start_time = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartTime() {
+        
+        startTime_ = 0;
         onChanged();
         return this;
       }
@@ -1039,12 +1109,13 @@ public final class GalleryStartNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GalleryStartNotify.proto\032\035GalleryFlowe" +
-      "rStartParam.proto\"\245\001\n\022GalleryStartNotify" +
-      "\022\022\n\ngallery_id\030\r \001(\r\022\020\n\010end_time\030\006 \001(\r\022\024" +
-      "\n\014player_count\030\013 \001(\r\022\021\n\towner_uid\030\t \001(\r\022" +
-      "6\n\022flower_start_param\030\017 \001(\0132\030.GalleryFlo" +
-      "werStartParamH\000B\010\n\006detailB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "rStartParam.proto\"\271\001\n\022GalleryStartNotify" +
+      "\022\020\n\010end_time\030\006 \001(\r\022\024\n\014player_count\030\013 \001(\r" +
+      "\022\021\n\towner_uid\030\t \001(\r\022\022\n\ngallery_id\030\r \001(\r\022" +
+      "\022\n\nstart_time\030\005 \001(\r\0226\n\022flower_start_para" +
+      "m\030\017 \001(\0132\030.GalleryFlowerStartParamH\000B\010\n\006d" +
+      "etailB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1056,7 +1127,7 @@ public final class GalleryStartNotifyOuterClass {
     internal_static_GalleryStartNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryStartNotify_descriptor,
-        new java.lang.String[] { "GalleryId", "EndTime", "PlayerCount", "OwnerUid", "FlowerStartParam", "Detail", });
+        new java.lang.String[] { "EndTime", "PlayerCount", "OwnerUid", "GalleryId", "StartTime", "FlowerStartParam", "Detail", });
     emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.getDescriptor();
   }
 

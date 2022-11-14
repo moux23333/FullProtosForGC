@@ -37,10 +37,10 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
     boolean getEnterHoldingFocusShoot();
 
     /**
-     * <code>bool Unk2700_GACKGHEHEIK = 6;</code>
-     * @return The unk2700GACKGHEHEIK.
+     * <code>bool disable_aim_layer = 6;</code>
+     * @return The disableAimLayer.
      */
-    boolean getUnk2700GACKGHEHEIK();
+    boolean getDisableAimLayer();
 
     /**
      * <code>bool use_auto_focus = 5;</code>
@@ -180,7 +180,7 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
             }
             case 48: {
 
-              unk2700GACKGHEHEIK_ = input.readBool();
+              disableAimLayer_ = input.readBool();
               break;
             }
             case 58: {
@@ -302,15 +302,15 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
       return enterHoldingFocusShoot_;
     }
 
-    public static final int UNK2700_GACKGHEHEIK_FIELD_NUMBER = 6;
-    private boolean unk2700GACKGHEHEIK_;
+    public static final int DISABLE_AIM_LAYER_FIELD_NUMBER = 6;
+    private boolean disableAimLayer_;
     /**
-     * <code>bool Unk2700_GACKGHEHEIK = 6;</code>
-     * @return The unk2700GACKGHEHEIK.
+     * <code>bool disable_aim_layer = 6;</code>
+     * @return The disableAimLayer.
      */
     @java.lang.Override
-    public boolean getUnk2700GACKGHEHEIK() {
-      return unk2700GACKGHEHEIK_;
+    public boolean getDisableAimLayer() {
+      return disableAimLayer_;
     }
 
     public static final int USE_AUTO_FOCUS_FIELD_NUMBER = 5;
@@ -458,8 +458,8 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
       if (useAutoFocus_ != false) {
         output.writeBool(5, useAutoFocus_);
       }
-      if (unk2700GACKGHEHEIK_ != false) {
-        output.writeBool(6, unk2700GACKGHEHEIK_);
+      if (disableAimLayer_ != false) {
+        output.writeBool(6, disableAimLayer_);
       }
       if (focusForward_ != null) {
         output.writeMessage(7, getFocusForward());
@@ -509,9 +509,9 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(5, useAutoFocus_);
       }
-      if (unk2700GACKGHEHEIK_ != false) {
+      if (disableAimLayer_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, unk2700GACKGHEHEIK_);
+          .computeBoolSize(6, disableAimLayer_);
       }
       if (focusForward_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -570,8 +570,8 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
           != other.getCanMove()) return false;
       if (getEnterHoldingFocusShoot()
           != other.getEnterHoldingFocusShoot()) return false;
-      if (getUnk2700GACKGHEHEIK()
-          != other.getUnk2700GACKGHEHEIK()) return false;
+      if (getDisableAimLayer()
+          != other.getDisableAimLayer()) return false;
       if (getUseAutoFocus()
           != other.getUseAutoFocus()) return false;
       if (getFastFocus()
@@ -611,9 +611,9 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
       hash = (37 * hash) + ENTER_HOLDING_FOCUS_SHOOT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getEnterHoldingFocusShoot());
-      hash = (37 * hash) + UNK2700_GACKGHEHEIK_FIELD_NUMBER;
+      hash = (37 * hash) + DISABLE_AIM_LAYER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700GACKGHEHEIK());
+          getDisableAimLayer());
       hash = (37 * hash) + USE_AUTO_FOCUS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getUseAutoFocus());
@@ -787,7 +787,7 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
 
         enterHoldingFocusShoot_ = false;
 
-        unk2700GACKGHEHEIK_ = false;
+        disableAimLayer_ = false;
 
         useAutoFocus_ = false;
 
@@ -840,7 +840,7 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
         result.entityId_ = entityId_;
         result.canMove_ = canMove_;
         result.enterHoldingFocusShoot_ = enterHoldingFocusShoot_;
-        result.unk2700GACKGHEHEIK_ = unk2700GACKGHEHEIK_;
+        result.disableAimLayer_ = disableAimLayer_;
         result.useAutoFocus_ = useAutoFocus_;
         result.fastFocus_ = fastFocus_;
         result.showCrossHair_ = showCrossHair_;
@@ -911,8 +911,8 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
         if (other.getEnterHoldingFocusShoot() != false) {
           setEnterHoldingFocusShoot(other.getEnterHoldingFocusShoot());
         }
-        if (other.getUnk2700GACKGHEHEIK() != false) {
-          setUnk2700GACKGHEHEIK(other.getUnk2700GACKGHEHEIK());
+        if (other.getDisableAimLayer() != false) {
+          setDisableAimLayer(other.getDisableAimLayer());
         }
         if (other.getUseAutoFocus() != false) {
           setUseAutoFocus(other.getUseAutoFocus());
@@ -1063,33 +1063,33 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
         return this;
       }
 
-      private boolean unk2700GACKGHEHEIK_ ;
+      private boolean disableAimLayer_ ;
       /**
-       * <code>bool Unk2700_GACKGHEHEIK = 6;</code>
-       * @return The unk2700GACKGHEHEIK.
+       * <code>bool disable_aim_layer = 6;</code>
+       * @return The disableAimLayer.
        */
       @java.lang.Override
-      public boolean getUnk2700GACKGHEHEIK() {
-        return unk2700GACKGHEHEIK_;
+      public boolean getDisableAimLayer() {
+        return disableAimLayer_;
       }
       /**
-       * <code>bool Unk2700_GACKGHEHEIK = 6;</code>
-       * @param value The unk2700GACKGHEHEIK to set.
+       * <code>bool disable_aim_layer = 6;</code>
+       * @param value The disableAimLayer to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700GACKGHEHEIK(boolean value) {
+      public Builder setDisableAimLayer(boolean value) {
         
-        unk2700GACKGHEHEIK_ = value;
+        disableAimLayer_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_GACKGHEHEIK = 6;</code>
+       * <code>bool disable_aim_layer = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700GACKGHEHEIK() {
+      public Builder clearDisableAimLayer() {
         
-        unk2700GACKGHEHEIK_ = false;
+        disableAimLayer_ = false;
         onChanged();
         return this;
       }
@@ -1551,17 +1551,17 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037EvtAvatarEnterFocusNotify.proto\032\021Forwa" +
-      "rdType.proto\032\014Vector.proto\"\355\002\n\031EvtAvatar" +
+      "rdType.proto\032\014Vector.proto\"\353\002\n\031EvtAvatar" +
       "EnterFocusNotify\022\021\n\tentity_id\030\001 \001(\r\022\020\n\010c" +
       "an_move\030\n \001(\010\022!\n\031enter_holding_focus_sho" +
-      "ot\030\r \001(\010\022\033\n\023Unk2700_GACKGHEHEIK\030\006 \001(\010\022\026\n" +
-      "\016use_auto_focus\030\005 \001(\010\022\022\n\nfast_focus\030\003 \001(" +
-      "\010\022\027\n\017show_cross_hair\030\014 \001(\010\022 \n\030enter_norm" +
-      "al_focus_shoot\030\016 \001(\010\022\"\n\014forward_type\030\010 \001" +
-      "(\0162\014.ForwardType\022\036\n\rfocus_forward\030\007 \001(\0132" +
-      "\007.Vector\022\024\n\014disable_anim\030\t \001(\010\022\030\n\020use_fo" +
-      "cus_sticky\030\017 \001(\010\022\020\n\010use_gyro\030\013 \001(\010B\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "ot\030\r \001(\010\022\031\n\021disable_aim_layer\030\006 \001(\010\022\026\n\016u" +
+      "se_auto_focus\030\005 \001(\010\022\022\n\nfast_focus\030\003 \001(\010\022" +
+      "\027\n\017show_cross_hair\030\014 \001(\010\022 \n\030enter_normal" +
+      "_focus_shoot\030\016 \001(\010\022\"\n\014forward_type\030\010 \001(\016" +
+      "2\014.ForwardType\022\036\n\rfocus_forward\030\007 \001(\0132\007." +
+      "Vector\022\024\n\014disable_anim\030\t \001(\010\022\030\n\020use_focu" +
+      "s_sticky\030\017 \001(\010\022\020\n\010use_gyro\030\013 \001(\010B\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1574,7 +1574,7 @@ public final class EvtAvatarEnterFocusNotifyOuterClass {
     internal_static_EvtAvatarEnterFocusNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtAvatarEnterFocusNotify_descriptor,
-        new java.lang.String[] { "EntityId", "CanMove", "EnterHoldingFocusShoot", "Unk2700GACKGHEHEIK", "UseAutoFocus", "FastFocus", "ShowCrossHair", "EnterNormalFocusShoot", "ForwardType", "FocusForward", "DisableAnim", "UseFocusSticky", "UseGyro", });
+        new java.lang.String[] { "EntityId", "CanMove", "EnterHoldingFocusShoot", "DisableAimLayer", "UseAutoFocus", "FastFocus", "ShowCrossHair", "EnterNormalFocusShoot", "ForwardType", "FocusForward", "DisableAnim", "UseFocusSticky", "UseGyro", });
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }

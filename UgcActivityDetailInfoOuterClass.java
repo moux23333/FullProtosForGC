@@ -19,46 +19,46 @@ public final class UgcActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool Unk2700_GMICFADLAMC = 10;</code>
-     * @return The unk2700GMICFADLAMC.
+     * <code>bool is_ugc_feature_closed = 10;</code>
+     * @return The isUgcFeatureClosed.
      */
-    boolean getUnk2700GMICFADLAMC();
+    boolean getIsUgcFeatureClosed();
 
     /**
-     * <code>uint32 Unk2700_FDDCMGKDOCC = 12;</code>
-     * @return The unk2700FDDCMGKDOCC.
+     * <code>uint32 custom_dungeon_group_id = 12;</code>
+     * @return The customDungeonGroupId.
      */
-    int getUnk2700FDDCMGKDOCC();
+    int getCustomDungeonGroupId();
 
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL> 
-        getUnk2700ILCAPJBAFOIList();
+    java.util.List<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon> 
+        getOfficialCustomDungeonListList();
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL getUnk2700ILCAPJBAFOI(int index);
+    emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon getOfficialCustomDungeonList(int index);
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
-    int getUnk2700ILCAPJBAFOICount();
+    int getOfficialCustomDungeonListCount();
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder> 
-        getUnk2700ILCAPJBAFOIOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder> 
+        getOfficialCustomDungeonListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder getUnk2700ILCAPJBAFOIOrBuilder(
+    emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder getOfficialCustomDungeonListOrBuilder(
         int index);
 
     /**
-     * <code>bool Unk2700_PNOCELCOFNK = 11;</code>
-     * @return The unk2700PNOCELCOFNK.
+     * <code>bool is_enable_ugc = 11;</code>
+     * @return The isEnableUgc.
      */
-    boolean getUnk2700PNOCELCOFNK();
+    boolean getIsEnableUgc();
   }
   /**
    * Protobuf type {@code UgcActivityDetailInfo}
@@ -73,7 +73,7 @@ public final class UgcActivityDetailInfoOuterClass {
       super(builder);
     }
     private UgcActivityDetailInfo() {
-      unk2700ILCAPJBAFOI_ = java.util.Collections.emptyList();
+      officialCustomDungeonList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -109,26 +109,26 @@ public final class UgcActivityDetailInfoOuterClass {
               break;
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700ILCAPJBAFOI_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL>();
+                officialCustomDungeonList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700ILCAPJBAFOI_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.parser(), extensionRegistry));
+              officialCustomDungeonList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.parser(), extensionRegistry));
               break;
             }
             case 80: {
 
-              unk2700GMICFADLAMC_ = input.readBool();
+              isUgcFeatureClosed_ = input.readBool();
               break;
             }
             case 88: {
 
-              unk2700PNOCELCOFNK_ = input.readBool();
+              isEnableUgc_ = input.readBool();
               break;
             }
             case 96: {
 
-              unk2700FDDCMGKDOCC_ = input.readUInt32();
+              customDungeonGroupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -147,7 +147,7 @@ public final class UgcActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700ILCAPJBAFOI_ = java.util.Collections.unmodifiableList(unk2700ILCAPJBAFOI_);
+          officialCustomDungeonList_ = java.util.Collections.unmodifiableList(officialCustomDungeonList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -166,77 +166,77 @@ public final class UgcActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo.class, emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo.Builder.class);
     }
 
-    public static final int UNK2700_GMICFADLAMC_FIELD_NUMBER = 10;
-    private boolean unk2700GMICFADLAMC_;
+    public static final int IS_UGC_FEATURE_CLOSED_FIELD_NUMBER = 10;
+    private boolean isUgcFeatureClosed_;
     /**
-     * <code>bool Unk2700_GMICFADLAMC = 10;</code>
-     * @return The unk2700GMICFADLAMC.
+     * <code>bool is_ugc_feature_closed = 10;</code>
+     * @return The isUgcFeatureClosed.
      */
     @java.lang.Override
-    public boolean getUnk2700GMICFADLAMC() {
-      return unk2700GMICFADLAMC_;
+    public boolean getIsUgcFeatureClosed() {
+      return isUgcFeatureClosed_;
     }
 
-    public static final int UNK2700_FDDCMGKDOCC_FIELD_NUMBER = 12;
-    private int unk2700FDDCMGKDOCC_;
+    public static final int CUSTOM_DUNGEON_GROUP_ID_FIELD_NUMBER = 12;
+    private int customDungeonGroupId_;
     /**
-     * <code>uint32 Unk2700_FDDCMGKDOCC = 12;</code>
-     * @return The unk2700FDDCMGKDOCC.
+     * <code>uint32 custom_dungeon_group_id = 12;</code>
+     * @return The customDungeonGroupId.
      */
     @java.lang.Override
-    public int getUnk2700FDDCMGKDOCC() {
-      return unk2700FDDCMGKDOCC_;
+    public int getCustomDungeonGroupId() {
+      return customDungeonGroupId_;
     }
 
-    public static final int UNK2700_ILCAPJBAFOI_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL> unk2700ILCAPJBAFOI_;
+    public static final int OFFICIAL_CUSTOM_DUNGEON_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon> officialCustomDungeonList_;
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL> getUnk2700ILCAPJBAFOIList() {
-      return unk2700ILCAPJBAFOI_;
+    public java.util.List<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon> getOfficialCustomDungeonListList() {
+      return officialCustomDungeonList_;
     }
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder> 
-        getUnk2700ILCAPJBAFOIOrBuilderList() {
-      return unk2700ILCAPJBAFOI_;
+    public java.util.List<? extends emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder> 
+        getOfficialCustomDungeonListOrBuilderList() {
+      return officialCustomDungeonList_;
     }
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
     @java.lang.Override
-    public int getUnk2700ILCAPJBAFOICount() {
-      return unk2700ILCAPJBAFOI_.size();
+    public int getOfficialCustomDungeonListCount() {
+      return officialCustomDungeonList_.size();
     }
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL getUnk2700ILCAPJBAFOI(int index) {
-      return unk2700ILCAPJBAFOI_.get(index);
+    public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon getOfficialCustomDungeonList(int index) {
+      return officialCustomDungeonList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+     * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder getUnk2700ILCAPJBAFOIOrBuilder(
+    public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder getOfficialCustomDungeonListOrBuilder(
         int index) {
-      return unk2700ILCAPJBAFOI_.get(index);
+      return officialCustomDungeonList_.get(index);
     }
 
-    public static final int UNK2700_PNOCELCOFNK_FIELD_NUMBER = 11;
-    private boolean unk2700PNOCELCOFNK_;
+    public static final int IS_ENABLE_UGC_FIELD_NUMBER = 11;
+    private boolean isEnableUgc_;
     /**
-     * <code>bool Unk2700_PNOCELCOFNK = 11;</code>
-     * @return The unk2700PNOCELCOFNK.
+     * <code>bool is_enable_ugc = 11;</code>
+     * @return The isEnableUgc.
      */
     @java.lang.Override
-    public boolean getUnk2700PNOCELCOFNK() {
-      return unk2700PNOCELCOFNK_;
+    public boolean getIsEnableUgc() {
+      return isEnableUgc_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -253,17 +253,17 @@ public final class UgcActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < unk2700ILCAPJBAFOI_.size(); i++) {
-        output.writeMessage(5, unk2700ILCAPJBAFOI_.get(i));
+      for (int i = 0; i < officialCustomDungeonList_.size(); i++) {
+        output.writeMessage(5, officialCustomDungeonList_.get(i));
       }
-      if (unk2700GMICFADLAMC_ != false) {
-        output.writeBool(10, unk2700GMICFADLAMC_);
+      if (isUgcFeatureClosed_ != false) {
+        output.writeBool(10, isUgcFeatureClosed_);
       }
-      if (unk2700PNOCELCOFNK_ != false) {
-        output.writeBool(11, unk2700PNOCELCOFNK_);
+      if (isEnableUgc_ != false) {
+        output.writeBool(11, isEnableUgc_);
       }
-      if (unk2700FDDCMGKDOCC_ != 0) {
-        output.writeUInt32(12, unk2700FDDCMGKDOCC_);
+      if (customDungeonGroupId_ != 0) {
+        output.writeUInt32(12, customDungeonGroupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,21 +274,21 @@ public final class UgcActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < unk2700ILCAPJBAFOI_.size(); i++) {
+      for (int i = 0; i < officialCustomDungeonList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, unk2700ILCAPJBAFOI_.get(i));
+          .computeMessageSize(5, officialCustomDungeonList_.get(i));
       }
-      if (unk2700GMICFADLAMC_ != false) {
+      if (isUgcFeatureClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, unk2700GMICFADLAMC_);
+          .computeBoolSize(10, isUgcFeatureClosed_);
       }
-      if (unk2700PNOCELCOFNK_ != false) {
+      if (isEnableUgc_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, unk2700PNOCELCOFNK_);
+          .computeBoolSize(11, isEnableUgc_);
       }
-      if (unk2700FDDCMGKDOCC_ != 0) {
+      if (customDungeonGroupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, unk2700FDDCMGKDOCC_);
+          .computeUInt32Size(12, customDungeonGroupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -305,14 +305,14 @@ public final class UgcActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo other = (emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo) obj;
 
-      if (getUnk2700GMICFADLAMC()
-          != other.getUnk2700GMICFADLAMC()) return false;
-      if (getUnk2700FDDCMGKDOCC()
-          != other.getUnk2700FDDCMGKDOCC()) return false;
-      if (!getUnk2700ILCAPJBAFOIList()
-          .equals(other.getUnk2700ILCAPJBAFOIList())) return false;
-      if (getUnk2700PNOCELCOFNK()
-          != other.getUnk2700PNOCELCOFNK()) return false;
+      if (getIsUgcFeatureClosed()
+          != other.getIsUgcFeatureClosed()) return false;
+      if (getCustomDungeonGroupId()
+          != other.getCustomDungeonGroupId()) return false;
+      if (!getOfficialCustomDungeonListList()
+          .equals(other.getOfficialCustomDungeonListList())) return false;
+      if (getIsEnableUgc()
+          != other.getIsEnableUgc()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -324,18 +324,18 @@ public final class UgcActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_GMICFADLAMC_FIELD_NUMBER;
+      hash = (37 * hash) + IS_UGC_FEATURE_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700GMICFADLAMC());
-      hash = (37 * hash) + UNK2700_FDDCMGKDOCC_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700FDDCMGKDOCC();
-      if (getUnk2700ILCAPJBAFOICount() > 0) {
-        hash = (37 * hash) + UNK2700_ILCAPJBAFOI_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700ILCAPJBAFOIList().hashCode();
+          getIsUgcFeatureClosed());
+      hash = (37 * hash) + CUSTOM_DUNGEON_GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCustomDungeonGroupId();
+      if (getOfficialCustomDungeonListCount() > 0) {
+        hash = (37 * hash) + OFFICIAL_CUSTOM_DUNGEON_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getOfficialCustomDungeonListList().hashCode();
       }
-      hash = (37 * hash) + UNK2700_PNOCELCOFNK_FIELD_NUMBER;
+      hash = (37 * hash) + IS_ENABLE_UGC_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700PNOCELCOFNK());
+          getIsEnableUgc());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -464,23 +464,23 @@ public final class UgcActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2700ILCAPJBAFOIFieldBuilder();
+          getOfficialCustomDungeonListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700GMICFADLAMC_ = false;
+        isUgcFeatureClosed_ = false;
 
-        unk2700FDDCMGKDOCC_ = 0;
+        customDungeonGroupId_ = 0;
 
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          unk2700ILCAPJBAFOI_ = java.util.Collections.emptyList();
+        if (officialCustomDungeonListBuilder_ == null) {
+          officialCustomDungeonList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2700ILCAPJBAFOIBuilder_.clear();
+          officialCustomDungeonListBuilder_.clear();
         }
-        unk2700PNOCELCOFNK_ = false;
+        isEnableUgc_ = false;
 
         return this;
       }
@@ -509,18 +509,18 @@ public final class UgcActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo result = new emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.unk2700GMICFADLAMC_ = unk2700GMICFADLAMC_;
-        result.unk2700FDDCMGKDOCC_ = unk2700FDDCMGKDOCC_;
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
+        result.isUgcFeatureClosed_ = isUgcFeatureClosed_;
+        result.customDungeonGroupId_ = customDungeonGroupId_;
+        if (officialCustomDungeonListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2700ILCAPJBAFOI_ = java.util.Collections.unmodifiableList(unk2700ILCAPJBAFOI_);
+            officialCustomDungeonList_ = java.util.Collections.unmodifiableList(officialCustomDungeonList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2700ILCAPJBAFOI_ = unk2700ILCAPJBAFOI_;
+          result.officialCustomDungeonList_ = officialCustomDungeonList_;
         } else {
-          result.unk2700ILCAPJBAFOI_ = unk2700ILCAPJBAFOIBuilder_.build();
+          result.officialCustomDungeonList_ = officialCustomDungeonListBuilder_.build();
         }
-        result.unk2700PNOCELCOFNK_ = unk2700PNOCELCOFNK_;
+        result.isEnableUgc_ = isEnableUgc_;
         onBuilt();
         return result;
       }
@@ -569,40 +569,40 @@ public final class UgcActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.UgcActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getUnk2700GMICFADLAMC() != false) {
-          setUnk2700GMICFADLAMC(other.getUnk2700GMICFADLAMC());
+        if (other.getIsUgcFeatureClosed() != false) {
+          setIsUgcFeatureClosed(other.getIsUgcFeatureClosed());
         }
-        if (other.getUnk2700FDDCMGKDOCC() != 0) {
-          setUnk2700FDDCMGKDOCC(other.getUnk2700FDDCMGKDOCC());
+        if (other.getCustomDungeonGroupId() != 0) {
+          setCustomDungeonGroupId(other.getCustomDungeonGroupId());
         }
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          if (!other.unk2700ILCAPJBAFOI_.isEmpty()) {
-            if (unk2700ILCAPJBAFOI_.isEmpty()) {
-              unk2700ILCAPJBAFOI_ = other.unk2700ILCAPJBAFOI_;
+        if (officialCustomDungeonListBuilder_ == null) {
+          if (!other.officialCustomDungeonList_.isEmpty()) {
+            if (officialCustomDungeonList_.isEmpty()) {
+              officialCustomDungeonList_ = other.officialCustomDungeonList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2700ILCAPJBAFOIIsMutable();
-              unk2700ILCAPJBAFOI_.addAll(other.unk2700ILCAPJBAFOI_);
+              ensureOfficialCustomDungeonListIsMutable();
+              officialCustomDungeonList_.addAll(other.officialCustomDungeonList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700ILCAPJBAFOI_.isEmpty()) {
-            if (unk2700ILCAPJBAFOIBuilder_.isEmpty()) {
-              unk2700ILCAPJBAFOIBuilder_.dispose();
-              unk2700ILCAPJBAFOIBuilder_ = null;
-              unk2700ILCAPJBAFOI_ = other.unk2700ILCAPJBAFOI_;
+          if (!other.officialCustomDungeonList_.isEmpty()) {
+            if (officialCustomDungeonListBuilder_.isEmpty()) {
+              officialCustomDungeonListBuilder_.dispose();
+              officialCustomDungeonListBuilder_ = null;
+              officialCustomDungeonList_ = other.officialCustomDungeonList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2700ILCAPJBAFOIBuilder_ = 
+              officialCustomDungeonListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700ILCAPJBAFOIFieldBuilder() : null;
+                   getOfficialCustomDungeonListFieldBuilder() : null;
             } else {
-              unk2700ILCAPJBAFOIBuilder_.addAllMessages(other.unk2700ILCAPJBAFOI_);
+              officialCustomDungeonListBuilder_.addAllMessages(other.officialCustomDungeonList_);
             }
           }
         }
-        if (other.getUnk2700PNOCELCOFNK() != false) {
-          setUnk2700PNOCELCOFNK(other.getUnk2700PNOCELCOFNK());
+        if (other.getIsEnableUgc() != false) {
+          setIsEnableUgc(other.getIsEnableUgc());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -634,335 +634,335 @@ public final class UgcActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private boolean unk2700GMICFADLAMC_ ;
+      private boolean isUgcFeatureClosed_ ;
       /**
-       * <code>bool Unk2700_GMICFADLAMC = 10;</code>
-       * @return The unk2700GMICFADLAMC.
+       * <code>bool is_ugc_feature_closed = 10;</code>
+       * @return The isUgcFeatureClosed.
        */
       @java.lang.Override
-      public boolean getUnk2700GMICFADLAMC() {
-        return unk2700GMICFADLAMC_;
+      public boolean getIsUgcFeatureClosed() {
+        return isUgcFeatureClosed_;
       }
       /**
-       * <code>bool Unk2700_GMICFADLAMC = 10;</code>
-       * @param value The unk2700GMICFADLAMC to set.
+       * <code>bool is_ugc_feature_closed = 10;</code>
+       * @param value The isUgcFeatureClosed to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700GMICFADLAMC(boolean value) {
+      public Builder setIsUgcFeatureClosed(boolean value) {
         
-        unk2700GMICFADLAMC_ = value;
+        isUgcFeatureClosed_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_GMICFADLAMC = 10;</code>
+       * <code>bool is_ugc_feature_closed = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700GMICFADLAMC() {
+      public Builder clearIsUgcFeatureClosed() {
         
-        unk2700GMICFADLAMC_ = false;
+        isUgcFeatureClosed_ = false;
         onChanged();
         return this;
       }
 
-      private int unk2700FDDCMGKDOCC_ ;
+      private int customDungeonGroupId_ ;
       /**
-       * <code>uint32 Unk2700_FDDCMGKDOCC = 12;</code>
-       * @return The unk2700FDDCMGKDOCC.
+       * <code>uint32 custom_dungeon_group_id = 12;</code>
+       * @return The customDungeonGroupId.
        */
       @java.lang.Override
-      public int getUnk2700FDDCMGKDOCC() {
-        return unk2700FDDCMGKDOCC_;
+      public int getCustomDungeonGroupId() {
+        return customDungeonGroupId_;
       }
       /**
-       * <code>uint32 Unk2700_FDDCMGKDOCC = 12;</code>
-       * @param value The unk2700FDDCMGKDOCC to set.
+       * <code>uint32 custom_dungeon_group_id = 12;</code>
+       * @param value The customDungeonGroupId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700FDDCMGKDOCC(int value) {
+      public Builder setCustomDungeonGroupId(int value) {
         
-        unk2700FDDCMGKDOCC_ = value;
+        customDungeonGroupId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_FDDCMGKDOCC = 12;</code>
+       * <code>uint32 custom_dungeon_group_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700FDDCMGKDOCC() {
+      public Builder clearCustomDungeonGroupId() {
         
-        unk2700FDDCMGKDOCC_ = 0;
+        customDungeonGroupId_ = 0;
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL> unk2700ILCAPJBAFOI_ =
+      private java.util.List<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon> officialCustomDungeonList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700ILCAPJBAFOIIsMutable() {
+      private void ensureOfficialCustomDungeonListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700ILCAPJBAFOI_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL>(unk2700ILCAPJBAFOI_);
+          officialCustomDungeonList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon>(officialCustomDungeonList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder> unk2700ILCAPJBAFOIBuilder_;
+          emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder> officialCustomDungeonListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL> getUnk2700ILCAPJBAFOIList() {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700ILCAPJBAFOI_);
+      public java.util.List<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon> getOfficialCustomDungeonListList() {
+        if (officialCustomDungeonListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(officialCustomDungeonList_);
         } else {
-          return unk2700ILCAPJBAFOIBuilder_.getMessageList();
+          return officialCustomDungeonListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public int getUnk2700ILCAPJBAFOICount() {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          return unk2700ILCAPJBAFOI_.size();
+      public int getOfficialCustomDungeonListCount() {
+        if (officialCustomDungeonListBuilder_ == null) {
+          return officialCustomDungeonList_.size();
         } else {
-          return unk2700ILCAPJBAFOIBuilder_.getCount();
+          return officialCustomDungeonListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL getUnk2700ILCAPJBAFOI(int index) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          return unk2700ILCAPJBAFOI_.get(index);
+      public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon getOfficialCustomDungeonList(int index) {
+        if (officialCustomDungeonListBuilder_ == null) {
+          return officialCustomDungeonList_.get(index);
         } else {
-          return unk2700ILCAPJBAFOIBuilder_.getMessage(index);
+          return officialCustomDungeonListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder setUnk2700ILCAPJBAFOI(
-          int index, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL value) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
+      public Builder setOfficialCustomDungeonList(
+          int index, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon value) {
+        if (officialCustomDungeonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700ILCAPJBAFOIIsMutable();
-          unk2700ILCAPJBAFOI_.set(index, value);
+          ensureOfficialCustomDungeonListIsMutable();
+          officialCustomDungeonList_.set(index, value);
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.setMessage(index, value);
+          officialCustomDungeonListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder setUnk2700ILCAPJBAFOI(
-          int index, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder builderForValue) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          ensureUnk2700ILCAPJBAFOIIsMutable();
-          unk2700ILCAPJBAFOI_.set(index, builderForValue.build());
+      public Builder setOfficialCustomDungeonList(
+          int index, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder builderForValue) {
+        if (officialCustomDungeonListBuilder_ == null) {
+          ensureOfficialCustomDungeonListIsMutable();
+          officialCustomDungeonList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.setMessage(index, builderForValue.build());
+          officialCustomDungeonListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder addUnk2700ILCAPJBAFOI(emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL value) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
+      public Builder addOfficialCustomDungeonList(emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon value) {
+        if (officialCustomDungeonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700ILCAPJBAFOIIsMutable();
-          unk2700ILCAPJBAFOI_.add(value);
+          ensureOfficialCustomDungeonListIsMutable();
+          officialCustomDungeonList_.add(value);
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.addMessage(value);
+          officialCustomDungeonListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder addUnk2700ILCAPJBAFOI(
-          int index, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL value) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
+      public Builder addOfficialCustomDungeonList(
+          int index, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon value) {
+        if (officialCustomDungeonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700ILCAPJBAFOIIsMutable();
-          unk2700ILCAPJBAFOI_.add(index, value);
+          ensureOfficialCustomDungeonListIsMutable();
+          officialCustomDungeonList_.add(index, value);
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.addMessage(index, value);
+          officialCustomDungeonListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder addUnk2700ILCAPJBAFOI(
-          emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder builderForValue) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          ensureUnk2700ILCAPJBAFOIIsMutable();
-          unk2700ILCAPJBAFOI_.add(builderForValue.build());
+      public Builder addOfficialCustomDungeonList(
+          emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder builderForValue) {
+        if (officialCustomDungeonListBuilder_ == null) {
+          ensureOfficialCustomDungeonListIsMutable();
+          officialCustomDungeonList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.addMessage(builderForValue.build());
+          officialCustomDungeonListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder addUnk2700ILCAPJBAFOI(
-          int index, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder builderForValue) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          ensureUnk2700ILCAPJBAFOIIsMutable();
-          unk2700ILCAPJBAFOI_.add(index, builderForValue.build());
+      public Builder addOfficialCustomDungeonList(
+          int index, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder builderForValue) {
+        if (officialCustomDungeonListBuilder_ == null) {
+          ensureOfficialCustomDungeonListIsMutable();
+          officialCustomDungeonList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.addMessage(index, builderForValue.build());
+          officialCustomDungeonListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder addAllUnk2700ILCAPJBAFOI(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL> values) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          ensureUnk2700ILCAPJBAFOIIsMutable();
+      public Builder addAllOfficialCustomDungeonList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon> values) {
+        if (officialCustomDungeonListBuilder_ == null) {
+          ensureOfficialCustomDungeonListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700ILCAPJBAFOI_);
+              values, officialCustomDungeonList_);
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.addAllMessages(values);
+          officialCustomDungeonListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder clearUnk2700ILCAPJBAFOI() {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          unk2700ILCAPJBAFOI_ = java.util.Collections.emptyList();
+      public Builder clearOfficialCustomDungeonList() {
+        if (officialCustomDungeonListBuilder_ == null) {
+          officialCustomDungeonList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.clear();
+          officialCustomDungeonListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public Builder removeUnk2700ILCAPJBAFOI(int index) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          ensureUnk2700ILCAPJBAFOIIsMutable();
-          unk2700ILCAPJBAFOI_.remove(index);
+      public Builder removeOfficialCustomDungeonList(int index) {
+        if (officialCustomDungeonListBuilder_ == null) {
+          ensureOfficialCustomDungeonListIsMutable();
+          officialCustomDungeonList_.remove(index);
           onChanged();
         } else {
-          unk2700ILCAPJBAFOIBuilder_.remove(index);
+          officialCustomDungeonListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder getUnk2700ILCAPJBAFOIBuilder(
+      public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder getOfficialCustomDungeonListBuilder(
           int index) {
-        return getUnk2700ILCAPJBAFOIFieldBuilder().getBuilder(index);
+        return getOfficialCustomDungeonListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder getUnk2700ILCAPJBAFOIOrBuilder(
+      public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder getOfficialCustomDungeonListOrBuilder(
           int index) {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          return unk2700ILCAPJBAFOI_.get(index);  } else {
-          return unk2700ILCAPJBAFOIBuilder_.getMessageOrBuilder(index);
+        if (officialCustomDungeonListBuilder_ == null) {
+          return officialCustomDungeonList_.get(index);  } else {
+          return officialCustomDungeonListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder> 
-           getUnk2700ILCAPJBAFOIOrBuilderList() {
-        if (unk2700ILCAPJBAFOIBuilder_ != null) {
-          return unk2700ILCAPJBAFOIBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder> 
+           getOfficialCustomDungeonListOrBuilderList() {
+        if (officialCustomDungeonListBuilder_ != null) {
+          return officialCustomDungeonListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700ILCAPJBAFOI_);
+          return java.util.Collections.unmodifiableList(officialCustomDungeonList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder addUnk2700ILCAPJBAFOIBuilder() {
-        return getUnk2700ILCAPJBAFOIFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.getDefaultInstance());
+      public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder addOfficialCustomDungeonListBuilder() {
+        return getOfficialCustomDungeonListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder addUnk2700ILCAPJBAFOIBuilder(
+      public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder addOfficialCustomDungeonListBuilder(
           int index) {
-        return getUnk2700ILCAPJBAFOIFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.getDefaultInstance());
+        return getOfficialCustomDungeonListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_MMJJMKMHANL Unk2700_ILCAPJBAFOI = 5;</code>
+       * <code>repeated .OfficialCustomDungeon official_custom_dungeon_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder> 
-           getUnk2700ILCAPJBAFOIBuilderList() {
-        return getUnk2700ILCAPJBAFOIFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder> 
+           getOfficialCustomDungeonListBuilderList() {
+        return getOfficialCustomDungeonListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder> 
-          getUnk2700ILCAPJBAFOIFieldBuilder() {
-        if (unk2700ILCAPJBAFOIBuilder_ == null) {
-          unk2700ILCAPJBAFOIBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANL.Builder, emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.Unk2700_MMJJMKMHANLOrBuilder>(
-                  unk2700ILCAPJBAFOI_,
+          emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder> 
+          getOfficialCustomDungeonListFieldBuilder() {
+        if (officialCustomDungeonListBuilder_ == null) {
+          officialCustomDungeonListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeonOrBuilder>(
+                  officialCustomDungeonList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700ILCAPJBAFOI_ = null;
+          officialCustomDungeonList_ = null;
         }
-        return unk2700ILCAPJBAFOIBuilder_;
+        return officialCustomDungeonListBuilder_;
       }
 
-      private boolean unk2700PNOCELCOFNK_ ;
+      private boolean isEnableUgc_ ;
       /**
-       * <code>bool Unk2700_PNOCELCOFNK = 11;</code>
-       * @return The unk2700PNOCELCOFNK.
+       * <code>bool is_enable_ugc = 11;</code>
+       * @return The isEnableUgc.
        */
       @java.lang.Override
-      public boolean getUnk2700PNOCELCOFNK() {
-        return unk2700PNOCELCOFNK_;
+      public boolean getIsEnableUgc() {
+        return isEnableUgc_;
       }
       /**
-       * <code>bool Unk2700_PNOCELCOFNK = 11;</code>
-       * @param value The unk2700PNOCELCOFNK to set.
+       * <code>bool is_enable_ugc = 11;</code>
+       * @param value The isEnableUgc to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700PNOCELCOFNK(boolean value) {
+      public Builder setIsEnableUgc(boolean value) {
         
-        unk2700PNOCELCOFNK_ = value;
+        isEnableUgc_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_PNOCELCOFNK = 11;</code>
+       * <code>bool is_enable_ugc = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700PNOCELCOFNK() {
+      public Builder clearIsEnableUgc() {
         
-        unk2700PNOCELCOFNK_ = false;
+        isEnableUgc_ = false;
         onChanged();
         return this;
       }
@@ -1033,26 +1033,26 @@ public final class UgcActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033UgcActivityDetailInfo.proto\032\031Unk2700_M" +
-      "MJJMKMHANL.proto\"\241\001\n\025UgcActivityDetailIn" +
-      "fo\022\033\n\023Unk2700_GMICFADLAMC\030\n \001(\010\022\033\n\023Unk27" +
-      "00_FDDCMGKDOCC\030\014 \001(\r\0221\n\023Unk2700_ILCAPJBA" +
-      "FOI\030\005 \003(\0132\024.Unk2700_MMJJMKMHANL\022\033\n\023Unk27" +
-      "00_PNOCELCOFNK\030\013 \001(\010B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\033UgcActivityDetailInfo.proto\032\033OfficialC" +
+      "ustomDungeon.proto\"\254\001\n\025UgcActivityDetail" +
+      "Info\022\035\n\025is_ugc_feature_closed\030\n \001(\010\022\037\n\027c" +
+      "ustom_dungeon_group_id\030\014 \001(\r\022<\n\034official" +
+      "_custom_dungeon_list\030\005 \003(\0132\026.OfficialCus" +
+      "tomDungeon\022\025\n\ris_enable_ugc\030\013 \001(\010B\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.getDescriptor(),
+          emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.getDescriptor(),
         });
     internal_static_UgcActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_UgcActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcActivityDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2700GMICFADLAMC", "Unk2700FDDCMGKDOCC", "Unk2700ILCAPJBAFOI", "Unk2700PNOCELCOFNK", });
-    emu.grasscutter.net.proto.Unk2700MMJJMKMHANL.getDescriptor();
+        new java.lang.String[] { "IsUgcFeatureClosed", "CustomDungeonGroupId", "OfficialCustomDungeonList", "IsEnableUgc", });
+    emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

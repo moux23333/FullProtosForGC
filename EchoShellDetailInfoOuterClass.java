@@ -19,27 +19,27 @@ public final class EchoShellDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL> 
-        getUnk2800KEMCFBCAMMMList();
+    java.util.List<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo> 
+        getSummerTimeDungeonListList();
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
-    emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL getUnk2800KEMCFBCAMMM(int index);
+    emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo getSummerTimeDungeonList(int index);
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
-    int getUnk2800KEMCFBCAMMMCount();
+    int getSummerTimeDungeonListCount();
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder> 
-        getUnk2800KEMCFBCAMMMOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder> 
+        getSummerTimeDungeonListOrBuilderList();
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
-    emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder getUnk2800KEMCFBCAMMMOrBuilder(
+    emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder getSummerTimeDungeonListOrBuilder(
         int index);
 
     /**
@@ -60,21 +60,21 @@ public final class EchoShellDetailInfoOuterClass {
     int getShellList(int index);
 
     /**
-     * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-     * @return A list containing the unk2800BFONDMJGNKL.
+     * <code>repeated uint32 pass_dungeon_list = 4;</code>
+     * @return A list containing the passDungeonList.
      */
-    java.util.List<java.lang.Integer> getUnk2800BFONDMJGNKLList();
+    java.util.List<java.lang.Integer> getPassDungeonListList();
     /**
-     * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-     * @return The count of unk2800BFONDMJGNKL.
+     * <code>repeated uint32 pass_dungeon_list = 4;</code>
+     * @return The count of passDungeonList.
      */
-    int getUnk2800BFONDMJGNKLCount();
+    int getPassDungeonListCount();
     /**
-     * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
+     * <code>repeated uint32 pass_dungeon_list = 4;</code>
      * @param index The index of the element to return.
-     * @return The unk2800BFONDMJGNKL at the given index.
+     * @return The passDungeonList at the given index.
      */
-    int getUnk2800BFONDMJGNKL(int index);
+    int getPassDungeonList(int index);
 
     /**
      * <code>repeated uint32 taken_reward_list = 2;</code>
@@ -106,9 +106,9 @@ public final class EchoShellDetailInfoOuterClass {
       super(builder);
     }
     private EchoShellDetailInfo() {
-      unk2800KEMCFBCAMMM_ = java.util.Collections.emptyList();
+      summerTimeDungeonList_ = java.util.Collections.emptyList();
       shellList_ = emptyIntList();
-      unk2800BFONDMJGNKL_ = emptyIntList();
+      passDungeonList_ = emptyIntList();
       takenRewardList_ = emptyIntList();
     }
 
@@ -166,32 +166,32 @@ public final class EchoShellDetailInfoOuterClass {
             }
             case 32: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                unk2800BFONDMJGNKL_ = newIntList();
+                passDungeonList_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
               }
-              unk2800BFONDMJGNKL_.addInt(input.readUInt32());
+              passDungeonList_.addInt(input.readUInt32());
               break;
             }
             case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2800BFONDMJGNKL_ = newIntList();
+                passDungeonList_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2800BFONDMJGNKL_.addInt(input.readUInt32());
+                passDungeonList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2800KEMCFBCAMMM_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL>();
+                summerTimeDungeonList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2800KEMCFBCAMMM_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.parser(), extensionRegistry));
+              summerTimeDungeonList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.parser(), extensionRegistry));
               break;
             }
             case 104: {
@@ -234,10 +234,10 @@ public final class EchoShellDetailInfoOuterClass {
           takenRewardList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          unk2800BFONDMJGNKL_.makeImmutable(); // C
+          passDungeonList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2800KEMCFBCAMMM_ = java.util.Collections.unmodifiableList(unk2800KEMCFBCAMMM_);
+          summerTimeDungeonList_ = java.util.Collections.unmodifiableList(summerTimeDungeonList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           shellList_.makeImmutable(); // C
@@ -259,44 +259,44 @@ public final class EchoShellDetailInfoOuterClass {
               emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo.class, emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo.Builder.class);
     }
 
-    public static final int UNK2800_KEMCFBCAMMM_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL> unk2800KEMCFBCAMMM_;
+    public static final int SUMMER_TIME_DUNGEON_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo> summerTimeDungeonList_;
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL> getUnk2800KEMCFBCAMMMList() {
-      return unk2800KEMCFBCAMMM_;
+    public java.util.List<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo> getSummerTimeDungeonListList() {
+      return summerTimeDungeonList_;
     }
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder> 
-        getUnk2800KEMCFBCAMMMOrBuilderList() {
-      return unk2800KEMCFBCAMMM_;
+    public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder> 
+        getSummerTimeDungeonListOrBuilderList() {
+      return summerTimeDungeonList_;
     }
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
     @java.lang.Override
-    public int getUnk2800KEMCFBCAMMMCount() {
-      return unk2800KEMCFBCAMMM_.size();
+    public int getSummerTimeDungeonListCount() {
+      return summerTimeDungeonList_.size();
     }
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL getUnk2800KEMCFBCAMMM(int index) {
-      return unk2800KEMCFBCAMMM_.get(index);
+    public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo getSummerTimeDungeonList(int index) {
+      return summerTimeDungeonList_.get(index);
     }
     /**
-     * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+     * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder getUnk2800KEMCFBCAMMMOrBuilder(
+    public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder getSummerTimeDungeonListOrBuilder(
         int index) {
-      return unk2800KEMCFBCAMMM_.get(index);
+      return summerTimeDungeonList_.get(index);
     }
 
     public static final int SHELL_LIST_FIELD_NUMBER = 13;
@@ -327,33 +327,33 @@ public final class EchoShellDetailInfoOuterClass {
     }
     private int shellListMemoizedSerializedSize = -1;
 
-    public static final int UNK2800_BFONDMJGNKL_FIELD_NUMBER = 4;
-    private com.google.protobuf.Internal.IntList unk2800BFONDMJGNKL_;
+    public static final int PASS_DUNGEON_LIST_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList passDungeonList_;
     /**
-     * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-     * @return A list containing the unk2800BFONDMJGNKL.
+     * <code>repeated uint32 pass_dungeon_list = 4;</code>
+     * @return A list containing the passDungeonList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2800BFONDMJGNKLList() {
-      return unk2800BFONDMJGNKL_;
+        getPassDungeonListList() {
+      return passDungeonList_;
     }
     /**
-     * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-     * @return The count of unk2800BFONDMJGNKL.
+     * <code>repeated uint32 pass_dungeon_list = 4;</code>
+     * @return The count of passDungeonList.
      */
-    public int getUnk2800BFONDMJGNKLCount() {
-      return unk2800BFONDMJGNKL_.size();
+    public int getPassDungeonListCount() {
+      return passDungeonList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
+     * <code>repeated uint32 pass_dungeon_list = 4;</code>
      * @param index The index of the element to return.
-     * @return The unk2800BFONDMJGNKL at the given index.
+     * @return The passDungeonList at the given index.
      */
-    public int getUnk2800BFONDMJGNKL(int index) {
-      return unk2800BFONDMJGNKL_.getInt(index);
+    public int getPassDungeonList(int index) {
+      return passDungeonList_.getInt(index);
     }
-    private int unk2800BFONDMJGNKLMemoizedSerializedSize = -1;
+    private int passDungeonListMemoizedSerializedSize = -1;
 
     public static final int TAKEN_REWARD_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList takenRewardList_;
@@ -405,15 +405,15 @@ public final class EchoShellDetailInfoOuterClass {
       for (int i = 0; i < takenRewardList_.size(); i++) {
         output.writeUInt32NoTag(takenRewardList_.getInt(i));
       }
-      if (getUnk2800BFONDMJGNKLList().size() > 0) {
+      if (getPassDungeonListList().size() > 0) {
         output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(unk2800BFONDMJGNKLMemoizedSerializedSize);
+        output.writeUInt32NoTag(passDungeonListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2800BFONDMJGNKL_.size(); i++) {
-        output.writeUInt32NoTag(unk2800BFONDMJGNKL_.getInt(i));
+      for (int i = 0; i < passDungeonList_.size(); i++) {
+        output.writeUInt32NoTag(passDungeonList_.getInt(i));
       }
-      for (int i = 0; i < unk2800KEMCFBCAMMM_.size(); i++) {
-        output.writeMessage(8, unk2800KEMCFBCAMMM_.get(i));
+      for (int i = 0; i < summerTimeDungeonList_.size(); i++) {
+        output.writeMessage(8, summerTimeDungeonList_.get(i));
       }
       if (getShellListList().size() > 0) {
         output.writeUInt32NoTag(106);
@@ -447,21 +447,21 @@ public final class EchoShellDetailInfoOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2800BFONDMJGNKL_.size(); i++) {
+        for (int i = 0; i < passDungeonList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2800BFONDMJGNKL_.getInt(i));
+            .computeUInt32SizeNoTag(passDungeonList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2800BFONDMJGNKLList().isEmpty()) {
+        if (!getPassDungeonListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2800BFONDMJGNKLMemoizedSerializedSize = dataSize;
+        passDungeonListMemoizedSerializedSize = dataSize;
       }
-      for (int i = 0; i < unk2800KEMCFBCAMMM_.size(); i++) {
+      for (int i = 0; i < summerTimeDungeonList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, unk2800KEMCFBCAMMM_.get(i));
+          .computeMessageSize(8, summerTimeDungeonList_.get(i));
       }
       {
         int dataSize = 0;
@@ -492,12 +492,12 @@ public final class EchoShellDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo other = (emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo) obj;
 
-      if (!getUnk2800KEMCFBCAMMMList()
-          .equals(other.getUnk2800KEMCFBCAMMMList())) return false;
+      if (!getSummerTimeDungeonListList()
+          .equals(other.getSummerTimeDungeonListList())) return false;
       if (!getShellListList()
           .equals(other.getShellListList())) return false;
-      if (!getUnk2800BFONDMJGNKLList()
-          .equals(other.getUnk2800BFONDMJGNKLList())) return false;
+      if (!getPassDungeonListList()
+          .equals(other.getPassDungeonListList())) return false;
       if (!getTakenRewardListList()
           .equals(other.getTakenRewardListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -511,17 +511,17 @@ public final class EchoShellDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getUnk2800KEMCFBCAMMMCount() > 0) {
-        hash = (37 * hash) + UNK2800_KEMCFBCAMMM_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800KEMCFBCAMMMList().hashCode();
+      if (getSummerTimeDungeonListCount() > 0) {
+        hash = (37 * hash) + SUMMER_TIME_DUNGEON_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSummerTimeDungeonListList().hashCode();
       }
       if (getShellListCount() > 0) {
         hash = (37 * hash) + SHELL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getShellListList().hashCode();
       }
-      if (getUnk2800BFONDMJGNKLCount() > 0) {
-        hash = (37 * hash) + UNK2800_BFONDMJGNKL_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800BFONDMJGNKLList().hashCode();
+      if (getPassDungeonListCount() > 0) {
+        hash = (37 * hash) + PASS_DUNGEON_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPassDungeonListList().hashCode();
       }
       if (getTakenRewardListCount() > 0) {
         hash = (37 * hash) + TAKEN_REWARD_LIST_FIELD_NUMBER;
@@ -655,21 +655,21 @@ public final class EchoShellDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2800KEMCFBCAMMMFieldBuilder();
+          getSummerTimeDungeonListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          unk2800KEMCFBCAMMM_ = java.util.Collections.emptyList();
+        if (summerTimeDungeonListBuilder_ == null) {
+          summerTimeDungeonList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2800KEMCFBCAMMMBuilder_.clear();
+          summerTimeDungeonListBuilder_.clear();
         }
         shellList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        unk2800BFONDMJGNKL_ = emptyIntList();
+        passDungeonList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
         takenRewardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -700,14 +700,14 @@ public final class EchoShellDetailInfoOuterClass {
       public emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo buildPartial() {
         emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo result = new emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
+        if (summerTimeDungeonListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2800KEMCFBCAMMM_ = java.util.Collections.unmodifiableList(unk2800KEMCFBCAMMM_);
+            summerTimeDungeonList_ = java.util.Collections.unmodifiableList(summerTimeDungeonList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2800KEMCFBCAMMM_ = unk2800KEMCFBCAMMM_;
+          result.summerTimeDungeonList_ = summerTimeDungeonList_;
         } else {
-          result.unk2800KEMCFBCAMMM_ = unk2800KEMCFBCAMMMBuilder_.build();
+          result.summerTimeDungeonList_ = summerTimeDungeonListBuilder_.build();
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           shellList_.makeImmutable();
@@ -715,10 +715,10 @@ public final class EchoShellDetailInfoOuterClass {
         }
         result.shellList_ = shellList_;
         if (((bitField0_ & 0x00000004) != 0)) {
-          unk2800BFONDMJGNKL_.makeImmutable();
+          passDungeonList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.unk2800BFONDMJGNKL_ = unk2800BFONDMJGNKL_;
+        result.passDungeonList_ = passDungeonList_;
         if (((bitField0_ & 0x00000008) != 0)) {
           takenRewardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -772,29 +772,29 @@ public final class EchoShellDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo other) {
         if (other == emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.EchoShellDetailInfo.getDefaultInstance()) return this;
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          if (!other.unk2800KEMCFBCAMMM_.isEmpty()) {
-            if (unk2800KEMCFBCAMMM_.isEmpty()) {
-              unk2800KEMCFBCAMMM_ = other.unk2800KEMCFBCAMMM_;
+        if (summerTimeDungeonListBuilder_ == null) {
+          if (!other.summerTimeDungeonList_.isEmpty()) {
+            if (summerTimeDungeonList_.isEmpty()) {
+              summerTimeDungeonList_ = other.summerTimeDungeonList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2800KEMCFBCAMMMIsMutable();
-              unk2800KEMCFBCAMMM_.addAll(other.unk2800KEMCFBCAMMM_);
+              ensureSummerTimeDungeonListIsMutable();
+              summerTimeDungeonList_.addAll(other.summerTimeDungeonList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2800KEMCFBCAMMM_.isEmpty()) {
-            if (unk2800KEMCFBCAMMMBuilder_.isEmpty()) {
-              unk2800KEMCFBCAMMMBuilder_.dispose();
-              unk2800KEMCFBCAMMMBuilder_ = null;
-              unk2800KEMCFBCAMMM_ = other.unk2800KEMCFBCAMMM_;
+          if (!other.summerTimeDungeonList_.isEmpty()) {
+            if (summerTimeDungeonListBuilder_.isEmpty()) {
+              summerTimeDungeonListBuilder_.dispose();
+              summerTimeDungeonListBuilder_ = null;
+              summerTimeDungeonList_ = other.summerTimeDungeonList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2800KEMCFBCAMMMBuilder_ = 
+              summerTimeDungeonListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2800KEMCFBCAMMMFieldBuilder() : null;
+                   getSummerTimeDungeonListFieldBuilder() : null;
             } else {
-              unk2800KEMCFBCAMMMBuilder_.addAllMessages(other.unk2800KEMCFBCAMMM_);
+              summerTimeDungeonListBuilder_.addAllMessages(other.summerTimeDungeonList_);
             }
           }
         }
@@ -808,13 +808,13 @@ public final class EchoShellDetailInfoOuterClass {
           }
           onChanged();
         }
-        if (!other.unk2800BFONDMJGNKL_.isEmpty()) {
-          if (unk2800BFONDMJGNKL_.isEmpty()) {
-            unk2800BFONDMJGNKL_ = other.unk2800BFONDMJGNKL_;
+        if (!other.passDungeonList_.isEmpty()) {
+          if (passDungeonList_.isEmpty()) {
+            passDungeonList_ = other.passDungeonList_;
             bitField0_ = (bitField0_ & ~0x00000004);
           } else {
-            ensureUnk2800BFONDMJGNKLIsMutable();
-            unk2800BFONDMJGNKL_.addAll(other.unk2800BFONDMJGNKL_);
+            ensurePassDungeonListIsMutable();
+            passDungeonList_.addAll(other.passDungeonList_);
           }
           onChanged();
         }
@@ -858,244 +858,244 @@ public final class EchoShellDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL> unk2800KEMCFBCAMMM_ =
+      private java.util.List<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo> summerTimeDungeonList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2800KEMCFBCAMMMIsMutable() {
+      private void ensureSummerTimeDungeonListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2800KEMCFBCAMMM_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL>(unk2800KEMCFBCAMMM_);
+          summerTimeDungeonList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo>(summerTimeDungeonList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder> unk2800KEMCFBCAMMMBuilder_;
+          emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder> summerTimeDungeonListBuilder_;
 
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL> getUnk2800KEMCFBCAMMMList() {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2800KEMCFBCAMMM_);
+      public java.util.List<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo> getSummerTimeDungeonListList() {
+        if (summerTimeDungeonListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(summerTimeDungeonList_);
         } else {
-          return unk2800KEMCFBCAMMMBuilder_.getMessageList();
+          return summerTimeDungeonListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public int getUnk2800KEMCFBCAMMMCount() {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          return unk2800KEMCFBCAMMM_.size();
+      public int getSummerTimeDungeonListCount() {
+        if (summerTimeDungeonListBuilder_ == null) {
+          return summerTimeDungeonList_.size();
         } else {
-          return unk2800KEMCFBCAMMMBuilder_.getCount();
+          return summerTimeDungeonListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL getUnk2800KEMCFBCAMMM(int index) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          return unk2800KEMCFBCAMMM_.get(index);
+      public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo getSummerTimeDungeonList(int index) {
+        if (summerTimeDungeonListBuilder_ == null) {
+          return summerTimeDungeonList_.get(index);
         } else {
-          return unk2800KEMCFBCAMMMBuilder_.getMessage(index);
+          return summerTimeDungeonListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder setUnk2800KEMCFBCAMMM(
-          int index, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL value) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
+      public Builder setSummerTimeDungeonList(
+          int index, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo value) {
+        if (summerTimeDungeonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800KEMCFBCAMMMIsMutable();
-          unk2800KEMCFBCAMMM_.set(index, value);
+          ensureSummerTimeDungeonListIsMutable();
+          summerTimeDungeonList_.set(index, value);
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.setMessage(index, value);
+          summerTimeDungeonListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder setUnk2800KEMCFBCAMMM(
-          int index, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder builderForValue) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          ensureUnk2800KEMCFBCAMMMIsMutable();
-          unk2800KEMCFBCAMMM_.set(index, builderForValue.build());
+      public Builder setSummerTimeDungeonList(
+          int index, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder builderForValue) {
+        if (summerTimeDungeonListBuilder_ == null) {
+          ensureSummerTimeDungeonListIsMutable();
+          summerTimeDungeonList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.setMessage(index, builderForValue.build());
+          summerTimeDungeonListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder addUnk2800KEMCFBCAMMM(emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL value) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
+      public Builder addSummerTimeDungeonList(emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo value) {
+        if (summerTimeDungeonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800KEMCFBCAMMMIsMutable();
-          unk2800KEMCFBCAMMM_.add(value);
+          ensureSummerTimeDungeonListIsMutable();
+          summerTimeDungeonList_.add(value);
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.addMessage(value);
+          summerTimeDungeonListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder addUnk2800KEMCFBCAMMM(
-          int index, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL value) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
+      public Builder addSummerTimeDungeonList(
+          int index, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo value) {
+        if (summerTimeDungeonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800KEMCFBCAMMMIsMutable();
-          unk2800KEMCFBCAMMM_.add(index, value);
+          ensureSummerTimeDungeonListIsMutable();
+          summerTimeDungeonList_.add(index, value);
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.addMessage(index, value);
+          summerTimeDungeonListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder addUnk2800KEMCFBCAMMM(
-          emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder builderForValue) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          ensureUnk2800KEMCFBCAMMMIsMutable();
-          unk2800KEMCFBCAMMM_.add(builderForValue.build());
+      public Builder addSummerTimeDungeonList(
+          emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder builderForValue) {
+        if (summerTimeDungeonListBuilder_ == null) {
+          ensureSummerTimeDungeonListIsMutable();
+          summerTimeDungeonList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.addMessage(builderForValue.build());
+          summerTimeDungeonListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder addUnk2800KEMCFBCAMMM(
-          int index, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder builderForValue) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          ensureUnk2800KEMCFBCAMMMIsMutable();
-          unk2800KEMCFBCAMMM_.add(index, builderForValue.build());
+      public Builder addSummerTimeDungeonList(
+          int index, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder builderForValue) {
+        if (summerTimeDungeonListBuilder_ == null) {
+          ensureSummerTimeDungeonListIsMutable();
+          summerTimeDungeonList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.addMessage(index, builderForValue.build());
+          summerTimeDungeonListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder addAllUnk2800KEMCFBCAMMM(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL> values) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          ensureUnk2800KEMCFBCAMMMIsMutable();
+      public Builder addAllSummerTimeDungeonList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo> values) {
+        if (summerTimeDungeonListBuilder_ == null) {
+          ensureSummerTimeDungeonListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2800KEMCFBCAMMM_);
+              values, summerTimeDungeonList_);
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.addAllMessages(values);
+          summerTimeDungeonListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder clearUnk2800KEMCFBCAMMM() {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          unk2800KEMCFBCAMMM_ = java.util.Collections.emptyList();
+      public Builder clearSummerTimeDungeonList() {
+        if (summerTimeDungeonListBuilder_ == null) {
+          summerTimeDungeonList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.clear();
+          summerTimeDungeonListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public Builder removeUnk2800KEMCFBCAMMM(int index) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          ensureUnk2800KEMCFBCAMMMIsMutable();
-          unk2800KEMCFBCAMMM_.remove(index);
+      public Builder removeSummerTimeDungeonList(int index) {
+        if (summerTimeDungeonListBuilder_ == null) {
+          ensureSummerTimeDungeonListIsMutable();
+          summerTimeDungeonList_.remove(index);
           onChanged();
         } else {
-          unk2800KEMCFBCAMMMBuilder_.remove(index);
+          summerTimeDungeonListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder getUnk2800KEMCFBCAMMMBuilder(
+      public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder getSummerTimeDungeonListBuilder(
           int index) {
-        return getUnk2800KEMCFBCAMMMFieldBuilder().getBuilder(index);
+        return getSummerTimeDungeonListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder getUnk2800KEMCFBCAMMMOrBuilder(
+      public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder getSummerTimeDungeonListOrBuilder(
           int index) {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          return unk2800KEMCFBCAMMM_.get(index);  } else {
-          return unk2800KEMCFBCAMMMBuilder_.getMessageOrBuilder(index);
+        if (summerTimeDungeonListBuilder_ == null) {
+          return summerTimeDungeonList_.get(index);  } else {
+          return summerTimeDungeonListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder> 
-           getUnk2800KEMCFBCAMMMOrBuilderList() {
-        if (unk2800KEMCFBCAMMMBuilder_ != null) {
-          return unk2800KEMCFBCAMMMBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder> 
+           getSummerTimeDungeonListOrBuilderList() {
+        if (summerTimeDungeonListBuilder_ != null) {
+          return summerTimeDungeonListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2800KEMCFBCAMMM_);
+          return java.util.Collections.unmodifiableList(summerTimeDungeonList_);
         }
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder addUnk2800KEMCFBCAMMMBuilder() {
-        return getUnk2800KEMCFBCAMMMFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.getDefaultInstance());
+      public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder addSummerTimeDungeonListBuilder() {
+        return getSummerTimeDungeonListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder addUnk2800KEMCFBCAMMMBuilder(
+      public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder addSummerTimeDungeonListBuilder(
           int index) {
-        return getUnk2800KEMCFBCAMMMFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.getDefaultInstance());
+        return getSummerTimeDungeonListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;</code>
+       * <code>repeated .SummerTimeDungeonInfo summer_time_dungeon_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder> 
-           getUnk2800KEMCFBCAMMMBuilderList() {
-        return getUnk2800KEMCFBCAMMMFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder> 
+           getSummerTimeDungeonListBuilderList() {
+        return getSummerTimeDungeonListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder> 
-          getUnk2800KEMCFBCAMMMFieldBuilder() {
-        if (unk2800KEMCFBCAMMMBuilder_ == null) {
-          unk2800KEMCFBCAMMMBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKL.Builder, emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.Unk2800_CEAECGGBOKLOrBuilder>(
-                  unk2800KEMCFBCAMMM_,
+          emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder> 
+          getSummerTimeDungeonListFieldBuilder() {
+        if (summerTimeDungeonListBuilder_ == null) {
+          summerTimeDungeonListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfoOrBuilder>(
+                  summerTimeDungeonList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2800KEMCFBCAMMM_ = null;
+          summerTimeDungeonList_ = null;
         }
-        return unk2800KEMCFBCAMMMBuilder_;
+        return summerTimeDungeonListBuilder_;
       }
 
       private com.google.protobuf.Internal.IntList shellList_ = emptyIntList();
@@ -1177,80 +1177,80 @@ public final class EchoShellDetailInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2800BFONDMJGNKL_ = emptyIntList();
-      private void ensureUnk2800BFONDMJGNKLIsMutable() {
+      private com.google.protobuf.Internal.IntList passDungeonList_ = emptyIntList();
+      private void ensurePassDungeonListIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          unk2800BFONDMJGNKL_ = mutableCopy(unk2800BFONDMJGNKL_);
+          passDungeonList_ = mutableCopy(passDungeonList_);
           bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-       * @return A list containing the unk2800BFONDMJGNKL.
+       * <code>repeated uint32 pass_dungeon_list = 4;</code>
+       * @return A list containing the passDungeonList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2800BFONDMJGNKLList() {
+          getPassDungeonListList() {
         return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2800BFONDMJGNKL_) : unk2800BFONDMJGNKL_;
+                 java.util.Collections.unmodifiableList(passDungeonList_) : passDungeonList_;
       }
       /**
-       * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-       * @return The count of unk2800BFONDMJGNKL.
+       * <code>repeated uint32 pass_dungeon_list = 4;</code>
+       * @return The count of passDungeonList.
        */
-      public int getUnk2800BFONDMJGNKLCount() {
-        return unk2800BFONDMJGNKL_.size();
+      public int getPassDungeonListCount() {
+        return passDungeonList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
+       * <code>repeated uint32 pass_dungeon_list = 4;</code>
        * @param index The index of the element to return.
-       * @return The unk2800BFONDMJGNKL at the given index.
+       * @return The passDungeonList at the given index.
        */
-      public int getUnk2800BFONDMJGNKL(int index) {
-        return unk2800BFONDMJGNKL_.getInt(index);
+      public int getPassDungeonList(int index) {
+        return passDungeonList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
+       * <code>repeated uint32 pass_dungeon_list = 4;</code>
        * @param index The index to set the value at.
-       * @param value The unk2800BFONDMJGNKL to set.
+       * @param value The passDungeonList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800BFONDMJGNKL(
+      public Builder setPassDungeonList(
           int index, int value) {
-        ensureUnk2800BFONDMJGNKLIsMutable();
-        unk2800BFONDMJGNKL_.setInt(index, value);
+        ensurePassDungeonListIsMutable();
+        passDungeonList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-       * @param value The unk2800BFONDMJGNKL to add.
+       * <code>repeated uint32 pass_dungeon_list = 4;</code>
+       * @param value The passDungeonList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2800BFONDMJGNKL(int value) {
-        ensureUnk2800BFONDMJGNKLIsMutable();
-        unk2800BFONDMJGNKL_.addInt(value);
+      public Builder addPassDungeonList(int value) {
+        ensurePassDungeonListIsMutable();
+        passDungeonList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
-       * @param values The unk2800BFONDMJGNKL to add.
+       * <code>repeated uint32 pass_dungeon_list = 4;</code>
+       * @param values The passDungeonList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2800BFONDMJGNKL(
+      public Builder addAllPassDungeonList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2800BFONDMJGNKLIsMutable();
+        ensurePassDungeonListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2800BFONDMJGNKL_);
+            values, passDungeonList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_BFONDMJGNKL = 4;</code>
+       * <code>repeated uint32 pass_dungeon_list = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800BFONDMJGNKL() {
-        unk2800BFONDMJGNKL_ = emptyIntList();
+      public Builder clearPassDungeonList() {
+        passDungeonList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
@@ -1401,26 +1401,26 @@ public final class EchoShellDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031EchoShellDetailInfo.proto\032\031Unk2800_CEA" +
-      "ECGGBOKL.proto\"\224\001\n\023EchoShellDetailInfo\0221" +
-      "\n\023Unk2800_KEMCFBCAMMM\030\010 \003(\0132\024.Unk2800_CE" +
-      "AECGGBOKL\022\022\n\nshell_list\030\r \003(\r\022\033\n\023Unk2800" +
-      "_BFONDMJGNKL\030\004 \003(\r\022\031\n\021taken_reward_list\030" +
-      "\002 \003(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\031EchoShellDetailInfo.proto\032\033SummerTimeD" +
+      "ungeonInfo.proto\"\231\001\n\023EchoShellDetailInfo" +
+      "\0228\n\030summer_time_dungeon_list\030\010 \003(\0132\026.Sum" +
+      "merTimeDungeonInfo\022\022\n\nshell_list\030\r \003(\r\022\031" +
+      "\n\021pass_dungeon_list\030\004 \003(\r\022\031\n\021taken_rewar" +
+      "d_list\030\002 \003(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.getDescriptor(),
+          emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.getDescriptor(),
         });
     internal_static_EchoShellDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_EchoShellDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EchoShellDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2800KEMCFBCAMMM", "ShellList", "Unk2800BFONDMJGNKL", "TakenRewardList", });
-    emu.grasscutter.net.proto.Unk2800CEAECGGBOKL.getDescriptor();
+        new java.lang.String[] { "SummerTimeDungeonList", "ShellList", "PassDungeonList", "TakenRewardList", });
+    emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

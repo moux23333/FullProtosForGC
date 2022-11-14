@@ -19,10 +19,10 @@ public final class AbilityMixinShieldBarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk2700_PBKBDDLNBEA = 14;</code>
-     * @return The unk2700PBKBDDLNBEA.
+     * <code>uint32 player_num = 14;</code>
+     * @return The playerNum.
      */
-    int getUnk2700PBKBDDLNBEA();
+    int getPlayerNum();
 
     /**
      * <code>float max_shield = 15;</code>
@@ -99,7 +99,7 @@ public final class AbilityMixinShieldBarOuterClass {
             }
             case 112: {
 
-              unk2700PBKBDDLNBEA_ = input.readUInt32();
+              playerNum_ = input.readUInt32();
               break;
             }
             case 125: {
@@ -139,15 +139,15 @@ public final class AbilityMixinShieldBarOuterClass {
               emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.class, emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.Builder.class);
     }
 
-    public static final int UNK2700_PBKBDDLNBEA_FIELD_NUMBER = 14;
-    private int unk2700PBKBDDLNBEA_;
+    public static final int PLAYER_NUM_FIELD_NUMBER = 14;
+    private int playerNum_;
     /**
-     * <code>uint32 Unk2700_PBKBDDLNBEA = 14;</code>
-     * @return The unk2700PBKBDDLNBEA.
+     * <code>uint32 player_num = 14;</code>
+     * @return The playerNum.
      */
     @java.lang.Override
-    public int getUnk2700PBKBDDLNBEA() {
-      return unk2700PBKBDDLNBEA_;
+    public int getPlayerNum() {
+      return playerNum_;
     }
 
     public static final int MAX_SHIELD_FIELD_NUMBER = 15;
@@ -203,8 +203,8 @@ public final class AbilityMixinShieldBarOuterClass {
       if (elementType_ != 0) {
         output.writeUInt32(13, elementType_);
       }
-      if (unk2700PBKBDDLNBEA_ != 0) {
-        output.writeUInt32(14, unk2700PBKBDDLNBEA_);
+      if (playerNum_ != 0) {
+        output.writeUInt32(14, playerNum_);
       }
       if (maxShield_ != 0F) {
         output.writeFloat(15, maxShield_);
@@ -226,9 +226,9 @@ public final class AbilityMixinShieldBarOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(13, elementType_);
       }
-      if (unk2700PBKBDDLNBEA_ != 0) {
+      if (playerNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unk2700PBKBDDLNBEA_);
+          .computeUInt32Size(14, playerNum_);
       }
       if (maxShield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
@@ -249,8 +249,8 @@ public final class AbilityMixinShieldBarOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar other = (emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar) obj;
 
-      if (getUnk2700PBKBDDLNBEA()
-          != other.getUnk2700PBKBDDLNBEA()) return false;
+      if (getPlayerNum()
+          != other.getPlayerNum()) return false;
       if (java.lang.Float.floatToIntBits(getMaxShield())
           != java.lang.Float.floatToIntBits(
               other.getMaxShield())) return false;
@@ -270,8 +270,8 @@ public final class AbilityMixinShieldBarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_PBKBDDLNBEA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700PBKBDDLNBEA();
+      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerNum();
       hash = (37 * hash) + MAX_SHIELD_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getMaxShield());
@@ -413,7 +413,7 @@ public final class AbilityMixinShieldBarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700PBKBDDLNBEA_ = 0;
+        playerNum_ = 0;
 
         maxShield_ = 0F;
 
@@ -447,7 +447,7 @@ public final class AbilityMixinShieldBarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar result = new emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar(this);
-        result.unk2700PBKBDDLNBEA_ = unk2700PBKBDDLNBEA_;
+        result.playerNum_ = playerNum_;
         result.maxShield_ = maxShield_;
         result.shield_ = shield_;
         result.elementType_ = elementType_;
@@ -499,8 +499,8 @@ public final class AbilityMixinShieldBarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.getDefaultInstance()) return this;
-        if (other.getUnk2700PBKBDDLNBEA() != 0) {
-          setUnk2700PBKBDDLNBEA(other.getUnk2700PBKBDDLNBEA());
+        if (other.getPlayerNum() != 0) {
+          setPlayerNum(other.getPlayerNum());
         }
         if (other.getMaxShield() != 0F) {
           setMaxShield(other.getMaxShield());
@@ -540,33 +540,33 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
 
-      private int unk2700PBKBDDLNBEA_ ;
+      private int playerNum_ ;
       /**
-       * <code>uint32 Unk2700_PBKBDDLNBEA = 14;</code>
-       * @return The unk2700PBKBDDLNBEA.
+       * <code>uint32 player_num = 14;</code>
+       * @return The playerNum.
        */
       @java.lang.Override
-      public int getUnk2700PBKBDDLNBEA() {
-        return unk2700PBKBDDLNBEA_;
+      public int getPlayerNum() {
+        return playerNum_;
       }
       /**
-       * <code>uint32 Unk2700_PBKBDDLNBEA = 14;</code>
-       * @param value The unk2700PBKBDDLNBEA to set.
+       * <code>uint32 player_num = 14;</code>
+       * @param value The playerNum to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700PBKBDDLNBEA(int value) {
+      public Builder setPlayerNum(int value) {
         
-        unk2700PBKBDDLNBEA_ = value;
+        playerNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_PBKBDDLNBEA = 14;</code>
+       * <code>uint32 player_num = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700PBKBDDLNBEA() {
+      public Builder clearPlayerNum() {
         
-        unk2700PBKBDDLNBEA_ = 0;
+        playerNum_ = 0;
         onChanged();
         return this;
       }
@@ -730,11 +730,11 @@ public final class AbilityMixinShieldBarOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033AbilityMixinShieldBar.proto\"n\n\025Ability" +
-      "MixinShieldBar\022\033\n\023Unk2700_PBKBDDLNBEA\030\016 " +
-      "\001(\r\022\022\n\nmax_shield\030\017 \001(\002\022\016\n\006shield\030\014 \001(\002\022" +
-      "\024\n\014element_type\030\r \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\033AbilityMixinShieldBar.proto\"e\n\025Ability" +
+      "MixinShieldBar\022\022\n\nplayer_num\030\016 \001(\r\022\022\n\nma" +
+      "x_shield\030\017 \001(\002\022\016\n\006shield\030\014 \001(\002\022\024\n\014elemen" +
+      "t_type\030\r \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -745,7 +745,7 @@ public final class AbilityMixinShieldBarOuterClass {
     internal_static_AbilityMixinShieldBar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinShieldBar_descriptor,
-        new java.lang.String[] { "Unk2700PBKBDDLNBEA", "MaxShield", "Shield", "ElementType", });
+        new java.lang.String[] { "PlayerNum", "MaxShield", "Shield", "ElementType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,33 +19,33 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk2800_HKHENLCIFNN = 14;</code>
-     * @return The unk2800HKHENLCIFNN.
+     * <code>uint32 max_clean_progress = 14;</code>
+     * @return The maxCleanProgress.
      */
-    int getUnk2800HKHENLCIFNN();
+    int getMaxCleanProgress();
 
     /**
-     * <code>uint32 Unk2800_NGPLGLLFGOG = 10;</code>
-     * @return The unk2800NGPLGLLFGOG.
+     * <code>uint32 clean_progress = 10;</code>
+     * @return The cleanProgress.
      */
-    int getUnk2800NGPLGLLFGOG();
+    int getCleanProgress();
 
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-     * @return The enum numeric value on the wire for unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 1;</code>
+     * @return The enum numeric value on the wire for startSource.
      */
-    int getUnk2800ENJGEFBCLOLValue();
+    int getStartSourceValue();
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-     * @return The unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 1;</code>
+     * @return The startSource.
      */
-    emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB getUnk2800ENJGEFBCLOL();
+    emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
 
     /**
-     * <code>uint32 Unk2800_DNDKJOJCDBI = 11;</code>
-     * @return The unk2800DNDKJOJCDBI.
+     * <code>uint32 kill_progress = 11;</code>
+     * @return The killProgress.
      */
-    int getUnk2800DNDKJOJCDBI();
+    int getKillProgress();
 
     /**
      * <code>uint32 coin = 15;</code>
@@ -54,21 +54,21 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     int getCoin();
 
     /**
-     * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+     * <code>.IslandPartySailStage stage = 12;</code>
      * @return The enum numeric value on the wire for stage.
      */
     int getStageValue();
     /**
-     * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+     * <code>.IslandPartySailStage stage = 12;</code>
      * @return The stage.
      */
-    emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE getStage();
+    emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage getStage();
 
     /**
-     * <code>uint32 Unk2800_GMOCMEFBGIP = 8;</code>
-     * @return The unk2800GMOCMEFBGIP.
+     * <code>uint32 max_kill_progress = 8;</code>
+     * @return The maxKillProgress.
      */
-    int getUnk2800GMOCMEFBGIP();
+    int getMaxKillProgress();
   }
   /**
    * Protobuf type {@code SceneGalleryIslandPartySailInfo}
@@ -83,7 +83,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       super(builder);
     }
     private SceneGalleryIslandPartySailInfo() {
-      unk2800ENJGEFBCLOL_ = 0;
+      startSource_ = 0;
       stage_ = 0;
     }
 
@@ -120,22 +120,22 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
             case 8: {
               int rawValue = input.readEnum();
 
-              unk2800ENJGEFBCLOL_ = rawValue;
+              startSource_ = rawValue;
               break;
             }
             case 64: {
 
-              unk2800GMOCMEFBGIP_ = input.readUInt32();
+              maxKillProgress_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              unk2800NGPLGLLFGOG_ = input.readUInt32();
+              cleanProgress_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              unk2800DNDKJOJCDBI_ = input.readUInt32();
+              killProgress_ = input.readUInt32();
               break;
             }
             case 96: {
@@ -146,7 +146,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
             }
             case 112: {
 
-              unk2800HKHENLCIFNN_ = input.readUInt32();
+              maxCleanProgress_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -186,56 +186,56 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.class, emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.Builder.class);
     }
 
-    public static final int UNK2800_HKHENLCIFNN_FIELD_NUMBER = 14;
-    private int unk2800HKHENLCIFNN_;
+    public static final int MAX_CLEAN_PROGRESS_FIELD_NUMBER = 14;
+    private int maxCleanProgress_;
     /**
-     * <code>uint32 Unk2800_HKHENLCIFNN = 14;</code>
-     * @return The unk2800HKHENLCIFNN.
+     * <code>uint32 max_clean_progress = 14;</code>
+     * @return The maxCleanProgress.
      */
     @java.lang.Override
-    public int getUnk2800HKHENLCIFNN() {
-      return unk2800HKHENLCIFNN_;
+    public int getMaxCleanProgress() {
+      return maxCleanProgress_;
     }
 
-    public static final int UNK2800_NGPLGLLFGOG_FIELD_NUMBER = 10;
-    private int unk2800NGPLGLLFGOG_;
+    public static final int CLEAN_PROGRESS_FIELD_NUMBER = 10;
+    private int cleanProgress_;
     /**
-     * <code>uint32 Unk2800_NGPLGLLFGOG = 10;</code>
-     * @return The unk2800NGPLGLLFGOG.
+     * <code>uint32 clean_progress = 10;</code>
+     * @return The cleanProgress.
      */
     @java.lang.Override
-    public int getUnk2800NGPLGLLFGOG() {
-      return unk2800NGPLGLLFGOG_;
+    public int getCleanProgress() {
+      return cleanProgress_;
     }
 
-    public static final int UNK2800_ENJGEFBCLOL_FIELD_NUMBER = 1;
-    private int unk2800ENJGEFBCLOL_;
+    public static final int START_SOURCE_FIELD_NUMBER = 1;
+    private int startSource_;
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-     * @return The enum numeric value on the wire for unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 1;</code>
+     * @return The enum numeric value on the wire for startSource.
      */
-    @java.lang.Override public int getUnk2800ENJGEFBCLOLValue() {
-      return unk2800ENJGEFBCLOL_;
+    @java.lang.Override public int getStartSourceValue() {
+      return startSource_;
     }
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-     * @return The unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 1;</code>
+     * @return The startSource.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB getUnk2800ENJGEFBCLOL() {
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB result = emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.valueOf(unk2800ENJGEFBCLOL_);
-      return result == null ? emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
     }
 
-    public static final int UNK2800_DNDKJOJCDBI_FIELD_NUMBER = 11;
-    private int unk2800DNDKJOJCDBI_;
+    public static final int KILL_PROGRESS_FIELD_NUMBER = 11;
+    private int killProgress_;
     /**
-     * <code>uint32 Unk2800_DNDKJOJCDBI = 11;</code>
-     * @return The unk2800DNDKJOJCDBI.
+     * <code>uint32 kill_progress = 11;</code>
+     * @return The killProgress.
      */
     @java.lang.Override
-    public int getUnk2800DNDKJOJCDBI() {
-      return unk2800DNDKJOJCDBI_;
+    public int getKillProgress() {
+      return killProgress_;
     }
 
     public static final int COIN_FIELD_NUMBER = 15;
@@ -252,31 +252,31 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     public static final int STAGE_FIELD_NUMBER = 12;
     private int stage_;
     /**
-     * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+     * <code>.IslandPartySailStage stage = 12;</code>
      * @return The enum numeric value on the wire for stage.
      */
     @java.lang.Override public int getStageValue() {
       return stage_;
     }
     /**
-     * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+     * <code>.IslandPartySailStage stage = 12;</code>
      * @return The stage.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE getStage() {
+    @java.lang.Override public emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage getStage() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE result = emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE.valueOf(stage_);
-      return result == null ? emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage result = emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.valueOf(stage_);
+      return result == null ? emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.UNRECOGNIZED : result;
     }
 
-    public static final int UNK2800_GMOCMEFBGIP_FIELD_NUMBER = 8;
-    private int unk2800GMOCMEFBGIP_;
+    public static final int MAX_KILL_PROGRESS_FIELD_NUMBER = 8;
+    private int maxKillProgress_;
     /**
-     * <code>uint32 Unk2800_GMOCMEFBGIP = 8;</code>
-     * @return The unk2800GMOCMEFBGIP.
+     * <code>uint32 max_kill_progress = 8;</code>
+     * @return The maxKillProgress.
      */
     @java.lang.Override
-    public int getUnk2800GMOCMEFBGIP() {
-      return unk2800GMOCMEFBGIP_;
+    public int getMaxKillProgress() {
+      return maxKillProgress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -293,23 +293,23 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2800ENJGEFBCLOL_ != emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.Unk2800_FMAOEPEBKHB_Unk2800_IBMPPHFLKEO.getNumber()) {
-        output.writeEnum(1, unk2800ENJGEFBCLOL_);
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
+        output.writeEnum(1, startSource_);
       }
-      if (unk2800GMOCMEFBGIP_ != 0) {
-        output.writeUInt32(8, unk2800GMOCMEFBGIP_);
+      if (maxKillProgress_ != 0) {
+        output.writeUInt32(8, maxKillProgress_);
       }
-      if (unk2800NGPLGLLFGOG_ != 0) {
-        output.writeUInt32(10, unk2800NGPLGLLFGOG_);
+      if (cleanProgress_ != 0) {
+        output.writeUInt32(10, cleanProgress_);
       }
-      if (unk2800DNDKJOJCDBI_ != 0) {
-        output.writeUInt32(11, unk2800DNDKJOJCDBI_);
+      if (killProgress_ != 0) {
+        output.writeUInt32(11, killProgress_);
       }
-      if (stage_ != emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE.Unk2800_IMLDGLIMODE_NONE.getNumber()) {
+      if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
         output.writeEnum(12, stage_);
       }
-      if (unk2800HKHENLCIFNN_ != 0) {
-        output.writeUInt32(14, unk2800HKHENLCIFNN_);
+      if (maxCleanProgress_ != 0) {
+        output.writeUInt32(14, maxCleanProgress_);
       }
       if (coin_ != 0) {
         output.writeUInt32(15, coin_);
@@ -323,29 +323,29 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2800ENJGEFBCLOL_ != emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.Unk2800_FMAOEPEBKHB_Unk2800_IBMPPHFLKEO.getNumber()) {
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, unk2800ENJGEFBCLOL_);
+          .computeEnumSize(1, startSource_);
       }
-      if (unk2800GMOCMEFBGIP_ != 0) {
+      if (maxKillProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, unk2800GMOCMEFBGIP_);
+          .computeUInt32Size(8, maxKillProgress_);
       }
-      if (unk2800NGPLGLLFGOG_ != 0) {
+      if (cleanProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, unk2800NGPLGLLFGOG_);
+          .computeUInt32Size(10, cleanProgress_);
       }
-      if (unk2800DNDKJOJCDBI_ != 0) {
+      if (killProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, unk2800DNDKJOJCDBI_);
+          .computeUInt32Size(11, killProgress_);
       }
-      if (stage_ != emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE.Unk2800_IMLDGLIMODE_NONE.getNumber()) {
+      if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(12, stage_);
       }
-      if (unk2800HKHENLCIFNN_ != 0) {
+      if (maxCleanProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unk2800HKHENLCIFNN_);
+          .computeUInt32Size(14, maxCleanProgress_);
       }
       if (coin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -366,18 +366,18 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo other = (emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo) obj;
 
-      if (getUnk2800HKHENLCIFNN()
-          != other.getUnk2800HKHENLCIFNN()) return false;
-      if (getUnk2800NGPLGLLFGOG()
-          != other.getUnk2800NGPLGLLFGOG()) return false;
-      if (unk2800ENJGEFBCLOL_ != other.unk2800ENJGEFBCLOL_) return false;
-      if (getUnk2800DNDKJOJCDBI()
-          != other.getUnk2800DNDKJOJCDBI()) return false;
+      if (getMaxCleanProgress()
+          != other.getMaxCleanProgress()) return false;
+      if (getCleanProgress()
+          != other.getCleanProgress()) return false;
+      if (startSource_ != other.startSource_) return false;
+      if (getKillProgress()
+          != other.getKillProgress()) return false;
       if (getCoin()
           != other.getCoin()) return false;
       if (stage_ != other.stage_) return false;
-      if (getUnk2800GMOCMEFBGIP()
-          != other.getUnk2800GMOCMEFBGIP()) return false;
+      if (getMaxKillProgress()
+          != other.getMaxKillProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -389,20 +389,20 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2800_HKHENLCIFNN_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800HKHENLCIFNN();
-      hash = (37 * hash) + UNK2800_NGPLGLLFGOG_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800NGPLGLLFGOG();
-      hash = (37 * hash) + UNK2800_ENJGEFBCLOL_FIELD_NUMBER;
-      hash = (53 * hash) + unk2800ENJGEFBCLOL_;
-      hash = (37 * hash) + UNK2800_DNDKJOJCDBI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800DNDKJOJCDBI();
+      hash = (37 * hash) + MAX_CLEAN_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxCleanProgress();
+      hash = (37 * hash) + CLEAN_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getCleanProgress();
+      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
+      hash = (53 * hash) + startSource_;
+      hash = (37 * hash) + KILL_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getKillProgress();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
       hash = (37 * hash) + STAGE_FIELD_NUMBER;
       hash = (53 * hash) + stage_;
-      hash = (37 * hash) + UNK2800_GMOCMEFBGIP_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800GMOCMEFBGIP();
+      hash = (37 * hash) + MAX_KILL_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxKillProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -536,19 +536,19 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2800HKHENLCIFNN_ = 0;
+        maxCleanProgress_ = 0;
 
-        unk2800NGPLGLLFGOG_ = 0;
+        cleanProgress_ = 0;
 
-        unk2800ENJGEFBCLOL_ = 0;
+        startSource_ = 0;
 
-        unk2800DNDKJOJCDBI_ = 0;
+        killProgress_ = 0;
 
         coin_ = 0;
 
         stage_ = 0;
 
-        unk2800GMOCMEFBGIP_ = 0;
+        maxKillProgress_ = 0;
 
         return this;
       }
@@ -576,13 +576,13 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo result = new emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo(this);
-        result.unk2800HKHENLCIFNN_ = unk2800HKHENLCIFNN_;
-        result.unk2800NGPLGLLFGOG_ = unk2800NGPLGLLFGOG_;
-        result.unk2800ENJGEFBCLOL_ = unk2800ENJGEFBCLOL_;
-        result.unk2800DNDKJOJCDBI_ = unk2800DNDKJOJCDBI_;
+        result.maxCleanProgress_ = maxCleanProgress_;
+        result.cleanProgress_ = cleanProgress_;
+        result.startSource_ = startSource_;
+        result.killProgress_ = killProgress_;
         result.coin_ = coin_;
         result.stage_ = stage_;
-        result.unk2800GMOCMEFBGIP_ = unk2800GMOCMEFBGIP_;
+        result.maxKillProgress_ = maxKillProgress_;
         onBuilt();
         return result;
       }
@@ -631,17 +631,17 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.getDefaultInstance()) return this;
-        if (other.getUnk2800HKHENLCIFNN() != 0) {
-          setUnk2800HKHENLCIFNN(other.getUnk2800HKHENLCIFNN());
+        if (other.getMaxCleanProgress() != 0) {
+          setMaxCleanProgress(other.getMaxCleanProgress());
         }
-        if (other.getUnk2800NGPLGLLFGOG() != 0) {
-          setUnk2800NGPLGLLFGOG(other.getUnk2800NGPLGLLFGOG());
+        if (other.getCleanProgress() != 0) {
+          setCleanProgress(other.getCleanProgress());
         }
-        if (other.unk2800ENJGEFBCLOL_ != 0) {
-          setUnk2800ENJGEFBCLOLValue(other.getUnk2800ENJGEFBCLOLValue());
+        if (other.startSource_ != 0) {
+          setStartSourceValue(other.getStartSourceValue());
         }
-        if (other.getUnk2800DNDKJOJCDBI() != 0) {
-          setUnk2800DNDKJOJCDBI(other.getUnk2800DNDKJOJCDBI());
+        if (other.getKillProgress() != 0) {
+          setKillProgress(other.getKillProgress());
         }
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
@@ -649,8 +649,8 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         if (other.stage_ != 0) {
           setStageValue(other.getStageValue());
         }
-        if (other.getUnk2800GMOCMEFBGIP() != 0) {
-          setUnk2800GMOCMEFBGIP(other.getUnk2800GMOCMEFBGIP());
+        if (other.getMaxKillProgress() != 0) {
+          setMaxKillProgress(other.getMaxKillProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -681,149 +681,149 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
-      private int unk2800HKHENLCIFNN_ ;
+      private int maxCleanProgress_ ;
       /**
-       * <code>uint32 Unk2800_HKHENLCIFNN = 14;</code>
-       * @return The unk2800HKHENLCIFNN.
+       * <code>uint32 max_clean_progress = 14;</code>
+       * @return The maxCleanProgress.
        */
       @java.lang.Override
-      public int getUnk2800HKHENLCIFNN() {
-        return unk2800HKHENLCIFNN_;
+      public int getMaxCleanProgress() {
+        return maxCleanProgress_;
       }
       /**
-       * <code>uint32 Unk2800_HKHENLCIFNN = 14;</code>
-       * @param value The unk2800HKHENLCIFNN to set.
+       * <code>uint32 max_clean_progress = 14;</code>
+       * @param value The maxCleanProgress to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800HKHENLCIFNN(int value) {
+      public Builder setMaxCleanProgress(int value) {
         
-        unk2800HKHENLCIFNN_ = value;
+        maxCleanProgress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_HKHENLCIFNN = 14;</code>
+       * <code>uint32 max_clean_progress = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800HKHENLCIFNN() {
+      public Builder clearMaxCleanProgress() {
         
-        unk2800HKHENLCIFNN_ = 0;
+        maxCleanProgress_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk2800NGPLGLLFGOG_ ;
+      private int cleanProgress_ ;
       /**
-       * <code>uint32 Unk2800_NGPLGLLFGOG = 10;</code>
-       * @return The unk2800NGPLGLLFGOG.
+       * <code>uint32 clean_progress = 10;</code>
+       * @return The cleanProgress.
        */
       @java.lang.Override
-      public int getUnk2800NGPLGLLFGOG() {
-        return unk2800NGPLGLLFGOG_;
+      public int getCleanProgress() {
+        return cleanProgress_;
       }
       /**
-       * <code>uint32 Unk2800_NGPLGLLFGOG = 10;</code>
-       * @param value The unk2800NGPLGLLFGOG to set.
+       * <code>uint32 clean_progress = 10;</code>
+       * @param value The cleanProgress to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800NGPLGLLFGOG(int value) {
+      public Builder setCleanProgress(int value) {
         
-        unk2800NGPLGLLFGOG_ = value;
+        cleanProgress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_NGPLGLLFGOG = 10;</code>
+       * <code>uint32 clean_progress = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800NGPLGLLFGOG() {
+      public Builder clearCleanProgress() {
         
-        unk2800NGPLGLLFGOG_ = 0;
+        cleanProgress_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk2800ENJGEFBCLOL_ = 0;
+      private int startSource_ = 0;
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-       * @return The enum numeric value on the wire for unk2800ENJGEFBCLOL.
+       * <code>.GalleryStartSource start_source = 1;</code>
+       * @return The enum numeric value on the wire for startSource.
        */
-      @java.lang.Override public int getUnk2800ENJGEFBCLOLValue() {
-        return unk2800ENJGEFBCLOL_;
+      @java.lang.Override public int getStartSourceValue() {
+        return startSource_;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-       * @param value The enum numeric value on the wire for unk2800ENJGEFBCLOL to set.
+       * <code>.GalleryStartSource start_source = 1;</code>
+       * @param value The enum numeric value on the wire for startSource to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800ENJGEFBCLOLValue(int value) {
+      public Builder setStartSourceValue(int value) {
         
-        unk2800ENJGEFBCLOL_ = value;
+        startSource_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-       * @return The unk2800ENJGEFBCLOL.
+       * <code>.GalleryStartSource start_source = 1;</code>
+       * @return The startSource.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB getUnk2800ENJGEFBCLOL() {
+      public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB result = emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.valueOf(unk2800ENJGEFBCLOL_);
-        return result == null ? emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
+        return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
-       * @param value The unk2800ENJGEFBCLOL to set.
+       * <code>.GalleryStartSource start_source = 1;</code>
+       * @param value The startSource to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800ENJGEFBCLOL(emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB value) {
+      public Builder setStartSource(emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        unk2800ENJGEFBCLOL_ = value.getNumber();
+        startSource_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;</code>
+       * <code>.GalleryStartSource start_source = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800ENJGEFBCLOL() {
+      public Builder clearStartSource() {
         
-        unk2800ENJGEFBCLOL_ = 0;
+        startSource_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk2800DNDKJOJCDBI_ ;
+      private int killProgress_ ;
       /**
-       * <code>uint32 Unk2800_DNDKJOJCDBI = 11;</code>
-       * @return The unk2800DNDKJOJCDBI.
+       * <code>uint32 kill_progress = 11;</code>
+       * @return The killProgress.
        */
       @java.lang.Override
-      public int getUnk2800DNDKJOJCDBI() {
-        return unk2800DNDKJOJCDBI_;
+      public int getKillProgress() {
+        return killProgress_;
       }
       /**
-       * <code>uint32 Unk2800_DNDKJOJCDBI = 11;</code>
-       * @param value The unk2800DNDKJOJCDBI to set.
+       * <code>uint32 kill_progress = 11;</code>
+       * @param value The killProgress to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800DNDKJOJCDBI(int value) {
+      public Builder setKillProgress(int value) {
         
-        unk2800DNDKJOJCDBI_ = value;
+        killProgress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_DNDKJOJCDBI = 11;</code>
+       * <code>uint32 kill_progress = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800DNDKJOJCDBI() {
+      public Builder clearKillProgress() {
         
-        unk2800DNDKJOJCDBI_ = 0;
+        killProgress_ = 0;
         onChanged();
         return this;
       }
@@ -861,14 +861,14 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
 
       private int stage_ = 0;
       /**
-       * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 12;</code>
        * @return The enum numeric value on the wire for stage.
        */
       @java.lang.Override public int getStageValue() {
         return stage_;
       }
       /**
-       * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 12;</code>
        * @param value The enum numeric value on the wire for stage to set.
        * @return This builder for chaining.
        */
@@ -879,21 +879,21 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 12;</code>
        * @return The stage.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE getStage() {
+      public emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage getStage() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE result = emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE.valueOf(stage_);
-        return result == null ? emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage result = emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.valueOf(stage_);
+        return result == null ? emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.UNRECOGNIZED : result;
       }
       /**
-       * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 12;</code>
        * @param value The stage to set.
        * @return This builder for chaining.
        */
-      public Builder setStage(emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.Unk2800_IMLDGLIMODE value) {
+      public Builder setStage(emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -903,7 +903,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2800_IMLDGLIMODE stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearStage() {
@@ -913,33 +913,33 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
-      private int unk2800GMOCMEFBGIP_ ;
+      private int maxKillProgress_ ;
       /**
-       * <code>uint32 Unk2800_GMOCMEFBGIP = 8;</code>
-       * @return The unk2800GMOCMEFBGIP.
+       * <code>uint32 max_kill_progress = 8;</code>
+       * @return The maxKillProgress.
        */
       @java.lang.Override
-      public int getUnk2800GMOCMEFBGIP() {
-        return unk2800GMOCMEFBGIP_;
+      public int getMaxKillProgress() {
+        return maxKillProgress_;
       }
       /**
-       * <code>uint32 Unk2800_GMOCMEFBGIP = 8;</code>
-       * @param value The unk2800GMOCMEFBGIP to set.
+       * <code>uint32 max_kill_progress = 8;</code>
+       * @param value The maxKillProgress to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800GMOCMEFBGIP(int value) {
+      public Builder setMaxKillProgress(int value) {
         
-        unk2800GMOCMEFBGIP_ = value;
+        maxKillProgress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_GMOCMEFBGIP = 8;</code>
+       * <code>uint32 max_kill_progress = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800GMOCMEFBGIP() {
+      public Builder clearMaxKillProgress() {
         
-        unk2800GMOCMEFBGIP_ = 0;
+        maxKillProgress_ = 0;
         onChanged();
         return this;
       }
@@ -1011,30 +1011,30 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%SceneGalleryIslandPartySailInfo.proto\032" +
-      "\031Unk2800_FMAOEPEBKHB.proto\032\031Unk2800_IMLD" +
-      "GLIMODE.proto\"\373\001\n\037SceneGalleryIslandPart" +
-      "ySailInfo\022\033\n\023Unk2800_HKHENLCIFNN\030\016 \001(\r\022\033" +
-      "\n\023Unk2800_NGPLGLLFGOG\030\n \001(\r\0221\n\023Unk2800_E" +
-      "NJGEFBCLOL\030\001 \001(\0162\024.Unk2800_FMAOEPEBKHB\022\033" +
-      "\n\023Unk2800_DNDKJOJCDBI\030\013 \001(\r\022\014\n\004coin\030\017 \001(" +
-      "\r\022#\n\005stage\030\014 \001(\0162\024.Unk2800_IMLDGLIMODE\022\033" +
-      "\n\023Unk2800_GMOCMEFBGIP\030\010 \001(\rB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\030GalleryStartSource.proto\032\032IslandPartySa" +
+      "ilStage.proto\"\346\001\n\037SceneGalleryIslandPart" +
+      "ySailInfo\022\032\n\022max_clean_progress\030\016 \001(\r\022\026\n" +
+      "\016clean_progress\030\n \001(\r\022)\n\014start_source\030\001 " +
+      "\001(\0162\023.GalleryStartSource\022\025\n\rkill_progres" +
+      "s\030\013 \001(\r\022\014\n\004coin\030\017 \001(\r\022$\n\005stage\030\014 \001(\0162\025.I" +
+      "slandPartySailStage\022\031\n\021max_kill_progress" +
+      "\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.getDescriptor(),
+          emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.IslandPartySailStageOuterClass.getDescriptor(),
         });
     internal_static_SceneGalleryIslandPartySailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneGalleryIslandPartySailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIslandPartySailInfo_descriptor,
-        new java.lang.String[] { "Unk2800HKHENLCIFNN", "Unk2800NGPLGLLFGOG", "Unk2800ENJGEFBCLOL", "Unk2800DNDKJOJCDBI", "Coin", "Stage", "Unk2800GMOCMEFBGIP", });
-    emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.getDescriptor();
-    emu.grasscutter.net.proto.Unk2800IMLDGLIMODE.getDescriptor();
+        new java.lang.String[] { "MaxCleanProgress", "CleanProgress", "StartSource", "KillProgress", "Coin", "Stage", "MaxKillProgress", });
+    emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.IslandPartySailStageOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

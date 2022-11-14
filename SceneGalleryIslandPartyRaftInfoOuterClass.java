@@ -25,27 +25,27 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     int getCoin();
 
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-     * @return The enum numeric value on the wire for unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 7;</code>
+     * @return The enum numeric value on the wire for startSource.
      */
-    int getUnk2800ENJGEFBCLOLValue();
+    int getStartSourceValue();
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-     * @return The unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 7;</code>
+     * @return The startSource.
      */
-    emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB getUnk2800ENJGEFBCLOL();
+    emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
 
     /**
-     * <code>uint32 Unk2800_BAEEDEAADIA = 1;</code>
-     * @return The unk2800BAEEDEAADIA.
+     * <code>uint32 component = 1;</code>
+     * @return The component.
      */
-    int getUnk2800BAEEDEAADIA();
+    int getComponent();
 
     /**
-     * <code>uint32 Unk2800_EOFOECJJMLJ = 15;</code>
-     * @return The unk2800EOFOECJJMLJ.
+     * <code>uint32 fuel = 15;</code>
+     * @return The fuel.
      */
-    int getUnk2800EOFOECJJMLJ();
+    int getFuel();
 
     /**
      * <code>uint32 point_id = 12;</code>
@@ -54,10 +54,10 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     int getPointId();
 
     /**
-     * <code>uint32 Unk2800_MKNGANDAJFJ = 4;</code>
-     * @return The unk2800MKNGANDAJFJ.
+     * <code>uint32 raft_entity_id = 4;</code>
+     * @return The raftEntityId.
      */
-    int getUnk2800MKNGANDAJFJ();
+    int getRaftEntityId();
   }
   /**
    * Protobuf type {@code SceneGalleryIslandPartyRaftInfo}
@@ -72,7 +72,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       super(builder);
     }
     private SceneGalleryIslandPartyRaftInfo() {
-      unk2800ENJGEFBCLOL_ = 0;
+      startSource_ = 0;
     }
 
     @java.lang.Override
@@ -107,12 +107,12 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
               break;
             case 8: {
 
-              unk2800BAEEDEAADIA_ = input.readUInt32();
+              component_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              unk2800MKNGANDAJFJ_ = input.readUInt32();
+              raftEntityId_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -123,7 +123,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
             case 56: {
               int rawValue = input.readEnum();
 
-              unk2800ENJGEFBCLOL_ = rawValue;
+              startSource_ = rawValue;
               break;
             }
             case 96: {
@@ -133,7 +133,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
             }
             case 120: {
 
-              unk2800EOFOECJJMLJ_ = input.readUInt32();
+              fuel_ = input.readUInt32();
               break;
             }
             default: {
@@ -179,45 +179,45 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       return coin_;
     }
 
-    public static final int UNK2800_ENJGEFBCLOL_FIELD_NUMBER = 7;
-    private int unk2800ENJGEFBCLOL_;
+    public static final int START_SOURCE_FIELD_NUMBER = 7;
+    private int startSource_;
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-     * @return The enum numeric value on the wire for unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 7;</code>
+     * @return The enum numeric value on the wire for startSource.
      */
-    @java.lang.Override public int getUnk2800ENJGEFBCLOLValue() {
-      return unk2800ENJGEFBCLOL_;
+    @java.lang.Override public int getStartSourceValue() {
+      return startSource_;
     }
     /**
-     * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-     * @return The unk2800ENJGEFBCLOL.
+     * <code>.GalleryStartSource start_source = 7;</code>
+     * @return The startSource.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB getUnk2800ENJGEFBCLOL() {
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB result = emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.valueOf(unk2800ENJGEFBCLOL_);
-      return result == null ? emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
     }
 
-    public static final int UNK2800_BAEEDEAADIA_FIELD_NUMBER = 1;
-    private int unk2800BAEEDEAADIA_;
+    public static final int COMPONENT_FIELD_NUMBER = 1;
+    private int component_;
     /**
-     * <code>uint32 Unk2800_BAEEDEAADIA = 1;</code>
-     * @return The unk2800BAEEDEAADIA.
+     * <code>uint32 component = 1;</code>
+     * @return The component.
      */
     @java.lang.Override
-    public int getUnk2800BAEEDEAADIA() {
-      return unk2800BAEEDEAADIA_;
+    public int getComponent() {
+      return component_;
     }
 
-    public static final int UNK2800_EOFOECJJMLJ_FIELD_NUMBER = 15;
-    private int unk2800EOFOECJJMLJ_;
+    public static final int FUEL_FIELD_NUMBER = 15;
+    private int fuel_;
     /**
-     * <code>uint32 Unk2800_EOFOECJJMLJ = 15;</code>
-     * @return The unk2800EOFOECJJMLJ.
+     * <code>uint32 fuel = 15;</code>
+     * @return The fuel.
      */
     @java.lang.Override
-    public int getUnk2800EOFOECJJMLJ() {
-      return unk2800EOFOECJJMLJ_;
+    public int getFuel() {
+      return fuel_;
     }
 
     public static final int POINT_ID_FIELD_NUMBER = 12;
@@ -231,15 +231,15 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       return pointId_;
     }
 
-    public static final int UNK2800_MKNGANDAJFJ_FIELD_NUMBER = 4;
-    private int unk2800MKNGANDAJFJ_;
+    public static final int RAFT_ENTITY_ID_FIELD_NUMBER = 4;
+    private int raftEntityId_;
     /**
-     * <code>uint32 Unk2800_MKNGANDAJFJ = 4;</code>
-     * @return The unk2800MKNGANDAJFJ.
+     * <code>uint32 raft_entity_id = 4;</code>
+     * @return The raftEntityId.
      */
     @java.lang.Override
-    public int getUnk2800MKNGANDAJFJ() {
-      return unk2800MKNGANDAJFJ_;
+    public int getRaftEntityId() {
+      return raftEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -256,23 +256,23 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2800BAEEDEAADIA_ != 0) {
-        output.writeUInt32(1, unk2800BAEEDEAADIA_);
+      if (component_ != 0) {
+        output.writeUInt32(1, component_);
       }
-      if (unk2800MKNGANDAJFJ_ != 0) {
-        output.writeUInt32(4, unk2800MKNGANDAJFJ_);
+      if (raftEntityId_ != 0) {
+        output.writeUInt32(4, raftEntityId_);
       }
       if (coin_ != 0) {
         output.writeUInt32(6, coin_);
       }
-      if (unk2800ENJGEFBCLOL_ != emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.Unk2800_FMAOEPEBKHB_Unk2800_IBMPPHFLKEO.getNumber()) {
-        output.writeEnum(7, unk2800ENJGEFBCLOL_);
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
+        output.writeEnum(7, startSource_);
       }
       if (pointId_ != 0) {
         output.writeUInt32(12, pointId_);
       }
-      if (unk2800EOFOECJJMLJ_ != 0) {
-        output.writeUInt32(15, unk2800EOFOECJJMLJ_);
+      if (fuel_ != 0) {
+        output.writeUInt32(15, fuel_);
       }
       unknownFields.writeTo(output);
     }
@@ -283,29 +283,29 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2800BAEEDEAADIA_ != 0) {
+      if (component_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, unk2800BAEEDEAADIA_);
+          .computeUInt32Size(1, component_);
       }
-      if (unk2800MKNGANDAJFJ_ != 0) {
+      if (raftEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, unk2800MKNGANDAJFJ_);
+          .computeUInt32Size(4, raftEntityId_);
       }
       if (coin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, coin_);
       }
-      if (unk2800ENJGEFBCLOL_ != emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.Unk2800_FMAOEPEBKHB_Unk2800_IBMPPHFLKEO.getNumber()) {
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, unk2800ENJGEFBCLOL_);
+          .computeEnumSize(7, startSource_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, pointId_);
       }
-      if (unk2800EOFOECJJMLJ_ != 0) {
+      if (fuel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, unk2800EOFOECJJMLJ_);
+          .computeUInt32Size(15, fuel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -324,15 +324,15 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
 
       if (getCoin()
           != other.getCoin()) return false;
-      if (unk2800ENJGEFBCLOL_ != other.unk2800ENJGEFBCLOL_) return false;
-      if (getUnk2800BAEEDEAADIA()
-          != other.getUnk2800BAEEDEAADIA()) return false;
-      if (getUnk2800EOFOECJJMLJ()
-          != other.getUnk2800EOFOECJJMLJ()) return false;
+      if (startSource_ != other.startSource_) return false;
+      if (getComponent()
+          != other.getComponent()) return false;
+      if (getFuel()
+          != other.getFuel()) return false;
       if (getPointId()
           != other.getPointId()) return false;
-      if (getUnk2800MKNGANDAJFJ()
-          != other.getUnk2800MKNGANDAJFJ()) return false;
+      if (getRaftEntityId()
+          != other.getRaftEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -346,16 +346,16 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
-      hash = (37 * hash) + UNK2800_ENJGEFBCLOL_FIELD_NUMBER;
-      hash = (53 * hash) + unk2800ENJGEFBCLOL_;
-      hash = (37 * hash) + UNK2800_BAEEDEAADIA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800BAEEDEAADIA();
-      hash = (37 * hash) + UNK2800_EOFOECJJMLJ_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800EOFOECJJMLJ();
+      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
+      hash = (53 * hash) + startSource_;
+      hash = (37 * hash) + COMPONENT_FIELD_NUMBER;
+      hash = (53 * hash) + getComponent();
+      hash = (37 * hash) + FUEL_FIELD_NUMBER;
+      hash = (53 * hash) + getFuel();
       hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointId();
-      hash = (37 * hash) + UNK2800_MKNGANDAJFJ_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800MKNGANDAJFJ();
+      hash = (37 * hash) + RAFT_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRaftEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -491,15 +491,15 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         super.clear();
         coin_ = 0;
 
-        unk2800ENJGEFBCLOL_ = 0;
+        startSource_ = 0;
 
-        unk2800BAEEDEAADIA_ = 0;
+        component_ = 0;
 
-        unk2800EOFOECJJMLJ_ = 0;
+        fuel_ = 0;
 
         pointId_ = 0;
 
-        unk2800MKNGANDAJFJ_ = 0;
+        raftEntityId_ = 0;
 
         return this;
       }
@@ -528,11 +528,11 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo result = new emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo(this);
         result.coin_ = coin_;
-        result.unk2800ENJGEFBCLOL_ = unk2800ENJGEFBCLOL_;
-        result.unk2800BAEEDEAADIA_ = unk2800BAEEDEAADIA_;
-        result.unk2800EOFOECJJMLJ_ = unk2800EOFOECJJMLJ_;
+        result.startSource_ = startSource_;
+        result.component_ = component_;
+        result.fuel_ = fuel_;
         result.pointId_ = pointId_;
-        result.unk2800MKNGANDAJFJ_ = unk2800MKNGANDAJFJ_;
+        result.raftEntityId_ = raftEntityId_;
         onBuilt();
         return result;
       }
@@ -584,20 +584,20 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
         }
-        if (other.unk2800ENJGEFBCLOL_ != 0) {
-          setUnk2800ENJGEFBCLOLValue(other.getUnk2800ENJGEFBCLOLValue());
+        if (other.startSource_ != 0) {
+          setStartSourceValue(other.getStartSourceValue());
         }
-        if (other.getUnk2800BAEEDEAADIA() != 0) {
-          setUnk2800BAEEDEAADIA(other.getUnk2800BAEEDEAADIA());
+        if (other.getComponent() != 0) {
+          setComponent(other.getComponent());
         }
-        if (other.getUnk2800EOFOECJJMLJ() != 0) {
-          setUnk2800EOFOECJJMLJ(other.getUnk2800EOFOECJJMLJ());
+        if (other.getFuel() != 0) {
+          setFuel(other.getFuel());
         }
         if (other.getPointId() != 0) {
           setPointId(other.getPointId());
         }
-        if (other.getUnk2800MKNGANDAJFJ() != 0) {
-          setUnk2800MKNGANDAJFJ(other.getUnk2800MKNGANDAJFJ());
+        if (other.getRaftEntityId() != 0) {
+          setRaftEntityId(other.getRaftEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -659,118 +659,118 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
 
-      private int unk2800ENJGEFBCLOL_ = 0;
+      private int startSource_ = 0;
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-       * @return The enum numeric value on the wire for unk2800ENJGEFBCLOL.
+       * <code>.GalleryStartSource start_source = 7;</code>
+       * @return The enum numeric value on the wire for startSource.
        */
-      @java.lang.Override public int getUnk2800ENJGEFBCLOLValue() {
-        return unk2800ENJGEFBCLOL_;
+      @java.lang.Override public int getStartSourceValue() {
+        return startSource_;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-       * @param value The enum numeric value on the wire for unk2800ENJGEFBCLOL to set.
+       * <code>.GalleryStartSource start_source = 7;</code>
+       * @param value The enum numeric value on the wire for startSource to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800ENJGEFBCLOLValue(int value) {
+      public Builder setStartSourceValue(int value) {
         
-        unk2800ENJGEFBCLOL_ = value;
+        startSource_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-       * @return The unk2800ENJGEFBCLOL.
+       * <code>.GalleryStartSource start_source = 7;</code>
+       * @return The startSource.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB getUnk2800ENJGEFBCLOL() {
+      public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB result = emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.valueOf(unk2800ENJGEFBCLOL_);
-        return result == null ? emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
+        return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
-       * @param value The unk2800ENJGEFBCLOL to set.
+       * <code>.GalleryStartSource start_source = 7;</code>
+       * @param value The startSource to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800ENJGEFBCLOL(emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.Unk2800_FMAOEPEBKHB value) {
+      public Builder setStartSource(emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        unk2800ENJGEFBCLOL_ = value.getNumber();
+        startSource_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;</code>
+       * <code>.GalleryStartSource start_source = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800ENJGEFBCLOL() {
+      public Builder clearStartSource() {
         
-        unk2800ENJGEFBCLOL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int unk2800BAEEDEAADIA_ ;
-      /**
-       * <code>uint32 Unk2800_BAEEDEAADIA = 1;</code>
-       * @return The unk2800BAEEDEAADIA.
-       */
-      @java.lang.Override
-      public int getUnk2800BAEEDEAADIA() {
-        return unk2800BAEEDEAADIA_;
-      }
-      /**
-       * <code>uint32 Unk2800_BAEEDEAADIA = 1;</code>
-       * @param value The unk2800BAEEDEAADIA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk2800BAEEDEAADIA(int value) {
-        
-        unk2800BAEEDEAADIA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 Unk2800_BAEEDEAADIA = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk2800BAEEDEAADIA() {
-        
-        unk2800BAEEDEAADIA_ = 0;
+        startSource_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk2800EOFOECJJMLJ_ ;
+      private int component_ ;
       /**
-       * <code>uint32 Unk2800_EOFOECJJMLJ = 15;</code>
-       * @return The unk2800EOFOECJJMLJ.
+       * <code>uint32 component = 1;</code>
+       * @return The component.
        */
       @java.lang.Override
-      public int getUnk2800EOFOECJJMLJ() {
-        return unk2800EOFOECJJMLJ_;
+      public int getComponent() {
+        return component_;
       }
       /**
-       * <code>uint32 Unk2800_EOFOECJJMLJ = 15;</code>
-       * @param value The unk2800EOFOECJJMLJ to set.
+       * <code>uint32 component = 1;</code>
+       * @param value The component to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800EOFOECJJMLJ(int value) {
+      public Builder setComponent(int value) {
         
-        unk2800EOFOECJJMLJ_ = value;
+        component_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_EOFOECJJMLJ = 15;</code>
+       * <code>uint32 component = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800EOFOECJJMLJ() {
+      public Builder clearComponent() {
         
-        unk2800EOFOECJJMLJ_ = 0;
+        component_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fuel_ ;
+      /**
+       * <code>uint32 fuel = 15;</code>
+       * @return The fuel.
+       */
+      @java.lang.Override
+      public int getFuel() {
+        return fuel_;
+      }
+      /**
+       * <code>uint32 fuel = 15;</code>
+       * @param value The fuel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFuel(int value) {
+        
+        fuel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 fuel = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFuel() {
+        
+        fuel_ = 0;
         onChanged();
         return this;
       }
@@ -806,33 +806,33 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
 
-      private int unk2800MKNGANDAJFJ_ ;
+      private int raftEntityId_ ;
       /**
-       * <code>uint32 Unk2800_MKNGANDAJFJ = 4;</code>
-       * @return The unk2800MKNGANDAJFJ.
+       * <code>uint32 raft_entity_id = 4;</code>
+       * @return The raftEntityId.
        */
       @java.lang.Override
-      public int getUnk2800MKNGANDAJFJ() {
-        return unk2800MKNGANDAJFJ_;
+      public int getRaftEntityId() {
+        return raftEntityId_;
       }
       /**
-       * <code>uint32 Unk2800_MKNGANDAJFJ = 4;</code>
-       * @param value The unk2800MKNGANDAJFJ to set.
+       * <code>uint32 raft_entity_id = 4;</code>
+       * @param value The raftEntityId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800MKNGANDAJFJ(int value) {
+      public Builder setRaftEntityId(int value) {
         
-        unk2800MKNGANDAJFJ_ = value;
+        raftEntityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_MKNGANDAJFJ = 4;</code>
+       * <code>uint32 raft_entity_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800MKNGANDAJFJ() {
+      public Builder clearRaftEntityId() {
         
-        unk2800MKNGANDAJFJ_ = 0;
+        raftEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -904,26 +904,25 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%SceneGalleryIslandPartyRaftInfo.proto\032" +
-      "\031Unk2800_FMAOEPEBKHB.proto\"\313\001\n\037SceneGall" +
-      "eryIslandPartyRaftInfo\022\014\n\004coin\030\006 \001(\r\0221\n\023" +
-      "Unk2800_ENJGEFBCLOL\030\007 \001(\0162\024.Unk2800_FMAO" +
-      "EPEBKHB\022\033\n\023Unk2800_BAEEDEAADIA\030\001 \001(\r\022\033\n\023" +
-      "Unk2800_EOFOECJJMLJ\030\017 \001(\r\022\020\n\010point_id\030\014 " +
-      "\001(\r\022\033\n\023Unk2800_MKNGANDAJFJ\030\004 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\030GalleryStartSource.proto\"\245\001\n\037SceneGalle" +
+      "ryIslandPartyRaftInfo\022\014\n\004coin\030\006 \001(\r\022)\n\014s" +
+      "tart_source\030\007 \001(\0162\023.GalleryStartSource\022\021" +
+      "\n\tcomponent\030\001 \001(\r\022\014\n\004fuel\030\017 \001(\r\022\020\n\010point" +
+      "_id\030\014 \001(\r\022\026\n\016raft_entity_id\030\004 \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.getDescriptor(),
+          emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor(),
         });
     internal_static_SceneGalleryIslandPartyRaftInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneGalleryIslandPartyRaftInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIslandPartyRaftInfo_descriptor,
-        new java.lang.String[] { "Coin", "Unk2800ENJGEFBCLOL", "Unk2800BAEEDEAADIA", "Unk2800EOFOECJJMLJ", "PointId", "Unk2800MKNGANDAJFJ", });
-    emu.grasscutter.net.proto.Unk2800FMAOEPEBKHB.getDescriptor();
+        new java.lang.String[] { "Coin", "StartSource", "Component", "Fuel", "PointId", "RaftEntityId", });
+    emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

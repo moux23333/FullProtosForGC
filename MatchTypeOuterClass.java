@@ -39,6 +39,10 @@ public final class MatchTypeOuterClass {
      * <code>MATCH_TYPE_GENERAL = 4;</code>
      */
     MATCH_TYPE_GENERAL(4),
+    /**
+     * <code>MATCH_TYPE_GCG = 5;</code>
+     */
+    MATCH_TYPE_GCG(5),
     UNRECOGNIZED(-1),
     ;
 
@@ -62,6 +66,10 @@ public final class MatchTypeOuterClass {
      * <code>MATCH_TYPE_GENERAL = 4;</code>
      */
     public static final int MATCH_TYPE_GENERAL_VALUE = 4;
+    /**
+     * <code>MATCH_TYPE_GCG = 5;</code>
+     */
+    public static final int MATCH_TYPE_GCG_VALUE = 5;
 
 
     public final int getNumber() {
@@ -93,6 +101,7 @@ public final class MatchTypeOuterClass {
         case 2: return MATCH_TYPE_MP_PLAY;
         case 3: return MATCH_TYPE_MECHANICUS;
         case 4: return MATCH_TYPE_GENERAL;
+        case 5: return MATCH_TYPE_GCG;
         default: return null;
       }
     }
@@ -158,11 +167,12 @@ public final class MatchTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017MatchType.proto*\203\001\n\tMatchType\022\023\n\017MATCH" +
+      "\n\017MatchType.proto*\227\001\n\tMatchType\022\023\n\017MATCH" +
       "_TYPE_NONE\020\000\022\026\n\022MATCH_TYPE_DUNGEON\020\001\022\026\n\022" +
       "MATCH_TYPE_MP_PLAY\020\002\022\031\n\025MATCH_TYPE_MECHA" +
-      "NICUS\020\003\022\026\n\022MATCH_TYPE_GENERAL\020\004B\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "NICUS\020\003\022\026\n\022MATCH_TYPE_GENERAL\020\004\022\022\n\016MATCH" +
+      "_TYPE_GCG\020\005B\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

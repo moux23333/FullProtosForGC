@@ -19,27 +19,27 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP> 
-        getUnk2700JDMDOOHFNCAList();
+    java.util.List<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo> 
+        getOpenMapInfoListList();
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
-    emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP getUnk2700JDMDOOHFNCA(int index);
+    emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo getOpenMapInfoList(int index);
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
-    int getUnk2700JDMDOOHFNCACount();
+    int getOpenMapInfoListCount();
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder> 
-        getUnk2700JDMDOOHFNCAOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder> 
+        getOpenMapInfoListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
-    emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder getUnk2700JDMDOOHFNCAOrBuilder(
+    emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder getOpenMapInfoListOrBuilder(
         int index);
 
     /**
@@ -106,7 +106,7 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       super(builder);
     }
     private HideAndSeekActivityDetailInfo() {
-      unk2700JDMDOOHFNCA_ = java.util.Collections.emptyList();
+      openMapInfoList_ = java.util.Collections.emptyList();
       chosenHunterSkillList_ = emptyIntList();
       unlockMapList_ = emptyIntList();
       chosenHiderSkillList_ = emptyIntList();
@@ -145,11 +145,11 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700JDMDOOHFNCA_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP>();
+                openMapInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700JDMDOOHFNCA_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.parser(), extensionRegistry));
+              openMapInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.parser(), extensionRegistry));
               break;
             }
             case 32: {
@@ -231,7 +231,7 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700JDMDOOHFNCA_ = java.util.Collections.unmodifiableList(unk2700JDMDOOHFNCA_);
+          openMapInfoList_ = java.util.Collections.unmodifiableList(openMapInfoList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           chosenHunterSkillList_.makeImmutable(); // C
@@ -259,44 +259,44 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo.class, emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo.Builder.class);
     }
 
-    public static final int UNK2700_JDMDOOHFNCA_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP> unk2700JDMDOOHFNCA_;
+    public static final int OPEN_MAP_INFO_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo> openMapInfoList_;
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP> getUnk2700JDMDOOHFNCAList() {
-      return unk2700JDMDOOHFNCA_;
+    public java.util.List<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo> getOpenMapInfoListList() {
+      return openMapInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder> 
-        getUnk2700JDMDOOHFNCAOrBuilderList() {
-      return unk2700JDMDOOHFNCA_;
+    public java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder> 
+        getOpenMapInfoListOrBuilderList() {
+      return openMapInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
     @java.lang.Override
-    public int getUnk2700JDMDOOHFNCACount() {
-      return unk2700JDMDOOHFNCA_.size();
+    public int getOpenMapInfoListCount() {
+      return openMapInfoList_.size();
     }
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP getUnk2700JDMDOOHFNCA(int index) {
-      return unk2700JDMDOOHFNCA_.get(index);
+    public emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo getOpenMapInfoList(int index) {
+      return openMapInfoList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+     * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder getUnk2700JDMDOOHFNCAOrBuilder(
+    public emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder getOpenMapInfoListOrBuilder(
         int index) {
-      return unk2700JDMDOOHFNCA_.get(index);
+      return openMapInfoList_.get(index);
     }
 
     public static final int CHOSEN_HUNTER_SKILL_LIST_FIELD_NUMBER = 4;
@@ -398,8 +398,8 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < unk2700JDMDOOHFNCA_.size(); i++) {
-        output.writeMessage(1, unk2700JDMDOOHFNCA_.get(i));
+      for (int i = 0; i < openMapInfoList_.size(); i++) {
+        output.writeMessage(1, openMapInfoList_.get(i));
       }
       if (getChosenHunterSkillListList().size() > 0) {
         output.writeUInt32NoTag(34);
@@ -431,9 +431,9 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < unk2700JDMDOOHFNCA_.size(); i++) {
+      for (int i = 0; i < openMapInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, unk2700JDMDOOHFNCA_.get(i));
+          .computeMessageSize(1, openMapInfoList_.get(i));
       }
       {
         int dataSize = 0;
@@ -492,8 +492,8 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo other = (emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo) obj;
 
-      if (!getUnk2700JDMDOOHFNCAList()
-          .equals(other.getUnk2700JDMDOOHFNCAList())) return false;
+      if (!getOpenMapInfoListList()
+          .equals(other.getOpenMapInfoListList())) return false;
       if (!getChosenHunterSkillListList()
           .equals(other.getChosenHunterSkillListList())) return false;
       if (!getUnlockMapListList()
@@ -511,9 +511,9 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getUnk2700JDMDOOHFNCACount() > 0) {
-        hash = (37 * hash) + UNK2700_JDMDOOHFNCA_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700JDMDOOHFNCAList().hashCode();
+      if (getOpenMapInfoListCount() > 0) {
+        hash = (37 * hash) + OPEN_MAP_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getOpenMapInfoListList().hashCode();
       }
       if (getChosenHunterSkillListCount() > 0) {
         hash = (37 * hash) + CHOSEN_HUNTER_SKILL_LIST_FIELD_NUMBER;
@@ -655,17 +655,17 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2700JDMDOOHFNCAFieldBuilder();
+          getOpenMapInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          unk2700JDMDOOHFNCA_ = java.util.Collections.emptyList();
+        if (openMapInfoListBuilder_ == null) {
+          openMapInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2700JDMDOOHFNCABuilder_.clear();
+          openMapInfoListBuilder_.clear();
         }
         chosenHunterSkillList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -700,14 +700,14 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo result = new emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
+        if (openMapInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2700JDMDOOHFNCA_ = java.util.Collections.unmodifiableList(unk2700JDMDOOHFNCA_);
+            openMapInfoList_ = java.util.Collections.unmodifiableList(openMapInfoList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2700JDMDOOHFNCA_ = unk2700JDMDOOHFNCA_;
+          result.openMapInfoList_ = openMapInfoList_;
         } else {
-          result.unk2700JDMDOOHFNCA_ = unk2700JDMDOOHFNCABuilder_.build();
+          result.openMapInfoList_ = openMapInfoListBuilder_.build();
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           chosenHunterSkillList_.makeImmutable();
@@ -772,29 +772,29 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.HideAndSeekActivityDetailInfo.getDefaultInstance()) return this;
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          if (!other.unk2700JDMDOOHFNCA_.isEmpty()) {
-            if (unk2700JDMDOOHFNCA_.isEmpty()) {
-              unk2700JDMDOOHFNCA_ = other.unk2700JDMDOOHFNCA_;
+        if (openMapInfoListBuilder_ == null) {
+          if (!other.openMapInfoList_.isEmpty()) {
+            if (openMapInfoList_.isEmpty()) {
+              openMapInfoList_ = other.openMapInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2700JDMDOOHFNCAIsMutable();
-              unk2700JDMDOOHFNCA_.addAll(other.unk2700JDMDOOHFNCA_);
+              ensureOpenMapInfoListIsMutable();
+              openMapInfoList_.addAll(other.openMapInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700JDMDOOHFNCA_.isEmpty()) {
-            if (unk2700JDMDOOHFNCABuilder_.isEmpty()) {
-              unk2700JDMDOOHFNCABuilder_.dispose();
-              unk2700JDMDOOHFNCABuilder_ = null;
-              unk2700JDMDOOHFNCA_ = other.unk2700JDMDOOHFNCA_;
+          if (!other.openMapInfoList_.isEmpty()) {
+            if (openMapInfoListBuilder_.isEmpty()) {
+              openMapInfoListBuilder_.dispose();
+              openMapInfoListBuilder_ = null;
+              openMapInfoList_ = other.openMapInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2700JDMDOOHFNCABuilder_ = 
+              openMapInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700JDMDOOHFNCAFieldBuilder() : null;
+                   getOpenMapInfoListFieldBuilder() : null;
             } else {
-              unk2700JDMDOOHFNCABuilder_.addAllMessages(other.unk2700JDMDOOHFNCA_);
+              openMapInfoListBuilder_.addAllMessages(other.openMapInfoList_);
             }
           }
         }
@@ -858,244 +858,244 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP> unk2700JDMDOOHFNCA_ =
+      private java.util.List<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo> openMapInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700JDMDOOHFNCAIsMutable() {
+      private void ensureOpenMapInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700JDMDOOHFNCA_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP>(unk2700JDMDOOHFNCA_);
+          openMapInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo>(openMapInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder> unk2700JDMDOOHFNCABuilder_;
+          emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder> openMapInfoListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP> getUnk2700JDMDOOHFNCAList() {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700JDMDOOHFNCA_);
+      public java.util.List<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo> getOpenMapInfoListList() {
+        if (openMapInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(openMapInfoList_);
         } else {
-          return unk2700JDMDOOHFNCABuilder_.getMessageList();
+          return openMapInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public int getUnk2700JDMDOOHFNCACount() {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          return unk2700JDMDOOHFNCA_.size();
+      public int getOpenMapInfoListCount() {
+        if (openMapInfoListBuilder_ == null) {
+          return openMapInfoList_.size();
         } else {
-          return unk2700JDMDOOHFNCABuilder_.getCount();
+          return openMapInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP getUnk2700JDMDOOHFNCA(int index) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          return unk2700JDMDOOHFNCA_.get(index);
+      public emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo getOpenMapInfoList(int index) {
+        if (openMapInfoListBuilder_ == null) {
+          return openMapInfoList_.get(index);
         } else {
-          return unk2700JDMDOOHFNCABuilder_.getMessage(index);
+          return openMapInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder setUnk2700JDMDOOHFNCA(
-          int index, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP value) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
+      public Builder setOpenMapInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo value) {
+        if (openMapInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700JDMDOOHFNCAIsMutable();
-          unk2700JDMDOOHFNCA_.set(index, value);
+          ensureOpenMapInfoListIsMutable();
+          openMapInfoList_.set(index, value);
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.setMessage(index, value);
+          openMapInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder setUnk2700JDMDOOHFNCA(
-          int index, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder builderForValue) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          ensureUnk2700JDMDOOHFNCAIsMutable();
-          unk2700JDMDOOHFNCA_.set(index, builderForValue.build());
+      public Builder setOpenMapInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder builderForValue) {
+        if (openMapInfoListBuilder_ == null) {
+          ensureOpenMapInfoListIsMutable();
+          openMapInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.setMessage(index, builderForValue.build());
+          openMapInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder addUnk2700JDMDOOHFNCA(emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP value) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
+      public Builder addOpenMapInfoList(emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo value) {
+        if (openMapInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700JDMDOOHFNCAIsMutable();
-          unk2700JDMDOOHFNCA_.add(value);
+          ensureOpenMapInfoListIsMutable();
+          openMapInfoList_.add(value);
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.addMessage(value);
+          openMapInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder addUnk2700JDMDOOHFNCA(
-          int index, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP value) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
+      public Builder addOpenMapInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo value) {
+        if (openMapInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700JDMDOOHFNCAIsMutable();
-          unk2700JDMDOOHFNCA_.add(index, value);
+          ensureOpenMapInfoListIsMutable();
+          openMapInfoList_.add(index, value);
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.addMessage(index, value);
+          openMapInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder addUnk2700JDMDOOHFNCA(
-          emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder builderForValue) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          ensureUnk2700JDMDOOHFNCAIsMutable();
-          unk2700JDMDOOHFNCA_.add(builderForValue.build());
+      public Builder addOpenMapInfoList(
+          emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder builderForValue) {
+        if (openMapInfoListBuilder_ == null) {
+          ensureOpenMapInfoListIsMutable();
+          openMapInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.addMessage(builderForValue.build());
+          openMapInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder addUnk2700JDMDOOHFNCA(
-          int index, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder builderForValue) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          ensureUnk2700JDMDOOHFNCAIsMutable();
-          unk2700JDMDOOHFNCA_.add(index, builderForValue.build());
+      public Builder addOpenMapInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder builderForValue) {
+        if (openMapInfoListBuilder_ == null) {
+          ensureOpenMapInfoListIsMutable();
+          openMapInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.addMessage(index, builderForValue.build());
+          openMapInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder addAllUnk2700JDMDOOHFNCA(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP> values) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          ensureUnk2700JDMDOOHFNCAIsMutable();
+      public Builder addAllOpenMapInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo> values) {
+        if (openMapInfoListBuilder_ == null) {
+          ensureOpenMapInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700JDMDOOHFNCA_);
+              values, openMapInfoList_);
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.addAllMessages(values);
+          openMapInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder clearUnk2700JDMDOOHFNCA() {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          unk2700JDMDOOHFNCA_ = java.util.Collections.emptyList();
+      public Builder clearOpenMapInfoList() {
+        if (openMapInfoListBuilder_ == null) {
+          openMapInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.clear();
+          openMapInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public Builder removeUnk2700JDMDOOHFNCA(int index) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          ensureUnk2700JDMDOOHFNCAIsMutable();
-          unk2700JDMDOOHFNCA_.remove(index);
+      public Builder removeOpenMapInfoList(int index) {
+        if (openMapInfoListBuilder_ == null) {
+          ensureOpenMapInfoListIsMutable();
+          openMapInfoList_.remove(index);
           onChanged();
         } else {
-          unk2700JDMDOOHFNCABuilder_.remove(index);
+          openMapInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder getUnk2700JDMDOOHFNCABuilder(
+      public emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder getOpenMapInfoListBuilder(
           int index) {
-        return getUnk2700JDMDOOHFNCAFieldBuilder().getBuilder(index);
+        return getOpenMapInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder getUnk2700JDMDOOHFNCAOrBuilder(
+      public emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder getOpenMapInfoListOrBuilder(
           int index) {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          return unk2700JDMDOOHFNCA_.get(index);  } else {
-          return unk2700JDMDOOHFNCABuilder_.getMessageOrBuilder(index);
+        if (openMapInfoListBuilder_ == null) {
+          return openMapInfoList_.get(index);  } else {
+          return openMapInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder> 
-           getUnk2700JDMDOOHFNCAOrBuilderList() {
-        if (unk2700JDMDOOHFNCABuilder_ != null) {
-          return unk2700JDMDOOHFNCABuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder> 
+           getOpenMapInfoListOrBuilderList() {
+        if (openMapInfoListBuilder_ != null) {
+          return openMapInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700JDMDOOHFNCA_);
+          return java.util.Collections.unmodifiableList(openMapInfoList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder addUnk2700JDMDOOHFNCABuilder() {
-        return getUnk2700JDMDOOHFNCAFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.getDefaultInstance());
+      public emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder addOpenMapInfoListBuilder() {
+        return getOpenMapInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder addUnk2700JDMDOOHFNCABuilder(
+      public emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder addOpenMapInfoListBuilder(
           int index) {
-        return getUnk2700JDMDOOHFNCAFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.getDefaultInstance());
+        return getOpenMapInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;</code>
+       * <code>repeated .HideAndSeekMapInfo open_map_info_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder> 
-           getUnk2700JDMDOOHFNCABuilderList() {
-        return getUnk2700JDMDOOHFNCAFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder> 
+           getOpenMapInfoListBuilderList() {
+        return getOpenMapInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder> 
-          getUnk2700JDMDOOHFNCAFieldBuilder() {
-        if (unk2700JDMDOOHFNCABuilder_ == null) {
-          unk2700JDMDOOHFNCABuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCP.Builder, emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.Unk2700_LBOAEFMECCPOrBuilder>(
-                  unk2700JDMDOOHFNCA_,
+          emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder> 
+          getOpenMapInfoListFieldBuilder() {
+        if (openMapInfoListBuilder_ == null) {
+          openMapInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfo.Builder, emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.HideAndSeekMapInfoOrBuilder>(
+                  openMapInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700JDMDOOHFNCA_ = null;
+          openMapInfoList_ = null;
         }
-        return unk2700JDMDOOHFNCABuilder_;
+        return openMapInfoListBuilder_;
       }
 
       private com.google.protobuf.Internal.IntList chosenHunterSkillList_ = emptyIntList();
@@ -1401,26 +1401,26 @@ public final class HideAndSeekActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#HideAndSeekActivityDetailInfo.proto\032\031U" +
-      "nk2700_LBOAEFMECCP.proto\"\256\001\n\035HideAndSeek" +
-      "ActivityDetailInfo\0221\n\023Unk2700_JDMDOOHFNC" +
-      "A\030\001 \003(\0132\024.Unk2700_LBOAEFMECCP\022 \n\030chosen_" +
-      "hunter_skill_list\030\004 \003(\r\022\027\n\017unlock_map_li" +
-      "st\030\r \003(\r\022\037\n\027chosen_hider_skill_list\030\006 \003(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n#HideAndSeekActivityDetailInfo.proto\032\030H" +
+      "ideAndSeekMapInfo.proto\"\254\001\n\035HideAndSeekA" +
+      "ctivityDetailInfo\022/\n\022open_map_info_list\030" +
+      "\001 \003(\0132\023.HideAndSeekMapInfo\022 \n\030chosen_hun" +
+      "ter_skill_list\030\004 \003(\r\022\027\n\017unlock_map_list\030" +
+      "\r \003(\r\022\037\n\027chosen_hider_skill_list\030\006 \003(\rB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.getDescriptor(),
+          emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.getDescriptor(),
         });
     internal_static_HideAndSeekActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_HideAndSeekActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HideAndSeekActivityDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2700JDMDOOHFNCA", "ChosenHunterSkillList", "UnlockMapList", "ChosenHiderSkillList", });
-    emu.grasscutter.net.proto.Unk2700LBOAEFMECCP.getDescriptor();
+        new java.lang.String[] { "OpenMapInfoList", "ChosenHunterSkillList", "UnlockMapList", "ChosenHiderSkillList", });
+    emu.grasscutter.net.proto.HideAndSeekMapInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

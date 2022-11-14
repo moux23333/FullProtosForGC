@@ -19,27 +19,27 @@ public final class RockBoardExploreDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF> 
-        getUnk2800PDBHCBCLFBMList();
+    java.util.List<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData> 
+        getStageDataListList();
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
-    emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF getUnk2800PDBHCBCLFBM(int index);
+    emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData getStageDataList(int index);
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
-    int getUnk2800PDBHCBCLFBMCount();
+    int getStageDataListCount();
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder> 
-        getUnk2800PDBHCBCLFBMOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder> 
+        getStageDataListOrBuilderList();
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
-    emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder getUnk2800PDBHCBCLFBMOrBuilder(
+    emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder getStageDataListOrBuilder(
         int index);
   }
   /**
@@ -55,7 +55,7 @@ public final class RockBoardExploreDetailInfoOuterClass {
       super(builder);
     }
     private RockBoardExploreDetailInfo() {
-      unk2800PDBHCBCLFBM_ = java.util.Collections.emptyList();
+      stageDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -91,11 +91,11 @@ public final class RockBoardExploreDetailInfoOuterClass {
               break;
             case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2800PDBHCBCLFBM_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF>();
+                stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2800PDBHCBCLFBM_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.parser(), extensionRegistry));
+              stageDataList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -114,7 +114,7 @@ public final class RockBoardExploreDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2800PDBHCBCLFBM_ = java.util.Collections.unmodifiableList(unk2800PDBHCBCLFBM_);
+          stageDataList_ = java.util.Collections.unmodifiableList(stageDataList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -133,44 +133,44 @@ public final class RockBoardExploreDetailInfoOuterClass {
               emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.class, emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.Builder.class);
     }
 
-    public static final int UNK2800_PDBHCBCLFBM_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF> unk2800PDBHCBCLFBM_;
+    public static final int STAGE_DATA_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData> stageDataList_;
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF> getUnk2800PDBHCBCLFBMList() {
-      return unk2800PDBHCBCLFBM_;
+    public java.util.List<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData> getStageDataListList() {
+      return stageDataList_;
     }
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder> 
-        getUnk2800PDBHCBCLFBMOrBuilderList() {
-      return unk2800PDBHCBCLFBM_;
+    public java.util.List<? extends emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder> 
+        getStageDataListOrBuilderList() {
+      return stageDataList_;
     }
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
     @java.lang.Override
-    public int getUnk2800PDBHCBCLFBMCount() {
-      return unk2800PDBHCBCLFBM_.size();
+    public int getStageDataListCount() {
+      return stageDataList_.size();
     }
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF getUnk2800PDBHCBCLFBM(int index) {
-      return unk2800PDBHCBCLFBM_.get(index);
+    public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData getStageDataList(int index) {
+      return stageDataList_.get(index);
     }
     /**
-     * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+     * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder getUnk2800PDBHCBCLFBMOrBuilder(
+    public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder getStageDataListOrBuilder(
         int index) {
-      return unk2800PDBHCBCLFBM_.get(index);
+      return stageDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -187,8 +187,8 @@ public final class RockBoardExploreDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < unk2800PDBHCBCLFBM_.size(); i++) {
-        output.writeMessage(9, unk2800PDBHCBCLFBM_.get(i));
+      for (int i = 0; i < stageDataList_.size(); i++) {
+        output.writeMessage(9, stageDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -199,9 +199,9 @@ public final class RockBoardExploreDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < unk2800PDBHCBCLFBM_.size(); i++) {
+      for (int i = 0; i < stageDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, unk2800PDBHCBCLFBM_.get(i));
+          .computeMessageSize(9, stageDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -218,8 +218,8 @@ public final class RockBoardExploreDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo other = (emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo) obj;
 
-      if (!getUnk2800PDBHCBCLFBMList()
-          .equals(other.getUnk2800PDBHCBCLFBMList())) return false;
+      if (!getStageDataListList()
+          .equals(other.getStageDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -231,9 +231,9 @@ public final class RockBoardExploreDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getUnk2800PDBHCBCLFBMCount() > 0) {
-        hash = (37 * hash) + UNK2800_PDBHCBCLFBM_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800PDBHCBCLFBMList().hashCode();
+      if (getStageDataListCount() > 0) {
+        hash = (37 * hash) + STAGE_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getStageDataListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -363,17 +363,17 @@ public final class RockBoardExploreDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2800PDBHCBCLFBMFieldBuilder();
+          getStageDataListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          unk2800PDBHCBCLFBM_ = java.util.Collections.emptyList();
+        if (stageDataListBuilder_ == null) {
+          stageDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2800PDBHCBCLFBMBuilder_.clear();
+          stageDataListBuilder_.clear();
         }
         return this;
       }
@@ -402,14 +402,14 @@ public final class RockBoardExploreDetailInfoOuterClass {
       public emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo buildPartial() {
         emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo result = new emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
+        if (stageDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2800PDBHCBCLFBM_ = java.util.Collections.unmodifiableList(unk2800PDBHCBCLFBM_);
+            stageDataList_ = java.util.Collections.unmodifiableList(stageDataList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2800PDBHCBCLFBM_ = unk2800PDBHCBCLFBM_;
+          result.stageDataList_ = stageDataList_;
         } else {
-          result.unk2800PDBHCBCLFBM_ = unk2800PDBHCBCLFBMBuilder_.build();
+          result.stageDataList_ = stageDataListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -459,29 +459,29 @@ public final class RockBoardExploreDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo other) {
         if (other == emu.grasscutter.net.proto.RockBoardExploreDetailInfoOuterClass.RockBoardExploreDetailInfo.getDefaultInstance()) return this;
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          if (!other.unk2800PDBHCBCLFBM_.isEmpty()) {
-            if (unk2800PDBHCBCLFBM_.isEmpty()) {
-              unk2800PDBHCBCLFBM_ = other.unk2800PDBHCBCLFBM_;
+        if (stageDataListBuilder_ == null) {
+          if (!other.stageDataList_.isEmpty()) {
+            if (stageDataList_.isEmpty()) {
+              stageDataList_ = other.stageDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2800PDBHCBCLFBMIsMutable();
-              unk2800PDBHCBCLFBM_.addAll(other.unk2800PDBHCBCLFBM_);
+              ensureStageDataListIsMutable();
+              stageDataList_.addAll(other.stageDataList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2800PDBHCBCLFBM_.isEmpty()) {
-            if (unk2800PDBHCBCLFBMBuilder_.isEmpty()) {
-              unk2800PDBHCBCLFBMBuilder_.dispose();
-              unk2800PDBHCBCLFBMBuilder_ = null;
-              unk2800PDBHCBCLFBM_ = other.unk2800PDBHCBCLFBM_;
+          if (!other.stageDataList_.isEmpty()) {
+            if (stageDataListBuilder_.isEmpty()) {
+              stageDataListBuilder_.dispose();
+              stageDataListBuilder_ = null;
+              stageDataList_ = other.stageDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2800PDBHCBCLFBMBuilder_ = 
+              stageDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2800PDBHCBCLFBMFieldBuilder() : null;
+                   getStageDataListFieldBuilder() : null;
             } else {
-              unk2800PDBHCBCLFBMBuilder_.addAllMessages(other.unk2800PDBHCBCLFBM_);
+              stageDataListBuilder_.addAllMessages(other.stageDataList_);
             }
           }
         }
@@ -515,244 +515,244 @@ public final class RockBoardExploreDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF> unk2800PDBHCBCLFBM_ =
+      private java.util.List<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData> stageDataList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2800PDBHCBCLFBMIsMutable() {
+      private void ensureStageDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2800PDBHCBCLFBM_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF>(unk2800PDBHCBCLFBM_);
+          stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData>(stageDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder> unk2800PDBHCBCLFBMBuilder_;
+          emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder> stageDataListBuilder_;
 
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF> getUnk2800PDBHCBCLFBMList() {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2800PDBHCBCLFBM_);
+      public java.util.List<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData> getStageDataListList() {
+        if (stageDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(stageDataList_);
         } else {
-          return unk2800PDBHCBCLFBMBuilder_.getMessageList();
+          return stageDataListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public int getUnk2800PDBHCBCLFBMCount() {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          return unk2800PDBHCBCLFBM_.size();
+      public int getStageDataListCount() {
+        if (stageDataListBuilder_ == null) {
+          return stageDataList_.size();
         } else {
-          return unk2800PDBHCBCLFBMBuilder_.getCount();
+          return stageDataListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF getUnk2800PDBHCBCLFBM(int index) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          return unk2800PDBHCBCLFBM_.get(index);
+      public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData getStageDataList(int index) {
+        if (stageDataListBuilder_ == null) {
+          return stageDataList_.get(index);
         } else {
-          return unk2800PDBHCBCLFBMBuilder_.getMessage(index);
+          return stageDataListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder setUnk2800PDBHCBCLFBM(
-          int index, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF value) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
+      public Builder setStageDataList(
+          int index, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData value) {
+        if (stageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800PDBHCBCLFBMIsMutable();
-          unk2800PDBHCBCLFBM_.set(index, value);
+          ensureStageDataListIsMutable();
+          stageDataList_.set(index, value);
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.setMessage(index, value);
+          stageDataListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder setUnk2800PDBHCBCLFBM(
-          int index, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder builderForValue) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          ensureUnk2800PDBHCBCLFBMIsMutable();
-          unk2800PDBHCBCLFBM_.set(index, builderForValue.build());
+      public Builder setStageDataList(
+          int index, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder builderForValue) {
+        if (stageDataListBuilder_ == null) {
+          ensureStageDataListIsMutable();
+          stageDataList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.setMessage(index, builderForValue.build());
+          stageDataListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder addUnk2800PDBHCBCLFBM(emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF value) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
+      public Builder addStageDataList(emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData value) {
+        if (stageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800PDBHCBCLFBMIsMutable();
-          unk2800PDBHCBCLFBM_.add(value);
+          ensureStageDataListIsMutable();
+          stageDataList_.add(value);
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.addMessage(value);
+          stageDataListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder addUnk2800PDBHCBCLFBM(
-          int index, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF value) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
+      public Builder addStageDataList(
+          int index, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData value) {
+        if (stageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800PDBHCBCLFBMIsMutable();
-          unk2800PDBHCBCLFBM_.add(index, value);
+          ensureStageDataListIsMutable();
+          stageDataList_.add(index, value);
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.addMessage(index, value);
+          stageDataListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder addUnk2800PDBHCBCLFBM(
-          emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder builderForValue) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          ensureUnk2800PDBHCBCLFBMIsMutable();
-          unk2800PDBHCBCLFBM_.add(builderForValue.build());
+      public Builder addStageDataList(
+          emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder builderForValue) {
+        if (stageDataListBuilder_ == null) {
+          ensureStageDataListIsMutable();
+          stageDataList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.addMessage(builderForValue.build());
+          stageDataListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder addUnk2800PDBHCBCLFBM(
-          int index, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder builderForValue) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          ensureUnk2800PDBHCBCLFBMIsMutable();
-          unk2800PDBHCBCLFBM_.add(index, builderForValue.build());
+      public Builder addStageDataList(
+          int index, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder builderForValue) {
+        if (stageDataListBuilder_ == null) {
+          ensureStageDataListIsMutable();
+          stageDataList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.addMessage(index, builderForValue.build());
+          stageDataListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder addAllUnk2800PDBHCBCLFBM(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF> values) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          ensureUnk2800PDBHCBCLFBMIsMutable();
+      public Builder addAllStageDataList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData> values) {
+        if (stageDataListBuilder_ == null) {
+          ensureStageDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2800PDBHCBCLFBM_);
+              values, stageDataList_);
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.addAllMessages(values);
+          stageDataListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder clearUnk2800PDBHCBCLFBM() {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          unk2800PDBHCBCLFBM_ = java.util.Collections.emptyList();
+      public Builder clearStageDataList() {
+        if (stageDataListBuilder_ == null) {
+          stageDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.clear();
+          stageDataListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public Builder removeUnk2800PDBHCBCLFBM(int index) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          ensureUnk2800PDBHCBCLFBMIsMutable();
-          unk2800PDBHCBCLFBM_.remove(index);
+      public Builder removeStageDataList(int index) {
+        if (stageDataListBuilder_ == null) {
+          ensureStageDataListIsMutable();
+          stageDataList_.remove(index);
           onChanged();
         } else {
-          unk2800PDBHCBCLFBMBuilder_.remove(index);
+          stageDataListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder getUnk2800PDBHCBCLFBMBuilder(
+      public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder getStageDataListBuilder(
           int index) {
-        return getUnk2800PDBHCBCLFBMFieldBuilder().getBuilder(index);
+        return getStageDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder getUnk2800PDBHCBCLFBMOrBuilder(
+      public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder getStageDataListOrBuilder(
           int index) {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          return unk2800PDBHCBCLFBM_.get(index);  } else {
-          return unk2800PDBHCBCLFBMBuilder_.getMessageOrBuilder(index);
+        if (stageDataListBuilder_ == null) {
+          return stageDataList_.get(index);  } else {
+          return stageDataListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder> 
-           getUnk2800PDBHCBCLFBMOrBuilderList() {
-        if (unk2800PDBHCBCLFBMBuilder_ != null) {
-          return unk2800PDBHCBCLFBMBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder> 
+           getStageDataListOrBuilderList() {
+        if (stageDataListBuilder_ != null) {
+          return stageDataListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2800PDBHCBCLFBM_);
+          return java.util.Collections.unmodifiableList(stageDataList_);
         }
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder addUnk2800PDBHCBCLFBMBuilder() {
-        return getUnk2800PDBHCBCLFBMFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.getDefaultInstance());
+      public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder addStageDataListBuilder() {
+        return getStageDataListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder addUnk2800PDBHCBCLFBMBuilder(
+      public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder addStageDataListBuilder(
           int index) {
-        return getUnk2800PDBHCBCLFBMFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.getDefaultInstance());
+        return getStageDataListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;</code>
+       * <code>repeated .RockBoardExploreStageData stage_data_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder> 
-           getUnk2800PDBHCBCLFBMBuilderList() {
-        return getUnk2800PDBHCBCLFBMFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder> 
+           getStageDataListBuilderList() {
+        return getStageDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder> 
-          getUnk2800PDBHCBCLFBMFieldBuilder() {
-        if (unk2800PDBHCBCLFBMBuilder_ == null) {
-          unk2800PDBHCBCLFBMBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKF.Builder, emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.Unk3100_FKKBIDJONKFOrBuilder>(
-                  unk2800PDBHCBCLFBM_,
+          emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder> 
+          getStageDataListFieldBuilder() {
+        if (stageDataListBuilder_ == null) {
+          stageDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageDataOrBuilder>(
+                  stageDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2800PDBHCBCLFBM_ = null;
+          stageDataList_ = null;
         }
-        return unk2800PDBHCBCLFBMBuilder_;
+        return stageDataListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -821,24 +821,24 @@ public final class RockBoardExploreDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n RockBoardExploreDetailInfo.proto\032\031Unk3" +
-      "100_FKKBIDJONKF.proto\"O\n\032RockBoardExplor" +
-      "eDetailInfo\0221\n\023Unk2800_PDBHCBCLFBM\030\t \003(\013" +
-      "2\024.Unk3100_FKKBIDJONKFB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n RockBoardExploreDetailInfo.proto\032\037Rock" +
+      "BoardExploreStageData.proto\"Q\n\032RockBoard" +
+      "ExploreDetailInfo\0223\n\017stage_data_list\030\t \003" +
+      "(\0132\032.RockBoardExploreStageDataB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.getDescriptor(),
+          emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.getDescriptor(),
         });
     internal_static_RockBoardExploreDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_RockBoardExploreDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RockBoardExploreDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2800PDBHCBCLFBM", });
-    emu.grasscutter.net.proto.Unk3100FKKBIDJONKF.getDescriptor();
+        new java.lang.String[] { "StageDataList", });
+    emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

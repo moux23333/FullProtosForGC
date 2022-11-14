@@ -31,10 +31,10 @@ public final class MusicGameStartRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint64 Unk2700_CEPGMKAHHCD = 15;</code>
-     * @return The unk2700CEPGMKAHHCD.
+     * <code>uint64 ugc_guid = 15;</code>
+     * @return The ugcGuid.
      */
-    long getUnk2700CEPGMKAHHCD();
+    long getUgcGuid();
   }
   /**
    * <pre>
@@ -99,7 +99,7 @@ public final class MusicGameStartRspOuterClass {
             }
             case 120: {
 
-              unk2700CEPGMKAHHCD_ = input.readUInt64();
+              ugcGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -156,15 +156,15 @@ public final class MusicGameStartRspOuterClass {
       return retcode_;
     }
 
-    public static final int UNK2700_CEPGMKAHHCD_FIELD_NUMBER = 15;
-    private long unk2700CEPGMKAHHCD_;
+    public static final int UGC_GUID_FIELD_NUMBER = 15;
+    private long ugcGuid_;
     /**
-     * <code>uint64 Unk2700_CEPGMKAHHCD = 15;</code>
-     * @return The unk2700CEPGMKAHHCD.
+     * <code>uint64 ugc_guid = 15;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public long getUnk2700CEPGMKAHHCD() {
-      return unk2700CEPGMKAHHCD_;
+    public long getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -187,8 +187,8 @@ public final class MusicGameStartRspOuterClass {
       if (musicBasicId_ != 0) {
         output.writeUInt32(4, musicBasicId_);
       }
-      if (unk2700CEPGMKAHHCD_ != 0L) {
-        output.writeUInt64(15, unk2700CEPGMKAHHCD_);
+      if (ugcGuid_ != 0L) {
+        output.writeUInt64(15, ugcGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -207,9 +207,9 @@ public final class MusicGameStartRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, musicBasicId_);
       }
-      if (unk2700CEPGMKAHHCD_ != 0L) {
+      if (ugcGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(15, unk2700CEPGMKAHHCD_);
+          .computeUInt64Size(15, ugcGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -230,8 +230,8 @@ public final class MusicGameStartRspOuterClass {
           != other.getMusicBasicId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getUnk2700CEPGMKAHHCD()
-          != other.getUnk2700CEPGMKAHHCD()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -247,9 +247,9 @@ public final class MusicGameStartRspOuterClass {
       hash = (53 * hash) + getMusicBasicId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + UNK2700_CEPGMKAHHCD_FIELD_NUMBER;
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUnk2700CEPGMKAHHCD());
+          getUgcGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -393,7 +393,7 @@ public final class MusicGameStartRspOuterClass {
 
         retcode_ = 0;
 
-        unk2700CEPGMKAHHCD_ = 0L;
+        ugcGuid_ = 0L;
 
         return this;
       }
@@ -423,7 +423,7 @@ public final class MusicGameStartRspOuterClass {
         emu.grasscutter.net.proto.MusicGameStartRspOuterClass.MusicGameStartRsp result = new emu.grasscutter.net.proto.MusicGameStartRspOuterClass.MusicGameStartRsp(this);
         result.musicBasicId_ = musicBasicId_;
         result.retcode_ = retcode_;
-        result.unk2700CEPGMKAHHCD_ = unk2700CEPGMKAHHCD_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -478,8 +478,8 @@ public final class MusicGameStartRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getUnk2700CEPGMKAHHCD() != 0L) {
-          setUnk2700CEPGMKAHHCD(other.getUnk2700CEPGMKAHHCD());
+        if (other.getUgcGuid() != 0L) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -572,33 +572,33 @@ public final class MusicGameStartRspOuterClass {
         return this;
       }
 
-      private long unk2700CEPGMKAHHCD_ ;
+      private long ugcGuid_ ;
       /**
-       * <code>uint64 Unk2700_CEPGMKAHHCD = 15;</code>
-       * @return The unk2700CEPGMKAHHCD.
+       * <code>uint64 ugc_guid = 15;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public long getUnk2700CEPGMKAHHCD() {
-        return unk2700CEPGMKAHHCD_;
+      public long getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint64 Unk2700_CEPGMKAHHCD = 15;</code>
-       * @param value The unk2700CEPGMKAHHCD to set.
+       * <code>uint64 ugc_guid = 15;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700CEPGMKAHHCD(long value) {
+      public Builder setUgcGuid(long value) {
         
-        unk2700CEPGMKAHHCD_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 Unk2700_CEPGMKAHHCD = 15;</code>
+       * <code>uint64 ugc_guid = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700CEPGMKAHHCD() {
+      public Builder clearUgcGuid() {
         
-        unk2700CEPGMKAHHCD_ = 0L;
+        ugcGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -669,10 +669,10 @@ public final class MusicGameStartRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027MusicGameStartRsp.proto\"Y\n\021MusicGameSt" +
+      "\n\027MusicGameStartRsp.proto\"N\n\021MusicGameSt" +
       "artRsp\022\026\n\016music_basic_id\030\004 \001(\r\022\017\n\007retcod" +
-      "e\030\001 \001(\005\022\033\n\023Unk2700_CEPGMKAHHCD\030\017 \001(\004B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "e\030\001 \001(\005\022\020\n\010ugc_guid\030\017 \001(\004B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -683,7 +683,7 @@ public final class MusicGameStartRspOuterClass {
     internal_static_MusicGameStartRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MusicGameStartRsp_descriptor,
-        new java.lang.String[] { "MusicBasicId", "Retcode", "Unk2700CEPGMKAHHCD", });
+        new java.lang.String[] { "MusicBasicId", "Retcode", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

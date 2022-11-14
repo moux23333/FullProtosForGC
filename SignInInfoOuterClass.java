@@ -42,27 +42,27 @@ public final class SignInInfoOuterClass {
     int getRewardDayList(int index);
 
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF> 
-        getUnk2700HBMMIEOFIEIList();
+    java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> 
+        getSigninDataListList();
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
-    emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF getUnk2700HBMMIEOFIEI(int index);
+    emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index);
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
-    int getUnk2700HBMMIEOFIEICount();
+    int getSigninDataListCount();
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder> 
-        getUnk2700HBMMIEOFIEIOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
+        getSigninDataListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
-    emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder getUnk2700HBMMIEOFIEIOrBuilder(
+    emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
         int index);
 
     /**
@@ -115,7 +115,7 @@ public final class SignInInfoOuterClass {
     }
     private SignInInfo() {
       rewardDayList_ = emptyIntList();
-      unk2700HBMMIEOFIEI_ = java.util.Collections.emptyList();
+      signinDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -181,11 +181,11 @@ public final class SignInInfoOuterClass {
             }
             case 98: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk2700HBMMIEOFIEI_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF>();
+                signinDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              unk2700HBMMIEOFIEI_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.parser(), extensionRegistry));
+              signinDataList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.parser(), extensionRegistry));
               break;
             }
             case 104: {
@@ -230,7 +230,7 @@ public final class SignInInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unk2700HBMMIEOFIEI_ = java.util.Collections.unmodifiableList(unk2700HBMMIEOFIEI_);
+          signinDataList_ = java.util.Collections.unmodifiableList(signinDataList_);
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           rewardDayList_.makeImmutable(); // C
@@ -291,44 +291,44 @@ public final class SignInInfoOuterClass {
     }
     private int rewardDayListMemoizedSerializedSize = -1;
 
-    public static final int UNK2700_HBMMIEOFIEI_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF> unk2700HBMMIEOFIEI_;
+    public static final int SIGNIN_DATA_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> signinDataList_;
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF> getUnk2700HBMMIEOFIEIList() {
-      return unk2700HBMMIEOFIEI_;
+    public java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> getSigninDataListList() {
+      return signinDataList_;
     }
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder> 
-        getUnk2700HBMMIEOFIEIOrBuilderList() {
-      return unk2700HBMMIEOFIEI_;
+    public java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
+        getSigninDataListOrBuilderList() {
+      return signinDataList_;
     }
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
     @java.lang.Override
-    public int getUnk2700HBMMIEOFIEICount() {
-      return unk2700HBMMIEOFIEI_.size();
+    public int getSigninDataListCount() {
+      return signinDataList_.size();
     }
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF getUnk2700HBMMIEOFIEI(int index) {
-      return unk2700HBMMIEOFIEI_.get(index);
+    public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index) {
+      return signinDataList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+     * <code>repeated .SignInData signin_data_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder getUnk2700HBMMIEOFIEIOrBuilder(
+    public emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
         int index) {
-      return unk2700HBMMIEOFIEI_.get(index);
+      return signinDataList_.get(index);
     }
 
     public static final int CONFIG_ID_FIELD_NUMBER = 8;
@@ -430,8 +430,8 @@ public final class SignInInfoOuterClass {
       if (configId_ != 0) {
         output.writeUInt32(8, configId_);
       }
-      for (int i = 0; i < unk2700HBMMIEOFIEI_.size(); i++) {
-        output.writeMessage(12, unk2700HBMMIEOFIEI_.get(i));
+      for (int i = 0; i < signinDataList_.size(); i++) {
+        output.writeMessage(12, signinDataList_.get(i));
       }
       if (endTime_ != 0) {
         output.writeUInt32(13, endTime_);
@@ -476,9 +476,9 @@ public final class SignInInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, configId_);
       }
-      for (int i = 0; i < unk2700HBMMIEOFIEI_.size(); i++) {
+      for (int i = 0; i < signinDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, unk2700HBMMIEOFIEI_.get(i));
+          .computeMessageSize(12, signinDataList_.get(i));
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -517,8 +517,8 @@ public final class SignInInfoOuterClass {
           != other.getIsCondSatisfied()) return false;
       if (!getRewardDayListList()
           .equals(other.getRewardDayListList())) return false;
-      if (!getUnk2700HBMMIEOFIEIList()
-          .equals(other.getUnk2700HBMMIEOFIEIList())) return false;
+      if (!getSigninDataListList()
+          .equals(other.getSigninDataListList())) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
       if (getSignInCount()
@@ -549,9 +549,9 @@ public final class SignInInfoOuterClass {
         hash = (37 * hash) + REWARD_DAY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardDayListList().hashCode();
       }
-      if (getUnk2700HBMMIEOFIEICount() > 0) {
-        hash = (37 * hash) + UNK2700_HBMMIEOFIEI_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700HBMMIEOFIEIList().hashCode();
+      if (getSigninDataListCount() > 0) {
+        hash = (37 * hash) + SIGNIN_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSigninDataListList().hashCode();
       }
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
@@ -693,7 +693,7 @@ public final class SignInInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2700HBMMIEOFIEIFieldBuilder();
+          getSigninDataListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -703,11 +703,11 @@ public final class SignInInfoOuterClass {
 
         rewardDayList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          unk2700HBMMIEOFIEI_ = java.util.Collections.emptyList();
+        if (signinDataListBuilder_ == null) {
+          signinDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          unk2700HBMMIEOFIEIBuilder_.clear();
+          signinDataListBuilder_.clear();
         }
         configId_ = 0;
 
@@ -754,14 +754,14 @@ public final class SignInInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.rewardDayList_ = rewardDayList_;
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
+        if (signinDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            unk2700HBMMIEOFIEI_ = java.util.Collections.unmodifiableList(unk2700HBMMIEOFIEI_);
+            signinDataList_ = java.util.Collections.unmodifiableList(signinDataList_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.unk2700HBMMIEOFIEI_ = unk2700HBMMIEOFIEI_;
+          result.signinDataList_ = signinDataList_;
         } else {
-          result.unk2700HBMMIEOFIEI_ = unk2700HBMMIEOFIEIBuilder_.build();
+          result.signinDataList_ = signinDataListBuilder_.build();
         }
         result.configId_ = configId_;
         result.signInCount_ = signInCount_;
@@ -830,29 +830,29 @@ public final class SignInInfoOuterClass {
           }
           onChanged();
         }
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          if (!other.unk2700HBMMIEOFIEI_.isEmpty()) {
-            if (unk2700HBMMIEOFIEI_.isEmpty()) {
-              unk2700HBMMIEOFIEI_ = other.unk2700HBMMIEOFIEI_;
+        if (signinDataListBuilder_ == null) {
+          if (!other.signinDataList_.isEmpty()) {
+            if (signinDataList_.isEmpty()) {
+              signinDataList_ = other.signinDataList_;
               bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureUnk2700HBMMIEOFIEIIsMutable();
-              unk2700HBMMIEOFIEI_.addAll(other.unk2700HBMMIEOFIEI_);
+              ensureSigninDataListIsMutable();
+              signinDataList_.addAll(other.signinDataList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700HBMMIEOFIEI_.isEmpty()) {
-            if (unk2700HBMMIEOFIEIBuilder_.isEmpty()) {
-              unk2700HBMMIEOFIEIBuilder_.dispose();
-              unk2700HBMMIEOFIEIBuilder_ = null;
-              unk2700HBMMIEOFIEI_ = other.unk2700HBMMIEOFIEI_;
+          if (!other.signinDataList_.isEmpty()) {
+            if (signinDataListBuilder_.isEmpty()) {
+              signinDataListBuilder_.dispose();
+              signinDataListBuilder_ = null;
+              signinDataList_ = other.signinDataList_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              unk2700HBMMIEOFIEIBuilder_ = 
+              signinDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700HBMMIEOFIEIFieldBuilder() : null;
+                   getSigninDataListFieldBuilder() : null;
             } else {
-              unk2700HBMMIEOFIEIBuilder_.addAllMessages(other.unk2700HBMMIEOFIEI_);
+              signinDataListBuilder_.addAllMessages(other.signinDataList_);
             }
           }
         }
@@ -1014,244 +1014,244 @@ public final class SignInInfoOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF> unk2700HBMMIEOFIEI_ =
+      private java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> signinDataList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700HBMMIEOFIEIIsMutable() {
+      private void ensureSigninDataListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          unk2700HBMMIEOFIEI_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF>(unk2700HBMMIEOFIEI_);
+          signinDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData>(signinDataList_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder> unk2700HBMMIEOFIEIBuilder_;
+          emu.grasscutter.net.proto.SignInDataOuterClass.SignInData, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder, emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> signinDataListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF> getUnk2700HBMMIEOFIEIList() {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700HBMMIEOFIEI_);
+      public java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> getSigninDataListList() {
+        if (signinDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(signinDataList_);
         } else {
-          return unk2700HBMMIEOFIEIBuilder_.getMessageList();
+          return signinDataListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public int getUnk2700HBMMIEOFIEICount() {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          return unk2700HBMMIEOFIEI_.size();
+      public int getSigninDataListCount() {
+        if (signinDataListBuilder_ == null) {
+          return signinDataList_.size();
         } else {
-          return unk2700HBMMIEOFIEIBuilder_.getCount();
+          return signinDataListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF getUnk2700HBMMIEOFIEI(int index) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          return unk2700HBMMIEOFIEI_.get(index);
+      public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index) {
+        if (signinDataListBuilder_ == null) {
+          return signinDataList_.get(index);
         } else {
-          return unk2700HBMMIEOFIEIBuilder_.getMessage(index);
+          return signinDataListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder setUnk2700HBMMIEOFIEI(
-          int index, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF value) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
+      public Builder setSigninDataList(
+          int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData value) {
+        if (signinDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HBMMIEOFIEIIsMutable();
-          unk2700HBMMIEOFIEI_.set(index, value);
+          ensureSigninDataListIsMutable();
+          signinDataList_.set(index, value);
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.setMessage(index, value);
+          signinDataListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder setUnk2700HBMMIEOFIEI(
-          int index, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder builderForValue) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          ensureUnk2700HBMMIEOFIEIIsMutable();
-          unk2700HBMMIEOFIEI_.set(index, builderForValue.build());
+      public Builder setSigninDataList(
+          int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder builderForValue) {
+        if (signinDataListBuilder_ == null) {
+          ensureSigninDataListIsMutable();
+          signinDataList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.setMessage(index, builderForValue.build());
+          signinDataListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder addUnk2700HBMMIEOFIEI(emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF value) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
+      public Builder addSigninDataList(emu.grasscutter.net.proto.SignInDataOuterClass.SignInData value) {
+        if (signinDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HBMMIEOFIEIIsMutable();
-          unk2700HBMMIEOFIEI_.add(value);
+          ensureSigninDataListIsMutable();
+          signinDataList_.add(value);
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.addMessage(value);
+          signinDataListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder addUnk2700HBMMIEOFIEI(
-          int index, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF value) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
+      public Builder addSigninDataList(
+          int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData value) {
+        if (signinDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HBMMIEOFIEIIsMutable();
-          unk2700HBMMIEOFIEI_.add(index, value);
+          ensureSigninDataListIsMutable();
+          signinDataList_.add(index, value);
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.addMessage(index, value);
+          signinDataListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder addUnk2700HBMMIEOFIEI(
-          emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder builderForValue) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          ensureUnk2700HBMMIEOFIEIIsMutable();
-          unk2700HBMMIEOFIEI_.add(builderForValue.build());
+      public Builder addSigninDataList(
+          emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder builderForValue) {
+        if (signinDataListBuilder_ == null) {
+          ensureSigninDataListIsMutable();
+          signinDataList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.addMessage(builderForValue.build());
+          signinDataListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder addUnk2700HBMMIEOFIEI(
-          int index, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder builderForValue) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          ensureUnk2700HBMMIEOFIEIIsMutable();
-          unk2700HBMMIEOFIEI_.add(index, builderForValue.build());
+      public Builder addSigninDataList(
+          int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder builderForValue) {
+        if (signinDataListBuilder_ == null) {
+          ensureSigninDataListIsMutable();
+          signinDataList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.addMessage(index, builderForValue.build());
+          signinDataListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder addAllUnk2700HBMMIEOFIEI(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF> values) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          ensureUnk2700HBMMIEOFIEIIsMutable();
+      public Builder addAllSigninDataList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> values) {
+        if (signinDataListBuilder_ == null) {
+          ensureSigninDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700HBMMIEOFIEI_);
+              values, signinDataList_);
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.addAllMessages(values);
+          signinDataListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder clearUnk2700HBMMIEOFIEI() {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          unk2700HBMMIEOFIEI_ = java.util.Collections.emptyList();
+      public Builder clearSigninDataList() {
+        if (signinDataListBuilder_ == null) {
+          signinDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.clear();
+          signinDataListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public Builder removeUnk2700HBMMIEOFIEI(int index) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          ensureUnk2700HBMMIEOFIEIIsMutable();
-          unk2700HBMMIEOFIEI_.remove(index);
+      public Builder removeSigninDataList(int index) {
+        if (signinDataListBuilder_ == null) {
+          ensureSigninDataListIsMutable();
+          signinDataList_.remove(index);
           onChanged();
         } else {
-          unk2700HBMMIEOFIEIBuilder_.remove(index);
+          signinDataListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder getUnk2700HBMMIEOFIEIBuilder(
+      public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder getSigninDataListBuilder(
           int index) {
-        return getUnk2700HBMMIEOFIEIFieldBuilder().getBuilder(index);
+        return getSigninDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder getUnk2700HBMMIEOFIEIOrBuilder(
+      public emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
           int index) {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          return unk2700HBMMIEOFIEI_.get(index);  } else {
-          return unk2700HBMMIEOFIEIBuilder_.getMessageOrBuilder(index);
+        if (signinDataListBuilder_ == null) {
+          return signinDataList_.get(index);  } else {
+          return signinDataListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder> 
-           getUnk2700HBMMIEOFIEIOrBuilderList() {
-        if (unk2700HBMMIEOFIEIBuilder_ != null) {
-          return unk2700HBMMIEOFIEIBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
+           getSigninDataListOrBuilderList() {
+        if (signinDataListBuilder_ != null) {
+          return signinDataListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700HBMMIEOFIEI_);
+          return java.util.Collections.unmodifiableList(signinDataList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder addUnk2700HBMMIEOFIEIBuilder() {
-        return getUnk2700HBMMIEOFIEIFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.getDefaultInstance());
+      public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder addSigninDataListBuilder() {
+        return getSigninDataListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder addUnk2700HBMMIEOFIEIBuilder(
+      public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder addSigninDataListBuilder(
           int index) {
-        return getUnk2700HBMMIEOFIEIFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.getDefaultInstance());
+        return getSigninDataListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder> 
-           getUnk2700HBMMIEOFIEIBuilderList() {
-        return getUnk2700HBMMIEOFIEIFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder> 
+           getSigninDataListBuilderList() {
+        return getSigninDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder> 
-          getUnk2700HBMMIEOFIEIFieldBuilder() {
-        if (unk2700HBMMIEOFIEIBuilder_ == null) {
-          unk2700HBMMIEOFIEIBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIF.Builder, emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.Unk2700_HENCIJOPCIFOrBuilder>(
-                  unk2700HBMMIEOFIEI_,
+          emu.grasscutter.net.proto.SignInDataOuterClass.SignInData, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder, emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
+          getSigninDataListFieldBuilder() {
+        if (signinDataListBuilder_ == null) {
+          signinDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SignInDataOuterClass.SignInData, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder, emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder>(
+                  signinDataList_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700HBMMIEOFIEI_ = null;
+          signinDataList_ = null;
         }
-        return unk2700HBMMIEOFIEIBuilder_;
+        return signinDataListBuilder_;
       }
 
       private int configId_ ;
@@ -1506,28 +1506,27 @@ public final class SignInInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020SignInInfo.proto\032\031Unk2700_HENCIJOPCIF." +
-      "proto\"\363\001\n\nSignInInfo\022\031\n\021is_cond_satisfie" +
-      "d\030\007 \001(\010\022\027\n\017reward_day_list\030\017 \003(\r\0221\n\023Unk2" +
-      "700_HBMMIEOFIEI\030\014 \003(\0132\024.Unk2700_HENCIJOP" +
-      "CIF\022\021\n\tconfig_id\030\010 \001(\r\022\025\n\rsign_in_count\030" +
-      "\002 \001(\r\022\023\n\013schedule_id\030\003 \001(\r\022\020\n\010end_time\030\r" +
-      " \001(\r\022\031\n\021last_sign_in_time\030\006 \001(\r\022\022\n\nbegin" +
-      "_time\030\005 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\020SignInInfo.proto\032\020SignInData.proto\"\347\001\n" +
+      "\nSignInInfo\022\031\n\021is_cond_satisfied\030\007 \001(\010\022\027" +
+      "\n\017reward_day_list\030\017 \003(\r\022%\n\020signin_data_l" +
+      "ist\030\014 \003(\0132\013.SignInData\022\021\n\tconfig_id\030\010 \001(" +
+      "\r\022\025\n\rsign_in_count\030\002 \001(\r\022\023\n\013schedule_id\030" +
+      "\003 \001(\r\022\020\n\010end_time\030\r \001(\r\022\031\n\021last_sign_in_" +
+      "time\030\006 \001(\r\022\022\n\nbegin_time\030\005 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.getDescriptor(),
+          emu.grasscutter.net.proto.SignInDataOuterClass.getDescriptor(),
         });
     internal_static_SignInInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SignInInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SignInInfo_descriptor,
-        new java.lang.String[] { "IsCondSatisfied", "RewardDayList", "Unk2700HBMMIEOFIEI", "ConfigId", "SignInCount", "ScheduleId", "EndTime", "LastSignInTime", "BeginTime", });
-    emu.grasscutter.net.proto.Unk2700HENCIJOPCIF.getDescriptor();
+        new java.lang.String[] { "IsCondSatisfied", "RewardDayList", "SigninDataList", "ConfigId", "SignInCount", "ScheduleId", "EndTime", "LastSignInTime", "BeginTime", });
+    emu.grasscutter.net.proto.SignInDataOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

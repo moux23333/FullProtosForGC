@@ -25,38 +25,38 @@ public final class ViewCodexRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-     * @return A list containing the unk2800IPOCJIPGNEJ.
+     * <code>repeated uint32 push_tips_reward_list = 10;</code>
+     * @return A list containing the pushTipsRewardList.
      */
-    java.util.List<java.lang.Integer> getUnk2800IPOCJIPGNEJList();
+    java.util.List<java.lang.Integer> getPushTipsRewardListList();
     /**
-     * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-     * @return The count of unk2800IPOCJIPGNEJ.
+     * <code>repeated uint32 push_tips_reward_list = 10;</code>
+     * @return The count of pushTipsRewardList.
      */
-    int getUnk2800IPOCJIPGNEJCount();
+    int getPushTipsRewardListCount();
     /**
-     * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
+     * <code>repeated uint32 push_tips_reward_list = 10;</code>
      * @param index The index of the element to return.
-     * @return The unk2800IPOCJIPGNEJ at the given index.
+     * @return The pushTipsRewardList at the given index.
      */
-    int getUnk2800IPOCJIPGNEJ(int index);
+    int getPushTipsRewardList(int index);
 
     /**
-     * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-     * @return A list containing the unk2700DFJJHFHHIHF.
+     * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+     * @return A list containing the recentViewedPushtipsList.
      */
-    java.util.List<java.lang.Integer> getUnk2700DFJJHFHHIHFList();
+    java.util.List<java.lang.Integer> getRecentViewedPushtipsListList();
     /**
-     * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-     * @return The count of unk2700DFJJHFHHIHF.
+     * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+     * @return The count of recentViewedPushtipsList.
      */
-    int getUnk2700DFJJHFHHIHFCount();
+    int getRecentViewedPushtipsListCount();
     /**
-     * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
      * @param index The index of the element to return.
-     * @return The unk2700DFJJHFHHIHF at the given index.
+     * @return The recentViewedPushtipsList at the given index.
      */
-    int getUnk2700DFJJHFHHIHF(int index);
+    int getRecentViewedPushtipsList(int index);
 
     /**
      * <code>repeated .CodexTypeData type_data_list = 9;</code>
@@ -83,21 +83,21 @@ public final class ViewCodexRspOuterClass {
         int index);
 
     /**
-     * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-     * @return A list containing the unk2800OIPJCEPGJCF.
+     * <code>repeated uint32 push_tips_read_list = 15;</code>
+     * @return A list containing the pushTipsReadList.
      */
-    java.util.List<java.lang.Integer> getUnk2800OIPJCEPGJCFList();
+    java.util.List<java.lang.Integer> getPushTipsReadListList();
     /**
-     * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-     * @return The count of unk2800OIPJCEPGJCF.
+     * <code>repeated uint32 push_tips_read_list = 15;</code>
+     * @return The count of pushTipsReadList.
      */
-    int getUnk2800OIPJCEPGJCFCount();
+    int getPushTipsReadListCount();
     /**
-     * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
+     * <code>repeated uint32 push_tips_read_list = 15;</code>
      * @param index The index of the element to return.
-     * @return The unk2800OIPJCEPGJCF at the given index.
+     * @return The pushTipsReadList at the given index.
      */
-    int getUnk2800OIPJCEPGJCF(int index);
+    int getPushTipsReadList(int index);
   }
   /**
    * <pre>
@@ -118,10 +118,10 @@ public final class ViewCodexRspOuterClass {
       super(builder);
     }
     private ViewCodexRsp() {
-      unk2800IPOCJIPGNEJ_ = emptyIntList();
-      unk2700DFJJHFHHIHF_ = emptyIntList();
+      pushTipsRewardList_ = emptyIntList();
+      recentViewedPushtipsList_ = emptyIntList();
       typeDataList_ = java.util.Collections.emptyList();
-      unk2800OIPJCEPGJCF_ = emptyIntList();
+      pushTipsReadList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -157,21 +157,21 @@ public final class ViewCodexRspOuterClass {
               break;
             case 24: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk2700DFJJHFHHIHF_ = newIntList();
+                recentViewedPushtipsList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              unk2700DFJJHFHHIHF_.addInt(input.readUInt32());
+              recentViewedPushtipsList_.addInt(input.readUInt32());
               break;
             }
             case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2700DFJJHFHHIHF_ = newIntList();
+                recentViewedPushtipsList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2700DFJJHFHHIHF_.addInt(input.readUInt32());
+                recentViewedPushtipsList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -187,21 +187,21 @@ public final class ViewCodexRspOuterClass {
             }
             case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2800IPOCJIPGNEJ_ = newIntList();
+                pushTipsRewardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2800IPOCJIPGNEJ_.addInt(input.readUInt32());
+              pushTipsRewardList_.addInt(input.readUInt32());
               break;
             }
             case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2800IPOCJIPGNEJ_ = newIntList();
+                pushTipsRewardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2800IPOCJIPGNEJ_.addInt(input.readUInt32());
+                pushTipsRewardList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -213,21 +213,21 @@ public final class ViewCodexRspOuterClass {
             }
             case 120: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                unk2800OIPJCEPGJCF_ = newIntList();
+                pushTipsReadList_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
               }
-              unk2800OIPJCEPGJCF_.addInt(input.readUInt32());
+              pushTipsReadList_.addInt(input.readUInt32());
               break;
             }
             case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2800OIPJCEPGJCF_ = newIntList();
+                pushTipsReadList_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2800OIPJCEPGJCF_.addInt(input.readUInt32());
+                pushTipsReadList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -248,16 +248,16 @@ public final class ViewCodexRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unk2700DFJJHFHHIHF_.makeImmutable(); // C
+          recentViewedPushtipsList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           typeDataList_ = java.util.Collections.unmodifiableList(typeDataList_);
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2800IPOCJIPGNEJ_.makeImmutable(); // C
+          pushTipsRewardList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          unk2800OIPJCEPGJCF_.makeImmutable(); // C
+          pushTipsReadList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -287,61 +287,61 @@ public final class ViewCodexRspOuterClass {
       return retcode_;
     }
 
-    public static final int UNK2800_IPOCJIPGNEJ_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList unk2800IPOCJIPGNEJ_;
+    public static final int PUSH_TIPS_REWARD_LIST_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList pushTipsRewardList_;
     /**
-     * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-     * @return A list containing the unk2800IPOCJIPGNEJ.
+     * <code>repeated uint32 push_tips_reward_list = 10;</code>
+     * @return A list containing the pushTipsRewardList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2800IPOCJIPGNEJList() {
-      return unk2800IPOCJIPGNEJ_;
+        getPushTipsRewardListList() {
+      return pushTipsRewardList_;
     }
     /**
-     * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-     * @return The count of unk2800IPOCJIPGNEJ.
+     * <code>repeated uint32 push_tips_reward_list = 10;</code>
+     * @return The count of pushTipsRewardList.
      */
-    public int getUnk2800IPOCJIPGNEJCount() {
-      return unk2800IPOCJIPGNEJ_.size();
+    public int getPushTipsRewardListCount() {
+      return pushTipsRewardList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
+     * <code>repeated uint32 push_tips_reward_list = 10;</code>
      * @param index The index of the element to return.
-     * @return The unk2800IPOCJIPGNEJ at the given index.
+     * @return The pushTipsRewardList at the given index.
      */
-    public int getUnk2800IPOCJIPGNEJ(int index) {
-      return unk2800IPOCJIPGNEJ_.getInt(index);
+    public int getPushTipsRewardList(int index) {
+      return pushTipsRewardList_.getInt(index);
     }
-    private int unk2800IPOCJIPGNEJMemoizedSerializedSize = -1;
+    private int pushTipsRewardListMemoizedSerializedSize = -1;
 
-    public static final int UNK2700_DFJJHFHHIHF_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList unk2700DFJJHFHHIHF_;
+    public static final int RECENT_VIEWED_PUSHTIPS_LIST_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList recentViewedPushtipsList_;
     /**
-     * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-     * @return A list containing the unk2700DFJJHFHHIHF.
+     * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+     * @return A list containing the recentViewedPushtipsList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2700DFJJHFHHIHFList() {
-      return unk2700DFJJHFHHIHF_;
+        getRecentViewedPushtipsListList() {
+      return recentViewedPushtipsList_;
     }
     /**
-     * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-     * @return The count of unk2700DFJJHFHHIHF.
+     * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+     * @return The count of recentViewedPushtipsList.
      */
-    public int getUnk2700DFJJHFHHIHFCount() {
-      return unk2700DFJJHFHHIHF_.size();
+    public int getRecentViewedPushtipsListCount() {
+      return recentViewedPushtipsList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
      * @param index The index of the element to return.
-     * @return The unk2700DFJJHFHHIHF at the given index.
+     * @return The recentViewedPushtipsList at the given index.
      */
-    public int getUnk2700DFJJHFHHIHF(int index) {
-      return unk2700DFJJHFHHIHF_.getInt(index);
+    public int getRecentViewedPushtipsList(int index) {
+      return recentViewedPushtipsList_.getInt(index);
     }
-    private int unk2700DFJJHFHHIHFMemoizedSerializedSize = -1;
+    private int recentViewedPushtipsListMemoizedSerializedSize = -1;
 
     public static final int TYPE_DATA_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> typeDataList_;
@@ -383,33 +383,33 @@ public final class ViewCodexRspOuterClass {
       return typeDataList_.get(index);
     }
 
-    public static final int UNK2800_OIPJCEPGJCF_FIELD_NUMBER = 15;
-    private com.google.protobuf.Internal.IntList unk2800OIPJCEPGJCF_;
+    public static final int PUSH_TIPS_READ_LIST_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList pushTipsReadList_;
     /**
-     * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-     * @return A list containing the unk2800OIPJCEPGJCF.
+     * <code>repeated uint32 push_tips_read_list = 15;</code>
+     * @return A list containing the pushTipsReadList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2800OIPJCEPGJCFList() {
-      return unk2800OIPJCEPGJCF_;
+        getPushTipsReadListList() {
+      return pushTipsReadList_;
     }
     /**
-     * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-     * @return The count of unk2800OIPJCEPGJCF.
+     * <code>repeated uint32 push_tips_read_list = 15;</code>
+     * @return The count of pushTipsReadList.
      */
-    public int getUnk2800OIPJCEPGJCFCount() {
-      return unk2800OIPJCEPGJCF_.size();
+    public int getPushTipsReadListCount() {
+      return pushTipsReadList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
+     * <code>repeated uint32 push_tips_read_list = 15;</code>
      * @param index The index of the element to return.
-     * @return The unk2800OIPJCEPGJCF at the given index.
+     * @return The pushTipsReadList at the given index.
      */
-    public int getUnk2800OIPJCEPGJCF(int index) {
-      return unk2800OIPJCEPGJCF_.getInt(index);
+    public int getPushTipsReadList(int index) {
+      return pushTipsReadList_.getInt(index);
     }
-    private int unk2800OIPJCEPGJCFMemoizedSerializedSize = -1;
+    private int pushTipsReadListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -426,32 +426,32 @@ public final class ViewCodexRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getUnk2700DFJJHFHHIHFList().size() > 0) {
+      if (getRecentViewedPushtipsListList().size() > 0) {
         output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(unk2700DFJJHFHHIHFMemoizedSerializedSize);
+        output.writeUInt32NoTag(recentViewedPushtipsListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2700DFJJHFHHIHF_.size(); i++) {
-        output.writeUInt32NoTag(unk2700DFJJHFHHIHF_.getInt(i));
+      for (int i = 0; i < recentViewedPushtipsList_.size(); i++) {
+        output.writeUInt32NoTag(recentViewedPushtipsList_.getInt(i));
       }
       for (int i = 0; i < typeDataList_.size(); i++) {
         output.writeMessage(9, typeDataList_.get(i));
       }
-      if (getUnk2800IPOCJIPGNEJList().size() > 0) {
+      if (getPushTipsRewardListList().size() > 0) {
         output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(unk2800IPOCJIPGNEJMemoizedSerializedSize);
+        output.writeUInt32NoTag(pushTipsRewardListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2800IPOCJIPGNEJ_.size(); i++) {
-        output.writeUInt32NoTag(unk2800IPOCJIPGNEJ_.getInt(i));
+      for (int i = 0; i < pushTipsRewardList_.size(); i++) {
+        output.writeUInt32NoTag(pushTipsRewardList_.getInt(i));
       }
       if (retcode_ != 0) {
         output.writeInt32(12, retcode_);
       }
-      if (getUnk2800OIPJCEPGJCFList().size() > 0) {
+      if (getPushTipsReadListList().size() > 0) {
         output.writeUInt32NoTag(122);
-        output.writeUInt32NoTag(unk2800OIPJCEPGJCFMemoizedSerializedSize);
+        output.writeUInt32NoTag(pushTipsReadListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2800OIPJCEPGJCF_.size(); i++) {
-        output.writeUInt32NoTag(unk2800OIPJCEPGJCF_.getInt(i));
+      for (int i = 0; i < pushTipsReadList_.size(); i++) {
+        output.writeUInt32NoTag(pushTipsReadList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -464,17 +464,17 @@ public final class ViewCodexRspOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2700DFJJHFHHIHF_.size(); i++) {
+        for (int i = 0; i < recentViewedPushtipsList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2700DFJJHFHHIHF_.getInt(i));
+            .computeUInt32SizeNoTag(recentViewedPushtipsList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2700DFJJHFHHIHFList().isEmpty()) {
+        if (!getRecentViewedPushtipsListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2700DFJJHFHHIHFMemoizedSerializedSize = dataSize;
+        recentViewedPushtipsListMemoizedSerializedSize = dataSize;
       }
       for (int i = 0; i < typeDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -482,17 +482,17 @@ public final class ViewCodexRspOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2800IPOCJIPGNEJ_.size(); i++) {
+        for (int i = 0; i < pushTipsRewardList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2800IPOCJIPGNEJ_.getInt(i));
+            .computeUInt32SizeNoTag(pushTipsRewardList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2800IPOCJIPGNEJList().isEmpty()) {
+        if (!getPushTipsRewardListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2800IPOCJIPGNEJMemoizedSerializedSize = dataSize;
+        pushTipsRewardListMemoizedSerializedSize = dataSize;
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -500,17 +500,17 @@ public final class ViewCodexRspOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2800OIPJCEPGJCF_.size(); i++) {
+        for (int i = 0; i < pushTipsReadList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2800OIPJCEPGJCF_.getInt(i));
+            .computeUInt32SizeNoTag(pushTipsReadList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2800OIPJCEPGJCFList().isEmpty()) {
+        if (!getPushTipsReadListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2800OIPJCEPGJCFMemoizedSerializedSize = dataSize;
+        pushTipsReadListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -529,14 +529,14 @@ public final class ViewCodexRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getUnk2800IPOCJIPGNEJList()
-          .equals(other.getUnk2800IPOCJIPGNEJList())) return false;
-      if (!getUnk2700DFJJHFHHIHFList()
-          .equals(other.getUnk2700DFJJHFHHIHFList())) return false;
+      if (!getPushTipsRewardListList()
+          .equals(other.getPushTipsRewardListList())) return false;
+      if (!getRecentViewedPushtipsListList()
+          .equals(other.getRecentViewedPushtipsListList())) return false;
       if (!getTypeDataListList()
           .equals(other.getTypeDataListList())) return false;
-      if (!getUnk2800OIPJCEPGJCFList()
-          .equals(other.getUnk2800OIPJCEPGJCFList())) return false;
+      if (!getPushTipsReadListList()
+          .equals(other.getPushTipsReadListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -550,21 +550,21 @@ public final class ViewCodexRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      if (getUnk2800IPOCJIPGNEJCount() > 0) {
-        hash = (37 * hash) + UNK2800_IPOCJIPGNEJ_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800IPOCJIPGNEJList().hashCode();
+      if (getPushTipsRewardListCount() > 0) {
+        hash = (37 * hash) + PUSH_TIPS_REWARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPushTipsRewardListList().hashCode();
       }
-      if (getUnk2700DFJJHFHHIHFCount() > 0) {
-        hash = (37 * hash) + UNK2700_DFJJHFHHIHF_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700DFJJHFHHIHFList().hashCode();
+      if (getRecentViewedPushtipsListCount() > 0) {
+        hash = (37 * hash) + RECENT_VIEWED_PUSHTIPS_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getRecentViewedPushtipsListList().hashCode();
       }
       if (getTypeDataListCount() > 0) {
         hash = (37 * hash) + TYPE_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTypeDataListList().hashCode();
       }
-      if (getUnk2800OIPJCEPGJCFCount() > 0) {
-        hash = (37 * hash) + UNK2800_OIPJCEPGJCF_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800OIPJCEPGJCFList().hashCode();
+      if (getPushTipsReadListCount() > 0) {
+        hash = (37 * hash) + PUSH_TIPS_READ_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPushTipsReadListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -708,9 +708,9 @@ public final class ViewCodexRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        unk2800IPOCJIPGNEJ_ = emptyIntList();
+        pushTipsRewardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        unk2700DFJJHFHHIHF_ = emptyIntList();
+        recentViewedPushtipsList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         if (typeDataListBuilder_ == null) {
           typeDataList_ = java.util.Collections.emptyList();
@@ -718,7 +718,7 @@ public final class ViewCodexRspOuterClass {
         } else {
           typeDataListBuilder_.clear();
         }
-        unk2800OIPJCEPGJCF_ = emptyIntList();
+        pushTipsReadList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
@@ -749,15 +749,15 @@ public final class ViewCodexRspOuterClass {
         int from_bitField0_ = bitField0_;
         result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          unk2800IPOCJIPGNEJ_.makeImmutable();
+          pushTipsRewardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.unk2800IPOCJIPGNEJ_ = unk2800IPOCJIPGNEJ_;
+        result.pushTipsRewardList_ = pushTipsRewardList_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          unk2700DFJJHFHHIHF_.makeImmutable();
+          recentViewedPushtipsList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.unk2700DFJJHFHHIHF_ = unk2700DFJJHFHHIHF_;
+        result.recentViewedPushtipsList_ = recentViewedPushtipsList_;
         if (typeDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
             typeDataList_ = java.util.Collections.unmodifiableList(typeDataList_);
@@ -768,10 +768,10 @@ public final class ViewCodexRspOuterClass {
           result.typeDataList_ = typeDataListBuilder_.build();
         }
         if (((bitField0_ & 0x00000008) != 0)) {
-          unk2800OIPJCEPGJCF_.makeImmutable();
+          pushTipsReadList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000008);
         }
-        result.unk2800OIPJCEPGJCF_ = unk2800OIPJCEPGJCF_;
+        result.pushTipsReadList_ = pushTipsReadList_;
         onBuilt();
         return result;
       }
@@ -823,23 +823,23 @@ public final class ViewCodexRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (!other.unk2800IPOCJIPGNEJ_.isEmpty()) {
-          if (unk2800IPOCJIPGNEJ_.isEmpty()) {
-            unk2800IPOCJIPGNEJ_ = other.unk2800IPOCJIPGNEJ_;
+        if (!other.pushTipsRewardList_.isEmpty()) {
+          if (pushTipsRewardList_.isEmpty()) {
+            pushTipsRewardList_ = other.pushTipsRewardList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureUnk2800IPOCJIPGNEJIsMutable();
-            unk2800IPOCJIPGNEJ_.addAll(other.unk2800IPOCJIPGNEJ_);
+            ensurePushTipsRewardListIsMutable();
+            pushTipsRewardList_.addAll(other.pushTipsRewardList_);
           }
           onChanged();
         }
-        if (!other.unk2700DFJJHFHHIHF_.isEmpty()) {
-          if (unk2700DFJJHFHHIHF_.isEmpty()) {
-            unk2700DFJJHFHHIHF_ = other.unk2700DFJJHFHHIHF_;
+        if (!other.recentViewedPushtipsList_.isEmpty()) {
+          if (recentViewedPushtipsList_.isEmpty()) {
+            recentViewedPushtipsList_ = other.recentViewedPushtipsList_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureUnk2700DFJJHFHHIHFIsMutable();
-            unk2700DFJJHFHHIHF_.addAll(other.unk2700DFJJHFHHIHF_);
+            ensureRecentViewedPushtipsListIsMutable();
+            recentViewedPushtipsList_.addAll(other.recentViewedPushtipsList_);
           }
           onChanged();
         }
@@ -869,13 +869,13 @@ public final class ViewCodexRspOuterClass {
             }
           }
         }
-        if (!other.unk2800OIPJCEPGJCF_.isEmpty()) {
-          if (unk2800OIPJCEPGJCF_.isEmpty()) {
-            unk2800OIPJCEPGJCF_ = other.unk2800OIPJCEPGJCF_;
+        if (!other.pushTipsReadList_.isEmpty()) {
+          if (pushTipsReadList_.isEmpty()) {
+            pushTipsReadList_ = other.pushTipsReadList_;
             bitField0_ = (bitField0_ & ~0x00000008);
           } else {
-            ensureUnk2800OIPJCEPGJCFIsMutable();
-            unk2800OIPJCEPGJCF_.addAll(other.unk2800OIPJCEPGJCF_);
+            ensurePushTipsReadListIsMutable();
+            pushTipsReadList_.addAll(other.pushTipsReadList_);
           }
           onChanged();
         }
@@ -940,159 +940,159 @@ public final class ViewCodexRspOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2800IPOCJIPGNEJ_ = emptyIntList();
-      private void ensureUnk2800IPOCJIPGNEJIsMutable() {
+      private com.google.protobuf.Internal.IntList pushTipsRewardList_ = emptyIntList();
+      private void ensurePushTipsRewardListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2800IPOCJIPGNEJ_ = mutableCopy(unk2800IPOCJIPGNEJ_);
+          pushTipsRewardList_ = mutableCopy(pushTipsRewardList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-       * @return A list containing the unk2800IPOCJIPGNEJ.
+       * <code>repeated uint32 push_tips_reward_list = 10;</code>
+       * @return A list containing the pushTipsRewardList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2800IPOCJIPGNEJList() {
+          getPushTipsRewardListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2800IPOCJIPGNEJ_) : unk2800IPOCJIPGNEJ_;
+                 java.util.Collections.unmodifiableList(pushTipsRewardList_) : pushTipsRewardList_;
       }
       /**
-       * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-       * @return The count of unk2800IPOCJIPGNEJ.
+       * <code>repeated uint32 push_tips_reward_list = 10;</code>
+       * @return The count of pushTipsRewardList.
        */
-      public int getUnk2800IPOCJIPGNEJCount() {
-        return unk2800IPOCJIPGNEJ_.size();
+      public int getPushTipsRewardListCount() {
+        return pushTipsRewardList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
+       * <code>repeated uint32 push_tips_reward_list = 10;</code>
        * @param index The index of the element to return.
-       * @return The unk2800IPOCJIPGNEJ at the given index.
+       * @return The pushTipsRewardList at the given index.
        */
-      public int getUnk2800IPOCJIPGNEJ(int index) {
-        return unk2800IPOCJIPGNEJ_.getInt(index);
+      public int getPushTipsRewardList(int index) {
+        return pushTipsRewardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
+       * <code>repeated uint32 push_tips_reward_list = 10;</code>
        * @param index The index to set the value at.
-       * @param value The unk2800IPOCJIPGNEJ to set.
+       * @param value The pushTipsRewardList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800IPOCJIPGNEJ(
+      public Builder setPushTipsRewardList(
           int index, int value) {
-        ensureUnk2800IPOCJIPGNEJIsMutable();
-        unk2800IPOCJIPGNEJ_.setInt(index, value);
+        ensurePushTipsRewardListIsMutable();
+        pushTipsRewardList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-       * @param value The unk2800IPOCJIPGNEJ to add.
+       * <code>repeated uint32 push_tips_reward_list = 10;</code>
+       * @param value The pushTipsRewardList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2800IPOCJIPGNEJ(int value) {
-        ensureUnk2800IPOCJIPGNEJIsMutable();
-        unk2800IPOCJIPGNEJ_.addInt(value);
+      public Builder addPushTipsRewardList(int value) {
+        ensurePushTipsRewardListIsMutable();
+        pushTipsRewardList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
-       * @param values The unk2800IPOCJIPGNEJ to add.
+       * <code>repeated uint32 push_tips_reward_list = 10;</code>
+       * @param values The pushTipsRewardList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2800IPOCJIPGNEJ(
+      public Builder addAllPushTipsRewardList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2800IPOCJIPGNEJIsMutable();
+        ensurePushTipsRewardListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2800IPOCJIPGNEJ_);
+            values, pushTipsRewardList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_IPOCJIPGNEJ = 10;</code>
+       * <code>repeated uint32 push_tips_reward_list = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800IPOCJIPGNEJ() {
-        unk2800IPOCJIPGNEJ_ = emptyIntList();
+      public Builder clearPushTipsRewardList() {
+        pushTipsRewardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2700DFJJHFHHIHF_ = emptyIntList();
-      private void ensureUnk2700DFJJHFHHIHFIsMutable() {
+      private com.google.protobuf.Internal.IntList recentViewedPushtipsList_ = emptyIntList();
+      private void ensureRecentViewedPushtipsListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          unk2700DFJJHFHHIHF_ = mutableCopy(unk2700DFJJHFHHIHF_);
+          recentViewedPushtipsList_ = mutableCopy(recentViewedPushtipsList_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-       * @return A list containing the unk2700DFJJHFHHIHF.
+       * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+       * @return A list containing the recentViewedPushtipsList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2700DFJJHFHHIHFList() {
+          getRecentViewedPushtipsListList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2700DFJJHFHHIHF_) : unk2700DFJJHFHHIHF_;
+                 java.util.Collections.unmodifiableList(recentViewedPushtipsList_) : recentViewedPushtipsList_;
       }
       /**
-       * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-       * @return The count of unk2700DFJJHFHHIHF.
+       * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+       * @return The count of recentViewedPushtipsList.
        */
-      public int getUnk2700DFJJHFHHIHFCount() {
-        return unk2700DFJJHFHHIHF_.size();
+      public int getRecentViewedPushtipsListCount() {
+        return recentViewedPushtipsList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
+       * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
        * @param index The index of the element to return.
-       * @return The unk2700DFJJHFHHIHF at the given index.
+       * @return The recentViewedPushtipsList at the given index.
        */
-      public int getUnk2700DFJJHFHHIHF(int index) {
-        return unk2700DFJJHFHHIHF_.getInt(index);
+      public int getRecentViewedPushtipsList(int index) {
+        return recentViewedPushtipsList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
+       * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
        * @param index The index to set the value at.
-       * @param value The unk2700DFJJHFHHIHF to set.
+       * @param value The recentViewedPushtipsList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700DFJJHFHHIHF(
+      public Builder setRecentViewedPushtipsList(
           int index, int value) {
-        ensureUnk2700DFJJHFHHIHFIsMutable();
-        unk2700DFJJHFHHIHF_.setInt(index, value);
+        ensureRecentViewedPushtipsListIsMutable();
+        recentViewedPushtipsList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-       * @param value The unk2700DFJJHFHHIHF to add.
+       * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+       * @param value The recentViewedPushtipsList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2700DFJJHFHHIHF(int value) {
-        ensureUnk2700DFJJHFHHIHFIsMutable();
-        unk2700DFJJHFHHIHF_.addInt(value);
+      public Builder addRecentViewedPushtipsList(int value) {
+        ensureRecentViewedPushtipsListIsMutable();
+        recentViewedPushtipsList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
-       * @param values The unk2700DFJJHFHHIHF to add.
+       * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
+       * @param values The recentViewedPushtipsList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2700DFJJHFHHIHF(
+      public Builder addAllRecentViewedPushtipsList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2700DFJJHFHHIHFIsMutable();
+        ensureRecentViewedPushtipsListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2700DFJJHFHHIHF_);
+            values, recentViewedPushtipsList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_DFJJHFHHIHF = 3;</code>
+       * <code>repeated uint32 recent_viewed_pushtips_list = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700DFJJHFHHIHF() {
-        unk2700DFJJHFHHIHF_ = emptyIntList();
+      public Builder clearRecentViewedPushtipsList() {
+        recentViewedPushtipsList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -1338,80 +1338,80 @@ public final class ViewCodexRspOuterClass {
         return typeDataListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList unk2800OIPJCEPGJCF_ = emptyIntList();
-      private void ensureUnk2800OIPJCEPGJCFIsMutable() {
+      private com.google.protobuf.Internal.IntList pushTipsReadList_ = emptyIntList();
+      private void ensurePushTipsReadListIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          unk2800OIPJCEPGJCF_ = mutableCopy(unk2800OIPJCEPGJCF_);
+          pushTipsReadList_ = mutableCopy(pushTipsReadList_);
           bitField0_ |= 0x00000008;
          }
       }
       /**
-       * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-       * @return A list containing the unk2800OIPJCEPGJCF.
+       * <code>repeated uint32 push_tips_read_list = 15;</code>
+       * @return A list containing the pushTipsReadList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2800OIPJCEPGJCFList() {
+          getPushTipsReadListList() {
         return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2800OIPJCEPGJCF_) : unk2800OIPJCEPGJCF_;
+                 java.util.Collections.unmodifiableList(pushTipsReadList_) : pushTipsReadList_;
       }
       /**
-       * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-       * @return The count of unk2800OIPJCEPGJCF.
+       * <code>repeated uint32 push_tips_read_list = 15;</code>
+       * @return The count of pushTipsReadList.
        */
-      public int getUnk2800OIPJCEPGJCFCount() {
-        return unk2800OIPJCEPGJCF_.size();
+      public int getPushTipsReadListCount() {
+        return pushTipsReadList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
+       * <code>repeated uint32 push_tips_read_list = 15;</code>
        * @param index The index of the element to return.
-       * @return The unk2800OIPJCEPGJCF at the given index.
+       * @return The pushTipsReadList at the given index.
        */
-      public int getUnk2800OIPJCEPGJCF(int index) {
-        return unk2800OIPJCEPGJCF_.getInt(index);
+      public int getPushTipsReadList(int index) {
+        return pushTipsReadList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
+       * <code>repeated uint32 push_tips_read_list = 15;</code>
        * @param index The index to set the value at.
-       * @param value The unk2800OIPJCEPGJCF to set.
+       * @param value The pushTipsReadList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800OIPJCEPGJCF(
+      public Builder setPushTipsReadList(
           int index, int value) {
-        ensureUnk2800OIPJCEPGJCFIsMutable();
-        unk2800OIPJCEPGJCF_.setInt(index, value);
+        ensurePushTipsReadListIsMutable();
+        pushTipsReadList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-       * @param value The unk2800OIPJCEPGJCF to add.
+       * <code>repeated uint32 push_tips_read_list = 15;</code>
+       * @param value The pushTipsReadList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2800OIPJCEPGJCF(int value) {
-        ensureUnk2800OIPJCEPGJCFIsMutable();
-        unk2800OIPJCEPGJCF_.addInt(value);
+      public Builder addPushTipsReadList(int value) {
+        ensurePushTipsReadListIsMutable();
+        pushTipsReadList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
-       * @param values The unk2800OIPJCEPGJCF to add.
+       * <code>repeated uint32 push_tips_read_list = 15;</code>
+       * @param values The pushTipsReadList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2800OIPJCEPGJCF(
+      public Builder addAllPushTipsReadList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2800OIPJCEPGJCFIsMutable();
+        ensurePushTipsReadListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2800OIPJCEPGJCF_);
+            values, pushTipsReadList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_OIPJCEPGJCF = 15;</code>
+       * <code>repeated uint32 push_tips_read_list = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800OIPJCEPGJCF() {
-        unk2800OIPJCEPGJCF_ = emptyIntList();
+      public Builder clearPushTipsReadList() {
+        pushTipsReadList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
@@ -1484,11 +1484,12 @@ public final class ViewCodexRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022ViewCodexRsp.proto\032\023CodexTypeData.prot" +
-      "o\"\236\001\n\014ViewCodexRsp\022\017\n\007retcode\030\014 \001(\005\022\033\n\023U" +
-      "nk2800_IPOCJIPGNEJ\030\n \003(\r\022\033\n\023Unk2700_DFJJ" +
-      "HFHHIHF\030\003 \003(\r\022&\n\016type_data_list\030\t \003(\0132\016." +
-      "CodexTypeData\022\033\n\023Unk2800_OIPJCEPGJCF\030\017 \003" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "o\"\250\001\n\014ViewCodexRsp\022\017\n\007retcode\030\014 \001(\005\022\035\n\025p" +
+      "ush_tips_reward_list\030\n \003(\r\022#\n\033recent_vie" +
+      "wed_pushtips_list\030\003 \003(\r\022&\n\016type_data_lis" +
+      "t\030\t \003(\0132\016.CodexTypeData\022\033\n\023push_tips_rea" +
+      "d_list\030\017 \003(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1500,7 +1501,7 @@ public final class ViewCodexRspOuterClass {
     internal_static_ViewCodexRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ViewCodexRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Unk2800IPOCJIPGNEJ", "Unk2700DFJJHFHHIHF", "TypeDataList", "Unk2800OIPJCEPGJCF", });
+        new java.lang.String[] { "Retcode", "PushTipsRewardList", "RecentViewedPushtipsList", "TypeDataList", "PushTipsReadList", });
     emu.grasscutter.net.proto.CodexTypeDataOuterClass.getDescriptor();
   }
 

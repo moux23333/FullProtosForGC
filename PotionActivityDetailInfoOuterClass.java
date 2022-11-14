@@ -19,27 +19,27 @@ public final class PotionActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage> 
+    java.util.List<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData> 
         getStageListList();
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
-    emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage getStageList(int index);
+    emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData getStageList(int index);
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
     int getStageListCount();
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder> 
         getStageListOrBuilderList();
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
-    emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder getStageListOrBuilder(
+    emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder getStageListOrBuilder(
         int index);
   }
   /**
@@ -91,11 +91,11 @@ public final class PotionActivityDetailInfoOuterClass {
               break;
             case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage>();
+                stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData>();
                 mutable_bitField0_ |= 0x00000001;
               }
               stageList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -134,41 +134,41 @@ public final class PotionActivityDetailInfoOuterClass {
     }
 
     public static final int STAGE_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage> stageList_;
+    private java.util.List<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData> stageList_;
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage> getStageListList() {
+    public java.util.List<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData> getStageListList() {
       return stageList_;
     }
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder> 
         getStageListOrBuilderList() {
       return stageList_;
     }
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
     @java.lang.Override
     public int getStageListCount() {
       return stageList_.size();
     }
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage getStageList(int index) {
+    public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData getStageList(int index) {
       return stageList_.get(index);
     }
     /**
-     * <code>repeated .PotionStage stage_list = 10;</code>
+     * <code>repeated .PotionStageData stage_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder getStageListOrBuilder(
+    public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder getStageListOrBuilder(
         int index) {
       return stageList_.get(index);
     }
@@ -515,22 +515,22 @@ public final class PotionActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage> stageList_ =
+      private java.util.List<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData> stageList_ =
         java.util.Collections.emptyList();
       private void ensureStageListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage>(stageList_);
+          stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData>(stageList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder> stageListBuilder_;
+          emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder> stageListBuilder_;
 
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage> getStageListList() {
+      public java.util.List<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData> getStageListList() {
         if (stageListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(stageList_);
         } else {
@@ -538,7 +538,7 @@ public final class PotionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public int getStageListCount() {
         if (stageListBuilder_ == null) {
@@ -548,9 +548,9 @@ public final class PotionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage getStageList(int index) {
+      public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData getStageList(int index) {
         if (stageListBuilder_ == null) {
           return stageList_.get(index);
         } else {
@@ -558,10 +558,10 @@ public final class PotionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder setStageList(
-          int index, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage value) {
+          int index, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData value) {
         if (stageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +575,10 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder setStageList(
-          int index, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder builderForValue) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           stageList_.set(index, builderForValue.build());
@@ -589,9 +589,9 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public Builder addStageList(emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage value) {
+      public Builder addStageList(emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData value) {
         if (stageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +605,10 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder addStageList(
-          int index, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage value) {
+          int index, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData value) {
         if (stageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +622,10 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder addStageList(
-          emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder builderForValue) {
+          emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder builderForValue) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           stageList_.add(builderForValue.build());
@@ -636,10 +636,10 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder addStageList(
-          int index, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder builderForValue) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           stageList_.add(index, builderForValue.build());
@@ -650,10 +650,10 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder addAllStageList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData> values) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +665,7 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder clearStageList() {
         if (stageListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
       public Builder removeStageList(int index) {
         if (stageListBuilder_ == null) {
@@ -691,16 +691,16 @@ public final class PotionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder getStageListBuilder(
+      public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder getStageListBuilder(
           int index) {
         return getStageListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder getStageListOrBuilder(
+      public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder getStageListOrBuilder(
           int index) {
         if (stageListBuilder_ == null) {
           return stageList_.get(index);  } else {
@@ -708,9 +708,9 @@ public final class PotionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder> 
            getStageListOrBuilderList() {
         if (stageListBuilder_ != null) {
           return stageListBuilder_.getMessageOrBuilderList();
@@ -719,33 +719,33 @@ public final class PotionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder addStageListBuilder() {
+      public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder addStageListBuilder() {
         return getStageListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.getDefaultInstance());
+            emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder addStageListBuilder(
+      public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder addStageListBuilder(
           int index) {
         return getStageListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.getDefaultInstance());
+            index, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionStage stage_list = 10;</code>
+       * <code>repeated .PotionStageData stage_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder> 
            getStageListBuilderList() {
         return getStageListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder> 
+          emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder> 
           getStageListFieldBuilder() {
         if (stageListBuilder_ == null) {
           stageListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStage.Builder, emu.grasscutter.net.proto.PotionStageOuterClass.PotionStageOrBuilder>(
+              emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageDataOrBuilder>(
                   stageList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,15 +821,15 @@ public final class PotionActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036PotionActivityDetailInfo.proto\032\021Potion" +
-      "Stage.proto\"<\n\030PotionActivityDetailInfo\022" +
-      " \n\nstage_list\030\n \003(\0132\014.PotionStageB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\036PotionActivityDetailInfo.proto\032\025Potion" +
+      "StageData.proto\"@\n\030PotionActivityDetailI" +
+      "nfo\022$\n\nstage_list\030\n \003(\0132\020.PotionStageDat" +
+      "aB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.PotionStageOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PotionStageDataOuterClass.getDescriptor(),
         });
     internal_static_PotionActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -837,7 +837,7 @@ public final class PotionActivityDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PotionActivityDetailInfo_descriptor,
         new java.lang.String[] { "StageList", });
-    emu.grasscutter.net.proto.PotionStageOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.PotionStageDataOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

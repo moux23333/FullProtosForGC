@@ -19,7 +19,7 @@ public final class FishingScoreOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 fishing_score_ = 2;</code>
+     * <code>uint32 fishing_score = 2;</code>
      * @return The fishingScore.
      */
     int getFishingScore();
@@ -117,10 +117,10 @@ public final class FishingScoreOuterClass {
               emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.class, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder.class);
     }
 
-    public static final int FISHING_SCORE__FIELD_NUMBER = 2;
+    public static final int FISHING_SCORE_FIELD_NUMBER = 2;
     private int fishingScore_;
     /**
-     * <code>uint32 fishing_score_ = 2;</code>
+     * <code>uint32 fishing_score = 2;</code>
      * @return The fishingScore.
      */
     @java.lang.Override
@@ -206,7 +206,7 @@ public final class FishingScoreOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FISHING_SCORE__FIELD_NUMBER;
+      hash = (37 * hash) + FISHING_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getFishingScore();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -461,7 +461,7 @@ public final class FishingScoreOuterClass {
 
       private int fishingScore_ ;
       /**
-       * <code>uint32 fishing_score_ = 2;</code>
+       * <code>uint32 fishing_score = 2;</code>
        * @return The fishingScore.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class FishingScoreOuterClass {
         return fishingScore_;
       }
       /**
-       * <code>uint32 fishing_score_ = 2;</code>
+       * <code>uint32 fishing_score = 2;</code>
        * @param value The fishingScore to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class FishingScoreOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fishing_score_ = 2;</code>
+       * <code>uint32 fishing_score = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishingScore() {
@@ -587,9 +587,9 @@ public final class FishingScoreOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022FishingScore.proto\"=\n\014FishingScore\022\026\n\016" +
-      "fishing_score_\030\002 \001(\r\022\025\n\ris_new_record\030\004 " +
-      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\022FishingScore.proto\"<\n\014FishingScore\022\025\n\r" +
+      "fishing_score\030\002 \001(\r\022\025\n\ris_new_record\030\004 \001" +
+      "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

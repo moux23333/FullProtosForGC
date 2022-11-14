@@ -64,10 +64,10 @@ public final class PlayerEyePointStateNotifyOuterClass {
     boolean getIsFilterStreamPos();
 
     /**
-     * <code>int32 Unk2800_GBBMMIGJFCF = 5;</code>
-     * @return The unk2800GBBMMIGJFCF.
+     * <code>int32 fix_lod_level = 5;</code>
+     * @return The fixLodLevel.
      */
-    int getUnk2800GBBMMIGJFCF();
+    int getFixLodLevel();
 
     /**
      * <code>uint32 region_group_id = 4;</code>
@@ -214,7 +214,7 @@ public final class PlayerEyePointStateNotifyOuterClass {
             }
             case 40: {
 
-              unk2800GBBMMIGJFCF_ = input.readInt32();
+              fixLodLevel_ = input.readInt32();
               break;
             }
             case 56: {
@@ -437,15 +437,15 @@ public final class PlayerEyePointStateNotifyOuterClass {
       return isFilterStreamPos_;
     }
 
-    public static final int UNK2800_GBBMMIGJFCF_FIELD_NUMBER = 5;
-    private int unk2800GBBMMIGJFCF_;
+    public static final int FIX_LOD_LEVEL_FIELD_NUMBER = 5;
+    private int fixLodLevel_;
     /**
-     * <code>int32 Unk2800_GBBMMIGJFCF = 5;</code>
-     * @return The unk2800GBBMMIGJFCF.
+     * <code>int32 fix_lod_level = 5;</code>
+     * @return The fixLodLevel.
      */
     @java.lang.Override
-    public int getUnk2800GBBMMIGJFCF() {
-      return unk2800GBBMMIGJFCF_;
+    public int getFixLodLevel() {
+      return fixLodLevel_;
     }
 
     public static final int REGION_GROUP_ID_FIELD_NUMBER = 4;
@@ -599,8 +599,8 @@ public final class PlayerEyePointStateNotifyOuterClass {
       if (regionGroupId_ != 0) {
         output.writeUInt32(4, regionGroupId_);
       }
-      if (unk2800GBBMMIGJFCF_ != 0) {
-        output.writeInt32(5, unk2800GBBMMIGJFCF_);
+      if (fixLodLevel_ != 0) {
+        output.writeInt32(5, fixLodLevel_);
       }
       if (regionConfigId_ != 0) {
         output.writeUInt32(7, regionConfigId_);
@@ -649,9 +649,9 @@ public final class PlayerEyePointStateNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, regionGroupId_);
       }
-      if (unk2800GBBMMIGJFCF_ != 0) {
+      if (fixLodLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, unk2800GBBMMIGJFCF_);
+          .computeInt32Size(5, fixLodLevel_);
       }
       if (regionConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -712,8 +712,8 @@ public final class PlayerEyePointStateNotifyOuterClass {
           != other.getRegionShape()) return false;
       if (getIsFilterStreamPos()
           != other.getIsFilterStreamPos()) return false;
-      if (getUnk2800GBBMMIGJFCF()
-          != other.getUnk2800GBBMMIGJFCF()) return false;
+      if (getFixLodLevel()
+          != other.getFixLodLevel()) return false;
       if (getRegionGroupId()
           != other.getRegionGroupId()) return false;
       if (!getRegionSizeCase().equals(other.getRegionSizeCase())) return false;
@@ -765,8 +765,8 @@ public final class PlayerEyePointStateNotifyOuterClass {
       hash = (37 * hash) + IS_FILTER_STREAM_POS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFilterStreamPos());
-      hash = (37 * hash) + UNK2800_GBBMMIGJFCF_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800GBBMMIGJFCF();
+      hash = (37 * hash) + FIX_LOD_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getFixLodLevel();
       hash = (37 * hash) + REGION_GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRegionGroupId();
       switch (regionSizeCase_) {
@@ -945,7 +945,7 @@ public final class PlayerEyePointStateNotifyOuterClass {
 
         isFilterStreamPos_ = false;
 
-        unk2800GBBMMIGJFCF_ = 0;
+        fixLodLevel_ = 0;
 
         regionGroupId_ = 0;
 
@@ -987,7 +987,7 @@ public final class PlayerEyePointStateNotifyOuterClass {
         result.regionConfigId_ = regionConfigId_;
         result.regionShape_ = regionShape_;
         result.isFilterStreamPos_ = isFilterStreamPos_;
-        result.unk2800GBBMMIGJFCF_ = unk2800GBBMMIGJFCF_;
+        result.fixLodLevel_ = fixLodLevel_;
         result.regionGroupId_ = regionGroupId_;
         if (regionSizeCase_ == 255) {
           result.regionSize_ = regionSize_;
@@ -1080,8 +1080,8 @@ public final class PlayerEyePointStateNotifyOuterClass {
         if (other.getIsFilterStreamPos() != false) {
           setIsFilterStreamPos(other.getIsFilterStreamPos());
         }
-        if (other.getUnk2800GBBMMIGJFCF() != 0) {
-          setUnk2800GBBMMIGJFCF(other.getUnk2800GBBMMIGJFCF());
+        if (other.getFixLodLevel() != 0) {
+          setFixLodLevel(other.getFixLodLevel());
         }
         if (other.getRegionGroupId() != 0) {
           setRegionGroupId(other.getRegionGroupId());
@@ -1425,33 +1425,33 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return this;
       }
 
-      private int unk2800GBBMMIGJFCF_ ;
+      private int fixLodLevel_ ;
       /**
-       * <code>int32 Unk2800_GBBMMIGJFCF = 5;</code>
-       * @return The unk2800GBBMMIGJFCF.
+       * <code>int32 fix_lod_level = 5;</code>
+       * @return The fixLodLevel.
        */
       @java.lang.Override
-      public int getUnk2800GBBMMIGJFCF() {
-        return unk2800GBBMMIGJFCF_;
+      public int getFixLodLevel() {
+        return fixLodLevel_;
       }
       /**
-       * <code>int32 Unk2800_GBBMMIGJFCF = 5;</code>
-       * @param value The unk2800GBBMMIGJFCF to set.
+       * <code>int32 fix_lod_level = 5;</code>
+       * @param value The fixLodLevel to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800GBBMMIGJFCF(int value) {
+      public Builder setFixLodLevel(int value) {
         
-        unk2800GBBMMIGJFCF_ = value;
+        fixLodLevel_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 Unk2800_GBBMMIGJFCF = 5;</code>
+       * <code>int32 fix_lod_level = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800GBBMMIGJFCF() {
+      public Builder clearFixLodLevel() {
         
-        unk2800GBBMMIGJFCF_ = 0;
+        fixLodLevel_ = 0;
         onChanged();
         return this;
       }
@@ -2019,18 +2019,18 @@ public final class PlayerEyePointStateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037PlayerEyePointStateNotify.proto\032\030Cylin" +
       "derRegionSize.proto\032\027PolygonRegionSize.p" +
-      "roto\032\014Vector.proto\"\230\003\n\031PlayerEyePointSta" +
+      "roto\032\014Vector.proto\"\222\003\n\031PlayerEyePointSta" +
       "teNotify\022\030\n\020region_entity_id\030\017 \001(\r\022\036\n\rey" +
       "e_point_pos\030\001 \001(\0132\007.Vector\022\030\n\020is_use_eye" +
       "_point\030\003 \001(\010\022\030\n\020region_config_id\030\007 \001(\r\022\024" +
       "\n\014region_shape\030\014 \001(\r\022\034\n\024is_filter_stream" +
-      "_pos\030\002 \001(\010\022\033\n\023Unk2800_GBBMMIGJFCF\030\005 \001(\005\022" +
-      "\027\n\017region_group_id\030\004 \001(\r\022\030\n\rsphere_radiu" +
-      "s\030\377\001 \001(\002H\000\022\036\n\ncubic_size\030\237\016 \001(\0132\007.Vector" +
-      "H\000\022-\n\rcylinder_size\030\306\016 \001(\0132\023.CylinderReg" +
-      "ionSizeH\000\022+\n\014polygon_size\030\355\006 \001(\0132\022.Polyg" +
-      "onRegionSizeH\000B\r\n\013region_sizeB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "_pos\030\002 \001(\010\022\025\n\rfix_lod_level\030\005 \001(\005\022\027\n\017reg" +
+      "ion_group_id\030\004 \001(\r\022\030\n\rsphere_radius\030\377\001 \001" +
+      "(\002H\000\022\036\n\ncubic_size\030\237\016 \001(\0132\007.VectorH\000\022-\n\r" +
+      "cylinder_size\030\306\016 \001(\0132\023.CylinderRegionSiz" +
+      "eH\000\022+\n\014polygon_size\030\355\006 \001(\0132\022.PolygonRegi" +
+      "onSizeH\000B\r\n\013region_sizeB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2044,7 +2044,7 @@ public final class PlayerEyePointStateNotifyOuterClass {
     internal_static_PlayerEyePointStateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerEyePointStateNotify_descriptor,
-        new java.lang.String[] { "RegionEntityId", "EyePointPos", "IsUseEyePoint", "RegionConfigId", "RegionShape", "IsFilterStreamPos", "Unk2800GBBMMIGJFCF", "RegionGroupId", "SphereRadius", "CubicSize", "CylinderSize", "PolygonSize", "RegionSize", });
+        new java.lang.String[] { "RegionEntityId", "EyePointPos", "IsUseEyePoint", "RegionConfigId", "RegionShape", "IsFilterStreamPos", "FixLodLevel", "RegionGroupId", "SphereRadius", "CubicSize", "CylinderSize", "PolygonSize", "RegionSize", });
     emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();

@@ -19,16 +19,16 @@ public final class HomeVerifyDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-     * @return The unk2700OAKBDKKBFHP.
+     * <code>string aid = 7;</code>
+     * @return The aid.
      */
-    java.lang.String getUnk2700OAKBDKKBFHP();
+    java.lang.String getAid();
     /**
-     * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-     * @return The bytes for unk2700OAKBDKKBFHP.
+     * <code>string aid = 7;</code>
+     * @return The bytes for aid.
      */
     com.google.protobuf.ByteString
-        getUnk2700OAKBDKKBFHPBytes();
+        getAidBytes();
 
     /**
      * <code>fixed32 timestamp = 15;</code>
@@ -43,19 +43,19 @@ public final class HomeVerifyDataOuterClass {
     int getUid();
 
     /**
-     * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
-     * @return Whether the unk2700CDELDBLKLDO field is set.
+     * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
+     * @return Whether the arrangementData field is set.
      */
-    boolean hasUnk2700CDELDBLKLDO();
+    boolean hasArrangementData();
     /**
-     * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
-     * @return The unk2700CDELDBLKLDO.
+     * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
+     * @return The arrangementData.
      */
-    emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData getUnk2700CDELDBLKLDO();
+    emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData getArrangementData();
     /**
-     * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+     * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
      */
-    emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder getUnk2700CDELDBLKLDOOrBuilder();
+    emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder getArrangementDataOrBuilder();
 
     /**
      * <code>string region = 3;</code>
@@ -120,7 +120,7 @@ public final class HomeVerifyDataOuterClass {
       super(builder);
     }
     private HomeVerifyData() {
-      unk2700OAKBDKKBFHP_ = "";
+      aid_ = "";
       region_ = "";
       token_ = "";
       lang_ = 0;
@@ -189,7 +189,7 @@ public final class HomeVerifyDataOuterClass {
             case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              unk2700OAKBDKKBFHP_ = s;
+              aid_ = s;
               break;
             }
             case 64: {
@@ -200,13 +200,13 @@ public final class HomeVerifyDataOuterClass {
             }
             case 74: {
               emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder subBuilder = null;
-              if (unk2700CDELDBLKLDO_ != null) {
-                subBuilder = unk2700CDELDBLKLDO_.toBuilder();
+              if (arrangementData_ != null) {
+                subBuilder = arrangementData_.toBuilder();
               }
-              unk2700CDELDBLKLDO_ = input.readMessage(emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.parser(), extensionRegistry);
+              arrangementData_ = input.readMessage(emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(unk2700CDELDBLKLDO_);
-                unk2700CDELDBLKLDO_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(arrangementData_);
+                arrangementData_ = subBuilder.buildPartial();
               }
 
               break;
@@ -248,38 +248,38 @@ public final class HomeVerifyDataOuterClass {
               emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData.class, emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData.Builder.class);
     }
 
-    public static final int UNK2700_OAKBDKKBFHP_FIELD_NUMBER = 7;
-    private volatile java.lang.Object unk2700OAKBDKKBFHP_;
+    public static final int AID_FIELD_NUMBER = 7;
+    private volatile java.lang.Object aid_;
     /**
-     * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-     * @return The unk2700OAKBDKKBFHP.
+     * <code>string aid = 7;</code>
+     * @return The aid.
      */
     @java.lang.Override
-    public java.lang.String getUnk2700OAKBDKKBFHP() {
-      java.lang.Object ref = unk2700OAKBDKKBFHP_;
+    public java.lang.String getAid() {
+      java.lang.Object ref = aid_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        unk2700OAKBDKKBFHP_ = s;
+        aid_ = s;
         return s;
       }
     }
     /**
-     * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-     * @return The bytes for unk2700OAKBDKKBFHP.
+     * <code>string aid = 7;</code>
+     * @return The bytes for aid.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getUnk2700OAKBDKKBFHPBytes() {
-      java.lang.Object ref = unk2700OAKBDKKBFHP_;
+        getAidBytes() {
+      java.lang.Object ref = aid_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        unk2700OAKBDKKBFHP_ = b;
+        aid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -308,30 +308,30 @@ public final class HomeVerifyDataOuterClass {
       return uid_;
     }
 
-    public static final int UNK2700_CDELDBLKLDO_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData unk2700CDELDBLKLDO_;
+    public static final int ARRANGEMENT_DATA_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData arrangementData_;
     /**
-     * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
-     * @return Whether the unk2700CDELDBLKLDO field is set.
+     * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
+     * @return Whether the arrangementData field is set.
      */
     @java.lang.Override
-    public boolean hasUnk2700CDELDBLKLDO() {
-      return unk2700CDELDBLKLDO_ != null;
+    public boolean hasArrangementData() {
+      return arrangementData_ != null;
     }
     /**
-     * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
-     * @return The unk2700CDELDBLKLDO.
+     * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
+     * @return The arrangementData.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData getUnk2700CDELDBLKLDO() {
-      return unk2700CDELDBLKLDO_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.getDefaultInstance() : unk2700CDELDBLKLDO_;
+    public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData getArrangementData() {
+      return arrangementData_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.getDefaultInstance() : arrangementData_;
     }
     /**
-     * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+     * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder getUnk2700CDELDBLKLDOOrBuilder() {
-      return getUnk2700CDELDBLKLDO();
+    public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder getArrangementDataOrBuilder() {
+      return getArrangementData();
     }
 
     public static final int REGION_FIELD_NUMBER = 3;
@@ -481,14 +481,14 @@ public final class HomeVerifyDataOuterClass {
       if (homeInfo_ != null) {
         output.writeMessage(6, getHomeInfo());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk2700OAKBDKKBFHP_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, unk2700OAKBDKKBFHP_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aid_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, aid_);
       }
       if (lang_ != emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType.LANGUAGE_TYPE_NONE.getNumber()) {
         output.writeEnum(8, lang_);
       }
-      if (unk2700CDELDBLKLDO_ != null) {
-        output.writeMessage(9, getUnk2700CDELDBLKLDO());
+      if (arrangementData_ != null) {
+        output.writeMessage(9, getArrangementData());
       }
       if (timestamp_ != 0) {
         output.writeFixed32(15, timestamp_);
@@ -516,16 +516,16 @@ public final class HomeVerifyDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getHomeInfo());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk2700OAKBDKKBFHP_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, unk2700OAKBDKKBFHP_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aid_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, aid_);
       }
       if (lang_ != emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType.LANGUAGE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(8, lang_);
       }
-      if (unk2700CDELDBLKLDO_ != null) {
+      if (arrangementData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getUnk2700CDELDBLKLDO());
+          .computeMessageSize(9, getArrangementData());
       }
       if (timestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -546,16 +546,16 @@ public final class HomeVerifyDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData other = (emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData) obj;
 
-      if (!getUnk2700OAKBDKKBFHP()
-          .equals(other.getUnk2700OAKBDKKBFHP())) return false;
+      if (!getAid()
+          .equals(other.getAid())) return false;
       if (getTimestamp()
           != other.getTimestamp()) return false;
       if (getUid()
           != other.getUid()) return false;
-      if (hasUnk2700CDELDBLKLDO() != other.hasUnk2700CDELDBLKLDO()) return false;
-      if (hasUnk2700CDELDBLKLDO()) {
-        if (!getUnk2700CDELDBLKLDO()
-            .equals(other.getUnk2700CDELDBLKLDO())) return false;
+      if (hasArrangementData() != other.hasArrangementData()) return false;
+      if (hasArrangementData()) {
+        if (!getArrangementData()
+            .equals(other.getArrangementData())) return false;
       }
       if (!getRegion()
           .equals(other.getRegion())) return false;
@@ -578,15 +578,15 @@ public final class HomeVerifyDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_OAKBDKKBFHP_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700OAKBDKKBFHP().hashCode();
+      hash = (37 * hash) + AID_FIELD_NUMBER;
+      hash = (53 * hash) + getAid().hashCode();
       hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
       hash = (53 * hash) + getTimestamp();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      if (hasUnk2700CDELDBLKLDO()) {
-        hash = (37 * hash) + UNK2700_CDELDBLKLDO_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700CDELDBLKLDO().hashCode();
+      if (hasArrangementData()) {
+        hash = (37 * hash) + ARRANGEMENT_DATA_FIELD_NUMBER;
+        hash = (53 * hash) + getArrangementData().hashCode();
       }
       hash = (37 * hash) + REGION_FIELD_NUMBER;
       hash = (53 * hash) + getRegion().hashCode();
@@ -731,17 +731,17 @@ public final class HomeVerifyDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700OAKBDKKBFHP_ = "";
+        aid_ = "";
 
         timestamp_ = 0;
 
         uid_ = 0;
 
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
-          unk2700CDELDBLKLDO_ = null;
+        if (arrangementDataBuilder_ == null) {
+          arrangementData_ = null;
         } else {
-          unk2700CDELDBLKLDO_ = null;
-          unk2700CDELDBLKLDOBuilder_ = null;
+          arrangementData_ = null;
+          arrangementDataBuilder_ = null;
         }
         region_ = "";
 
@@ -781,13 +781,13 @@ public final class HomeVerifyDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData buildPartial() {
         emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData result = new emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData(this);
-        result.unk2700OAKBDKKBFHP_ = unk2700OAKBDKKBFHP_;
+        result.aid_ = aid_;
         result.timestamp_ = timestamp_;
         result.uid_ = uid_;
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
-          result.unk2700CDELDBLKLDO_ = unk2700CDELDBLKLDO_;
+        if (arrangementDataBuilder_ == null) {
+          result.arrangementData_ = arrangementData_;
         } else {
-          result.unk2700CDELDBLKLDO_ = unk2700CDELDBLKLDOBuilder_.build();
+          result.arrangementData_ = arrangementDataBuilder_.build();
         }
         result.region_ = region_;
         result.token_ = token_;
@@ -845,8 +845,8 @@ public final class HomeVerifyDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData other) {
         if (other == emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData.getDefaultInstance()) return this;
-        if (!other.getUnk2700OAKBDKKBFHP().isEmpty()) {
-          unk2700OAKBDKKBFHP_ = other.unk2700OAKBDKKBFHP_;
+        if (!other.getAid().isEmpty()) {
+          aid_ = other.aid_;
           onChanged();
         }
         if (other.getTimestamp() != 0) {
@@ -855,8 +855,8 @@ public final class HomeVerifyDataOuterClass {
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
-        if (other.hasUnk2700CDELDBLKLDO()) {
-          mergeUnk2700CDELDBLKLDO(other.getUnk2700CDELDBLKLDO());
+        if (other.hasArrangementData()) {
+          mergeArrangementData(other.getArrangementData());
         }
         if (!other.getRegion().isEmpty()) {
           region_ = other.region_;
@@ -901,78 +901,78 @@ public final class HomeVerifyDataOuterClass {
         return this;
       }
 
-      private java.lang.Object unk2700OAKBDKKBFHP_ = "";
+      private java.lang.Object aid_ = "";
       /**
-       * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-       * @return The unk2700OAKBDKKBFHP.
+       * <code>string aid = 7;</code>
+       * @return The aid.
        */
-      public java.lang.String getUnk2700OAKBDKKBFHP() {
-        java.lang.Object ref = unk2700OAKBDKKBFHP_;
+      public java.lang.String getAid() {
+        java.lang.Object ref = aid_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          unk2700OAKBDKKBFHP_ = s;
+          aid_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-       * @return The bytes for unk2700OAKBDKKBFHP.
+       * <code>string aid = 7;</code>
+       * @return The bytes for aid.
        */
       public com.google.protobuf.ByteString
-          getUnk2700OAKBDKKBFHPBytes() {
-        java.lang.Object ref = unk2700OAKBDKKBFHP_;
+          getAidBytes() {
+        java.lang.Object ref = aid_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          unk2700OAKBDKKBFHP_ = b;
+          aid_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-       * @param value The unk2700OAKBDKKBFHP to set.
+       * <code>string aid = 7;</code>
+       * @param value The aid to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700OAKBDKKBFHP(
+      public Builder setAid(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        unk2700OAKBDKKBFHP_ = value;
+        aid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
+       * <code>string aid = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700OAKBDKKBFHP() {
+      public Builder clearAid() {
         
-        unk2700OAKBDKKBFHP_ = getDefaultInstance().getUnk2700OAKBDKKBFHP();
+        aid_ = getDefaultInstance().getAid();
         onChanged();
         return this;
       }
       /**
-       * <code>string Unk2700_OAKBDKKBFHP = 7;</code>
-       * @param value The bytes for unk2700OAKBDKKBFHP to set.
+       * <code>string aid = 7;</code>
+       * @param value The bytes for aid to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700OAKBDKKBFHPBytes(
+      public Builder setAidBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        unk2700OAKBDKKBFHP_ = value;
+        aid_ = value;
         onChanged();
         return this;
       }
@@ -1039,123 +1039,123 @@ public final class HomeVerifyDataOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData unk2700CDELDBLKLDO_;
+      private emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData arrangementData_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder> unk2700CDELDBLKLDOBuilder_;
+          emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder> arrangementDataBuilder_;
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
-       * @return Whether the unk2700CDELDBLKLDO field is set.
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
+       * @return Whether the arrangementData field is set.
        */
-      public boolean hasUnk2700CDELDBLKLDO() {
-        return unk2700CDELDBLKLDOBuilder_ != null || unk2700CDELDBLKLDO_ != null;
+      public boolean hasArrangementData() {
+        return arrangementDataBuilder_ != null || arrangementData_ != null;
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
-       * @return The unk2700CDELDBLKLDO.
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
+       * @return The arrangementData.
        */
-      public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData getUnk2700CDELDBLKLDO() {
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
-          return unk2700CDELDBLKLDO_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.getDefaultInstance() : unk2700CDELDBLKLDO_;
+      public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData getArrangementData() {
+        if (arrangementDataBuilder_ == null) {
+          return arrangementData_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.getDefaultInstance() : arrangementData_;
         } else {
-          return unk2700CDELDBLKLDOBuilder_.getMessage();
+          return arrangementDataBuilder_.getMessage();
         }
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
        */
-      public Builder setUnk2700CDELDBLKLDO(emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData value) {
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
+      public Builder setArrangementData(emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData value) {
+        if (arrangementDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          unk2700CDELDBLKLDO_ = value;
+          arrangementData_ = value;
           onChanged();
         } else {
-          unk2700CDELDBLKLDOBuilder_.setMessage(value);
+          arrangementDataBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
        */
-      public Builder setUnk2700CDELDBLKLDO(
+      public Builder setArrangementData(
           emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder builderForValue) {
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
-          unk2700CDELDBLKLDO_ = builderForValue.build();
+        if (arrangementDataBuilder_ == null) {
+          arrangementData_ = builderForValue.build();
           onChanged();
         } else {
-          unk2700CDELDBLKLDOBuilder_.setMessage(builderForValue.build());
+          arrangementDataBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
        */
-      public Builder mergeUnk2700CDELDBLKLDO(emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData value) {
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
-          if (unk2700CDELDBLKLDO_ != null) {
-            unk2700CDELDBLKLDO_ =
-              emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.newBuilder(unk2700CDELDBLKLDO_).mergeFrom(value).buildPartial();
+      public Builder mergeArrangementData(emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData value) {
+        if (arrangementDataBuilder_ == null) {
+          if (arrangementData_ != null) {
+            arrangementData_ =
+              emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.newBuilder(arrangementData_).mergeFrom(value).buildPartial();
           } else {
-            unk2700CDELDBLKLDO_ = value;
+            arrangementData_ = value;
           }
           onChanged();
         } else {
-          unk2700CDELDBLKLDOBuilder_.mergeFrom(value);
+          arrangementDataBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
        */
-      public Builder clearUnk2700CDELDBLKLDO() {
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
-          unk2700CDELDBLKLDO_ = null;
+      public Builder clearArrangementData() {
+        if (arrangementDataBuilder_ == null) {
+          arrangementData_ = null;
           onChanged();
         } else {
-          unk2700CDELDBLKLDO_ = null;
-          unk2700CDELDBLKLDOBuilder_ = null;
+          arrangementData_ = null;
+          arrangementDataBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
        */
-      public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder getUnk2700CDELDBLKLDOBuilder() {
+      public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder getArrangementDataBuilder() {
         
         onChanged();
-        return getUnk2700CDELDBLKLDOFieldBuilder().getBuilder();
+        return getArrangementDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
        */
-      public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder getUnk2700CDELDBLKLDOOrBuilder() {
-        if (unk2700CDELDBLKLDOBuilder_ != null) {
-          return unk2700CDELDBLKLDOBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder getArrangementDataOrBuilder() {
+        if (arrangementDataBuilder_ != null) {
+          return arrangementDataBuilder_.getMessageOrBuilder();
         } else {
-          return unk2700CDELDBLKLDO_ == null ?
-              emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.getDefaultInstance() : unk2700CDELDBLKLDO_;
+          return arrangementData_ == null ?
+              emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.getDefaultInstance() : arrangementData_;
         }
       }
       /**
-       * <code>.HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;</code>
+       * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder> 
-          getUnk2700CDELDBLKLDOFieldBuilder() {
-        if (unk2700CDELDBLKLDOBuilder_ == null) {
-          unk2700CDELDBLKLDOBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getArrangementDataFieldBuilder() {
+        if (arrangementDataBuilder_ == null) {
+          arrangementDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData.Builder, emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder>(
-                  getUnk2700CDELDBLKLDO(),
+                  getArrangementData(),
                   getParentForChildren(),
                   isClean());
-          unk2700CDELDBLKLDO_ = null;
+          arrangementData_ = null;
         }
-        return unk2700CDELDBLKLDOBuilder_;
+        return arrangementDataBuilder_;
       }
 
       private java.lang.Object region_ = "";
@@ -1551,14 +1551,14 @@ public final class HomeVerifyDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\024HomeVerifyData.proto\032\"HomeSceneArrange" +
       "mentMuipData.proto\032\031HomeVerifySceneData." +
-      "proto\032\022LanguageType.proto\"\356\001\n\016HomeVerify" +
-      "Data\022\033\n\023Unk2700_OAKBDKKBFHP\030\007 \001(\t\022\021\n\ttim" +
-      "estamp\030\017 \001(\007\022\013\n\003uid\030\005 \001(\r\022:\n\023Unk2700_CDE" +
-      "LDBLKLDO\030\t \001(\0132\035.HomeSceneArrangementMui" +
-      "pData\022\016\n\006region\030\003 \001(\t\022\r\n\005token\030\001 \001(\t\022\'\n\t" +
-      "home_info\030\006 \001(\0132\024.HomeVerifySceneData\022\033\n" +
-      "\004lang\030\010 \001(\0162\r.LanguageTypeB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "proto\032\022LanguageType.proto\"\333\001\n\016HomeVerify" +
+      "Data\022\013\n\003aid\030\007 \001(\t\022\021\n\ttimestamp\030\017 \001(\007\022\013\n\003" +
+      "uid\030\005 \001(\r\0227\n\020arrangement_data\030\t \001(\0132\035.Ho" +
+      "meSceneArrangementMuipData\022\016\n\006region\030\003 \001" +
+      "(\t\022\r\n\005token\030\001 \001(\t\022\'\n\thome_info\030\006 \001(\0132\024.H" +
+      "omeVerifySceneData\022\033\n\004lang\030\010 \001(\0162\r.Langu" +
+      "ageTypeB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1572,7 +1572,7 @@ public final class HomeVerifyDataOuterClass {
     internal_static_HomeVerifyData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeVerifyData_descriptor,
-        new java.lang.String[] { "Unk2700OAKBDKKBFHP", "Timestamp", "Uid", "Unk2700CDELDBLKLDO", "Region", "Token", "HomeInfo", "Lang", });
+        new java.lang.String[] { "Aid", "Timestamp", "Uid", "ArrangementData", "Region", "Token", "HomeInfo", "Lang", });
     emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.LanguageTypeOuterClass.getDescriptor();

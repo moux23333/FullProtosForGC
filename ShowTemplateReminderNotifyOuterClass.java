@@ -19,6 +19,18 @@ public final class ShowTemplateReminderNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>bool is_revoke = 1;</code>
+     * @return The isRevoke.
+     */
+    boolean getIsRevoke();
+
+    /**
+     * <code>uint32 template_reminder_id = 14;</code>
+     * @return The templateReminderId.
+     */
+    int getTemplateReminderId();
+
+    /**
      * <code>repeated uint32 param_uid_list = 3;</code>
      * @return A list containing the paramUidList.
      */
@@ -53,16 +65,10 @@ public final class ShowTemplateReminderNotifyOuterClass {
     int getParamList(int index);
 
     /**
-     * <code>uint32 template_reminder_id = 14;</code>
-     * @return The templateReminderId.
+     * <code>bool is_need_cache = 15;</code>
+     * @return The isNeedCache.
      */
-    int getTemplateReminderId();
-
-    /**
-     * <code>bool is_revoke = 1;</code>
-     * @return The isRevoke.
-     */
-    boolean getIsRevoke();
+    boolean getIsNeedCache();
   }
   /**
    * <pre>
@@ -170,6 +176,11 @@ public final class ShowTemplateReminderNotifyOuterClass {
               templateReminderId_ = input.readUInt32();
               break;
             }
+            case 120: {
+
+              isNeedCache_ = input.readBool();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -206,6 +217,28 @@ public final class ShowTemplateReminderNotifyOuterClass {
       return emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.internal_static_ShowTemplateReminderNotify_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify.class, emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify.Builder.class);
+    }
+
+    public static final int IS_REVOKE_FIELD_NUMBER = 1;
+    private boolean isRevoke_;
+    /**
+     * <code>bool is_revoke = 1;</code>
+     * @return The isRevoke.
+     */
+    @java.lang.Override
+    public boolean getIsRevoke() {
+      return isRevoke_;
+    }
+
+    public static final int TEMPLATE_REMINDER_ID_FIELD_NUMBER = 14;
+    private int templateReminderId_;
+    /**
+     * <code>uint32 template_reminder_id = 14;</code>
+     * @return The templateReminderId.
+     */
+    @java.lang.Override
+    public int getTemplateReminderId() {
+      return templateReminderId_;
     }
 
     public static final int PARAM_UID_LIST_FIELD_NUMBER = 3;
@@ -264,26 +297,15 @@ public final class ShowTemplateReminderNotifyOuterClass {
     }
     private int paramListMemoizedSerializedSize = -1;
 
-    public static final int TEMPLATE_REMINDER_ID_FIELD_NUMBER = 14;
-    private int templateReminderId_;
+    public static final int IS_NEED_CACHE_FIELD_NUMBER = 15;
+    private boolean isNeedCache_;
     /**
-     * <code>uint32 template_reminder_id = 14;</code>
-     * @return The templateReminderId.
+     * <code>bool is_need_cache = 15;</code>
+     * @return The isNeedCache.
      */
     @java.lang.Override
-    public int getTemplateReminderId() {
-      return templateReminderId_;
-    }
-
-    public static final int IS_REVOKE_FIELD_NUMBER = 1;
-    private boolean isRevoke_;
-    /**
-     * <code>bool is_revoke = 1;</code>
-     * @return The isRevoke.
-     */
-    @java.lang.Override
-    public boolean getIsRevoke() {
-      return isRevoke_;
+    public boolean getIsNeedCache() {
+      return isNeedCache_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -320,6 +342,9 @@ public final class ShowTemplateReminderNotifyOuterClass {
       }
       if (templateReminderId_ != 0) {
         output.writeUInt32(14, templateReminderId_);
+      }
+      if (isNeedCache_ != false) {
+        output.writeBool(15, isNeedCache_);
       }
       unknownFields.writeTo(output);
     }
@@ -366,6 +391,10 @@ public final class ShowTemplateReminderNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, templateReminderId_);
       }
+      if (isNeedCache_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isNeedCache_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -381,14 +410,16 @@ public final class ShowTemplateReminderNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify other = (emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify) obj;
 
+      if (getIsRevoke()
+          != other.getIsRevoke()) return false;
+      if (getTemplateReminderId()
+          != other.getTemplateReminderId()) return false;
       if (!getParamUidListList()
           .equals(other.getParamUidListList())) return false;
       if (!getParamListList()
           .equals(other.getParamListList())) return false;
-      if (getTemplateReminderId()
-          != other.getTemplateReminderId()) return false;
-      if (getIsRevoke()
-          != other.getIsRevoke()) return false;
+      if (getIsNeedCache()
+          != other.getIsNeedCache()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -400,6 +431,11 @@ public final class ShowTemplateReminderNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_REVOKE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsRevoke());
+      hash = (37 * hash) + TEMPLATE_REMINDER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTemplateReminderId();
       if (getParamUidListCount() > 0) {
         hash = (37 * hash) + PARAM_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamUidListList().hashCode();
@@ -408,11 +444,9 @@ public final class ShowTemplateReminderNotifyOuterClass {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
       }
-      hash = (37 * hash) + TEMPLATE_REMINDER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTemplateReminderId();
-      hash = (37 * hash) + IS_REVOKE_FIELD_NUMBER;
+      hash = (37 * hash) + IS_NEED_CACHE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsRevoke());
+          getIsNeedCache());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -552,13 +586,15 @@ public final class ShowTemplateReminderNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isRevoke_ = false;
+
+        templateReminderId_ = 0;
+
         paramUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         paramList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        templateReminderId_ = 0;
-
-        isRevoke_ = false;
+        isNeedCache_ = false;
 
         return this;
       }
@@ -587,6 +623,8 @@ public final class ShowTemplateReminderNotifyOuterClass {
       public emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify buildPartial() {
         emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify result = new emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify(this);
         int from_bitField0_ = bitField0_;
+        result.isRevoke_ = isRevoke_;
+        result.templateReminderId_ = templateReminderId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           paramUidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -597,8 +635,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.paramList_ = paramList_;
-        result.templateReminderId_ = templateReminderId_;
-        result.isRevoke_ = isRevoke_;
+        result.isNeedCache_ = isNeedCache_;
         onBuilt();
         return result;
       }
@@ -647,6 +684,12 @@ public final class ShowTemplateReminderNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify other) {
         if (other == emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify.getDefaultInstance()) return this;
+        if (other.getIsRevoke() != false) {
+          setIsRevoke(other.getIsRevoke());
+        }
+        if (other.getTemplateReminderId() != 0) {
+          setTemplateReminderId(other.getTemplateReminderId());
+        }
         if (!other.paramUidList_.isEmpty()) {
           if (paramUidList_.isEmpty()) {
             paramUidList_ = other.paramUidList_;
@@ -667,11 +710,8 @@ public final class ShowTemplateReminderNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.getTemplateReminderId() != 0) {
-          setTemplateReminderId(other.getTemplateReminderId());
-        }
-        if (other.getIsRevoke() != false) {
-          setIsRevoke(other.getIsRevoke());
+        if (other.getIsNeedCache() != false) {
+          setIsNeedCache(other.getIsNeedCache());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -702,6 +742,68 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private boolean isRevoke_ ;
+      /**
+       * <code>bool is_revoke = 1;</code>
+       * @return The isRevoke.
+       */
+      @java.lang.Override
+      public boolean getIsRevoke() {
+        return isRevoke_;
+      }
+      /**
+       * <code>bool is_revoke = 1;</code>
+       * @param value The isRevoke to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsRevoke(boolean value) {
+        
+        isRevoke_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_revoke = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsRevoke() {
+        
+        isRevoke_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int templateReminderId_ ;
+      /**
+       * <code>uint32 template_reminder_id = 14;</code>
+       * @return The templateReminderId.
+       */
+      @java.lang.Override
+      public int getTemplateReminderId() {
+        return templateReminderId_;
+      }
+      /**
+       * <code>uint32 template_reminder_id = 14;</code>
+       * @param value The templateReminderId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTemplateReminderId(int value) {
+        
+        templateReminderId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 template_reminder_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTemplateReminderId() {
+        
+        templateReminderId_ = 0;
+        onChanged();
+        return this;
+      }
 
       private com.google.protobuf.Internal.IntList paramUidList_ = emptyIntList();
       private void ensureParamUidListIsMutable() {
@@ -861,64 +963,33 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return this;
       }
 
-      private int templateReminderId_ ;
+      private boolean isNeedCache_ ;
       /**
-       * <code>uint32 template_reminder_id = 14;</code>
-       * @return The templateReminderId.
+       * <code>bool is_need_cache = 15;</code>
+       * @return The isNeedCache.
        */
       @java.lang.Override
-      public int getTemplateReminderId() {
-        return templateReminderId_;
+      public boolean getIsNeedCache() {
+        return isNeedCache_;
       }
       /**
-       * <code>uint32 template_reminder_id = 14;</code>
-       * @param value The templateReminderId to set.
+       * <code>bool is_need_cache = 15;</code>
+       * @param value The isNeedCache to set.
        * @return This builder for chaining.
        */
-      public Builder setTemplateReminderId(int value) {
+      public Builder setIsNeedCache(boolean value) {
         
-        templateReminderId_ = value;
+        isNeedCache_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 template_reminder_id = 14;</code>
+       * <code>bool is_need_cache = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTemplateReminderId() {
+      public Builder clearIsNeedCache() {
         
-        templateReminderId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isRevoke_ ;
-      /**
-       * <code>bool is_revoke = 1;</code>
-       * @return The isRevoke.
-       */
-      @java.lang.Override
-      public boolean getIsRevoke() {
-        return isRevoke_;
-      }
-      /**
-       * <code>bool is_revoke = 1;</code>
-       * @param value The isRevoke to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsRevoke(boolean value) {
-        
-        isRevoke_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_revoke = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsRevoke() {
-        
-        isRevoke_ = false;
+        isNeedCache_ = false;
         onChanged();
         return this;
       }
@@ -989,11 +1060,12 @@ public final class ShowTemplateReminderNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n ShowTemplateReminderNotify.proto\"y\n\032Sh" +
-      "owTemplateReminderNotify\022\026\n\016param_uid_li" +
-      "st\030\003 \003(\r\022\022\n\nparam_list\030\n \003(\005\022\034\n\024template" +
-      "_reminder_id\030\016 \001(\r\022\021\n\tis_revoke\030\001 \001(\010B\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n ShowTemplateReminderNotify.proto\"\220\001\n\032S" +
+      "howTemplateReminderNotify\022\021\n\tis_revoke\030\001" +
+      " \001(\010\022\034\n\024template_reminder_id\030\016 \001(\r\022\026\n\016pa" +
+      "ram_uid_list\030\003 \003(\r\022\022\n\nparam_list\030\n \003(\005\022\025" +
+      "\n\ris_need_cache\030\017 \001(\010B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1004,7 +1076,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
     internal_static_ShowTemplateReminderNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShowTemplateReminderNotify_descriptor,
-        new java.lang.String[] { "ParamUidList", "ParamList", "TemplateReminderId", "IsRevoke", });
+        new java.lang.String[] { "IsRevoke", "TemplateReminderId", "ParamUidList", "ParamList", "IsNeedCache", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

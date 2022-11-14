@@ -25,10 +25,10 @@ public final class RechargeRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>bool Unk2700_FGENAOBDIEA = 6;</code>
-     * @return The unk2700FGENAOBDIEA.
+     * <code>bool is_show_minors_hint = 6;</code>
+     * @return The isShowMinorsHint.
      */
-    boolean getUnk2700FGENAOBDIEA();
+    boolean getIsShowMinorsHint();
 
     /**
      * <code>string product_id = 2;</code>
@@ -102,7 +102,7 @@ public final class RechargeRspOuterClass {
             }
             case 48: {
 
-              unk2700FGENAOBDIEA_ = input.readBool();
+              isShowMinorsHint_ = input.readBool();
               break;
             }
             case 96: {
@@ -153,15 +153,15 @@ public final class RechargeRspOuterClass {
       return retcode_;
     }
 
-    public static final int UNK2700_FGENAOBDIEA_FIELD_NUMBER = 6;
-    private boolean unk2700FGENAOBDIEA_;
+    public static final int IS_SHOW_MINORS_HINT_FIELD_NUMBER = 6;
+    private boolean isShowMinorsHint_;
     /**
-     * <code>bool Unk2700_FGENAOBDIEA = 6;</code>
-     * @return The unk2700FGENAOBDIEA.
+     * <code>bool is_show_minors_hint = 6;</code>
+     * @return The isShowMinorsHint.
      */
     @java.lang.Override
-    public boolean getUnk2700FGENAOBDIEA() {
-      return unk2700FGENAOBDIEA_;
+    public boolean getIsShowMinorsHint() {
+      return isShowMinorsHint_;
     }
 
     public static final int PRODUCT_ID_FIELD_NUMBER = 2;
@@ -219,8 +219,8 @@ public final class RechargeRspOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, productId_);
       }
-      if (unk2700FGENAOBDIEA_ != false) {
-        output.writeBool(6, unk2700FGENAOBDIEA_);
+      if (isShowMinorsHint_ != false) {
+        output.writeBool(6, isShowMinorsHint_);
       }
       if (retcode_ != 0) {
         output.writeInt32(12, retcode_);
@@ -237,9 +237,9 @@ public final class RechargeRspOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, productId_);
       }
-      if (unk2700FGENAOBDIEA_ != false) {
+      if (isShowMinorsHint_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, unk2700FGENAOBDIEA_);
+          .computeBoolSize(6, isShowMinorsHint_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -262,8 +262,8 @@ public final class RechargeRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getUnk2700FGENAOBDIEA()
-          != other.getUnk2700FGENAOBDIEA()) return false;
+      if (getIsShowMinorsHint()
+          != other.getIsShowMinorsHint()) return false;
       if (!getProductId()
           .equals(other.getProductId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -279,9 +279,9 @@ public final class RechargeRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + UNK2700_FGENAOBDIEA_FIELD_NUMBER;
+      hash = (37 * hash) + IS_SHOW_MINORS_HINT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700FGENAOBDIEA());
+          getIsShowMinorsHint());
       hash = (37 * hash) + PRODUCT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getProductId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -425,7 +425,7 @@ public final class RechargeRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        unk2700FGENAOBDIEA_ = false;
+        isShowMinorsHint_ = false;
 
         productId_ = "";
 
@@ -456,7 +456,7 @@ public final class RechargeRspOuterClass {
       public emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp buildPartial() {
         emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp result = new emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp(this);
         result.retcode_ = retcode_;
-        result.unk2700FGENAOBDIEA_ = unk2700FGENAOBDIEA_;
+        result.isShowMinorsHint_ = isShowMinorsHint_;
         result.productId_ = productId_;
         onBuilt();
         return result;
@@ -509,8 +509,8 @@ public final class RechargeRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getUnk2700FGENAOBDIEA() != false) {
-          setUnk2700FGENAOBDIEA(other.getUnk2700FGENAOBDIEA());
+        if (other.getIsShowMinorsHint() != false) {
+          setIsShowMinorsHint(other.getIsShowMinorsHint());
         }
         if (!other.getProductId().isEmpty()) {
           productId_ = other.productId_;
@@ -576,33 +576,33 @@ public final class RechargeRspOuterClass {
         return this;
       }
 
-      private boolean unk2700FGENAOBDIEA_ ;
+      private boolean isShowMinorsHint_ ;
       /**
-       * <code>bool Unk2700_FGENAOBDIEA = 6;</code>
-       * @return The unk2700FGENAOBDIEA.
+       * <code>bool is_show_minors_hint = 6;</code>
+       * @return The isShowMinorsHint.
        */
       @java.lang.Override
-      public boolean getUnk2700FGENAOBDIEA() {
-        return unk2700FGENAOBDIEA_;
+      public boolean getIsShowMinorsHint() {
+        return isShowMinorsHint_;
       }
       /**
-       * <code>bool Unk2700_FGENAOBDIEA = 6;</code>
-       * @param value The unk2700FGENAOBDIEA to set.
+       * <code>bool is_show_minors_hint = 6;</code>
+       * @param value The isShowMinorsHint to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700FGENAOBDIEA(boolean value) {
+      public Builder setIsShowMinorsHint(boolean value) {
         
-        unk2700FGENAOBDIEA_ = value;
+        isShowMinorsHint_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_FGENAOBDIEA = 6;</code>
+       * <code>bool is_show_minors_hint = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700FGENAOBDIEA() {
+      public Builder clearIsShowMinorsHint() {
         
-        unk2700FGENAOBDIEA_ = false;
+        isShowMinorsHint_ = false;
         onChanged();
         return this;
       }
@@ -750,7 +750,7 @@ public final class RechargeRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021RechargeRsp.proto\"O\n\013RechargeRsp\022\017\n\007re" +
-      "tcode\030\014 \001(\005\022\033\n\023Unk2700_FGENAOBDIEA\030\006 \001(\010" +
+      "tcode\030\014 \001(\005\022\033\n\023is_show_minors_hint\030\006 \001(\010" +
       "\022\022\n\nproduct_id\030\002 \001(\tB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
@@ -763,7 +763,7 @@ public final class RechargeRspOuterClass {
     internal_static_RechargeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RechargeRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Unk2700FGENAOBDIEA", "ProductId", });
+        new java.lang.String[] { "Retcode", "IsShowMinorsHint", "ProductId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

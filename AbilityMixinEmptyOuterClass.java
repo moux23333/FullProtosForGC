@@ -17,12 +17,6 @@ public final class AbilityMixinEmptyOuterClass {
   public interface AbilityMixinEmptyOrBuilder extends
       // @@protoc_insertion_point(interface_extends:AbilityMixinEmpty)
       com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>bool is_swim = 1;</code>
-     * @return The isSwim.
-     */
-    boolean getIsSwim();
   }
   /**
    * Protobuf type {@code AbilityMixinEmpty}
@@ -69,11 +63,6 @@ public final class AbilityMixinEmptyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isSwim_ = input.readBool();
-              break;
-            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -106,17 +95,6 @@ public final class AbilityMixinEmptyOuterClass {
               emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty.class, emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty.Builder.class);
     }
 
-    public static final int IS_SWIM_FIELD_NUMBER = 1;
-    private boolean isSwim_;
-    /**
-     * <code>bool is_swim = 1;</code>
-     * @return The isSwim.
-     */
-    @java.lang.Override
-    public boolean getIsSwim() {
-      return isSwim_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -131,9 +109,6 @@ public final class AbilityMixinEmptyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSwim_ != false) {
-        output.writeBool(1, isSwim_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -143,10 +118,6 @@ public final class AbilityMixinEmptyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSwim_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isSwim_);
-      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -162,8 +133,6 @@ public final class AbilityMixinEmptyOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty other = (emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty) obj;
 
-      if (getIsSwim()
-          != other.getIsSwim()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,9 +144,6 @@ public final class AbilityMixinEmptyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_SWIM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSwim());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,8 +277,6 @@ public final class AbilityMixinEmptyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isSwim_ = false;
-
         return this;
       }
 
@@ -339,7 +303,6 @@ public final class AbilityMixinEmptyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty result = new emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty(this);
-        result.isSwim_ = isSwim_;
         onBuilt();
         return result;
       }
@@ -388,9 +351,6 @@ public final class AbilityMixinEmptyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinEmptyOuterClass.AbilityMixinEmpty.getDefaultInstance()) return this;
-        if (other.getIsSwim() != false) {
-          setIsSwim(other.getIsSwim());
-        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -417,37 +377,6 @@ public final class AbilityMixinEmptyOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private boolean isSwim_ ;
-      /**
-       * <code>bool is_swim = 1;</code>
-       * @return The isSwim.
-       */
-      @java.lang.Override
-      public boolean getIsSwim() {
-        return isSwim_;
-      }
-      /**
-       * <code>bool is_swim = 1;</code>
-       * @param value The isSwim to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSwim(boolean value) {
-        
-        isSwim_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_swim = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSwim() {
-        
-        isSwim_ = false;
-        onChanged();
         return this;
       }
       @java.lang.Override
@@ -517,9 +446,9 @@ public final class AbilityMixinEmptyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027AbilityMixinEmpty.proto\"$\n\021AbilityMixi" +
-      "nEmpty\022\017\n\007is_swim\030\001 \001(\010B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\027AbilityMixinEmpty.proto\"\023\n\021AbilityMixi" +
+      "nEmptyB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -530,7 +459,7 @@ public final class AbilityMixinEmptyOuterClass {
     internal_static_AbilityMixinEmpty_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinEmpty_descriptor,
-        new java.lang.String[] { "IsSwim", });
+        new java.lang.String[] { });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

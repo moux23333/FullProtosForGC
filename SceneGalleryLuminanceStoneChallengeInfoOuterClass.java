@@ -31,10 +31,10 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
     int getScore();
 
     /**
-     * <code>uint32 Unk2700_OFKHLGLOPCM = 2;</code>
-     * @return The unk2700OFKHLGLOPCM.
+     * <code>uint32 clean_mud_count = 2;</code>
+     * @return The cleanMudCount.
      */
-    int getUnk2700OFKHLGLOPCM();
+    int getCleanMudCount();
 
     /**
      * <code>uint32 kill_special_monster_count = 6;</code>
@@ -89,7 +89,7 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
               break;
             case 16: {
 
-              unk2700OFKHLGLOPCM_ = input.readUInt32();
+              cleanMudCount_ = input.readUInt32();
               break;
             }
             case 24: {
@@ -161,15 +161,15 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
       return score_;
     }
 
-    public static final int UNK2700_OFKHLGLOPCM_FIELD_NUMBER = 2;
-    private int unk2700OFKHLGLOPCM_;
+    public static final int CLEAN_MUD_COUNT_FIELD_NUMBER = 2;
+    private int cleanMudCount_;
     /**
-     * <code>uint32 Unk2700_OFKHLGLOPCM = 2;</code>
-     * @return The unk2700OFKHLGLOPCM.
+     * <code>uint32 clean_mud_count = 2;</code>
+     * @return The cleanMudCount.
      */
     @java.lang.Override
-    public int getUnk2700OFKHLGLOPCM() {
-      return unk2700OFKHLGLOPCM_;
+    public int getCleanMudCount() {
+      return cleanMudCount_;
     }
 
     public static final int KILL_SPECIAL_MONSTER_COUNT_FIELD_NUMBER = 6;
@@ -197,8 +197,8 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700OFKHLGLOPCM_ != 0) {
-        output.writeUInt32(2, unk2700OFKHLGLOPCM_);
+      if (cleanMudCount_ != 0) {
+        output.writeUInt32(2, cleanMudCount_);
       }
       if (score_ != 0) {
         output.writeUInt32(3, score_);
@@ -218,9 +218,9 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700OFKHLGLOPCM_ != 0) {
+      if (cleanMudCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, unk2700OFKHLGLOPCM_);
+          .computeUInt32Size(2, cleanMudCount_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -253,8 +253,8 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
           != other.getKillMonsterCount()) return false;
       if (getScore()
           != other.getScore()) return false;
-      if (getUnk2700OFKHLGLOPCM()
-          != other.getUnk2700OFKHLGLOPCM()) return false;
+      if (getCleanMudCount()
+          != other.getCleanMudCount()) return false;
       if (getKillSpecialMonsterCount()
           != other.getKillSpecialMonsterCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -272,8 +272,8 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
       hash = (53 * hash) + getKillMonsterCount();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + UNK2700_OFKHLGLOPCM_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700OFKHLGLOPCM();
+      hash = (37 * hash) + CLEAN_MUD_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCleanMudCount();
       hash = (37 * hash) + KILL_SPECIAL_MONSTER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getKillSpecialMonsterCount();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -413,7 +413,7 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
 
         score_ = 0;
 
-        unk2700OFKHLGLOPCM_ = 0;
+        cleanMudCount_ = 0;
 
         killSpecialMonsterCount_ = 0;
 
@@ -445,7 +445,7 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
         emu.grasscutter.net.proto.SceneGalleryLuminanceStoneChallengeInfoOuterClass.SceneGalleryLuminanceStoneChallengeInfo result = new emu.grasscutter.net.proto.SceneGalleryLuminanceStoneChallengeInfoOuterClass.SceneGalleryLuminanceStoneChallengeInfo(this);
         result.killMonsterCount_ = killMonsterCount_;
         result.score_ = score_;
-        result.unk2700OFKHLGLOPCM_ = unk2700OFKHLGLOPCM_;
+        result.cleanMudCount_ = cleanMudCount_;
         result.killSpecialMonsterCount_ = killSpecialMonsterCount_;
         onBuilt();
         return result;
@@ -501,8 +501,8 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (other.getUnk2700OFKHLGLOPCM() != 0) {
-          setUnk2700OFKHLGLOPCM(other.getUnk2700OFKHLGLOPCM());
+        if (other.getCleanMudCount() != 0) {
+          setCleanMudCount(other.getCleanMudCount());
         }
         if (other.getKillSpecialMonsterCount() != 0) {
           setKillSpecialMonsterCount(other.getKillSpecialMonsterCount());
@@ -598,33 +598,33 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
         return this;
       }
 
-      private int unk2700OFKHLGLOPCM_ ;
+      private int cleanMudCount_ ;
       /**
-       * <code>uint32 Unk2700_OFKHLGLOPCM = 2;</code>
-       * @return The unk2700OFKHLGLOPCM.
+       * <code>uint32 clean_mud_count = 2;</code>
+       * @return The cleanMudCount.
        */
       @java.lang.Override
-      public int getUnk2700OFKHLGLOPCM() {
-        return unk2700OFKHLGLOPCM_;
+      public int getCleanMudCount() {
+        return cleanMudCount_;
       }
       /**
-       * <code>uint32 Unk2700_OFKHLGLOPCM = 2;</code>
-       * @param value The unk2700OFKHLGLOPCM to set.
+       * <code>uint32 clean_mud_count = 2;</code>
+       * @param value The cleanMudCount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700OFKHLGLOPCM(int value) {
+      public Builder setCleanMudCount(int value) {
         
-        unk2700OFKHLGLOPCM_ = value;
+        cleanMudCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_OFKHLGLOPCM = 2;</code>
+       * <code>uint32 clean_mud_count = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700OFKHLGLOPCM() {
+      public Builder clearCleanMudCount() {
         
-        unk2700OFKHLGLOPCM_ = 0;
+        cleanMudCount_ = 0;
         onChanged();
         return this;
       }
@@ -727,11 +727,11 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n-SceneGalleryLuminanceStoneChallengeInf" +
-      "o.proto\"\225\001\n\'SceneGalleryLuminanceStoneCh" +
+      "o.proto\"\221\001\n\'SceneGalleryLuminanceStoneCh" +
       "allengeInfo\022\032\n\022kill_monster_count\030\005 \001(\r\022" +
-      "\r\n\005score\030\003 \001(\r\022\033\n\023Unk2700_OFKHLGLOPCM\030\002 " +
-      "\001(\r\022\"\n\032kill_special_monster_count\030\006 \001(\rB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\r\n\005score\030\003 \001(\r\022\027\n\017clean_mud_count\030\002 \001(\r\022" +
+      "\"\n\032kill_special_monster_count\030\006 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +742,7 @@ public final class SceneGalleryLuminanceStoneChallengeInfoOuterClass {
     internal_static_SceneGalleryLuminanceStoneChallengeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryLuminanceStoneChallengeInfo_descriptor,
-        new java.lang.String[] { "KillMonsterCount", "Score", "Unk2700OFKHLGLOPCM", "KillSpecialMonsterCount", });
+        new java.lang.String[] { "KillMonsterCount", "Score", "CleanMudCount", "KillSpecialMonsterCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

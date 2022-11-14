@@ -67,27 +67,27 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         int index);
 
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG> 
-        getUnk2700HMENAAMGMBBList();
+    java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> 
+        getSettleRewardInfoListList();
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
-    emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG getUnk2700HMENAAMGMBB(int index);
+    emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo getSettleRewardInfoList(int index);
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
-    int getUnk2700HMENAAMGMBBCount();
+    int getSettleRewardInfoListCount();
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder> 
-        getUnk2700HMENAAMGMBBOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> 
+        getSettleRewardInfoListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
-    emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder getUnk2700HMENAAMGMBBOrBuilder(
+    emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder getSettleRewardInfoListOrBuilder(
         int index);
   }
   /**
@@ -110,7 +110,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
     }
     private ScenePlayBattleResultNotify() {
       settlePlayerInfoList_ = java.util.Collections.emptyList();
-      unk2700HMENAAMGMBB_ = java.util.Collections.emptyList();
+      settleRewardInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -170,11 +170,11 @@ public final class ScenePlayBattleResultNotifyOuterClass {
             }
             case 114: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk2700HMENAAMGMBB_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG>();
+                settleRewardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              unk2700HMENAAMGMBB_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.parser(), extensionRegistry));
+              settleRewardInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.parser(), extensionRegistry));
               break;
             }
             case 120: {
@@ -201,7 +201,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
           settlePlayerInfoList_ = java.util.Collections.unmodifiableList(settlePlayerInfoList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unk2700HMENAAMGMBB_ = java.util.Collections.unmodifiableList(unk2700HMENAAMGMBB_);
+          settleRewardInfoList_ = java.util.Collections.unmodifiableList(settleRewardInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -304,44 +304,44 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       return settlePlayerInfoList_.get(index);
     }
 
-    public static final int UNK2700_HMENAAMGMBB_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG> unk2700HMENAAMGMBB_;
+    public static final int SETTLE_REWARD_INFO_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> settleRewardInfoList_;
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG> getUnk2700HMENAAMGMBBList() {
-      return unk2700HMENAAMGMBB_;
+    public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> getSettleRewardInfoListList() {
+      return settleRewardInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder> 
-        getUnk2700HMENAAMGMBBOrBuilderList() {
-      return unk2700HMENAAMGMBB_;
+    public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> 
+        getSettleRewardInfoListOrBuilderList() {
+      return settleRewardInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
     @java.lang.Override
-    public int getUnk2700HMENAAMGMBBCount() {
-      return unk2700HMENAAMGMBB_.size();
+    public int getSettleRewardInfoListCount() {
+      return settleRewardInfoList_.size();
     }
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG getUnk2700HMENAAMGMBB(int index) {
-      return unk2700HMENAAMGMBB_.get(index);
+    public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo getSettleRewardInfoList(int index) {
+      return settleRewardInfoList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder getUnk2700HMENAAMGMBBOrBuilder(
+    public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder getSettleRewardInfoListOrBuilder(
         int index) {
-      return unk2700HMENAAMGMBB_.get(index);
+      return settleRewardInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -370,8 +370,8 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       if (playId_ != 0) {
         output.writeUInt32(11, playId_);
       }
-      for (int i = 0; i < unk2700HMENAAMGMBB_.size(); i++) {
-        output.writeMessage(14, unk2700HMENAAMGMBB_.get(i));
+      for (int i = 0; i < settleRewardInfoList_.size(); i++) {
+        output.writeMessage(14, settleRewardInfoList_.get(i));
       }
       if (playType_ != 0) {
         output.writeUInt32(15, playType_);
@@ -401,9 +401,9 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, playId_);
       }
-      for (int i = 0; i < unk2700HMENAAMGMBB_.size(); i++) {
+      for (int i = 0; i < settleRewardInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, unk2700HMENAAMGMBB_.get(i));
+          .computeMessageSize(14, settleRewardInfoList_.get(i));
       }
       if (playType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -434,8 +434,8 @@ public final class ScenePlayBattleResultNotifyOuterClass {
           != other.getPlayId()) return false;
       if (!getSettlePlayerInfoListList()
           .equals(other.getSettlePlayerInfoListList())) return false;
-      if (!getUnk2700HMENAAMGMBBList()
-          .equals(other.getUnk2700HMENAAMGMBBList())) return false;
+      if (!getSettleRewardInfoListList()
+          .equals(other.getSettleRewardInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -460,9 +460,9 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         hash = (37 * hash) + SETTLE_PLAYER_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSettlePlayerInfoListList().hashCode();
       }
-      if (getUnk2700HMENAAMGMBBCount() > 0) {
-        hash = (37 * hash) + UNK2700_HMENAAMGMBB_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700HMENAAMGMBBList().hashCode();
+      if (getSettleRewardInfoListCount() > 0) {
+        hash = (37 * hash) + SETTLE_REWARD_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSettleRewardInfoListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -599,7 +599,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getSettlePlayerInfoListFieldBuilder();
-          getUnk2700HMENAAMGMBBFieldBuilder();
+          getSettleRewardInfoListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -619,11 +619,11 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         } else {
           settlePlayerInfoListBuilder_.clear();
         }
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          unk2700HMENAAMGMBB_ = java.util.Collections.emptyList();
+        if (settleRewardInfoListBuilder_ == null) {
+          settleRewardInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          unk2700HMENAAMGMBBBuilder_.clear();
+          settleRewardInfoListBuilder_.clear();
         }
         return this;
       }
@@ -665,14 +665,14 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         } else {
           result.settlePlayerInfoList_ = settlePlayerInfoListBuilder_.build();
         }
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
+        if (settleRewardInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            unk2700HMENAAMGMBB_ = java.util.Collections.unmodifiableList(unk2700HMENAAMGMBB_);
+            settleRewardInfoList_ = java.util.Collections.unmodifiableList(settleRewardInfoList_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.unk2700HMENAAMGMBB_ = unk2700HMENAAMGMBB_;
+          result.settleRewardInfoList_ = settleRewardInfoList_;
         } else {
-          result.unk2700HMENAAMGMBB_ = unk2700HMENAAMGMBBBuilder_.build();
+          result.settleRewardInfoList_ = settleRewardInfoListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -760,29 +760,29 @@ public final class ScenePlayBattleResultNotifyOuterClass {
             }
           }
         }
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          if (!other.unk2700HMENAAMGMBB_.isEmpty()) {
-            if (unk2700HMENAAMGMBB_.isEmpty()) {
-              unk2700HMENAAMGMBB_ = other.unk2700HMENAAMGMBB_;
+        if (settleRewardInfoListBuilder_ == null) {
+          if (!other.settleRewardInfoList_.isEmpty()) {
+            if (settleRewardInfoList_.isEmpty()) {
+              settleRewardInfoList_ = other.settleRewardInfoList_;
               bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureUnk2700HMENAAMGMBBIsMutable();
-              unk2700HMENAAMGMBB_.addAll(other.unk2700HMENAAMGMBB_);
+              ensureSettleRewardInfoListIsMutable();
+              settleRewardInfoList_.addAll(other.settleRewardInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700HMENAAMGMBB_.isEmpty()) {
-            if (unk2700HMENAAMGMBBBuilder_.isEmpty()) {
-              unk2700HMENAAMGMBBBuilder_.dispose();
-              unk2700HMENAAMGMBBBuilder_ = null;
-              unk2700HMENAAMGMBB_ = other.unk2700HMENAAMGMBB_;
+          if (!other.settleRewardInfoList_.isEmpty()) {
+            if (settleRewardInfoListBuilder_.isEmpty()) {
+              settleRewardInfoListBuilder_.dispose();
+              settleRewardInfoListBuilder_ = null;
+              settleRewardInfoList_ = other.settleRewardInfoList_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              unk2700HMENAAMGMBBBuilder_ = 
+              settleRewardInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700HMENAAMGMBBFieldBuilder() : null;
+                   getSettleRewardInfoListFieldBuilder() : null;
             } else {
-              unk2700HMENAAMGMBBBuilder_.addAllMessages(other.unk2700HMENAAMGMBB_);
+              settleRewardInfoListBuilder_.addAllMessages(other.settleRewardInfoList_);
             }
           }
         }
@@ -1180,244 +1180,244 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return settlePlayerInfoListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG> unk2700HMENAAMGMBB_ =
+      private java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> settleRewardInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700HMENAAMGMBBIsMutable() {
+      private void ensureSettleRewardInfoListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          unk2700HMENAAMGMBB_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG>(unk2700HMENAAMGMBB_);
+          settleRewardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo>(settleRewardInfoList_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder> unk2700HMENAAMGMBBBuilder_;
+          emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> settleRewardInfoListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG> getUnk2700HMENAAMGMBBList() {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700HMENAAMGMBB_);
+      public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> getSettleRewardInfoListList() {
+        if (settleRewardInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settleRewardInfoList_);
         } else {
-          return unk2700HMENAAMGMBBBuilder_.getMessageList();
+          return settleRewardInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public int getUnk2700HMENAAMGMBBCount() {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          return unk2700HMENAAMGMBB_.size();
+      public int getSettleRewardInfoListCount() {
+        if (settleRewardInfoListBuilder_ == null) {
+          return settleRewardInfoList_.size();
         } else {
-          return unk2700HMENAAMGMBBBuilder_.getCount();
+          return settleRewardInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG getUnk2700HMENAAMGMBB(int index) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          return unk2700HMENAAMGMBB_.get(index);
+      public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo getSettleRewardInfoList(int index) {
+        if (settleRewardInfoListBuilder_ == null) {
+          return settleRewardInfoList_.get(index);
         } else {
-          return unk2700HMENAAMGMBBBuilder_.getMessage(index);
+          return settleRewardInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder setUnk2700HMENAAMGMBB(
-          int index, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG value) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
+      public Builder setSettleRewardInfoList(
+          int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo value) {
+        if (settleRewardInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HMENAAMGMBBIsMutable();
-          unk2700HMENAAMGMBB_.set(index, value);
+          ensureSettleRewardInfoListIsMutable();
+          settleRewardInfoList_.set(index, value);
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.setMessage(index, value);
+          settleRewardInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder setUnk2700HMENAAMGMBB(
-          int index, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder builderForValue) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          ensureUnk2700HMENAAMGMBBIsMutable();
-          unk2700HMENAAMGMBB_.set(index, builderForValue.build());
+      public Builder setSettleRewardInfoList(
+          int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder builderForValue) {
+        if (settleRewardInfoListBuilder_ == null) {
+          ensureSettleRewardInfoListIsMutable();
+          settleRewardInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.setMessage(index, builderForValue.build());
+          settleRewardInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder addUnk2700HMENAAMGMBB(emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG value) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
+      public Builder addSettleRewardInfoList(emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo value) {
+        if (settleRewardInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HMENAAMGMBBIsMutable();
-          unk2700HMENAAMGMBB_.add(value);
+          ensureSettleRewardInfoListIsMutable();
+          settleRewardInfoList_.add(value);
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.addMessage(value);
+          settleRewardInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder addUnk2700HMENAAMGMBB(
-          int index, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG value) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
+      public Builder addSettleRewardInfoList(
+          int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo value) {
+        if (settleRewardInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HMENAAMGMBBIsMutable();
-          unk2700HMENAAMGMBB_.add(index, value);
+          ensureSettleRewardInfoListIsMutable();
+          settleRewardInfoList_.add(index, value);
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.addMessage(index, value);
+          settleRewardInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder addUnk2700HMENAAMGMBB(
-          emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder builderForValue) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          ensureUnk2700HMENAAMGMBBIsMutable();
-          unk2700HMENAAMGMBB_.add(builderForValue.build());
+      public Builder addSettleRewardInfoList(
+          emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder builderForValue) {
+        if (settleRewardInfoListBuilder_ == null) {
+          ensureSettleRewardInfoListIsMutable();
+          settleRewardInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.addMessage(builderForValue.build());
+          settleRewardInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder addUnk2700HMENAAMGMBB(
-          int index, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder builderForValue) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          ensureUnk2700HMENAAMGMBBIsMutable();
-          unk2700HMENAAMGMBB_.add(index, builderForValue.build());
+      public Builder addSettleRewardInfoList(
+          int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder builderForValue) {
+        if (settleRewardInfoListBuilder_ == null) {
+          ensureSettleRewardInfoListIsMutable();
+          settleRewardInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.addMessage(index, builderForValue.build());
+          settleRewardInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder addAllUnk2700HMENAAMGMBB(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG> values) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          ensureUnk2700HMENAAMGMBBIsMutable();
+      public Builder addAllSettleRewardInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> values) {
+        if (settleRewardInfoListBuilder_ == null) {
+          ensureSettleRewardInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700HMENAAMGMBB_);
+              values, settleRewardInfoList_);
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.addAllMessages(values);
+          settleRewardInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder clearUnk2700HMENAAMGMBB() {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          unk2700HMENAAMGMBB_ = java.util.Collections.emptyList();
+      public Builder clearSettleRewardInfoList() {
+        if (settleRewardInfoListBuilder_ == null) {
+          settleRewardInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.clear();
+          settleRewardInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public Builder removeUnk2700HMENAAMGMBB(int index) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          ensureUnk2700HMENAAMGMBBIsMutable();
-          unk2700HMENAAMGMBB_.remove(index);
+      public Builder removeSettleRewardInfoList(int index) {
+        if (settleRewardInfoListBuilder_ == null) {
+          ensureSettleRewardInfoListIsMutable();
+          settleRewardInfoList_.remove(index);
           onChanged();
         } else {
-          unk2700HMENAAMGMBBBuilder_.remove(index);
+          settleRewardInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder getUnk2700HMENAAMGMBBBuilder(
+      public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder getSettleRewardInfoListBuilder(
           int index) {
-        return getUnk2700HMENAAMGMBBFieldBuilder().getBuilder(index);
+        return getSettleRewardInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder getUnk2700HMENAAMGMBBOrBuilder(
+      public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder getSettleRewardInfoListOrBuilder(
           int index) {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          return unk2700HMENAAMGMBB_.get(index);  } else {
-          return unk2700HMENAAMGMBBBuilder_.getMessageOrBuilder(index);
+        if (settleRewardInfoListBuilder_ == null) {
+          return settleRewardInfoList_.get(index);  } else {
+          return settleRewardInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder> 
-           getUnk2700HMENAAMGMBBOrBuilderList() {
-        if (unk2700HMENAAMGMBBBuilder_ != null) {
-          return unk2700HMENAAMGMBBBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> 
+           getSettleRewardInfoListOrBuilderList() {
+        if (settleRewardInfoListBuilder_ != null) {
+          return settleRewardInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700HMENAAMGMBB_);
+          return java.util.Collections.unmodifiableList(settleRewardInfoList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder addUnk2700HMENAAMGMBBBuilder() {
-        return getUnk2700HMENAAMGMBBFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.getDefaultInstance());
+      public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder addSettleRewardInfoListBuilder() {
+        return getSettleRewardInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder addUnk2700HMENAAMGMBBBuilder(
+      public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder addSettleRewardInfoListBuilder(
           int index) {
-        return getUnk2700HMENAAMGMBBFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.getDefaultInstance());
+        return getSettleRewardInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder> 
-           getUnk2700HMENAAMGMBBBuilderList() {
-        return getUnk2700HMENAAMGMBBFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder> 
+           getSettleRewardInfoListBuilderList() {
+        return getSettleRewardInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder> 
-          getUnk2700HMENAAMGMBBFieldBuilder() {
-        if (unk2700HMENAAMGMBBBuilder_ == null) {
-          unk2700HMENAAMGMBBBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBG.Builder, emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.Unk2700_OHOKEEGPPBGOrBuilder>(
-                  unk2700HMENAAMGMBB_,
+          emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> 
+          getSettleRewardInfoListFieldBuilder() {
+        if (settleRewardInfoListBuilder_ == null) {
+          settleRewardInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder>(
+                  settleRewardInfoList_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700HMENAAMGMBB_ = null;
+          settleRewardInfoList_ = null;
         }
-        return unk2700HMENAAMGMBBBuilder_;
+        return settleRewardInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1487,29 +1487,30 @@ public final class ScenePlayBattleResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!ScenePlayBattleResultNotify.proto\032%Sce" +
-      "nePlayBattleSettlePlayerInfo.proto\032\031Unk2" +
-      "700_OHOKEEGPPBG.proto\"\332\001\n\033ScenePlayBattl" +
-      "eResultNotify\022\016\n\006is_win\030\001 \001(\010\022\021\n\tcost_ti" +
-      "me\030\007 \001(\r\022\021\n\tplay_type\030\017 \001(\r\022\017\n\007play_id\030\013" +
-      " \001(\r\022A\n\027settle_player_info_list\030\004 \003(\0132 ." +
-      "ScenePlayBattleSettlePlayerInfo\0221\n\023Unk27" +
-      "00_HMENAAMGMBB\030\016 \003(\0132\024.Unk2700_OHOKEEGPP" +
-      "BGB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "nePlayBattleSettlePlayerInfo.proto\032%Scen" +
+      "ePlayBattleSettleRewardInfo.proto\"\352\001\n\033Sc" +
+      "enePlayBattleResultNotify\022\016\n\006is_win\030\001 \001(" +
+      "\010\022\021\n\tcost_time\030\007 \001(\r\022\021\n\tplay_type\030\017 \001(\r\022" +
+      "\017\n\007play_id\030\013 \001(\r\022A\n\027settle_player_info_l" +
+      "ist\030\004 \003(\0132 .ScenePlayBattleSettlePlayerI" +
+      "nfo\022A\n\027settle_reward_info_list\030\016 \003(\0132 .S" +
+      "cenePlayBattleSettleRewardInfoB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.getDescriptor(),
+          emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.getDescriptor(),
         });
     internal_static_ScenePlayBattleResultNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ScenePlayBattleResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayBattleResultNotify_descriptor,
-        new java.lang.String[] { "IsWin", "CostTime", "PlayType", "PlayId", "SettlePlayerInfoList", "Unk2700HMENAAMGMBB", });
+        new java.lang.String[] { "IsWin", "CostTime", "PlayType", "PlayId", "SettlePlayerInfoList", "SettleRewardInfoList", });
     emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Unk2700OHOKEEGPPBG.getDescriptor();
+    emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

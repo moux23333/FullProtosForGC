@@ -36,9 +36,9 @@ public final class RogueCellStateOuterClass {
      */
     ROGUE_CELL_STATE_FINISH(3),
     /**
-     * <code>ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ = 4;</code>
+     * <code>ROGUE_CELL_STATE_TAKEN_CHEST = 4;</code>
      */
-    ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ(4),
+    ROGUE_CELL_STATE_TAKEN_CHEST(4),
     UNRECOGNIZED(-1),
     ;
 
@@ -59,9 +59,9 @@ public final class RogueCellStateOuterClass {
      */
     public static final int ROGUE_CELL_STATE_FINISH_VALUE = 3;
     /**
-     * <code>ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ = 4;</code>
+     * <code>ROGUE_CELL_STATE_TAKEN_CHEST = 4;</code>
      */
-    public static final int ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ_VALUE = 4;
+    public static final int ROGUE_CELL_STATE_TAKEN_CHEST_VALUE = 4;
 
 
     public final int getNumber() {
@@ -92,7 +92,7 @@ public final class RogueCellStateOuterClass {
         case 1: return ROGUE_CELL_STATE_BATTLE;
         case 2: return ROGUE_CELL_STATE_SUCCESS;
         case 3: return ROGUE_CELL_STATE_FINISH;
-        case 4: return ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ;
+        case 4: return ROGUE_CELL_STATE_TAKEN_CHEST;
         default: return null;
       }
     }
@@ -158,12 +158,12 @@ public final class RogueCellStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024RogueCellState.proto*\255\001\n\016RogueCellStat" +
+      "\n\024RogueCellState.proto*\245\001\n\016RogueCellStat" +
       "e\022\031\n\025ROGUE_CELL_STATE_NONE\020\000\022\033\n\027ROGUE_CE" +
       "LL_STATE_BATTLE\020\001\022\034\n\030ROGUE_CELL_STATE_SU" +
-      "CCESS\020\002\022\033\n\027ROGUE_CELL_STATE_FINISH\020\003\022(\n$" +
-      "ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ\020\004B\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "CCESS\020\002\022\033\n\027ROGUE_CELL_STATE_FINISH\020\003\022 \n\034" +
+      "ROGUE_CELL_STATE_TAKEN_CHEST\020\004B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

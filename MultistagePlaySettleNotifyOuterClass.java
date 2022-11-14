@@ -61,19 +61,19 @@ public final class MultistagePlaySettleNotifyOuterClass {
     emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfoOrBuilder getChessSettleInfoOrBuilder();
 
     /**
-     * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+     * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
      * @return Whether the irodoriChessSettleInfo field is set.
      */
     boolean hasIrodoriChessSettleInfo();
     /**
-     * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+     * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
      * @return The irodoriChessSettleInfo.
      */
-    emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo getIrodoriChessSettleInfo();
+    emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo getIrodoriChessSettleInfo();
     /**
-     * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+     * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
      */
-    emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfoOrBuilder getIrodoriChessSettleInfoOrBuilder();
+    emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfoOrBuilder getIrodoriChessSettleInfoOrBuilder();
 
     public emu.grasscutter.net.proto.MultistagePlaySettleNotifyOuterClass.MultistagePlaySettleNotify.DetailCase getDetailCase();
   }
@@ -139,14 +139,14 @@ public final class MultistagePlaySettleNotifyOuterClass {
               break;
             }
             case 4898: {
-              emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.Builder subBuilder = null;
+              emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder subBuilder = null;
               if (detailCase_ == 612) {
-                subBuilder = ((emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 612;
@@ -341,7 +341,7 @@ public final class MultistagePlaySettleNotifyOuterClass {
 
     public static final int IRODORI_CHESS_SETTLE_INFO_FIELD_NUMBER = 612;
     /**
-     * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+     * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
      * @return Whether the irodoriChessSettleInfo field is set.
      */
     @java.lang.Override
@@ -349,25 +349,25 @@ public final class MultistagePlaySettleNotifyOuterClass {
       return detailCase_ == 612;
     }
     /**
-     * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+     * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
      * @return The irodoriChessSettleInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo getIrodoriChessSettleInfo() {
+    public emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo getIrodoriChessSettleInfo() {
       if (detailCase_ == 612) {
-         return (emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_;
+         return (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_;
       }
-      return emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+     * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfoOrBuilder getIrodoriChessSettleInfoOrBuilder() {
+    public emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfoOrBuilder getIrodoriChessSettleInfoOrBuilder() {
       if (detailCase_ == 612) {
-         return (emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_;
+         return (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_;
       }
-      return emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -391,7 +391,7 @@ public final class MultistagePlaySettleNotifyOuterClass {
         output.writeUInt32(14, playIndex_);
       }
       if (detailCase_ == 612) {
-        output.writeMessage(612, (emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_);
+        output.writeMessage(612, (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_);
       }
       if (detailCase_ == 1283) {
         output.writeMessage(1283, (emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo) detail_);
@@ -418,7 +418,7 @@ public final class MultistagePlaySettleNotifyOuterClass {
       }
       if (detailCase_ == 612) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(612, (emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_);
+          .computeMessageSize(612, (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_);
       }
       if (detailCase_ == 1283) {
         size += com.google.protobuf.CodedOutputStream
@@ -1150,9 +1150,9 @@ public final class MultistagePlaySettleNotifyOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo, emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.Builder, emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfoOrBuilder> irodoriChessSettleInfoBuilder_;
+          emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfoOrBuilder> irodoriChessSettleInfoBuilder_;
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        * @return Whether the irodoriChessSettleInfo field is set.
        */
       @java.lang.Override
@@ -1160,27 +1160,27 @@ public final class MultistagePlaySettleNotifyOuterClass {
         return detailCase_ == 612;
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        * @return The irodoriChessSettleInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo getIrodoriChessSettleInfo() {
+      public emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo getIrodoriChessSettleInfo() {
         if (irodoriChessSettleInfoBuilder_ == null) {
           if (detailCase_ == 612) {
-            return (emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_;
+            return (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_;
           }
-          return emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance();
         } else {
           if (detailCase_ == 612) {
             return irodoriChessSettleInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        */
-      public Builder setIrodoriChessSettleInfo(emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo value) {
+      public Builder setIrodoriChessSettleInfo(emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo value) {
         if (irodoriChessSettleInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1194,10 +1194,10 @@ public final class MultistagePlaySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        */
       public Builder setIrodoriChessSettleInfo(
-          emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder builderForValue) {
         if (irodoriChessSettleInfoBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
@@ -1208,13 +1208,13 @@ public final class MultistagePlaySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        */
-      public Builder mergeIrodoriChessSettleInfo(emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo value) {
+      public Builder mergeIrodoriChessSettleInfo(emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo value) {
         if (irodoriChessSettleInfoBuilder_ == null) {
           if (detailCase_ == 612 &&
-              detail_ != emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.newBuilder((emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_)
+              detail_ != emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.newBuilder((emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
@@ -1230,7 +1230,7 @@ public final class MultistagePlaySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        */
       public Builder clearIrodoriChessSettleInfo() {
         if (irodoriChessSettleInfoBuilder_ == null) {
@@ -1249,38 +1249,38 @@ public final class MultistagePlaySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        */
-      public emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.Builder getIrodoriChessSettleInfoBuilder() {
+      public emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder getIrodoriChessSettleInfoBuilder() {
         return getIrodoriChessSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfoOrBuilder getIrodoriChessSettleInfoOrBuilder() {
+      public emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfoOrBuilder getIrodoriChessSettleInfoOrBuilder() {
         if ((detailCase_ == 612) && (irodoriChessSettleInfoBuilder_ != null)) {
           return irodoriChessSettleInfoBuilder_.getMessageOrBuilder();
         } else {
           if (detailCase_ == 612) {
-            return (emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_;
+            return (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_;
           }
-          return emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.IrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
+       * <code>.InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo, emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.Builder, emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfoOrBuilder> 
+          emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfoOrBuilder> 
           getIrodoriChessSettleInfoFieldBuilder() {
         if (irodoriChessSettleInfoBuilder_ == null) {
           if (!(detailCase_ == 612)) {
-            detail_ = emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.getDefaultInstance();
+            detail_ = emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance();
           }
           irodoriChessSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo, emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo.Builder, emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.IrodoriChessSettleInfo) detail_,
+              emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
@@ -1357,23 +1357,24 @@ public final class MultistagePlaySettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n MultistagePlaySettleNotify.proto\032\035InBa" +
-      "ttleChessSettleInfo.proto\032\"InBattleMecha" +
-      "nicusSettleInfo.proto\032\034IrodoriChessSettl" +
-      "eInfo.proto\"\205\002\n\032MultistagePlaySettleNoti" +
-      "fy\022\022\n\nplay_index\030\016 \001(\r\022\020\n\010group_id\030\004 \001(\r" +
-      "\022@\n\026mechanicus_settle_info\030\372\n \001(\0132\035.InBa" +
-      "ttleMechanicusSettleInfoH\000\0226\n\021chess_sett" +
-      "le_info\030\203\n \001(\0132\030.InBattleChessSettleInfo" +
-      "H\000\022=\n\031irodori_chess_settle_info\030\344\004 \001(\0132\027" +
-      ".IrodoriChessSettleInfoH\000B\010\n\006detailB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "ttleChessSettleInfo.proto\032$InBattleIrodo" +
+      "riChessSettleInfo.proto\032\"InBattleMechani" +
+      "cusSettleInfo.proto\"\215\002\n\032MultistagePlaySe" +
+      "ttleNotify\022\022\n\nplay_index\030\016 \001(\r\022\020\n\010group_" +
+      "id\030\004 \001(\r\022@\n\026mechanicus_settle_info\030\372\n \001(" +
+      "\0132\035.InBattleMechanicusSettleInfoH\000\0226\n\021ch" +
+      "ess_settle_info\030\203\n \001(\0132\030.InBattleChessSe" +
+      "ttleInfoH\000\022E\n\031irodori_chess_settle_info\030" +
+      "\344\004 \001(\0132\037.InBattleIrodoriChessSettleInfoH" +
+      "\000B\010\n\006detailB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.getDescriptor(),
         });
     internal_static_MultistagePlaySettleNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1382,8 +1383,8 @@ public final class MultistagePlaySettleNotifyOuterClass {
         internal_static_MultistagePlaySettleNotify_descriptor,
         new java.lang.String[] { "PlayIndex", "GroupId", "MechanicusSettleInfo", "ChessSettleInfo", "IrodoriChessSettleInfo", "Detail", });
     emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.IrodoriChessSettleInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

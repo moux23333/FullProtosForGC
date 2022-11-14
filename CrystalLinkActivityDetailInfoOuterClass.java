@@ -19,27 +19,27 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP> 
-        getUnk2700FIKHCFMEOAJList();
+    java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> 
+        getLevelInfoListList();
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
-    emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP getUnk2700FIKHCFMEOAJ(int index);
+    emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo getLevelInfoList(int index);
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
-    int getUnk2700FIKHCFMEOAJCount();
+    int getLevelInfoListCount();
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder> 
-        getUnk2700FIKHCFMEOAJOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+        getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
-    emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder getUnk2700FIKHCFMEOAJOrBuilder(
+    emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder getLevelInfoListOrBuilder(
         int index);
 
     /**
@@ -61,7 +61,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       super(builder);
     }
     private CrystalLinkActivityDetailInfo() {
-      unk2700FIKHCFMEOAJ_ = java.util.Collections.emptyList();
+      levelInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -97,11 +97,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
               break;
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700FIKHCFMEOAJ_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700FIKHCFMEOAJ_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.parser(), extensionRegistry));
+              levelInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.parser(), extensionRegistry));
               break;
             }
             case 56: {
@@ -125,7 +125,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700FIKHCFMEOAJ_ = java.util.Collections.unmodifiableList(unk2700FIKHCFMEOAJ_);
+          levelInfoList_ = java.util.Collections.unmodifiableList(levelInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -144,44 +144,44 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo.class, emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo.Builder.class);
     }
 
-    public static final int UNK2700_FIKHCFMEOAJ_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP> unk2700FIKHCFMEOAJ_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 3;
+    private java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> levelInfoList_;
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP> getUnk2700FIKHCFMEOAJList() {
-      return unk2700FIKHCFMEOAJ_;
+    public java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> getLevelInfoListList() {
+      return levelInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder> 
-        getUnk2700FIKHCFMEOAJOrBuilderList() {
-      return unk2700FIKHCFMEOAJ_;
+    public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+        getLevelInfoListOrBuilderList() {
+      return levelInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
     @java.lang.Override
-    public int getUnk2700FIKHCFMEOAJCount() {
-      return unk2700FIKHCFMEOAJ_.size();
+    public int getLevelInfoListCount() {
+      return levelInfoList_.size();
     }
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP getUnk2700FIKHCFMEOAJ(int index) {
-      return unk2700FIKHCFMEOAJ_.get(index);
+    public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo getLevelInfoList(int index) {
+      return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+     * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder getUnk2700FIKHCFMEOAJOrBuilder(
+    public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder getLevelInfoListOrBuilder(
         int index) {
-      return unk2700FIKHCFMEOAJ_.get(index);
+      return levelInfoList_.get(index);
     }
 
     public static final int DIFFICULTY_ID_FIELD_NUMBER = 7;
@@ -209,8 +209,8 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < unk2700FIKHCFMEOAJ_.size(); i++) {
-        output.writeMessage(3, unk2700FIKHCFMEOAJ_.get(i));
+      for (int i = 0; i < levelInfoList_.size(); i++) {
+        output.writeMessage(3, levelInfoList_.get(i));
       }
       if (difficultyId_ != 0) {
         output.writeUInt32(7, difficultyId_);
@@ -224,9 +224,9 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < unk2700FIKHCFMEOAJ_.size(); i++) {
+      for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, unk2700FIKHCFMEOAJ_.get(i));
+          .computeMessageSize(3, levelInfoList_.get(i));
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -247,8 +247,8 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo other = (emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo) obj;
 
-      if (!getUnk2700FIKHCFMEOAJList()
-          .equals(other.getUnk2700FIKHCFMEOAJList())) return false;
+      if (!getLevelInfoListList()
+          .equals(other.getLevelInfoListList())) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -262,9 +262,9 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getUnk2700FIKHCFMEOAJCount() > 0) {
-        hash = (37 * hash) + UNK2700_FIKHCFMEOAJ_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700FIKHCFMEOAJList().hashCode();
+      if (getLevelInfoListCount() > 0) {
+        hash = (37 * hash) + LEVEL_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getLevelInfoListList().hashCode();
       }
       hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyId();
@@ -396,17 +396,17 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2700FIKHCFMEOAJFieldBuilder();
+          getLevelInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          unk2700FIKHCFMEOAJ_ = java.util.Collections.emptyList();
+        if (levelInfoListBuilder_ == null) {
+          levelInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2700FIKHCFMEOAJBuilder_.clear();
+          levelInfoListBuilder_.clear();
         }
         difficultyId_ = 0;
 
@@ -437,14 +437,14 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo result = new emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
+        if (levelInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2700FIKHCFMEOAJ_ = java.util.Collections.unmodifiableList(unk2700FIKHCFMEOAJ_);
+            levelInfoList_ = java.util.Collections.unmodifiableList(levelInfoList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2700FIKHCFMEOAJ_ = unk2700FIKHCFMEOAJ_;
+          result.levelInfoList_ = levelInfoList_;
         } else {
-          result.unk2700FIKHCFMEOAJ_ = unk2700FIKHCFMEOAJBuilder_.build();
+          result.levelInfoList_ = levelInfoListBuilder_.build();
         }
         result.difficultyId_ = difficultyId_;
         onBuilt();
@@ -495,29 +495,29 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo.getDefaultInstance()) return this;
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          if (!other.unk2700FIKHCFMEOAJ_.isEmpty()) {
-            if (unk2700FIKHCFMEOAJ_.isEmpty()) {
-              unk2700FIKHCFMEOAJ_ = other.unk2700FIKHCFMEOAJ_;
+        if (levelInfoListBuilder_ == null) {
+          if (!other.levelInfoList_.isEmpty()) {
+            if (levelInfoList_.isEmpty()) {
+              levelInfoList_ = other.levelInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2700FIKHCFMEOAJIsMutable();
-              unk2700FIKHCFMEOAJ_.addAll(other.unk2700FIKHCFMEOAJ_);
+              ensureLevelInfoListIsMutable();
+              levelInfoList_.addAll(other.levelInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700FIKHCFMEOAJ_.isEmpty()) {
-            if (unk2700FIKHCFMEOAJBuilder_.isEmpty()) {
-              unk2700FIKHCFMEOAJBuilder_.dispose();
-              unk2700FIKHCFMEOAJBuilder_ = null;
-              unk2700FIKHCFMEOAJ_ = other.unk2700FIKHCFMEOAJ_;
+          if (!other.levelInfoList_.isEmpty()) {
+            if (levelInfoListBuilder_.isEmpty()) {
+              levelInfoListBuilder_.dispose();
+              levelInfoListBuilder_ = null;
+              levelInfoList_ = other.levelInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2700FIKHCFMEOAJBuilder_ = 
+              levelInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700FIKHCFMEOAJFieldBuilder() : null;
+                   getLevelInfoListFieldBuilder() : null;
             } else {
-              unk2700FIKHCFMEOAJBuilder_.addAllMessages(other.unk2700FIKHCFMEOAJ_);
+              levelInfoListBuilder_.addAllMessages(other.levelInfoList_);
             }
           }
         }
@@ -554,244 +554,244 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP> unk2700FIKHCFMEOAJ_ =
+      private java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> levelInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700FIKHCFMEOAJIsMutable() {
+      private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700FIKHCFMEOAJ_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP>(unk2700FIKHCFMEOAJ_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder> unk2700FIKHCFMEOAJBuilder_;
+          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP> getUnk2700FIKHCFMEOAJList() {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700FIKHCFMEOAJ_);
+      public java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> getLevelInfoListList() {
+        if (levelInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
-          return unk2700FIKHCFMEOAJBuilder_.getMessageList();
+          return levelInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public int getUnk2700FIKHCFMEOAJCount() {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          return unk2700FIKHCFMEOAJ_.size();
+      public int getLevelInfoListCount() {
+        if (levelInfoListBuilder_ == null) {
+          return levelInfoList_.size();
         } else {
-          return unk2700FIKHCFMEOAJBuilder_.getCount();
+          return levelInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP getUnk2700FIKHCFMEOAJ(int index) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          return unk2700FIKHCFMEOAJ_.get(index);
+      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo getLevelInfoList(int index) {
+        if (levelInfoListBuilder_ == null) {
+          return levelInfoList_.get(index);
         } else {
-          return unk2700FIKHCFMEOAJBuilder_.getMessage(index);
+          return levelInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder setUnk2700FIKHCFMEOAJ(
-          int index, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP value) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
+      public Builder setLevelInfoList(
+          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo value) {
+        if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700FIKHCFMEOAJIsMutable();
-          unk2700FIKHCFMEOAJ_.set(index, value);
+          ensureLevelInfoListIsMutable();
+          levelInfoList_.set(index, value);
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.setMessage(index, value);
+          levelInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder setUnk2700FIKHCFMEOAJ(
-          int index, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder builderForValue) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          ensureUnk2700FIKHCFMEOAJIsMutable();
-          unk2700FIKHCFMEOAJ_.set(index, builderForValue.build());
+      public Builder setLevelInfoList(
+          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder builderForValue) {
+        if (levelInfoListBuilder_ == null) {
+          ensureLevelInfoListIsMutable();
+          levelInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.setMessage(index, builderForValue.build());
+          levelInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder addUnk2700FIKHCFMEOAJ(emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP value) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo value) {
+        if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700FIKHCFMEOAJIsMutable();
-          unk2700FIKHCFMEOAJ_.add(value);
+          ensureLevelInfoListIsMutable();
+          levelInfoList_.add(value);
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.addMessage(value);
+          levelInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder addUnk2700FIKHCFMEOAJ(
-          int index, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP value) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
+      public Builder addLevelInfoList(
+          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo value) {
+        if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700FIKHCFMEOAJIsMutable();
-          unk2700FIKHCFMEOAJ_.add(index, value);
+          ensureLevelInfoListIsMutable();
+          levelInfoList_.add(index, value);
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.addMessage(index, value);
+          levelInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder addUnk2700FIKHCFMEOAJ(
-          emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder builderForValue) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          ensureUnk2700FIKHCFMEOAJIsMutable();
-          unk2700FIKHCFMEOAJ_.add(builderForValue.build());
+      public Builder addLevelInfoList(
+          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder builderForValue) {
+        if (levelInfoListBuilder_ == null) {
+          ensureLevelInfoListIsMutable();
+          levelInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.addMessage(builderForValue.build());
+          levelInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder addUnk2700FIKHCFMEOAJ(
-          int index, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder builderForValue) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          ensureUnk2700FIKHCFMEOAJIsMutable();
-          unk2700FIKHCFMEOAJ_.add(index, builderForValue.build());
+      public Builder addLevelInfoList(
+          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder builderForValue) {
+        if (levelInfoListBuilder_ == null) {
+          ensureLevelInfoListIsMutable();
+          levelInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.addMessage(index, builderForValue.build());
+          levelInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder addAllUnk2700FIKHCFMEOAJ(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP> values) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          ensureUnk2700FIKHCFMEOAJIsMutable();
+      public Builder addAllLevelInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> values) {
+        if (levelInfoListBuilder_ == null) {
+          ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700FIKHCFMEOAJ_);
+              values, levelInfoList_);
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.addAllMessages(values);
+          levelInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder clearUnk2700FIKHCFMEOAJ() {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          unk2700FIKHCFMEOAJ_ = java.util.Collections.emptyList();
+      public Builder clearLevelInfoList() {
+        if (levelInfoListBuilder_ == null) {
+          levelInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.clear();
+          levelInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public Builder removeUnk2700FIKHCFMEOAJ(int index) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          ensureUnk2700FIKHCFMEOAJIsMutable();
-          unk2700FIKHCFMEOAJ_.remove(index);
+      public Builder removeLevelInfoList(int index) {
+        if (levelInfoListBuilder_ == null) {
+          ensureLevelInfoListIsMutable();
+          levelInfoList_.remove(index);
           onChanged();
         } else {
-          unk2700FIKHCFMEOAJBuilder_.remove(index);
+          levelInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder getUnk2700FIKHCFMEOAJBuilder(
+      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder getLevelInfoListBuilder(
           int index) {
-        return getUnk2700FIKHCFMEOAJFieldBuilder().getBuilder(index);
+        return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder getUnk2700FIKHCFMEOAJOrBuilder(
+      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder getLevelInfoListOrBuilder(
           int index) {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          return unk2700FIKHCFMEOAJ_.get(index);  } else {
-          return unk2700FIKHCFMEOAJBuilder_.getMessageOrBuilder(index);
+        if (levelInfoListBuilder_ == null) {
+          return levelInfoList_.get(index);  } else {
+          return levelInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder> 
-           getUnk2700FIKHCFMEOAJOrBuilderList() {
-        if (unk2700FIKHCFMEOAJBuilder_ != null) {
-          return unk2700FIKHCFMEOAJBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+           getLevelInfoListOrBuilderList() {
+        if (levelInfoListBuilder_ != null) {
+          return levelInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700FIKHCFMEOAJ_);
+          return java.util.Collections.unmodifiableList(levelInfoList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder addUnk2700FIKHCFMEOAJBuilder() {
-        return getUnk2700FIKHCFMEOAJFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.getDefaultInstance());
+      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder addLevelInfoListBuilder() {
+        return getLevelInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder addUnk2700FIKHCFMEOAJBuilder(
+      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder addLevelInfoListBuilder(
           int index) {
-        return getUnk2700FIKHCFMEOAJFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.getDefaultInstance());
+        return getLevelInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;</code>
+       * <code>repeated .CrystalLinkLevelInfo level_info_list = 3;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder> 
-           getUnk2700FIKHCFMEOAJBuilderList() {
-        return getUnk2700FIKHCFMEOAJFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder> 
+           getLevelInfoListBuilderList() {
+        return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder> 
-          getUnk2700FIKHCFMEOAJFieldBuilder() {
-        if (unk2700FIKHCFMEOAJBuilder_ == null) {
-          unk2700FIKHCFMEOAJBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKP.Builder, emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.Unk2700_IOLMLCCBAKPOrBuilder>(
-                  unk2700FIKHCFMEOAJ_,
+          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+          getLevelInfoListFieldBuilder() {
+        if (levelInfoListBuilder_ == null) {
+          levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder>(
+                  levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700FIKHCFMEOAJ_ = null;
+          levelInfoList_ = null;
         }
-        return unk2700FIKHCFMEOAJBuilder_;
+        return levelInfoListBuilder_;
       }
 
       private int difficultyId_ ;
@@ -891,25 +891,25 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#CrystalLinkActivityDetailInfo.proto\032\031U" +
-      "nk2700_IOLMLCCBAKP.proto\"i\n\035CrystalLinkA" +
-      "ctivityDetailInfo\0221\n\023Unk2700_FIKHCFMEOAJ" +
-      "\030\003 \003(\0132\024.Unk2700_IOLMLCCBAKP\022\025\n\rdifficul" +
-      "ty_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n#CrystalLinkActivityDetailInfo.proto\032\032C" +
+      "rystalLinkLevelInfo.proto\"f\n\035CrystalLink" +
+      "ActivityDetailInfo\022.\n\017level_info_list\030\003 " +
+      "\003(\0132\025.CrystalLinkLevelInfo\022\025\n\rdifficulty" +
+      "_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.getDescriptor(),
+          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.getDescriptor(),
         });
     internal_static_CrystalLinkActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CrystalLinkActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrystalLinkActivityDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2700FIKHCFMEOAJ", "DifficultyId", });
-    emu.grasscutter.net.proto.Unk2700IOLMLCCBAKP.getDescriptor();
+        new java.lang.String[] { "LevelInfoList", "DifficultyId", });
+    emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

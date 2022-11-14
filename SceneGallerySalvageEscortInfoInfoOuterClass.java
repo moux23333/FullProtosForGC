@@ -19,28 +19,28 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk2700_NECHECIDCEG = 14;</code>
-     * @return The unk2700NECHECIDCEG.
+     * <code>uint32 max_box_count = 14;</code>
+     * @return The maxBoxCount.
      */
-    int getUnk2700NECHECIDCEG();
+    int getMaxBoxCount();
 
     /**
-     * <code>uint32 Unk2700_AMJEKEJLOGJ = 3;</code>
-     * @return The unk2700AMJEKEJLOGJ.
+     * <code>uint32 max_monster_count = 3;</code>
+     * @return The maxMonsterCount.
      */
-    int getUnk2700AMJEKEJLOGJ();
+    int getMaxMonsterCount();
 
     /**
-     * <code>uint32 Unk2700_MCFMMIDNLIF = 7;</code>
-     * @return The unk2700MCFMMIDNLIF.
+     * <code>uint32 box_count = 7;</code>
+     * @return The boxCount.
      */
-    int getUnk2700MCFMMIDNLIF();
+    int getBoxCount();
 
     /**
-     * <code>uint32 Unk2700_FFCCLGIFGIP = 11;</code>
-     * @return The unk2700FFCCLGIFGIP.
+     * <code>uint32 monster_count = 11;</code>
+     * @return The monsterCount.
      */
-    int getUnk2700FFCCLGIFGIP();
+    int getMonsterCount();
   }
   /**
    * Protobuf type {@code SceneGallerySalvageEscortInfoInfo}
@@ -89,22 +89,22 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
               break;
             case 24: {
 
-              unk2700AMJEKEJLOGJ_ = input.readUInt32();
+              maxMonsterCount_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              unk2700MCFMMIDNLIF_ = input.readUInt32();
+              boxCount_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              unk2700FFCCLGIFGIP_ = input.readUInt32();
+              monsterCount_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              unk2700NECHECIDCEG_ = input.readUInt32();
+              maxBoxCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,48 +139,48 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
               emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo.class, emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo.Builder.class);
     }
 
-    public static final int UNK2700_NECHECIDCEG_FIELD_NUMBER = 14;
-    private int unk2700NECHECIDCEG_;
+    public static final int MAX_BOX_COUNT_FIELD_NUMBER = 14;
+    private int maxBoxCount_;
     /**
-     * <code>uint32 Unk2700_NECHECIDCEG = 14;</code>
-     * @return The unk2700NECHECIDCEG.
+     * <code>uint32 max_box_count = 14;</code>
+     * @return The maxBoxCount.
      */
     @java.lang.Override
-    public int getUnk2700NECHECIDCEG() {
-      return unk2700NECHECIDCEG_;
+    public int getMaxBoxCount() {
+      return maxBoxCount_;
     }
 
-    public static final int UNK2700_AMJEKEJLOGJ_FIELD_NUMBER = 3;
-    private int unk2700AMJEKEJLOGJ_;
+    public static final int MAX_MONSTER_COUNT_FIELD_NUMBER = 3;
+    private int maxMonsterCount_;
     /**
-     * <code>uint32 Unk2700_AMJEKEJLOGJ = 3;</code>
-     * @return The unk2700AMJEKEJLOGJ.
+     * <code>uint32 max_monster_count = 3;</code>
+     * @return The maxMonsterCount.
      */
     @java.lang.Override
-    public int getUnk2700AMJEKEJLOGJ() {
-      return unk2700AMJEKEJLOGJ_;
+    public int getMaxMonsterCount() {
+      return maxMonsterCount_;
     }
 
-    public static final int UNK2700_MCFMMIDNLIF_FIELD_NUMBER = 7;
-    private int unk2700MCFMMIDNLIF_;
+    public static final int BOX_COUNT_FIELD_NUMBER = 7;
+    private int boxCount_;
     /**
-     * <code>uint32 Unk2700_MCFMMIDNLIF = 7;</code>
-     * @return The unk2700MCFMMIDNLIF.
+     * <code>uint32 box_count = 7;</code>
+     * @return The boxCount.
      */
     @java.lang.Override
-    public int getUnk2700MCFMMIDNLIF() {
-      return unk2700MCFMMIDNLIF_;
+    public int getBoxCount() {
+      return boxCount_;
     }
 
-    public static final int UNK2700_FFCCLGIFGIP_FIELD_NUMBER = 11;
-    private int unk2700FFCCLGIFGIP_;
+    public static final int MONSTER_COUNT_FIELD_NUMBER = 11;
+    private int monsterCount_;
     /**
-     * <code>uint32 Unk2700_FFCCLGIFGIP = 11;</code>
-     * @return The unk2700FFCCLGIFGIP.
+     * <code>uint32 monster_count = 11;</code>
+     * @return The monsterCount.
      */
     @java.lang.Override
-    public int getUnk2700FFCCLGIFGIP() {
-      return unk2700FFCCLGIFGIP_;
+    public int getMonsterCount() {
+      return monsterCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700AMJEKEJLOGJ_ != 0) {
-        output.writeUInt32(3, unk2700AMJEKEJLOGJ_);
+      if (maxMonsterCount_ != 0) {
+        output.writeUInt32(3, maxMonsterCount_);
       }
-      if (unk2700MCFMMIDNLIF_ != 0) {
-        output.writeUInt32(7, unk2700MCFMMIDNLIF_);
+      if (boxCount_ != 0) {
+        output.writeUInt32(7, boxCount_);
       }
-      if (unk2700FFCCLGIFGIP_ != 0) {
-        output.writeUInt32(11, unk2700FFCCLGIFGIP_);
+      if (monsterCount_ != 0) {
+        output.writeUInt32(11, monsterCount_);
       }
-      if (unk2700NECHECIDCEG_ != 0) {
-        output.writeUInt32(14, unk2700NECHECIDCEG_);
+      if (maxBoxCount_ != 0) {
+        output.writeUInt32(14, maxBoxCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700AMJEKEJLOGJ_ != 0) {
+      if (maxMonsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, unk2700AMJEKEJLOGJ_);
+          .computeUInt32Size(3, maxMonsterCount_);
       }
-      if (unk2700MCFMMIDNLIF_ != 0) {
+      if (boxCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, unk2700MCFMMIDNLIF_);
+          .computeUInt32Size(7, boxCount_);
       }
-      if (unk2700FFCCLGIFGIP_ != 0) {
+      if (monsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, unk2700FFCCLGIFGIP_);
+          .computeUInt32Size(11, monsterCount_);
       }
-      if (unk2700NECHECIDCEG_ != 0) {
+      if (maxBoxCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unk2700NECHECIDCEG_);
+          .computeUInt32Size(14, maxBoxCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo other = (emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo) obj;
 
-      if (getUnk2700NECHECIDCEG()
-          != other.getUnk2700NECHECIDCEG()) return false;
-      if (getUnk2700AMJEKEJLOGJ()
-          != other.getUnk2700AMJEKEJLOGJ()) return false;
-      if (getUnk2700MCFMMIDNLIF()
-          != other.getUnk2700MCFMMIDNLIF()) return false;
-      if (getUnk2700FFCCLGIFGIP()
-          != other.getUnk2700FFCCLGIFGIP()) return false;
+      if (getMaxBoxCount()
+          != other.getMaxBoxCount()) return false;
+      if (getMaxMonsterCount()
+          != other.getMaxMonsterCount()) return false;
+      if (getBoxCount()
+          != other.getBoxCount()) return false;
+      if (getMonsterCount()
+          != other.getMonsterCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,14 +268,14 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_NECHECIDCEG_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700NECHECIDCEG();
-      hash = (37 * hash) + UNK2700_AMJEKEJLOGJ_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700AMJEKEJLOGJ();
-      hash = (37 * hash) + UNK2700_MCFMMIDNLIF_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700MCFMMIDNLIF();
-      hash = (37 * hash) + UNK2700_FFCCLGIFGIP_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700FFCCLGIFGIP();
+      hash = (37 * hash) + MAX_BOX_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxBoxCount();
+      hash = (37 * hash) + MAX_MONSTER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxMonsterCount();
+      hash = (37 * hash) + BOX_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getBoxCount();
+      hash = (37 * hash) + MONSTER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getMonsterCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,13 +409,13 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700NECHECIDCEG_ = 0;
+        maxBoxCount_ = 0;
 
-        unk2700AMJEKEJLOGJ_ = 0;
+        maxMonsterCount_ = 0;
 
-        unk2700MCFMMIDNLIF_ = 0;
+        boxCount_ = 0;
 
-        unk2700FFCCLGIFGIP_ = 0;
+        monsterCount_ = 0;
 
         return this;
       }
@@ -443,10 +443,10 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo result = new emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo(this);
-        result.unk2700NECHECIDCEG_ = unk2700NECHECIDCEG_;
-        result.unk2700AMJEKEJLOGJ_ = unk2700AMJEKEJLOGJ_;
-        result.unk2700MCFMMIDNLIF_ = unk2700MCFMMIDNLIF_;
-        result.unk2700FFCCLGIFGIP_ = unk2700FFCCLGIFGIP_;
+        result.maxBoxCount_ = maxBoxCount_;
+        result.maxMonsterCount_ = maxMonsterCount_;
+        result.boxCount_ = boxCount_;
+        result.monsterCount_ = monsterCount_;
         onBuilt();
         return result;
       }
@@ -495,17 +495,17 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoInfoOuterClass.SceneGallerySalvageEscortInfoInfo.getDefaultInstance()) return this;
-        if (other.getUnk2700NECHECIDCEG() != 0) {
-          setUnk2700NECHECIDCEG(other.getUnk2700NECHECIDCEG());
+        if (other.getMaxBoxCount() != 0) {
+          setMaxBoxCount(other.getMaxBoxCount());
         }
-        if (other.getUnk2700AMJEKEJLOGJ() != 0) {
-          setUnk2700AMJEKEJLOGJ(other.getUnk2700AMJEKEJLOGJ());
+        if (other.getMaxMonsterCount() != 0) {
+          setMaxMonsterCount(other.getMaxMonsterCount());
         }
-        if (other.getUnk2700MCFMMIDNLIF() != 0) {
-          setUnk2700MCFMMIDNLIF(other.getUnk2700MCFMMIDNLIF());
+        if (other.getBoxCount() != 0) {
+          setBoxCount(other.getBoxCount());
         }
-        if (other.getUnk2700FFCCLGIFGIP() != 0) {
-          setUnk2700FFCCLGIFGIP(other.getUnk2700FFCCLGIFGIP());
+        if (other.getMonsterCount() != 0) {
+          setMonsterCount(other.getMonsterCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -536,126 +536,126 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
         return this;
       }
 
-      private int unk2700NECHECIDCEG_ ;
+      private int maxBoxCount_ ;
       /**
-       * <code>uint32 Unk2700_NECHECIDCEG = 14;</code>
-       * @return The unk2700NECHECIDCEG.
+       * <code>uint32 max_box_count = 14;</code>
+       * @return The maxBoxCount.
        */
       @java.lang.Override
-      public int getUnk2700NECHECIDCEG() {
-        return unk2700NECHECIDCEG_;
+      public int getMaxBoxCount() {
+        return maxBoxCount_;
       }
       /**
-       * <code>uint32 Unk2700_NECHECIDCEG = 14;</code>
-       * @param value The unk2700NECHECIDCEG to set.
+       * <code>uint32 max_box_count = 14;</code>
+       * @param value The maxBoxCount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700NECHECIDCEG(int value) {
+      public Builder setMaxBoxCount(int value) {
         
-        unk2700NECHECIDCEG_ = value;
+        maxBoxCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_NECHECIDCEG = 14;</code>
+       * <code>uint32 max_box_count = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700NECHECIDCEG() {
+      public Builder clearMaxBoxCount() {
         
-        unk2700NECHECIDCEG_ = 0;
+        maxBoxCount_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk2700AMJEKEJLOGJ_ ;
+      private int maxMonsterCount_ ;
       /**
-       * <code>uint32 Unk2700_AMJEKEJLOGJ = 3;</code>
-       * @return The unk2700AMJEKEJLOGJ.
+       * <code>uint32 max_monster_count = 3;</code>
+       * @return The maxMonsterCount.
        */
       @java.lang.Override
-      public int getUnk2700AMJEKEJLOGJ() {
-        return unk2700AMJEKEJLOGJ_;
+      public int getMaxMonsterCount() {
+        return maxMonsterCount_;
       }
       /**
-       * <code>uint32 Unk2700_AMJEKEJLOGJ = 3;</code>
-       * @param value The unk2700AMJEKEJLOGJ to set.
+       * <code>uint32 max_monster_count = 3;</code>
+       * @param value The maxMonsterCount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700AMJEKEJLOGJ(int value) {
+      public Builder setMaxMonsterCount(int value) {
         
-        unk2700AMJEKEJLOGJ_ = value;
+        maxMonsterCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_AMJEKEJLOGJ = 3;</code>
+       * <code>uint32 max_monster_count = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700AMJEKEJLOGJ() {
+      public Builder clearMaxMonsterCount() {
         
-        unk2700AMJEKEJLOGJ_ = 0;
+        maxMonsterCount_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk2700MCFMMIDNLIF_ ;
+      private int boxCount_ ;
       /**
-       * <code>uint32 Unk2700_MCFMMIDNLIF = 7;</code>
-       * @return The unk2700MCFMMIDNLIF.
+       * <code>uint32 box_count = 7;</code>
+       * @return The boxCount.
        */
       @java.lang.Override
-      public int getUnk2700MCFMMIDNLIF() {
-        return unk2700MCFMMIDNLIF_;
+      public int getBoxCount() {
+        return boxCount_;
       }
       /**
-       * <code>uint32 Unk2700_MCFMMIDNLIF = 7;</code>
-       * @param value The unk2700MCFMMIDNLIF to set.
+       * <code>uint32 box_count = 7;</code>
+       * @param value The boxCount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700MCFMMIDNLIF(int value) {
+      public Builder setBoxCount(int value) {
         
-        unk2700MCFMMIDNLIF_ = value;
+        boxCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_MCFMMIDNLIF = 7;</code>
+       * <code>uint32 box_count = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700MCFMMIDNLIF() {
+      public Builder clearBoxCount() {
         
-        unk2700MCFMMIDNLIF_ = 0;
+        boxCount_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk2700FFCCLGIFGIP_ ;
+      private int monsterCount_ ;
       /**
-       * <code>uint32 Unk2700_FFCCLGIFGIP = 11;</code>
-       * @return The unk2700FFCCLGIFGIP.
+       * <code>uint32 monster_count = 11;</code>
+       * @return The monsterCount.
        */
       @java.lang.Override
-      public int getUnk2700FFCCLGIFGIP() {
-        return unk2700FFCCLGIFGIP_;
+      public int getMonsterCount() {
+        return monsterCount_;
       }
       /**
-       * <code>uint32 Unk2700_FFCCLGIFGIP = 11;</code>
-       * @param value The unk2700FFCCLGIFGIP to set.
+       * <code>uint32 monster_count = 11;</code>
+       * @param value The monsterCount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700FFCCLGIFGIP(int value) {
+      public Builder setMonsterCount(int value) {
         
-        unk2700FFCCLGIFGIP_ = value;
+        monsterCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_FFCCLGIFGIP = 11;</code>
+       * <code>uint32 monster_count = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700FFCCLGIFGIP() {
+      public Builder clearMonsterCount() {
         
-        unk2700FFCCLGIFGIP_ = 0;
+        monsterCount_ = 0;
         onChanged();
         return this;
       }
@@ -727,11 +727,11 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'SceneGallerySalvageEscortInfoInfo.prot" +
-      "o\"\227\001\n!SceneGallerySalvageEscortInfoInfo\022" +
-      "\033\n\023Unk2700_NECHECIDCEG\030\016 \001(\r\022\033\n\023Unk2700_" +
-      "AMJEKEJLOGJ\030\003 \001(\r\022\033\n\023Unk2700_MCFMMIDNLIF" +
-      "\030\007 \001(\r\022\033\n\023Unk2700_FFCCLGIFGIP\030\013 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "o\"\177\n!SceneGallerySalvageEscortInfoInfo\022\025" +
+      "\n\rmax_box_count\030\016 \001(\r\022\031\n\021max_monster_cou" +
+      "nt\030\003 \001(\r\022\021\n\tbox_count\030\007 \001(\r\022\025\n\rmonster_c" +
+      "ount\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +742,7 @@ public final class SceneGallerySalvageEscortInfoInfoOuterClass {
     internal_static_SceneGallerySalvageEscortInfoInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGallerySalvageEscortInfoInfo_descriptor,
-        new java.lang.String[] { "Unk2700NECHECIDCEG", "Unk2700AMJEKEJLOGJ", "Unk2700MCFMMIDNLIF", "Unk2700FFCCLGIFGIP", });
+        new java.lang.String[] { "MaxBoxCount", "MaxMonsterCount", "BoxCount", "MonsterCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

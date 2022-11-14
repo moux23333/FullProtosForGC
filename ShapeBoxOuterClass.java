@@ -34,47 +34,47 @@ public final class ShapeBoxOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
 
     /**
-     * <code>.Vector axis_0 = 2;</code>
+     * <code>.Vector axis0 = 2;</code>
      * @return Whether the axis0 field is set.
      */
     boolean hasAxis0();
     /**
-     * <code>.Vector axis_0 = 2;</code>
+     * <code>.Vector axis0 = 2;</code>
      * @return The axis0.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis0();
     /**
-     * <code>.Vector axis_0 = 2;</code>
+     * <code>.Vector axis0 = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis0OrBuilder();
 
     /**
-     * <code>.Vector axis_1 = 3;</code>
+     * <code>.Vector axis1 = 3;</code>
      * @return Whether the axis1 field is set.
      */
     boolean hasAxis1();
     /**
-     * <code>.Vector axis_1 = 3;</code>
+     * <code>.Vector axis1 = 3;</code>
      * @return The axis1.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis1();
     /**
-     * <code>.Vector axis_1 = 3;</code>
+     * <code>.Vector axis1 = 3;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis1OrBuilder();
 
     /**
-     * <code>.Vector axis_2 = 4;</code>
+     * <code>.Vector axis2 = 4;</code>
      * @return Whether the axis2 field is set.
      */
     boolean hasAxis2();
     /**
-     * <code>.Vector axis_2 = 4;</code>
+     * <code>.Vector axis2 = 4;</code>
      * @return The axis2.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis2();
     /**
-     * <code>.Vector axis_2 = 4;</code>
+     * <code>.Vector axis2 = 4;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis2OrBuilder();
 
@@ -261,10 +261,10 @@ public final class ShapeBoxOuterClass {
       return getCenter();
     }
 
-    public static final int AXIS_0_FIELD_NUMBER = 2;
+    public static final int AXIS0_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector axis0_;
     /**
-     * <code>.Vector axis_0 = 2;</code>
+     * <code>.Vector axis0 = 2;</code>
      * @return Whether the axis0 field is set.
      */
     @java.lang.Override
@@ -272,7 +272,7 @@ public final class ShapeBoxOuterClass {
       return axis0_ != null;
     }
     /**
-     * <code>.Vector axis_0 = 2;</code>
+     * <code>.Vector axis0 = 2;</code>
      * @return The axis0.
      */
     @java.lang.Override
@@ -280,17 +280,17 @@ public final class ShapeBoxOuterClass {
       return axis0_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis0_;
     }
     /**
-     * <code>.Vector axis_0 = 2;</code>
+     * <code>.Vector axis0 = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis0OrBuilder() {
       return getAxis0();
     }
 
-    public static final int AXIS_1_FIELD_NUMBER = 3;
+    public static final int AXIS1_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector axis1_;
     /**
-     * <code>.Vector axis_1 = 3;</code>
+     * <code>.Vector axis1 = 3;</code>
      * @return Whether the axis1 field is set.
      */
     @java.lang.Override
@@ -298,7 +298,7 @@ public final class ShapeBoxOuterClass {
       return axis1_ != null;
     }
     /**
-     * <code>.Vector axis_1 = 3;</code>
+     * <code>.Vector axis1 = 3;</code>
      * @return The axis1.
      */
     @java.lang.Override
@@ -306,17 +306,17 @@ public final class ShapeBoxOuterClass {
       return axis1_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis1_;
     }
     /**
-     * <code>.Vector axis_1 = 3;</code>
+     * <code>.Vector axis1 = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis1OrBuilder() {
       return getAxis1();
     }
 
-    public static final int AXIS_2_FIELD_NUMBER = 4;
+    public static final int AXIS2_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector axis2_;
     /**
-     * <code>.Vector axis_2 = 4;</code>
+     * <code>.Vector axis2 = 4;</code>
      * @return Whether the axis2 field is set.
      */
     @java.lang.Override
@@ -324,7 +324,7 @@ public final class ShapeBoxOuterClass {
       return axis2_ != null;
     }
     /**
-     * <code>.Vector axis_2 = 4;</code>
+     * <code>.Vector axis2 = 4;</code>
      * @return The axis2.
      */
     @java.lang.Override
@@ -332,7 +332,7 @@ public final class ShapeBoxOuterClass {
       return axis2_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis2_;
     }
     /**
-     * <code>.Vector axis_2 = 4;</code>
+     * <code>.Vector axis2 = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis2OrBuilder() {
@@ -479,15 +479,15 @@ public final class ShapeBoxOuterClass {
         hash = (53 * hash) + getCenter().hashCode();
       }
       if (hasAxis0()) {
-        hash = (37 * hash) + AXIS_0_FIELD_NUMBER;
+        hash = (37 * hash) + AXIS0_FIELD_NUMBER;
         hash = (53 * hash) + getAxis0().hashCode();
       }
       if (hasAxis1()) {
-        hash = (37 * hash) + AXIS_1_FIELD_NUMBER;
+        hash = (37 * hash) + AXIS1_FIELD_NUMBER;
         hash = (53 * hash) + getAxis1().hashCode();
       }
       if (hasAxis2()) {
-        hash = (37 * hash) + AXIS_2_FIELD_NUMBER;
+        hash = (37 * hash) + AXIS2_FIELD_NUMBER;
         hash = (53 * hash) + getAxis2().hashCode();
       }
       if (hasExtents()) {
@@ -923,14 +923,14 @@ public final class ShapeBoxOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> axis0Builder_;
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        * @return Whether the axis0 field is set.
        */
       public boolean hasAxis0() {
         return axis0Builder_ != null || axis0_ != null;
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        * @return The axis0.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis0() {
@@ -941,7 +941,7 @@ public final class ShapeBoxOuterClass {
         }
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        */
       public Builder setAxis0(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (axis0Builder_ == null) {
@@ -957,7 +957,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        */
       public Builder setAxis0(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -971,7 +971,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        */
       public Builder mergeAxis0(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (axis0Builder_ == null) {
@@ -989,7 +989,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        */
       public Builder clearAxis0() {
         if (axis0Builder_ == null) {
@@ -1003,7 +1003,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAxis0Builder() {
         
@@ -1011,7 +1011,7 @@ public final class ShapeBoxOuterClass {
         return getAxis0FieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis0OrBuilder() {
         if (axis0Builder_ != null) {
@@ -1022,7 +1022,7 @@ public final class ShapeBoxOuterClass {
         }
       }
       /**
-       * <code>.Vector axis_0 = 2;</code>
+       * <code>.Vector axis0 = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1042,14 +1042,14 @@ public final class ShapeBoxOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> axis1Builder_;
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        * @return Whether the axis1 field is set.
        */
       public boolean hasAxis1() {
         return axis1Builder_ != null || axis1_ != null;
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        * @return The axis1.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis1() {
@@ -1060,7 +1060,7 @@ public final class ShapeBoxOuterClass {
         }
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        */
       public Builder setAxis1(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (axis1Builder_ == null) {
@@ -1076,7 +1076,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        */
       public Builder setAxis1(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1090,7 +1090,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        */
       public Builder mergeAxis1(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (axis1Builder_ == null) {
@@ -1108,7 +1108,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        */
       public Builder clearAxis1() {
         if (axis1Builder_ == null) {
@@ -1122,7 +1122,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAxis1Builder() {
         
@@ -1130,7 +1130,7 @@ public final class ShapeBoxOuterClass {
         return getAxis1FieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis1OrBuilder() {
         if (axis1Builder_ != null) {
@@ -1141,7 +1141,7 @@ public final class ShapeBoxOuterClass {
         }
       }
       /**
-       * <code>.Vector axis_1 = 3;</code>
+       * <code>.Vector axis1 = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1161,14 +1161,14 @@ public final class ShapeBoxOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> axis2Builder_;
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        * @return Whether the axis2 field is set.
        */
       public boolean hasAxis2() {
         return axis2Builder_ != null || axis2_ != null;
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        * @return The axis2.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis2() {
@@ -1179,7 +1179,7 @@ public final class ShapeBoxOuterClass {
         }
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        */
       public Builder setAxis2(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (axis2Builder_ == null) {
@@ -1195,7 +1195,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        */
       public Builder setAxis2(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1209,7 +1209,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        */
       public Builder mergeAxis2(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (axis2Builder_ == null) {
@@ -1227,7 +1227,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        */
       public Builder clearAxis2() {
         if (axis2Builder_ == null) {
@@ -1241,7 +1241,7 @@ public final class ShapeBoxOuterClass {
         return this;
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAxis2Builder() {
         
@@ -1249,7 +1249,7 @@ public final class ShapeBoxOuterClass {
         return getAxis2FieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis2OrBuilder() {
         if (axis2Builder_ != null) {
@@ -1260,7 +1260,7 @@ public final class ShapeBoxOuterClass {
         }
       }
       /**
-       * <code>.Vector axis_2 = 4;</code>
+       * <code>.Vector axis2 = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1461,12 +1461,12 @@ public final class ShapeBoxOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016ShapeBox.proto\032\014Vector.proto\"\210\001\n\010Shape" +
-      "Box\022\027\n\006center\030\001 \001(\0132\007.Vector\022\027\n\006axis_0\030\002" +
-      " \001(\0132\007.Vector\022\027\n\006axis_1\030\003 \001(\0132\007.Vector\022\027" +
-      "\n\006axis_2\030\004 \001(\0132\007.Vector\022\030\n\007extents\030\005 \001(\013" +
-      "2\007.VectorB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\016ShapeBox.proto\032\014Vector.proto\"\205\001\n\010Shape" +
+      "Box\022\027\n\006center\030\001 \001(\0132\007.Vector\022\026\n\005axis0\030\002 " +
+      "\001(\0132\007.Vector\022\026\n\005axis1\030\003 \001(\0132\007.Vector\022\026\n\005" +
+      "axis2\030\004 \001(\0132\007.Vector\022\030\n\007extents\030\005 \001(\0132\007." +
+      "VectorB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

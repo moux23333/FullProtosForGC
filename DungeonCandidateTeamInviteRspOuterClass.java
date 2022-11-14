@@ -25,21 +25,21 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-     * @return A list containing the unk2700OJEGACKKJAE.
+     * <code>repeated uint32 invalid_player_uids = 7;</code>
+     * @return A list containing the invalidPlayerUids.
      */
-    java.util.List<java.lang.Integer> getUnk2700OJEGACKKJAEList();
+    java.util.List<java.lang.Integer> getInvalidPlayerUidsList();
     /**
-     * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-     * @return The count of unk2700OJEGACKKJAE.
+     * <code>repeated uint32 invalid_player_uids = 7;</code>
+     * @return The count of invalidPlayerUids.
      */
-    int getUnk2700OJEGACKKJAECount();
+    int getInvalidPlayerUidsCount();
     /**
-     * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
+     * <code>repeated uint32 invalid_player_uids = 7;</code>
      * @param index The index of the element to return.
-     * @return The unk2700OJEGACKKJAE at the given index.
+     * @return The invalidPlayerUids at the given index.
      */
-    int getUnk2700OJEGACKKJAE(int index);
+    int getInvalidPlayerUids(int index);
   }
   /**
    * <pre>
@@ -60,7 +60,7 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
       super(builder);
     }
     private DungeonCandidateTeamInviteRsp() {
-      unk2700OJEGACKKJAE_ = emptyIntList();
+      invalidPlayerUids_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -96,21 +96,21 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
               break;
             case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700OJEGACKKJAE_ = newIntList();
+                invalidPlayerUids_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700OJEGACKKJAE_.addInt(input.readUInt32());
+              invalidPlayerUids_.addInt(input.readUInt32());
               break;
             }
             case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2700OJEGACKKJAE_ = newIntList();
+                invalidPlayerUids_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2700OJEGACKKJAE_.addInt(input.readUInt32());
+                invalidPlayerUids_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -136,7 +136,7 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700OJEGACKKJAE_.makeImmutable(); // C
+          invalidPlayerUids_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -166,33 +166,33 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
       return retcode_;
     }
 
-    public static final int UNK2700_OJEGACKKJAE_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList unk2700OJEGACKKJAE_;
+    public static final int INVALID_PLAYER_UIDS_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.IntList invalidPlayerUids_;
     /**
-     * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-     * @return A list containing the unk2700OJEGACKKJAE.
+     * <code>repeated uint32 invalid_player_uids = 7;</code>
+     * @return A list containing the invalidPlayerUids.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2700OJEGACKKJAEList() {
-      return unk2700OJEGACKKJAE_;
+        getInvalidPlayerUidsList() {
+      return invalidPlayerUids_;
     }
     /**
-     * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-     * @return The count of unk2700OJEGACKKJAE.
+     * <code>repeated uint32 invalid_player_uids = 7;</code>
+     * @return The count of invalidPlayerUids.
      */
-    public int getUnk2700OJEGACKKJAECount() {
-      return unk2700OJEGACKKJAE_.size();
+    public int getInvalidPlayerUidsCount() {
+      return invalidPlayerUids_.size();
     }
     /**
-     * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
+     * <code>repeated uint32 invalid_player_uids = 7;</code>
      * @param index The index of the element to return.
-     * @return The unk2700OJEGACKKJAE at the given index.
+     * @return The invalidPlayerUids at the given index.
      */
-    public int getUnk2700OJEGACKKJAE(int index) {
-      return unk2700OJEGACKKJAE_.getInt(index);
+    public int getInvalidPlayerUids(int index) {
+      return invalidPlayerUids_.getInt(index);
     }
-    private int unk2700OJEGACKKJAEMemoizedSerializedSize = -1;
+    private int invalidPlayerUidsMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -209,12 +209,12 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getUnk2700OJEGACKKJAEList().size() > 0) {
+      if (getInvalidPlayerUidsList().size() > 0) {
         output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(unk2700OJEGACKKJAEMemoizedSerializedSize);
+        output.writeUInt32NoTag(invalidPlayerUidsMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2700OJEGACKKJAE_.size(); i++) {
-        output.writeUInt32NoTag(unk2700OJEGACKKJAE_.getInt(i));
+      for (int i = 0; i < invalidPlayerUids_.size(); i++) {
+        output.writeUInt32NoTag(invalidPlayerUids_.getInt(i));
       }
       if (retcode_ != 0) {
         output.writeInt32(12, retcode_);
@@ -230,17 +230,17 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2700OJEGACKKJAE_.size(); i++) {
+        for (int i = 0; i < invalidPlayerUids_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2700OJEGACKKJAE_.getInt(i));
+            .computeUInt32SizeNoTag(invalidPlayerUids_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2700OJEGACKKJAEList().isEmpty()) {
+        if (!getInvalidPlayerUidsList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2700OJEGACKKJAEMemoizedSerializedSize = dataSize;
+        invalidPlayerUidsMemoizedSerializedSize = dataSize;
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -263,8 +263,8 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getUnk2700OJEGACKKJAEList()
-          .equals(other.getUnk2700OJEGACKKJAEList())) return false;
+      if (!getInvalidPlayerUidsList()
+          .equals(other.getInvalidPlayerUidsList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -278,9 +278,9 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      if (getUnk2700OJEGACKKJAECount() > 0) {
-        hash = (37 * hash) + UNK2700_OJEGACKKJAE_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700OJEGACKKJAEList().hashCode();
+      if (getInvalidPlayerUidsCount() > 0) {
+        hash = (37 * hash) + INVALID_PLAYER_UIDS_FIELD_NUMBER;
+        hash = (53 * hash) + getInvalidPlayerUidsList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -423,7 +423,7 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        unk2700OJEGACKKJAE_ = emptyIntList();
+        invalidPlayerUids_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -454,10 +454,10 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
         int from_bitField0_ = bitField0_;
         result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          unk2700OJEGACKKJAE_.makeImmutable();
+          invalidPlayerUids_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.unk2700OJEGACKKJAE_ = unk2700OJEGACKKJAE_;
+        result.invalidPlayerUids_ = invalidPlayerUids_;
         onBuilt();
         return result;
       }
@@ -509,13 +509,13 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (!other.unk2700OJEGACKKJAE_.isEmpty()) {
-          if (unk2700OJEGACKKJAE_.isEmpty()) {
-            unk2700OJEGACKKJAE_ = other.unk2700OJEGACKKJAE_;
+        if (!other.invalidPlayerUids_.isEmpty()) {
+          if (invalidPlayerUids_.isEmpty()) {
+            invalidPlayerUids_ = other.invalidPlayerUids_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureUnk2700OJEGACKKJAEIsMutable();
-            unk2700OJEGACKKJAE_.addAll(other.unk2700OJEGACKKJAE_);
+            ensureInvalidPlayerUidsIsMutable();
+            invalidPlayerUids_.addAll(other.invalidPlayerUids_);
           }
           onChanged();
         }
@@ -580,80 +580,80 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2700OJEGACKKJAE_ = emptyIntList();
-      private void ensureUnk2700OJEGACKKJAEIsMutable() {
+      private com.google.protobuf.Internal.IntList invalidPlayerUids_ = emptyIntList();
+      private void ensureInvalidPlayerUidsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700OJEGACKKJAE_ = mutableCopy(unk2700OJEGACKKJAE_);
+          invalidPlayerUids_ = mutableCopy(invalidPlayerUids_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-       * @return A list containing the unk2700OJEGACKKJAE.
+       * <code>repeated uint32 invalid_player_uids = 7;</code>
+       * @return A list containing the invalidPlayerUids.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2700OJEGACKKJAEList() {
+          getInvalidPlayerUidsList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2700OJEGACKKJAE_) : unk2700OJEGACKKJAE_;
+                 java.util.Collections.unmodifiableList(invalidPlayerUids_) : invalidPlayerUids_;
       }
       /**
-       * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-       * @return The count of unk2700OJEGACKKJAE.
+       * <code>repeated uint32 invalid_player_uids = 7;</code>
+       * @return The count of invalidPlayerUids.
        */
-      public int getUnk2700OJEGACKKJAECount() {
-        return unk2700OJEGACKKJAE_.size();
+      public int getInvalidPlayerUidsCount() {
+        return invalidPlayerUids_.size();
       }
       /**
-       * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
+       * <code>repeated uint32 invalid_player_uids = 7;</code>
        * @param index The index of the element to return.
-       * @return The unk2700OJEGACKKJAE at the given index.
+       * @return The invalidPlayerUids at the given index.
        */
-      public int getUnk2700OJEGACKKJAE(int index) {
-        return unk2700OJEGACKKJAE_.getInt(index);
+      public int getInvalidPlayerUids(int index) {
+        return invalidPlayerUids_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
+       * <code>repeated uint32 invalid_player_uids = 7;</code>
        * @param index The index to set the value at.
-       * @param value The unk2700OJEGACKKJAE to set.
+       * @param value The invalidPlayerUids to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700OJEGACKKJAE(
+      public Builder setInvalidPlayerUids(
           int index, int value) {
-        ensureUnk2700OJEGACKKJAEIsMutable();
-        unk2700OJEGACKKJAE_.setInt(index, value);
+        ensureInvalidPlayerUidsIsMutable();
+        invalidPlayerUids_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-       * @param value The unk2700OJEGACKKJAE to add.
+       * <code>repeated uint32 invalid_player_uids = 7;</code>
+       * @param value The invalidPlayerUids to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2700OJEGACKKJAE(int value) {
-        ensureUnk2700OJEGACKKJAEIsMutable();
-        unk2700OJEGACKKJAE_.addInt(value);
+      public Builder addInvalidPlayerUids(int value) {
+        ensureInvalidPlayerUidsIsMutable();
+        invalidPlayerUids_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
-       * @param values The unk2700OJEGACKKJAE to add.
+       * <code>repeated uint32 invalid_player_uids = 7;</code>
+       * @param values The invalidPlayerUids to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2700OJEGACKKJAE(
+      public Builder addAllInvalidPlayerUids(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2700OJEGACKKJAEIsMutable();
+        ensureInvalidPlayerUidsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2700OJEGACKKJAE_);
+            values, invalidPlayerUids_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_OJEGACKKJAE = 7;</code>
+       * <code>repeated uint32 invalid_player_uids = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700OJEGACKKJAE() {
-        unk2700OJEGACKKJAE_ = emptyIntList();
+      public Builder clearInvalidPlayerUids() {
+        invalidPlayerUids_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -727,7 +727,7 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#DungeonCandidateTeamInviteRsp.proto\"M\n" +
       "\035DungeonCandidateTeamInviteRsp\022\017\n\007retcod" +
-      "e\030\014 \001(\005\022\033\n\023Unk2700_OJEGACKKJAE\030\007 \003(\rB\033\n\031" +
+      "e\030\014 \001(\005\022\033\n\023invalid_player_uids\030\007 \003(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -739,7 +739,7 @@ public final class DungeonCandidateTeamInviteRspOuterClass {
     internal_static_DungeonCandidateTeamInviteRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonCandidateTeamInviteRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Unk2700OJEGACKKJAE", });
+        new java.lang.String[] { "Retcode", "InvalidPlayerUids", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

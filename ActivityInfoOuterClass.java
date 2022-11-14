@@ -19,28 +19,22 @@ public final class ActivityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_play_open_anim = 13;</code>
-     * @return The isPlayOpenAnim.
+     * <code>bool is_finished = 6;</code>
+     * @return The isFinished.
      */
-    boolean getIsPlayOpenAnim();
+    boolean getIsFinished();
 
     /**
-     * <code>uint32 schedule_id = 15;</code>
-     * @return The scheduleId.
+     * <code>uint32 activity_type = 4;</code>
+     * @return The activityType.
      */
-    int getScheduleId();
+    int getActivityType();
 
     /**
-     * <code>uint32 cur_score = 1906;</code>
-     * @return The curScore.
+     * <code>uint32 begin_time = 8;</code>
+     * @return The beginTime.
      */
-    int getCurScore();
-
-    /**
-     * <code>bool is_starting = 9;</code>
-     * @return The isStarting.
-     */
-    boolean getIsStarting();
+    int getBeginTime();
 
     /**
      * <code>repeated uint32 taken_reward_list = 329;</code>
@@ -60,52 +54,33 @@ public final class ActivityInfoOuterClass {
     int getTakenRewardList(int index);
 
     /**
-     * <code>bool Unk2700_NONJFHAIFLA = 102;</code>
-     * @return The unk2700NONJFHAIFLA.
-     */
-    boolean getUnk2700NONJFHAIFLA();
-
-    /**
-     * <code>uint32 selected_avatar_reward_id = 1290;</code>
-     * @return The selectedAvatarRewardId.
-     */
-    int getSelectedAvatarRewardId();
-
-    /**
-     * <code>uint32 first_day_start_time = 592;</code>
-     * @return The firstDayStartTime.
-     */
-    int getFirstDayStartTime();
-
-    /**
-     * <code>uint32 score_limit = 1958;</code>
-     * @return The scoreLimit.
-     */
-    int getScoreLimit();
-
-    /**
-     * <code>bool is_finished = 6;</code>
-     * @return The isFinished.
-     */
-    boolean getIsFinished();
-
-    /**
      * <code>bool is_hidden = 919;</code>
      * @return The isHidden.
      */
     boolean getIsHidden();
 
     /**
-     * <code>uint32 begin_time = 8;</code>
-     * @return The beginTime.
+     * <code>bool is_quick_open = 1449;</code>
+     * @return The isQuickOpen.
      */
-    int getBeginTime();
+    boolean getIsQuickOpen();
 
     /**
-     * <code>uint32 end_time = 5;</code>
-     * @return The endTime.
+     * <code>repeated uint32 meet_cond_list = 10;</code>
+     * @return A list containing the meetCondList.
      */
-    int getEndTime();
+    java.util.List<java.lang.Integer> getMeetCondListList();
+    /**
+     * <code>repeated uint32 meet_cond_list = 10;</code>
+     * @return The count of meetCondList.
+     */
+    int getMeetCondListCount();
+    /**
+     * <code>repeated uint32 meet_cond_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The meetCondList at the given index.
+     */
+    int getMeetCondList(int index);
 
     /**
      * <code>map&lt;uint32, uint32&gt; activity_coin_map = 682;</code>
@@ -142,91 +117,92 @@ public final class ActivityInfoOuterClass {
         int key);
 
     /**
-     * <code>uint32 activity_type = 4;</code>
-     * @return The activityType.
+     * <code>bool is_banner_cleared = 102;</code>
+     * @return The isBannerCleared.
      */
-    int getActivityType();
+    boolean getIsBannerCleared();
 
     /**
-     * <code>bool Unk2700_EDKLLHBEEGE = 1449;</code>
-     * @return The unk2700EDKLLHBEEGE.
+     * <code>uint32 cur_score = 1906;</code>
+     * @return The curScore.
      */
-    boolean getUnk2700EDKLLHBEEGE();
+    int getCurScore();
 
     /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
+     * <code>uint32 first_day_start_time = 592;</code>
+     * @return The firstDayStartTime.
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC> 
-        getUnk2800KOMIPKKKOBEList();
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC getUnk2800KOMIPKKKOBE(int index);
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    int getUnk2800KOMIPKKKOBECount();
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder> 
-        getUnk2800KOMIPKKKOBEOrBuilderList();
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder getUnk2800KOMIPKKKOBEOrBuilder(
-        int index);
+    int getFirstDayStartTime();
 
     /**
-     * <code>repeated uint32 meet_cond_list = 10;</code>
-     * @return A list containing the meetCondList.
+     * <code>uint32 activity_id = 12;</code>
+     * @return The activityId.
      */
-    java.util.List<java.lang.Integer> getMeetCondListList();
-    /**
-     * <code>repeated uint32 meet_cond_list = 10;</code>
-     * @return The count of meetCondList.
-     */
-    int getMeetCondListCount();
-    /**
-     * <code>repeated uint32 meet_cond_list = 10;</code>
-     * @param index The index of the element to return.
-     * @return The meetCondList at the given index.
-     */
-    int getMeetCondList(int index);
+    int getActivityId();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>bool is_play_open_anim = 13;</code>
+     * @return The isPlayOpenAnim.
      */
-    int getUnk2700IFPBCNLCKLGCount();
+    boolean getIsPlayOpenAnim();
+
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>uint32 end_time = 5;</code>
+     * @return The endTime.
      */
-    boolean containsUnk2700IFPBCNLCKLG(
+    int getEndTime();
+
+    /**
+     * <code>uint32 score_limit = 1958;</code>
+     * @return The scoreLimit.
+     */
+    int getScoreLimit();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
+     */
+    int getWishGiftNumMapCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
+     */
+    boolean containsWishGiftNumMap(
         int key);
     /**
-     * Use {@link #getUnk2700IFPBCNLCKLGMap()} instead.
+     * Use {@link #getWishGiftNumMapMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk2700IFPBCNLCKLG();
+    getWishGiftNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk2700IFPBCNLCKLGMap();
+    getWishGiftNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
      */
 
-    int getUnk2700IFPBCNLCKLGOrDefault(
+    int getWishGiftNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
      */
 
-    int getUnk2700IFPBCNLCKLGOrThrow(
+    int getWishGiftNumMapOrThrow(
         int key);
+
+    /**
+     * <code>uint32 selected_avatar_reward_id = 1290;</code>
+     * @return The selectedAvatarRewardId.
+     */
+    int getSelectedAvatarRewardId();
+
+    /**
+     * <code>bool is_common_content_closed = 1963;</code>
+     * @return The isCommonContentClosed.
+     */
+    boolean getIsCommonContentClosed();
 
     /**
      * <code>repeated uint32 expire_cond_list = 3;</code>
@@ -244,6 +220,30 @@ public final class ActivityInfoOuterClass {
      * @return The expireCondList at the given index.
      */
     int getExpireCondList(int index);
+
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData> 
+        getActivityPushTipsDataListList();
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData getActivityPushTipsDataList(int index);
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    int getActivityPushTipsDataListCount();
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder> 
+        getActivityPushTipsDataListOrBuilderList();
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder getActivityPushTipsDataListOrBuilder(
+        int index);
 
     /**
      * <code>repeated .ActivityWatcherInfo watcher_info_list = 2;</code>
@@ -270,10 +270,16 @@ public final class ActivityInfoOuterClass {
         int index);
 
     /**
-     * <code>uint32 activity_id = 12;</code>
-     * @return The activityId.
+     * <code>uint32 schedule_id = 15;</code>
+     * @return The scheduleId.
      */
-    int getActivityId();
+    int getScheduleId();
+
+    /**
+     * <code>bool is_starting = 9;</code>
+     * @return The isStarting.
+     */
+    boolean getIsStarting();
 
     /**
      * <code>.SeaLampActivityDetailInfo sam_lamp_info = 7;</code>
@@ -1011,19 +1017,19 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.SummerTimeV2DetailInfoOuterClass.SummerTimeV2DetailInfoOrBuilder getSummerTimeV2InfoOrBuilder();
 
     /**
-     * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+     * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
      * @return Whether the islandPartyInfo field is set.
      */
     boolean hasIslandPartyInfo();
     /**
-     * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+     * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
      * @return The islandPartyInfo.
      */
-    emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo getIslandPartyInfo();
+    emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo getIslandPartyInfo();
     /**
-     * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+     * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
      */
-    emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfoOrBuilder getIslandPartyInfoOrBuilder();
+    emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfoOrBuilder getIslandPartyInfoOrBuilder();
 
     /**
      * <code>.GearActivityDetailInfo gear_info = 722;</code>
@@ -1071,34 +1077,34 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.InstableSprayDetailInfoOuterClass.InstableSprayDetailInfoOrBuilder getInstableSprayInfoOrBuilder();
 
     /**
-     * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+     * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
      * @return Whether the muqadasPotionInfo field is set.
      */
     boolean hasMuqadasPotionInfo();
     /**
-     * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+     * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
      * @return The muqadasPotionInfo.
      */
-    emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo getMuqadasPotionInfo();
+    emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo getMuqadasPotionInfo();
     /**
-     * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+     * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
      */
-    emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfoOrBuilder getMuqadasPotionInfoOrBuilder();
+    emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfoOrBuilder getMuqadasPotionInfoOrBuilder();
 
     /**
-     * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+     * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
      * @return Whether the treasureSeelieInfo field is set.
      */
     boolean hasTreasureSeelieInfo();
     /**
-     * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+     * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
      * @return The treasureSeelieInfo.
      */
-    emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo getTreasureSeelieInfo();
+    emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo getTreasureSeelieInfo();
     /**
-     * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+     * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
      */
-    emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfoOrBuilder getTreasureSeelieInfoOrBuilder();
+    emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfoOrBuilder getTreasureSeelieInfoOrBuilder();
 
     /**
      * <code>.RockBoardExploreDetailInfo rock_board_explore_info = 1078;</code>
@@ -1145,6 +1151,51 @@ public final class ActivityInfoOuterClass {
      */
     emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfoOrBuilder getWindFieldInfoOrBuilder();
 
+    /**
+     * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+     * @return Whether the fungusFighterInfo field is set.
+     */
+    boolean hasFungusFighterInfo();
+    /**
+     * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+     * @return The fungusFighterInfo.
+     */
+    emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo getFungusFighterInfo();
+    /**
+     * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+     */
+    emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfoOrBuilder getFungusFighterInfoOrBuilder();
+
+    /**
+     * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+     * @return Whether the charAmusementInfo field is set.
+     */
+    boolean hasCharAmusementInfo();
+    /**
+     * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+     * @return The charAmusementInfo.
+     */
+    emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo getCharAmusementInfo();
+    /**
+     * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+     */
+    emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfoOrBuilder getCharAmusementInfoOrBuilder();
+
+    /**
+     * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+     * @return Whether the effigyChallengeInfo field is set.
+     */
+    boolean hasEffigyChallengeInfo();
+    /**
+     * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+     * @return The effigyChallengeInfo.
+     */
+    emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo getEffigyChallengeInfo();
+    /**
+     * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+     */
+    emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfoOrBuilder getEffigyChallengeInfoOrBuilder();
+
     public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.DetailCase getDetailCase();
   }
   /**
@@ -1161,9 +1212,9 @@ public final class ActivityInfoOuterClass {
     }
     private ActivityInfo() {
       takenRewardList_ = emptyIntList();
-      unk2800KOMIPKKKOBE_ = java.util.Collections.emptyList();
       meetCondList_ = emptyIntList();
       expireCondList_ = emptyIntList();
+      activityPushTipsDataList_ = java.util.Collections.emptyList();
       watcherInfoList_ = java.util.Collections.emptyList();
     }
 
@@ -1222,9 +1273,9 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 24: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 expireCondList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000010;
               }
               expireCondList_.addInt(input.readUInt32());
               break;
@@ -1232,9 +1283,9 @@ public final class ActivityInfoOuterClass {
             case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000020) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
                 expireCondList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000010;
               }
               while (input.getBytesUntilLimit() > 0) {
                 expireCondList_.addInt(input.readUInt32());
@@ -1282,9 +1333,9 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 80: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 meetCondList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000002;
               }
               meetCondList_.addInt(input.readUInt32());
               break;
@@ -1292,9 +1343,9 @@ public final class ActivityInfoOuterClass {
             case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 meetCondList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 meetCondList_.addInt(input.readUInt32());
@@ -1361,7 +1412,7 @@ public final class ActivityInfoOuterClass {
             }
             case 816: {
 
-              unk2700NONJFHAIFLA_ = input.readBool();
+              isBannerCleared_ = input.readBool();
               break;
             }
             case 1250: {
@@ -1539,6 +1590,20 @@ public final class ActivityInfoOuterClass {
               detailCase_ = 460;
               break;
             }
+            case 3922: {
+              emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.Builder subBuilder = null;
+              if (detailCase_ == 490) {
+                subBuilder = ((emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 490;
+              break;
+            }
             case 3930: {
               emu.grasscutter.net.proto.HachiActivityDetailInfoOuterClass.HachiActivityDetailInfo.Builder subBuilder = null;
               if (detailCase_ == 491) {
@@ -1601,10 +1666,10 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 5458: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 activityCoinMap_ = com.google.protobuf.MapField.newMapField(
                     ActivityCoinMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000004;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               activityCoinMap__ = input.readMessage(
@@ -1754,12 +1819,12 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 6914: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                unk2800KOMIPKKKOBE_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC>();
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+                activityPushTipsDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData>();
+                mutable_bitField0_ |= 0x00000020;
               }
-              unk2800KOMIPKKKOBE_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.parser(), extensionRegistry));
+              activityPushTipsDataList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.parser(), extensionRegistry));
               break;
             }
             case 7352: {
@@ -1782,14 +1847,14 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 7730: {
-              emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.Builder subBuilder = null;
+              emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.Builder subBuilder = null;
               if (detailCase_ == 966) {
-                subBuilder = ((emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 966;
@@ -1807,6 +1872,20 @@ public final class ActivityInfoOuterClass {
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 1015;
+              break;
+            }
+            case 8202: {
+              emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.Builder subBuilder = null;
+              if (detailCase_ == 1025) {
+                subBuilder = ((emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 1025;
               break;
             }
             case 8346: {
@@ -1894,14 +1973,14 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 9258: {
-              emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.Builder subBuilder = null;
+              emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.Builder subBuilder = null;
               if (detailCase_ == 1157) {
-                subBuilder = ((emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 1157;
@@ -1997,16 +2076,16 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 11194: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                unk2700IFPBCNLCKLG_ = com.google.protobuf.MapField.newMapField(
-                    Unk2700IFPBCNLCKLGDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000010;
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                wishGiftNumMap_ = com.google.protobuf.MapField.newMapField(
+                    WishGiftNumMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000008;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              unk2700IFPBCNLCKLG__ = input.readMessage(
-                  Unk2700IFPBCNLCKLGDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              unk2700IFPBCNLCKLG_.getMutableMap().put(
-                  unk2700IFPBCNLCKLG__.getKey(), unk2700IFPBCNLCKLG__.getValue());
+              wishGiftNumMap__ = input.readMessage(
+                  WishGiftNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              wishGiftNumMap_.getMutableMap().put(
+                  wishGiftNumMap__.getKey(), wishGiftNumMap__.getValue());
               break;
             }
             case 11290: {
@@ -2025,7 +2104,21 @@ public final class ActivityInfoOuterClass {
             }
             case 11592: {
 
-              unk2700EDKLLHBEEGE_ = input.readBool();
+              isQuickOpen_ = input.readBool();
+              break;
+            }
+            case 11970: {
+              emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.Builder subBuilder = null;
+              if (detailCase_ == 1496) {
+                subBuilder = ((emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 1496;
               break;
             }
             case 12706: {
@@ -2141,14 +2234,14 @@ public final class ActivityInfoOuterClass {
               break;
             }
             case 15082: {
-              emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.Builder subBuilder = null;
+              emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.Builder subBuilder = null;
               if (detailCase_ == 1885) {
-                subBuilder = ((emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 1885;
@@ -2192,6 +2285,11 @@ public final class ActivityInfoOuterClass {
               scoreLimit_ = input.readUInt32();
               break;
             }
+            case 15704: {
+
+              isCommonContentClosed_ = input.readBool();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -2210,17 +2308,17 @@ public final class ActivityInfoOuterClass {
         if (((mutable_bitField0_ & 0x00000040) != 0)) {
           watcherInfoList_ = java.util.Collections.unmodifiableList(watcherInfoList_);
         }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           expireCondList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           meetCondList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           takenRewardList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          unk2800KOMIPKKKOBE_ = java.util.Collections.unmodifiableList(unk2800KOMIPKKKOBE_);
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+          activityPushTipsDataList_ = java.util.Collections.unmodifiableList(activityPushTipsDataList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -2239,7 +2337,7 @@ public final class ActivityInfoOuterClass {
         case 682:
           return internalGetActivityCoinMap();
         case 1399:
-          return internalGetUnk2700IFPBCNLCKLG();
+          return internalGetWishGiftNumMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -2316,6 +2414,9 @@ public final class ActivityInfoOuterClass {
       ROCK_BOARD_EXPLORE_INFO(1078),
       VINTAGE_INFO(445),
       WIND_FIELD_INFO(352),
+      FUNGUS_FIGHTER_INFO(490),
+      CHAR_AMUSEMENT_INFO(1496),
+      EFFIGY_CHALLENGE_INFO(1025),
       DETAIL_NOT_SET(0);
       private final int value;
       private DetailCase(int value) {
@@ -2391,6 +2492,9 @@ public final class ActivityInfoOuterClass {
           case 1078: return ROCK_BOARD_EXPLORE_INFO;
           case 445: return VINTAGE_INFO;
           case 352: return WIND_FIELD_INFO;
+          case 490: return FUNGUS_FIGHTER_INFO;
+          case 1496: return CHAR_AMUSEMENT_INFO;
+          case 1025: return EFFIGY_CHALLENGE_INFO;
           case 0: return DETAIL_NOT_SET;
           default: return null;
         }
@@ -2406,48 +2510,37 @@ public final class ActivityInfoOuterClass {
           detailCase_);
     }
 
-    public static final int IS_PLAY_OPEN_ANIM_FIELD_NUMBER = 13;
-    private boolean isPlayOpenAnim_;
+    public static final int IS_FINISHED_FIELD_NUMBER = 6;
+    private boolean isFinished_;
     /**
-     * <code>bool is_play_open_anim = 13;</code>
-     * @return The isPlayOpenAnim.
+     * <code>bool is_finished = 6;</code>
+     * @return The isFinished.
      */
     @java.lang.Override
-    public boolean getIsPlayOpenAnim() {
-      return isPlayOpenAnim_;
+    public boolean getIsFinished() {
+      return isFinished_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
-    private int scheduleId_;
+    public static final int ACTIVITY_TYPE_FIELD_NUMBER = 4;
+    private int activityType_;
     /**
-     * <code>uint32 schedule_id = 15;</code>
-     * @return The scheduleId.
+     * <code>uint32 activity_type = 4;</code>
+     * @return The activityType.
      */
     @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
+    public int getActivityType() {
+      return activityType_;
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 1906;
-    private int curScore_;
+    public static final int BEGIN_TIME_FIELD_NUMBER = 8;
+    private int beginTime_;
     /**
-     * <code>uint32 cur_score = 1906;</code>
-     * @return The curScore.
+     * <code>uint32 begin_time = 8;</code>
+     * @return The beginTime.
      */
     @java.lang.Override
-    public int getCurScore() {
-      return curScore_;
-    }
-
-    public static final int IS_STARTING_FIELD_NUMBER = 9;
-    private boolean isStarting_;
-    /**
-     * <code>bool is_starting = 9;</code>
-     * @return The isStarting.
-     */
-    @java.lang.Override
-    public boolean getIsStarting() {
-      return isStarting_;
+    public int getBeginTime() {
+      return beginTime_;
     }
 
     public static final int TAKEN_REWARD_LIST_FIELD_NUMBER = 329;
@@ -2478,61 +2571,6 @@ public final class ActivityInfoOuterClass {
     }
     private int takenRewardListMemoizedSerializedSize = -1;
 
-    public static final int UNK2700_NONJFHAIFLA_FIELD_NUMBER = 102;
-    private boolean unk2700NONJFHAIFLA_;
-    /**
-     * <code>bool Unk2700_NONJFHAIFLA = 102;</code>
-     * @return The unk2700NONJFHAIFLA.
-     */
-    @java.lang.Override
-    public boolean getUnk2700NONJFHAIFLA() {
-      return unk2700NONJFHAIFLA_;
-    }
-
-    public static final int SELECTED_AVATAR_REWARD_ID_FIELD_NUMBER = 1290;
-    private int selectedAvatarRewardId_;
-    /**
-     * <code>uint32 selected_avatar_reward_id = 1290;</code>
-     * @return The selectedAvatarRewardId.
-     */
-    @java.lang.Override
-    public int getSelectedAvatarRewardId() {
-      return selectedAvatarRewardId_;
-    }
-
-    public static final int FIRST_DAY_START_TIME_FIELD_NUMBER = 592;
-    private int firstDayStartTime_;
-    /**
-     * <code>uint32 first_day_start_time = 592;</code>
-     * @return The firstDayStartTime.
-     */
-    @java.lang.Override
-    public int getFirstDayStartTime() {
-      return firstDayStartTime_;
-    }
-
-    public static final int SCORE_LIMIT_FIELD_NUMBER = 1958;
-    private int scoreLimit_;
-    /**
-     * <code>uint32 score_limit = 1958;</code>
-     * @return The scoreLimit.
-     */
-    @java.lang.Override
-    public int getScoreLimit() {
-      return scoreLimit_;
-    }
-
-    public static final int IS_FINISHED_FIELD_NUMBER = 6;
-    private boolean isFinished_;
-    /**
-     * <code>bool is_finished = 6;</code>
-     * @return The isFinished.
-     */
-    @java.lang.Override
-    public boolean getIsFinished() {
-      return isFinished_;
-    }
-
     public static final int IS_HIDDEN_FIELD_NUMBER = 919;
     private boolean isHidden_;
     /**
@@ -2544,27 +2582,44 @@ public final class ActivityInfoOuterClass {
       return isHidden_;
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 8;
-    private int beginTime_;
+    public static final int IS_QUICK_OPEN_FIELD_NUMBER = 1449;
+    private boolean isQuickOpen_;
     /**
-     * <code>uint32 begin_time = 8;</code>
-     * @return The beginTime.
+     * <code>bool is_quick_open = 1449;</code>
+     * @return The isQuickOpen.
      */
     @java.lang.Override
-    public int getBeginTime() {
-      return beginTime_;
+    public boolean getIsQuickOpen() {
+      return isQuickOpen_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 5;
-    private int endTime_;
+    public static final int MEET_COND_LIST_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList meetCondList_;
     /**
-     * <code>uint32 end_time = 5;</code>
-     * @return The endTime.
+     * <code>repeated uint32 meet_cond_list = 10;</code>
+     * @return A list containing the meetCondList.
      */
     @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
+    public java.util.List<java.lang.Integer>
+        getMeetCondListList() {
+      return meetCondList_;
     }
+    /**
+     * <code>repeated uint32 meet_cond_list = 10;</code>
+     * @return The count of meetCondList.
+     */
+    public int getMeetCondListCount() {
+      return meetCondList_.size();
+    }
+    /**
+     * <code>repeated uint32 meet_cond_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The meetCondList at the given index.
+     */
+    public int getMeetCondList(int index) {
+      return meetCondList_.getInt(index);
+    }
+    private int meetCondListMemoizedSerializedSize = -1;
 
     public static final int ACTIVITY_COIN_MAP_FIELD_NUMBER = 682;
     private static final class ActivityCoinMapDefaultEntryHolder {
@@ -2647,175 +2702,184 @@ public final class ActivityInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int ACTIVITY_TYPE_FIELD_NUMBER = 4;
-    private int activityType_;
+    public static final int IS_BANNER_CLEARED_FIELD_NUMBER = 102;
+    private boolean isBannerCleared_;
     /**
-     * <code>uint32 activity_type = 4;</code>
-     * @return The activityType.
+     * <code>bool is_banner_cleared = 102;</code>
+     * @return The isBannerCleared.
      */
     @java.lang.Override
-    public int getActivityType() {
-      return activityType_;
+    public boolean getIsBannerCleared() {
+      return isBannerCleared_;
     }
 
-    public static final int UNK2700_EDKLLHBEEGE_FIELD_NUMBER = 1449;
-    private boolean unk2700EDKLLHBEEGE_;
+    public static final int CUR_SCORE_FIELD_NUMBER = 1906;
+    private int curScore_;
     /**
-     * <code>bool Unk2700_EDKLLHBEEGE = 1449;</code>
-     * @return The unk2700EDKLLHBEEGE.
+     * <code>uint32 cur_score = 1906;</code>
+     * @return The curScore.
      */
     @java.lang.Override
-    public boolean getUnk2700EDKLLHBEEGE() {
-      return unk2700EDKLLHBEEGE_;
+    public int getCurScore() {
+      return curScore_;
     }
 
-    public static final int UNK2800_KOMIPKKKOBE_FIELD_NUMBER = 864;
-    private java.util.List<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC> unk2800KOMIPKKKOBE_;
+    public static final int FIRST_DAY_START_TIME_FIELD_NUMBER = 592;
+    private int firstDayStartTime_;
     /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
+     * <code>uint32 first_day_start_time = 592;</code>
+     * @return The firstDayStartTime.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC> getUnk2800KOMIPKKKOBEList() {
-      return unk2800KOMIPKKKOBE_;
-    }
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder> 
-        getUnk2800KOMIPKKKOBEOrBuilderList() {
-      return unk2800KOMIPKKKOBE_;
-    }
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    @java.lang.Override
-    public int getUnk2800KOMIPKKKOBECount() {
-      return unk2800KOMIPKKKOBE_.size();
-    }
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC getUnk2800KOMIPKKKOBE(int index) {
-      return unk2800KOMIPKKKOBE_.get(index);
-    }
-    /**
-     * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder getUnk2800KOMIPKKKOBEOrBuilder(
-        int index) {
-      return unk2800KOMIPKKKOBE_.get(index);
+    public int getFirstDayStartTime() {
+      return firstDayStartTime_;
     }
 
-    public static final int MEET_COND_LIST_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList meetCondList_;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 12;
+    private int activityId_;
     /**
-     * <code>repeated uint32 meet_cond_list = 10;</code>
-     * @return A list containing the meetCondList.
+     * <code>uint32 activity_id = 12;</code>
+     * @return The activityId.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getMeetCondListList() {
-      return meetCondList_;
+    public int getActivityId() {
+      return activityId_;
     }
-    /**
-     * <code>repeated uint32 meet_cond_list = 10;</code>
-     * @return The count of meetCondList.
-     */
-    public int getMeetCondListCount() {
-      return meetCondList_.size();
-    }
-    /**
-     * <code>repeated uint32 meet_cond_list = 10;</code>
-     * @param index The index of the element to return.
-     * @return The meetCondList at the given index.
-     */
-    public int getMeetCondList(int index) {
-      return meetCondList_.getInt(index);
-    }
-    private int meetCondListMemoizedSerializedSize = -1;
 
-    public static final int UNK2700_IFPBCNLCKLG_FIELD_NUMBER = 1399;
-    private static final class Unk2700IFPBCNLCKLGDefaultEntryHolder {
+    public static final int IS_PLAY_OPEN_ANIM_FIELD_NUMBER = 13;
+    private boolean isPlayOpenAnim_;
+    /**
+     * <code>bool is_play_open_anim = 13;</code>
+     * @return The isPlayOpenAnim.
+     */
+    @java.lang.Override
+    public boolean getIsPlayOpenAnim() {
+      return isPlayOpenAnim_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 5;
+    private int endTime_;
+    /**
+     * <code>uint32 end_time = 5;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
+    }
+
+    public static final int SCORE_LIMIT_FIELD_NUMBER = 1958;
+    private int scoreLimit_;
+    /**
+     * <code>uint32 score_limit = 1958;</code>
+     * @return The scoreLimit.
+     */
+    @java.lang.Override
+    public int getScoreLimit() {
+      return scoreLimit_;
+    }
+
+    public static final int WISH_GIFT_NUM_MAP_FIELD_NUMBER = 1399;
+    private static final class WishGiftNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.ActivityInfoOuterClass.internal_static_ActivityInfo_Unk2700IFPBCNLCKLGEntry_descriptor, 
+                  emu.grasscutter.net.proto.ActivityInfoOuterClass.internal_static_ActivityInfo_WishGiftNumMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> unk2700IFPBCNLCKLG_;
+        java.lang.Integer, java.lang.Integer> wishGiftNumMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetUnk2700IFPBCNLCKLG() {
-      if (unk2700IFPBCNLCKLG_ == null) {
+    internalGetWishGiftNumMap() {
+      if (wishGiftNumMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            Unk2700IFPBCNLCKLGDefaultEntryHolder.defaultEntry);
+            WishGiftNumMapDefaultEntryHolder.defaultEntry);
       }
-      return unk2700IFPBCNLCKLG_;
+      return wishGiftNumMap_;
     }
 
-    public int getUnk2700IFPBCNLCKLGCount() {
-      return internalGetUnk2700IFPBCNLCKLG().getMap().size();
+    public int getWishGiftNumMapCount() {
+      return internalGetWishGiftNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
      */
 
     @java.lang.Override
-    public boolean containsUnk2700IFPBCNLCKLG(
+    public boolean containsWishGiftNumMap(
         int key) {
       
-      return internalGetUnk2700IFPBCNLCKLG().getMap().containsKey(key);
+      return internalGetWishGiftNumMap().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getUnk2700IFPBCNLCKLGMap()} instead.
+     * Use {@link #getWishGiftNumMapMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2700IFPBCNLCKLG() {
-      return getUnk2700IFPBCNLCKLGMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getWishGiftNumMap() {
+      return getWishGiftNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2700IFPBCNLCKLGMap() {
-      return internalGetUnk2700IFPBCNLCKLG().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getWishGiftNumMapMap() {
+      return internalGetWishGiftNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
      */
     @java.lang.Override
 
-    public int getUnk2700IFPBCNLCKLGOrDefault(
+    public int getWishGiftNumMapOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk2700IFPBCNLCKLG().getMap();
+          internalGetWishGiftNumMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+     * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
      */
     @java.lang.Override
 
-    public int getUnk2700IFPBCNLCKLGOrThrow(
+    public int getWishGiftNumMapOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk2700IFPBCNLCKLG().getMap();
+          internalGetWishGiftNumMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int SELECTED_AVATAR_REWARD_ID_FIELD_NUMBER = 1290;
+    private int selectedAvatarRewardId_;
+    /**
+     * <code>uint32 selected_avatar_reward_id = 1290;</code>
+     * @return The selectedAvatarRewardId.
+     */
+    @java.lang.Override
+    public int getSelectedAvatarRewardId() {
+      return selectedAvatarRewardId_;
+    }
+
+    public static final int IS_COMMON_CONTENT_CLOSED_FIELD_NUMBER = 1963;
+    private boolean isCommonContentClosed_;
+    /**
+     * <code>bool is_common_content_closed = 1963;</code>
+     * @return The isCommonContentClosed.
+     */
+    @java.lang.Override
+    public boolean getIsCommonContentClosed() {
+      return isCommonContentClosed_;
     }
 
     public static final int EXPIRE_COND_LIST_FIELD_NUMBER = 3;
@@ -2845,6 +2909,46 @@ public final class ActivityInfoOuterClass {
       return expireCondList_.getInt(index);
     }
     private int expireCondListMemoizedSerializedSize = -1;
+
+    public static final int ACTIVITY_PUSH_TIPS_DATA_LIST_FIELD_NUMBER = 864;
+    private java.util.List<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData> activityPushTipsDataList_;
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData> getActivityPushTipsDataListList() {
+      return activityPushTipsDataList_;
+    }
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder> 
+        getActivityPushTipsDataListOrBuilderList() {
+      return activityPushTipsDataList_;
+    }
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    @java.lang.Override
+    public int getActivityPushTipsDataListCount() {
+      return activityPushTipsDataList_.size();
+    }
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData getActivityPushTipsDataList(int index) {
+      return activityPushTipsDataList_.get(index);
+    }
+    /**
+     * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder getActivityPushTipsDataListOrBuilder(
+        int index) {
+      return activityPushTipsDataList_.get(index);
+    }
 
     public static final int WATCHER_INFO_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo> watcherInfoList_;
@@ -2886,15 +2990,26 @@ public final class ActivityInfoOuterClass {
       return watcherInfoList_.get(index);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 12;
-    private int activityId_;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
+    private int scheduleId_;
     /**
-     * <code>uint32 activity_id = 12;</code>
-     * @return The activityId.
+     * <code>uint32 schedule_id = 15;</code>
+     * @return The scheduleId.
      */
     @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
+    public int getScheduleId() {
+      return scheduleId_;
+    }
+
+    public static final int IS_STARTING_FIELD_NUMBER = 9;
+    private boolean isStarting_;
+    /**
+     * <code>bool is_starting = 9;</code>
+     * @return The isStarting.
+     */
+    @java.lang.Override
+    public boolean getIsStarting() {
+      return isStarting_;
     }
 
     public static final int SAM_LAMP_INFO_FIELD_NUMBER = 7;
@@ -4418,7 +4533,7 @@ public final class ActivityInfoOuterClass {
 
     public static final int ISLAND_PARTY_INFO_FIELD_NUMBER = 1885;
     /**
-     * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+     * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
      * @return Whether the islandPartyInfo field is set.
      */
     @java.lang.Override
@@ -4426,25 +4541,25 @@ public final class ActivityInfoOuterClass {
       return detailCase_ == 1885;
     }
     /**
-     * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+     * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
      * @return The islandPartyInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo getIslandPartyInfo() {
+    public emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo getIslandPartyInfo() {
       if (detailCase_ == 1885) {
-         return (emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_;
+         return (emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_;
       }
-      return emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.getDefaultInstance();
     }
     /**
-     * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+     * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfoOrBuilder getIslandPartyInfoOrBuilder() {
+    public emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfoOrBuilder getIslandPartyInfoOrBuilder() {
       if (detailCase_ == 1885) {
-         return (emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_;
+         return (emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_;
       }
-      return emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.getDefaultInstance();
     }
 
     public static final int GEAR_INFO_FIELD_NUMBER = 722;
@@ -4542,7 +4657,7 @@ public final class ActivityInfoOuterClass {
 
     public static final int MUQADAS_POTION_INFO_FIELD_NUMBER = 1157;
     /**
-     * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+     * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
      * @return Whether the muqadasPotionInfo field is set.
      */
     @java.lang.Override
@@ -4550,30 +4665,30 @@ public final class ActivityInfoOuterClass {
       return detailCase_ == 1157;
     }
     /**
-     * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+     * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
      * @return The muqadasPotionInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo getMuqadasPotionInfo() {
+    public emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo getMuqadasPotionInfo() {
       if (detailCase_ == 1157) {
-         return (emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_;
+         return (emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_;
       }
-      return emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.getDefaultInstance();
     }
     /**
-     * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+     * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfoOrBuilder getMuqadasPotionInfoOrBuilder() {
+    public emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfoOrBuilder getMuqadasPotionInfoOrBuilder() {
       if (detailCase_ == 1157) {
-         return (emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_;
+         return (emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_;
       }
-      return emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.getDefaultInstance();
     }
 
     public static final int TREASURE_SEELIE_INFO_FIELD_NUMBER = 966;
     /**
-     * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+     * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
      * @return Whether the treasureSeelieInfo field is set.
      */
     @java.lang.Override
@@ -4581,25 +4696,25 @@ public final class ActivityInfoOuterClass {
       return detailCase_ == 966;
     }
     /**
-     * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+     * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
      * @return The treasureSeelieInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo getTreasureSeelieInfo() {
+    public emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo getTreasureSeelieInfo() {
       if (detailCase_ == 966) {
-         return (emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_;
+         return (emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_;
       }
-      return emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.getDefaultInstance();
     }
     /**
-     * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+     * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfoOrBuilder getTreasureSeelieInfoOrBuilder() {
+    public emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfoOrBuilder getTreasureSeelieInfoOrBuilder() {
       if (detailCase_ == 966) {
-         return (emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_;
+         return (emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_;
       }
-      return emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.getDefaultInstance();
     }
 
     public static final int ROCK_BOARD_EXPLORE_INFO_FIELD_NUMBER = 1078;
@@ -4695,6 +4810,99 @@ public final class ActivityInfoOuterClass {
       return emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.WindFieldDetailInfo.getDefaultInstance();
     }
 
+    public static final int FUNGUS_FIGHTER_INFO_FIELD_NUMBER = 490;
+    /**
+     * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+     * @return Whether the fungusFighterInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasFungusFighterInfo() {
+      return detailCase_ == 490;
+    }
+    /**
+     * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+     * @return The fungusFighterInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo getFungusFighterInfo() {
+      if (detailCase_ == 490) {
+         return (emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfoOrBuilder getFungusFighterInfoOrBuilder() {
+      if (detailCase_ == 490) {
+         return (emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.getDefaultInstance();
+    }
+
+    public static final int CHAR_AMUSEMENT_INFO_FIELD_NUMBER = 1496;
+    /**
+     * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+     * @return Whether the charAmusementInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasCharAmusementInfo() {
+      return detailCase_ == 1496;
+    }
+    /**
+     * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+     * @return The charAmusementInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo getCharAmusementInfo() {
+      if (detailCase_ == 1496) {
+         return (emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfoOrBuilder getCharAmusementInfoOrBuilder() {
+      if (detailCase_ == 1496) {
+         return (emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.getDefaultInstance();
+    }
+
+    public static final int EFFIGY_CHALLENGE_INFO_FIELD_NUMBER = 1025;
+    /**
+     * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+     * @return Whether the effigyChallengeInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasEffigyChallengeInfo() {
+      return detailCase_ == 1025;
+    }
+    /**
+     * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+     * @return The effigyChallengeInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo getEffigyChallengeInfo() {
+      if (detailCase_ == 1025) {
+         return (emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfoOrBuilder getEffigyChallengeInfoOrBuilder() {
+      if (detailCase_ == 1025) {
+         return (emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.getDefaultInstance();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -4766,8 +4974,8 @@ public final class ActivityInfoOuterClass {
       if (detailCase_ == 54) {
         output.writeMessage(54, (emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo) detail_);
       }
-      if (unk2700NONJFHAIFLA_ != false) {
-        output.writeBool(102, unk2700NONJFHAIFLA_);
+      if (isBannerCleared_ != false) {
+        output.writeBool(102, isBannerCleared_);
       }
       if (detailCase_ == 156) {
         output.writeMessage(156, (emu.grasscutter.net.proto.MistTrialActivityDetailInfoOuterClass.MistTrialActivityDetailInfo) detail_);
@@ -4808,6 +5016,9 @@ public final class ActivityInfoOuterClass {
       }
       if (detailCase_ == 460) {
         output.writeMessage(460, (emu.grasscutter.net.proto.MusicGameActivityDetailInfoOuterClass.MusicGameActivityDetailInfo) detail_);
+      }
+      if (detailCase_ == 490) {
+        output.writeMessage(490, (emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_);
       }
       if (detailCase_ == 491) {
         output.writeMessage(491, (emu.grasscutter.net.proto.HachiActivityDetailInfoOuterClass.HachiActivityDetailInfo) detail_);
@@ -4860,8 +5071,8 @@ public final class ActivityInfoOuterClass {
       if (detailCase_ == 859) {
         output.writeMessage(859, (emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo) detail_);
       }
-      for (int i = 0; i < unk2800KOMIPKKKOBE_.size(); i++) {
-        output.writeMessage(864, unk2800KOMIPKKKOBE_.get(i));
+      for (int i = 0; i < activityPushTipsDataList_.size(); i++) {
+        output.writeMessage(864, activityPushTipsDataList_.get(i));
       }
       if (isHidden_ != false) {
         output.writeBool(919, isHidden_);
@@ -4870,10 +5081,13 @@ public final class ActivityInfoOuterClass {
         output.writeMessage(927, (emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo) detail_);
       }
       if (detailCase_ == 966) {
-        output.writeMessage(966, (emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_);
+        output.writeMessage(966, (emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_);
       }
       if (detailCase_ == 1015) {
         output.writeMessage(1015, (emu.grasscutter.net.proto.ChannelerSlabActivityDetailInfoOuterClass.ChannelerSlabActivityDetailInfo) detail_);
+      }
+      if (detailCase_ == 1025) {
+        output.writeMessage(1025, (emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_);
       }
       if (detailCase_ == 1043) {
         output.writeMessage(1043, (emu.grasscutter.net.proto.InstableSprayDetailInfoOuterClass.InstableSprayDetailInfo) detail_);
@@ -4894,7 +5108,7 @@ public final class ActivityInfoOuterClass {
         output.writeMessage(1114, (emu.grasscutter.net.proto.TreasureMapActivityDetailInfoOuterClass.TreasureMapActivityDetailInfo) detail_);
       }
       if (detailCase_ == 1157) {
-        output.writeMessage(1157, (emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_);
+        output.writeMessage(1157, (emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_);
       }
       if (detailCase_ == 1226) {
         output.writeMessage(1226, (emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo) detail_);
@@ -4920,14 +5134,17 @@ public final class ActivityInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetUnk2700IFPBCNLCKLG(),
-          Unk2700IFPBCNLCKLGDefaultEntryHolder.defaultEntry,
+          internalGetWishGiftNumMap(),
+          WishGiftNumMapDefaultEntryHolder.defaultEntry,
           1399);
       if (detailCase_ == 1411) {
         output.writeMessage(1411, (emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo) detail_);
       }
-      if (unk2700EDKLLHBEEGE_ != false) {
-        output.writeBool(1449, unk2700EDKLLHBEEGE_);
+      if (isQuickOpen_ != false) {
+        output.writeBool(1449, isQuickOpen_);
+      }
+      if (detailCase_ == 1496) {
+        output.writeMessage(1496, (emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_);
       }
       if (detailCase_ == 1588) {
         output.writeMessage(1588, (emu.grasscutter.net.proto.MoonfinTrialActivityDetailInfoOuterClass.MoonfinTrialActivityDetailInfo) detail_);
@@ -4954,7 +5171,7 @@ public final class ActivityInfoOuterClass {
         output.writeMessage(1876, (emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo) detail_);
       }
       if (detailCase_ == 1885) {
-        output.writeMessage(1885, (emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_);
+        output.writeMessage(1885, (emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_);
       }
       if (detailCase_ == 1891) {
         output.writeMessage(1891, (emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo) detail_);
@@ -4967,6 +5184,9 @@ public final class ActivityInfoOuterClass {
       }
       if (scoreLimit_ != 0) {
         output.writeUInt32(1958, scoreLimit_);
+      }
+      if (isCommonContentClosed_ != false) {
+        output.writeBool(1963, isCommonContentClosed_);
       }
       unknownFields.writeTo(output);
     }
@@ -5061,9 +5281,9 @@ public final class ActivityInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(54, (emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo) detail_);
       }
-      if (unk2700NONJFHAIFLA_ != false) {
+      if (isBannerCleared_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(102, unk2700NONJFHAIFLA_);
+          .computeBoolSize(102, isBannerCleared_);
       }
       if (detailCase_ == 156) {
         size += com.google.protobuf.CodedOutputStream
@@ -5122,6 +5342,10 @@ public final class ActivityInfoOuterClass {
       if (detailCase_ == 460) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(460, (emu.grasscutter.net.proto.MusicGameActivityDetailInfoOuterClass.MusicGameActivityDetailInfo) detail_);
+      }
+      if (detailCase_ == 490) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(490, (emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_);
       }
       if (detailCase_ == 491) {
         size += com.google.protobuf.CodedOutputStream
@@ -5193,9 +5417,9 @@ public final class ActivityInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(859, (emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo) detail_);
       }
-      for (int i = 0; i < unk2800KOMIPKKKOBE_.size(); i++) {
+      for (int i = 0; i < activityPushTipsDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(864, unk2800KOMIPKKKOBE_.get(i));
+          .computeMessageSize(864, activityPushTipsDataList_.get(i));
       }
       if (isHidden_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -5207,11 +5431,15 @@ public final class ActivityInfoOuterClass {
       }
       if (detailCase_ == 966) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(966, (emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_);
+          .computeMessageSize(966, (emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_);
       }
       if (detailCase_ == 1015) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1015, (emu.grasscutter.net.proto.ChannelerSlabActivityDetailInfoOuterClass.ChannelerSlabActivityDetailInfo) detail_);
+      }
+      if (detailCase_ == 1025) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1025, (emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_);
       }
       if (detailCase_ == 1043) {
         size += com.google.protobuf.CodedOutputStream
@@ -5239,7 +5467,7 @@ public final class ActivityInfoOuterClass {
       }
       if (detailCase_ == 1157) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1157, (emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_);
+          .computeMessageSize(1157, (emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_);
       }
       if (detailCase_ == 1226) {
         size += com.google.protobuf.CodedOutputStream
@@ -5270,22 +5498,26 @@ public final class ActivityInfoOuterClass {
           .computeMessageSize(1372, (emu.grasscutter.net.proto.SummerTimeDetailInfoOuterClass.SummerTimeDetailInfo) detail_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUnk2700IFPBCNLCKLG().getMap().entrySet()) {
+           : internalGetWishGiftNumMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        unk2700IFPBCNLCKLG__ = Unk2700IFPBCNLCKLGDefaultEntryHolder.defaultEntry.newBuilderForType()
+        wishGiftNumMap__ = WishGiftNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1399, unk2700IFPBCNLCKLG__);
+            .computeMessageSize(1399, wishGiftNumMap__);
       }
       if (detailCase_ == 1411) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1411, (emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo) detail_);
       }
-      if (unk2700EDKLLHBEEGE_ != false) {
+      if (isQuickOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1449, unk2700EDKLLHBEEGE_);
+          .computeBoolSize(1449, isQuickOpen_);
+      }
+      if (detailCase_ == 1496) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1496, (emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_);
       }
       if (detailCase_ == 1588) {
         size += com.google.protobuf.CodedOutputStream
@@ -5321,7 +5553,7 @@ public final class ActivityInfoOuterClass {
       }
       if (detailCase_ == 1885) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1885, (emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_);
+          .computeMessageSize(1885, (emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_);
       }
       if (detailCase_ == 1891) {
         size += com.google.protobuf.CodedOutputStream
@@ -5339,6 +5571,10 @@ public final class ActivityInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1958, scoreLimit_);
       }
+      if (isCommonContentClosed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1963, isCommonContentClosed_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -5354,50 +5590,52 @@ public final class ActivityInfoOuterClass {
       }
       emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo other = (emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo) obj;
 
-      if (getIsPlayOpenAnim()
-          != other.getIsPlayOpenAnim()) return false;
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
-      if (getCurScore()
-          != other.getCurScore()) return false;
-      if (getIsStarting()
-          != other.getIsStarting()) return false;
-      if (!getTakenRewardListList()
-          .equals(other.getTakenRewardListList())) return false;
-      if (getUnk2700NONJFHAIFLA()
-          != other.getUnk2700NONJFHAIFLA()) return false;
-      if (getSelectedAvatarRewardId()
-          != other.getSelectedAvatarRewardId()) return false;
-      if (getFirstDayStartTime()
-          != other.getFirstDayStartTime()) return false;
-      if (getScoreLimit()
-          != other.getScoreLimit()) return false;
       if (getIsFinished()
           != other.getIsFinished()) return false;
-      if (getIsHidden()
-          != other.getIsHidden()) return false;
-      if (getBeginTime()
-          != other.getBeginTime()) return false;
-      if (getEndTime()
-          != other.getEndTime()) return false;
-      if (!internalGetActivityCoinMap().equals(
-          other.internalGetActivityCoinMap())) return false;
       if (getActivityType()
           != other.getActivityType()) return false;
-      if (getUnk2700EDKLLHBEEGE()
-          != other.getUnk2700EDKLLHBEEGE()) return false;
-      if (!getUnk2800KOMIPKKKOBEList()
-          .equals(other.getUnk2800KOMIPKKKOBEList())) return false;
+      if (getBeginTime()
+          != other.getBeginTime()) return false;
+      if (!getTakenRewardListList()
+          .equals(other.getTakenRewardListList())) return false;
+      if (getIsHidden()
+          != other.getIsHidden()) return false;
+      if (getIsQuickOpen()
+          != other.getIsQuickOpen()) return false;
       if (!getMeetCondListList()
           .equals(other.getMeetCondListList())) return false;
-      if (!internalGetUnk2700IFPBCNLCKLG().equals(
-          other.internalGetUnk2700IFPBCNLCKLG())) return false;
-      if (!getExpireCondListList()
-          .equals(other.getExpireCondListList())) return false;
-      if (!getWatcherInfoListList()
-          .equals(other.getWatcherInfoListList())) return false;
+      if (!internalGetActivityCoinMap().equals(
+          other.internalGetActivityCoinMap())) return false;
+      if (getIsBannerCleared()
+          != other.getIsBannerCleared()) return false;
+      if (getCurScore()
+          != other.getCurScore()) return false;
+      if (getFirstDayStartTime()
+          != other.getFirstDayStartTime()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
+      if (getIsPlayOpenAnim()
+          != other.getIsPlayOpenAnim()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
+      if (getScoreLimit()
+          != other.getScoreLimit()) return false;
+      if (!internalGetWishGiftNumMap().equals(
+          other.internalGetWishGiftNumMap())) return false;
+      if (getSelectedAvatarRewardId()
+          != other.getSelectedAvatarRewardId()) return false;
+      if (getIsCommonContentClosed()
+          != other.getIsCommonContentClosed()) return false;
+      if (!getExpireCondListList()
+          .equals(other.getExpireCondListList())) return false;
+      if (!getActivityPushTipsDataListList()
+          .equals(other.getActivityPushTipsDataListList())) return false;
+      if (!getWatcherInfoListList()
+          .equals(other.getWatcherInfoListList())) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
+      if (getIsStarting()
+          != other.getIsStarting()) return false;
       if (!getDetailCase().equals(other.getDetailCase())) return false;
       switch (detailCase_) {
         case 7:
@@ -5632,6 +5870,18 @@ public final class ActivityInfoOuterClass {
           if (!getWindFieldInfo()
               .equals(other.getWindFieldInfo())) return false;
           break;
+        case 490:
+          if (!getFungusFighterInfo()
+              .equals(other.getFungusFighterInfo())) return false;
+          break;
+        case 1496:
+          if (!getCharAmusementInfo()
+              .equals(other.getCharAmusementInfo())) return false;
+          break;
+        case 1025:
+          if (!getEffigyChallengeInfo()
+              .equals(other.getEffigyChallengeInfo())) return false;
+          break;
         case 0:
         default:
       }
@@ -5646,70 +5896,73 @@ public final class ActivityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_PLAY_OPEN_ANIM_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPlayOpenAnim());
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getCurScore();
-      hash = (37 * hash) + IS_STARTING_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsStarting());
+          getIsFinished());
+      hash = (37 * hash) + ACTIVITY_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityType();
+      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBeginTime();
       if (getTakenRewardListCount() > 0) {
         hash = (37 * hash) + TAKEN_REWARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTakenRewardListList().hashCode();
       }
-      hash = (37 * hash) + UNK2700_NONJFHAIFLA_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700NONJFHAIFLA());
-      hash = (37 * hash) + SELECTED_AVATAR_REWARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSelectedAvatarRewardId();
-      hash = (37 * hash) + FIRST_DAY_START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getFirstDayStartTime();
-      hash = (37 * hash) + SCORE_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + getScoreLimit();
-      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinished());
       hash = (37 * hash) + IS_HIDDEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsHidden());
-      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBeginTime();
-      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEndTime();
-      if (!internalGetActivityCoinMap().getMap().isEmpty()) {
-        hash = (37 * hash) + ACTIVITY_COIN_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetActivityCoinMap().hashCode();
-      }
-      hash = (37 * hash) + ACTIVITY_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityType();
-      hash = (37 * hash) + UNK2700_EDKLLHBEEGE_FIELD_NUMBER;
+      hash = (37 * hash) + IS_QUICK_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700EDKLLHBEEGE());
-      if (getUnk2800KOMIPKKKOBECount() > 0) {
-        hash = (37 * hash) + UNK2800_KOMIPKKKOBE_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800KOMIPKKKOBEList().hashCode();
-      }
+          getIsQuickOpen());
       if (getMeetCondListCount() > 0) {
         hash = (37 * hash) + MEET_COND_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMeetCondListList().hashCode();
       }
-      if (!internalGetUnk2700IFPBCNLCKLG().getMap().isEmpty()) {
-        hash = (37 * hash) + UNK2700_IFPBCNLCKLG_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetUnk2700IFPBCNLCKLG().hashCode();
+      if (!internalGetActivityCoinMap().getMap().isEmpty()) {
+        hash = (37 * hash) + ACTIVITY_COIN_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetActivityCoinMap().hashCode();
       }
+      hash = (37 * hash) + IS_BANNER_CLEARED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsBannerCleared());
+      hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getCurScore();
+      hash = (37 * hash) + FIRST_DAY_START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getFirstDayStartTime();
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + IS_PLAY_OPEN_ANIM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPlayOpenAnim());
+      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + SCORE_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getScoreLimit();
+      if (!internalGetWishGiftNumMap().getMap().isEmpty()) {
+        hash = (37 * hash) + WISH_GIFT_NUM_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetWishGiftNumMap().hashCode();
+      }
+      hash = (37 * hash) + SELECTED_AVATAR_REWARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSelectedAvatarRewardId();
+      hash = (37 * hash) + IS_COMMON_CONTENT_CLOSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsCommonContentClosed());
       if (getExpireCondListCount() > 0) {
         hash = (37 * hash) + EXPIRE_COND_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getExpireCondListList().hashCode();
+      }
+      if (getActivityPushTipsDataListCount() > 0) {
+        hash = (37 * hash) + ACTIVITY_PUSH_TIPS_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getActivityPushTipsDataListList().hashCode();
       }
       if (getWatcherInfoListCount() > 0) {
         hash = (37 * hash) + WATCHER_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWatcherInfoListList().hashCode();
       }
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
+      hash = (37 * hash) + IS_STARTING_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsStarting());
       switch (detailCase_) {
         case 7:
           hash = (37 * hash) + SAM_LAMP_INFO_FIELD_NUMBER;
@@ -5943,6 +6196,18 @@ public final class ActivityInfoOuterClass {
           hash = (37 * hash) + WIND_FIELD_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getWindFieldInfo().hashCode();
           break;
+        case 490:
+          hash = (37 * hash) + FUNGUS_FIGHTER_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getFungusFighterInfo().hashCode();
+          break;
+        case 1496:
+          hash = (37 * hash) + CHAR_AMUSEMENT_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getCharAmusementInfo().hashCode();
+          break;
+        case 1025:
+          hash = (37 * hash) + EFFIGY_CHALLENGE_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getEffigyChallengeInfo().hashCode();
+          break;
         case 0:
         default:
       }
@@ -6060,7 +6325,7 @@ public final class ActivityInfoOuterClass {
           case 682:
             return internalGetActivityCoinMap();
           case 1399:
-            return internalGetUnk2700IFPBCNLCKLG();
+            return internalGetWishGiftNumMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -6073,7 +6338,7 @@ public final class ActivityInfoOuterClass {
           case 682:
             return internalGetMutableActivityCoinMap();
           case 1399:
-            return internalGetMutableUnk2700IFPBCNLCKLG();
+            return internalGetMutableWishGiftNumMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -6100,62 +6365,64 @@ public final class ActivityInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2800KOMIPKKKOBEFieldBuilder();
+          getActivityPushTipsDataListFieldBuilder();
           getWatcherInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isPlayOpenAnim_ = false;
-
-        scheduleId_ = 0;
-
-        curScore_ = 0;
-
-        isStarting_ = false;
-
-        takenRewardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        unk2700NONJFHAIFLA_ = false;
-
-        selectedAvatarRewardId_ = 0;
-
-        firstDayStartTime_ = 0;
-
-        scoreLimit_ = 0;
-
         isFinished_ = false;
 
-        isHidden_ = false;
+        activityType_ = 0;
 
         beginTime_ = 0;
 
+        takenRewardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isHidden_ = false;
+
+        isQuickOpen_ = false;
+
+        meetCondList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        internalGetMutableActivityCoinMap().clear();
+        isBannerCleared_ = false;
+
+        curScore_ = 0;
+
+        firstDayStartTime_ = 0;
+
+        activityId_ = 0;
+
+        isPlayOpenAnim_ = false;
+
         endTime_ = 0;
 
-        internalGetMutableActivityCoinMap().clear();
-        activityType_ = 0;
+        scoreLimit_ = 0;
 
-        unk2700EDKLLHBEEGE_ = false;
+        internalGetMutableWishGiftNumMap().clear();
+        selectedAvatarRewardId_ = 0;
 
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          unk2800KOMIPKKKOBE_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.clear();
-        }
-        meetCondList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        internalGetMutableUnk2700IFPBCNLCKLG().clear();
+        isCommonContentClosed_ = false;
+
         expireCondList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000010);
+        if (activityPushTipsDataListBuilder_ == null) {
+          activityPushTipsDataList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        } else {
+          activityPushTipsDataListBuilder_.clear();
+        }
         if (watcherInfoListBuilder_ == null) {
           watcherInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000040);
         } else {
           watcherInfoListBuilder_.clear();
         }
-        activityId_ = 0;
+        scheduleId_ = 0;
+
+        isStarting_ = false;
 
         detailCase_ = 0;
         detail_ = null;
@@ -6186,48 +6453,48 @@ public final class ActivityInfoOuterClass {
       public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo buildPartial() {
         emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo result = new emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo(this);
         int from_bitField0_ = bitField0_;
-        result.isPlayOpenAnim_ = isPlayOpenAnim_;
-        result.scheduleId_ = scheduleId_;
-        result.curScore_ = curScore_;
-        result.isStarting_ = isStarting_;
+        result.isFinished_ = isFinished_;
+        result.activityType_ = activityType_;
+        result.beginTime_ = beginTime_;
         if (((bitField0_ & 0x00000001) != 0)) {
           takenRewardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.takenRewardList_ = takenRewardList_;
-        result.unk2700NONJFHAIFLA_ = unk2700NONJFHAIFLA_;
-        result.selectedAvatarRewardId_ = selectedAvatarRewardId_;
-        result.firstDayStartTime_ = firstDayStartTime_;
-        result.scoreLimit_ = scoreLimit_;
-        result.isFinished_ = isFinished_;
         result.isHidden_ = isHidden_;
-        result.beginTime_ = beginTime_;
-        result.endTime_ = endTime_;
-        result.activityCoinMap_ = internalGetActivityCoinMap();
-        result.activityCoinMap_.makeImmutable();
-        result.activityType_ = activityType_;
-        result.unk2700EDKLLHBEEGE_ = unk2700EDKLLHBEEGE_;
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            unk2800KOMIPKKKOBE_ = java.util.Collections.unmodifiableList(unk2800KOMIPKKKOBE_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.unk2800KOMIPKKKOBE_ = unk2800KOMIPKKKOBE_;
-        } else {
-          result.unk2800KOMIPKKKOBE_ = unk2800KOMIPKKKOBEBuilder_.build();
-        }
-        if (((bitField0_ & 0x00000008) != 0)) {
+        result.isQuickOpen_ = isQuickOpen_;
+        if (((bitField0_ & 0x00000002) != 0)) {
           meetCondList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.meetCondList_ = meetCondList_;
-        result.unk2700IFPBCNLCKLG_ = internalGetUnk2700IFPBCNLCKLG();
-        result.unk2700IFPBCNLCKLG_.makeImmutable();
-        if (((bitField0_ & 0x00000020) != 0)) {
+        result.activityCoinMap_ = internalGetActivityCoinMap();
+        result.activityCoinMap_.makeImmutable();
+        result.isBannerCleared_ = isBannerCleared_;
+        result.curScore_ = curScore_;
+        result.firstDayStartTime_ = firstDayStartTime_;
+        result.activityId_ = activityId_;
+        result.isPlayOpenAnim_ = isPlayOpenAnim_;
+        result.endTime_ = endTime_;
+        result.scoreLimit_ = scoreLimit_;
+        result.wishGiftNumMap_ = internalGetWishGiftNumMap();
+        result.wishGiftNumMap_.makeImmutable();
+        result.selectedAvatarRewardId_ = selectedAvatarRewardId_;
+        result.isCommonContentClosed_ = isCommonContentClosed_;
+        if (((bitField0_ & 0x00000010) != 0)) {
           expireCondList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000010);
         }
         result.expireCondList_ = expireCondList_;
+        if (activityPushTipsDataListBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) != 0)) {
+            activityPushTipsDataList_ = java.util.Collections.unmodifiableList(activityPushTipsDataList_);
+            bitField0_ = (bitField0_ & ~0x00000020);
+          }
+          result.activityPushTipsDataList_ = activityPushTipsDataList_;
+        } else {
+          result.activityPushTipsDataList_ = activityPushTipsDataListBuilder_.build();
+        }
         if (watcherInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000040) != 0)) {
             watcherInfoList_ = java.util.Collections.unmodifiableList(watcherInfoList_);
@@ -6237,7 +6504,8 @@ public final class ActivityInfoOuterClass {
         } else {
           result.watcherInfoList_ = watcherInfoListBuilder_.build();
         }
-        result.activityId_ = activityId_;
+        result.scheduleId_ = scheduleId_;
+        result.isStarting_ = isStarting_;
         if (detailCase_ == 7) {
           if (samLampInfoBuilder_ == null) {
             result.detail_ = detail_;
@@ -6644,6 +6912,27 @@ public final class ActivityInfoOuterClass {
             result.detail_ = windFieldInfoBuilder_.build();
           }
         }
+        if (detailCase_ == 490) {
+          if (fungusFighterInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = fungusFighterInfoBuilder_.build();
+          }
+        }
+        if (detailCase_ == 1496) {
+          if (charAmusementInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = charAmusementInfoBuilder_.build();
+          }
+        }
+        if (detailCase_ == 1025) {
+          if (effigyChallengeInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = effigyChallengeInfoBuilder_.build();
+          }
+        }
         result.detailCase_ = detailCase_;
         onBuilt();
         return result;
@@ -6693,17 +6982,14 @@ public final class ActivityInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo other) {
         if (other == emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.getDefaultInstance()) return this;
-        if (other.getIsPlayOpenAnim() != false) {
-          setIsPlayOpenAnim(other.getIsPlayOpenAnim());
+        if (other.getIsFinished() != false) {
+          setIsFinished(other.getIsFinished());
         }
-        if (other.getScheduleId() != 0) {
-          setScheduleId(other.getScheduleId());
+        if (other.getActivityType() != 0) {
+          setActivityType(other.getActivityType());
         }
-        if (other.getCurScore() != 0) {
-          setCurScore(other.getCurScore());
-        }
-        if (other.getIsStarting() != false) {
-          setIsStarting(other.getIsStarting());
+        if (other.getBeginTime() != 0) {
+          setBeginTime(other.getBeginTime());
         }
         if (!other.takenRewardList_.isEmpty()) {
           if (takenRewardList_.isEmpty()) {
@@ -6715,85 +7001,88 @@ public final class ActivityInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getUnk2700NONJFHAIFLA() != false) {
-          setUnk2700NONJFHAIFLA(other.getUnk2700NONJFHAIFLA());
-        }
-        if (other.getSelectedAvatarRewardId() != 0) {
-          setSelectedAvatarRewardId(other.getSelectedAvatarRewardId());
-        }
-        if (other.getFirstDayStartTime() != 0) {
-          setFirstDayStartTime(other.getFirstDayStartTime());
-        }
-        if (other.getScoreLimit() != 0) {
-          setScoreLimit(other.getScoreLimit());
-        }
-        if (other.getIsFinished() != false) {
-          setIsFinished(other.getIsFinished());
-        }
         if (other.getIsHidden() != false) {
           setIsHidden(other.getIsHidden());
         }
-        if (other.getBeginTime() != 0) {
-          setBeginTime(other.getBeginTime());
-        }
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
-        }
-        internalGetMutableActivityCoinMap().mergeFrom(
-            other.internalGetActivityCoinMap());
-        if (other.getActivityType() != 0) {
-          setActivityType(other.getActivityType());
-        }
-        if (other.getUnk2700EDKLLHBEEGE() != false) {
-          setUnk2700EDKLLHBEEGE(other.getUnk2700EDKLLHBEEGE());
-        }
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          if (!other.unk2800KOMIPKKKOBE_.isEmpty()) {
-            if (unk2800KOMIPKKKOBE_.isEmpty()) {
-              unk2800KOMIPKKKOBE_ = other.unk2800KOMIPKKKOBE_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureUnk2800KOMIPKKKOBEIsMutable();
-              unk2800KOMIPKKKOBE_.addAll(other.unk2800KOMIPKKKOBE_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.unk2800KOMIPKKKOBE_.isEmpty()) {
-            if (unk2800KOMIPKKKOBEBuilder_.isEmpty()) {
-              unk2800KOMIPKKKOBEBuilder_.dispose();
-              unk2800KOMIPKKKOBEBuilder_ = null;
-              unk2800KOMIPKKKOBE_ = other.unk2800KOMIPKKKOBE_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              unk2800KOMIPKKKOBEBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2800KOMIPKKKOBEFieldBuilder() : null;
-            } else {
-              unk2800KOMIPKKKOBEBuilder_.addAllMessages(other.unk2800KOMIPKKKOBE_);
-            }
-          }
+        if (other.getIsQuickOpen() != false) {
+          setIsQuickOpen(other.getIsQuickOpen());
         }
         if (!other.meetCondList_.isEmpty()) {
           if (meetCondList_.isEmpty()) {
             meetCondList_ = other.meetCondList_;
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureMeetCondListIsMutable();
             meetCondList_.addAll(other.meetCondList_);
           }
           onChanged();
         }
-        internalGetMutableUnk2700IFPBCNLCKLG().mergeFrom(
-            other.internalGetUnk2700IFPBCNLCKLG());
+        internalGetMutableActivityCoinMap().mergeFrom(
+            other.internalGetActivityCoinMap());
+        if (other.getIsBannerCleared() != false) {
+          setIsBannerCleared(other.getIsBannerCleared());
+        }
+        if (other.getCurScore() != 0) {
+          setCurScore(other.getCurScore());
+        }
+        if (other.getFirstDayStartTime() != 0) {
+          setFirstDayStartTime(other.getFirstDayStartTime());
+        }
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
+        }
+        if (other.getIsPlayOpenAnim() != false) {
+          setIsPlayOpenAnim(other.getIsPlayOpenAnim());
+        }
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
+        }
+        if (other.getScoreLimit() != 0) {
+          setScoreLimit(other.getScoreLimit());
+        }
+        internalGetMutableWishGiftNumMap().mergeFrom(
+            other.internalGetWishGiftNumMap());
+        if (other.getSelectedAvatarRewardId() != 0) {
+          setSelectedAvatarRewardId(other.getSelectedAvatarRewardId());
+        }
+        if (other.getIsCommonContentClosed() != false) {
+          setIsCommonContentClosed(other.getIsCommonContentClosed());
+        }
         if (!other.expireCondList_.isEmpty()) {
           if (expireCondList_.isEmpty()) {
             expireCondList_ = other.expireCondList_;
-            bitField0_ = (bitField0_ & ~0x00000020);
+            bitField0_ = (bitField0_ & ~0x00000010);
           } else {
             ensureExpireCondListIsMutable();
             expireCondList_.addAll(other.expireCondList_);
           }
           onChanged();
+        }
+        if (activityPushTipsDataListBuilder_ == null) {
+          if (!other.activityPushTipsDataList_.isEmpty()) {
+            if (activityPushTipsDataList_.isEmpty()) {
+              activityPushTipsDataList_ = other.activityPushTipsDataList_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+            } else {
+              ensureActivityPushTipsDataListIsMutable();
+              activityPushTipsDataList_.addAll(other.activityPushTipsDataList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.activityPushTipsDataList_.isEmpty()) {
+            if (activityPushTipsDataListBuilder_.isEmpty()) {
+              activityPushTipsDataListBuilder_.dispose();
+              activityPushTipsDataListBuilder_ = null;
+              activityPushTipsDataList_ = other.activityPushTipsDataList_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+              activityPushTipsDataListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getActivityPushTipsDataListFieldBuilder() : null;
+            } else {
+              activityPushTipsDataListBuilder_.addAllMessages(other.activityPushTipsDataList_);
+            }
+          }
         }
         if (watcherInfoListBuilder_ == null) {
           if (!other.watcherInfoList_.isEmpty()) {
@@ -6821,8 +7110,11 @@ public final class ActivityInfoOuterClass {
             }
           }
         }
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
+        }
+        if (other.getIsStarting() != false) {
+          setIsStarting(other.getIsStarting());
         }
         switch (other.getDetailCase()) {
           case SAM_LAMP_INFO: {
@@ -7057,6 +7349,18 @@ public final class ActivityInfoOuterClass {
             mergeWindFieldInfo(other.getWindFieldInfo());
             break;
           }
+          case FUNGUS_FIGHTER_INFO: {
+            mergeFungusFighterInfo(other.getFungusFighterInfo());
+            break;
+          }
+          case CHAR_AMUSEMENT_INFO: {
+            mergeCharAmusementInfo(other.getCharAmusementInfo());
+            break;
+          }
+          case EFFIGY_CHALLENGE_INFO: {
+            mergeEffigyChallengeInfo(other.getEffigyChallengeInfo());
+            break;
+          }
           case DETAIL_NOT_SET: {
             break;
           }
@@ -7106,126 +7410,95 @@ public final class ActivityInfoOuterClass {
 
       private int bitField0_;
 
-      private boolean isPlayOpenAnim_ ;
+      private boolean isFinished_ ;
       /**
-       * <code>bool is_play_open_anim = 13;</code>
-       * @return The isPlayOpenAnim.
+       * <code>bool is_finished = 6;</code>
+       * @return The isFinished.
        */
       @java.lang.Override
-      public boolean getIsPlayOpenAnim() {
-        return isPlayOpenAnim_;
+      public boolean getIsFinished() {
+        return isFinished_;
       }
       /**
-       * <code>bool is_play_open_anim = 13;</code>
-       * @param value The isPlayOpenAnim to set.
+       * <code>bool is_finished = 6;</code>
+       * @param value The isFinished to set.
        * @return This builder for chaining.
        */
-      public Builder setIsPlayOpenAnim(boolean value) {
+      public Builder setIsFinished(boolean value) {
         
-        isPlayOpenAnim_ = value;
+        isFinished_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_play_open_anim = 13;</code>
+       * <code>bool is_finished = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsPlayOpenAnim() {
+      public Builder clearIsFinished() {
         
-        isPlayOpenAnim_ = false;
+        isFinished_ = false;
         onChanged();
         return this;
       }
 
-      private int scheduleId_ ;
+      private int activityType_ ;
       /**
-       * <code>uint32 schedule_id = 15;</code>
-       * @return The scheduleId.
+       * <code>uint32 activity_type = 4;</code>
+       * @return The activityType.
        */
       @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
+      public int getActivityType() {
+        return activityType_;
       }
       /**
-       * <code>uint32 schedule_id = 15;</code>
-       * @param value The scheduleId to set.
+       * <code>uint32 activity_type = 4;</code>
+       * @param value The activityType to set.
        * @return This builder for chaining.
        */
-      public Builder setScheduleId(int value) {
+      public Builder setActivityType(int value) {
         
-        scheduleId_ = value;
+        activityType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 15;</code>
+       * <code>uint32 activity_type = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScheduleId() {
+      public Builder clearActivityType() {
         
-        scheduleId_ = 0;
+        activityType_ = 0;
         onChanged();
         return this;
       }
 
-      private int curScore_ ;
+      private int beginTime_ ;
       /**
-       * <code>uint32 cur_score = 1906;</code>
-       * @return The curScore.
+       * <code>uint32 begin_time = 8;</code>
+       * @return The beginTime.
        */
       @java.lang.Override
-      public int getCurScore() {
-        return curScore_;
+      public int getBeginTime() {
+        return beginTime_;
       }
       /**
-       * <code>uint32 cur_score = 1906;</code>
-       * @param value The curScore to set.
+       * <code>uint32 begin_time = 8;</code>
+       * @param value The beginTime to set.
        * @return This builder for chaining.
        */
-      public Builder setCurScore(int value) {
+      public Builder setBeginTime(int value) {
         
-        curScore_ = value;
+        beginTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_score = 1906;</code>
+       * <code>uint32 begin_time = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurScore() {
+      public Builder clearBeginTime() {
         
-        curScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isStarting_ ;
-      /**
-       * <code>bool is_starting = 9;</code>
-       * @return The isStarting.
-       */
-      @java.lang.Override
-      public boolean getIsStarting() {
-        return isStarting_;
-      }
-      /**
-       * <code>bool is_starting = 9;</code>
-       * @param value The isStarting to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsStarting(boolean value) {
-        
-        isStarting_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_starting = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsStarting() {
-        
-        isStarting_ = false;
+        beginTime_ = 0;
         onChanged();
         return this;
       }
@@ -7309,161 +7582,6 @@ public final class ActivityInfoOuterClass {
         return this;
       }
 
-      private boolean unk2700NONJFHAIFLA_ ;
-      /**
-       * <code>bool Unk2700_NONJFHAIFLA = 102;</code>
-       * @return The unk2700NONJFHAIFLA.
-       */
-      @java.lang.Override
-      public boolean getUnk2700NONJFHAIFLA() {
-        return unk2700NONJFHAIFLA_;
-      }
-      /**
-       * <code>bool Unk2700_NONJFHAIFLA = 102;</code>
-       * @param value The unk2700NONJFHAIFLA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk2700NONJFHAIFLA(boolean value) {
-        
-        unk2700NONJFHAIFLA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool Unk2700_NONJFHAIFLA = 102;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk2700NONJFHAIFLA() {
-        
-        unk2700NONJFHAIFLA_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int selectedAvatarRewardId_ ;
-      /**
-       * <code>uint32 selected_avatar_reward_id = 1290;</code>
-       * @return The selectedAvatarRewardId.
-       */
-      @java.lang.Override
-      public int getSelectedAvatarRewardId() {
-        return selectedAvatarRewardId_;
-      }
-      /**
-       * <code>uint32 selected_avatar_reward_id = 1290;</code>
-       * @param value The selectedAvatarRewardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSelectedAvatarRewardId(int value) {
-        
-        selectedAvatarRewardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 selected_avatar_reward_id = 1290;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSelectedAvatarRewardId() {
-        
-        selectedAvatarRewardId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int firstDayStartTime_ ;
-      /**
-       * <code>uint32 first_day_start_time = 592;</code>
-       * @return The firstDayStartTime.
-       */
-      @java.lang.Override
-      public int getFirstDayStartTime() {
-        return firstDayStartTime_;
-      }
-      /**
-       * <code>uint32 first_day_start_time = 592;</code>
-       * @param value The firstDayStartTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFirstDayStartTime(int value) {
-        
-        firstDayStartTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 first_day_start_time = 592;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFirstDayStartTime() {
-        
-        firstDayStartTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int scoreLimit_ ;
-      /**
-       * <code>uint32 score_limit = 1958;</code>
-       * @return The scoreLimit.
-       */
-      @java.lang.Override
-      public int getScoreLimit() {
-        return scoreLimit_;
-      }
-      /**
-       * <code>uint32 score_limit = 1958;</code>
-       * @param value The scoreLimit to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScoreLimit(int value) {
-        
-        scoreLimit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score_limit = 1958;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScoreLimit() {
-        
-        scoreLimit_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinished_ ;
-      /**
-       * <code>bool is_finished = 6;</code>
-       * @return The isFinished.
-       */
-      @java.lang.Override
-      public boolean getIsFinished() {
-        return isFinished_;
-      }
-      /**
-       * <code>bool is_finished = 6;</code>
-       * @param value The isFinished to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinished(boolean value) {
-        
-        isFinished_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finished = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinished() {
-        
-        isFinished_ = false;
-        onChanged();
-        return this;
-      }
-
       private boolean isHidden_ ;
       /**
        * <code>bool is_hidden = 919;</code>
@@ -7495,64 +7613,112 @@ public final class ActivityInfoOuterClass {
         return this;
       }
 
-      private int beginTime_ ;
+      private boolean isQuickOpen_ ;
       /**
-       * <code>uint32 begin_time = 8;</code>
-       * @return The beginTime.
+       * <code>bool is_quick_open = 1449;</code>
+       * @return The isQuickOpen.
        */
       @java.lang.Override
-      public int getBeginTime() {
-        return beginTime_;
+      public boolean getIsQuickOpen() {
+        return isQuickOpen_;
       }
       /**
-       * <code>uint32 begin_time = 8;</code>
-       * @param value The beginTime to set.
+       * <code>bool is_quick_open = 1449;</code>
+       * @param value The isQuickOpen to set.
        * @return This builder for chaining.
        */
-      public Builder setBeginTime(int value) {
+      public Builder setIsQuickOpen(boolean value) {
         
-        beginTime_ = value;
+        isQuickOpen_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 begin_time = 8;</code>
+       * <code>bool is_quick_open = 1449;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBeginTime() {
+      public Builder clearIsQuickOpen() {
         
-        beginTime_ = 0;
+        isQuickOpen_ = false;
         onChanged();
         return this;
       }
 
-      private int endTime_ ;
-      /**
-       * <code>uint32 end_time = 5;</code>
-       * @return The endTime.
-       */
-      @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
+      private com.google.protobuf.Internal.IntList meetCondList_ = emptyIntList();
+      private void ensureMeetCondListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          meetCondList_ = mutableCopy(meetCondList_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
-       * <code>uint32 end_time = 5;</code>
-       * @param value The endTime to set.
+       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * @return A list containing the meetCondList.
+       */
+      public java.util.List<java.lang.Integer>
+          getMeetCondListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(meetCondList_) : meetCondList_;
+      }
+      /**
+       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * @return The count of meetCondList.
+       */
+      public int getMeetCondListCount() {
+        return meetCondList_.size();
+      }
+      /**
+       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * @param index The index of the element to return.
+       * @return The meetCondList at the given index.
+       */
+      public int getMeetCondList(int index) {
+        return meetCondList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The meetCondList to set.
        * @return This builder for chaining.
        */
-      public Builder setEndTime(int value) {
-        
-        endTime_ = value;
+      public Builder setMeetCondList(
+          int index, int value) {
+        ensureMeetCondListIsMutable();
+        meetCondList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 end_time = 5;</code>
+       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * @param value The meetCondList to add.
        * @return This builder for chaining.
        */
-      public Builder clearEndTime() {
-        
-        endTime_ = 0;
+      public Builder addMeetCondList(int value) {
+        ensureMeetCondListIsMutable();
+        meetCondList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * @param values The meetCondList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllMeetCondList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureMeetCondListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, meetCondList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMeetCondList() {
+        meetCondList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -7685,481 +7851,317 @@ public final class ActivityInfoOuterClass {
         return this;
       }
 
-      private int activityType_ ;
+      private boolean isBannerCleared_ ;
       /**
-       * <code>uint32 activity_type = 4;</code>
-       * @return The activityType.
+       * <code>bool is_banner_cleared = 102;</code>
+       * @return The isBannerCleared.
        */
       @java.lang.Override
-      public int getActivityType() {
-        return activityType_;
+      public boolean getIsBannerCleared() {
+        return isBannerCleared_;
       }
       /**
-       * <code>uint32 activity_type = 4;</code>
-       * @param value The activityType to set.
+       * <code>bool is_banner_cleared = 102;</code>
+       * @param value The isBannerCleared to set.
        * @return This builder for chaining.
        */
-      public Builder setActivityType(int value) {
+      public Builder setIsBannerCleared(boolean value) {
         
-        activityType_ = value;
+        isBannerCleared_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 activity_type = 4;</code>
+       * <code>bool is_banner_cleared = 102;</code>
        * @return This builder for chaining.
        */
-      public Builder clearActivityType() {
+      public Builder clearIsBannerCleared() {
         
-        activityType_ = 0;
+        isBannerCleared_ = false;
         onChanged();
         return this;
       }
 
-      private boolean unk2700EDKLLHBEEGE_ ;
+      private int curScore_ ;
       /**
-       * <code>bool Unk2700_EDKLLHBEEGE = 1449;</code>
-       * @return The unk2700EDKLLHBEEGE.
+       * <code>uint32 cur_score = 1906;</code>
+       * @return The curScore.
        */
       @java.lang.Override
-      public boolean getUnk2700EDKLLHBEEGE() {
-        return unk2700EDKLLHBEEGE_;
+      public int getCurScore() {
+        return curScore_;
       }
       /**
-       * <code>bool Unk2700_EDKLLHBEEGE = 1449;</code>
-       * @param value The unk2700EDKLLHBEEGE to set.
+       * <code>uint32 cur_score = 1906;</code>
+       * @param value The curScore to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700EDKLLHBEEGE(boolean value) {
+      public Builder setCurScore(int value) {
         
-        unk2700EDKLLHBEEGE_ = value;
+        curScore_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_EDKLLHBEEGE = 1449;</code>
+       * <code>uint32 cur_score = 1906;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700EDKLLHBEEGE() {
+      public Builder clearCurScore() {
         
-        unk2700EDKLLHBEEGE_ = false;
+        curScore_ = 0;
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC> unk2800KOMIPKKKOBE_ =
-        java.util.Collections.emptyList();
-      private void ensureUnk2800KOMIPKKKOBEIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          unk2800KOMIPKKKOBE_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC>(unk2800KOMIPKKKOBE_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder> unk2800KOMIPKKKOBEBuilder_;
-
+      private int firstDayStartTime_ ;
       /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
+       * <code>uint32 first_day_start_time = 592;</code>
+       * @return The firstDayStartTime.
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC> getUnk2800KOMIPKKKOBEList() {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2800KOMIPKKKOBE_);
-        } else {
-          return unk2800KOMIPKKKOBEBuilder_.getMessageList();
-        }
+      @java.lang.Override
+      public int getFirstDayStartTime() {
+        return firstDayStartTime_;
       }
       /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public int getUnk2800KOMIPKKKOBECount() {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          return unk2800KOMIPKKKOBE_.size();
-        } else {
-          return unk2800KOMIPKKKOBEBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC getUnk2800KOMIPKKKOBE(int index) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          return unk2800KOMIPKKKOBE_.get(index);
-        } else {
-          return unk2800KOMIPKKKOBEBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder setUnk2800KOMIPKKKOBE(
-          int index, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC value) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          unk2800KOMIPKKKOBE_.set(index, value);
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder setUnk2800KOMIPKKKOBE(
-          int index, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder builderForValue) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          unk2800KOMIPKKKOBE_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder addUnk2800KOMIPKKKOBE(emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC value) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          unk2800KOMIPKKKOBE_.add(value);
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder addUnk2800KOMIPKKKOBE(
-          int index, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC value) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          unk2800KOMIPKKKOBE_.add(index, value);
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder addUnk2800KOMIPKKKOBE(
-          emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder builderForValue) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          unk2800KOMIPKKKOBE_.add(builderForValue.build());
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder addUnk2800KOMIPKKKOBE(
-          int index, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder builderForValue) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          unk2800KOMIPKKKOBE_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder addAllUnk2800KOMIPKKKOBE(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC> values) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2800KOMIPKKKOBE_);
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder clearUnk2800KOMIPKKKOBE() {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          unk2800KOMIPKKKOBE_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public Builder removeUnk2800KOMIPKKKOBE(int index) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          ensureUnk2800KOMIPKKKOBEIsMutable();
-          unk2800KOMIPKKKOBE_.remove(index);
-          onChanged();
-        } else {
-          unk2800KOMIPKKKOBEBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder getUnk2800KOMIPKKKOBEBuilder(
-          int index) {
-        return getUnk2800KOMIPKKKOBEFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder getUnk2800KOMIPKKKOBEOrBuilder(
-          int index) {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          return unk2800KOMIPKKKOBE_.get(index);  } else {
-          return unk2800KOMIPKKKOBEBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder> 
-           getUnk2800KOMIPKKKOBEOrBuilderList() {
-        if (unk2800KOMIPKKKOBEBuilder_ != null) {
-          return unk2800KOMIPKKKOBEBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(unk2800KOMIPKKKOBE_);
-        }
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder addUnk2800KOMIPKKKOBEBuilder() {
-        return getUnk2800KOMIPKKKOBEFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder addUnk2800KOMIPKKKOBEBuilder(
-          int index) {
-        return getUnk2800KOMIPKKKOBEFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .Unk2800_PHPHMILPOLC Unk2800_KOMIPKKKOBE = 864;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder> 
-           getUnk2800KOMIPKKKOBEBuilderList() {
-        return getUnk2800KOMIPKKKOBEFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder> 
-          getUnk2800KOMIPKKKOBEFieldBuilder() {
-        if (unk2800KOMIPKKKOBEBuilder_ == null) {
-          unk2800KOMIPKKKOBEBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLC.Builder, emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.Unk2800_PHPHMILPOLCOrBuilder>(
-                  unk2800KOMIPKKKOBE_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          unk2800KOMIPKKKOBE_ = null;
-        }
-        return unk2800KOMIPKKKOBEBuilder_;
-      }
-
-      private com.google.protobuf.Internal.IntList meetCondList_ = emptyIntList();
-      private void ensureMeetCondListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
-          meetCondList_ = mutableCopy(meetCondList_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-      /**
-       * <code>repeated uint32 meet_cond_list = 10;</code>
-       * @return A list containing the meetCondList.
-       */
-      public java.util.List<java.lang.Integer>
-          getMeetCondListList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(meetCondList_) : meetCondList_;
-      }
-      /**
-       * <code>repeated uint32 meet_cond_list = 10;</code>
-       * @return The count of meetCondList.
-       */
-      public int getMeetCondListCount() {
-        return meetCondList_.size();
-      }
-      /**
-       * <code>repeated uint32 meet_cond_list = 10;</code>
-       * @param index The index of the element to return.
-       * @return The meetCondList at the given index.
-       */
-      public int getMeetCondList(int index) {
-        return meetCondList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 meet_cond_list = 10;</code>
-       * @param index The index to set the value at.
-       * @param value The meetCondList to set.
+       * <code>uint32 first_day_start_time = 592;</code>
+       * @param value The firstDayStartTime to set.
        * @return This builder for chaining.
        */
-      public Builder setMeetCondList(
-          int index, int value) {
-        ensureMeetCondListIsMutable();
-        meetCondList_.setInt(index, value);
+      public Builder setFirstDayStartTime(int value) {
+        
+        firstDayStartTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 meet_cond_list = 10;</code>
-       * @param value The meetCondList to add.
+       * <code>uint32 first_day_start_time = 592;</code>
        * @return This builder for chaining.
        */
-      public Builder addMeetCondList(int value) {
-        ensureMeetCondListIsMutable();
-        meetCondList_.addInt(value);
+      public Builder clearFirstDayStartTime() {
+        
+        firstDayStartTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activity_id = 12;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activity_id = 12;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 meet_cond_list = 10;</code>
-       * @param values The meetCondList to add.
+       * <code>uint32 activity_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder addAllMeetCondList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureMeetCondListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, meetCondList_);
+      public Builder clearActivityId() {
+        
+        activityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPlayOpenAnim_ ;
+      /**
+       * <code>bool is_play_open_anim = 13;</code>
+       * @return The isPlayOpenAnim.
+       */
+      @java.lang.Override
+      public boolean getIsPlayOpenAnim() {
+        return isPlayOpenAnim_;
+      }
+      /**
+       * <code>bool is_play_open_anim = 13;</code>
+       * @param value The isPlayOpenAnim to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPlayOpenAnim(boolean value) {
+        
+        isPlayOpenAnim_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 meet_cond_list = 10;</code>
+       * <code>bool is_play_open_anim = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMeetCondList() {
-        meetCondList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+      public Builder clearIsPlayOpenAnim() {
+        
+        isPlayOpenAnim_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int endTime_ ;
+      /**
+       * <code>uint32 end_time = 5;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <code>uint32 end_time = 5;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 end_time = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        
+        endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scoreLimit_ ;
+      /**
+       * <code>uint32 score_limit = 1958;</code>
+       * @return The scoreLimit.
+       */
+      @java.lang.Override
+      public int getScoreLimit() {
+        return scoreLimit_;
+      }
+      /**
+       * <code>uint32 score_limit = 1958;</code>
+       * @param value The scoreLimit to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScoreLimit(int value) {
+        
+        scoreLimit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score_limit = 1958;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScoreLimit() {
+        
+        scoreLimit_ = 0;
         onChanged();
         return this;
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> unk2700IFPBCNLCKLG_;
+          java.lang.Integer, java.lang.Integer> wishGiftNumMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUnk2700IFPBCNLCKLG() {
-        if (unk2700IFPBCNLCKLG_ == null) {
+      internalGetWishGiftNumMap() {
+        if (wishGiftNumMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              Unk2700IFPBCNLCKLGDefaultEntryHolder.defaultEntry);
+              WishGiftNumMapDefaultEntryHolder.defaultEntry);
         }
-        return unk2700IFPBCNLCKLG_;
+        return wishGiftNumMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUnk2700IFPBCNLCKLG() {
+      internalGetMutableWishGiftNumMap() {
         onChanged();;
-        if (unk2700IFPBCNLCKLG_ == null) {
-          unk2700IFPBCNLCKLG_ = com.google.protobuf.MapField.newMapField(
-              Unk2700IFPBCNLCKLGDefaultEntryHolder.defaultEntry);
+        if (wishGiftNumMap_ == null) {
+          wishGiftNumMap_ = com.google.protobuf.MapField.newMapField(
+              WishGiftNumMapDefaultEntryHolder.defaultEntry);
         }
-        if (!unk2700IFPBCNLCKLG_.isMutable()) {
-          unk2700IFPBCNLCKLG_ = unk2700IFPBCNLCKLG_.copy();
+        if (!wishGiftNumMap_.isMutable()) {
+          wishGiftNumMap_ = wishGiftNumMap_.copy();
         }
-        return unk2700IFPBCNLCKLG_;
+        return wishGiftNumMap_;
       }
 
-      public int getUnk2700IFPBCNLCKLGCount() {
-        return internalGetUnk2700IFPBCNLCKLG().getMap().size();
+      public int getWishGiftNumMapCount() {
+        return internalGetWishGiftNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+       * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
        */
 
       @java.lang.Override
-      public boolean containsUnk2700IFPBCNLCKLG(
+      public boolean containsWishGiftNumMap(
           int key) {
         
-        return internalGetUnk2700IFPBCNLCKLG().getMap().containsKey(key);
+        return internalGetWishGiftNumMap().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getUnk2700IFPBCNLCKLGMap()} instead.
+       * Use {@link #getWishGiftNumMapMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2700IFPBCNLCKLG() {
-        return getUnk2700IFPBCNLCKLGMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getWishGiftNumMap() {
+        return getWishGiftNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+       * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2700IFPBCNLCKLGMap() {
-        return internalGetUnk2700IFPBCNLCKLG().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getWishGiftNumMapMap() {
+        return internalGetWishGiftNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+       * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
        */
       @java.lang.Override
 
-      public int getUnk2700IFPBCNLCKLGOrDefault(
+      public int getWishGiftNumMapOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk2700IFPBCNLCKLG().getMap();
+            internalGetWishGiftNumMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+       * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
        */
       @java.lang.Override
 
-      public int getUnk2700IFPBCNLCKLGOrThrow(
+      public int getWishGiftNumMapOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk2700IFPBCNLCKLG().getMap();
+            internalGetWishGiftNumMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearUnk2700IFPBCNLCKLG() {
-        internalGetMutableUnk2700IFPBCNLCKLG().getMutableMap()
+      public Builder clearWishGiftNumMap() {
+        internalGetMutableWishGiftNumMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+       * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
        */
 
-      public Builder removeUnk2700IFPBCNLCKLG(
+      public Builder removeWishGiftNumMap(
           int key) {
         
-        internalGetMutableUnk2700IFPBCNLCKLG().getMutableMap()
+        internalGetMutableWishGiftNumMap().getMutableMap()
             .remove(key);
         return this;
       }
@@ -8168,37 +8170,99 @@ public final class ActivityInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUnk2700IFPBCNLCKLG() {
-        return internalGetMutableUnk2700IFPBCNLCKLG().getMutableMap();
+      getMutableWishGiftNumMap() {
+        return internalGetMutableWishGiftNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+       * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
        */
-      public Builder putUnk2700IFPBCNLCKLG(
+      public Builder putWishGiftNumMap(
           int key,
           int value) {
         
         
-        internalGetMutableUnk2700IFPBCNLCKLG().getMutableMap()
+        internalGetMutableWishGiftNumMap().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2700_IFPBCNLCKLG = 1399;</code>
+       * <code>map&lt;uint32, uint32&gt; wish_gift_num_map = 1399;</code>
        */
 
-      public Builder putAllUnk2700IFPBCNLCKLG(
+      public Builder putAllWishGiftNumMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableUnk2700IFPBCNLCKLG().getMutableMap()
+        internalGetMutableWishGiftNumMap().getMutableMap()
             .putAll(values);
+        return this;
+      }
+
+      private int selectedAvatarRewardId_ ;
+      /**
+       * <code>uint32 selected_avatar_reward_id = 1290;</code>
+       * @return The selectedAvatarRewardId.
+       */
+      @java.lang.Override
+      public int getSelectedAvatarRewardId() {
+        return selectedAvatarRewardId_;
+      }
+      /**
+       * <code>uint32 selected_avatar_reward_id = 1290;</code>
+       * @param value The selectedAvatarRewardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSelectedAvatarRewardId(int value) {
+        
+        selectedAvatarRewardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 selected_avatar_reward_id = 1290;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSelectedAvatarRewardId() {
+        
+        selectedAvatarRewardId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCommonContentClosed_ ;
+      /**
+       * <code>bool is_common_content_closed = 1963;</code>
+       * @return The isCommonContentClosed.
+       */
+      @java.lang.Override
+      public boolean getIsCommonContentClosed() {
+        return isCommonContentClosed_;
+      }
+      /**
+       * <code>bool is_common_content_closed = 1963;</code>
+       * @param value The isCommonContentClosed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCommonContentClosed(boolean value) {
+        
+        isCommonContentClosed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_common_content_closed = 1963;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCommonContentClosed() {
+        
+        isCommonContentClosed_ = false;
+        onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.IntList expireCondList_ = emptyIntList();
       private void ensureExpireCondListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
+        if (!((bitField0_ & 0x00000010) != 0)) {
           expireCondList_ = mutableCopy(expireCondList_);
-          bitField0_ |= 0x00000020;
+          bitField0_ |= 0x00000010;
          }
       }
       /**
@@ -8207,7 +8271,7 @@ public final class ActivityInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getExpireCondListList() {
-        return ((bitField0_ & 0x00000020) != 0) ?
+        return ((bitField0_ & 0x00000010) != 0) ?
                  java.util.Collections.unmodifiableList(expireCondList_) : expireCondList_;
       }
       /**
@@ -8268,9 +8332,249 @@ public final class ActivityInfoOuterClass {
        */
       public Builder clearExpireCondList() {
         expireCondList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData> activityPushTipsDataList_ =
+        java.util.Collections.emptyList();
+      private void ensureActivityPushTipsDataListIsMutable() {
+        if (!((bitField0_ & 0x00000020) != 0)) {
+          activityPushTipsDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData>(activityPushTipsDataList_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder> activityPushTipsDataListBuilder_;
+
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData> getActivityPushTipsDataListList() {
+        if (activityPushTipsDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(activityPushTipsDataList_);
+        } else {
+          return activityPushTipsDataListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public int getActivityPushTipsDataListCount() {
+        if (activityPushTipsDataListBuilder_ == null) {
+          return activityPushTipsDataList_.size();
+        } else {
+          return activityPushTipsDataListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData getActivityPushTipsDataList(int index) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          return activityPushTipsDataList_.get(index);
+        } else {
+          return activityPushTipsDataListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder setActivityPushTipsDataList(
+          int index, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData value) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActivityPushTipsDataListIsMutable();
+          activityPushTipsDataList_.set(index, value);
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder setActivityPushTipsDataList(
+          int index, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder builderForValue) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          ensureActivityPushTipsDataListIsMutable();
+          activityPushTipsDataList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder addActivityPushTipsDataList(emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData value) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActivityPushTipsDataListIsMutable();
+          activityPushTipsDataList_.add(value);
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder addActivityPushTipsDataList(
+          int index, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData value) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActivityPushTipsDataListIsMutable();
+          activityPushTipsDataList_.add(index, value);
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder addActivityPushTipsDataList(
+          emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder builderForValue) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          ensureActivityPushTipsDataListIsMutable();
+          activityPushTipsDataList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder addActivityPushTipsDataList(
+          int index, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder builderForValue) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          ensureActivityPushTipsDataListIsMutable();
+          activityPushTipsDataList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder addAllActivityPushTipsDataList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData> values) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          ensureActivityPushTipsDataListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, activityPushTipsDataList_);
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder clearActivityPushTipsDataList() {
+        if (activityPushTipsDataListBuilder_ == null) {
+          activityPushTipsDataList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public Builder removeActivityPushTipsDataList(int index) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          ensureActivityPushTipsDataListIsMutable();
+          activityPushTipsDataList_.remove(index);
+          onChanged();
+        } else {
+          activityPushTipsDataListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder getActivityPushTipsDataListBuilder(
+          int index) {
+        return getActivityPushTipsDataListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder getActivityPushTipsDataListOrBuilder(
+          int index) {
+        if (activityPushTipsDataListBuilder_ == null) {
+          return activityPushTipsDataList_.get(index);  } else {
+          return activityPushTipsDataListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder> 
+           getActivityPushTipsDataListOrBuilderList() {
+        if (activityPushTipsDataListBuilder_ != null) {
+          return activityPushTipsDataListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(activityPushTipsDataList_);
+        }
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder addActivityPushTipsDataListBuilder() {
+        return getActivityPushTipsDataListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder addActivityPushTipsDataListBuilder(
+          int index) {
+        return getActivityPushTipsDataListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ActivityPushTipsData activity_push_tips_data_list = 864;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder> 
+           getActivityPushTipsDataListBuilderList() {
+        return getActivityPushTipsDataListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder> 
+          getActivityPushTipsDataListFieldBuilder() {
+        if (activityPushTipsDataListBuilder_ == null) {
+          activityPushTipsDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsDataOrBuilder>(
+                  activityPushTipsDataList_,
+                  ((bitField0_ & 0x00000020) != 0),
+                  getParentForChildren(),
+                  isClean());
+          activityPushTipsDataList_ = null;
+        }
+        return activityPushTipsDataListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo> watcherInfoList_ =
@@ -8513,33 +8817,64 @@ public final class ActivityInfoOuterClass {
         return watcherInfoListBuilder_;
       }
 
-      private int activityId_ ;
+      private int scheduleId_ ;
       /**
-       * <code>uint32 activity_id = 12;</code>
-       * @return The activityId.
+       * <code>uint32 schedule_id = 15;</code>
+       * @return The scheduleId.
        */
       @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
+      public int getScheduleId() {
+        return scheduleId_;
       }
       /**
-       * <code>uint32 activity_id = 12;</code>
-       * @param value The activityId to set.
+       * <code>uint32 schedule_id = 15;</code>
+       * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
-      public Builder setActivityId(int value) {
+      public Builder setScheduleId(int value) {
         
-        activityId_ = value;
+        scheduleId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 activity_id = 12;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearActivityId() {
+      public Builder clearScheduleId() {
         
-        activityId_ = 0;
+        scheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isStarting_ ;
+      /**
+       * <code>bool is_starting = 9;</code>
+       * @return The isStarting.
+       */
+      @java.lang.Override
+      public boolean getIsStarting() {
+        return isStarting_;
+      }
+      /**
+       * <code>bool is_starting = 9;</code>
+       * @param value The isStarting to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsStarting(boolean value) {
+        
+        isStarting_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_starting = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsStarting() {
+        
+        isStarting_ = false;
         onChanged();
         return this;
       }
@@ -15454,9 +15789,9 @@ public final class ActivityInfoOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo, emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.Builder, emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfoOrBuilder> islandPartyInfoBuilder_;
+          emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo, emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.Builder, emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfoOrBuilder> islandPartyInfoBuilder_;
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        * @return Whether the islandPartyInfo field is set.
        */
       @java.lang.Override
@@ -15464,27 +15799,27 @@ public final class ActivityInfoOuterClass {
         return detailCase_ == 1885;
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        * @return The islandPartyInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo getIslandPartyInfo() {
+      public emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo getIslandPartyInfo() {
         if (islandPartyInfoBuilder_ == null) {
           if (detailCase_ == 1885) {
-            return (emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_;
+            return (emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_;
           }
-          return emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.getDefaultInstance();
         } else {
           if (detailCase_ == 1885) {
             return islandPartyInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        */
-      public Builder setIslandPartyInfo(emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo value) {
+      public Builder setIslandPartyInfo(emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo value) {
         if (islandPartyInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -15498,10 +15833,10 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        */
       public Builder setIslandPartyInfo(
-          emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.Builder builderForValue) {
         if (islandPartyInfoBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
@@ -15512,13 +15847,13 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        */
-      public Builder mergeIslandPartyInfo(emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo value) {
+      public Builder mergeIslandPartyInfo(emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo value) {
         if (islandPartyInfoBuilder_ == null) {
           if (detailCase_ == 1885 &&
-              detail_ != emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.newBuilder((emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_)
+              detail_ != emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.newBuilder((emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
@@ -15534,7 +15869,7 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        */
       public Builder clearIslandPartyInfo() {
         if (islandPartyInfoBuilder_ == null) {
@@ -15553,38 +15888,38 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        */
-      public emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.Builder getIslandPartyInfoBuilder() {
+      public emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.Builder getIslandPartyInfoBuilder() {
         return getIslandPartyInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfoOrBuilder getIslandPartyInfoOrBuilder() {
+      public emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfoOrBuilder getIslandPartyInfoOrBuilder() {
         if ((detailCase_ == 1885) && (islandPartyInfoBuilder_ != null)) {
           return islandPartyInfoBuilder_.getMessageOrBuilder();
         } else {
           if (detailCase_ == 1885) {
-            return (emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_;
+            return (emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_;
           }
-          return emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.IslandPartyActivityDetailInfo island_party_info = 1885;</code>
+       * <code>.IslandPartyDetailInfo island_party_info = 1885;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo, emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.Builder, emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfoOrBuilder> 
+          emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo, emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.Builder, emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfoOrBuilder> 
           getIslandPartyInfoFieldBuilder() {
         if (islandPartyInfoBuilder_ == null) {
           if (!(detailCase_ == 1885)) {
-            detail_ = emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.getDefaultInstance();
+            detail_ = emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.getDefaultInstance();
           }
           islandPartyInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo, emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo.Builder, emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.IslandPartyActivityDetailInfo) detail_,
+              emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo, emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.Builder, emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
@@ -16018,9 +16353,9 @@ public final class ActivityInfoOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo, emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.Builder, emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfoOrBuilder> muqadasPotionInfoBuilder_;
+          emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo, emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.Builder, emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfoOrBuilder> muqadasPotionInfoBuilder_;
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        * @return Whether the muqadasPotionInfo field is set.
        */
       @java.lang.Override
@@ -16028,27 +16363,27 @@ public final class ActivityInfoOuterClass {
         return detailCase_ == 1157;
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        * @return The muqadasPotionInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo getMuqadasPotionInfo() {
+      public emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo getMuqadasPotionInfo() {
         if (muqadasPotionInfoBuilder_ == null) {
           if (detailCase_ == 1157) {
-            return (emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_;
+            return (emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_;
           }
-          return emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.getDefaultInstance();
         } else {
           if (detailCase_ == 1157) {
             return muqadasPotionInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        */
-      public Builder setMuqadasPotionInfo(emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo value) {
+      public Builder setMuqadasPotionInfo(emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo value) {
         if (muqadasPotionInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16062,10 +16397,10 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        */
       public Builder setMuqadasPotionInfo(
-          emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.Builder builderForValue) {
         if (muqadasPotionInfoBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
@@ -16076,13 +16411,13 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        */
-      public Builder mergeMuqadasPotionInfo(emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo value) {
+      public Builder mergeMuqadasPotionInfo(emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo value) {
         if (muqadasPotionInfoBuilder_ == null) {
           if (detailCase_ == 1157 &&
-              detail_ != emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.newBuilder((emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_)
+              detail_ != emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.newBuilder((emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
@@ -16098,7 +16433,7 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        */
       public Builder clearMuqadasPotionInfo() {
         if (muqadasPotionInfoBuilder_ == null) {
@@ -16117,38 +16452,38 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        */
-      public emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.Builder getMuqadasPotionInfoBuilder() {
+      public emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.Builder getMuqadasPotionInfoBuilder() {
         return getMuqadasPotionInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfoOrBuilder getMuqadasPotionInfoOrBuilder() {
+      public emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfoOrBuilder getMuqadasPotionInfoOrBuilder() {
         if ((detailCase_ == 1157) && (muqadasPotionInfoBuilder_ != null)) {
           return muqadasPotionInfoBuilder_.getMessageOrBuilder();
         } else {
           if (detailCase_ == 1157) {
-            return (emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_;
+            return (emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_;
           }
-          return emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.MuqadasPotionDetailInfo muqadas_potion_info = 1157;</code>
+       * <code>.MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo, emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.Builder, emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfoOrBuilder> 
+          emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo, emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.Builder, emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfoOrBuilder> 
           getMuqadasPotionInfoFieldBuilder() {
         if (muqadasPotionInfoBuilder_ == null) {
           if (!(detailCase_ == 1157)) {
-            detail_ = emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.getDefaultInstance();
+            detail_ = emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.getDefaultInstance();
           }
           muqadasPotionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo, emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo.Builder, emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.MuqadasPotionDetailInfo) detail_,
+              emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo, emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo.Builder, emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.MuqadasPotionActivityDetailInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
@@ -16159,9 +16494,9 @@ public final class ActivityInfoOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo, emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.Builder, emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfoOrBuilder> treasureSeelieInfoBuilder_;
+          emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo, emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.Builder, emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfoOrBuilder> treasureSeelieInfoBuilder_;
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        * @return Whether the treasureSeelieInfo field is set.
        */
       @java.lang.Override
@@ -16169,27 +16504,27 @@ public final class ActivityInfoOuterClass {
         return detailCase_ == 966;
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        * @return The treasureSeelieInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo getTreasureSeelieInfo() {
+      public emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo getTreasureSeelieInfo() {
         if (treasureSeelieInfoBuilder_ == null) {
           if (detailCase_ == 966) {
-            return (emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_;
+            return (emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_;
           }
-          return emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.getDefaultInstance();
         } else {
           if (detailCase_ == 966) {
             return treasureSeelieInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        */
-      public Builder setTreasureSeelieInfo(emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo value) {
+      public Builder setTreasureSeelieInfo(emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo value) {
         if (treasureSeelieInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16203,10 +16538,10 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        */
       public Builder setTreasureSeelieInfo(
-          emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.Builder builderForValue) {
         if (treasureSeelieInfoBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
@@ -16217,13 +16552,13 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        */
-      public Builder mergeTreasureSeelieInfo(emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo value) {
+      public Builder mergeTreasureSeelieInfo(emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo value) {
         if (treasureSeelieInfoBuilder_ == null) {
           if (detailCase_ == 966 &&
-              detail_ != emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.newBuilder((emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_)
+              detail_ != emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.newBuilder((emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
@@ -16239,7 +16574,7 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        */
       public Builder clearTreasureSeelieInfo() {
         if (treasureSeelieInfoBuilder_ == null) {
@@ -16258,38 +16593,38 @@ public final class ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        */
-      public emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.Builder getTreasureSeelieInfoBuilder() {
+      public emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.Builder getTreasureSeelieInfoBuilder() {
         return getTreasureSeelieInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfoOrBuilder getTreasureSeelieInfoOrBuilder() {
+      public emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfoOrBuilder getTreasureSeelieInfoOrBuilder() {
         if ((detailCase_ == 966) && (treasureSeelieInfoBuilder_ != null)) {
           return treasureSeelieInfoBuilder_.getMessageOrBuilder();
         } else {
           if (detailCase_ == 966) {
-            return (emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_;
+            return (emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_;
           }
-          return emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.TreasureSeelieDetailInfo treasure_seelie_info = 966;</code>
+       * <code>.TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo, emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.Builder, emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfoOrBuilder> 
+          emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo, emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.Builder, emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfoOrBuilder> 
           getTreasureSeelieInfoFieldBuilder() {
         if (treasureSeelieInfoBuilder_ == null) {
           if (!(detailCase_ == 966)) {
-            detail_ = emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.getDefaultInstance();
+            detail_ = emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.getDefaultInstance();
           }
           treasureSeelieInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo, emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo.Builder, emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.TreasureSeelieDetailInfo) detail_,
+              emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo, emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.Builder, emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
@@ -16721,6 +17056,429 @@ public final class ActivityInfoOuterClass {
         onChanged();;
         return windFieldInfoBuilder_;
       }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo, emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.Builder, emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfoOrBuilder> fungusFighterInfoBuilder_;
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       * @return Whether the fungusFighterInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasFungusFighterInfo() {
+        return detailCase_ == 490;
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       * @return The fungusFighterInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo getFungusFighterInfo() {
+        if (fungusFighterInfoBuilder_ == null) {
+          if (detailCase_ == 490) {
+            return (emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 490) {
+            return fungusFighterInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       */
+      public Builder setFungusFighterInfo(emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo value) {
+        if (fungusFighterInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          fungusFighterInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 490;
+        return this;
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       */
+      public Builder setFungusFighterInfo(
+          emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.Builder builderForValue) {
+        if (fungusFighterInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          fungusFighterInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 490;
+        return this;
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       */
+      public Builder mergeFungusFighterInfo(emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo value) {
+        if (fungusFighterInfoBuilder_ == null) {
+          if (detailCase_ == 490 &&
+              detail_ != emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.newBuilder((emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 490) {
+            fungusFighterInfoBuilder_.mergeFrom(value);
+          }
+          fungusFighterInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 490;
+        return this;
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       */
+      public Builder clearFungusFighterInfo() {
+        if (fungusFighterInfoBuilder_ == null) {
+          if (detailCase_ == 490) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 490) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          fungusFighterInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       */
+      public emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.Builder getFungusFighterInfoBuilder() {
+        return getFungusFighterInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfoOrBuilder getFungusFighterInfoOrBuilder() {
+        if ((detailCase_ == 490) && (fungusFighterInfoBuilder_ != null)) {
+          return fungusFighterInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 490) {
+            return (emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.FungusFighterDetailInfo fungus_fighter_info = 490;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo, emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.Builder, emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfoOrBuilder> 
+          getFungusFighterInfoFieldBuilder() {
+        if (fungusFighterInfoBuilder_ == null) {
+          if (!(detailCase_ == 490)) {
+            detail_ = emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.getDefaultInstance();
+          }
+          fungusFighterInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo, emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo.Builder, emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.FungusFighterDetailInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 490;
+        onChanged();;
+        return fungusFighterInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo, emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.Builder, emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfoOrBuilder> charAmusementInfoBuilder_;
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       * @return Whether the charAmusementInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasCharAmusementInfo() {
+        return detailCase_ == 1496;
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       * @return The charAmusementInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo getCharAmusementInfo() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (detailCase_ == 1496) {
+            return (emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 1496) {
+            return charAmusementInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       */
+      public Builder setCharAmusementInfo(emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo value) {
+        if (charAmusementInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          charAmusementInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1496;
+        return this;
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       */
+      public Builder setCharAmusementInfo(
+          emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.Builder builderForValue) {
+        if (charAmusementInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          charAmusementInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 1496;
+        return this;
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       */
+      public Builder mergeCharAmusementInfo(emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo value) {
+        if (charAmusementInfoBuilder_ == null) {
+          if (detailCase_ == 1496 &&
+              detail_ != emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.newBuilder((emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 1496) {
+            charAmusementInfoBuilder_.mergeFrom(value);
+          }
+          charAmusementInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1496;
+        return this;
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       */
+      public Builder clearCharAmusementInfo() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (detailCase_ == 1496) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 1496) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          charAmusementInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       */
+      public emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.Builder getCharAmusementInfoBuilder() {
+        return getCharAmusementInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfoOrBuilder getCharAmusementInfoOrBuilder() {
+        if ((detailCase_ == 1496) && (charAmusementInfoBuilder_ != null)) {
+          return charAmusementInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 1496) {
+            return (emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CharAmusementDetailInfo char_amusement_info = 1496;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo, emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.Builder, emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfoOrBuilder> 
+          getCharAmusementInfoFieldBuilder() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (!(detailCase_ == 1496)) {
+            detail_ = emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.getDefaultInstance();
+          }
+          charAmusementInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo, emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo.Builder, emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.CharAmusementDetailInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 1496;
+        onChanged();;
+        return charAmusementInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo, emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfoOrBuilder> effigyChallengeInfoBuilder_;
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       * @return Whether the effigyChallengeInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasEffigyChallengeInfo() {
+        return detailCase_ == 1025;
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       * @return The effigyChallengeInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo getEffigyChallengeInfo() {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (detailCase_ == 1025) {
+            return (emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 1025) {
+            return effigyChallengeInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       */
+      public Builder setEffigyChallengeInfo(emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo value) {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          effigyChallengeInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1025;
+        return this;
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       */
+      public Builder setEffigyChallengeInfo(
+          emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.Builder builderForValue) {
+        if (effigyChallengeInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          effigyChallengeInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 1025;
+        return this;
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       */
+      public Builder mergeEffigyChallengeInfo(emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo value) {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (detailCase_ == 1025 &&
+              detail_ != emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.newBuilder((emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 1025) {
+            effigyChallengeInfoBuilder_.mergeFrom(value);
+          }
+          effigyChallengeInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1025;
+        return this;
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       */
+      public Builder clearEffigyChallengeInfo() {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (detailCase_ == 1025) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 1025) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          effigyChallengeInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       */
+      public emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.Builder getEffigyChallengeInfoBuilder() {
+        return getEffigyChallengeInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfoOrBuilder getEffigyChallengeInfoOrBuilder() {
+        if ((detailCase_ == 1025) && (effigyChallengeInfoBuilder_ != null)) {
+          return effigyChallengeInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 1025) {
+            return (emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo, emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfoOrBuilder> 
+          getEffigyChallengeInfoFieldBuilder() {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (!(detailCase_ == 1025)) {
+            detail_ = emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.getDefaultInstance();
+          }
+          effigyChallengeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo, emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.EffigyChallengeV2DetailInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 1025;
+        onChanged();;
+        return effigyChallengeInfoBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -16785,10 +17543,10 @@ public final class ActivityInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ActivityInfo_ActivityCoinMapEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_ActivityInfo_Unk2700IFPBCNLCKLGEntry_descriptor;
+    internal_static_ActivityInfo_WishGiftNumMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_ActivityInfo_Unk2700IFPBCNLCKLGEntry_fieldAccessorTable;
+      internal_static_ActivityInfo_WishGiftNumMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -16798,166 +17556,175 @@ public final class ActivityInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022ActivityInfo.proto\032\031ActivityWatcherInf" +
-      "o.proto\032&ArenaChallengeActivityDetailInf" +
-      "o.proto\032\035AsterActivityDetailInfo.proto\032!" +
-      "BartenderActivityDetailInfo.proto\032 Bless" +
-      "ingActivityDetailInfo.proto\032!BlitzRushAc" +
-      "tivityDetailInfo.proto\032\'BounceConjuringA" +
-      "ctivityDetailInfo.proto\032\035BuoyantCombatDe" +
-      "tailInfo.proto\032%ChannelerSlabActivityDet" +
-      "ailInfo.proto\032\035ChessActivityDetailInfo.p" +
-      "roto\032 CrucibleActivityDetailInfo.proto\032#" +
-      "CrystalLinkActivityDetailInfo.proto\032 Del" +
-      "iveryActivityDetailInfo.proto\032\033DigActivi" +
-      "tyDetailInfo.proto\032#DragonSpineActivityD" +
-      "etailInfo.proto\032\031EchoShellDetailInfo.pro" +
-      "to\032\036EffigyActivityDetailInfo.proto\032\"Expe" +
-      "ditionActivityDetailInfo.proto\032\035FindHili" +
-      "churlDetailInfo.proto\032!FleurFairActivity" +
-      "DetailInfo.proto\032\036FlightActivityDetailIn" +
-      "fo.proto\032\035GachaActivityDetailInfo.proto\032" +
-      "\034GearActivityDetailInfo.proto\032\037GravenInn" +
-      "ocenceDetailInfo.proto\032\035HachiActivityDet" +
-      "ailInfo.proto\032#HideAndSeekActivityDetail" +
-      "Info.proto\032\035InstableSprayDetailInfo.prot" +
-      "o\032\037IrodoriActivityDetailInfo.proto\032#Isla" +
-      "ndPartyActivityDetailInfo.proto\032#Lantern" +
-      "RiteActivityDetailInfo.proto\032/LuminanceS" +
-      "toneChallengeActivityDetailInfo.proto\032\030L" +
-      "unaRiteDetailInfo.proto\032&MichiaeMatsuriA" +
-      "ctivityDetailInfo.proto\032!MistTrialActivi" +
-      "tyDetailInfo.proto\032$MoonfinTrialActivity" +
-      "DetailInfo.proto\032\035MuqadasPotionDetailInf" +
-      "o.proto\032!MusicGameActivityDetailInfo.pro" +
-      "to\032\035PhotoActivityDetailInfo.proto\032#Plant" +
-      "FlowerActivityDetailInfo.proto\032\036PotionAc" +
-      "tivityDetailInfo.proto\032 RockBoardExplore" +
-      "DetailInfo.proto\032\"RogueDiaryActivityDeta" +
-      "ilInfo.proto\032(RoguelikeDungeonActivityDe" +
-      "tailInfo.proto\032 SalesmanActivityDetailIn" +
-      "fo.proto\032\037SeaLampActivityDetailInfo.prot" +
-      "o\032\031SeaLampActivityInfo.proto\032\035SpiceActiv" +
-      "ityDetailInfo.proto\032\032SummerTimeDetailInf" +
-      "o.proto\032\034SummerTimeV2DetailInfo.proto\032\034S" +
-      "umoActivityDetailInfo.proto\032$TanukiTrave" +
-      "lActivityDetailInfo.proto\032#TreasureMapAc" +
-      "tivityDetailInfo.proto\032\036TreasureSeelieDe" +
-      "tailInfo.proto\032#TrialAvatarActivityDetai" +
-      "lInfo.proto\032\033UgcActivityDetailInfo.proto" +
-      "\032\031Unk2800_PHPHMILPOLC.proto\032\027VintageDeta" +
-      "ilInfo.proto\032#WaterSpiritActivityDetailI" +
-      "nfo.proto\032\031WindFieldDetailInfo.proto\032\"Wi" +
-      "nterCampActivityDetailInfo.proto\"\262 \n\014Act" +
-      "ivityInfo\022\031\n\021is_play_open_anim\030\r \001(\010\022\023\n\013" +
-      "schedule_id\030\017 \001(\r\022\022\n\tcur_score\030\362\016 \001(\r\022\023\n" +
-      "\013is_starting\030\t \001(\010\022\032\n\021taken_reward_list\030" +
-      "\311\002 \003(\r\022\033\n\023Unk2700_NONJFHAIFLA\030f \001(\010\022\"\n\031s" +
-      "elected_avatar_reward_id\030\212\n \001(\r\022\035\n\024first" +
-      "_day_start_time\030\320\004 \001(\r\022\024\n\013score_limit\030\246\017" +
-      " \001(\r\022\023\n\013is_finished\030\006 \001(\010\022\022\n\tis_hidden\030\227" +
-      "\007 \001(\010\022\022\n\nbegin_time\030\010 \001(\r\022\020\n\010end_time\030\005 " +
-      "\001(\r\022>\n\021activity_coin_map\030\252\005 \003(\0132\".Activi" +
-      "tyInfo.ActivityCoinMapEntry\022\025\n\ractivity_" +
-      "type\030\004 \001(\r\022\034\n\023Unk2700_EDKLLHBEEGE\030\251\013 \001(\010" +
-      "\0222\n\023Unk2800_KOMIPKKKOBE\030\340\006 \003(\0132\024.Unk2800" +
-      "_PHPHMILPOLC\022\026\n\016meet_cond_list\030\n \003(\r\022C\n\023" +
-      "Unk2700_IFPBCNLCKLG\030\367\n \003(\0132%.ActivityInf" +
-      "o.Unk2700IFPBCNLCKLGEntry\022\030\n\020expire_cond" +
-      "_list\030\003 \003(\r\022/\n\021watcher_info_list\030\002 \003(\0132\024" +
-      ".ActivityWatcherInfo\022\023\n\013activity_id\030\014 \001(" +
-      "\r\0223\n\rsam_lamp_info\030\007 \001(\0132\032.SeaLampActivi" +
-      "tyDetailInfoH\000\0224\n\rcrucible_info\030\016 \001(\0132\033." +
-      "CrucibleActivityDetailInfoH\000\0224\n\rsalesman" +
-      "_info\030\013 \001(\0132\033.SalesmanActivityDetailInfo" +
-      "H\000\022;\n\021trial_avatar_info\030\001 \001(\0132\036.TrialAva" +
-      "tarActivityDetailInfoH\000\0225\n\rdelivery_info" +
-      "\030\304\010 \001(\0132\033.DeliveryActivityDetailInfoH\000\022/" +
-      "\n\naster_info\030\255\004 \001(\0132\030.AsterActivityDetai" +
-      "lInfoH\000\0221\n\013flight_info\030\325\n \001(\0132\031.FlightAc" +
-      "tivityDetailInfoH\000\022<\n\021dragon_spine_info\030" +
-      "\277\r \001(\0132\036.DragonSpineActivityDetailInfoH\000" +
-      "\0221\n\013effigy_info\030\207\003 \001(\0132\031.EffigyActivityD" +
-      "etailInfoH\000\022<\n\021treasure_map_info\030\332\010 \001(\0132" +
-      "\036.TreasureMapActivityDetailInfoH\000\0225\n\rble" +
-      "ssing_info\030\315\016 \001(\0132\033.BlessingActivityDeta" +
-      "ilInfoH\000\022.\n\rsea_lamp_info\030\356\003 \001(\0132\024.SeaLa" +
-      "mpActivityInfoH\000\0229\n\017expedition_info\030\312\001 \001" +
-      "(\0132\035.ExpeditionActivityDetailInfoH\000\022B\n\024a" +
-      "rena_challenge_info\030\333\006 \001(\0132!.ArenaChalle" +
-      "ngeActivityDetailInfoH\000\0228\n\017fleur_fair_in" +
-      "fo\030\331\006 \001(\0132\034.FleurFairActivityDetailInfoH" +
-      "\000\022<\n\021water_spirit_info\030\213\r \001(\0132\036.WaterSpi" +
-      "ritActivityDetailInfoH\000\022@\n\023channeler_sla" +
-      "b_info\030\367\007 \001(\0132 .ChannelerSlabActivityDet" +
-      "ailInfoH\000\022A\n\030mist_trial_activity_info\030\234\001" +
-      " \001(\0132\034.MistTrialActivityDetailInfoH\000\022=\n\022" +
-      "hide_and_seek_info\030\253\003 \001(\0132\036.HideAndSeekA" +
-      "ctivityDetailInfoH\000\0228\n\023find_hilichurl_in" +
-      "fo\030\203\013 \001(\0132\030.FindHilichurlDetailInfoH\000\0222\n" +
-      "\020summer_time_info\030\334\n \001(\0132\025.SummerTimeDet" +
-      "ailInfoH\000\0228\n\023buoyant_combat_info\030\262\016 \001(\0132" +
-      "\030.BuoyantCombatDetailInfoH\000\0220\n\017echo_shel" +
-      "l_info\030\331\010 \001(\0132\024.EchoShellDetailInfoH\000\022D\n" +
-      "\025bounce_conjuring_info\030\377\005 \001(\0132\".BounceCo" +
-      "njuringActivityDetailInfoH\000\0228\n\017blitz_rus" +
-      "h_info\030\232\006 \001(\0132\034.BlitzRushActivityDetailI" +
-      "nfoH\000\022/\n\nchess_info\030\237\007 \001(\0132\030.ChessActivi" +
-      "tyDetailInfoH\000\022-\n\tsumo_info\030\355\t \001(\0132\027.Sum" +
-      "oActivityDetailInfoH\000\022>\n\022moonfin_trial_i" +
-      "nfo\030\264\014 \001(\0132\037.MoonfinTrialActivityDetailI" +
-      "nfoH\000\022.\n\016luna_rite_info\030\256\006 \001(\0132\023.LunaRit" +
-      "eDetailInfoH\000\022;\n\021plant_flower_info\0306 \001(\013" +
-      "2\036.PlantFlowerActivityDetailInfoH\000\0228\n\017mu" +
-      "sic_game_info\030\314\003 \001(\0132\034.MusicGameActivity" +
-      "DetailInfoH\000\022F\n\026roguelike_dungeon_info\030\333" +
-      "\001 \001(\0132#.RoguelikeDungeonActivityDetailIn" +
-      "foH\000\022+\n\010dig_info\030\223\003 \001(\0132\026.DigActivityDet" +
-      "ailInfoH\000\022/\n\nhachi_info\030\353\003 \001(\0132\030.HachiAc" +
-      "tivityDetailInfoH\000\022:\n\020winter_camp_info\030\273" +
-      "\010 \001(\0132\035.WinterCampActivityDetailInfoH\000\0221" +
-      "\n\013potion_info\030\371\t \001(\0132\031.PotionActivityDet" +
-      "ailInfoH\000\022G\n\033tanuki_travel_activity_info" +
-      "\030\204\016 \001(\0132\037.TanukiTravelActivityDetailInfo" +
-      "H\000\022E\n\032lantern_rite_activity_info\030\324\016 \001(\0132" +
-      "\036.LanternRiteActivityDetailInfoH\000\022B\n\024mic" +
-      "hiae_matsuri_info\030\302\001 \001(\0132!.MichiaeMatsur" +
-      "iActivityDetailInfoH\000\0227\n\016bartender_info\030" +
-      "\275\r \001(\0132\034.BartenderActivityDetailInfoH\000\022+" +
-      "\n\010ugc_info\030\277\005 \001(\0132\026.UgcActivityDetailInf" +
-      "oH\000\022<\n\021crystal_link_info\030\312\t \001(\0132\036.Crysta" +
-      "lLinkActivityDetailInfoH\000\0223\n\014irodori_inf" +
-      "o\030\356\005 \001(\0132\032.IrodoriActivityDetailInfoH\000\022/" +
-      "\n\nphoto_info\030\310\002 \001(\0132\030.PhotoActivityDetai" +
-      "lInfoH\000\022/\n\nspice_info\030\343\016 \001(\0132\030.SpiceActi" +
-      "vityDetailInfoH\000\022/\n\ngacha_info\030\271\006 \001(\0132\030." +
-      "GachaActivityDetailInfoH\000\022U\n\036luminance_s" +
-      "tone_challenge_info\030\234\n \001(\0132*.LuminanceSt" +
-      "oneChallengeActivityDetailInfoH\000\022:\n\020rogu" +
-      "e_diary_info\030\254\006 \001(\0132\035.RogueDiaryActivity" +
-      "DetailInfoH\000\0227\n\023summer_time_v2_info\030\356\004 \001" +
-      "(\0132\027.SummerTimeV2DetailInfoH\000\022<\n\021island_" +
-      "party_info\030\335\016 \001(\0132\036.IslandPartyActivityD" +
-      "etailInfoH\000\022-\n\tgear_info\030\322\005 \001(\0132\027.GearAc" +
-      "tivityDetailInfoH\000\022<\n\025graven_innocence_i" +
-      "nfo\030\367\016 \001(\0132\032.GravenInnocenceDetailInfoH\000" +
-      "\0228\n\023instable_spray_info\030\223\010 \001(\0132\030.Instabl" +
-      "eSprayDetailInfoH\000\0228\n\023muqadas_potion_inf" +
-      "o\030\205\t \001(\0132\030.MuqadasPotionDetailInfoH\000\022:\n\024" +
-      "treasure_seelie_info\030\306\007 \001(\0132\031.TreasureSe" +
-      "elieDetailInfoH\000\022?\n\027rock_board_explore_i" +
-      "nfo\030\266\010 \001(\0132\033.RockBoardExploreDetailInfoH" +
-      "\000\022+\n\014vintage_info\030\275\003 \001(\0132\022.VintageDetail" +
-      "InfoH\000\0220\n\017wind_field_info\030\340\002 \001(\0132\024.WindF" +
-      "ieldDetailInfoH\000\0326\n\024ActivityCoinMapEntry" +
-      "\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0329\n\027Unk2" +
-      "700IFPBCNLCKLGEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005valu" +
-      "e\030\002 \001(\r:\0028\001B\010\n\006detailB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\022ActivityInfo.proto\032\032ActivityPushTipsDa" +
+      "ta.proto\032\031ActivityWatcherInfo.proto\032&Are" +
+      "naChallengeActivityDetailInfo.proto\032\035Ast" +
+      "erActivityDetailInfo.proto\032!BartenderAct" +
+      "ivityDetailInfo.proto\032 BlessingActivityD" +
+      "etailInfo.proto\032!BlitzRushActivityDetail" +
+      "Info.proto\032\'BounceConjuringActivityDetai" +
+      "lInfo.proto\032\035BuoyantCombatDetailInfo.pro" +
+      "to\032%ChannelerSlabActivityDetailInfo.prot" +
+      "o\032\035CharAmusementDetailInfo.proto\032\035ChessA" +
+      "ctivityDetailInfo.proto\032 CrucibleActivit" +
+      "yDetailInfo.proto\032#CrystalLinkActivityDe" +
+      "tailInfo.proto\032 DeliveryActivityDetailIn" +
+      "fo.proto\032\033DigActivityDetailInfo.proto\032#D" +
+      "ragonSpineActivityDetailInfo.proto\032\031Echo" +
+      "ShellDetailInfo.proto\032\036EffigyActivityDet" +
+      "ailInfo.proto\032!EffigyChallengeV2DetailIn" +
+      "fo.proto\032\"ExpeditionActivityDetailInfo.p" +
+      "roto\032\035FindHilichurlDetailInfo.proto\032!Fle" +
+      "urFairActivityDetailInfo.proto\032\036FlightAc" +
+      "tivityDetailInfo.proto\032\035FungusFighterDet" +
+      "ailInfo.proto\032\035GachaActivityDetailInfo.p" +
+      "roto\032\034GearActivityDetailInfo.proto\032\037Grav" +
+      "enInnocenceDetailInfo.proto\032\035HachiActivi" +
+      "tyDetailInfo.proto\032#HideAndSeekActivityD" +
+      "etailInfo.proto\032\035InstableSprayDetailInfo" +
+      ".proto\032\037IrodoriActivityDetailInfo.proto\032" +
+      "\033IslandPartyDetailInfo.proto\032#LanternRit" +
+      "eActivityDetailInfo.proto\032/LuminanceSton" +
+      "eChallengeActivityDetailInfo.proto\032\030Luna" +
+      "RiteDetailInfo.proto\032&MichiaeMatsuriActi" +
+      "vityDetailInfo.proto\032!MistTrialActivityD" +
+      "etailInfo.proto\032$MoonfinTrialActivityDet" +
+      "ailInfo.proto\032%MuqadasPotionActivityDeta" +
+      "ilInfo.proto\032!MusicGameActivityDetailInf" +
+      "o.proto\032\035PhotoActivityDetailInfo.proto\032#" +
+      "PlantFlowerActivityDetailInfo.proto\032\036Pot" +
+      "ionActivityDetailInfo.proto\032 RockBoardEx" +
+      "ploreDetailInfo.proto\032\"RogueDiaryActivit" +
+      "yDetailInfo.proto\032(RoguelikeDungeonActiv" +
+      "ityDetailInfo.proto\032 SalesmanActivityDet" +
+      "ailInfo.proto\032\037SeaLampActivityDetailInfo" +
+      ".proto\032\031SeaLampActivityInfo.proto\032\035Spice" +
+      "ActivityDetailInfo.proto\032\032SummerTimeDeta" +
+      "ilInfo.proto\032\034SummerTimeV2DetailInfo.pro" +
+      "to\032\034SumoActivityDetailInfo.proto\032$Tanuki" +
+      "TravelActivityDetailInfo.proto\032#Treasure" +
+      "MapActivityDetailInfo.proto\032&TreasureSee" +
+      "lieActivityDetailInfo.proto\032#TrialAvatar" +
+      "ActivityDetailInfo.proto\032\033UgcActivityDet" +
+      "ailInfo.proto\032\027VintageDetailInfo.proto\032#" +
+      "WaterSpiritActivityDetailInfo.proto\032\031Win" +
+      "dFieldDetailInfo.proto\032\"WinterCampActivi" +
+      "tyDetailInfo.proto\"\211\"\n\014ActivityInfo\022\023\n\013i" +
+      "s_finished\030\006 \001(\010\022\025\n\ractivity_type\030\004 \001(\r\022" +
+      "\022\n\nbegin_time\030\010 \001(\r\022\032\n\021taken_reward_list" +
+      "\030\311\002 \003(\r\022\022\n\tis_hidden\030\227\007 \001(\010\022\026\n\ris_quick_" +
+      "open\030\251\013 \001(\010\022\026\n\016meet_cond_list\030\n \003(\r\022>\n\021a" +
+      "ctivity_coin_map\030\252\005 \003(\0132\".ActivityInfo.A" +
+      "ctivityCoinMapEntry\022\031\n\021is_banner_cleared" +
+      "\030f \001(\010\022\022\n\tcur_score\030\362\016 \001(\r\022\035\n\024first_day_" +
+      "start_time\030\320\004 \001(\r\022\023\n\013activity_id\030\014 \001(\r\022\031" +
+      "\n\021is_play_open_anim\030\r \001(\010\022\020\n\010end_time\030\005 " +
+      "\001(\r\022\024\n\013score_limit\030\246\017 \001(\r\022=\n\021wish_gift_n" +
+      "um_map\030\367\n \003(\0132!.ActivityInfo.WishGiftNum" +
+      "MapEntry\022\"\n\031selected_avatar_reward_id\030\212\n" +
+      " \001(\r\022!\n\030is_common_content_closed\030\253\017 \001(\010\022" +
+      "\030\n\020expire_cond_list\030\003 \003(\r\022<\n\034activity_pu" +
+      "sh_tips_data_list\030\340\006 \003(\0132\025.ActivityPushT" +
+      "ipsData\022/\n\021watcher_info_list\030\002 \003(\0132\024.Act" +
+      "ivityWatcherInfo\022\023\n\013schedule_id\030\017 \001(\r\022\023\n" +
+      "\013is_starting\030\t \001(\010\0223\n\rsam_lamp_info\030\007 \001(" +
+      "\0132\032.SeaLampActivityDetailInfoH\000\0224\n\rcruci" +
+      "ble_info\030\016 \001(\0132\033.CrucibleActivityDetailI" +
+      "nfoH\000\0224\n\rsalesman_info\030\013 \001(\0132\033.SalesmanA" +
+      "ctivityDetailInfoH\000\022;\n\021trial_avatar_info" +
+      "\030\001 \001(\0132\036.TrialAvatarActivityDetailInfoH\000" +
+      "\0225\n\rdelivery_info\030\304\010 \001(\0132\033.DeliveryActiv" +
+      "ityDetailInfoH\000\022/\n\naster_info\030\255\004 \001(\0132\030.A" +
+      "sterActivityDetailInfoH\000\0221\n\013flight_info\030" +
+      "\325\n \001(\0132\031.FlightActivityDetailInfoH\000\022<\n\021d" +
+      "ragon_spine_info\030\277\r \001(\0132\036.DragonSpineAct" +
+      "ivityDetailInfoH\000\0221\n\013effigy_info\030\207\003 \001(\0132" +
+      "\031.EffigyActivityDetailInfoH\000\022<\n\021treasure" +
+      "_map_info\030\332\010 \001(\0132\036.TreasureMapActivityDe" +
+      "tailInfoH\000\0225\n\rblessing_info\030\315\016 \001(\0132\033.Ble" +
+      "ssingActivityDetailInfoH\000\022.\n\rsea_lamp_in" +
+      "fo\030\356\003 \001(\0132\024.SeaLampActivityInfoH\000\0229\n\017exp" +
+      "edition_info\030\312\001 \001(\0132\035.ExpeditionActivity" +
+      "DetailInfoH\000\022B\n\024arena_challenge_info\030\333\006 " +
+      "\001(\0132!.ArenaChallengeActivityDetailInfoH\000" +
+      "\0228\n\017fleur_fair_info\030\331\006 \001(\0132\034.FleurFairAc" +
+      "tivityDetailInfoH\000\022<\n\021water_spirit_info\030" +
+      "\213\r \001(\0132\036.WaterSpiritActivityDetailInfoH\000" +
+      "\022@\n\023channeler_slab_info\030\367\007 \001(\0132 .Channel" +
+      "erSlabActivityDetailInfoH\000\022A\n\030mist_trial" +
+      "_activity_info\030\234\001 \001(\0132\034.MistTrialActivit" +
+      "yDetailInfoH\000\022=\n\022hide_and_seek_info\030\253\003 \001" +
+      "(\0132\036.HideAndSeekActivityDetailInfoH\000\0228\n\023" +
+      "find_hilichurl_info\030\203\013 \001(\0132\030.FindHilichu" +
+      "rlDetailInfoH\000\0222\n\020summer_time_info\030\334\n \001(" +
+      "\0132\025.SummerTimeDetailInfoH\000\0228\n\023buoyant_co" +
+      "mbat_info\030\262\016 \001(\0132\030.BuoyantCombatDetailIn" +
+      "foH\000\0220\n\017echo_shell_info\030\331\010 \001(\0132\024.EchoShe" +
+      "llDetailInfoH\000\022D\n\025bounce_conjuring_info\030" +
+      "\377\005 \001(\0132\".BounceConjuringActivityDetailIn" +
+      "foH\000\0228\n\017blitz_rush_info\030\232\006 \001(\0132\034.BlitzRu" +
+      "shActivityDetailInfoH\000\022/\n\nchess_info\030\237\007 " +
+      "\001(\0132\030.ChessActivityDetailInfoH\000\022-\n\tsumo_" +
+      "info\030\355\t \001(\0132\027.SumoActivityDetailInfoH\000\022>" +
+      "\n\022moonfin_trial_info\030\264\014 \001(\0132\037.MoonfinTri" +
+      "alActivityDetailInfoH\000\022.\n\016luna_rite_info" +
+      "\030\256\006 \001(\0132\023.LunaRiteDetailInfoH\000\022;\n\021plant_" +
+      "flower_info\0306 \001(\0132\036.PlantFlowerActivityD" +
+      "etailInfoH\000\0228\n\017music_game_info\030\314\003 \001(\0132\034." +
+      "MusicGameActivityDetailInfoH\000\022F\n\026rogueli" +
+      "ke_dungeon_info\030\333\001 \001(\0132#.RoguelikeDungeo" +
+      "nActivityDetailInfoH\000\022+\n\010dig_info\030\223\003 \001(\013" +
+      "2\026.DigActivityDetailInfoH\000\022/\n\nhachi_info" +
+      "\030\353\003 \001(\0132\030.HachiActivityDetailInfoH\000\022:\n\020w" +
+      "inter_camp_info\030\273\010 \001(\0132\035.WinterCampActiv" +
+      "ityDetailInfoH\000\0221\n\013potion_info\030\371\t \001(\0132\031." +
+      "PotionActivityDetailInfoH\000\022G\n\033tanuki_tra" +
+      "vel_activity_info\030\204\016 \001(\0132\037.TanukiTravelA" +
+      "ctivityDetailInfoH\000\022E\n\032lantern_rite_acti" +
+      "vity_info\030\324\016 \001(\0132\036.LanternRiteActivityDe" +
+      "tailInfoH\000\022B\n\024michiae_matsuri_info\030\302\001 \001(" +
+      "\0132!.MichiaeMatsuriActivityDetailInfoH\000\0227" +
+      "\n\016bartender_info\030\275\r \001(\0132\034.BartenderActiv" +
+      "ityDetailInfoH\000\022+\n\010ugc_info\030\277\005 \001(\0132\026.Ugc" +
+      "ActivityDetailInfoH\000\022<\n\021crystal_link_inf" +
+      "o\030\312\t \001(\0132\036.CrystalLinkActivityDetailInfo" +
+      "H\000\0223\n\014irodori_info\030\356\005 \001(\0132\032.IrodoriActiv" +
+      "ityDetailInfoH\000\022/\n\nphoto_info\030\310\002 \001(\0132\030.P" +
+      "hotoActivityDetailInfoH\000\022/\n\nspice_info\030\343" +
+      "\016 \001(\0132\030.SpiceActivityDetailInfoH\000\022/\n\ngac" +
+      "ha_info\030\271\006 \001(\0132\030.GachaActivityDetailInfo" +
+      "H\000\022U\n\036luminance_stone_challenge_info\030\234\n " +
+      "\001(\0132*.LuminanceStoneChallengeActivityDet" +
+      "ailInfoH\000\022:\n\020rogue_diary_info\030\254\006 \001(\0132\035.R" +
+      "ogueDiaryActivityDetailInfoH\000\0227\n\023summer_" +
+      "time_v2_info\030\356\004 \001(\0132\027.SummerTimeV2Detail" +
+      "InfoH\000\0224\n\021island_party_info\030\335\016 \001(\0132\026.Isl" +
+      "andPartyDetailInfoH\000\022-\n\tgear_info\030\322\005 \001(\013" +
+      "2\027.GearActivityDetailInfoH\000\022<\n\025graven_in" +
+      "nocence_info\030\367\016 \001(\0132\032.GravenInnocenceDet" +
+      "ailInfoH\000\0228\n\023instable_spray_info\030\223\010 \001(\0132" +
+      "\030.InstableSprayDetailInfoH\000\022@\n\023muqadas_p" +
+      "otion_info\030\205\t \001(\0132 .MuqadasPotionActivit" +
+      "yDetailInfoH\000\022B\n\024treasure_seelie_info\030\306\007" +
+      " \001(\0132!.TreasureSeelieActivityDetailInfoH" +
+      "\000\022?\n\027rock_board_explore_info\030\266\010 \001(\0132\033.Ro" +
+      "ckBoardExploreDetailInfoH\000\022+\n\014vintage_in" +
+      "fo\030\275\003 \001(\0132\022.VintageDetailInfoH\000\0220\n\017wind_" +
+      "field_info\030\340\002 \001(\0132\024.WindFieldDetailInfoH" +
+      "\000\0228\n\023fungus_fighter_info\030\352\003 \001(\0132\030.Fungus" +
+      "FighterDetailInfoH\000\0228\n\023char_amusement_in" +
+      "fo\030\330\013 \001(\0132\030.CharAmusementDetailInfoH\000\022>\n" +
+      "\025effigy_challenge_info\030\201\010 \001(\0132\034.EffigyCh" +
+      "allengeV2DetailInfoH\000\0326\n\024ActivityCoinMap" +
+      "Entry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0325\n" +
+      "\023WishGiftNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005val" +
+      "ue\030\002 \001(\r:\0028\001B\010\n\006detailB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.getDescriptor(),
@@ -16967,6 +17734,7 @@ public final class ActivityInfoOuterClass {
           emu.grasscutter.net.proto.BounceConjuringActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BuoyantCombatDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ChannelerSlabActivityDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.getDescriptor(),
@@ -16975,10 +17743,12 @@ public final class ActivityInfoOuterClass {
           emu.grasscutter.net.proto.DragonSpineActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.EffigyActivityDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.FleurFairActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GachaActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GearActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GravenInnocenceDetailInfoOuterClass.getDescriptor(),
@@ -16986,14 +17756,14 @@ public final class ActivityInfoOuterClass {
           emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.InstableSprayDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.IrodoriActivityDetailInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.LunaRiteDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MistTrialActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MoonfinTrialActivityDetailInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MusicGameActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.getDescriptor(),
@@ -17010,10 +17780,9 @@ public final class ActivityInfoOuterClass {
           emu.grasscutter.net.proto.SumoActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TanukiTravelActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TreasureMapActivityDetailInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TrialAvatarActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.getDescriptor(),
           emu.grasscutter.net.proto.VintageDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WaterSpiritActivityDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.getDescriptor(),
@@ -17024,19 +17793,20 @@ public final class ActivityInfoOuterClass {
     internal_static_ActivityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityInfo_descriptor,
-        new java.lang.String[] { "IsPlayOpenAnim", "ScheduleId", "CurScore", "IsStarting", "TakenRewardList", "Unk2700NONJFHAIFLA", "SelectedAvatarRewardId", "FirstDayStartTime", "ScoreLimit", "IsFinished", "IsHidden", "BeginTime", "EndTime", "ActivityCoinMap", "ActivityType", "Unk2700EDKLLHBEEGE", "Unk2800KOMIPKKKOBE", "MeetCondList", "Unk2700IFPBCNLCKLG", "ExpireCondList", "WatcherInfoList", "ActivityId", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "RockBoardExploreInfo", "VintageInfo", "WindFieldInfo", "Detail", });
+        new java.lang.String[] { "IsFinished", "ActivityType", "BeginTime", "TakenRewardList", "IsHidden", "IsQuickOpen", "MeetCondList", "ActivityCoinMap", "IsBannerCleared", "CurScore", "FirstDayStartTime", "ActivityId", "IsPlayOpenAnim", "EndTime", "ScoreLimit", "WishGiftNumMap", "SelectedAvatarRewardId", "IsCommonContentClosed", "ExpireCondList", "ActivityPushTipsDataList", "WatcherInfoList", "ScheduleId", "IsStarting", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "RockBoardExploreInfo", "VintageInfo", "WindFieldInfo", "FungusFighterInfo", "CharAmusementInfo", "EffigyChallengeInfo", "Detail", });
     internal_static_ActivityInfo_ActivityCoinMapEntry_descriptor =
       internal_static_ActivityInfo_descriptor.getNestedTypes().get(0);
     internal_static_ActivityInfo_ActivityCoinMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityInfo_ActivityCoinMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_ActivityInfo_Unk2700IFPBCNLCKLGEntry_descriptor =
+    internal_static_ActivityInfo_WishGiftNumMapEntry_descriptor =
       internal_static_ActivityInfo_descriptor.getNestedTypes().get(1);
-    internal_static_ActivityInfo_Unk2700IFPBCNLCKLGEntry_fieldAccessorTable = new
+    internal_static_ActivityInfo_WishGiftNumMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_ActivityInfo_Unk2700IFPBCNLCKLGEntry_descriptor,
+        internal_static_ActivityInfo_WishGiftNumMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
+    emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.getDescriptor();
@@ -17046,6 +17816,7 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.BounceConjuringActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BuoyantCombatDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ChannelerSlabActivityDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CharAmusementDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.getDescriptor();
@@ -17054,10 +17825,12 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.DragonSpineActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.EchoShellDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.EffigyActivityDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EffigyChallengeV2DetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FleurFairActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FungusFighterDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GachaActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GearActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GravenInnocenceDetailInfoOuterClass.getDescriptor();
@@ -17065,14 +17838,14 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.HideAndSeekActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InstableSprayDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.IrodoriActivityDetailInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.IslandPartyActivityDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.LunaRiteDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MistTrialActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MoonfinTrialActivityDetailInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.MuqadasPotionDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MuqadasPotionActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MusicGameActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.getDescriptor();
@@ -17089,10 +17862,9 @@ public final class ActivityInfoOuterClass {
     emu.grasscutter.net.proto.SumoActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TanukiTravelActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TreasureMapActivityDetailInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.TreasureSeelieDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TrialAvatarActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.UgcActivityDetailInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Unk2800PHPHMILPOLC.getDescriptor();
     emu.grasscutter.net.proto.VintageDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WaterSpiritActivityDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WindFieldDetailInfoOuterClass.getDescriptor();

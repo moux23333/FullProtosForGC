@@ -19,18 +19,6 @@ public final class SceneGalleryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 end_time = 11;</code>
-     * @return The endTime.
-     */
-    int getEndTime();
-
-    /**
-     * <code>uint32 pre_start_end_time = 15;</code>
-     * @return The preStartEndTime.
-     */
-    int getPreStartEndTime();
-
-    /**
      * <code>.GalleryStageType stage = 5;</code>
      * @return The enum numeric value on the wire for stage.
      */
@@ -40,18 +28,6 @@ public final class SceneGalleryInfoOuterClass {
      * @return The stage.
      */
     emu.grasscutter.net.proto.GalleryStageTypeOuterClass.GalleryStageType getStage();
-
-    /**
-     * <code>uint32 owner_uid = 9;</code>
-     * @return The ownerUid.
-     */
-    int getOwnerUid();
-
-    /**
-     * <code>uint32 player_count = 1;</code>
-     * @return The playerCount.
-     */
-    int getPlayerCount();
 
     /**
      * <code>repeated .SceneGalleryProgressInfo progress_info_list = 4;</code>
@@ -82,6 +58,36 @@ public final class SceneGalleryInfoOuterClass {
      * @return The galleryId.
      */
     int getGalleryId();
+
+    /**
+     * <code>uint32 start_time = 3;</code>
+     * @return The startTime.
+     */
+    int getStartTime();
+
+    /**
+     * <code>uint32 end_time = 11;</code>
+     * @return The endTime.
+     */
+    int getEndTime();
+
+    /**
+     * <code>uint32 owner_uid = 9;</code>
+     * @return The ownerUid.
+     */
+    int getOwnerUid();
+
+    /**
+     * <code>uint32 player_count = 1;</code>
+     * @return The playerCount.
+     */
+    int getPlayerCount();
+
+    /**
+     * <code>uint32 pre_start_end_time = 15;</code>
+     * @return The preStartEndTime.
+     */
+    int getPreStartEndTime();
 
     /**
      * <code>.SceneGalleryBalloonInfo balloon_info = 14;</code>
@@ -473,6 +479,66 @@ public final class SceneGalleryInfoOuterClass {
      */
     emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfoOrBuilder getWindFieldInfoOrBuilder();
 
+    /**
+     * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+     * @return Whether the fungusFighterTrainingInfo field is set.
+     */
+    boolean hasFungusFighterTrainingInfo();
+    /**
+     * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+     * @return The fungusFighterTrainingInfo.
+     */
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo getFungusFighterTrainingInfo();
+    /**
+     * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+     */
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfoOrBuilder getFungusFighterTrainingInfoOrBuilder();
+
+    /**
+     * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+     * @return Whether the effigyChallengeInfo field is set.
+     */
+    boolean hasEffigyChallengeInfo();
+    /**
+     * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+     * @return The effigyChallengeInfo.
+     */
+    emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info getEffigyChallengeInfo();
+    /**
+     * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+     */
+    emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2InfoOrBuilder getEffigyChallengeInfoOrBuilder();
+
+    /**
+     * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+     * @return Whether the fungusFighterCaptureInfo field is set.
+     */
+    boolean hasFungusFighterCaptureInfo();
+    /**
+     * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+     * @return The fungusFighterCaptureInfo.
+     */
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo getFungusFighterCaptureInfo();
+    /**
+     * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+     */
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfoOrBuilder getFungusFighterCaptureInfoOrBuilder();
+
+    /**
+     * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+     * @return Whether the charAmusementInfo field is set.
+     */
+    boolean hasCharAmusementInfo();
+    /**
+     * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+     * @return The charAmusementInfo.
+     */
+    emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo getCharAmusementInfo();
+    /**
+     * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+     */
+    emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfoOrBuilder getCharAmusementInfoOrBuilder();
+
     public emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo.InfoCase getInfoCase();
   }
   /**
@@ -531,6 +597,11 @@ public final class SceneGalleryInfoOuterClass {
             case 16: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              startTime_ = input.readUInt32();
               break;
             }
             case 34: {
@@ -689,6 +760,20 @@ public final class SceneGalleryInfoOuterClass {
               infoCase_ = 296;
               break;
             }
+            case 3378: {
+              emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.Builder subBuilder = null;
+              if (infoCase_ == 422) {
+                subBuilder = ((emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_).toBuilder();
+              }
+              info_ =
+                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_);
+                info_ = subBuilder.buildPartial();
+              }
+              infoCase_ = 422;
+              break;
+            }
             case 3698: {
               emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo.Builder subBuilder = null;
               if (infoCase_ == 462) {
@@ -759,6 +844,20 @@ public final class SceneGalleryInfoOuterClass {
               infoCase_ = 865;
               break;
             }
+            case 7058: {
+              emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.Builder subBuilder = null;
+              if (infoCase_ == 882) {
+                subBuilder = ((emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_).toBuilder();
+              }
+              info_ =
+                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_);
+                info_ = subBuilder.buildPartial();
+              }
+              infoCase_ = 882;
+              break;
+            }
             case 8274: {
               emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.SceneGalleryHomeBalloonInfo.Builder subBuilder = null;
               if (infoCase_ == 1034) {
@@ -787,6 +886,20 @@ public final class SceneGalleryInfoOuterClass {
               infoCase_ = 1080;
               break;
             }
+            case 8690: {
+              emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.Builder subBuilder = null;
+              if (infoCase_ == 1086) {
+                subBuilder = ((emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_).toBuilder();
+              }
+              info_ =
+                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_);
+                info_ = subBuilder.buildPartial();
+              }
+              infoCase_ = 1086;
+              break;
+            }
             case 9066: {
               emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.Builder subBuilder = null;
               if (infoCase_ == 1133) {
@@ -813,6 +926,20 @@ public final class SceneGalleryInfoOuterClass {
                 info_ = subBuilder.buildPartial();
               }
               infoCase_ = 1196;
+              break;
+            }
+            case 10626: {
+              emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.Builder subBuilder = null;
+              if (infoCase_ == 1328) {
+                subBuilder = ((emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_).toBuilder();
+              }
+              info_ =
+                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_);
+                info_ = subBuilder.buildPartial();
+              }
+              infoCase_ = 1328;
               break;
             }
             case 11074: {
@@ -993,6 +1120,10 @@ public final class SceneGalleryInfoOuterClass {
       TREASURE_SEELIE_INFO(1525),
       VINTAGE_HUNTING_INFO(254),
       WIND_FIELD_INFO(1080),
+      FUNGUS_FIGHTER_TRAINING_INFO(1328),
+      EFFIGY_CHALLENGE_INFO(882),
+      FUNGUS_FIGHTER_CAPTURE_INFO(422),
+      CHAR_AMUSEMENT_INFO(1086),
       INFO_NOT_SET(0);
       private final int value;
       private InfoCase(int value) {
@@ -1036,6 +1167,10 @@ public final class SceneGalleryInfoOuterClass {
           case 1525: return TREASURE_SEELIE_INFO;
           case 254: return VINTAGE_HUNTING_INFO;
           case 1080: return WIND_FIELD_INFO;
+          case 1328: return FUNGUS_FIGHTER_TRAINING_INFO;
+          case 882: return EFFIGY_CHALLENGE_INFO;
+          case 422: return FUNGUS_FIGHTER_CAPTURE_INFO;
+          case 1086: return CHAR_AMUSEMENT_INFO;
           case 0: return INFO_NOT_SET;
           default: return null;
         }
@@ -1049,28 +1184,6 @@ public final class SceneGalleryInfoOuterClass {
     getInfoCase() {
       return InfoCase.forNumber(
           infoCase_);
-    }
-
-    public static final int END_TIME_FIELD_NUMBER = 11;
-    private int endTime_;
-    /**
-     * <code>uint32 end_time = 11;</code>
-     * @return The endTime.
-     */
-    @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
-    }
-
-    public static final int PRE_START_END_TIME_FIELD_NUMBER = 15;
-    private int preStartEndTime_;
-    /**
-     * <code>uint32 pre_start_end_time = 15;</code>
-     * @return The preStartEndTime.
-     */
-    @java.lang.Override
-    public int getPreStartEndTime() {
-      return preStartEndTime_;
     }
 
     public static final int STAGE_FIELD_NUMBER = 5;
@@ -1090,28 +1203,6 @@ public final class SceneGalleryInfoOuterClass {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.GalleryStageTypeOuterClass.GalleryStageType result = emu.grasscutter.net.proto.GalleryStageTypeOuterClass.GalleryStageType.valueOf(stage_);
       return result == null ? emu.grasscutter.net.proto.GalleryStageTypeOuterClass.GalleryStageType.UNRECOGNIZED : result;
-    }
-
-    public static final int OWNER_UID_FIELD_NUMBER = 9;
-    private int ownerUid_;
-    /**
-     * <code>uint32 owner_uid = 9;</code>
-     * @return The ownerUid.
-     */
-    @java.lang.Override
-    public int getOwnerUid() {
-      return ownerUid_;
-    }
-
-    public static final int PLAYER_COUNT_FIELD_NUMBER = 1;
-    private int playerCount_;
-    /**
-     * <code>uint32 player_count = 1;</code>
-     * @return The playerCount.
-     */
-    @java.lang.Override
-    public int getPlayerCount() {
-      return playerCount_;
     }
 
     public static final int PROGRESS_INFO_LIST_FIELD_NUMBER = 4;
@@ -1163,6 +1254,61 @@ public final class SceneGalleryInfoOuterClass {
     @java.lang.Override
     public int getGalleryId() {
       return galleryId_;
+    }
+
+    public static final int START_TIME_FIELD_NUMBER = 3;
+    private int startTime_;
+    /**
+     * <code>uint32 start_time = 3;</code>
+     * @return The startTime.
+     */
+    @java.lang.Override
+    public int getStartTime() {
+      return startTime_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 11;
+    private int endTime_;
+    /**
+     * <code>uint32 end_time = 11;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
+    }
+
+    public static final int OWNER_UID_FIELD_NUMBER = 9;
+    private int ownerUid_;
+    /**
+     * <code>uint32 owner_uid = 9;</code>
+     * @return The ownerUid.
+     */
+    @java.lang.Override
+    public int getOwnerUid() {
+      return ownerUid_;
+    }
+
+    public static final int PLAYER_COUNT_FIELD_NUMBER = 1;
+    private int playerCount_;
+    /**
+     * <code>uint32 player_count = 1;</code>
+     * @return The playerCount.
+     */
+    @java.lang.Override
+    public int getPlayerCount() {
+      return playerCount_;
+    }
+
+    public static final int PRE_START_END_TIME_FIELD_NUMBER = 15;
+    private int preStartEndTime_;
+    /**
+     * <code>uint32 pre_start_end_time = 15;</code>
+     * @return The preStartEndTime.
+     */
+    @java.lang.Override
+    public int getPreStartEndTime() {
+      return preStartEndTime_;
     }
 
     public static final int BALLOON_INFO_FIELD_NUMBER = 14;
@@ -1971,6 +2117,130 @@ public final class SceneGalleryInfoOuterClass {
       return emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo.getDefaultInstance();
     }
 
+    public static final int FUNGUS_FIGHTER_TRAINING_INFO_FIELD_NUMBER = 1328;
+    /**
+     * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+     * @return Whether the fungusFighterTrainingInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasFungusFighterTrainingInfo() {
+      return infoCase_ == 1328;
+    }
+    /**
+     * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+     * @return The fungusFighterTrainingInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo getFungusFighterTrainingInfo() {
+      if (infoCase_ == 1328) {
+         return (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfoOrBuilder getFungusFighterTrainingInfoOrBuilder() {
+      if (infoCase_ == 1328) {
+         return (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance();
+    }
+
+    public static final int EFFIGY_CHALLENGE_INFO_FIELD_NUMBER = 882;
+    /**
+     * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+     * @return Whether the effigyChallengeInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasEffigyChallengeInfo() {
+      return infoCase_ == 882;
+    }
+    /**
+     * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+     * @return The effigyChallengeInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info getEffigyChallengeInfo() {
+      if (infoCase_ == 882) {
+         return (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance();
+    }
+    /**
+     * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2InfoOrBuilder getEffigyChallengeInfoOrBuilder() {
+      if (infoCase_ == 882) {
+         return (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance();
+    }
+
+    public static final int FUNGUS_FIGHTER_CAPTURE_INFO_FIELD_NUMBER = 422;
+    /**
+     * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+     * @return Whether the fungusFighterCaptureInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasFungusFighterCaptureInfo() {
+      return infoCase_ == 422;
+    }
+    /**
+     * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+     * @return The fungusFighterCaptureInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo getFungusFighterCaptureInfo() {
+      if (infoCase_ == 422) {
+         return (emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfoOrBuilder getFungusFighterCaptureInfoOrBuilder() {
+      if (infoCase_ == 422) {
+         return (emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.getDefaultInstance();
+    }
+
+    public static final int CHAR_AMUSEMENT_INFO_FIELD_NUMBER = 1086;
+    /**
+     * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+     * @return Whether the charAmusementInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasCharAmusementInfo() {
+      return infoCase_ == 1086;
+    }
+    /**
+     * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+     * @return The charAmusementInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo getCharAmusementInfo() {
+      if (infoCase_ == 1086) {
+         return (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfoOrBuilder getCharAmusementInfoOrBuilder() {
+      if (infoCase_ == 1086) {
+         return (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_;
+      }
+      return emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1990,6 +2260,9 @@ public final class SceneGalleryInfoOuterClass {
       }
       if (galleryId_ != 0) {
         output.writeUInt32(2, galleryId_);
+      }
+      if (startTime_ != 0) {
+        output.writeUInt32(3, startTime_);
       }
       for (int i = 0; i < progressInfoList_.size(); i++) {
         output.writeMessage(4, progressInfoList_.get(i));
@@ -2033,6 +2306,9 @@ public final class SceneGalleryInfoOuterClass {
       if (infoCase_ == 296) {
         output.writeMessage(296, (emu.grasscutter.net.proto.SceneGallerySummerTimeV2BoatInfoOuterClass.SceneGallerySummerTimeV2BoatInfo) info_);
       }
+      if (infoCase_ == 422) {
+        output.writeMessage(422, (emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_);
+      }
       if (infoCase_ == 462) {
         output.writeMessage(462, (emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo) info_);
       }
@@ -2048,17 +2324,26 @@ public final class SceneGalleryInfoOuterClass {
       if (infoCase_ == 865) {
         output.writeMessage(865, (emu.grasscutter.net.proto.SceneGalleryMuqadasPotionInfoOuterClass.SceneGalleryMuqadasPotionInfo) info_);
       }
+      if (infoCase_ == 882) {
+        output.writeMessage(882, (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_);
+      }
       if (infoCase_ == 1034) {
         output.writeMessage(1034, (emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.SceneGalleryHomeBalloonInfo) info_);
       }
       if (infoCase_ == 1080) {
         output.writeMessage(1080, (emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo) info_);
       }
+      if (infoCase_ == 1086) {
+        output.writeMessage(1086, (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_);
+      }
       if (infoCase_ == 1133) {
         output.writeMessage(1133, (emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo) info_);
       }
       if (infoCase_ == 1196) {
         output.writeMessage(1196, (emu.grasscutter.net.proto.SceneGalleryInstableSprayInfoOuterClass.SceneGalleryInstableSprayInfo) info_);
+      }
+      if (infoCase_ == 1328) {
+        output.writeMessage(1328, (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_);
       }
       if (infoCase_ == 1384) {
         output.writeMessage(1384, (emu.grasscutter.net.proto.SceneGalleryBuoyantCombatInfoOuterClass.SceneGalleryBuoyantCombatInfo) info_);
@@ -2100,6 +2385,10 @@ public final class SceneGalleryInfoOuterClass {
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, galleryId_);
+      }
+      if (startTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, startTime_);
       }
       for (int i = 0; i < progressInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -2157,6 +2446,10 @@ public final class SceneGalleryInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(296, (emu.grasscutter.net.proto.SceneGallerySummerTimeV2BoatInfoOuterClass.SceneGallerySummerTimeV2BoatInfo) info_);
       }
+      if (infoCase_ == 422) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(422, (emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_);
+      }
       if (infoCase_ == 462) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(462, (emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo) info_);
@@ -2177,6 +2470,10 @@ public final class SceneGalleryInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(865, (emu.grasscutter.net.proto.SceneGalleryMuqadasPotionInfoOuterClass.SceneGalleryMuqadasPotionInfo) info_);
       }
+      if (infoCase_ == 882) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(882, (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_);
+      }
       if (infoCase_ == 1034) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1034, (emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.SceneGalleryHomeBalloonInfo) info_);
@@ -2185,6 +2482,10 @@ public final class SceneGalleryInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1080, (emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo) info_);
       }
+      if (infoCase_ == 1086) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1086, (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_);
+      }
       if (infoCase_ == 1133) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1133, (emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo) info_);
@@ -2192,6 +2493,10 @@ public final class SceneGalleryInfoOuterClass {
       if (infoCase_ == 1196) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1196, (emu.grasscutter.net.proto.SceneGalleryInstableSprayInfoOuterClass.SceneGalleryInstableSprayInfo) info_);
+      }
+      if (infoCase_ == 1328) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1328, (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_);
       }
       if (infoCase_ == 1384) {
         size += com.google.protobuf.CodedOutputStream
@@ -2240,19 +2545,21 @@ public final class SceneGalleryInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo other = (emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo) obj;
 
-      if (getEndTime()
-          != other.getEndTime()) return false;
-      if (getPreStartEndTime()
-          != other.getPreStartEndTime()) return false;
       if (stage_ != other.stage_) return false;
-      if (getOwnerUid()
-          != other.getOwnerUid()) return false;
-      if (getPlayerCount()
-          != other.getPlayerCount()) return false;
       if (!getProgressInfoListList()
           .equals(other.getProgressInfoListList())) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
+      if (getOwnerUid()
+          != other.getOwnerUid()) return false;
+      if (getPlayerCount()
+          != other.getPlayerCount()) return false;
+      if (getPreStartEndTime()
+          != other.getPreStartEndTime()) return false;
       if (!getInfoCase().equals(other.getInfoCase())) return false;
       switch (infoCase_) {
         case 14:
@@ -2359,6 +2666,22 @@ public final class SceneGalleryInfoOuterClass {
           if (!getWindFieldInfo()
               .equals(other.getWindFieldInfo())) return false;
           break;
+        case 1328:
+          if (!getFungusFighterTrainingInfo()
+              .equals(other.getFungusFighterTrainingInfo())) return false;
+          break;
+        case 882:
+          if (!getEffigyChallengeInfo()
+              .equals(other.getEffigyChallengeInfo())) return false;
+          break;
+        case 422:
+          if (!getFungusFighterCaptureInfo()
+              .equals(other.getFungusFighterCaptureInfo())) return false;
+          break;
+        case 1086:
+          if (!getCharAmusementInfo()
+              .equals(other.getCharAmusementInfo())) return false;
+          break;
         case 0:
         default:
       }
@@ -2373,22 +2696,24 @@ public final class SceneGalleryInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEndTime();
-      hash = (37 * hash) + PRE_START_END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPreStartEndTime();
       hash = (37 * hash) + STAGE_FIELD_NUMBER;
       hash = (53 * hash) + stage_;
-      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerUid();
-      hash = (37 * hash) + PLAYER_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerCount();
       if (getProgressInfoListCount() > 0) {
         hash = (37 * hash) + PROGRESS_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getProgressInfoListList().hashCode();
       }
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
+      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerUid();
+      hash = (37 * hash) + PLAYER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerCount();
+      hash = (37 * hash) + PRE_START_END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPreStartEndTime();
       switch (infoCase_) {
         case 14:
           hash = (37 * hash) + BALLOON_INFO_FIELD_NUMBER;
@@ -2493,6 +2818,22 @@ public final class SceneGalleryInfoOuterClass {
         case 1080:
           hash = (37 * hash) + WIND_FIELD_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getWindFieldInfo().hashCode();
+          break;
+        case 1328:
+          hash = (37 * hash) + FUNGUS_FIGHTER_TRAINING_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getFungusFighterTrainingInfo().hashCode();
+          break;
+        case 882:
+          hash = (37 * hash) + EFFIGY_CHALLENGE_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getEffigyChallengeInfo().hashCode();
+          break;
+        case 422:
+          hash = (37 * hash) + FUNGUS_FIGHTER_CAPTURE_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getFungusFighterCaptureInfo().hashCode();
+          break;
+        case 1086:
+          hash = (37 * hash) + CHAR_AMUSEMENT_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getCharAmusementInfo().hashCode();
           break;
         case 0:
         default:
@@ -2631,15 +2972,7 @@ public final class SceneGalleryInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        endTime_ = 0;
-
-        preStartEndTime_ = 0;
-
         stage_ = 0;
-
-        ownerUid_ = 0;
-
-        playerCount_ = 0;
 
         if (progressInfoListBuilder_ == null) {
           progressInfoList_ = java.util.Collections.emptyList();
@@ -2648,6 +2981,16 @@ public final class SceneGalleryInfoOuterClass {
           progressInfoListBuilder_.clear();
         }
         galleryId_ = 0;
+
+        startTime_ = 0;
+
+        endTime_ = 0;
+
+        ownerUid_ = 0;
+
+        playerCount_ = 0;
+
+        preStartEndTime_ = 0;
 
         infoCase_ = 0;
         info_ = null;
@@ -2678,11 +3021,7 @@ public final class SceneGalleryInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo result = new emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo(this);
         int from_bitField0_ = bitField0_;
-        result.endTime_ = endTime_;
-        result.preStartEndTime_ = preStartEndTime_;
         result.stage_ = stage_;
-        result.ownerUid_ = ownerUid_;
-        result.playerCount_ = playerCount_;
         if (progressInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             progressInfoList_ = java.util.Collections.unmodifiableList(progressInfoList_);
@@ -2693,6 +3032,11 @@ public final class SceneGalleryInfoOuterClass {
           result.progressInfoList_ = progressInfoListBuilder_.build();
         }
         result.galleryId_ = galleryId_;
+        result.startTime_ = startTime_;
+        result.endTime_ = endTime_;
+        result.ownerUid_ = ownerUid_;
+        result.playerCount_ = playerCount_;
+        result.preStartEndTime_ = preStartEndTime_;
         if (infoCase_ == 14) {
           if (balloonInfoBuilder_ == null) {
             result.info_ = info_;
@@ -2875,6 +3219,34 @@ public final class SceneGalleryInfoOuterClass {
             result.info_ = windFieldInfoBuilder_.build();
           }
         }
+        if (infoCase_ == 1328) {
+          if (fungusFighterTrainingInfoBuilder_ == null) {
+            result.info_ = info_;
+          } else {
+            result.info_ = fungusFighterTrainingInfoBuilder_.build();
+          }
+        }
+        if (infoCase_ == 882) {
+          if (effigyChallengeInfoBuilder_ == null) {
+            result.info_ = info_;
+          } else {
+            result.info_ = effigyChallengeInfoBuilder_.build();
+          }
+        }
+        if (infoCase_ == 422) {
+          if (fungusFighterCaptureInfoBuilder_ == null) {
+            result.info_ = info_;
+          } else {
+            result.info_ = fungusFighterCaptureInfoBuilder_.build();
+          }
+        }
+        if (infoCase_ == 1086) {
+          if (charAmusementInfoBuilder_ == null) {
+            result.info_ = info_;
+          } else {
+            result.info_ = charAmusementInfoBuilder_.build();
+          }
+        }
         result.infoCase_ = infoCase_;
         onBuilt();
         return result;
@@ -2924,20 +3296,8 @@ public final class SceneGalleryInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo.getDefaultInstance()) return this;
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
-        }
-        if (other.getPreStartEndTime() != 0) {
-          setPreStartEndTime(other.getPreStartEndTime());
-        }
         if (other.stage_ != 0) {
           setStageValue(other.getStageValue());
-        }
-        if (other.getOwnerUid() != 0) {
-          setOwnerUid(other.getOwnerUid());
-        }
-        if (other.getPlayerCount() != 0) {
-          setPlayerCount(other.getPlayerCount());
         }
         if (progressInfoListBuilder_ == null) {
           if (!other.progressInfoList_.isEmpty()) {
@@ -2967,6 +3327,21 @@ public final class SceneGalleryInfoOuterClass {
         }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
+        }
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
+        }
+        if (other.getOwnerUid() != 0) {
+          setOwnerUid(other.getOwnerUid());
+        }
+        if (other.getPlayerCount() != 0) {
+          setPlayerCount(other.getPlayerCount());
+        }
+        if (other.getPreStartEndTime() != 0) {
+          setPreStartEndTime(other.getPreStartEndTime());
         }
         switch (other.getInfoCase()) {
           case BALLOON_INFO: {
@@ -3073,6 +3448,22 @@ public final class SceneGalleryInfoOuterClass {
             mergeWindFieldInfo(other.getWindFieldInfo());
             break;
           }
+          case FUNGUS_FIGHTER_TRAINING_INFO: {
+            mergeFungusFighterTrainingInfo(other.getFungusFighterTrainingInfo());
+            break;
+          }
+          case EFFIGY_CHALLENGE_INFO: {
+            mergeEffigyChallengeInfo(other.getEffigyChallengeInfo());
+            break;
+          }
+          case FUNGUS_FIGHTER_CAPTURE_INFO: {
+            mergeFungusFighterCaptureInfo(other.getFungusFighterCaptureInfo());
+            break;
+          }
+          case CHAR_AMUSEMENT_INFO: {
+            mergeCharAmusementInfo(other.getCharAmusementInfo());
+            break;
+          }
           case INFO_NOT_SET: {
             break;
           }
@@ -3121,68 +3512,6 @@ public final class SceneGalleryInfoOuterClass {
       }
 
       private int bitField0_;
-
-      private int endTime_ ;
-      /**
-       * <code>uint32 end_time = 11;</code>
-       * @return The endTime.
-       */
-      @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
-      }
-      /**
-       * <code>uint32 end_time = 11;</code>
-       * @param value The endTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEndTime(int value) {
-        
-        endTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 end_time = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEndTime() {
-        
-        endTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int preStartEndTime_ ;
-      /**
-       * <code>uint32 pre_start_end_time = 15;</code>
-       * @return The preStartEndTime.
-       */
-      @java.lang.Override
-      public int getPreStartEndTime() {
-        return preStartEndTime_;
-      }
-      /**
-       * <code>uint32 pre_start_end_time = 15;</code>
-       * @param value The preStartEndTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPreStartEndTime(int value) {
-        
-        preStartEndTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 pre_start_end_time = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPreStartEndTime() {
-        
-        preStartEndTime_ = 0;
-        onChanged();
-        return this;
-      }
 
       private int stage_ = 0;
       /**
@@ -3234,68 +3563,6 @@ public final class SceneGalleryInfoOuterClass {
       public Builder clearStage() {
         
         stage_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int ownerUid_ ;
-      /**
-       * <code>uint32 owner_uid = 9;</code>
-       * @return The ownerUid.
-       */
-      @java.lang.Override
-      public int getOwnerUid() {
-        return ownerUid_;
-      }
-      /**
-       * <code>uint32 owner_uid = 9;</code>
-       * @param value The ownerUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOwnerUid(int value) {
-        
-        ownerUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 owner_uid = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOwnerUid() {
-        
-        ownerUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int playerCount_ ;
-      /**
-       * <code>uint32 player_count = 1;</code>
-       * @return The playerCount.
-       */
-      @java.lang.Override
-      public int getPlayerCount() {
-        return playerCount_;
-      }
-      /**
-       * <code>uint32 player_count = 1;</code>
-       * @param value The playerCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayerCount(int value) {
-        
-        playerCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 player_count = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayerCount() {
-        
-        playerCount_ = 0;
         onChanged();
         return this;
       }
@@ -3567,6 +3834,161 @@ public final class SceneGalleryInfoOuterClass {
       public Builder clearGalleryId() {
         
         galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int startTime_ ;
+      /**
+       * <code>uint32 start_time = 3;</code>
+       * @return The startTime.
+       */
+      @java.lang.Override
+      public int getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <code>uint32 start_time = 3;</code>
+       * @param value The startTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartTime(int value) {
+        
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 start_time = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartTime() {
+        
+        startTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int endTime_ ;
+      /**
+       * <code>uint32 end_time = 11;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <code>uint32 end_time = 11;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 end_time = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        
+        endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int ownerUid_ ;
+      /**
+       * <code>uint32 owner_uid = 9;</code>
+       * @return The ownerUid.
+       */
+      @java.lang.Override
+      public int getOwnerUid() {
+        return ownerUid_;
+      }
+      /**
+       * <code>uint32 owner_uid = 9;</code>
+       * @param value The ownerUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOwnerUid(int value) {
+        
+        ownerUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 owner_uid = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOwnerUid() {
+        
+        ownerUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int playerCount_ ;
+      /**
+       * <code>uint32 player_count = 1;</code>
+       * @return The playerCount.
+       */
+      @java.lang.Override
+      public int getPlayerCount() {
+        return playerCount_;
+      }
+      /**
+       * <code>uint32 player_count = 1;</code>
+       * @param value The playerCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayerCount(int value) {
+        
+        playerCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 player_count = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayerCount() {
+        
+        playerCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int preStartEndTime_ ;
+      /**
+       * <code>uint32 pre_start_end_time = 15;</code>
+       * @return The preStartEndTime.
+       */
+      @java.lang.Override
+      public int getPreStartEndTime() {
+        return preStartEndTime_;
+      }
+      /**
+       * <code>uint32 pre_start_end_time = 15;</code>
+       * @param value The preStartEndTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPreStartEndTime(int value) {
+        
+        preStartEndTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 pre_start_end_time = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPreStartEndTime() {
+        
+        preStartEndTime_ = 0;
         onChanged();
         return this;
       }
@@ -7236,6 +7658,570 @@ public final class SceneGalleryInfoOuterClass {
         onChanged();;
         return windFieldInfoBuilder_;
       }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo, emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfoOrBuilder> fungusFighterTrainingInfoBuilder_;
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       * @return Whether the fungusFighterTrainingInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasFungusFighterTrainingInfo() {
+        return infoCase_ == 1328;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       * @return The fungusFighterTrainingInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo getFungusFighterTrainingInfo() {
+        if (fungusFighterTrainingInfoBuilder_ == null) {
+          if (infoCase_ == 1328) {
+            return (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance();
+        } else {
+          if (infoCase_ == 1328) {
+            return fungusFighterTrainingInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       */
+      public Builder setFungusFighterTrainingInfo(emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo value) {
+        if (fungusFighterTrainingInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          info_ = value;
+          onChanged();
+        } else {
+          fungusFighterTrainingInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 1328;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       */
+      public Builder setFungusFighterTrainingInfo(
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.Builder builderForValue) {
+        if (fungusFighterTrainingInfoBuilder_ == null) {
+          info_ = builderForValue.build();
+          onChanged();
+        } else {
+          fungusFighterTrainingInfoBuilder_.setMessage(builderForValue.build());
+        }
+        infoCase_ = 1328;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       */
+      public Builder mergeFungusFighterTrainingInfo(emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo value) {
+        if (fungusFighterTrainingInfoBuilder_ == null) {
+          if (infoCase_ == 1328 &&
+              info_ != emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance()) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.newBuilder((emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            info_ = value;
+          }
+          onChanged();
+        } else {
+          if (infoCase_ == 1328) {
+            fungusFighterTrainingInfoBuilder_.mergeFrom(value);
+          }
+          fungusFighterTrainingInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 1328;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       */
+      public Builder clearFungusFighterTrainingInfo() {
+        if (fungusFighterTrainingInfoBuilder_ == null) {
+          if (infoCase_ == 1328) {
+            infoCase_ = 0;
+            info_ = null;
+            onChanged();
+          }
+        } else {
+          if (infoCase_ == 1328) {
+            infoCase_ = 0;
+            info_ = null;
+          }
+          fungusFighterTrainingInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       */
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.Builder getFungusFighterTrainingInfoBuilder() {
+        return getFungusFighterTrainingInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfoOrBuilder getFungusFighterTrainingInfoOrBuilder() {
+        if ((infoCase_ == 1328) && (fungusFighterTrainingInfoBuilder_ != null)) {
+          return fungusFighterTrainingInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (infoCase_ == 1328) {
+            return (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo, emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfoOrBuilder> 
+          getFungusFighterTrainingInfoFieldBuilder() {
+        if (fungusFighterTrainingInfoBuilder_ == null) {
+          if (!(infoCase_ == 1328)) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance();
+          }
+          fungusFighterTrainingInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo, emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) info_,
+                  getParentForChildren(),
+                  isClean());
+          info_ = null;
+        }
+        infoCase_ = 1328;
+        onChanged();;
+        return fungusFighterTrainingInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info, emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.Builder, emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2InfoOrBuilder> effigyChallengeInfoBuilder_;
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       * @return Whether the effigyChallengeInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasEffigyChallengeInfo() {
+        return infoCase_ == 882;
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       * @return The effigyChallengeInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info getEffigyChallengeInfo() {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (infoCase_ == 882) {
+            return (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance();
+        } else {
+          if (infoCase_ == 882) {
+            return effigyChallengeInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       */
+      public Builder setEffigyChallengeInfo(emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info value) {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          info_ = value;
+          onChanged();
+        } else {
+          effigyChallengeInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 882;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       */
+      public Builder setEffigyChallengeInfo(
+          emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.Builder builderForValue) {
+        if (effigyChallengeInfoBuilder_ == null) {
+          info_ = builderForValue.build();
+          onChanged();
+        } else {
+          effigyChallengeInfoBuilder_.setMessage(builderForValue.build());
+        }
+        infoCase_ = 882;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       */
+      public Builder mergeEffigyChallengeInfo(emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info value) {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (infoCase_ == 882 &&
+              info_ != emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance()) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.newBuilder((emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            info_ = value;
+          }
+          onChanged();
+        } else {
+          if (infoCase_ == 882) {
+            effigyChallengeInfoBuilder_.mergeFrom(value);
+          }
+          effigyChallengeInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 882;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       */
+      public Builder clearEffigyChallengeInfo() {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (infoCase_ == 882) {
+            infoCase_ = 0;
+            info_ = null;
+            onChanged();
+          }
+        } else {
+          if (infoCase_ == 882) {
+            infoCase_ = 0;
+            info_ = null;
+          }
+          effigyChallengeInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       */
+      public emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.Builder getEffigyChallengeInfoBuilder() {
+        return getEffigyChallengeInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2InfoOrBuilder getEffigyChallengeInfoOrBuilder() {
+        if ((infoCase_ == 882) && (effigyChallengeInfoBuilder_ != null)) {
+          return effigyChallengeInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (infoCase_ == 882) {
+            return (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info, emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.Builder, emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2InfoOrBuilder> 
+          getEffigyChallengeInfoFieldBuilder() {
+        if (effigyChallengeInfoBuilder_ == null) {
+          if (!(infoCase_ == 882)) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance();
+          }
+          effigyChallengeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info, emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.Builder, emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2InfoOrBuilder>(
+                  (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) info_,
+                  getParentForChildren(),
+                  isClean());
+          info_ = null;
+        }
+        infoCase_ = 882;
+        onChanged();;
+        return effigyChallengeInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo, emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfoOrBuilder> fungusFighterCaptureInfoBuilder_;
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       * @return Whether the fungusFighterCaptureInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasFungusFighterCaptureInfo() {
+        return infoCase_ == 422;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       * @return The fungusFighterCaptureInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo getFungusFighterCaptureInfo() {
+        if (fungusFighterCaptureInfoBuilder_ == null) {
+          if (infoCase_ == 422) {
+            return (emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.getDefaultInstance();
+        } else {
+          if (infoCase_ == 422) {
+            return fungusFighterCaptureInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       */
+      public Builder setFungusFighterCaptureInfo(emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo value) {
+        if (fungusFighterCaptureInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          info_ = value;
+          onChanged();
+        } else {
+          fungusFighterCaptureInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 422;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       */
+      public Builder setFungusFighterCaptureInfo(
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.Builder builderForValue) {
+        if (fungusFighterCaptureInfoBuilder_ == null) {
+          info_ = builderForValue.build();
+          onChanged();
+        } else {
+          fungusFighterCaptureInfoBuilder_.setMessage(builderForValue.build());
+        }
+        infoCase_ = 422;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       */
+      public Builder mergeFungusFighterCaptureInfo(emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo value) {
+        if (fungusFighterCaptureInfoBuilder_ == null) {
+          if (infoCase_ == 422 &&
+              info_ != emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.getDefaultInstance()) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.newBuilder((emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            info_ = value;
+          }
+          onChanged();
+        } else {
+          if (infoCase_ == 422) {
+            fungusFighterCaptureInfoBuilder_.mergeFrom(value);
+          }
+          fungusFighterCaptureInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 422;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       */
+      public Builder clearFungusFighterCaptureInfo() {
+        if (fungusFighterCaptureInfoBuilder_ == null) {
+          if (infoCase_ == 422) {
+            infoCase_ = 0;
+            info_ = null;
+            onChanged();
+          }
+        } else {
+          if (infoCase_ == 422) {
+            infoCase_ = 0;
+            info_ = null;
+          }
+          fungusFighterCaptureInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       */
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.Builder getFungusFighterCaptureInfoBuilder() {
+        return getFungusFighterCaptureInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfoOrBuilder getFungusFighterCaptureInfoOrBuilder() {
+        if ((infoCase_ == 422) && (fungusFighterCaptureInfoBuilder_ != null)) {
+          return fungusFighterCaptureInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (infoCase_ == 422) {
+            return (emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo, emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfoOrBuilder> 
+          getFungusFighterCaptureInfoFieldBuilder() {
+        if (fungusFighterCaptureInfoBuilder_ == null) {
+          if (!(infoCase_ == 422)) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.getDefaultInstance();
+          }
+          fungusFighterCaptureInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo, emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.SceneGalleryFungusFighterCaptureInfo) info_,
+                  getParentForChildren(),
+                  isClean());
+          info_ = null;
+        }
+        infoCase_ = 422;
+        onChanged();;
+        return fungusFighterCaptureInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo, emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.Builder, emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfoOrBuilder> charAmusementInfoBuilder_;
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       * @return Whether the charAmusementInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasCharAmusementInfo() {
+        return infoCase_ == 1086;
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       * @return The charAmusementInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo getCharAmusementInfo() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (infoCase_ == 1086) {
+            return (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance();
+        } else {
+          if (infoCase_ == 1086) {
+            return charAmusementInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       */
+      public Builder setCharAmusementInfo(emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo value) {
+        if (charAmusementInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          info_ = value;
+          onChanged();
+        } else {
+          charAmusementInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 1086;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       */
+      public Builder setCharAmusementInfo(
+          emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.Builder builderForValue) {
+        if (charAmusementInfoBuilder_ == null) {
+          info_ = builderForValue.build();
+          onChanged();
+        } else {
+          charAmusementInfoBuilder_.setMessage(builderForValue.build());
+        }
+        infoCase_ = 1086;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       */
+      public Builder mergeCharAmusementInfo(emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo value) {
+        if (charAmusementInfoBuilder_ == null) {
+          if (infoCase_ == 1086 &&
+              info_ != emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance()) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.newBuilder((emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            info_ = value;
+          }
+          onChanged();
+        } else {
+          if (infoCase_ == 1086) {
+            charAmusementInfoBuilder_.mergeFrom(value);
+          }
+          charAmusementInfoBuilder_.setMessage(value);
+        }
+        infoCase_ = 1086;
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       */
+      public Builder clearCharAmusementInfo() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (infoCase_ == 1086) {
+            infoCase_ = 0;
+            info_ = null;
+            onChanged();
+          }
+        } else {
+          if (infoCase_ == 1086) {
+            infoCase_ = 0;
+            info_ = null;
+          }
+          charAmusementInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       */
+      public emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.Builder getCharAmusementInfoBuilder() {
+        return getCharAmusementInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfoOrBuilder getCharAmusementInfoOrBuilder() {
+        if ((infoCase_ == 1086) && (charAmusementInfoBuilder_ != null)) {
+          return charAmusementInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (infoCase_ == 1086) {
+            return (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_;
+          }
+          return emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.SceneGalleryCharAmusementInfo char_amusement_info = 1086;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo, emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.Builder, emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfoOrBuilder> 
+          getCharAmusementInfoFieldBuilder() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (!(infoCase_ == 1086)) {
+            info_ = emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance();
+          }
+          charAmusementInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo, emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.Builder, emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) info_,
+                  getParentForChildren(),
+                  isClean());
+          info_ = null;
+        }
+        infoCase_ = 1086;
+        onChanged();;
+        return charAmusementInfoBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -7308,74 +8294,86 @@ public final class SceneGalleryInfoOuterClass {
       "%SceneGalleryBounceConjuringInfo.proto\032!" +
       "SceneGalleryBrokenFloorInfo.proto\032\034Scene" +
       "GalleryBulletInfo.proto\032#SceneGalleryBuo" +
-      "yantCombatInfo.proto\032!SceneGalleryCrysta" +
-      "lLinkInfo.proto\032\032SceneGalleryFallInfo.pr" +
-      "oto\032\034SceneGalleryFlowerInfo.proto\032\036Scene" +
-      "GalleryHandballInfo.proto\032!SceneGalleryH" +
-      "ideAndSeekInfo.proto\032!SceneGalleryHomeBa" +
-      "lloonInfo.proto\032\'SceneGalleryHomeSeekFur" +
-      "nitureInfo.proto\032#SceneGalleryInstableSp" +
-      "rayInfo.proto\032#SceneGalleryIrodoriMaster" +
-      "Info.proto\032)SceneGalleryIslandPartyDownH" +
-      "illInfo.proto\032%SceneGalleryIslandPartyRa" +
-      "ftInfo.proto\032%SceneGalleryIslandPartySai" +
-      "lInfo.proto\032-SceneGalleryLuminanceStoneC" +
-      "hallengeInfo.proto\032#SceneGalleryMuqadasP" +
-      "otionInfo.proto\032\036SceneGalleryProgressInf" +
-      "o.proto\032\'SceneGallerySalvageEscortInfoIn" +
-      "fo.proto\032$SceneGallerySalvagePreventInfo" +
-      ".proto\032&SceneGallerySummerTimeV2BoatInfo" +
-      ".proto\032\032SceneGallerySumoInfo.proto\032$Scen" +
-      "eGalleryTreasureSeelieInfo.proto\032$SceneG" +
-      "alleryVintageHuntingInfo.proto\032\037SceneGal" +
-      "leryWindFieldInfo.proto\"\260\016\n\020SceneGallery" +
-      "Info\022\020\n\010end_time\030\013 \001(\r\022\032\n\022pre_start_end_" +
-      "time\030\017 \001(\r\022 \n\005stage\030\005 \001(\0162\021.GalleryStage" +
-      "Type\022\021\n\towner_uid\030\t \001(\r\022\024\n\014player_count\030" +
-      "\001 \001(\r\0225\n\022progress_info_list\030\004 \003(\0132\031.Scen" +
+      "yantCombatInfo.proto\032#SceneGalleryCharAm" +
+      "usementInfo.proto\032!SceneGalleryCrystalLi" +
+      "nkInfo.proto\032\'SceneGalleryEffigyChalleng" +
+      "eV2Info.proto\032\032SceneGalleryFallInfo.prot" +
+      "o\032\034SceneGalleryFlowerInfo.proto\032*SceneGa" +
+      "lleryFungusFighterCaptureInfo.proto\032+Sce" +
+      "neGalleryFungusFighterTrainingInfo.proto" +
+      "\032\036SceneGalleryHandballInfo.proto\032!SceneG" +
+      "alleryHideAndSeekInfo.proto\032!SceneGaller" +
+      "yHomeBalloonInfo.proto\032\'SceneGalleryHome" +
+      "SeekFurnitureInfo.proto\032#SceneGalleryIns" +
+      "tableSprayInfo.proto\032#SceneGalleryIrodor" +
+      "iMasterInfo.proto\032)SceneGalleryIslandPar" +
+      "tyDownHillInfo.proto\032%SceneGalleryIsland" +
+      "PartyRaftInfo.proto\032%SceneGalleryIslandP" +
+      "artySailInfo.proto\032-SceneGalleryLuminanc" +
+      "eStoneChallengeInfo.proto\032#SceneGalleryM" +
+      "uqadasPotionInfo.proto\032\036SceneGalleryProg" +
+      "ressInfo.proto\032\'SceneGallerySalvageEscor" +
+      "tInfoInfo.proto\032$SceneGallerySalvagePrev" +
+      "entInfo.proto\032&SceneGallerySummerTimeV2B" +
+      "oatInfo.proto\032\032SceneGallerySumoInfo.prot" +
+      "o\032$SceneGalleryTreasureSeelieInfo.proto\032" +
+      "$SceneGalleryVintageHuntingInfo.proto\032\037S" +
+      "ceneGalleryWindFieldInfo.proto\"\352\020\n\020Scene" +
+      "GalleryInfo\022 \n\005stage\030\005 \001(\0162\021.GalleryStag" +
+      "eType\0225\n\022progress_info_list\030\004 \003(\0132\031.Scen" +
       "eGalleryProgressInfo\022\022\n\ngallery_id\030\002 \001(\r" +
-      "\0220\n\014balloon_info\030\016 \001(\0132\030.SceneGalleryBal" +
-      "loonInfoH\000\022*\n\tfall_info\030\007 \001(\0132\025.SceneGal" +
-      "leryFallInfoH\000\022.\n\013flower_info\030\010 \001(\0132\027.Sc" +
-      "eneGalleryFlowerInfoH\000\022.\n\013bullet_info\030\r " +
-      "\001(\0132\027.SceneGalleryBulletInfoH\000\0229\n\021broken" +
-      "_floor_info\030\n \001(\0132\034.SceneGalleryBrokenFl" +
-      "oorInfoH\000\022:\n\022hide_and_seek_info\030\006 \001(\0132\034." +
-      "SceneGalleryHideAndSeekInfoH\000\022>\n\023buoyant" +
-      "_combat_info\030\350\n \001(\0132\036.SceneGalleryBuoyan" +
-      "tCombatInfoH\000\022B\n\025bounce_conjuring_info\030\304" +
-      "\005 \001(\0132 .SceneGalleryBounceConjuringInfoH" +
-      "\000\0223\n\rhandball_info\030\315\017 \001(\0132\031.SceneGallery" +
-      "HandballInfoH\000\022+\n\tsumo_info\030\253\006 \001(\0132\025.Sce" +
-      "neGallerySumoInfoH\000\022@\n\024salvage_prevent_i" +
-      "nfo\030\244\r \001(\0132\037.SceneGallerySalvagePreventI" +
-      "nfoH\000\022B\n\023salvage_escort_info\030\367\005 \001(\0132\".Sc" +
-      "eneGallerySalvageEscortInfoInfoH\000\022:\n\021hom" +
-      "e_balloon_info\030\212\010 \001(\0132\034.SceneGalleryHome" +
-      "BalloonInfoH\000\022:\n\021crystal_link_info\030\324\017 \001(" +
-      "\0132\034.SceneGalleryCrystalLinkInfoH\000\022>\n\023iro" +
-      "dori_master_info\030\241\017 \001(\0132\036.SceneGalleryIr" +
-      "odoriMasterInfoH\000\022R\n\036luminance_stone_cha" +
-      "llenge_info\030j \001(\0132(.SceneGalleryLuminanc" +
-      "eStoneChallengeInfoH\000\022G\n\030home_seek_furni" +
-      "ture_info\030\260\013 \001(\0132\".SceneGalleryHomeSeekF" +
-      "urnitureInfoH\000\022L\n\033island_party_down_hill" +
-      "_info\030\316\003 \001(\0132$.SceneGalleryIslandPartyDo" +
-      "wnHillInfoH\000\022F\n\030summer_time_v2_boat_info" +
-      "\030\250\002 \001(\0132!.SceneGallerySummerTimeV2BoatIn" +
-      "foH\000\022C\n\026island_party_raft_info\030\215\016 \001(\0132 ." +
-      "SceneGalleryIslandPartyRaftInfoH\000\022C\n\026isl" +
-      "and_party_sail_info\030\355\010 \001(\0132 .SceneGaller" +
-      "yIslandPartySailInfoH\000\022>\n\023instable_spray" +
-      "_info\030\254\t \001(\0132\036.SceneGalleryInstableSpray" +
-      "InfoH\000\022>\n\023muqadas_potion_info\030\341\006 \001(\0132\036.S" +
-      "ceneGalleryMuqadasPotionInfoH\000\022@\n\024treasu" +
-      "re_seelie_info\030\365\013 \001(\0132\037.SceneGalleryTrea" +
-      "sureSeelieInfoH\000\022@\n\024vintage_hunting_info" +
-      "\030\376\001 \001(\0132\037.SceneGalleryVintageHuntingInfo" +
-      "H\000\0226\n\017wind_field_info\030\270\010 \001(\0132\032.SceneGall" +
-      "eryWindFieldInfoH\000B\006\n\004infoB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\022\022\n\nstart_time\030\003 \001(\r\022\020\n\010end_time\030\013 \001(\r\022\021" +
+      "\n\towner_uid\030\t \001(\r\022\024\n\014player_count\030\001 \001(\r\022" +
+      "\032\n\022pre_start_end_time\030\017 \001(\r\0220\n\014balloon_i" +
+      "nfo\030\016 \001(\0132\030.SceneGalleryBalloonInfoH\000\022*\n" +
+      "\tfall_info\030\007 \001(\0132\025.SceneGalleryFallInfoH" +
+      "\000\022.\n\013flower_info\030\010 \001(\0132\027.SceneGalleryFlo" +
+      "werInfoH\000\022.\n\013bullet_info\030\r \001(\0132\027.SceneGa" +
+      "lleryBulletInfoH\000\0229\n\021broken_floor_info\030\n" +
+      " \001(\0132\034.SceneGalleryBrokenFloorInfoH\000\022:\n\022" +
+      "hide_and_seek_info\030\006 \001(\0132\034.SceneGalleryH" +
+      "ideAndSeekInfoH\000\022>\n\023buoyant_combat_info\030" +
+      "\350\n \001(\0132\036.SceneGalleryBuoyantCombatInfoH\000" +
+      "\022B\n\025bounce_conjuring_info\030\304\005 \001(\0132 .Scene" +
+      "GalleryBounceConjuringInfoH\000\0223\n\rhandball" +
+      "_info\030\315\017 \001(\0132\031.SceneGalleryHandballInfoH" +
+      "\000\022+\n\tsumo_info\030\253\006 \001(\0132\025.SceneGallerySumo" +
+      "InfoH\000\022@\n\024salvage_prevent_info\030\244\r \001(\0132\037." +
+      "SceneGallerySalvagePreventInfoH\000\022B\n\023salv" +
+      "age_escort_info\030\367\005 \001(\0132\".SceneGallerySal" +
+      "vageEscortInfoInfoH\000\022:\n\021home_balloon_inf" +
+      "o\030\212\010 \001(\0132\034.SceneGalleryHomeBalloonInfoH\000" +
+      "\022:\n\021crystal_link_info\030\324\017 \001(\0132\034.SceneGall" +
+      "eryCrystalLinkInfoH\000\022>\n\023irodori_master_i" +
+      "nfo\030\241\017 \001(\0132\036.SceneGalleryIrodoriMasterIn" +
+      "foH\000\022R\n\036luminance_stone_challenge_info\030j" +
+      " \001(\0132(.SceneGalleryLuminanceStoneChallen" +
+      "geInfoH\000\022G\n\030home_seek_furniture_info\030\260\013 " +
+      "\001(\0132\".SceneGalleryHomeSeekFurnitureInfoH" +
+      "\000\022L\n\033island_party_down_hill_info\030\316\003 \001(\0132" +
+      "$.SceneGalleryIslandPartyDownHillInfoH\000\022" +
+      "F\n\030summer_time_v2_boat_info\030\250\002 \001(\0132!.Sce" +
+      "neGallerySummerTimeV2BoatInfoH\000\022C\n\026islan" +
+      "d_party_raft_info\030\215\016 \001(\0132 .SceneGalleryI" +
+      "slandPartyRaftInfoH\000\022C\n\026island_party_sai" +
+      "l_info\030\355\010 \001(\0132 .SceneGalleryIslandPartyS" +
+      "ailInfoH\000\022>\n\023instable_spray_info\030\254\t \001(\0132" +
+      "\036.SceneGalleryInstableSprayInfoH\000\022>\n\023muq" +
+      "adas_potion_info\030\341\006 \001(\0132\036.SceneGalleryMu" +
+      "qadasPotionInfoH\000\022@\n\024treasure_seelie_inf" +
+      "o\030\365\013 \001(\0132\037.SceneGalleryTreasureSeelieInf" +
+      "oH\000\022@\n\024vintage_hunting_info\030\376\001 \001(\0132\037.Sce" +
+      "neGalleryVintageHuntingInfoH\000\0226\n\017wind_fi" +
+      "eld_info\030\270\010 \001(\0132\032.SceneGalleryWindFieldI" +
+      "nfoH\000\022O\n\034fungus_fighter_training_info\030\260\n" +
+      " \001(\0132&.SceneGalleryFungusFighterTraining" +
+      "InfoH\000\022D\n\025effigy_challenge_info\030\362\006 \001(\0132\"" +
+      ".SceneGalleryEffigyChallengeV2InfoH\000\022M\n\033" +
+      "fungus_fighter_capture_info\030\246\003 \001(\0132%.Sce" +
+      "neGalleryFungusFighterCaptureInfoH\000\022>\n\023c" +
+      "har_amusement_info\030\276\010 \001(\0132\036.SceneGallery" +
+      "CharAmusementInfoH\000B\006\n\004infoB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -7386,9 +8384,13 @@ public final class SceneGalleryInfoOuterClass {
           emu.grasscutter.net.proto.SceneGalleryBrokenFloorInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryBulletInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryBuoyantCombatInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryCrystalLinkInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryFallInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryFlowerInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryHandballInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.getDescriptor(),
@@ -7414,16 +8416,20 @@ public final class SceneGalleryInfoOuterClass {
     internal_static_SceneGalleryInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryInfo_descriptor,
-        new java.lang.String[] { "EndTime", "PreStartEndTime", "Stage", "OwnerUid", "PlayerCount", "ProgressInfoList", "GalleryId", "BalloonInfo", "FallInfo", "FlowerInfo", "BulletInfo", "BrokenFloorInfo", "HideAndSeekInfo", "BuoyantCombatInfo", "BounceConjuringInfo", "HandballInfo", "SumoInfo", "SalvagePreventInfo", "SalvageEscortInfo", "HomeBalloonInfo", "CrystalLinkInfo", "IrodoriMasterInfo", "LuminanceStoneChallengeInfo", "HomeSeekFurnitureInfo", "IslandPartyDownHillInfo", "SummerTimeV2BoatInfo", "IslandPartyRaftInfo", "IslandPartySailInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "VintageHuntingInfo", "WindFieldInfo", "Info", });
+        new java.lang.String[] { "Stage", "ProgressInfoList", "GalleryId", "StartTime", "EndTime", "OwnerUid", "PlayerCount", "PreStartEndTime", "BalloonInfo", "FallInfo", "FlowerInfo", "BulletInfo", "BrokenFloorInfo", "HideAndSeekInfo", "BuoyantCombatInfo", "BounceConjuringInfo", "HandballInfo", "SumoInfo", "SalvagePreventInfo", "SalvageEscortInfo", "HomeBalloonInfo", "CrystalLinkInfo", "IrodoriMasterInfo", "LuminanceStoneChallengeInfo", "HomeSeekFurnitureInfo", "IslandPartyDownHillInfo", "SummerTimeV2BoatInfo", "IslandPartyRaftInfo", "IslandPartySailInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "VintageHuntingInfo", "WindFieldInfo", "FungusFighterTrainingInfo", "EffigyChallengeInfo", "FungusFighterCaptureInfo", "CharAmusementInfo", "Info", });
     emu.grasscutter.net.proto.GalleryStageTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryBalloonInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryBrokenFloorInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryBulletInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryBuoyantCombatInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryCrystalLinkInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryFallInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryFlowerInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterCaptureInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryHandballInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.getDescriptor();

@@ -25,22 +25,22 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
     int getScore();
 
     /**
-     * <code>uint32 Unk3000_MKFIPLFHJNE = 4;</code>
-     * @return The unk3000MKFIPLFHJNE.
+     * <code>uint32 capture_weakness_count = 4;</code>
+     * @return The captureWeaknessCount.
      */
-    int getUnk3000MKFIPLFHJNE();
+    int getCaptureWeaknessCount();
 
     /**
-     * <code>uint32 Unk3000_FELJKCAAJMJ = 10;</code>
-     * @return The unk3000FELJKCAAJMJ.
+     * <code>uint32 skill_energy = 10;</code>
+     * @return The skillEnergy.
      */
-    int getUnk3000FELJKCAAJMJ();
+    int getSkillEnergy();
 
     /**
-     * <code>uint32 Unk3000_JKHKNKNBFDC = 9;</code>
-     * @return The unk3000JKHKNKNBFDC.
+     * <code>uint32 skill_use_limit = 9;</code>
+     * @return The skillUseLimit.
      */
-    int getUnk3000JKHKNKNBFDC();
+    int getSkillUseLimit();
   }
   /**
    * Protobuf type {@code SceneGalleryMuqadasPotionInfo}
@@ -89,7 +89,7 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
               break;
             case 32: {
 
-              unk3000MKFIPLFHJNE_ = input.readUInt32();
+              captureWeaknessCount_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -99,12 +99,12 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
             }
             case 72: {
 
-              unk3000JKHKNKNBFDC_ = input.readUInt32();
+              skillUseLimit_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              unk3000FELJKCAAJMJ_ = input.readUInt32();
+              skillEnergy_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,37 +150,37 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
       return score_;
     }
 
-    public static final int UNK3000_MKFIPLFHJNE_FIELD_NUMBER = 4;
-    private int unk3000MKFIPLFHJNE_;
+    public static final int CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER = 4;
+    private int captureWeaknessCount_;
     /**
-     * <code>uint32 Unk3000_MKFIPLFHJNE = 4;</code>
-     * @return The unk3000MKFIPLFHJNE.
+     * <code>uint32 capture_weakness_count = 4;</code>
+     * @return The captureWeaknessCount.
      */
     @java.lang.Override
-    public int getUnk3000MKFIPLFHJNE() {
-      return unk3000MKFIPLFHJNE_;
+    public int getCaptureWeaknessCount() {
+      return captureWeaknessCount_;
     }
 
-    public static final int UNK3000_FELJKCAAJMJ_FIELD_NUMBER = 10;
-    private int unk3000FELJKCAAJMJ_;
+    public static final int SKILL_ENERGY_FIELD_NUMBER = 10;
+    private int skillEnergy_;
     /**
-     * <code>uint32 Unk3000_FELJKCAAJMJ = 10;</code>
-     * @return The unk3000FELJKCAAJMJ.
+     * <code>uint32 skill_energy = 10;</code>
+     * @return The skillEnergy.
      */
     @java.lang.Override
-    public int getUnk3000FELJKCAAJMJ() {
-      return unk3000FELJKCAAJMJ_;
+    public int getSkillEnergy() {
+      return skillEnergy_;
     }
 
-    public static final int UNK3000_JKHKNKNBFDC_FIELD_NUMBER = 9;
-    private int unk3000JKHKNKNBFDC_;
+    public static final int SKILL_USE_LIMIT_FIELD_NUMBER = 9;
+    private int skillUseLimit_;
     /**
-     * <code>uint32 Unk3000_JKHKNKNBFDC = 9;</code>
-     * @return The unk3000JKHKNKNBFDC.
+     * <code>uint32 skill_use_limit = 9;</code>
+     * @return The skillUseLimit.
      */
     @java.lang.Override
-    public int getUnk3000JKHKNKNBFDC() {
-      return unk3000JKHKNKNBFDC_;
+    public int getSkillUseLimit() {
+      return skillUseLimit_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3000MKFIPLFHJNE_ != 0) {
-        output.writeUInt32(4, unk3000MKFIPLFHJNE_);
+      if (captureWeaknessCount_ != 0) {
+        output.writeUInt32(4, captureWeaknessCount_);
       }
       if (score_ != 0) {
         output.writeUInt32(6, score_);
       }
-      if (unk3000JKHKNKNBFDC_ != 0) {
-        output.writeUInt32(9, unk3000JKHKNKNBFDC_);
+      if (skillUseLimit_ != 0) {
+        output.writeUInt32(9, skillUseLimit_);
       }
-      if (unk3000FELJKCAAJMJ_ != 0) {
-        output.writeUInt32(10, unk3000FELJKCAAJMJ_);
+      if (skillEnergy_ != 0) {
+        output.writeUInt32(10, skillEnergy_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3000MKFIPLFHJNE_ != 0) {
+      if (captureWeaknessCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, unk3000MKFIPLFHJNE_);
+          .computeUInt32Size(4, captureWeaknessCount_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, score_);
       }
-      if (unk3000JKHKNKNBFDC_ != 0) {
+      if (skillUseLimit_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, unk3000JKHKNKNBFDC_);
+          .computeUInt32Size(9, skillUseLimit_);
       }
-      if (unk3000FELJKCAAJMJ_ != 0) {
+      if (skillEnergy_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, unk3000FELJKCAAJMJ_);
+          .computeUInt32Size(10, skillEnergy_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -251,12 +251,12 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
 
       if (getScore()
           != other.getScore()) return false;
-      if (getUnk3000MKFIPLFHJNE()
-          != other.getUnk3000MKFIPLFHJNE()) return false;
-      if (getUnk3000FELJKCAAJMJ()
-          != other.getUnk3000FELJKCAAJMJ()) return false;
-      if (getUnk3000JKHKNKNBFDC()
-          != other.getUnk3000JKHKNKNBFDC()) return false;
+      if (getCaptureWeaknessCount()
+          != other.getCaptureWeaknessCount()) return false;
+      if (getSkillEnergy()
+          != other.getSkillEnergy()) return false;
+      if (getSkillUseLimit()
+          != other.getSkillUseLimit()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -270,12 +270,12 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + UNK3000_MKFIPLFHJNE_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3000MKFIPLFHJNE();
-      hash = (37 * hash) + UNK3000_FELJKCAAJMJ_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3000FELJKCAAJMJ();
-      hash = (37 * hash) + UNK3000_JKHKNKNBFDC_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3000JKHKNKNBFDC();
+      hash = (37 * hash) + CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCaptureWeaknessCount();
+      hash = (37 * hash) + SKILL_ENERGY_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillEnergy();
+      hash = (37 * hash) + SKILL_USE_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillUseLimit();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,11 +411,11 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
         super.clear();
         score_ = 0;
 
-        unk3000MKFIPLFHJNE_ = 0;
+        captureWeaknessCount_ = 0;
 
-        unk3000FELJKCAAJMJ_ = 0;
+        skillEnergy_ = 0;
 
-        unk3000JKHKNKNBFDC_ = 0;
+        skillUseLimit_ = 0;
 
         return this;
       }
@@ -444,9 +444,9 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryMuqadasPotionInfoOuterClass.SceneGalleryMuqadasPotionInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryMuqadasPotionInfoOuterClass.SceneGalleryMuqadasPotionInfo result = new emu.grasscutter.net.proto.SceneGalleryMuqadasPotionInfoOuterClass.SceneGalleryMuqadasPotionInfo(this);
         result.score_ = score_;
-        result.unk3000MKFIPLFHJNE_ = unk3000MKFIPLFHJNE_;
-        result.unk3000FELJKCAAJMJ_ = unk3000FELJKCAAJMJ_;
-        result.unk3000JKHKNKNBFDC_ = unk3000JKHKNKNBFDC_;
+        result.captureWeaknessCount_ = captureWeaknessCount_;
+        result.skillEnergy_ = skillEnergy_;
+        result.skillUseLimit_ = skillUseLimit_;
         onBuilt();
         return result;
       }
@@ -498,14 +498,14 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (other.getUnk3000MKFIPLFHJNE() != 0) {
-          setUnk3000MKFIPLFHJNE(other.getUnk3000MKFIPLFHJNE());
+        if (other.getCaptureWeaknessCount() != 0) {
+          setCaptureWeaknessCount(other.getCaptureWeaknessCount());
         }
-        if (other.getUnk3000FELJKCAAJMJ() != 0) {
-          setUnk3000FELJKCAAJMJ(other.getUnk3000FELJKCAAJMJ());
+        if (other.getSkillEnergy() != 0) {
+          setSkillEnergy(other.getSkillEnergy());
         }
-        if (other.getUnk3000JKHKNKNBFDC() != 0) {
-          setUnk3000JKHKNKNBFDC(other.getUnk3000JKHKNKNBFDC());
+        if (other.getSkillUseLimit() != 0) {
+          setSkillUseLimit(other.getSkillUseLimit());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -567,95 +567,95 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
         return this;
       }
 
-      private int unk3000MKFIPLFHJNE_ ;
+      private int captureWeaknessCount_ ;
       /**
-       * <code>uint32 Unk3000_MKFIPLFHJNE = 4;</code>
-       * @return The unk3000MKFIPLFHJNE.
+       * <code>uint32 capture_weakness_count = 4;</code>
+       * @return The captureWeaknessCount.
        */
       @java.lang.Override
-      public int getUnk3000MKFIPLFHJNE() {
-        return unk3000MKFIPLFHJNE_;
+      public int getCaptureWeaknessCount() {
+        return captureWeaknessCount_;
       }
       /**
-       * <code>uint32 Unk3000_MKFIPLFHJNE = 4;</code>
-       * @param value The unk3000MKFIPLFHJNE to set.
+       * <code>uint32 capture_weakness_count = 4;</code>
+       * @param value The captureWeaknessCount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000MKFIPLFHJNE(int value) {
+      public Builder setCaptureWeaknessCount(int value) {
         
-        unk3000MKFIPLFHJNE_ = value;
+        captureWeaknessCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3000_MKFIPLFHJNE = 4;</code>
+       * <code>uint32 capture_weakness_count = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000MKFIPLFHJNE() {
+      public Builder clearCaptureWeaknessCount() {
         
-        unk3000MKFIPLFHJNE_ = 0;
+        captureWeaknessCount_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk3000FELJKCAAJMJ_ ;
+      private int skillEnergy_ ;
       /**
-       * <code>uint32 Unk3000_FELJKCAAJMJ = 10;</code>
-       * @return The unk3000FELJKCAAJMJ.
+       * <code>uint32 skill_energy = 10;</code>
+       * @return The skillEnergy.
        */
       @java.lang.Override
-      public int getUnk3000FELJKCAAJMJ() {
-        return unk3000FELJKCAAJMJ_;
+      public int getSkillEnergy() {
+        return skillEnergy_;
       }
       /**
-       * <code>uint32 Unk3000_FELJKCAAJMJ = 10;</code>
-       * @param value The unk3000FELJKCAAJMJ to set.
+       * <code>uint32 skill_energy = 10;</code>
+       * @param value The skillEnergy to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000FELJKCAAJMJ(int value) {
+      public Builder setSkillEnergy(int value) {
         
-        unk3000FELJKCAAJMJ_ = value;
+        skillEnergy_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3000_FELJKCAAJMJ = 10;</code>
+       * <code>uint32 skill_energy = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000FELJKCAAJMJ() {
+      public Builder clearSkillEnergy() {
         
-        unk3000FELJKCAAJMJ_ = 0;
+        skillEnergy_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk3000JKHKNKNBFDC_ ;
+      private int skillUseLimit_ ;
       /**
-       * <code>uint32 Unk3000_JKHKNKNBFDC = 9;</code>
-       * @return The unk3000JKHKNKNBFDC.
+       * <code>uint32 skill_use_limit = 9;</code>
+       * @return The skillUseLimit.
        */
       @java.lang.Override
-      public int getUnk3000JKHKNKNBFDC() {
-        return unk3000JKHKNKNBFDC_;
+      public int getSkillUseLimit() {
+        return skillUseLimit_;
       }
       /**
-       * <code>uint32 Unk3000_JKHKNKNBFDC = 9;</code>
-       * @param value The unk3000JKHKNKNBFDC to set.
+       * <code>uint32 skill_use_limit = 9;</code>
+       * @param value The skillUseLimit to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000JKHKNKNBFDC(int value) {
+      public Builder setSkillUseLimit(int value) {
         
-        unk3000JKHKNKNBFDC_ = value;
+        skillUseLimit_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3000_JKHKNKNBFDC = 9;</code>
+       * <code>uint32 skill_use_limit = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000JKHKNKNBFDC() {
+      public Builder clearSkillUseLimit() {
         
-        unk3000JKHKNKNBFDC_ = 0;
+        skillUseLimit_ = 0;
         onChanged();
         return this;
       }
@@ -726,12 +726,12 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#SceneGalleryMuqadasPotionInfo.proto\"\205\001" +
-      "\n\035SceneGalleryMuqadasPotionInfo\022\r\n\005score" +
-      "\030\006 \001(\r\022\033\n\023Unk3000_MKFIPLFHJNE\030\004 \001(\r\022\033\n\023U" +
-      "nk3000_FELJKCAAJMJ\030\n \001(\r\022\033\n\023Unk3000_JKHK" +
-      "NKNBFDC\030\t \001(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n#SceneGalleryMuqadasPotionInfo.proto\"}\n" +
+      "\035SceneGalleryMuqadasPotionInfo\022\r\n\005score\030" +
+      "\006 \001(\r\022\036\n\026capture_weakness_count\030\004 \001(\r\022\024\n" +
+      "\014skill_energy\030\n \001(\r\022\027\n\017skill_use_limit\030\t" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +742,7 @@ public final class SceneGalleryMuqadasPotionInfoOuterClass {
     internal_static_SceneGalleryMuqadasPotionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryMuqadasPotionInfo_descriptor,
-        new java.lang.String[] { "Score", "Unk3000MKFIPLFHJNE", "Unk3000FELJKCAAJMJ", "Unk3000JKHKNKNBFDC", });
+        new java.lang.String[] { "Score", "CaptureWeaknessCount", "SkillEnergy", "SkillUseLimit", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

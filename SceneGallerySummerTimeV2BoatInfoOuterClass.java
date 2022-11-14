@@ -31,10 +31,10 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
     int getParam3();
 
     /**
-     * <code>uint32 Unk2800_NGGPIECNHJA = 11;</code>
-     * @return The unk2800NGGPIECNHJA.
+     * <code>uint32 used_time = 11;</code>
+     * @return The usedTime.
      */
-    int getUnk2800NGGPIECNHJA();
+    int getUsedTime();
 
     /**
      * <code>uint32 param2 = 7;</code>
@@ -99,7 +99,7 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
             }
             case 88: {
 
-              unk2800NGGPIECNHJA_ = input.readUInt32();
+              usedTime_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -161,15 +161,15 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
       return param3_;
     }
 
-    public static final int UNK2800_NGGPIECNHJA_FIELD_NUMBER = 11;
-    private int unk2800NGGPIECNHJA_;
+    public static final int USED_TIME_FIELD_NUMBER = 11;
+    private int usedTime_;
     /**
-     * <code>uint32 Unk2800_NGGPIECNHJA = 11;</code>
-     * @return The unk2800NGGPIECNHJA.
+     * <code>uint32 used_time = 11;</code>
+     * @return The usedTime.
      */
     @java.lang.Override
-    public int getUnk2800NGGPIECNHJA() {
-      return unk2800NGGPIECNHJA_;
+    public int getUsedTime() {
+      return usedTime_;
     }
 
     public static final int PARAM2_FIELD_NUMBER = 7;
@@ -203,8 +203,8 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
       if (param2_ != 0) {
         output.writeUInt32(7, param2_);
       }
-      if (unk2800NGGPIECNHJA_ != 0) {
-        output.writeUInt32(11, unk2800NGGPIECNHJA_);
+      if (usedTime_ != 0) {
+        output.writeUInt32(11, usedTime_);
       }
       if (param1_ != 0) {
         output.writeUInt32(15, param1_);
@@ -226,9 +226,9 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, param2_);
       }
-      if (unk2800NGGPIECNHJA_ != 0) {
+      if (usedTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, unk2800NGGPIECNHJA_);
+          .computeUInt32Size(11, usedTime_);
       }
       if (param1_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -253,8 +253,8 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
           != other.getParam1()) return false;
       if (getParam3()
           != other.getParam3()) return false;
-      if (getUnk2800NGGPIECNHJA()
-          != other.getUnk2800NGGPIECNHJA()) return false;
+      if (getUsedTime()
+          != other.getUsedTime()) return false;
       if (getParam2()
           != other.getParam2()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -272,8 +272,8 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
       hash = (53 * hash) + getParam1();
       hash = (37 * hash) + PARAM3_FIELD_NUMBER;
       hash = (53 * hash) + getParam3();
-      hash = (37 * hash) + UNK2800_NGGPIECNHJA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800NGGPIECNHJA();
+      hash = (37 * hash) + USED_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getUsedTime();
       hash = (37 * hash) + PARAM2_FIELD_NUMBER;
       hash = (53 * hash) + getParam2();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -413,7 +413,7 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
 
         param3_ = 0;
 
-        unk2800NGGPIECNHJA_ = 0;
+        usedTime_ = 0;
 
         param2_ = 0;
 
@@ -445,7 +445,7 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
         emu.grasscutter.net.proto.SceneGallerySummerTimeV2BoatInfoOuterClass.SceneGallerySummerTimeV2BoatInfo result = new emu.grasscutter.net.proto.SceneGallerySummerTimeV2BoatInfoOuterClass.SceneGallerySummerTimeV2BoatInfo(this);
         result.param1_ = param1_;
         result.param3_ = param3_;
-        result.unk2800NGGPIECNHJA_ = unk2800NGGPIECNHJA_;
+        result.usedTime_ = usedTime_;
         result.param2_ = param2_;
         onBuilt();
         return result;
@@ -501,8 +501,8 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
         if (other.getParam3() != 0) {
           setParam3(other.getParam3());
         }
-        if (other.getUnk2800NGGPIECNHJA() != 0) {
-          setUnk2800NGGPIECNHJA(other.getUnk2800NGGPIECNHJA());
+        if (other.getUsedTime() != 0) {
+          setUsedTime(other.getUsedTime());
         }
         if (other.getParam2() != 0) {
           setParam2(other.getParam2());
@@ -598,33 +598,33 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
         return this;
       }
 
-      private int unk2800NGGPIECNHJA_ ;
+      private int usedTime_ ;
       /**
-       * <code>uint32 Unk2800_NGGPIECNHJA = 11;</code>
-       * @return The unk2800NGGPIECNHJA.
+       * <code>uint32 used_time = 11;</code>
+       * @return The usedTime.
        */
       @java.lang.Override
-      public int getUnk2800NGGPIECNHJA() {
-        return unk2800NGGPIECNHJA_;
+      public int getUsedTime() {
+        return usedTime_;
       }
       /**
-       * <code>uint32 Unk2800_NGGPIECNHJA = 11;</code>
-       * @param value The unk2800NGGPIECNHJA to set.
+       * <code>uint32 used_time = 11;</code>
+       * @param value The usedTime to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800NGGPIECNHJA(int value) {
+      public Builder setUsedTime(int value) {
         
-        unk2800NGGPIECNHJA_ = value;
+        usedTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_NGGPIECNHJA = 11;</code>
+       * <code>uint32 used_time = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800NGGPIECNHJA() {
+      public Builder clearUsedTime() {
         
-        unk2800NGGPIECNHJA_ = 0;
+        usedTime_ = 0;
         onChanged();
         return this;
       }
@@ -727,10 +727,10 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&SceneGallerySummerTimeV2BoatInfo.proto" +
-      "\"o\n SceneGallerySummerTimeV2BoatInfo\022\016\n\006" +
-      "param1\030\017 \001(\r\022\016\n\006param3\030\003 \001(\r\022\033\n\023Unk2800_" +
-      "NGGPIECNHJA\030\013 \001(\r\022\016\n\006param2\030\007 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\"e\n SceneGallerySummerTimeV2BoatInfo\022\016\n\006" +
+      "param1\030\017 \001(\r\022\016\n\006param3\030\003 \001(\r\022\021\n\tused_tim" +
+      "e\030\013 \001(\r\022\016\n\006param2\030\007 \001(\rB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -741,7 +741,7 @@ public final class SceneGallerySummerTimeV2BoatInfoOuterClass {
     internal_static_SceneGallerySummerTimeV2BoatInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGallerySummerTimeV2BoatInfo_descriptor,
-        new java.lang.String[] { "Param1", "Param3", "Unk2800NGGPIECNHJA", "Param2", });
+        new java.lang.String[] { "Param1", "Param3", "UsedTime", "Param2", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

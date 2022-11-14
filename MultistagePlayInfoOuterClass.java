@@ -135,6 +135,21 @@ public final class MultistagePlayInfoOuterClass {
      */
     emu.grasscutter.net.proto.IrodoriChessInfoOuterClass.IrodoriChessInfoOrBuilder getIrodoriChessInfoOrBuilder();
 
+    /**
+     * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+     * @return Whether the charAmusementInfo field is set.
+     */
+    boolean hasCharAmusementInfo();
+    /**
+     * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+     * @return The charAmusementInfo.
+     */
+    emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo getCharAmusementInfo();
+    /**
+     * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+     */
+    emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfoOrBuilder getCharAmusementInfoOrBuilder();
+
     public emu.grasscutter.net.proto.MultistagePlayInfoOuterClass.MultistagePlayInfo.DetailCase getDetailCase();
   }
   /**
@@ -229,6 +244,20 @@ public final class MultistagePlayInfoOuterClass {
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 108;
+              break;
+            }
+            case 2594: {
+              emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.Builder subBuilder = null;
+              if (detailCase_ == 324) {
+                subBuilder = ((emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 324;
               break;
             }
             case 4250: {
@@ -329,6 +358,7 @@ public final class MultistagePlayInfoOuterClass {
       HIDE_AND_SEEK_INFO(108),
       CHESS_INFO(1758),
       IRODORI_CHESS_INFO(531),
+      CHAR_AMUSEMENT_INFO(324),
       DETAIL_NOT_SET(0);
       private final int value;
       private DetailCase(int value) {
@@ -351,6 +381,7 @@ public final class MultistagePlayInfoOuterClass {
           case 108: return HIDE_AND_SEEK_INFO;
           case 1758: return CHESS_INFO;
           case 531: return IRODORI_CHESS_INFO;
+          case 324: return CHAR_AMUSEMENT_INFO;
           case 0: return DETAIL_NOT_SET;
           default: return null;
         }
@@ -598,6 +629,37 @@ public final class MultistagePlayInfoOuterClass {
       return emu.grasscutter.net.proto.IrodoriChessInfoOuterClass.IrodoriChessInfo.getDefaultInstance();
     }
 
+    public static final int CHAR_AMUSEMENT_INFO_FIELD_NUMBER = 324;
+    /**
+     * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+     * @return Whether the charAmusementInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasCharAmusementInfo() {
+      return detailCase_ == 324;
+    }
+    /**
+     * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+     * @return The charAmusementInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo getCharAmusementInfo() {
+      if (detailCase_ == 324) {
+         return (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfoOrBuilder getCharAmusementInfoOrBuilder() {
+      if (detailCase_ == 324) {
+         return (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -635,6 +697,9 @@ public final class MultistagePlayInfoOuterClass {
       }
       if (detailCase_ == 108) {
         output.writeMessage(108, (emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo) detail_);
+      }
+      if (detailCase_ == 324) {
+        output.writeMessage(324, (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_);
       }
       if (detailCase_ == 531) {
         output.writeMessage(531, (emu.grasscutter.net.proto.IrodoriChessInfoOuterClass.IrodoriChessInfo) detail_);
@@ -688,6 +753,10 @@ public final class MultistagePlayInfoOuterClass {
       if (detailCase_ == 108) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(108, (emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo) detail_);
+      }
+      if (detailCase_ == 324) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(324, (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_);
       }
       if (detailCase_ == 531) {
         size += com.google.protobuf.CodedOutputStream
@@ -756,6 +825,10 @@ public final class MultistagePlayInfoOuterClass {
           if (!getIrodoriChessInfo()
               .equals(other.getIrodoriChessInfo())) return false;
           break;
+        case 324:
+          if (!getCharAmusementInfo()
+              .equals(other.getCharAmusementInfo())) return false;
+          break;
         case 0:
         default:
       }
@@ -804,6 +877,10 @@ public final class MultistagePlayInfoOuterClass {
         case 531:
           hash = (37 * hash) + IRODORI_CHESS_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getIrodoriChessInfo().hashCode();
+          break;
+        case 324:
+          hash = (37 * hash) + CHAR_AMUSEMENT_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getCharAmusementInfo().hashCode();
           break;
         case 0:
         default:
@@ -1025,6 +1102,13 @@ public final class MultistagePlayInfoOuterClass {
             result.detail_ = irodoriChessInfoBuilder_.build();
           }
         }
+        if (detailCase_ == 324) {
+          if (charAmusementInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = charAmusementInfoBuilder_.build();
+          }
+        }
         result.detailCase_ = detailCase_;
         onBuilt();
         return result;
@@ -1114,6 +1198,10 @@ public final class MultistagePlayInfoOuterClass {
           }
           case IRODORI_CHESS_INFO: {
             mergeIrodoriChessInfo(other.getIrodoriChessInfo());
+            break;
+          }
+          case CHAR_AMUSEMENT_INFO: {
+            mergeCharAmusementInfo(other.getCharAmusementInfo());
             break;
           }
           case DETAIL_NOT_SET: {
@@ -2085,6 +2173,147 @@ public final class MultistagePlayInfoOuterClass {
         onChanged();;
         return irodoriChessInfoBuilder_;
       }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo, emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.Builder, emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfoOrBuilder> charAmusementInfoBuilder_;
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       * @return Whether the charAmusementInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasCharAmusementInfo() {
+        return detailCase_ == 324;
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       * @return The charAmusementInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo getCharAmusementInfo() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (detailCase_ == 324) {
+            return (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 324) {
+            return charAmusementInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       */
+      public Builder setCharAmusementInfo(emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo value) {
+        if (charAmusementInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          charAmusementInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 324;
+        return this;
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       */
+      public Builder setCharAmusementInfo(
+          emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.Builder builderForValue) {
+        if (charAmusementInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          charAmusementInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 324;
+        return this;
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       */
+      public Builder mergeCharAmusementInfo(emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo value) {
+        if (charAmusementInfoBuilder_ == null) {
+          if (detailCase_ == 324 &&
+              detail_ != emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.newBuilder((emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 324) {
+            charAmusementInfoBuilder_.mergeFrom(value);
+          }
+          charAmusementInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 324;
+        return this;
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       */
+      public Builder clearCharAmusementInfo() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (detailCase_ == 324) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 324) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          charAmusementInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       */
+      public emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.Builder getCharAmusementInfoBuilder() {
+        return getCharAmusementInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfoOrBuilder getCharAmusementInfoOrBuilder() {
+        if ((detailCase_ == 324) && (charAmusementInfoBuilder_ != null)) {
+          return charAmusementInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 324) {
+            return (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CharAmusementInfo char_amusement_info = 324;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo, emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.Builder, emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfoOrBuilder> 
+          getCharAmusementInfoFieldBuilder() {
+        if (charAmusementInfoBuilder_ == null) {
+          if (!(detailCase_ == 324)) {
+            detail_ = emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance();
+          }
+          charAmusementInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo, emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.Builder, emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 324;
+        onChanged();;
+        return charAmusementInfoBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -2152,26 +2381,29 @@ public final class MultistagePlayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030MultistagePlayInfo.proto\032\032HideAndSeekS" +
-      "tageInfo.proto\032\027InBattleChessInfo.proto\032" +
-      "\033InBattleFleurFairInfo.proto\032\034InBattleMe" +
-      "chanicusInfo.proto\032\026IrodoriChessInfo.pro" +
-      "to\"\241\003\n\022MultistagePlayInfo\022\022\n\nplay_index\030" +
-      "\r \001(\r\022\021\n\tplay_type\030\013 \001(\r\022\022\n\nstage_type\030\n" +
-      " \001(\r\022\020\n\010duration\030\010 \001(\r\022\020\n\010group_id\030\014 \001(\r" +
-      "\022\022\n\nbegin_time\030\t \001(\r\022\023\n\013stage_index\030\001 \001(" +
-      "\r\0223\n\017mechanicus_info\030\266\n \001(\0132\027.InBattleMe" +
-      "chanicusInfoH\000\0222\n\017fleur_fair_info\030\250\010 \001(\013" +
-      "2\026.InBattleFleurFairInfoH\000\0223\n\022hide_and_s" +
-      "eek_info\030l \001(\0132\025.HideAndSeekStageInfoH\000\022" +
-      ")\n\nchess_info\030\336\r \001(\0132\022.InBattleChessInfo" +
-      "H\000\0220\n\022irodori_chess_info\030\223\004 \001(\0132\021.Irodor" +
-      "iChessInfoH\000B\010\n\006detailB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n\030MultistagePlayInfo.proto\032\027CharAmusemen" +
+      "tInfo.proto\032\032HideAndSeekStageInfo.proto\032" +
+      "\027InBattleChessInfo.proto\032\033InBattleFleurF" +
+      "airInfo.proto\032\034InBattleMechanicusInfo.pr" +
+      "oto\032\026IrodoriChessInfo.proto\"\325\003\n\022Multista" +
+      "gePlayInfo\022\022\n\nplay_index\030\r \001(\r\022\021\n\tplay_t" +
+      "ype\030\013 \001(\r\022\022\n\nstage_type\030\n \001(\r\022\020\n\010duratio" +
+      "n\030\010 \001(\r\022\020\n\010group_id\030\014 \001(\r\022\022\n\nbegin_time\030" +
+      "\t \001(\r\022\023\n\013stage_index\030\001 \001(\r\0223\n\017mechanicus" +
+      "_info\030\266\n \001(\0132\027.InBattleMechanicusInfoH\000\022" +
+      "2\n\017fleur_fair_info\030\250\010 \001(\0132\026.InBattleFleu" +
+      "rFairInfoH\000\0223\n\022hide_and_seek_info\030l \001(\0132" +
+      "\025.HideAndSeekStageInfoH\000\022)\n\nchess_info\030\336" +
+      "\r \001(\0132\022.InBattleChessInfoH\000\0220\n\022irodori_c" +
+      "hess_info\030\223\004 \001(\0132\021.IrodoriChessInfoH\000\0222\n" +
+      "\023char_amusement_info\030\304\002 \001(\0132\022.CharAmusem" +
+      "entInfoH\000B\010\n\006detailB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.CharAmusementInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.InBattleChessInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.getDescriptor(),
@@ -2183,7 +2415,8 @@ public final class MultistagePlayInfoOuterClass {
     internal_static_MultistagePlayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MultistagePlayInfo_descriptor,
-        new java.lang.String[] { "PlayIndex", "PlayType", "StageType", "Duration", "GroupId", "BeginTime", "StageIndex", "MechanicusInfo", "FleurFairInfo", "HideAndSeekInfo", "ChessInfo", "IrodoriChessInfo", "Detail", });
+        new java.lang.String[] { "PlayIndex", "PlayType", "StageType", "Duration", "GroupId", "BeginTime", "StageIndex", "MechanicusInfo", "FleurFairInfo", "HideAndSeekInfo", "ChessInfo", "IrodoriChessInfo", "CharAmusementInfo", "Detail", });
+    emu.grasscutter.net.proto.CharAmusementInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InBattleChessInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.getDescriptor();

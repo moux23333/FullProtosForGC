@@ -53,7 +53,6 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
    * CmdId: 350
    * EnetChannelId: 0
    * EnetIsReliable: true
-   * IsAllowClient: true
    * </pre>
    *
    * Protobuf type {@code TriggerCreateGadgetToEquipPartNotify}
@@ -417,7 +416,6 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
      * CmdId: 350
      * EnetChannelId: 0
      * EnetIsReliable: true
-     * IsAllowClient: true
      * </pre>
      *
      * Protobuf type {@code TriggerCreateGadgetToEquipPartNotify}

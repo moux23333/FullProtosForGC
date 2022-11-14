@@ -169,9 +169,9 @@ public final class ServerUpdateGlobalValueNotifyOuterClass {
     public enum UpdateType
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>UPDATE_TYPE_INVALUE = 0;</code>
+       * <code>UPDATE_TYPE_INVALID = 0;</code>
        */
-      UPDATE_TYPE_INVALUE(0),
+      UPDATE_TYPE_INVALID(0),
       /**
        * <code>UPDATE_TYPE_ADD = 1;</code>
        */
@@ -184,9 +184,9 @@ public final class ServerUpdateGlobalValueNotifyOuterClass {
       ;
 
       /**
-       * <code>UPDATE_TYPE_INVALUE = 0;</code>
+       * <code>UPDATE_TYPE_INVALID = 0;</code>
        */
-      public static final int UPDATE_TYPE_INVALUE_VALUE = 0;
+      public static final int UPDATE_TYPE_INVALID_VALUE = 0;
       /**
        * <code>UPDATE_TYPE_ADD = 1;</code>
        */
@@ -221,7 +221,7 @@ public final class ServerUpdateGlobalValueNotifyOuterClass {
        */
       public static UpdateType forNumber(int value) {
         switch (value) {
-          case 0: return UPDATE_TYPE_INVALUE;
+          case 0: return UPDATE_TYPE_INVALID;
           case 1: return UPDATE_TYPE_ADD;
           case 2: return UPDATE_TYPE_SET;
           default: return null;
@@ -369,7 +369,7 @@ public final class ServerUpdateGlobalValueNotifyOuterClass {
       if (keyHash_ != 0) {
         output.writeUInt32(10, keyHash_);
       }
-      if (updateType_ != emu.grasscutter.net.proto.ServerUpdateGlobalValueNotifyOuterClass.ServerUpdateGlobalValueNotify.UpdateType.UPDATE_TYPE_INVALUE.getNumber()) {
+      if (updateType_ != emu.grasscutter.net.proto.ServerUpdateGlobalValueNotifyOuterClass.ServerUpdateGlobalValueNotify.UpdateType.UPDATE_TYPE_INVALID.getNumber()) {
         output.writeEnum(13, updateType_);
       }
       unknownFields.writeTo(output);
@@ -397,7 +397,7 @@ public final class ServerUpdateGlobalValueNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, keyHash_);
       }
-      if (updateType_ != emu.grasscutter.net.proto.ServerUpdateGlobalValueNotifyOuterClass.ServerUpdateGlobalValueNotify.UpdateType.UPDATE_TYPE_INVALUE.getNumber()) {
+      if (updateType_ != emu.grasscutter.net.proto.ServerUpdateGlobalValueNotifyOuterClass.ServerUpdateGlobalValueNotify.UpdateType.UPDATE_TYPE_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(13, updateType_);
       }
@@ -971,7 +971,7 @@ public final class ServerUpdateGlobalValueNotifyOuterClass {
       "y_id\030\t \001(\r\022>\n\013update_type\030\r \001(\0162).Server" +
       "UpdateGlobalValueNotify.UpdateType\022\r\n\005de" +
       "lta\030\003 \001(\002\022\020\n\010key_hash\030\n \001(\r\022\r\n\005value\030\006 \001" +
-      "(\002\"O\n\nUpdateType\022\027\n\023UPDATE_TYPE_INVALUE\020" +
+      "(\002\"O\n\nUpdateType\022\027\n\023UPDATE_TYPE_INVALID\020" +
       "\000\022\023\n\017UPDATE_TYPE_ADD\020\001\022\023\n\017UPDATE_TYPE_SE" +
       "T\020\002B\033\n\031emu.grasscutter.net.protob\006proto3"
     };

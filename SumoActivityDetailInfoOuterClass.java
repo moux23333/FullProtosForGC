@@ -59,10 +59,10 @@ public final class SumoActivityDetailInfoOuterClass {
         int key);
 
     /**
-     * <code>uint32 Unk2700_NIJIAJMFLLD = 14;</code>
-     * @return The unk2700NIJIAJMFLLD.
+     * <code>uint32 last_stage_id = 14;</code>
+     * @return The lastStageId.
      */
-    int getUnk2700NIJIAJMFLLD();
+    int getLastStageId();
   }
   /**
    * Protobuf type {@code SumoActivityDetailInfo}
@@ -130,7 +130,7 @@ public final class SumoActivityDetailInfoOuterClass {
             }
             case 112: {
 
-              unk2700NIJIAJMFLLD_ = input.readUInt32();
+              lastStageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -269,15 +269,15 @@ public final class SumoActivityDetailInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int UNK2700_NIJIAJMFLLD_FIELD_NUMBER = 14;
-    private int unk2700NIJIAJMFLLD_;
+    public static final int LAST_STAGE_ID_FIELD_NUMBER = 14;
+    private int lastStageId_;
     /**
-     * <code>uint32 Unk2700_NIJIAJMFLLD = 14;</code>
-     * @return The unk2700NIJIAJMFLLD.
+     * <code>uint32 last_stage_id = 14;</code>
+     * @return The lastStageId.
      */
     @java.lang.Override
-    public int getUnk2700NIJIAJMFLLD() {
-      return unk2700NIJIAJMFLLD_;
+    public int getLastStageId() {
+      return lastStageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -303,8 +303,8 @@ public final class SumoActivityDetailInfoOuterClass {
           internalGetSumoStageMap(),
           SumoStageMapDefaultEntryHolder.defaultEntry,
           13);
-      if (unk2700NIJIAJMFLLD_ != 0) {
-        output.writeUInt32(14, unk2700NIJIAJMFLLD_);
+      if (lastStageId_ != 0) {
+        output.writeUInt32(14, lastStageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -329,9 +329,9 @@ public final class SumoActivityDetailInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(13, sumoStageMap__);
       }
-      if (unk2700NIJIAJMFLLD_ != 0) {
+      if (lastStageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unk2700NIJIAJMFLLD_);
+          .computeUInt32Size(14, lastStageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -352,8 +352,8 @@ public final class SumoActivityDetailInfoOuterClass {
           != other.getDifficultyId()) return false;
       if (!internalGetSumoStageMap().equals(
           other.internalGetSumoStageMap())) return false;
-      if (getUnk2700NIJIAJMFLLD()
-          != other.getUnk2700NIJIAJMFLLD()) return false;
+      if (getLastStageId()
+          != other.getLastStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -371,8 +371,8 @@ public final class SumoActivityDetailInfoOuterClass {
         hash = (37 * hash) + SUMO_STAGE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSumoStageMap().hashCode();
       }
-      hash = (37 * hash) + UNK2700_NIJIAJMFLLD_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700NIJIAJMFLLD();
+      hash = (37 * hash) + LAST_STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLastStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -531,7 +531,7 @@ public final class SumoActivityDetailInfoOuterClass {
         difficultyId_ = 0;
 
         internalGetMutableSumoStageMap().clear();
-        unk2700NIJIAJMFLLD_ = 0;
+        lastStageId_ = 0;
 
         return this;
       }
@@ -563,7 +563,7 @@ public final class SumoActivityDetailInfoOuterClass {
         result.difficultyId_ = difficultyId_;
         result.sumoStageMap_ = internalGetSumoStageMap();
         result.sumoStageMap_.makeImmutable();
-        result.unk2700NIJIAJMFLLD_ = unk2700NIJIAJMFLLD_;
+        result.lastStageId_ = lastStageId_;
         onBuilt();
         return result;
       }
@@ -617,8 +617,8 @@ public final class SumoActivityDetailInfoOuterClass {
         }
         internalGetMutableSumoStageMap().mergeFrom(
             other.internalGetSumoStageMap());
-        if (other.getUnk2700NIJIAJMFLLD() != 0) {
-          setUnk2700NIJIAJMFLLD(other.getUnk2700NIJIAJMFLLD());
+        if (other.getLastStageId() != 0) {
+          setLastStageId(other.getLastStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -809,33 +809,33 @@ public final class SumoActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int unk2700NIJIAJMFLLD_ ;
+      private int lastStageId_ ;
       /**
-       * <code>uint32 Unk2700_NIJIAJMFLLD = 14;</code>
-       * @return The unk2700NIJIAJMFLLD.
+       * <code>uint32 last_stage_id = 14;</code>
+       * @return The lastStageId.
        */
       @java.lang.Override
-      public int getUnk2700NIJIAJMFLLD() {
-        return unk2700NIJIAJMFLLD_;
+      public int getLastStageId() {
+        return lastStageId_;
       }
       /**
-       * <code>uint32 Unk2700_NIJIAJMFLLD = 14;</code>
-       * @param value The unk2700NIJIAJMFLLD to set.
+       * <code>uint32 last_stage_id = 14;</code>
+       * @param value The lastStageId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700NIJIAJMFLLD(int value) {
+      public Builder setLastStageId(int value) {
         
-        unk2700NIJIAJMFLLD_ = value;
+        lastStageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_NIJIAJMFLLD = 14;</code>
+       * <code>uint32 last_stage_id = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700NIJIAJMFLLD() {
+      public Builder clearLastStageId() {
         
-        unk2700NIJIAJMFLLD_ = 0;
+        lastStageId_ = 0;
         onChanged();
         return this;
       }
@@ -912,13 +912,13 @@ public final class SumoActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SumoActivityDetailInfo.proto\032\023SumoStag" +
-      "eData.proto\"\324\001\n\026SumoActivityDetailInfo\022\025" +
+      "eData.proto\"\316\001\n\026SumoActivityDetailInfo\022\025" +
       "\n\rdifficulty_id\030\013 \001(\r\022A\n\016sumo_stage_map\030" +
       "\r \003(\0132).SumoActivityDetailInfo.SumoStage" +
-      "MapEntry\022\033\n\023Unk2700_NIJIAJMFLLD\030\016 \001(\r\032C\n" +
-      "\021SumoStageMapEntry\022\013\n\003key\030\001 \001(\r\022\035\n\005value" +
-      "\030\002 \001(\0132\016.SumoStageData:\0028\001B\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "MapEntry\022\025\n\rlast_stage_id\030\016 \001(\r\032C\n\021SumoS" +
+      "tageMapEntry\022\013\n\003key\030\001 \001(\r\022\035\n\005value\030\002 \001(\013" +
+      "2\016.SumoStageData:\0028\001B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -930,7 +930,7 @@ public final class SumoActivityDetailInfoOuterClass {
     internal_static_SumoActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoActivityDetailInfo_descriptor,
-        new java.lang.String[] { "DifficultyId", "SumoStageMap", "Unk2700NIJIAJMFLLD", });
+        new java.lang.String[] { "DifficultyId", "SumoStageMap", "LastStageId", });
     internal_static_SumoActivityDetailInfo_SumoStageMapEntry_descriptor =
       internal_static_SumoActivityDetailInfo_descriptor.getNestedTypes().get(0);
     internal_static_SumoActivityDetailInfo_SumoStageMapEntry_fieldAccessorTable = new

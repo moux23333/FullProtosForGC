@@ -19,64 +19,64 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
-     * @return Whether the unk2700ONOHODJPIGK field is set.
+     * <code>.LanternProjectionInfo projection_info = 13;</code>
+     * @return Whether the projectionInfo field is set.
      */
-    boolean hasUnk2700ONOHODJPIGK();
+    boolean hasProjectionInfo();
     /**
-     * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
-     * @return The unk2700ONOHODJPIGK.
+     * <code>.LanternProjectionInfo projection_info = 13;</code>
+     * @return The projectionInfo.
      */
-    emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH getUnk2700ONOHODJPIGK();
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo();
     /**
-     * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+     * <code>.LanternProjectionInfo projection_info = 13;</code>
      */
-    emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMHOrBuilder getUnk2700ONOHODJPIGKOrBuilder();
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder();
 
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL> 
-        getUnk2700PHKHIPLDOOAList();
+    java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> 
+        getStageInfoListList();
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL getUnk2700PHKHIPLDOOA(int index);
+    emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index);
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
-    int getUnk2700PHKHIPLDOOACount();
+    int getStageInfoListCount();
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder> 
-        getUnk2700PHKHIPLDOOAOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
+        getStageInfoListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder getUnk2700PHKHIPLDOOAOrBuilder(
+    emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
         int index);
 
     /**
-     * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
-     * @return Whether the unk2700MPOCLGBFNAK field is set.
+     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * @return Whether the fireworksInfo field is set.
      */
-    boolean hasUnk2700MPOCLGBFNAK();
+    boolean hasFireworksInfo();
     /**
-     * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
-     * @return The unk2700MPOCLGBFNAK.
+     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * @return The fireworksInfo.
      */
-    emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE getUnk2700MPOCLGBFNAK();
+    emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo();
     /**
-     * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
      */
-    emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJEOrBuilder getUnk2700MPOCLGBFNAKOrBuilder();
+    emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder();
 
     /**
-     * <code>bool Unk2700_KGGCKHBIOED = 2;</code>
-     * @return The unk2700KGGCKHBIOED.
+     * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
+     * @return The isMiniEldritchDungeonOpen.
      */
-    boolean getUnk2700KGGCKHBIOED();
+    boolean getIsMiniEldritchDungeonOpen();
 
     /**
      * <code>bool is_content_closed = 14;</code>
@@ -85,10 +85,10 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     boolean getIsContentClosed();
 
     /**
-     * <code>bool Unk2700_EOGEAIHJPFD = 6;</code>
-     * @return The unk2700EOGEAIHJPFD.
+     * <code>bool is_taken_skin_reward = 6;</code>
+     * @return The isTakenSkinReward.
      */
-    boolean getUnk2700EOGEAIHJPFD();
+    boolean getIsTakenSkinReward();
   }
   /**
    * Protobuf type {@code LanternRiteActivityDetailInfo}
@@ -103,7 +103,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       super(builder);
     }
     private LanternRiteActivityDetailInfo() {
-      unk2700PHKHIPLDOOA_ = java.util.Collections.emptyList();
+      stageInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -139,45 +139,45 @@ public final class LanternRiteActivityDetailInfoOuterClass {
               break;
             case 16: {
 
-              unk2700KGGCKHBIOED_ = input.readBool();
+              isMiniEldritchDungeonOpen_ = input.readBool();
               break;
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700PHKHIPLDOOA_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL>();
+                stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700PHKHIPLDOOA_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.parser(), extensionRegistry));
+              stageInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.parser(), extensionRegistry));
               break;
             }
             case 48: {
 
-              unk2700EOGEAIHJPFD_ = input.readBool();
+              isTakenSkinReward_ = input.readBool();
               break;
             }
             case 66: {
-              emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.Builder subBuilder = null;
-              if (unk2700MPOCLGBFNAK_ != null) {
-                subBuilder = unk2700MPOCLGBFNAK_.toBuilder();
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder subBuilder = null;
+              if (fireworksInfo_ != null) {
+                subBuilder = fireworksInfo_.toBuilder();
               }
-              unk2700MPOCLGBFNAK_ = input.readMessage(emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.parser(), extensionRegistry);
+              fireworksInfo_ = input.readMessage(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(unk2700MPOCLGBFNAK_);
-                unk2700MPOCLGBFNAK_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(fireworksInfo_);
+                fireworksInfo_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 106: {
-              emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.Builder subBuilder = null;
-              if (unk2700ONOHODJPIGK_ != null) {
-                subBuilder = unk2700ONOHODJPIGK_.toBuilder();
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder subBuilder = null;
+              if (projectionInfo_ != null) {
+                subBuilder = projectionInfo_.toBuilder();
               }
-              unk2700ONOHODJPIGK_ = input.readMessage(emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.parser(), extensionRegistry);
+              projectionInfo_ = input.readMessage(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(unk2700ONOHODJPIGK_);
-                unk2700ONOHODJPIGK_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(projectionInfo_);
+                projectionInfo_ = subBuilder.buildPartial();
               }
 
               break;
@@ -203,7 +203,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700PHKHIPLDOOA_ = java.util.Collections.unmodifiableList(unk2700PHKHIPLDOOA_);
+          stageInfoList_ = java.util.Collections.unmodifiableList(stageInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -222,107 +222,107 @@ public final class LanternRiteActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.class, emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.Builder.class);
     }
 
-    public static final int UNK2700_ONOHODJPIGK_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH unk2700ONOHODJPIGK_;
+    public static final int PROJECTION_INFO_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
     /**
-     * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
-     * @return Whether the unk2700ONOHODJPIGK field is set.
+     * <code>.LanternProjectionInfo projection_info = 13;</code>
+     * @return Whether the projectionInfo field is set.
      */
     @java.lang.Override
-    public boolean hasUnk2700ONOHODJPIGK() {
-      return unk2700ONOHODJPIGK_ != null;
+    public boolean hasProjectionInfo() {
+      return projectionInfo_ != null;
     }
     /**
-     * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
-     * @return The unk2700ONOHODJPIGK.
+     * <code>.LanternProjectionInfo projection_info = 13;</code>
+     * @return The projectionInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH getUnk2700ONOHODJPIGK() {
-      return unk2700ONOHODJPIGK_ == null ? emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.getDefaultInstance() : unk2700ONOHODJPIGK_;
+    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
+      return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
     }
     /**
-     * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+     * <code>.LanternProjectionInfo projection_info = 13;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMHOrBuilder getUnk2700ONOHODJPIGKOrBuilder() {
-      return getUnk2700ONOHODJPIGK();
+    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
+      return getProjectionInfo();
     }
 
-    public static final int UNK2700_PHKHIPLDOOA_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL> unk2700PHKHIPLDOOA_;
+    public static final int STAGE_INFO_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> stageInfoList_;
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL> getUnk2700PHKHIPLDOOAList() {
-      return unk2700PHKHIPLDOOA_;
+    public java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> getStageInfoListList() {
+      return stageInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder> 
-        getUnk2700PHKHIPLDOOAOrBuilderList() {
-      return unk2700PHKHIPLDOOA_;
+    public java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
+        getStageInfoListOrBuilderList() {
+      return stageInfoList_;
     }
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
     @java.lang.Override
-    public int getUnk2700PHKHIPLDOOACount() {
-      return unk2700PHKHIPLDOOA_.size();
+    public int getStageInfoListCount() {
+      return stageInfoList_.size();
     }
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL getUnk2700PHKHIPLDOOA(int index) {
-      return unk2700PHKHIPLDOOA_.get(index);
+    public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index) {
+      return stageInfoList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder getUnk2700PHKHIPLDOOAOrBuilder(
+    public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
         int index) {
-      return unk2700PHKHIPLDOOA_.get(index);
+      return stageInfoList_.get(index);
     }
 
-    public static final int UNK2700_MPOCLGBFNAK_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE unk2700MPOCLGBFNAK_;
+    public static final int FIREWORKS_INFO_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo fireworksInfo_;
     /**
-     * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
-     * @return Whether the unk2700MPOCLGBFNAK field is set.
+     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * @return Whether the fireworksInfo field is set.
      */
     @java.lang.Override
-    public boolean hasUnk2700MPOCLGBFNAK() {
-      return unk2700MPOCLGBFNAK_ != null;
+    public boolean hasFireworksInfo() {
+      return fireworksInfo_ != null;
     }
     /**
-     * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
-     * @return The unk2700MPOCLGBFNAK.
+     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * @return The fireworksInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE getUnk2700MPOCLGBFNAK() {
-      return unk2700MPOCLGBFNAK_ == null ? emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.getDefaultInstance() : unk2700MPOCLGBFNAK_;
+    public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo() {
+      return fireworksInfo_ == null ? emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.getDefaultInstance() : fireworksInfo_;
     }
     /**
-     * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJEOrBuilder getUnk2700MPOCLGBFNAKOrBuilder() {
-      return getUnk2700MPOCLGBFNAK();
+    public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder() {
+      return getFireworksInfo();
     }
 
-    public static final int UNK2700_KGGCKHBIOED_FIELD_NUMBER = 2;
-    private boolean unk2700KGGCKHBIOED_;
+    public static final int IS_MINI_ELDRITCH_DUNGEON_OPEN_FIELD_NUMBER = 2;
+    private boolean isMiniEldritchDungeonOpen_;
     /**
-     * <code>bool Unk2700_KGGCKHBIOED = 2;</code>
-     * @return The unk2700KGGCKHBIOED.
+     * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
+     * @return The isMiniEldritchDungeonOpen.
      */
     @java.lang.Override
-    public boolean getUnk2700KGGCKHBIOED() {
-      return unk2700KGGCKHBIOED_;
+    public boolean getIsMiniEldritchDungeonOpen() {
+      return isMiniEldritchDungeonOpen_;
     }
 
     public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 14;
@@ -336,15 +336,15 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int UNK2700_EOGEAIHJPFD_FIELD_NUMBER = 6;
-    private boolean unk2700EOGEAIHJPFD_;
+    public static final int IS_TAKEN_SKIN_REWARD_FIELD_NUMBER = 6;
+    private boolean isTakenSkinReward_;
     /**
-     * <code>bool Unk2700_EOGEAIHJPFD = 6;</code>
-     * @return The unk2700EOGEAIHJPFD.
+     * <code>bool is_taken_skin_reward = 6;</code>
+     * @return The isTakenSkinReward.
      */
     @java.lang.Override
-    public boolean getUnk2700EOGEAIHJPFD() {
-      return unk2700EOGEAIHJPFD_;
+    public boolean getIsTakenSkinReward() {
+      return isTakenSkinReward_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -361,20 +361,20 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700KGGCKHBIOED_ != false) {
-        output.writeBool(2, unk2700KGGCKHBIOED_);
+      if (isMiniEldritchDungeonOpen_ != false) {
+        output.writeBool(2, isMiniEldritchDungeonOpen_);
       }
-      for (int i = 0; i < unk2700PHKHIPLDOOA_.size(); i++) {
-        output.writeMessage(5, unk2700PHKHIPLDOOA_.get(i));
+      for (int i = 0; i < stageInfoList_.size(); i++) {
+        output.writeMessage(5, stageInfoList_.get(i));
       }
-      if (unk2700EOGEAIHJPFD_ != false) {
-        output.writeBool(6, unk2700EOGEAIHJPFD_);
+      if (isTakenSkinReward_ != false) {
+        output.writeBool(6, isTakenSkinReward_);
       }
-      if (unk2700MPOCLGBFNAK_ != null) {
-        output.writeMessage(8, getUnk2700MPOCLGBFNAK());
+      if (fireworksInfo_ != null) {
+        output.writeMessage(8, getFireworksInfo());
       }
-      if (unk2700ONOHODJPIGK_ != null) {
-        output.writeMessage(13, getUnk2700ONOHODJPIGK());
+      if (projectionInfo_ != null) {
+        output.writeMessage(13, getProjectionInfo());
       }
       if (isContentClosed_ != false) {
         output.writeBool(14, isContentClosed_);
@@ -388,25 +388,25 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700KGGCKHBIOED_ != false) {
+      if (isMiniEldritchDungeonOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, unk2700KGGCKHBIOED_);
+          .computeBoolSize(2, isMiniEldritchDungeonOpen_);
       }
-      for (int i = 0; i < unk2700PHKHIPLDOOA_.size(); i++) {
+      for (int i = 0; i < stageInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, unk2700PHKHIPLDOOA_.get(i));
+          .computeMessageSize(5, stageInfoList_.get(i));
       }
-      if (unk2700EOGEAIHJPFD_ != false) {
+      if (isTakenSkinReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, unk2700EOGEAIHJPFD_);
+          .computeBoolSize(6, isTakenSkinReward_);
       }
-      if (unk2700MPOCLGBFNAK_ != null) {
+      if (fireworksInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getUnk2700MPOCLGBFNAK());
+          .computeMessageSize(8, getFireworksInfo());
       }
-      if (unk2700ONOHODJPIGK_ != null) {
+      if (projectionInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getUnk2700ONOHODJPIGK());
+          .computeMessageSize(13, getProjectionInfo());
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -427,24 +427,24 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo other = (emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo) obj;
 
-      if (hasUnk2700ONOHODJPIGK() != other.hasUnk2700ONOHODJPIGK()) return false;
-      if (hasUnk2700ONOHODJPIGK()) {
-        if (!getUnk2700ONOHODJPIGK()
-            .equals(other.getUnk2700ONOHODJPIGK())) return false;
+      if (hasProjectionInfo() != other.hasProjectionInfo()) return false;
+      if (hasProjectionInfo()) {
+        if (!getProjectionInfo()
+            .equals(other.getProjectionInfo())) return false;
       }
-      if (!getUnk2700PHKHIPLDOOAList()
-          .equals(other.getUnk2700PHKHIPLDOOAList())) return false;
-      if (hasUnk2700MPOCLGBFNAK() != other.hasUnk2700MPOCLGBFNAK()) return false;
-      if (hasUnk2700MPOCLGBFNAK()) {
-        if (!getUnk2700MPOCLGBFNAK()
-            .equals(other.getUnk2700MPOCLGBFNAK())) return false;
+      if (!getStageInfoListList()
+          .equals(other.getStageInfoListList())) return false;
+      if (hasFireworksInfo() != other.hasFireworksInfo()) return false;
+      if (hasFireworksInfo()) {
+        if (!getFireworksInfo()
+            .equals(other.getFireworksInfo())) return false;
       }
-      if (getUnk2700KGGCKHBIOED()
-          != other.getUnk2700KGGCKHBIOED()) return false;
+      if (getIsMiniEldritchDungeonOpen()
+          != other.getIsMiniEldritchDungeonOpen()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (getUnk2700EOGEAIHJPFD()
-          != other.getUnk2700EOGEAIHJPFD()) return false;
+      if (getIsTakenSkinReward()
+          != other.getIsTakenSkinReward()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -456,27 +456,27 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasUnk2700ONOHODJPIGK()) {
-        hash = (37 * hash) + UNK2700_ONOHODJPIGK_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700ONOHODJPIGK().hashCode();
+      if (hasProjectionInfo()) {
+        hash = (37 * hash) + PROJECTION_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getProjectionInfo().hashCode();
       }
-      if (getUnk2700PHKHIPLDOOACount() > 0) {
-        hash = (37 * hash) + UNK2700_PHKHIPLDOOA_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700PHKHIPLDOOAList().hashCode();
+      if (getStageInfoListCount() > 0) {
+        hash = (37 * hash) + STAGE_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getStageInfoListList().hashCode();
       }
-      if (hasUnk2700MPOCLGBFNAK()) {
-        hash = (37 * hash) + UNK2700_MPOCLGBFNAK_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700MPOCLGBFNAK().hashCode();
+      if (hasFireworksInfo()) {
+        hash = (37 * hash) + FIREWORKS_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getFireworksInfo().hashCode();
       }
-      hash = (37 * hash) + UNK2700_KGGCKHBIOED_FIELD_NUMBER;
+      hash = (37 * hash) + IS_MINI_ELDRITCH_DUNGEON_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700KGGCKHBIOED());
+          getIsMiniEldritchDungeonOpen());
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + UNK2700_EOGEAIHJPFD_FIELD_NUMBER;
+      hash = (37 * hash) + IS_TAKEN_SKIN_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700EOGEAIHJPFD());
+          getIsTakenSkinReward());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -605,35 +605,35 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2700PHKHIPLDOOAFieldBuilder();
+          getStageInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
-          unk2700ONOHODJPIGK_ = null;
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = null;
         } else {
-          unk2700ONOHODJPIGK_ = null;
-          unk2700ONOHODJPIGKBuilder_ = null;
+          projectionInfo_ = null;
+          projectionInfoBuilder_ = null;
         }
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          unk2700PHKHIPLDOOA_ = java.util.Collections.emptyList();
+        if (stageInfoListBuilder_ == null) {
+          stageInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2700PHKHIPLDOOABuilder_.clear();
+          stageInfoListBuilder_.clear();
         }
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
-          unk2700MPOCLGBFNAK_ = null;
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfo_ = null;
         } else {
-          unk2700MPOCLGBFNAK_ = null;
-          unk2700MPOCLGBFNAKBuilder_ = null;
+          fireworksInfo_ = null;
+          fireworksInfoBuilder_ = null;
         }
-        unk2700KGGCKHBIOED_ = false;
+        isMiniEldritchDungeonOpen_ = false;
 
         isContentClosed_ = false;
 
-        unk2700EOGEAIHJPFD_ = false;
+        isTakenSkinReward_ = false;
 
         return this;
       }
@@ -662,28 +662,28 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo result = new emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
-          result.unk2700ONOHODJPIGK_ = unk2700ONOHODJPIGK_;
+        if (projectionInfoBuilder_ == null) {
+          result.projectionInfo_ = projectionInfo_;
         } else {
-          result.unk2700ONOHODJPIGK_ = unk2700ONOHODJPIGKBuilder_.build();
+          result.projectionInfo_ = projectionInfoBuilder_.build();
         }
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
+        if (stageInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2700PHKHIPLDOOA_ = java.util.Collections.unmodifiableList(unk2700PHKHIPLDOOA_);
+            stageInfoList_ = java.util.Collections.unmodifiableList(stageInfoList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2700PHKHIPLDOOA_ = unk2700PHKHIPLDOOA_;
+          result.stageInfoList_ = stageInfoList_;
         } else {
-          result.unk2700PHKHIPLDOOA_ = unk2700PHKHIPLDOOABuilder_.build();
+          result.stageInfoList_ = stageInfoListBuilder_.build();
         }
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
-          result.unk2700MPOCLGBFNAK_ = unk2700MPOCLGBFNAK_;
+        if (fireworksInfoBuilder_ == null) {
+          result.fireworksInfo_ = fireworksInfo_;
         } else {
-          result.unk2700MPOCLGBFNAK_ = unk2700MPOCLGBFNAKBuilder_.build();
+          result.fireworksInfo_ = fireworksInfoBuilder_.build();
         }
-        result.unk2700KGGCKHBIOED_ = unk2700KGGCKHBIOED_;
+        result.isMiniEldritchDungeonOpen_ = isMiniEldritchDungeonOpen_;
         result.isContentClosed_ = isContentClosed_;
-        result.unk2700EOGEAIHJPFD_ = unk2700EOGEAIHJPFD_;
+        result.isTakenSkinReward_ = isTakenSkinReward_;
         onBuilt();
         return result;
       }
@@ -732,46 +732,46 @@ public final class LanternRiteActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.hasUnk2700ONOHODJPIGK()) {
-          mergeUnk2700ONOHODJPIGK(other.getUnk2700ONOHODJPIGK());
+        if (other.hasProjectionInfo()) {
+          mergeProjectionInfo(other.getProjectionInfo());
         }
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          if (!other.unk2700PHKHIPLDOOA_.isEmpty()) {
-            if (unk2700PHKHIPLDOOA_.isEmpty()) {
-              unk2700PHKHIPLDOOA_ = other.unk2700PHKHIPLDOOA_;
+        if (stageInfoListBuilder_ == null) {
+          if (!other.stageInfoList_.isEmpty()) {
+            if (stageInfoList_.isEmpty()) {
+              stageInfoList_ = other.stageInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2700PHKHIPLDOOAIsMutable();
-              unk2700PHKHIPLDOOA_.addAll(other.unk2700PHKHIPLDOOA_);
+              ensureStageInfoListIsMutable();
+              stageInfoList_.addAll(other.stageInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700PHKHIPLDOOA_.isEmpty()) {
-            if (unk2700PHKHIPLDOOABuilder_.isEmpty()) {
-              unk2700PHKHIPLDOOABuilder_.dispose();
-              unk2700PHKHIPLDOOABuilder_ = null;
-              unk2700PHKHIPLDOOA_ = other.unk2700PHKHIPLDOOA_;
+          if (!other.stageInfoList_.isEmpty()) {
+            if (stageInfoListBuilder_.isEmpty()) {
+              stageInfoListBuilder_.dispose();
+              stageInfoListBuilder_ = null;
+              stageInfoList_ = other.stageInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2700PHKHIPLDOOABuilder_ = 
+              stageInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700PHKHIPLDOOAFieldBuilder() : null;
+                   getStageInfoListFieldBuilder() : null;
             } else {
-              unk2700PHKHIPLDOOABuilder_.addAllMessages(other.unk2700PHKHIPLDOOA_);
+              stageInfoListBuilder_.addAllMessages(other.stageInfoList_);
             }
           }
         }
-        if (other.hasUnk2700MPOCLGBFNAK()) {
-          mergeUnk2700MPOCLGBFNAK(other.getUnk2700MPOCLGBFNAK());
+        if (other.hasFireworksInfo()) {
+          mergeFireworksInfo(other.getFireworksInfo());
         }
-        if (other.getUnk2700KGGCKHBIOED() != false) {
-          setUnk2700KGGCKHBIOED(other.getUnk2700KGGCKHBIOED());
+        if (other.getIsMiniEldritchDungeonOpen() != false) {
+          setIsMiniEldritchDungeonOpen(other.getIsMiniEldritchDungeonOpen());
         }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
         }
-        if (other.getUnk2700EOGEAIHJPFD() != false) {
-          setUnk2700EOGEAIHJPFD(other.getUnk2700EOGEAIHJPFD());
+        if (other.getIsTakenSkinReward() != false) {
+          setIsTakenSkinReward(other.getIsTakenSkinReward());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -803,511 +803,511 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH unk2700ONOHODJPIGK_;
+      private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH, emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.Builder, emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMHOrBuilder> unk2700ONOHODJPIGKBuilder_;
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> projectionInfoBuilder_;
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
-       * @return Whether the unk2700ONOHODJPIGK field is set.
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
+       * @return Whether the projectionInfo field is set.
        */
-      public boolean hasUnk2700ONOHODJPIGK() {
-        return unk2700ONOHODJPIGKBuilder_ != null || unk2700ONOHODJPIGK_ != null;
+      public boolean hasProjectionInfo() {
+        return projectionInfoBuilder_ != null || projectionInfo_ != null;
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
-       * @return The unk2700ONOHODJPIGK.
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
+       * @return The projectionInfo.
        */
-      public emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH getUnk2700ONOHODJPIGK() {
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
-          return unk2700ONOHODJPIGK_ == null ? emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.getDefaultInstance() : unk2700ONOHODJPIGK_;
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
+        if (projectionInfoBuilder_ == null) {
+          return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
         } else {
-          return unk2700ONOHODJPIGKBuilder_.getMessage();
+          return projectionInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
        */
-      public Builder setUnk2700ONOHODJPIGK(emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH value) {
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
+      public Builder setProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
+        if (projectionInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          unk2700ONOHODJPIGK_ = value;
+          projectionInfo_ = value;
           onChanged();
         } else {
-          unk2700ONOHODJPIGKBuilder_.setMessage(value);
+          projectionInfoBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
        */
-      public Builder setUnk2700ONOHODJPIGK(
-          emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.Builder builderForValue) {
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
-          unk2700ONOHODJPIGK_ = builderForValue.build();
+      public Builder setProjectionInfo(
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder builderForValue) {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = builderForValue.build();
           onChanged();
         } else {
-          unk2700ONOHODJPIGKBuilder_.setMessage(builderForValue.build());
+          projectionInfoBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
        */
-      public Builder mergeUnk2700ONOHODJPIGK(emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH value) {
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
-          if (unk2700ONOHODJPIGK_ != null) {
-            unk2700ONOHODJPIGK_ =
-              emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.newBuilder(unk2700ONOHODJPIGK_).mergeFrom(value).buildPartial();
+      public Builder mergeProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
+        if (projectionInfoBuilder_ == null) {
+          if (projectionInfo_ != null) {
+            projectionInfo_ =
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.newBuilder(projectionInfo_).mergeFrom(value).buildPartial();
           } else {
-            unk2700ONOHODJPIGK_ = value;
+            projectionInfo_ = value;
           }
           onChanged();
         } else {
-          unk2700ONOHODJPIGKBuilder_.mergeFrom(value);
+          projectionInfoBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
        */
-      public Builder clearUnk2700ONOHODJPIGK() {
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
-          unk2700ONOHODJPIGK_ = null;
+      public Builder clearProjectionInfo() {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = null;
           onChanged();
         } else {
-          unk2700ONOHODJPIGK_ = null;
-          unk2700ONOHODJPIGKBuilder_ = null;
+          projectionInfo_ = null;
+          projectionInfoBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.Builder getUnk2700ONOHODJPIGKBuilder() {
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder getProjectionInfoBuilder() {
         
         onChanged();
-        return getUnk2700ONOHODJPIGKFieldBuilder().getBuilder();
+        return getProjectionInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMHOrBuilder getUnk2700ONOHODJPIGKOrBuilder() {
-        if (unk2700ONOHODJPIGKBuilder_ != null) {
-          return unk2700ONOHODJPIGKBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
+        if (projectionInfoBuilder_ != null) {
+          return projectionInfoBuilder_.getMessageOrBuilder();
         } else {
-          return unk2700ONOHODJPIGK_ == null ?
-              emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.getDefaultInstance() : unk2700ONOHODJPIGK_;
+          return projectionInfo_ == null ?
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
         }
       }
       /**
-       * <code>.Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;</code>
+       * <code>.LanternProjectionInfo projection_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH, emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.Builder, emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMHOrBuilder> 
-          getUnk2700ONOHODJPIGKFieldBuilder() {
-        if (unk2700ONOHODJPIGKBuilder_ == null) {
-          unk2700ONOHODJPIGKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH, emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMH.Builder, emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.Unk2700_JCNIPOJMFMHOrBuilder>(
-                  getUnk2700ONOHODJPIGK(),
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> 
+          getProjectionInfoFieldBuilder() {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder>(
+                  getProjectionInfo(),
                   getParentForChildren(),
                   isClean());
-          unk2700ONOHODJPIGK_ = null;
+          projectionInfo_ = null;
         }
-        return unk2700ONOHODJPIGKBuilder_;
+        return projectionInfoBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL> unk2700PHKHIPLDOOA_ =
+      private java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> stageInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700PHKHIPLDOOAIsMutable() {
+      private void ensureStageInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700PHKHIPLDOOA_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL>(unk2700PHKHIPLDOOA_);
+          stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo>(stageInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder> unk2700PHKHIPLDOOABuilder_;
+          emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> stageInfoListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL> getUnk2700PHKHIPLDOOAList() {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700PHKHIPLDOOA_);
+      public java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> getStageInfoListList() {
+        if (stageInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(stageInfoList_);
         } else {
-          return unk2700PHKHIPLDOOABuilder_.getMessageList();
+          return stageInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public int getUnk2700PHKHIPLDOOACount() {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          return unk2700PHKHIPLDOOA_.size();
+      public int getStageInfoListCount() {
+        if (stageInfoListBuilder_ == null) {
+          return stageInfoList_.size();
         } else {
-          return unk2700PHKHIPLDOOABuilder_.getCount();
+          return stageInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL getUnk2700PHKHIPLDOOA(int index) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          return unk2700PHKHIPLDOOA_.get(index);
+      public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index) {
+        if (stageInfoListBuilder_ == null) {
+          return stageInfoList_.get(index);
         } else {
-          return unk2700PHKHIPLDOOABuilder_.getMessage(index);
+          return stageInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder setUnk2700PHKHIPLDOOA(
-          int index, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL value) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
+      public Builder setStageInfoList(
+          int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo value) {
+        if (stageInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700PHKHIPLDOOAIsMutable();
-          unk2700PHKHIPLDOOA_.set(index, value);
+          ensureStageInfoListIsMutable();
+          stageInfoList_.set(index, value);
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.setMessage(index, value);
+          stageInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder setUnk2700PHKHIPLDOOA(
-          int index, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder builderForValue) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          ensureUnk2700PHKHIPLDOOAIsMutable();
-          unk2700PHKHIPLDOOA_.set(index, builderForValue.build());
+      public Builder setStageInfoList(
+          int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder builderForValue) {
+        if (stageInfoListBuilder_ == null) {
+          ensureStageInfoListIsMutable();
+          stageInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.setMessage(index, builderForValue.build());
+          stageInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder addUnk2700PHKHIPLDOOA(emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL value) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
+      public Builder addStageInfoList(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo value) {
+        if (stageInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700PHKHIPLDOOAIsMutable();
-          unk2700PHKHIPLDOOA_.add(value);
+          ensureStageInfoListIsMutable();
+          stageInfoList_.add(value);
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.addMessage(value);
+          stageInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder addUnk2700PHKHIPLDOOA(
-          int index, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL value) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
+      public Builder addStageInfoList(
+          int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo value) {
+        if (stageInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700PHKHIPLDOOAIsMutable();
-          unk2700PHKHIPLDOOA_.add(index, value);
+          ensureStageInfoListIsMutable();
+          stageInfoList_.add(index, value);
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.addMessage(index, value);
+          stageInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder addUnk2700PHKHIPLDOOA(
-          emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder builderForValue) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          ensureUnk2700PHKHIPLDOOAIsMutable();
-          unk2700PHKHIPLDOOA_.add(builderForValue.build());
+      public Builder addStageInfoList(
+          emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder builderForValue) {
+        if (stageInfoListBuilder_ == null) {
+          ensureStageInfoListIsMutable();
+          stageInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.addMessage(builderForValue.build());
+          stageInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder addUnk2700PHKHIPLDOOA(
-          int index, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder builderForValue) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          ensureUnk2700PHKHIPLDOOAIsMutable();
-          unk2700PHKHIPLDOOA_.add(index, builderForValue.build());
+      public Builder addStageInfoList(
+          int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder builderForValue) {
+        if (stageInfoListBuilder_ == null) {
+          ensureStageInfoListIsMutable();
+          stageInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.addMessage(index, builderForValue.build());
+          stageInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder addAllUnk2700PHKHIPLDOOA(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL> values) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          ensureUnk2700PHKHIPLDOOAIsMutable();
+      public Builder addAllStageInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> values) {
+        if (stageInfoListBuilder_ == null) {
+          ensureStageInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700PHKHIPLDOOA_);
+              values, stageInfoList_);
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.addAllMessages(values);
+          stageInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder clearUnk2700PHKHIPLDOOA() {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          unk2700PHKHIPLDOOA_ = java.util.Collections.emptyList();
+      public Builder clearStageInfoList() {
+        if (stageInfoListBuilder_ == null) {
+          stageInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.clear();
+          stageInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public Builder removeUnk2700PHKHIPLDOOA(int index) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          ensureUnk2700PHKHIPLDOOAIsMutable();
-          unk2700PHKHIPLDOOA_.remove(index);
+      public Builder removeStageInfoList(int index) {
+        if (stageInfoListBuilder_ == null) {
+          ensureStageInfoListIsMutable();
+          stageInfoList_.remove(index);
           onChanged();
         } else {
-          unk2700PHKHIPLDOOABuilder_.remove(index);
+          stageInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder getUnk2700PHKHIPLDOOABuilder(
+      public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder getStageInfoListBuilder(
           int index) {
-        return getUnk2700PHKHIPLDOOAFieldBuilder().getBuilder(index);
+        return getStageInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder getUnk2700PHKHIPLDOOAOrBuilder(
+      public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
           int index) {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          return unk2700PHKHIPLDOOA_.get(index);  } else {
-          return unk2700PHKHIPLDOOABuilder_.getMessageOrBuilder(index);
+        if (stageInfoListBuilder_ == null) {
+          return stageInfoList_.get(index);  } else {
+          return stageInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder> 
-           getUnk2700PHKHIPLDOOAOrBuilderList() {
-        if (unk2700PHKHIPLDOOABuilder_ != null) {
-          return unk2700PHKHIPLDOOABuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
+           getStageInfoListOrBuilderList() {
+        if (stageInfoListBuilder_ != null) {
+          return stageInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700PHKHIPLDOOA_);
+          return java.util.Collections.unmodifiableList(stageInfoList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder addUnk2700PHKHIPLDOOABuilder() {
-        return getUnk2700PHKHIPLDOOAFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.getDefaultInstance());
+      public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder addStageInfoListBuilder() {
+        return getStageInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder addUnk2700PHKHIPLDOOABuilder(
+      public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder addStageInfoListBuilder(
           int index) {
-        return getUnk2700PHKHIPLDOOAFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.getDefaultInstance());
+        return getStageInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder> 
-           getUnk2700PHKHIPLDOOABuilderList() {
-        return getUnk2700PHKHIPLDOOAFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder> 
+           getStageInfoListBuilderList() {
+        return getStageInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder> 
-          getUnk2700PHKHIPLDOOAFieldBuilder() {
-        if (unk2700PHKHIPLDOOABuilder_ == null) {
-          unk2700PHKHIPLDOOABuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKL.Builder, emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.Unk2700_LLGDCAKMCKLOrBuilder>(
-                  unk2700PHKHIPLDOOA_,
+          emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
+          getStageInfoListFieldBuilder() {
+        if (stageInfoListBuilder_ == null) {
+          stageInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder>(
+                  stageInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700PHKHIPLDOOA_ = null;
+          stageInfoList_ = null;
         }
-        return unk2700PHKHIPLDOOABuilder_;
+        return stageInfoListBuilder_;
       }
 
-      private emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE unk2700MPOCLGBFNAK_;
+      private emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo fireworksInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE, emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.Builder, emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJEOrBuilder> unk2700MPOCLGBFNAKBuilder_;
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder> fireworksInfoBuilder_;
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
-       * @return Whether the unk2700MPOCLGBFNAK field is set.
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * @return Whether the fireworksInfo field is set.
        */
-      public boolean hasUnk2700MPOCLGBFNAK() {
-        return unk2700MPOCLGBFNAKBuilder_ != null || unk2700MPOCLGBFNAK_ != null;
+      public boolean hasFireworksInfo() {
+        return fireworksInfoBuilder_ != null || fireworksInfo_ != null;
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
-       * @return The unk2700MPOCLGBFNAK.
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * @return The fireworksInfo.
        */
-      public emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE getUnk2700MPOCLGBFNAK() {
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
-          return unk2700MPOCLGBFNAK_ == null ? emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.getDefaultInstance() : unk2700MPOCLGBFNAK_;
+      public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo() {
+        if (fireworksInfoBuilder_ == null) {
+          return fireworksInfo_ == null ? emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.getDefaultInstance() : fireworksInfo_;
         } else {
-          return unk2700MPOCLGBFNAKBuilder_.getMessage();
+          return fireworksInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
        */
-      public Builder setUnk2700MPOCLGBFNAK(emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE value) {
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
+      public Builder setFireworksInfo(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo value) {
+        if (fireworksInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          unk2700MPOCLGBFNAK_ = value;
+          fireworksInfo_ = value;
           onChanged();
         } else {
-          unk2700MPOCLGBFNAKBuilder_.setMessage(value);
+          fireworksInfoBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
        */
-      public Builder setUnk2700MPOCLGBFNAK(
-          emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.Builder builderForValue) {
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
-          unk2700MPOCLGBFNAK_ = builderForValue.build();
+      public Builder setFireworksInfo(
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder builderForValue) {
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfo_ = builderForValue.build();
           onChanged();
         } else {
-          unk2700MPOCLGBFNAKBuilder_.setMessage(builderForValue.build());
+          fireworksInfoBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
        */
-      public Builder mergeUnk2700MPOCLGBFNAK(emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE value) {
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
-          if (unk2700MPOCLGBFNAK_ != null) {
-            unk2700MPOCLGBFNAK_ =
-              emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.newBuilder(unk2700MPOCLGBFNAK_).mergeFrom(value).buildPartial();
+      public Builder mergeFireworksInfo(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo value) {
+        if (fireworksInfoBuilder_ == null) {
+          if (fireworksInfo_ != null) {
+            fireworksInfo_ =
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.newBuilder(fireworksInfo_).mergeFrom(value).buildPartial();
           } else {
-            unk2700MPOCLGBFNAK_ = value;
+            fireworksInfo_ = value;
           }
           onChanged();
         } else {
-          unk2700MPOCLGBFNAKBuilder_.mergeFrom(value);
+          fireworksInfoBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
        */
-      public Builder clearUnk2700MPOCLGBFNAK() {
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
-          unk2700MPOCLGBFNAK_ = null;
+      public Builder clearFireworksInfo() {
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfo_ = null;
           onChanged();
         } else {
-          unk2700MPOCLGBFNAK_ = null;
-          unk2700MPOCLGBFNAKBuilder_ = null;
+          fireworksInfo_ = null;
+          fireworksInfoBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.Builder getUnk2700MPOCLGBFNAKBuilder() {
+      public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder getFireworksInfoBuilder() {
         
         onChanged();
-        return getUnk2700MPOCLGBFNAKFieldBuilder().getBuilder();
+        return getFireworksInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJEOrBuilder getUnk2700MPOCLGBFNAKOrBuilder() {
-        if (unk2700MPOCLGBFNAKBuilder_ != null) {
-          return unk2700MPOCLGBFNAKBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder() {
+        if (fireworksInfoBuilder_ != null) {
+          return fireworksInfoBuilder_.getMessageOrBuilder();
         } else {
-          return unk2700MPOCLGBFNAK_ == null ?
-              emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.getDefaultInstance() : unk2700MPOCLGBFNAK_;
+          return fireworksInfo_ == null ?
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.getDefaultInstance() : fireworksInfo_;
         }
       }
       /**
-       * <code>.Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE, emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.Builder, emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJEOrBuilder> 
-          getUnk2700MPOCLGBFNAKFieldBuilder() {
-        if (unk2700MPOCLGBFNAKBuilder_ == null) {
-          unk2700MPOCLGBFNAKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE, emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJE.Builder, emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.Unk2700_MJGFEHOMKJEOrBuilder>(
-                  getUnk2700MPOCLGBFNAK(),
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder> 
+          getFireworksInfoFieldBuilder() {
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder>(
+                  getFireworksInfo(),
                   getParentForChildren(),
                   isClean());
-          unk2700MPOCLGBFNAK_ = null;
+          fireworksInfo_ = null;
         }
-        return unk2700MPOCLGBFNAKBuilder_;
+        return fireworksInfoBuilder_;
       }
 
-      private boolean unk2700KGGCKHBIOED_ ;
+      private boolean isMiniEldritchDungeonOpen_ ;
       /**
-       * <code>bool Unk2700_KGGCKHBIOED = 2;</code>
-       * @return The unk2700KGGCKHBIOED.
+       * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
+       * @return The isMiniEldritchDungeonOpen.
        */
       @java.lang.Override
-      public boolean getUnk2700KGGCKHBIOED() {
-        return unk2700KGGCKHBIOED_;
+      public boolean getIsMiniEldritchDungeonOpen() {
+        return isMiniEldritchDungeonOpen_;
       }
       /**
-       * <code>bool Unk2700_KGGCKHBIOED = 2;</code>
-       * @param value The unk2700KGGCKHBIOED to set.
+       * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
+       * @param value The isMiniEldritchDungeonOpen to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700KGGCKHBIOED(boolean value) {
+      public Builder setIsMiniEldritchDungeonOpen(boolean value) {
         
-        unk2700KGGCKHBIOED_ = value;
+        isMiniEldritchDungeonOpen_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_KGGCKHBIOED = 2;</code>
+       * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700KGGCKHBIOED() {
+      public Builder clearIsMiniEldritchDungeonOpen() {
         
-        unk2700KGGCKHBIOED_ = false;
+        isMiniEldritchDungeonOpen_ = false;
         onChanged();
         return this;
       }
@@ -1343,33 +1343,33 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
 
-      private boolean unk2700EOGEAIHJPFD_ ;
+      private boolean isTakenSkinReward_ ;
       /**
-       * <code>bool Unk2700_EOGEAIHJPFD = 6;</code>
-       * @return The unk2700EOGEAIHJPFD.
+       * <code>bool is_taken_skin_reward = 6;</code>
+       * @return The isTakenSkinReward.
        */
       @java.lang.Override
-      public boolean getUnk2700EOGEAIHJPFD() {
-        return unk2700EOGEAIHJPFD_;
+      public boolean getIsTakenSkinReward() {
+        return isTakenSkinReward_;
       }
       /**
-       * <code>bool Unk2700_EOGEAIHJPFD = 6;</code>
-       * @param value The unk2700EOGEAIHJPFD to set.
+       * <code>bool is_taken_skin_reward = 6;</code>
+       * @param value The isTakenSkinReward to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700EOGEAIHJPFD(boolean value) {
+      public Builder setIsTakenSkinReward(boolean value) {
         
-        unk2700EOGEAIHJPFD_ = value;
+        isTakenSkinReward_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_EOGEAIHJPFD = 6;</code>
+       * <code>bool is_taken_skin_reward = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700EOGEAIHJPFD() {
+      public Builder clearIsTakenSkinReward() {
         
-        unk2700EOGEAIHJPFD_ = false;
+        isTakenSkinReward_ = false;
         onChanged();
         return this;
       }
@@ -1440,34 +1440,34 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#LanternRiteActivityDetailInfo.proto\032\031U" +
-      "nk2700_JCNIPOJMFMH.proto\032\031Unk2700_LLGDCA" +
-      "KMCKL.proto\032\031Unk2700_MJGFEHOMKJE.proto\"\215" +
-      "\002\n\035LanternRiteActivityDetailInfo\0221\n\023Unk2" +
-      "700_ONOHODJPIGK\030\r \001(\0132\024.Unk2700_JCNIPOJM" +
-      "FMH\0221\n\023Unk2700_PHKHIPLDOOA\030\005 \003(\0132\024.Unk27" +
-      "00_LLGDCAKMCKL\0221\n\023Unk2700_MPOCLGBFNAK\030\010 " +
-      "\001(\0132\024.Unk2700_MJGFEHOMKJE\022\033\n\023Unk2700_KGG" +
-      "CKHBIOED\030\002 \001(\010\022\031\n\021is_content_closed\030\016 \001(" +
-      "\010\022\033\n\023Unk2700_EOGEAIHJPFD\030\006 \001(\010B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n#LanternRiteActivityDetailInfo.proto\032\033L" +
+      "anternProjectionInfo.proto\032\036LanternRiteF" +
+      "ireworksInfo.proto\032\026SalvageStageInfo.pro" +
+      "to\"\217\002\n\035LanternRiteActivityDetailInfo\022/\n\017" +
+      "projection_info\030\r \001(\0132\026.LanternProjectio" +
+      "nInfo\022*\n\017stage_info_list\030\005 \003(\0132\021.Salvage" +
+      "StageInfo\0221\n\016fireworks_info\030\010 \001(\0132\031.Lant" +
+      "ernRiteFireworksInfo\022%\n\035is_mini_eldritch" +
+      "_dungeon_open\030\002 \001(\010\022\031\n\021is_content_closed" +
+      "\030\016 \001(\010\022\034\n\024is_taken_skin_reward\030\006 \001(\010B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.getDescriptor(),
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SalvageStageInfoOuterClass.getDescriptor(),
         });
     internal_static_LanternRiteActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_LanternRiteActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteActivityDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2700ONOHODJPIGK", "Unk2700PHKHIPLDOOA", "Unk2700MPOCLGBFNAK", "Unk2700KGGCKHBIOED", "IsContentClosed", "Unk2700EOGEAIHJPFD", });
-    emu.grasscutter.net.proto.Unk2700JCNIPOJMFMH.getDescriptor();
-    emu.grasscutter.net.proto.Unk2700LLGDCAKMCKL.getDescriptor();
-    emu.grasscutter.net.proto.Unk2700MJGFEHOMKJE.getDescriptor();
+        new java.lang.String[] { "ProjectionInfo", "StageInfoList", "FireworksInfo", "IsMiniEldritchDungeonOpen", "IsContentClosed", "IsTakenSkinReward", });
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SalvageStageInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

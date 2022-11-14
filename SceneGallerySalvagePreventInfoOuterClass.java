@@ -19,10 +19,10 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk2700_FFCCLGIFGIP = 7;</code>
-     * @return The unk2700FFCCLGIFGIP.
+     * <code>uint32 monster_count = 7;</code>
+     * @return The monsterCount.
      */
-    int getUnk2700FFCCLGIFGIP();
+    int getMonsterCount();
   }
   /**
    * Protobuf type {@code SceneGallerySalvagePreventInfo}
@@ -71,7 +71,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
               break;
             case 56: {
 
-              unk2700FFCCLGIFGIP_ = input.readUInt32();
+              monsterCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -106,15 +106,15 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
               emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo.class, emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo.Builder.class);
     }
 
-    public static final int UNK2700_FFCCLGIFGIP_FIELD_NUMBER = 7;
-    private int unk2700FFCCLGIFGIP_;
+    public static final int MONSTER_COUNT_FIELD_NUMBER = 7;
+    private int monsterCount_;
     /**
-     * <code>uint32 Unk2700_FFCCLGIFGIP = 7;</code>
-     * @return The unk2700FFCCLGIFGIP.
+     * <code>uint32 monster_count = 7;</code>
+     * @return The monsterCount.
      */
     @java.lang.Override
-    public int getUnk2700FFCCLGIFGIP() {
-      return unk2700FFCCLGIFGIP_;
+    public int getMonsterCount() {
+      return monsterCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +131,8 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700FFCCLGIFGIP_ != 0) {
-        output.writeUInt32(7, unk2700FFCCLGIFGIP_);
+      if (monsterCount_ != 0) {
+        output.writeUInt32(7, monsterCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +143,9 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700FFCCLGIFGIP_ != 0) {
+      if (monsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, unk2700FFCCLGIFGIP_);
+          .computeUInt32Size(7, monsterCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -162,8 +162,8 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo other = (emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo) obj;
 
-      if (getUnk2700FFCCLGIFGIP()
-          != other.getUnk2700FFCCLGIFGIP()) return false;
+      if (getMonsterCount()
+          != other.getMonsterCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,8 +175,8 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_FFCCLGIFGIP_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700FFCCLGIFGIP();
+      hash = (37 * hash) + MONSTER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getMonsterCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,7 +310,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700FFCCLGIFGIP_ = 0;
+        monsterCount_ = 0;
 
         return this;
       }
@@ -338,7 +338,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo result = new emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo(this);
-        result.unk2700FFCCLGIFGIP_ = unk2700FFCCLGIFGIP_;
+        result.monsterCount_ = monsterCount_;
         onBuilt();
         return result;
       }
@@ -387,8 +387,8 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo.getDefaultInstance()) return this;
-        if (other.getUnk2700FFCCLGIFGIP() != 0) {
-          setUnk2700FFCCLGIFGIP(other.getUnk2700FFCCLGIFGIP());
+        if (other.getMonsterCount() != 0) {
+          setMonsterCount(other.getMonsterCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -419,33 +419,33 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
         return this;
       }
 
-      private int unk2700FFCCLGIFGIP_ ;
+      private int monsterCount_ ;
       /**
-       * <code>uint32 Unk2700_FFCCLGIFGIP = 7;</code>
-       * @return The unk2700FFCCLGIFGIP.
+       * <code>uint32 monster_count = 7;</code>
+       * @return The monsterCount.
        */
       @java.lang.Override
-      public int getUnk2700FFCCLGIFGIP() {
-        return unk2700FFCCLGIFGIP_;
+      public int getMonsterCount() {
+        return monsterCount_;
       }
       /**
-       * <code>uint32 Unk2700_FFCCLGIFGIP = 7;</code>
-       * @param value The unk2700FFCCLGIFGIP to set.
+       * <code>uint32 monster_count = 7;</code>
+       * @param value The monsterCount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700FFCCLGIFGIP(int value) {
+      public Builder setMonsterCount(int value) {
         
-        unk2700FFCCLGIFGIP_ = value;
+        monsterCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_FFCCLGIFGIP = 7;</code>
+       * <code>uint32 monster_count = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700FFCCLGIFGIP() {
+      public Builder clearMonsterCount() {
         
-        unk2700FFCCLGIFGIP_ = 0;
+        monsterCount_ = 0;
         onChanged();
         return this;
       }
@@ -516,10 +516,10 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$SceneGallerySalvagePreventInfo.proto\"=" +
-      "\n\036SceneGallerySalvagePreventInfo\022\033\n\023Unk2" +
-      "700_FFCCLGIFGIP\030\007 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n$SceneGallerySalvagePreventInfo.proto\"7" +
+      "\n\036SceneGallerySalvagePreventInfo\022\025\n\rmons" +
+      "ter_count\030\007 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -530,7 +530,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
     internal_static_SceneGallerySalvagePreventInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGallerySalvagePreventInfo_descriptor,
-        new java.lang.String[] { "Unk2700FFCCLGIFGIP", });
+        new java.lang.String[] { "MonsterCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

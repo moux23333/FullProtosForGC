@@ -47,7 +47,6 @@ public final class EntityAuthorityChangeNotifyOuterClass {
    * CmdId: 394
    * EnetChannelId: 0
    * EnetIsReliable: true
-   * IsAllowClient: true
    * </pre>
    *
    * Protobuf type {@code EntityAuthorityChangeNotify}
@@ -342,7 +341,6 @@ public final class EntityAuthorityChangeNotifyOuterClass {
      * CmdId: 394
      * EnetChannelId: 0
      * EnetIsReliable: true
-     * IsAllowClient: true
      * </pre>
      *
      * Protobuf type {@code EntityAuthorityChangeNotify}

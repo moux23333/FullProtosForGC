@@ -19,10 +19,10 @@ public final class DoGachaRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk3100_JKILPCKLNPI = 155;</code>
-     * @return The unk3100JKILPCKLNPI.
+     * <code>uint32 cur_schedule_daily_gacha_times = 155;</code>
+     * @return The curScheduleDailyGachaTimes.
      */
-    int getUnk3100JKILPCKLNPI();
+    int getCurScheduleDailyGachaTimes();
 
     /**
      * <code>uint32 cost_item_num = 10;</code>
@@ -97,16 +97,16 @@ public final class DoGachaRspOuterClass {
     int getGachaTimes();
 
     /**
-     * <code>bool Unk2700_LEEPELHDING = 1435;</code>
-     * @return The unk2700LEEPELHDING.
+     * <code>bool is_under_minors_restrict = 1435;</code>
+     * @return The isUnderMinorsRestrict.
      */
-    boolean getUnk2700LEEPELHDING();
+    boolean getIsUnderMinorsRestrict();
 
     /**
-     * <code>bool Unk3100_IDBLFJDHHPI = 1868;</code>
-     * @return The unk3100IDBLFJDHHPI.
+     * <code>bool is_under_general_restrict = 1868;</code>
+     * @return The isUnderGeneralRestrict.
      */
-    boolean getUnk3100IDBLFJDHHPI();
+    boolean getIsUnderGeneralRestrict();
 
     /**
      * <code>uint32 gacha_type = 12;</code>
@@ -127,10 +127,10 @@ public final class DoGachaRspOuterClass {
     int getCostItemId();
 
     /**
-     * <code>uint32 Unk2700_OJKKHDLEDCI = 1240;</code>
-     * @return The unk2700OJKKHDLEDCI.
+     * <code>uint32 daily_gacha_times = 1240;</code>
+     * @return The dailyGachaTimes.
      */
-    int getUnk2700OJKKHDLEDCI();
+    int getDailyGachaTimes();
 
     /**
      * <code>uint32 left_gacha_times = 6;</code>
@@ -284,22 +284,22 @@ public final class DoGachaRspOuterClass {
             }
             case 1240: {
 
-              unk3100JKILPCKLNPI_ = input.readUInt32();
+              curScheduleDailyGachaTimes_ = input.readUInt32();
               break;
             }
             case 9920: {
 
-              unk2700OJKKHDLEDCI_ = input.readUInt32();
+              dailyGachaTimes_ = input.readUInt32();
               break;
             }
             case 11480: {
 
-              unk2700LEEPELHDING_ = input.readBool();
+              isUnderMinorsRestrict_ = input.readBool();
               break;
             }
             case 14944: {
 
-              unk3100IDBLFJDHHPI_ = input.readBool();
+              isUnderGeneralRestrict_ = input.readBool();
               break;
             }
             default: {
@@ -337,15 +337,15 @@ public final class DoGachaRspOuterClass {
               emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp.class, emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp.Builder.class);
     }
 
-    public static final int UNK3100_JKILPCKLNPI_FIELD_NUMBER = 155;
-    private int unk3100JKILPCKLNPI_;
+    public static final int CUR_SCHEDULE_DAILY_GACHA_TIMES_FIELD_NUMBER = 155;
+    private int curScheduleDailyGachaTimes_;
     /**
-     * <code>uint32 Unk3100_JKILPCKLNPI = 155;</code>
-     * @return The unk3100JKILPCKLNPI.
+     * <code>uint32 cur_schedule_daily_gacha_times = 155;</code>
+     * @return The curScheduleDailyGachaTimes.
      */
     @java.lang.Override
-    public int getUnk3100JKILPCKLNPI() {
-      return unk3100JKILPCKLNPI_;
+    public int getCurScheduleDailyGachaTimes() {
+      return curScheduleDailyGachaTimes_;
     }
 
     public static final int COST_ITEM_NUM_FIELD_NUMBER = 10;
@@ -476,26 +476,26 @@ public final class DoGachaRspOuterClass {
       return gachaTimes_;
     }
 
-    public static final int UNK2700_LEEPELHDING_FIELD_NUMBER = 1435;
-    private boolean unk2700LEEPELHDING_;
+    public static final int IS_UNDER_MINORS_RESTRICT_FIELD_NUMBER = 1435;
+    private boolean isUnderMinorsRestrict_;
     /**
-     * <code>bool Unk2700_LEEPELHDING = 1435;</code>
-     * @return The unk2700LEEPELHDING.
+     * <code>bool is_under_minors_restrict = 1435;</code>
+     * @return The isUnderMinorsRestrict.
      */
     @java.lang.Override
-    public boolean getUnk2700LEEPELHDING() {
-      return unk2700LEEPELHDING_;
+    public boolean getIsUnderMinorsRestrict() {
+      return isUnderMinorsRestrict_;
     }
 
-    public static final int UNK3100_IDBLFJDHHPI_FIELD_NUMBER = 1868;
-    private boolean unk3100IDBLFJDHHPI_;
+    public static final int IS_UNDER_GENERAL_RESTRICT_FIELD_NUMBER = 1868;
+    private boolean isUnderGeneralRestrict_;
     /**
-     * <code>bool Unk3100_IDBLFJDHHPI = 1868;</code>
-     * @return The unk3100IDBLFJDHHPI.
+     * <code>bool is_under_general_restrict = 1868;</code>
+     * @return The isUnderGeneralRestrict.
      */
     @java.lang.Override
-    public boolean getUnk3100IDBLFJDHHPI() {
-      return unk3100IDBLFJDHHPI_;
+    public boolean getIsUnderGeneralRestrict() {
+      return isUnderGeneralRestrict_;
     }
 
     public static final int GACHA_TYPE_FIELD_NUMBER = 12;
@@ -531,15 +531,15 @@ public final class DoGachaRspOuterClass {
       return costItemId_;
     }
 
-    public static final int UNK2700_OJKKHDLEDCI_FIELD_NUMBER = 1240;
-    private int unk2700OJKKHDLEDCI_;
+    public static final int DAILY_GACHA_TIMES_FIELD_NUMBER = 1240;
+    private int dailyGachaTimes_;
     /**
-     * <code>uint32 Unk2700_OJKKHDLEDCI = 1240;</code>
-     * @return The unk2700OJKKHDLEDCI.
+     * <code>uint32 daily_gacha_times = 1240;</code>
+     * @return The dailyGachaTimes.
      */
     @java.lang.Override
-    public int getUnk2700OJKKHDLEDCI() {
-      return unk2700OJKKHDLEDCI_;
+    public int getDailyGachaTimes() {
+      return dailyGachaTimes_;
     }
 
     public static final int LEFT_GACHA_TIMES_FIELD_NUMBER = 6;
@@ -634,17 +634,17 @@ public final class DoGachaRspOuterClass {
       for (int i = 0; i < gachaItemList_.size(); i++) {
         output.writeMessage(15, gachaItemList_.get(i));
       }
-      if (unk3100JKILPCKLNPI_ != 0) {
-        output.writeUInt32(155, unk3100JKILPCKLNPI_);
+      if (curScheduleDailyGachaTimes_ != 0) {
+        output.writeUInt32(155, curScheduleDailyGachaTimes_);
       }
-      if (unk2700OJKKHDLEDCI_ != 0) {
-        output.writeUInt32(1240, unk2700OJKKHDLEDCI_);
+      if (dailyGachaTimes_ != 0) {
+        output.writeUInt32(1240, dailyGachaTimes_);
       }
-      if (unk2700LEEPELHDING_ != false) {
-        output.writeBool(1435, unk2700LEEPELHDING_);
+      if (isUnderMinorsRestrict_ != false) {
+        output.writeBool(1435, isUnderMinorsRestrict_);
       }
-      if (unk3100IDBLFJDHHPI_ != false) {
-        output.writeBool(1868, unk3100IDBLFJDHHPI_);
+      if (isUnderGeneralRestrict_ != false) {
+        output.writeBool(1868, isUnderGeneralRestrict_);
       }
       unknownFields.writeTo(output);
     }
@@ -715,21 +715,21 @@ public final class DoGachaRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(15, gachaItemList_.get(i));
       }
-      if (unk3100JKILPCKLNPI_ != 0) {
+      if (curScheduleDailyGachaTimes_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(155, unk3100JKILPCKLNPI_);
+          .computeUInt32Size(155, curScheduleDailyGachaTimes_);
       }
-      if (unk2700OJKKHDLEDCI_ != 0) {
+      if (dailyGachaTimes_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1240, unk2700OJKKHDLEDCI_);
+          .computeUInt32Size(1240, dailyGachaTimes_);
       }
-      if (unk2700LEEPELHDING_ != false) {
+      if (isUnderMinorsRestrict_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1435, unk2700LEEPELHDING_);
+          .computeBoolSize(1435, isUnderMinorsRestrict_);
       }
-      if (unk3100IDBLFJDHHPI_ != false) {
+      if (isUnderGeneralRestrict_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1868, unk3100IDBLFJDHHPI_);
+          .computeBoolSize(1868, isUnderGeneralRestrict_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -746,8 +746,8 @@ public final class DoGachaRspOuterClass {
       }
       emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp other = (emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp) obj;
 
-      if (getUnk3100JKILPCKLNPI()
-          != other.getUnk3100JKILPCKLNPI()) return false;
+      if (getCurScheduleDailyGachaTimes()
+          != other.getCurScheduleDailyGachaTimes()) return false;
       if (getCostItemNum()
           != other.getCostItemNum()) return false;
       if (getWishMaxProgress()
@@ -766,18 +766,18 @@ public final class DoGachaRspOuterClass {
           != other.getTenCostItemId()) return false;
       if (getGachaTimes()
           != other.getGachaTimes()) return false;
-      if (getUnk2700LEEPELHDING()
-          != other.getUnk2700LEEPELHDING()) return false;
-      if (getUnk3100IDBLFJDHHPI()
-          != other.getUnk3100IDBLFJDHHPI()) return false;
+      if (getIsUnderMinorsRestrict()
+          != other.getIsUnderMinorsRestrict()) return false;
+      if (getIsUnderGeneralRestrict()
+          != other.getIsUnderGeneralRestrict()) return false;
       if (getGachaType()
           != other.getGachaType()) return false;
       if (getGachaTimesLimit()
           != other.getGachaTimesLimit()) return false;
       if (getCostItemId()
           != other.getCostItemId()) return false;
-      if (getUnk2700OJKKHDLEDCI()
-          != other.getUnk2700OJKKHDLEDCI()) return false;
+      if (getDailyGachaTimes()
+          != other.getDailyGachaTimes()) return false;
       if (getLeftGachaTimes()
           != other.getLeftGachaTimes()) return false;
       if (getNewGachaRandom()
@@ -795,8 +795,8 @@ public final class DoGachaRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3100_JKILPCKLNPI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3100JKILPCKLNPI();
+      hash = (37 * hash) + CUR_SCHEDULE_DAILY_GACHA_TIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getCurScheduleDailyGachaTimes();
       hash = (37 * hash) + COST_ITEM_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getCostItemNum();
       hash = (37 * hash) + WISH_MAX_PROGRESS_FIELD_NUMBER;
@@ -817,20 +817,20 @@ public final class DoGachaRspOuterClass {
       hash = (53 * hash) + getTenCostItemId();
       hash = (37 * hash) + GACHA_TIMES_FIELD_NUMBER;
       hash = (53 * hash) + getGachaTimes();
-      hash = (37 * hash) + UNK2700_LEEPELHDING_FIELD_NUMBER;
+      hash = (37 * hash) + IS_UNDER_MINORS_RESTRICT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700LEEPELHDING());
-      hash = (37 * hash) + UNK3100_IDBLFJDHHPI_FIELD_NUMBER;
+          getIsUnderMinorsRestrict());
+      hash = (37 * hash) + IS_UNDER_GENERAL_RESTRICT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3100IDBLFJDHHPI());
+          getIsUnderGeneralRestrict());
       hash = (37 * hash) + GACHA_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getGachaType();
       hash = (37 * hash) + GACHA_TIMES_LIMIT_FIELD_NUMBER;
       hash = (53 * hash) + getGachaTimesLimit();
       hash = (37 * hash) + COST_ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCostItemId();
-      hash = (37 * hash) + UNK2700_OJKKHDLEDCI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700OJKKHDLEDCI();
+      hash = (37 * hash) + DAILY_GACHA_TIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getDailyGachaTimes();
       hash = (37 * hash) + LEFT_GACHA_TIMES_FIELD_NUMBER;
       hash = (53 * hash) + getLeftGachaTimes();
       hash = (37 * hash) + NEW_GACHA_RANDOM_FIELD_NUMBER;
@@ -977,7 +977,7 @@ public final class DoGachaRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3100JKILPCKLNPI_ = 0;
+        curScheduleDailyGachaTimes_ = 0;
 
         costItemNum_ = 0;
 
@@ -1001,9 +1001,9 @@ public final class DoGachaRspOuterClass {
 
         gachaTimes_ = 0;
 
-        unk2700LEEPELHDING_ = false;
+        isUnderMinorsRestrict_ = false;
 
-        unk3100IDBLFJDHHPI_ = false;
+        isUnderGeneralRestrict_ = false;
 
         gachaType_ = 0;
 
@@ -1011,7 +1011,7 @@ public final class DoGachaRspOuterClass {
 
         costItemId_ = 0;
 
-        unk2700OJKKHDLEDCI_ = 0;
+        dailyGachaTimes_ = 0;
 
         leftGachaTimes_ = 0;
 
@@ -1046,7 +1046,7 @@ public final class DoGachaRspOuterClass {
       public emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp buildPartial() {
         emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp result = new emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp(this);
         int from_bitField0_ = bitField0_;
-        result.unk3100JKILPCKLNPI_ = unk3100JKILPCKLNPI_;
+        result.curScheduleDailyGachaTimes_ = curScheduleDailyGachaTimes_;
         result.costItemNum_ = costItemNum_;
         result.wishMaxProgress_ = wishMaxProgress_;
         result.wishItemId_ = wishItemId_;
@@ -1064,12 +1064,12 @@ public final class DoGachaRspOuterClass {
         }
         result.tenCostItemId_ = tenCostItemId_;
         result.gachaTimes_ = gachaTimes_;
-        result.unk2700LEEPELHDING_ = unk2700LEEPELHDING_;
-        result.unk3100IDBLFJDHHPI_ = unk3100IDBLFJDHHPI_;
+        result.isUnderMinorsRestrict_ = isUnderMinorsRestrict_;
+        result.isUnderGeneralRestrict_ = isUnderGeneralRestrict_;
         result.gachaType_ = gachaType_;
         result.gachaTimesLimit_ = gachaTimesLimit_;
         result.costItemId_ = costItemId_;
-        result.unk2700OJKKHDLEDCI_ = unk2700OJKKHDLEDCI_;
+        result.dailyGachaTimes_ = dailyGachaTimes_;
         result.leftGachaTimes_ = leftGachaTimes_;
         result.newGachaRandom_ = newGachaRandom_;
         result.gachaScheduleId_ = gachaScheduleId_;
@@ -1121,8 +1121,8 @@ public final class DoGachaRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp other) {
         if (other == emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp.getDefaultInstance()) return this;
-        if (other.getUnk3100JKILPCKLNPI() != 0) {
-          setUnk3100JKILPCKLNPI(other.getUnk3100JKILPCKLNPI());
+        if (other.getCurScheduleDailyGachaTimes() != 0) {
+          setCurScheduleDailyGachaTimes(other.getCurScheduleDailyGachaTimes());
         }
         if (other.getCostItemNum() != 0) {
           setCostItemNum(other.getCostItemNum());
@@ -1174,11 +1174,11 @@ public final class DoGachaRspOuterClass {
         if (other.getGachaTimes() != 0) {
           setGachaTimes(other.getGachaTimes());
         }
-        if (other.getUnk2700LEEPELHDING() != false) {
-          setUnk2700LEEPELHDING(other.getUnk2700LEEPELHDING());
+        if (other.getIsUnderMinorsRestrict() != false) {
+          setIsUnderMinorsRestrict(other.getIsUnderMinorsRestrict());
         }
-        if (other.getUnk3100IDBLFJDHHPI() != false) {
-          setUnk3100IDBLFJDHHPI(other.getUnk3100IDBLFJDHHPI());
+        if (other.getIsUnderGeneralRestrict() != false) {
+          setIsUnderGeneralRestrict(other.getIsUnderGeneralRestrict());
         }
         if (other.getGachaType() != 0) {
           setGachaType(other.getGachaType());
@@ -1189,8 +1189,8 @@ public final class DoGachaRspOuterClass {
         if (other.getCostItemId() != 0) {
           setCostItemId(other.getCostItemId());
         }
-        if (other.getUnk2700OJKKHDLEDCI() != 0) {
-          setUnk2700OJKKHDLEDCI(other.getUnk2700OJKKHDLEDCI());
+        if (other.getDailyGachaTimes() != 0) {
+          setDailyGachaTimes(other.getDailyGachaTimes());
         }
         if (other.getLeftGachaTimes() != 0) {
           setLeftGachaTimes(other.getLeftGachaTimes());
@@ -1231,33 +1231,33 @@ public final class DoGachaRspOuterClass {
       }
       private int bitField0_;
 
-      private int unk3100JKILPCKLNPI_ ;
+      private int curScheduleDailyGachaTimes_ ;
       /**
-       * <code>uint32 Unk3100_JKILPCKLNPI = 155;</code>
-       * @return The unk3100JKILPCKLNPI.
+       * <code>uint32 cur_schedule_daily_gacha_times = 155;</code>
+       * @return The curScheduleDailyGachaTimes.
        */
       @java.lang.Override
-      public int getUnk3100JKILPCKLNPI() {
-        return unk3100JKILPCKLNPI_;
+      public int getCurScheduleDailyGachaTimes() {
+        return curScheduleDailyGachaTimes_;
       }
       /**
-       * <code>uint32 Unk3100_JKILPCKLNPI = 155;</code>
-       * @param value The unk3100JKILPCKLNPI to set.
+       * <code>uint32 cur_schedule_daily_gacha_times = 155;</code>
+       * @param value The curScheduleDailyGachaTimes to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3100JKILPCKLNPI(int value) {
+      public Builder setCurScheduleDailyGachaTimes(int value) {
         
-        unk3100JKILPCKLNPI_ = value;
+        curScheduleDailyGachaTimes_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3100_JKILPCKLNPI = 155;</code>
+       * <code>uint32 cur_schedule_daily_gacha_times = 155;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3100JKILPCKLNPI() {
+      public Builder clearCurScheduleDailyGachaTimes() {
         
-        unk3100JKILPCKLNPI_ = 0;
+        curScheduleDailyGachaTimes_ = 0;
         onChanged();
         return this;
       }
@@ -1750,64 +1750,64 @@ public final class DoGachaRspOuterClass {
         return this;
       }
 
-      private boolean unk2700LEEPELHDING_ ;
+      private boolean isUnderMinorsRestrict_ ;
       /**
-       * <code>bool Unk2700_LEEPELHDING = 1435;</code>
-       * @return The unk2700LEEPELHDING.
+       * <code>bool is_under_minors_restrict = 1435;</code>
+       * @return The isUnderMinorsRestrict.
        */
       @java.lang.Override
-      public boolean getUnk2700LEEPELHDING() {
-        return unk2700LEEPELHDING_;
+      public boolean getIsUnderMinorsRestrict() {
+        return isUnderMinorsRestrict_;
       }
       /**
-       * <code>bool Unk2700_LEEPELHDING = 1435;</code>
-       * @param value The unk2700LEEPELHDING to set.
+       * <code>bool is_under_minors_restrict = 1435;</code>
+       * @param value The isUnderMinorsRestrict to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700LEEPELHDING(boolean value) {
+      public Builder setIsUnderMinorsRestrict(boolean value) {
         
-        unk2700LEEPELHDING_ = value;
+        isUnderMinorsRestrict_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_LEEPELHDING = 1435;</code>
+       * <code>bool is_under_minors_restrict = 1435;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700LEEPELHDING() {
+      public Builder clearIsUnderMinorsRestrict() {
         
-        unk2700LEEPELHDING_ = false;
+        isUnderMinorsRestrict_ = false;
         onChanged();
         return this;
       }
 
-      private boolean unk3100IDBLFJDHHPI_ ;
+      private boolean isUnderGeneralRestrict_ ;
       /**
-       * <code>bool Unk3100_IDBLFJDHHPI = 1868;</code>
-       * @return The unk3100IDBLFJDHHPI.
+       * <code>bool is_under_general_restrict = 1868;</code>
+       * @return The isUnderGeneralRestrict.
        */
       @java.lang.Override
-      public boolean getUnk3100IDBLFJDHHPI() {
-        return unk3100IDBLFJDHHPI_;
+      public boolean getIsUnderGeneralRestrict() {
+        return isUnderGeneralRestrict_;
       }
       /**
-       * <code>bool Unk3100_IDBLFJDHHPI = 1868;</code>
-       * @param value The unk3100IDBLFJDHHPI to set.
+       * <code>bool is_under_general_restrict = 1868;</code>
+       * @param value The isUnderGeneralRestrict to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3100IDBLFJDHHPI(boolean value) {
+      public Builder setIsUnderGeneralRestrict(boolean value) {
         
-        unk3100IDBLFJDHHPI_ = value;
+        isUnderGeneralRestrict_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3100_IDBLFJDHHPI = 1868;</code>
+       * <code>bool is_under_general_restrict = 1868;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3100IDBLFJDHHPI() {
+      public Builder clearIsUnderGeneralRestrict() {
         
-        unk3100IDBLFJDHHPI_ = false;
+        isUnderGeneralRestrict_ = false;
         onChanged();
         return this;
       }
@@ -1905,33 +1905,33 @@ public final class DoGachaRspOuterClass {
         return this;
       }
 
-      private int unk2700OJKKHDLEDCI_ ;
+      private int dailyGachaTimes_ ;
       /**
-       * <code>uint32 Unk2700_OJKKHDLEDCI = 1240;</code>
-       * @return The unk2700OJKKHDLEDCI.
+       * <code>uint32 daily_gacha_times = 1240;</code>
+       * @return The dailyGachaTimes.
        */
       @java.lang.Override
-      public int getUnk2700OJKKHDLEDCI() {
-        return unk2700OJKKHDLEDCI_;
+      public int getDailyGachaTimes() {
+        return dailyGachaTimes_;
       }
       /**
-       * <code>uint32 Unk2700_OJKKHDLEDCI = 1240;</code>
-       * @param value The unk2700OJKKHDLEDCI to set.
+       * <code>uint32 daily_gacha_times = 1240;</code>
+       * @param value The dailyGachaTimes to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700OJKKHDLEDCI(int value) {
+      public Builder setDailyGachaTimes(int value) {
         
-        unk2700OJKKHDLEDCI_ = value;
+        dailyGachaTimes_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_OJKKHDLEDCI = 1240;</code>
+       * <code>uint32 daily_gacha_times = 1240;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700OJKKHDLEDCI() {
+      public Builder clearDailyGachaTimes() {
         
-        unk2700OJKKHDLEDCI_ = 0;
+        dailyGachaTimes_ = 0;
         onChanged();
         return this;
       }
@@ -2095,21 +2095,21 @@ public final class DoGachaRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020DoGachaRsp.proto\032\017GachaItem.proto\"\367\003\n\n" +
-      "DoGachaRsp\022\034\n\023Unk3100_JKILPCKLNPI\030\233\001 \001(\r" +
-      "\022\025\n\rcost_item_num\030\n \001(\r\022\031\n\021wish_max_prog" +
-      "ress\030\t \001(\r\022\024\n\014wish_item_id\030\010 \001(\r\022\017\n\007retc" +
-      "ode\030\r \001(\005\022\031\n\021ten_cost_item_num\030\003 \001(\r\022\025\n\r" +
-      "wish_progress\030\002 \001(\r\022#\n\017gacha_item_list\030\017" +
-      " \003(\0132\n.GachaItem\022\030\n\020ten_cost_item_id\030\007 \001" +
-      "(\r\022\023\n\013gacha_times\030\004 \001(\r\022\034\n\023Unk2700_LEEPE" +
-      "LHDING\030\233\013 \001(\010\022\034\n\023Unk3100_IDBLFJDHHPI\030\314\016 " +
-      "\001(\010\022\022\n\ngacha_type\030\014 \001(\r\022\031\n\021gacha_times_l" +
-      "imit\030\001 \001(\r\022\024\n\014cost_item_id\030\016 \001(\r\022\034\n\023Unk2" +
-      "700_OJKKHDLEDCI\030\330\t \001(\r\022\030\n\020left_gacha_tim" +
-      "es\030\006 \001(\r\022\030\n\020new_gacha_random\030\013 \001(\r\022\031\n\021ga" +
-      "cha_schedule_id\030\005 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\020DoGachaRsp.proto\032\017GachaItem.proto\"\213\004\n\n" +
+      "DoGachaRsp\022\'\n\036cur_schedule_daily_gacha_t" +
+      "imes\030\233\001 \001(\r\022\025\n\rcost_item_num\030\n \001(\r\022\031\n\021wi" +
+      "sh_max_progress\030\t \001(\r\022\024\n\014wish_item_id\030\010 " +
+      "\001(\r\022\017\n\007retcode\030\r \001(\005\022\031\n\021ten_cost_item_nu" +
+      "m\030\003 \001(\r\022\025\n\rwish_progress\030\002 \001(\r\022#\n\017gacha_" +
+      "item_list\030\017 \003(\0132\n.GachaItem\022\030\n\020ten_cost_" +
+      "item_id\030\007 \001(\r\022\023\n\013gacha_times\030\004 \001(\r\022!\n\030is" +
+      "_under_minors_restrict\030\233\013 \001(\010\022\"\n\031is_unde" +
+      "r_general_restrict\030\314\016 \001(\010\022\022\n\ngacha_type\030" +
+      "\014 \001(\r\022\031\n\021gacha_times_limit\030\001 \001(\r\022\024\n\014cost" +
+      "_item_id\030\016 \001(\r\022\032\n\021daily_gacha_times\030\330\t \001" +
+      "(\r\022\030\n\020left_gacha_times\030\006 \001(\r\022\030\n\020new_gach" +
+      "a_random\030\013 \001(\r\022\031\n\021gacha_schedule_id\030\005 \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2121,7 +2121,7 @@ public final class DoGachaRspOuterClass {
     internal_static_DoGachaRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DoGachaRsp_descriptor,
-        new java.lang.String[] { "Unk3100JKILPCKLNPI", "CostItemNum", "WishMaxProgress", "WishItemId", "Retcode", "TenCostItemNum", "WishProgress", "GachaItemList", "TenCostItemId", "GachaTimes", "Unk2700LEEPELHDING", "Unk3100IDBLFJDHHPI", "GachaType", "GachaTimesLimit", "CostItemId", "Unk2700OJKKHDLEDCI", "LeftGachaTimes", "NewGachaRandom", "GachaScheduleId", });
+        new java.lang.String[] { "CurScheduleDailyGachaTimes", "CostItemNum", "WishMaxProgress", "WishItemId", "Retcode", "TenCostItemNum", "WishProgress", "GachaItemList", "TenCostItemId", "GachaTimes", "IsUnderMinorsRestrict", "IsUnderGeneralRestrict", "GachaType", "GachaTimesLimit", "CostItemId", "DailyGachaTimes", "LeftGachaTimes", "NewGachaRandom", "GachaScheduleId", });
     emu.grasscutter.net.proto.GachaItemOuterClass.getDescriptor();
   }
 

@@ -19,27 +19,27 @@ public final class SeekFurnitureGalleryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO> 
+    java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> 
         getRecordListList();
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO getRecordList(int index);
+    emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord getRecordList(int index);
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
     int getRecordListCount();
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> 
         getRecordListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder getRecordListOrBuilder(
+    emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder getRecordListOrBuilder(
         int index);
   }
   /**
@@ -91,11 +91,11 @@ public final class SeekFurnitureGalleryInfoOuterClass {
               break;
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO>();
+                recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord>();
                 mutable_bitField0_ |= 0x00000001;
               }
               recordList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -134,41 +134,41 @@ public final class SeekFurnitureGalleryInfoOuterClass {
     }
 
     public static final int RECORD_LIST_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO> recordList_;
+    private java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> recordList_;
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO> getRecordListList() {
+    public java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> getRecordListList() {
       return recordList_;
     }
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> 
         getRecordListOrBuilderList() {
       return recordList_;
     }
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
     @java.lang.Override
     public int getRecordListCount() {
       return recordList_.size();
     }
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO getRecordList(int index) {
+    public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord getRecordList(int index) {
       return recordList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+     * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder getRecordListOrBuilder(
+    public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder getRecordListOrBuilder(
         int index) {
       return recordList_.get(index);
     }
@@ -515,22 +515,22 @@ public final class SeekFurnitureGalleryInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO> recordList_ =
+      private java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> recordList_ =
         java.util.Collections.emptyList();
       private void ensureRecordListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO>(recordList_);
+          recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord>(recordList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder> recordListBuilder_;
+          emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> recordListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO> getRecordListList() {
+      public java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> getRecordListList() {
         if (recordListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(recordList_);
         } else {
@@ -538,7 +538,7 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public int getRecordListCount() {
         if (recordListBuilder_ == null) {
@@ -548,9 +548,9 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO getRecordList(int index) {
+      public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord getRecordList(int index) {
         if (recordListBuilder_ == null) {
           return recordList_.get(index);
         } else {
@@ -558,10 +558,10 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder setRecordList(
-          int index, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO value) {
+          int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +575,10 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder setRecordList(
-          int index, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.set(index, builderForValue.build());
@@ -589,9 +589,9 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public Builder addRecordList(emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO value) {
+      public Builder addRecordList(emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +605,10 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder addRecordList(
-          int index, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO value) {
+          int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +622,10 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder addRecordList(
-          emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder builderForValue) {
+          emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.add(builderForValue.build());
@@ -636,10 +636,10 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder addRecordList(
-          int index, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.add(index, builderForValue.build());
@@ -650,10 +650,10 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder addAllRecordList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord> values) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +665,7 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder clearRecordList() {
         if (recordListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
       public Builder removeRecordList(int index) {
         if (recordListBuilder_ == null) {
@@ -691,16 +691,16 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder getRecordListBuilder(
+      public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder getRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder getRecordListOrBuilder(
+      public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder getRecordListOrBuilder(
           int index) {
         if (recordListBuilder_ == null) {
           return recordList_.get(index);  } else {
@@ -708,9 +708,9 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> 
            getRecordListOrBuilderList() {
         if (recordListBuilder_ != null) {
           return recordListBuilder_.getMessageOrBuilderList();
@@ -719,33 +719,33 @@ public final class SeekFurnitureGalleryInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder addRecordListBuilder() {
+      public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder addRecordListBuilder() {
         return getRecordListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.getDefaultInstance());
+            emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder addRecordListBuilder(
+      public emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder addRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.getDefaultInstance());
+            index, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_JCBJHCFEONO record_list = 5;</code>
+       * <code>repeated .HomeSeekFurnitureOneRecord record_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder> 
            getRecordListBuilderList() {
         return getRecordListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder> 
+          emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder> 
           getRecordListFieldBuilder() {
         if (recordListBuilder_ == null) {
           recordListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONO.Builder, emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.Unk2700_JCBJHCFEONOOrBuilder>(
+              emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecord.Builder, emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.HomeSeekFurnitureOneRecordOrBuilder>(
                   recordList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +821,16 @@ public final class SeekFurnitureGalleryInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036SeekFurnitureGalleryInfo.proto\032\031Unk270" +
-      "0_JCBJHCFEONO.proto\"E\n\030SeekFurnitureGall" +
-      "eryInfo\022)\n\013record_list\030\005 \003(\0132\024.Unk2700_J" +
-      "CBJHCFEONOB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\036SeekFurnitureGalleryInfo.proto\032 HomeSe" +
+      "ekFurnitureOneRecord.proto\"L\n\030SeekFurnit" +
+      "ureGalleryInfo\0220\n\013record_list\030\005 \003(\0132\033.Ho" +
+      "meSeekFurnitureOneRecordB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.getDescriptor(),
+          emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.getDescriptor(),
         });
     internal_static_SeekFurnitureGalleryInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +838,7 @@ public final class SeekFurnitureGalleryInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeekFurnitureGalleryInfo_descriptor,
         new java.lang.String[] { "RecordList", });
-    emu.grasscutter.net.proto.Unk2700JCBJHCFEONO.getDescriptor();
+    emu.grasscutter.net.proto.HomeSeekFurnitureOneRecordOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

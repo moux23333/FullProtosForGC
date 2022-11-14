@@ -76,21 +76,21 @@ public final class AvatarDataNotifyOuterClass {
         int key);
 
     /**
-     * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-     * @return A list containing the unk3000NIGPICLBHMA.
+     * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+     * @return A list containing the backupAvatarTeamOrderList.
      */
-    java.util.List<java.lang.Integer> getUnk3000NIGPICLBHMAList();
+    java.util.List<java.lang.Integer> getBackupAvatarTeamOrderListList();
     /**
-     * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-     * @return The count of unk3000NIGPICLBHMA.
+     * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+     * @return The count of backupAvatarTeamOrderList.
      */
-    int getUnk3000NIGPICLBHMACount();
+    int getBackupAvatarTeamOrderListCount();
     /**
-     * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
+     * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
      * @param index The index of the element to return.
-     * @return The unk3000NIGPICLBHMA at the given index.
+     * @return The backupAvatarTeamOrderList at the given index.
      */
-    int getUnk3000NIGPICLBHMA(int index);
+    int getBackupAvatarTeamOrderList(int index);
 
     /**
      * <code>repeated uint64 temp_avatar_guid_list = 12;</code>
@@ -176,7 +176,7 @@ public final class AvatarDataNotifyOuterClass {
     }
     private AvatarDataNotify() {
       ownedCostumeList_ = emptyIntList();
-      unk3000NIGPICLBHMA_ = emptyIntList();
+      backupAvatarTeamOrderList_ = emptyIntList();
       tempAvatarGuidList_ = emptyLongList();
       ownedFlycloakList_ = emptyIntList();
       avatarList_ = java.util.Collections.emptyList();
@@ -268,21 +268,21 @@ public final class AvatarDataNotifyOuterClass {
             }
             case 72: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                unk3000NIGPICLBHMA_ = newIntList();
+                backupAvatarTeamOrderList_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
               }
-              unk3000NIGPICLBHMA_.addInt(input.readUInt32());
+              backupAvatarTeamOrderList_.addInt(input.readUInt32());
               break;
             }
             case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                unk3000NIGPICLBHMA_ = newIntList();
+                backupAvatarTeamOrderList_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk3000NIGPICLBHMA_.addInt(input.readUInt32());
+                backupAvatarTeamOrderList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -351,7 +351,7 @@ public final class AvatarDataNotifyOuterClass {
           avatarList_ = java.util.Collections.unmodifiableList(avatarList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          unk3000NIGPICLBHMA_.makeImmutable(); // C
+          backupAvatarTeamOrderList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           ownedCostumeList_.makeImmutable(); // C
@@ -508,33 +508,33 @@ public final class AvatarDataNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int UNK3000_NIGPICLBHMA_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList unk3000NIGPICLBHMA_;
+    public static final int BACKUP_AVATAR_TEAM_ORDER_LIST_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList backupAvatarTeamOrderList_;
     /**
-     * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-     * @return A list containing the unk3000NIGPICLBHMA.
+     * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+     * @return A list containing the backupAvatarTeamOrderList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk3000NIGPICLBHMAList() {
-      return unk3000NIGPICLBHMA_;
+        getBackupAvatarTeamOrderListList() {
+      return backupAvatarTeamOrderList_;
     }
     /**
-     * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-     * @return The count of unk3000NIGPICLBHMA.
+     * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+     * @return The count of backupAvatarTeamOrderList.
      */
-    public int getUnk3000NIGPICLBHMACount() {
-      return unk3000NIGPICLBHMA_.size();
+    public int getBackupAvatarTeamOrderListCount() {
+      return backupAvatarTeamOrderList_.size();
     }
     /**
-     * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
+     * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
      * @param index The index of the element to return.
-     * @return The unk3000NIGPICLBHMA at the given index.
+     * @return The backupAvatarTeamOrderList at the given index.
      */
-    public int getUnk3000NIGPICLBHMA(int index) {
-      return unk3000NIGPICLBHMA_.getInt(index);
+    public int getBackupAvatarTeamOrderList(int index) {
+      return backupAvatarTeamOrderList_.getInt(index);
     }
-    private int unk3000NIGPICLBHMAMemoizedSerializedSize = -1;
+    private int backupAvatarTeamOrderListMemoizedSerializedSize = -1;
 
     public static final int TEMP_AVATAR_GUID_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.LongList tempAvatarGuidList_;
@@ -680,12 +680,12 @@ public final class AvatarDataNotifyOuterClass {
       if (chooseAvatarGuid_ != 0L) {
         output.writeUInt64(8, chooseAvatarGuid_);
       }
-      if (getUnk3000NIGPICLBHMAList().size() > 0) {
+      if (getBackupAvatarTeamOrderListList().size() > 0) {
         output.writeUInt32NoTag(74);
-        output.writeUInt32NoTag(unk3000NIGPICLBHMAMemoizedSerializedSize);
+        output.writeUInt32NoTag(backupAvatarTeamOrderListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk3000NIGPICLBHMA_.size(); i++) {
-        output.writeUInt32NoTag(unk3000NIGPICLBHMA_.getInt(i));
+      for (int i = 0; i < backupAvatarTeamOrderList_.size(); i++) {
+        output.writeUInt32NoTag(backupAvatarTeamOrderList_.getInt(i));
       }
       if (getOwnedCostumeListList().size() > 0) {
         output.writeUInt32NoTag(90);
@@ -748,17 +748,17 @@ public final class AvatarDataNotifyOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk3000NIGPICLBHMA_.size(); i++) {
+        for (int i = 0; i < backupAvatarTeamOrderList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk3000NIGPICLBHMA_.getInt(i));
+            .computeUInt32SizeNoTag(backupAvatarTeamOrderList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk3000NIGPICLBHMAList().isEmpty()) {
+        if (!getBackupAvatarTeamOrderListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk3000NIGPICLBHMAMemoizedSerializedSize = dataSize;
+        backupAvatarTeamOrderListMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
@@ -809,8 +809,8 @@ public final class AvatarDataNotifyOuterClass {
           != other.getChooseAvatarGuid()) return false;
       if (!internalGetAvatarTeamMap().equals(
           other.internalGetAvatarTeamMap())) return false;
-      if (!getUnk3000NIGPICLBHMAList()
-          .equals(other.getUnk3000NIGPICLBHMAList())) return false;
+      if (!getBackupAvatarTeamOrderListList()
+          .equals(other.getBackupAvatarTeamOrderListList())) return false;
       if (!getTempAvatarGuidListList()
           .equals(other.getTempAvatarGuidListList())) return false;
       if (!getOwnedFlycloakListList()
@@ -841,9 +841,9 @@ public final class AvatarDataNotifyOuterClass {
         hash = (37 * hash) + AVATAR_TEAM_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetAvatarTeamMap().hashCode();
       }
-      if (getUnk3000NIGPICLBHMACount() > 0) {
-        hash = (37 * hash) + UNK3000_NIGPICLBHMA_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk3000NIGPICLBHMAList().hashCode();
+      if (getBackupAvatarTeamOrderListCount() > 0) {
+        hash = (37 * hash) + BACKUP_AVATAR_TEAM_ORDER_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getBackupAvatarTeamOrderListList().hashCode();
       }
       if (getTempAvatarGuidListCount() > 0) {
         hash = (37 * hash) + TEMP_AVATAR_GUID_LIST_FIELD_NUMBER;
@@ -1026,7 +1026,7 @@ public final class AvatarDataNotifyOuterClass {
         chooseAvatarGuid_ = 0L;
 
         internalGetMutableAvatarTeamMap().clear();
-        unk3000NIGPICLBHMA_ = emptyIntList();
+        backupAvatarTeamOrderList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
         tempAvatarGuidList_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -1076,10 +1076,10 @@ public final class AvatarDataNotifyOuterClass {
         result.avatarTeamMap_ = internalGetAvatarTeamMap();
         result.avatarTeamMap_.makeImmutable();
         if (((bitField0_ & 0x00000004) != 0)) {
-          unk3000NIGPICLBHMA_.makeImmutable();
+          backupAvatarTeamOrderList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.unk3000NIGPICLBHMA_ = unk3000NIGPICLBHMA_;
+        result.backupAvatarTeamOrderList_ = backupAvatarTeamOrderList_;
         if (((bitField0_ & 0x00000008) != 0)) {
           tempAvatarGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -1163,13 +1163,13 @@ public final class AvatarDataNotifyOuterClass {
         }
         internalGetMutableAvatarTeamMap().mergeFrom(
             other.internalGetAvatarTeamMap());
-        if (!other.unk3000NIGPICLBHMA_.isEmpty()) {
-          if (unk3000NIGPICLBHMA_.isEmpty()) {
-            unk3000NIGPICLBHMA_ = other.unk3000NIGPICLBHMA_;
+        if (!other.backupAvatarTeamOrderList_.isEmpty()) {
+          if (backupAvatarTeamOrderList_.isEmpty()) {
+            backupAvatarTeamOrderList_ = other.backupAvatarTeamOrderList_;
             bitField0_ = (bitField0_ & ~0x00000004);
           } else {
-            ensureUnk3000NIGPICLBHMAIsMutable();
-            unk3000NIGPICLBHMA_.addAll(other.unk3000NIGPICLBHMA_);
+            ensureBackupAvatarTeamOrderListIsMutable();
+            backupAvatarTeamOrderList_.addAll(other.backupAvatarTeamOrderList_);
           }
           onChanged();
         }
@@ -1490,80 +1490,80 @@ public final class AvatarDataNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk3000NIGPICLBHMA_ = emptyIntList();
-      private void ensureUnk3000NIGPICLBHMAIsMutable() {
+      private com.google.protobuf.Internal.IntList backupAvatarTeamOrderList_ = emptyIntList();
+      private void ensureBackupAvatarTeamOrderListIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          unk3000NIGPICLBHMA_ = mutableCopy(unk3000NIGPICLBHMA_);
+          backupAvatarTeamOrderList_ = mutableCopy(backupAvatarTeamOrderList_);
           bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-       * @return A list containing the unk3000NIGPICLBHMA.
+       * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+       * @return A list containing the backupAvatarTeamOrderList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk3000NIGPICLBHMAList() {
+          getBackupAvatarTeamOrderListList() {
         return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(unk3000NIGPICLBHMA_) : unk3000NIGPICLBHMA_;
+                 java.util.Collections.unmodifiableList(backupAvatarTeamOrderList_) : backupAvatarTeamOrderList_;
       }
       /**
-       * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-       * @return The count of unk3000NIGPICLBHMA.
+       * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+       * @return The count of backupAvatarTeamOrderList.
        */
-      public int getUnk3000NIGPICLBHMACount() {
-        return unk3000NIGPICLBHMA_.size();
+      public int getBackupAvatarTeamOrderListCount() {
+        return backupAvatarTeamOrderList_.size();
       }
       /**
-       * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
+       * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
        * @param index The index of the element to return.
-       * @return The unk3000NIGPICLBHMA at the given index.
+       * @return The backupAvatarTeamOrderList at the given index.
        */
-      public int getUnk3000NIGPICLBHMA(int index) {
-        return unk3000NIGPICLBHMA_.getInt(index);
+      public int getBackupAvatarTeamOrderList(int index) {
+        return backupAvatarTeamOrderList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
+       * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
        * @param index The index to set the value at.
-       * @param value The unk3000NIGPICLBHMA to set.
+       * @param value The backupAvatarTeamOrderList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000NIGPICLBHMA(
+      public Builder setBackupAvatarTeamOrderList(
           int index, int value) {
-        ensureUnk3000NIGPICLBHMAIsMutable();
-        unk3000NIGPICLBHMA_.setInt(index, value);
+        ensureBackupAvatarTeamOrderListIsMutable();
+        backupAvatarTeamOrderList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-       * @param value The unk3000NIGPICLBHMA to add.
+       * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+       * @param value The backupAvatarTeamOrderList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk3000NIGPICLBHMA(int value) {
-        ensureUnk3000NIGPICLBHMAIsMutable();
-        unk3000NIGPICLBHMA_.addInt(value);
+      public Builder addBackupAvatarTeamOrderList(int value) {
+        ensureBackupAvatarTeamOrderListIsMutable();
+        backupAvatarTeamOrderList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
-       * @param values The unk3000NIGPICLBHMA to add.
+       * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
+       * @param values The backupAvatarTeamOrderList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk3000NIGPICLBHMA(
+      public Builder addAllBackupAvatarTeamOrderList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk3000NIGPICLBHMAIsMutable();
+        ensureBackupAvatarTeamOrderListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk3000NIGPICLBHMA_);
+            values, backupAvatarTeamOrderList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk3000_NIGPICLBHMA = 9;</code>
+       * <code>repeated uint32 backup_avatar_team_order_list = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000NIGPICLBHMA() {
-        unk3000NIGPICLBHMA_ = emptyIntList();
+      public Builder clearBackupAvatarTeamOrderList() {
+        backupAvatarTeamOrderList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
@@ -2070,17 +2070,17 @@ public final class AvatarDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026AvatarDataNotify.proto\032\020AvatarInfo.pro" +
-      "to\032\020AvatarTeam.proto\"\343\002\n\020AvatarDataNotif" +
+      "to\032\020AvatarTeam.proto\"\355\002\n\020AvatarDataNotif" +
       "y\022\032\n\022owned_costume_list\030\013 \003(\r\022\032\n\022choose_" +
       "avatar_guid\030\010 \001(\004\022=\n\017avatar_team_map\030\007 \003" +
       "(\0132$.AvatarDataNotify.AvatarTeamMapEntry" +
-      "\022\033\n\023Unk3000_NIGPICLBHMA\030\t \003(\r\022\035\n\025temp_av" +
-      "atar_guid_list\030\014 \003(\004\022\033\n\023owned_flycloak_l" +
-      "ist\030\001 \003(\r\022 \n\013avatar_list\030\006 \003(\0132\013.AvatarI" +
-      "nfo\022\032\n\022cur_avatar_team_id\030\002 \001(\r\032A\n\022Avata" +
-      "rTeamMapEntry\022\013\n\003key\030\001 \001(\r\022\032\n\005value\030\002 \001(" +
-      "\0132\013.AvatarTeam:\0028\001B\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\022%\n\035backup_avatar_team_order_list\030\t \003(\r\022" +
+      "\035\n\025temp_avatar_guid_list\030\014 \003(\004\022\033\n\023owned_" +
+      "flycloak_list\030\001 \003(\r\022 \n\013avatar_list\030\006 \003(\013" +
+      "2\013.AvatarInfo\022\032\n\022cur_avatar_team_id\030\002 \001(" +
+      "\r\032A\n\022AvatarTeamMapEntry\022\013\n\003key\030\001 \001(\r\022\032\n\005" +
+      "value\030\002 \001(\0132\013.AvatarTeam:\0028\001B\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2093,7 +2093,7 @@ public final class AvatarDataNotifyOuterClass {
     internal_static_AvatarDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarDataNotify_descriptor,
-        new java.lang.String[] { "OwnedCostumeList", "ChooseAvatarGuid", "AvatarTeamMap", "Unk3000NIGPICLBHMA", "TempAvatarGuidList", "OwnedFlycloakList", "AvatarList", "CurAvatarTeamId", });
+        new java.lang.String[] { "OwnedCostumeList", "ChooseAvatarGuid", "AvatarTeamMap", "BackupAvatarTeamOrderList", "TempAvatarGuidList", "OwnedFlycloakList", "AvatarList", "CurAvatarTeamId", });
     internal_static_AvatarDataNotify_AvatarTeamMapEntry_descriptor =
       internal_static_AvatarDataNotify_descriptor.getNestedTypes().get(0);
     internal_static_AvatarDataNotify_AvatarTeamMapEntry_fieldAccessorTable = new

@@ -165,9 +165,9 @@ public final class PlayerQuitFromMpNotifyOuterClass {
        */
       QUIT_REASON_KICK_BY_PLAY(9),
       /**
-       * <code>QUIT_REASON_Unk2800_FDECHAHJFDA = 10;</code>
+       * <code>QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED = 10;</code>
        */
-      QUIT_REASON_Unk2800_FDECHAHJFDA(10),
+      QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED(10),
       UNRECOGNIZED(-1),
       ;
 
@@ -212,9 +212,9 @@ public final class PlayerQuitFromMpNotifyOuterClass {
        */
       public static final int QUIT_REASON_KICK_BY_PLAY_VALUE = 9;
       /**
-       * <code>QUIT_REASON_Unk2800_FDECHAHJFDA = 10;</code>
+       * <code>QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED = 10;</code>
        */
-      public static final int QUIT_REASON_Unk2800_FDECHAHJFDA_VALUE = 10;
+      public static final int QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED_VALUE = 10;
 
 
       public final int getNumber() {
@@ -251,7 +251,7 @@ public final class PlayerQuitFromMpNotifyOuterClass {
           case 7: return QUIT_REASON_KICK_BY_HOST_ENTER_HOME;
           case 8: return QUIT_REASON_HOST_SCENE_INVALID;
           case 9: return QUIT_REASON_KICK_BY_PLAY;
-          case 10: return QUIT_REASON_Unk2800_FDECHAHJFDA;
+          case 10: return QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED;
           default: return null;
         }
       }
@@ -754,9 +754,9 @@ public final class PlayerQuitFromMpNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034PlayerQuitFromMpNotify.proto\"\317\003\n\026Playe" +
+      "\n\034PlayerQuitFromMpNotify.proto\"\345\003\n\026Playe" +
       "rQuitFromMpNotify\0222\n\006reason\030\013 \001(\0162\".Play" +
-      "erQuitFromMpNotify.QuitReason\"\200\003\n\nQuitRe" +
+      "erQuitFromMpNotify.QuitReason\"\226\003\n\nQuitRe" +
       "ason\022\027\n\023QUIT_REASON_INVALID\020\000\022$\n QUIT_RE" +
       "ASON_HOST_NO_OTHER_PLAYER\020\001\022\034\n\030QUIT_REAS" +
       "ON_KICK_BY_HOST\020\002\022 \n\034QUIT_REASON_BACK_TO" +
@@ -765,9 +765,9 @@ public final class PlayerQuitFromMpNotifyOuterClass {
       "CK\020\005\022\032\n\026QUIT_REASON_BE_BLOCKED\020\006\022\'\n#QUIT" +
       "_REASON_KICK_BY_HOST_ENTER_HOME\020\007\022\"\n\036QUI" +
       "T_REASON_HOST_SCENE_INVALID\020\010\022\034\n\030QUIT_RE" +
-      "ASON_KICK_BY_PLAY\020\t\022#\n\037QUIT_REASON_Unk28" +
-      "00_FDECHAHJFDA\020\nB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "ASON_KICK_BY_PLAY\020\t\0229\n5QUIT_REASON_KICK_" +
+      "BY_ISLAND_PARTY_GALLERY_START_FAILED\020\nB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

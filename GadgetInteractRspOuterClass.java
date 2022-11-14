@@ -882,8 +882,8 @@ public final class GadgetInteractRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GadgetInteractRsp.proto\032\022InteractType." +
-      "proto\032\021InterOpType.proto\"\226\001\n\021GadgetInter" +
+      "\n\027GadgetInteractRsp.proto\032\021InterOpType.p" +
+      "roto\032\022InteractType.proto\"\226\001\n\021GadgetInter" +
       "actRsp\022\030\n\020gadget_entity_id\030\n \001(\r\022$\n\rinte" +
       "ract_type\030\002 \001(\0162\r.InteractType\022\035\n\007op_typ" +
       "e\030\003 \001(\0162\014.InterOpType\022\017\n\007retcode\030\007 \001(\005\022\021" +
@@ -893,8 +893,8 @@ public final class GadgetInteractRspOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.InterOpTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor(),
         });
     internal_static_GadgetInteractRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -902,8 +902,8 @@ public final class GadgetInteractRspOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GadgetInteractRsp_descriptor,
         new java.lang.String[] { "GadgetEntityId", "InteractType", "OpType", "Retcode", "GadgetId", });
-    emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InterOpTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

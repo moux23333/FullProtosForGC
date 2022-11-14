@@ -42,10 +42,10 @@ public final class PathfindingEnterSceneReqOuterClass {
     int getActivityId(int index);
 
     /**
-     * <code>uint32 Unk2800_NCDFAFMGMIG = 15;</code>
-     * @return The unk2800NCDFAFMGMIG.
+     * <code>uint32 scene_tag_hash = 15;</code>
+     * @return The sceneTagHash.
      */
-    int getUnk2800NCDFAFMGMIG();
+    int getSceneTagHash();
 
     /**
      * <code>uint32 version = 6;</code>
@@ -84,10 +84,10 @@ public final class PathfindingEnterSceneReqOuterClass {
         int index);
 
     /**
-     * <code>uint32 Unk2800_MBDFGODMPFN = 4;</code>
-     * @return The unk2800MBDFGODMPFN.
+     * <code>uint32 polygon_id = 4;</code>
+     * @return The polygonId.
      */
-    int getUnk2800MBDFGODMPFN();
+    int getPolygonId();
   }
   /**
    * <pre>
@@ -146,7 +146,7 @@ public final class PathfindingEnterSceneReqOuterClass {
               break;
             case 32: {
 
-              unk2800MBDFGODMPFN_ = input.readUInt32();
+              polygonId_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -196,7 +196,7 @@ public final class PathfindingEnterSceneReqOuterClass {
             }
             case 120: {
 
-              unk2800NCDFAFMGMIG_ = input.readUInt32();
+              sceneTagHash_ = input.readUInt32();
               break;
             }
             default: {
@@ -276,15 +276,15 @@ public final class PathfindingEnterSceneReqOuterClass {
     }
     private int activityIdMemoizedSerializedSize = -1;
 
-    public static final int UNK2800_NCDFAFMGMIG_FIELD_NUMBER = 15;
-    private int unk2800NCDFAFMGMIG_;
+    public static final int SCENE_TAG_HASH_FIELD_NUMBER = 15;
+    private int sceneTagHash_;
     /**
-     * <code>uint32 Unk2800_NCDFAFMGMIG = 15;</code>
-     * @return The unk2800NCDFAFMGMIG.
+     * <code>uint32 scene_tag_hash = 15;</code>
+     * @return The sceneTagHash.
      */
     @java.lang.Override
-    public int getUnk2800NCDFAFMGMIG() {
-      return unk2800NCDFAFMGMIG_;
+    public int getSceneTagHash() {
+      return sceneTagHash_;
     }
 
     public static final int VERSION_FIELD_NUMBER = 6;
@@ -349,15 +349,15 @@ public final class PathfindingEnterSceneReqOuterClass {
       return obstacles_.get(index);
     }
 
-    public static final int UNK2800_MBDFGODMPFN_FIELD_NUMBER = 4;
-    private int unk2800MBDFGODMPFN_;
+    public static final int POLYGON_ID_FIELD_NUMBER = 4;
+    private int polygonId_;
     /**
-     * <code>uint32 Unk2800_MBDFGODMPFN = 4;</code>
-     * @return The unk2800MBDFGODMPFN.
+     * <code>uint32 polygon_id = 4;</code>
+     * @return The polygonId.
      */
     @java.lang.Override
-    public int getUnk2800MBDFGODMPFN() {
-      return unk2800MBDFGODMPFN_;
+    public int getPolygonId() {
+      return polygonId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -375,8 +375,8 @@ public final class PathfindingEnterSceneReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (unk2800MBDFGODMPFN_ != 0) {
-        output.writeUInt32(4, unk2800MBDFGODMPFN_);
+      if (polygonId_ != 0) {
+        output.writeUInt32(4, polygonId_);
       }
       if (version_ != 0) {
         output.writeUInt32(6, version_);
@@ -397,8 +397,8 @@ public final class PathfindingEnterSceneReqOuterClass {
       for (int i = 0; i < activityId_.size(); i++) {
         output.writeUInt32NoTag(activityId_.getInt(i));
       }
-      if (unk2800NCDFAFMGMIG_ != 0) {
-        output.writeUInt32(15, unk2800NCDFAFMGMIG_);
+      if (sceneTagHash_ != 0) {
+        output.writeUInt32(15, sceneTagHash_);
       }
       unknownFields.writeTo(output);
     }
@@ -409,9 +409,9 @@ public final class PathfindingEnterSceneReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2800MBDFGODMPFN_ != 0) {
+      if (polygonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, unk2800MBDFGODMPFN_);
+          .computeUInt32Size(4, polygonId_);
       }
       if (version_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -443,9 +443,9 @@ public final class PathfindingEnterSceneReqOuterClass {
         }
         activityIdMemoizedSerializedSize = dataSize;
       }
-      if (unk2800NCDFAFMGMIG_ != 0) {
+      if (sceneTagHash_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, unk2800NCDFAFMGMIG_);
+          .computeUInt32Size(15, sceneTagHash_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -466,16 +466,16 @@ public final class PathfindingEnterSceneReqOuterClass {
           != other.getSceneId()) return false;
       if (!getActivityIdList()
           .equals(other.getActivityIdList())) return false;
-      if (getUnk2800NCDFAFMGMIG()
-          != other.getUnk2800NCDFAFMGMIG()) return false;
+      if (getSceneTagHash()
+          != other.getSceneTagHash()) return false;
       if (getVersion()
           != other.getVersion()) return false;
       if (getIsEditor()
           != other.getIsEditor()) return false;
       if (!getObstaclesList()
           .equals(other.getObstaclesList())) return false;
-      if (getUnk2800MBDFGODMPFN()
-          != other.getUnk2800MBDFGODMPFN()) return false;
+      if (getPolygonId()
+          != other.getPolygonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -493,8 +493,8 @@ public final class PathfindingEnterSceneReqOuterClass {
         hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
         hash = (53 * hash) + getActivityIdList().hashCode();
       }
-      hash = (37 * hash) + UNK2800_NCDFAFMGMIG_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800NCDFAFMGMIG();
+      hash = (37 * hash) + SCENE_TAG_HASH_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneTagHash();
       hash = (37 * hash) + VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getVersion();
       hash = (37 * hash) + IS_EDITOR_FIELD_NUMBER;
@@ -504,8 +504,8 @@ public final class PathfindingEnterSceneReqOuterClass {
         hash = (37 * hash) + OBSTACLES_FIELD_NUMBER;
         hash = (53 * hash) + getObstaclesList().hashCode();
       }
-      hash = (37 * hash) + UNK2800_MBDFGODMPFN_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800MBDFGODMPFN();
+      hash = (37 * hash) + POLYGON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPolygonId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -651,7 +651,7 @@ public final class PathfindingEnterSceneReqOuterClass {
 
         activityId_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        unk2800NCDFAFMGMIG_ = 0;
+        sceneTagHash_ = 0;
 
         version_ = 0;
 
@@ -663,7 +663,7 @@ public final class PathfindingEnterSceneReqOuterClass {
         } else {
           obstaclesBuilder_.clear();
         }
-        unk2800MBDFGODMPFN_ = 0;
+        polygonId_ = 0;
 
         return this;
       }
@@ -698,7 +698,7 @@ public final class PathfindingEnterSceneReqOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.activityId_ = activityId_;
-        result.unk2800NCDFAFMGMIG_ = unk2800NCDFAFMGMIG_;
+        result.sceneTagHash_ = sceneTagHash_;
         result.version_ = version_;
         result.isEditor_ = isEditor_;
         if (obstaclesBuilder_ == null) {
@@ -710,7 +710,7 @@ public final class PathfindingEnterSceneReqOuterClass {
         } else {
           result.obstacles_ = obstaclesBuilder_.build();
         }
-        result.unk2800MBDFGODMPFN_ = unk2800MBDFGODMPFN_;
+        result.polygonId_ = polygonId_;
         onBuilt();
         return result;
       }
@@ -772,8 +772,8 @@ public final class PathfindingEnterSceneReqOuterClass {
           }
           onChanged();
         }
-        if (other.getUnk2800NCDFAFMGMIG() != 0) {
-          setUnk2800NCDFAFMGMIG(other.getUnk2800NCDFAFMGMIG());
+        if (other.getSceneTagHash() != 0) {
+          setSceneTagHash(other.getSceneTagHash());
         }
         if (other.getVersion() != 0) {
           setVersion(other.getVersion());
@@ -807,8 +807,8 @@ public final class PathfindingEnterSceneReqOuterClass {
             }
           }
         }
-        if (other.getUnk2800MBDFGODMPFN() != 0) {
-          setUnk2800MBDFGODMPFN(other.getUnk2800MBDFGODMPFN());
+        if (other.getPolygonId() != 0) {
+          setPolygonId(other.getPolygonId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -950,33 +950,33 @@ public final class PathfindingEnterSceneReqOuterClass {
         return this;
       }
 
-      private int unk2800NCDFAFMGMIG_ ;
+      private int sceneTagHash_ ;
       /**
-       * <code>uint32 Unk2800_NCDFAFMGMIG = 15;</code>
-       * @return The unk2800NCDFAFMGMIG.
+       * <code>uint32 scene_tag_hash = 15;</code>
+       * @return The sceneTagHash.
        */
       @java.lang.Override
-      public int getUnk2800NCDFAFMGMIG() {
-        return unk2800NCDFAFMGMIG_;
+      public int getSceneTagHash() {
+        return sceneTagHash_;
       }
       /**
-       * <code>uint32 Unk2800_NCDFAFMGMIG = 15;</code>
-       * @param value The unk2800NCDFAFMGMIG to set.
+       * <code>uint32 scene_tag_hash = 15;</code>
+       * @param value The sceneTagHash to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800NCDFAFMGMIG(int value) {
+      public Builder setSceneTagHash(int value) {
         
-        unk2800NCDFAFMGMIG_ = value;
+        sceneTagHash_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_NCDFAFMGMIG = 15;</code>
+       * <code>uint32 scene_tag_hash = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800NCDFAFMGMIG() {
+      public Builder clearSceneTagHash() {
         
-        unk2800NCDFAFMGMIG_ = 0;
+        sceneTagHash_ = 0;
         onChanged();
         return this;
       }
@@ -1283,33 +1283,33 @@ public final class PathfindingEnterSceneReqOuterClass {
         return obstaclesBuilder_;
       }
 
-      private int unk2800MBDFGODMPFN_ ;
+      private int polygonId_ ;
       /**
-       * <code>uint32 Unk2800_MBDFGODMPFN = 4;</code>
-       * @return The unk2800MBDFGODMPFN.
+       * <code>uint32 polygon_id = 4;</code>
+       * @return The polygonId.
        */
       @java.lang.Override
-      public int getUnk2800MBDFGODMPFN() {
-        return unk2800MBDFGODMPFN_;
+      public int getPolygonId() {
+        return polygonId_;
       }
       /**
-       * <code>uint32 Unk2800_MBDFGODMPFN = 4;</code>
-       * @param value The unk2800MBDFGODMPFN to set.
+       * <code>uint32 polygon_id = 4;</code>
+       * @param value The polygonId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800MBDFGODMPFN(int value) {
+      public Builder setPolygonId(int value) {
         
-        unk2800MBDFGODMPFN_ = value;
+        polygonId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_MBDFGODMPFN = 4;</code>
+       * <code>uint32 polygon_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800MBDFGODMPFN() {
+      public Builder clearPolygonId() {
         
-        unk2800MBDFGODMPFN_ = 0;
+        polygonId_ = 0;
         onChanged();
         return this;
       }
@@ -1381,13 +1381,12 @@ public final class PathfindingEnterSceneReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036PathfindingEnterSceneReq.proto\032\022Obstac" +
-      "leInfo.proto\"\301\001\n\030PathfindingEnterSceneRe" +
+      "leInfo.proto\"\263\001\n\030PathfindingEnterSceneRe" +
       "q\022\020\n\010scene_id\030\014 \001(\r\022\023\n\013activity_id\030\016 \003(\r" +
-      "\022\033\n\023Unk2800_NCDFAFMGMIG\030\017 \001(\r\022\017\n\007version" +
-      "\030\006 \001(\r\022\021\n\tis_editor\030\013 \001(\010\022 \n\tobstacles\030\r" +
-      " \003(\0132\r.ObstacleInfo\022\033\n\023Unk2800_MBDFGODMP" +
-      "FN\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\022\026\n\016scene_tag_hash\030\017 \001(\r\022\017\n\007version\030\006 \001(" +
+      "\r\022\021\n\tis_editor\030\013 \001(\010\022 \n\tobstacles\030\r \003(\0132" +
+      "\r.ObstacleInfo\022\022\n\npolygon_id\030\004 \001(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1399,7 +1398,7 @@ public final class PathfindingEnterSceneReqOuterClass {
     internal_static_PathfindingEnterSceneReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PathfindingEnterSceneReq_descriptor,
-        new java.lang.String[] { "SceneId", "ActivityId", "Unk2800NCDFAFMGMIG", "Version", "IsEditor", "Obstacles", "Unk2800MBDFGODMPFN", });
+        new java.lang.String[] { "SceneId", "ActivityId", "SceneTagHash", "Version", "IsEditor", "Obstacles", "PolygonId", });
     emu.grasscutter.net.proto.ObstacleInfoOuterClass.getDescriptor();
   }
 

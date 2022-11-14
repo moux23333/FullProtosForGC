@@ -25,10 +25,10 @@ public final class EvtSetAttackTargetInfoOuterClass {
     int getEntityId();
 
     /**
-     * <code>uint32 Unk2700_MPONBCMPCIH = 6;</code>
-     * @return The unk2700MPONBCMPCIH.
+     * <code>uint32 select_point_index = 6;</code>
+     * @return The selectPointIndex.
      */
-    int getUnk2700MPONBCMPCIH();
+    int getSelectPointIndex();
 
     /**
      * <code>uint32 attack_target_id = 7;</code>
@@ -83,7 +83,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
               break;
             case 48: {
 
-              unk2700MPONBCMPCIH_ = input.readUInt32();
+              selectPointIndex_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -139,15 +139,15 @@ public final class EvtSetAttackTargetInfoOuterClass {
       return entityId_;
     }
 
-    public static final int UNK2700_MPONBCMPCIH_FIELD_NUMBER = 6;
-    private int unk2700MPONBCMPCIH_;
+    public static final int SELECT_POINT_INDEX_FIELD_NUMBER = 6;
+    private int selectPointIndex_;
     /**
-     * <code>uint32 Unk2700_MPONBCMPCIH = 6;</code>
-     * @return The unk2700MPONBCMPCIH.
+     * <code>uint32 select_point_index = 6;</code>
+     * @return The selectPointIndex.
      */
     @java.lang.Override
-    public int getUnk2700MPONBCMPCIH() {
-      return unk2700MPONBCMPCIH_;
+    public int getSelectPointIndex() {
+      return selectPointIndex_;
     }
 
     public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 7;
@@ -175,8 +175,8 @@ public final class EvtSetAttackTargetInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700MPONBCMPCIH_ != 0) {
-        output.writeUInt32(6, unk2700MPONBCMPCIH_);
+      if (selectPointIndex_ != 0) {
+        output.writeUInt32(6, selectPointIndex_);
       }
       if (attackTargetId_ != 0) {
         output.writeUInt32(7, attackTargetId_);
@@ -193,9 +193,9 @@ public final class EvtSetAttackTargetInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700MPONBCMPCIH_ != 0) {
+      if (selectPointIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, unk2700MPONBCMPCIH_);
+          .computeUInt32Size(6, selectPointIndex_);
       }
       if (attackTargetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -222,8 +222,8 @@ public final class EvtSetAttackTargetInfoOuterClass {
 
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (getUnk2700MPONBCMPCIH()
-          != other.getUnk2700MPONBCMPCIH()) return false;
+      if (getSelectPointIndex()
+          != other.getSelectPointIndex()) return false;
       if (getAttackTargetId()
           != other.getAttackTargetId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -239,8 +239,8 @@ public final class EvtSetAttackTargetInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + UNK2700_MPONBCMPCIH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700MPONBCMPCIH();
+      hash = (37 * hash) + SELECT_POINT_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getSelectPointIndex();
       hash = (37 * hash) + ATTACK_TARGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAttackTargetId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -378,7 +378,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
         super.clear();
         entityId_ = 0;
 
-        unk2700MPONBCMPCIH_ = 0;
+        selectPointIndex_ = 0;
 
         attackTargetId_ = 0;
 
@@ -409,7 +409,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
       public emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo buildPartial() {
         emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo result = new emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo(this);
         result.entityId_ = entityId_;
-        result.unk2700MPONBCMPCIH_ = unk2700MPONBCMPCIH_;
+        result.selectPointIndex_ = selectPointIndex_;
         result.attackTargetId_ = attackTargetId_;
         onBuilt();
         return result;
@@ -462,8 +462,8 @@ public final class EvtSetAttackTargetInfoOuterClass {
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getUnk2700MPONBCMPCIH() != 0) {
-          setUnk2700MPONBCMPCIH(other.getUnk2700MPONBCMPCIH());
+        if (other.getSelectPointIndex() != 0) {
+          setSelectPointIndex(other.getSelectPointIndex());
         }
         if (other.getAttackTargetId() != 0) {
           setAttackTargetId(other.getAttackTargetId());
@@ -528,33 +528,33 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return this;
       }
 
-      private int unk2700MPONBCMPCIH_ ;
+      private int selectPointIndex_ ;
       /**
-       * <code>uint32 Unk2700_MPONBCMPCIH = 6;</code>
-       * @return The unk2700MPONBCMPCIH.
+       * <code>uint32 select_point_index = 6;</code>
+       * @return The selectPointIndex.
        */
       @java.lang.Override
-      public int getUnk2700MPONBCMPCIH() {
-        return unk2700MPONBCMPCIH_;
+      public int getSelectPointIndex() {
+        return selectPointIndex_;
       }
       /**
-       * <code>uint32 Unk2700_MPONBCMPCIH = 6;</code>
-       * @param value The unk2700MPONBCMPCIH to set.
+       * <code>uint32 select_point_index = 6;</code>
+       * @param value The selectPointIndex to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700MPONBCMPCIH(int value) {
+      public Builder setSelectPointIndex(int value) {
         
-        unk2700MPONBCMPCIH_ = value;
+        selectPointIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_MPONBCMPCIH = 6;</code>
+       * <code>uint32 select_point_index = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700MPONBCMPCIH() {
+      public Builder clearSelectPointIndex() {
         
-        unk2700MPONBCMPCIH_ = 0;
+        selectPointIndex_ = 0;
         onChanged();
         return this;
       }
@@ -656,11 +656,11 @@ public final class EvtSetAttackTargetInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034EvtSetAttackTargetInfo.proto\"b\n\026EvtSet" +
-      "AttackTargetInfo\022\021\n\tentity_id\030\013 \001(\r\022\033\n\023U" +
-      "nk2700_MPONBCMPCIH\030\006 \001(\r\022\030\n\020attack_targe" +
-      "t_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\034EvtSetAttackTargetInfo.proto\"a\n\026EvtSet" +
+      "AttackTargetInfo\022\021\n\tentity_id\030\013 \001(\r\022\032\n\022s" +
+      "elect_point_index\030\006 \001(\r\022\030\n\020attack_target" +
+      "_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -671,7 +671,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
     internal_static_EvtSetAttackTargetInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtSetAttackTargetInfo_descriptor,
-        new java.lang.String[] { "EntityId", "Unk2700MPONBCMPCIH", "AttackTargetId", });
+        new java.lang.String[] { "EntityId", "SelectPointIndex", "AttackTargetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -882,8 +882,8 @@ public final class MiracleRingDeliverItemRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037MiracleRingDeliverItemRsp.proto\032\022Inter" +
-      "actType.proto\032\021InterOpType.proto\"\236\001\n\031Mir" +
+      "\n\037MiracleRingDeliverItemRsp.proto\032\021Inter" +
+      "OpType.proto\032\022InteractType.proto\"\236\001\n\031Mir" +
       "acleRingDeliverItemRsp\022$\n\rinteract_type\030" +
       "\017 \001(\0162\r.InteractType\022\017\n\007retcode\030\013 \001(\005\022\035\n" +
       "\007op_type\030\016 \001(\0162\014.InterOpType\022\021\n\tgadget_i" +
@@ -893,8 +893,8 @@ public final class MiracleRingDeliverItemRspOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.InterOpTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor(),
         });
     internal_static_MiracleRingDeliverItemRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -902,8 +902,8 @@ public final class MiracleRingDeliverItemRspOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MiracleRingDeliverItemRsp_descriptor,
         new java.lang.String[] { "InteractType", "Retcode", "OpType", "GadgetId", "GadgetEntityId", });
-    emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InterOpTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.InteractTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

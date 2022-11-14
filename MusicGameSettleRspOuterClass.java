@@ -43,10 +43,10 @@ public final class MusicGameSettleRspOuterClass {
     boolean getIsUnlockNextLevel();
 
     /**
-     * <code>uint64 Unk2700_CEPGMKAHHCD = 10;</code>
-     * @return The unk2700CEPGMKAHHCD.
+     * <code>uint64 ugc_guid = 10;</code>
+     * @return The ugcGuid.
      */
-    long getUnk2700CEPGMKAHHCD();
+    long getUgcGuid();
   }
   /**
    * <pre>
@@ -116,7 +116,7 @@ public final class MusicGameSettleRspOuterClass {
             }
             case 80: {
 
-              unk2700CEPGMKAHHCD_ = input.readUInt64();
+              ugcGuid_ = input.readUInt64();
               break;
             }
             case 88: {
@@ -200,15 +200,15 @@ public final class MusicGameSettleRspOuterClass {
       return isUnlockNextLevel_;
     }
 
-    public static final int UNK2700_CEPGMKAHHCD_FIELD_NUMBER = 10;
-    private long unk2700CEPGMKAHHCD_;
+    public static final int UGC_GUID_FIELD_NUMBER = 10;
+    private long ugcGuid_;
     /**
-     * <code>uint64 Unk2700_CEPGMKAHHCD = 10;</code>
-     * @return The unk2700CEPGMKAHHCD.
+     * <code>uint64 ugc_guid = 10;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public long getUnk2700CEPGMKAHHCD() {
-      return unk2700CEPGMKAHHCD_;
+    public long getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -234,8 +234,8 @@ public final class MusicGameSettleRspOuterClass {
       if (isNewRecord_ != false) {
         output.writeBool(6, isNewRecord_);
       }
-      if (unk2700CEPGMKAHHCD_ != 0L) {
-        output.writeUInt64(10, unk2700CEPGMKAHHCD_);
+      if (ugcGuid_ != 0L) {
+        output.writeUInt64(10, ugcGuid_);
       }
       if (retcode_ != 0) {
         output.writeInt32(11, retcode_);
@@ -261,9 +261,9 @@ public final class MusicGameSettleRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(6, isNewRecord_);
       }
-      if (unk2700CEPGMKAHHCD_ != 0L) {
+      if (ugcGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, unk2700CEPGMKAHHCD_);
+          .computeUInt64Size(10, ugcGuid_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -292,8 +292,8 @@ public final class MusicGameSettleRspOuterClass {
           != other.getIsNewRecord()) return false;
       if (getIsUnlockNextLevel()
           != other.getIsUnlockNextLevel()) return false;
-      if (getUnk2700CEPGMKAHHCD()
-          != other.getUnk2700CEPGMKAHHCD()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -315,9 +315,9 @@ public final class MusicGameSettleRspOuterClass {
       hash = (37 * hash) + IS_UNLOCK_NEXT_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsUnlockNextLevel());
-      hash = (37 * hash) + UNK2700_CEPGMKAHHCD_FIELD_NUMBER;
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUnk2700CEPGMKAHHCD());
+          getUgcGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -465,7 +465,7 @@ public final class MusicGameSettleRspOuterClass {
 
         isUnlockNextLevel_ = false;
 
-        unk2700CEPGMKAHHCD_ = 0L;
+        ugcGuid_ = 0L;
 
         return this;
       }
@@ -497,7 +497,7 @@ public final class MusicGameSettleRspOuterClass {
         result.musicBasicId_ = musicBasicId_;
         result.isNewRecord_ = isNewRecord_;
         result.isUnlockNextLevel_ = isUnlockNextLevel_;
-        result.unk2700CEPGMKAHHCD_ = unk2700CEPGMKAHHCD_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -558,8 +558,8 @@ public final class MusicGameSettleRspOuterClass {
         if (other.getIsUnlockNextLevel() != false) {
           setIsUnlockNextLevel(other.getIsUnlockNextLevel());
         }
-        if (other.getUnk2700CEPGMKAHHCD() != 0L) {
-          setUnk2700CEPGMKAHHCD(other.getUnk2700CEPGMKAHHCD());
+        if (other.getUgcGuid() != 0L) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -714,33 +714,33 @@ public final class MusicGameSettleRspOuterClass {
         return this;
       }
 
-      private long unk2700CEPGMKAHHCD_ ;
+      private long ugcGuid_ ;
       /**
-       * <code>uint64 Unk2700_CEPGMKAHHCD = 10;</code>
-       * @return The unk2700CEPGMKAHHCD.
+       * <code>uint64 ugc_guid = 10;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public long getUnk2700CEPGMKAHHCD() {
-        return unk2700CEPGMKAHHCD_;
+      public long getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint64 Unk2700_CEPGMKAHHCD = 10;</code>
-       * @param value The unk2700CEPGMKAHHCD to set.
+       * <code>uint64 ugc_guid = 10;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700CEPGMKAHHCD(long value) {
+      public Builder setUgcGuid(long value) {
         
-        unk2700CEPGMKAHHCD_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 Unk2700_CEPGMKAHHCD = 10;</code>
+       * <code>uint64 ugc_guid = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700CEPGMKAHHCD() {
+      public Builder clearUgcGuid() {
         
-        unk2700CEPGMKAHHCD_ = 0L;
+        ugcGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -811,12 +811,11 @@ public final class MusicGameSettleRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030MusicGameSettleRsp.proto\"\217\001\n\022MusicGame" +
+      "\n\030MusicGameSettleRsp.proto\"\204\001\n\022MusicGame" +
       "SettleRsp\022\017\n\007retcode\030\013 \001(\005\022\026\n\016music_basi" +
       "c_id\030\005 \001(\r\022\025\n\ris_new_record\030\006 \001(\010\022\034\n\024is_" +
-      "unlock_next_level\030\002 \001(\010\022\033\n\023Unk2700_CEPGM" +
-      "KAHHCD\030\n \001(\004B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "unlock_next_level\030\002 \001(\010\022\020\n\010ugc_guid\030\n \001(" +
+      "\004B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -827,7 +826,7 @@ public final class MusicGameSettleRspOuterClass {
     internal_static_MusicGameSettleRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MusicGameSettleRsp_descriptor,
-        new java.lang.String[] { "Retcode", "MusicBasicId", "IsNewRecord", "IsUnlockNextLevel", "Unk2700CEPGMKAHHCD", });
+        new java.lang.String[] { "Retcode", "MusicBasicId", "IsNewRecord", "IsUnlockNextLevel", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

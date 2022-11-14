@@ -19,10 +19,10 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool Unk2800_GNKHCICOIMC = 14;</code>
-     * @return The unk2800GNKHCICOIMC.
+     * <code>bool is_finish_any_level = 14;</code>
+     * @return The isFinishAnyLevel.
      */
-    boolean getUnk2800GNKHCICOIMC();
+    boolean getIsFinishAnyLevel();
 
     /**
      * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
@@ -159,7 +159,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
             }
             case 112: {
 
-              unk2800GNKHCICOIMC_ = input.readBool();
+              isFinishAnyLevel_ = input.readBool();
               break;
             }
             case 120: {
@@ -214,15 +214,15 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.class, emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.Builder.class);
     }
 
-    public static final int UNK2800_GNKHCICOIMC_FIELD_NUMBER = 14;
-    private boolean unk2800GNKHCICOIMC_;
+    public static final int IS_FINISH_ANY_LEVEL_FIELD_NUMBER = 14;
+    private boolean isFinishAnyLevel_;
     /**
-     * <code>bool Unk2800_GNKHCICOIMC = 14;</code>
-     * @return The unk2800GNKHCICOIMC.
+     * <code>bool is_finish_any_level = 14;</code>
+     * @return The isFinishAnyLevel.
      */
     @java.lang.Override
-    public boolean getUnk2800GNKHCICOIMC() {
-      return unk2800GNKHCICOIMC_;
+    public boolean getIsFinishAnyLevel() {
+      return isFinishAnyLevel_;
     }
 
     public static final int LEVEL_OPEN_TIME_MAP_FIELD_NUMBER = 3;
@@ -380,8 +380,8 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       for (int i = 0; i < levelList_.size(); i++) {
         output.writeMessage(9, levelList_.get(i));
       }
-      if (unk2800GNKHCICOIMC_ != false) {
-        output.writeBool(14, unk2800GNKHCICOIMC_);
+      if (isFinishAnyLevel_ != false) {
+        output.writeBool(14, isFinishAnyLevel_);
       }
       if (worldLevel_ != 0) {
         output.writeUInt32(15, worldLevel_);
@@ -409,9 +409,9 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, levelList_.get(i));
       }
-      if (unk2800GNKHCICOIMC_ != false) {
+      if (isFinishAnyLevel_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, unk2800GNKHCICOIMC_);
+          .computeBoolSize(14, isFinishAnyLevel_);
       }
       if (worldLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -432,8 +432,8 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo other = (emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo) obj;
 
-      if (getUnk2800GNKHCICOIMC()
-          != other.getUnk2800GNKHCICOIMC()) return false;
+      if (getIsFinishAnyLevel()
+          != other.getIsFinishAnyLevel()) return false;
       if (!internalGetLevelOpenTimeMap().equals(
           other.internalGetLevelOpenTimeMap())) return false;
       if (getWorldLevel()
@@ -451,9 +451,9 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2800_GNKHCICOIMC_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FINISH_ANY_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2800GNKHCICOIMC());
+          getIsFinishAnyLevel());
       if (!internalGetLevelOpenTimeMap().getMap().isEmpty()) {
         hash = (37 * hash) + LEVEL_OPEN_TIME_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetLevelOpenTimeMap().hashCode();
@@ -620,7 +620,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2800GNKHCICOIMC_ = false;
+        isFinishAnyLevel_ = false;
 
         internalGetMutableLevelOpenTimeMap().clear();
         worldLevel_ = 0;
@@ -658,7 +658,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo result = new emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.unk2800GNKHCICOIMC_ = unk2800GNKHCICOIMC_;
+        result.isFinishAnyLevel_ = isFinishAnyLevel_;
         result.levelOpenTimeMap_ = internalGetLevelOpenTimeMap();
         result.levelOpenTimeMap_.makeImmutable();
         result.worldLevel_ = worldLevel_;
@@ -719,8 +719,8 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getUnk2800GNKHCICOIMC() != false) {
-          setUnk2800GNKHCICOIMC(other.getUnk2800GNKHCICOIMC());
+        if (other.getIsFinishAnyLevel() != false) {
+          setIsFinishAnyLevel(other.getIsFinishAnyLevel());
         }
         internalGetMutableLevelOpenTimeMap().mergeFrom(
             other.internalGetLevelOpenTimeMap());
@@ -783,33 +783,33 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private boolean unk2800GNKHCICOIMC_ ;
+      private boolean isFinishAnyLevel_ ;
       /**
-       * <code>bool Unk2800_GNKHCICOIMC = 14;</code>
-       * @return The unk2800GNKHCICOIMC.
+       * <code>bool is_finish_any_level = 14;</code>
+       * @return The isFinishAnyLevel.
        */
       @java.lang.Override
-      public boolean getUnk2800GNKHCICOIMC() {
-        return unk2800GNKHCICOIMC_;
+      public boolean getIsFinishAnyLevel() {
+        return isFinishAnyLevel_;
       }
       /**
-       * <code>bool Unk2800_GNKHCICOIMC = 14;</code>
-       * @param value The unk2800GNKHCICOIMC to set.
+       * <code>bool is_finish_any_level = 14;</code>
+       * @param value The isFinishAnyLevel to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800GNKHCICOIMC(boolean value) {
+      public Builder setIsFinishAnyLevel(boolean value) {
         
-        unk2800GNKHCICOIMC_ = value;
+        isFinishAnyLevel_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2800_GNKHCICOIMC = 14;</code>
+       * <code>bool is_finish_any_level = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800GNKHCICOIMC() {
+      public Builder clearIsFinishAnyLevel() {
         
-        unk2800GNKHCICOIMC_ = false;
+        isFinishAnyLevel_ = false;
         onChanged();
         return this;
       }
@@ -1286,8 +1286,8 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n&ArenaChallengeActivityDetailInfo.proto" +
       "\032 ArenaChallengeMonsterLevel.proto\"\224\002\n A" +
-      "renaChallengeActivityDetailInfo\022\033\n\023Unk28" +
-      "00_GNKHCICOIMC\030\016 \001(\010\022T\n\023level_open_time_" +
+      "renaChallengeActivityDetailInfo\022\033\n\023is_fi" +
+      "nish_any_level\030\016 \001(\010\022T\n\023level_open_time_" +
       "map\030\003 \003(\01327.ArenaChallengeActivityDetail" +
       "Info.LevelOpenTimeMapEntry\022\023\n\013world_leve" +
       "l\030\017 \001(\r\022/\n\nlevel_list\030\t \003(\0132\033.ArenaChall" +
@@ -1305,7 +1305,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     internal_static_ArenaChallengeActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ArenaChallengeActivityDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2800GNKHCICOIMC", "LevelOpenTimeMap", "WorldLevel", "LevelList", });
+        new java.lang.String[] { "IsFinishAnyLevel", "LevelOpenTimeMap", "WorldLevel", "LevelList", });
     internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_descriptor =
       internal_static_ArenaChallengeActivityDetailInfo_descriptor.getNestedTypes().get(0);
     internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_fieldAccessorTable = new

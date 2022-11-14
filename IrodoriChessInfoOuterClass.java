@@ -19,19 +19,19 @@ public final class IrodoriChessInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+     * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
      * @return Whether the mysteryInfo field is set.
      */
     boolean hasMysteryInfo();
     /**
-     * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+     * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
      * @return The mysteryInfo.
      */
-    emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA getMysteryInfo();
+    emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo();
     /**
-     * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+     * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
      */
-    emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLAOrBuilder getMysteryInfoOrBuilder();
+    emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder();
 
     /**
      * <code>uint32 left_monsters = 12;</code>
@@ -40,21 +40,21 @@ public final class IrodoriChessInfoOuterClass {
     int getLeftMonsters();
 
     /**
-     * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-     * @return A list containing the unk2700MABMPAAGHCJ.
+     * <code>repeated uint32 selected_card_id_list = 13;</code>
+     * @return A list containing the selectedCardIdList.
      */
-    java.util.List<java.lang.Integer> getUnk2700MABMPAAGHCJList();
+    java.util.List<java.lang.Integer> getSelectedCardIdListList();
     /**
-     * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-     * @return The count of unk2700MABMPAAGHCJ.
+     * <code>repeated uint32 selected_card_id_list = 13;</code>
+     * @return The count of selectedCardIdList.
      */
-    int getUnk2700MABMPAAGHCJCount();
+    int getSelectedCardIdListCount();
     /**
-     * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
+     * <code>repeated uint32 selected_card_id_list = 13;</code>
      * @param index The index of the element to return.
-     * @return The unk2700MABMPAAGHCJ at the given index.
+     * @return The selectedCardIdList at the given index.
      */
-    int getUnk2700MABMPAAGHCJ(int index);
+    int getSelectedCardIdList(int index);
 
     /**
      * <code>uint32 building_points = 7;</code>
@@ -63,10 +63,10 @@ public final class IrodoriChessInfoOuterClass {
     int getBuildingPoints();
 
     /**
-     * <code>uint32 Unk2700_CDOKENJJJMH = 4;</code>
-     * @return The unk2700CDOKENJJJMH.
+     * <code>uint32 settle_score = 4;</code>
+     * @return The settleScore.
      */
-    int getUnk2700CDOKENJJJMH();
+    int getSettleScore();
   }
   /**
    * Protobuf type {@code IrodoriChessInfo}
@@ -81,7 +81,7 @@ public final class IrodoriChessInfoOuterClass {
       super(builder);
     }
     private IrodoriChessInfo() {
-      unk2700MABMPAAGHCJ_ = emptyIntList();
+      selectedCardIdList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -116,11 +116,11 @@ public final class IrodoriChessInfoOuterClass {
               done = true;
               break;
             case 26: {
-              emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.Builder subBuilder = null;
+              emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder subBuilder = null;
               if (mysteryInfo_ != null) {
                 subBuilder = mysteryInfo_.toBuilder();
               }
-              mysteryInfo_ = input.readMessage(emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.parser(), extensionRegistry);
+              mysteryInfo_ = input.readMessage(emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(mysteryInfo_);
                 mysteryInfo_ = subBuilder.buildPartial();
@@ -130,7 +130,7 @@ public final class IrodoriChessInfoOuterClass {
             }
             case 32: {
 
-              unk2700CDOKENJJJMH_ = input.readUInt32();
+              settleScore_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -145,21 +145,21 @@ public final class IrodoriChessInfoOuterClass {
             }
             case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700MABMPAAGHCJ_ = newIntList();
+                selectedCardIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700MABMPAAGHCJ_.addInt(input.readUInt32());
+              selectedCardIdList_.addInt(input.readUInt32());
               break;
             }
             case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2700MABMPAAGHCJ_ = newIntList();
+                selectedCardIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2700MABMPAAGHCJ_.addInt(input.readUInt32());
+                selectedCardIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -180,7 +180,7 @@ public final class IrodoriChessInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700MABMPAAGHCJ_.makeImmutable(); // C
+          selectedCardIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -200,9 +200,9 @@ public final class IrodoriChessInfoOuterClass {
     }
 
     public static final int MYSTERY_INFO_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA mysteryInfo_;
+    private emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo mysteryInfo_;
     /**
-     * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+     * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
      * @return Whether the mysteryInfo field is set.
      */
     @java.lang.Override
@@ -210,18 +210,18 @@ public final class IrodoriChessInfoOuterClass {
       return mysteryInfo_ != null;
     }
     /**
-     * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+     * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
      * @return The mysteryInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA getMysteryInfo() {
-      return mysteryInfo_ == null ? emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.getDefaultInstance() : mysteryInfo_;
+    public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo() {
+      return mysteryInfo_ == null ? emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.getDefaultInstance() : mysteryInfo_;
     }
     /**
-     * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+     * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLAOrBuilder getMysteryInfoOrBuilder() {
+    public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder() {
       return getMysteryInfo();
     }
 
@@ -236,33 +236,33 @@ public final class IrodoriChessInfoOuterClass {
       return leftMonsters_;
     }
 
-    public static final int UNK2700_MABMPAAGHCJ_FIELD_NUMBER = 13;
-    private com.google.protobuf.Internal.IntList unk2700MABMPAAGHCJ_;
+    public static final int SELECTED_CARD_ID_LIST_FIELD_NUMBER = 13;
+    private com.google.protobuf.Internal.IntList selectedCardIdList_;
     /**
-     * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-     * @return A list containing the unk2700MABMPAAGHCJ.
+     * <code>repeated uint32 selected_card_id_list = 13;</code>
+     * @return A list containing the selectedCardIdList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2700MABMPAAGHCJList() {
-      return unk2700MABMPAAGHCJ_;
+        getSelectedCardIdListList() {
+      return selectedCardIdList_;
     }
     /**
-     * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-     * @return The count of unk2700MABMPAAGHCJ.
+     * <code>repeated uint32 selected_card_id_list = 13;</code>
+     * @return The count of selectedCardIdList.
      */
-    public int getUnk2700MABMPAAGHCJCount() {
-      return unk2700MABMPAAGHCJ_.size();
+    public int getSelectedCardIdListCount() {
+      return selectedCardIdList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
+     * <code>repeated uint32 selected_card_id_list = 13;</code>
      * @param index The index of the element to return.
-     * @return The unk2700MABMPAAGHCJ at the given index.
+     * @return The selectedCardIdList at the given index.
      */
-    public int getUnk2700MABMPAAGHCJ(int index) {
-      return unk2700MABMPAAGHCJ_.getInt(index);
+    public int getSelectedCardIdList(int index) {
+      return selectedCardIdList_.getInt(index);
     }
-    private int unk2700MABMPAAGHCJMemoizedSerializedSize = -1;
+    private int selectedCardIdListMemoizedSerializedSize = -1;
 
     public static final int BUILDING_POINTS_FIELD_NUMBER = 7;
     private int buildingPoints_;
@@ -275,15 +275,15 @@ public final class IrodoriChessInfoOuterClass {
       return buildingPoints_;
     }
 
-    public static final int UNK2700_CDOKENJJJMH_FIELD_NUMBER = 4;
-    private int unk2700CDOKENJJJMH_;
+    public static final int SETTLE_SCORE_FIELD_NUMBER = 4;
+    private int settleScore_;
     /**
-     * <code>uint32 Unk2700_CDOKENJJJMH = 4;</code>
-     * @return The unk2700CDOKENJJJMH.
+     * <code>uint32 settle_score = 4;</code>
+     * @return The settleScore.
      */
     @java.lang.Override
-    public int getUnk2700CDOKENJJJMH() {
-      return unk2700CDOKENJJJMH_;
+    public int getSettleScore() {
+      return settleScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -304,8 +304,8 @@ public final class IrodoriChessInfoOuterClass {
       if (mysteryInfo_ != null) {
         output.writeMessage(3, getMysteryInfo());
       }
-      if (unk2700CDOKENJJJMH_ != 0) {
-        output.writeUInt32(4, unk2700CDOKENJJJMH_);
+      if (settleScore_ != 0) {
+        output.writeUInt32(4, settleScore_);
       }
       if (buildingPoints_ != 0) {
         output.writeUInt32(7, buildingPoints_);
@@ -313,12 +313,12 @@ public final class IrodoriChessInfoOuterClass {
       if (leftMonsters_ != 0) {
         output.writeUInt32(12, leftMonsters_);
       }
-      if (getUnk2700MABMPAAGHCJList().size() > 0) {
+      if (getSelectedCardIdListList().size() > 0) {
         output.writeUInt32NoTag(106);
-        output.writeUInt32NoTag(unk2700MABMPAAGHCJMemoizedSerializedSize);
+        output.writeUInt32NoTag(selectedCardIdListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2700MABMPAAGHCJ_.size(); i++) {
-        output.writeUInt32NoTag(unk2700MABMPAAGHCJ_.getInt(i));
+      for (int i = 0; i < selectedCardIdList_.size(); i++) {
+        output.writeUInt32NoTag(selectedCardIdList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -333,9 +333,9 @@ public final class IrodoriChessInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getMysteryInfo());
       }
-      if (unk2700CDOKENJJJMH_ != 0) {
+      if (settleScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, unk2700CDOKENJJJMH_);
+          .computeUInt32Size(4, settleScore_);
       }
       if (buildingPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -347,17 +347,17 @@ public final class IrodoriChessInfoOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2700MABMPAAGHCJ_.size(); i++) {
+        for (int i = 0; i < selectedCardIdList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2700MABMPAAGHCJ_.getInt(i));
+            .computeUInt32SizeNoTag(selectedCardIdList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2700MABMPAAGHCJList().isEmpty()) {
+        if (!getSelectedCardIdListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2700MABMPAAGHCJMemoizedSerializedSize = dataSize;
+        selectedCardIdListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -381,12 +381,12 @@ public final class IrodoriChessInfoOuterClass {
       }
       if (getLeftMonsters()
           != other.getLeftMonsters()) return false;
-      if (!getUnk2700MABMPAAGHCJList()
-          .equals(other.getUnk2700MABMPAAGHCJList())) return false;
+      if (!getSelectedCardIdListList()
+          .equals(other.getSelectedCardIdListList())) return false;
       if (getBuildingPoints()
           != other.getBuildingPoints()) return false;
-      if (getUnk2700CDOKENJJJMH()
-          != other.getUnk2700CDOKENJJJMH()) return false;
+      if (getSettleScore()
+          != other.getSettleScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -404,14 +404,14 @@ public final class IrodoriChessInfoOuterClass {
       }
       hash = (37 * hash) + LEFT_MONSTERS_FIELD_NUMBER;
       hash = (53 * hash) + getLeftMonsters();
-      if (getUnk2700MABMPAAGHCJCount() > 0) {
-        hash = (37 * hash) + UNK2700_MABMPAAGHCJ_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700MABMPAAGHCJList().hashCode();
+      if (getSelectedCardIdListCount() > 0) {
+        hash = (37 * hash) + SELECTED_CARD_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSelectedCardIdListList().hashCode();
       }
       hash = (37 * hash) + BUILDING_POINTS_FIELD_NUMBER;
       hash = (53 * hash) + getBuildingPoints();
-      hash = (37 * hash) + UNK2700_CDOKENJJJMH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700CDOKENJJJMH();
+      hash = (37 * hash) + SETTLE_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getSettleScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -553,11 +553,11 @@ public final class IrodoriChessInfoOuterClass {
         }
         leftMonsters_ = 0;
 
-        unk2700MABMPAAGHCJ_ = emptyIntList();
+        selectedCardIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         buildingPoints_ = 0;
 
-        unk2700CDOKENJJJMH_ = 0;
+        settleScore_ = 0;
 
         return this;
       }
@@ -593,12 +593,12 @@ public final class IrodoriChessInfoOuterClass {
         }
         result.leftMonsters_ = leftMonsters_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          unk2700MABMPAAGHCJ_.makeImmutable();
+          selectedCardIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.unk2700MABMPAAGHCJ_ = unk2700MABMPAAGHCJ_;
+        result.selectedCardIdList_ = selectedCardIdList_;
         result.buildingPoints_ = buildingPoints_;
-        result.unk2700CDOKENJJJMH_ = unk2700CDOKENJJJMH_;
+        result.settleScore_ = settleScore_;
         onBuilt();
         return result;
       }
@@ -653,21 +653,21 @@ public final class IrodoriChessInfoOuterClass {
         if (other.getLeftMonsters() != 0) {
           setLeftMonsters(other.getLeftMonsters());
         }
-        if (!other.unk2700MABMPAAGHCJ_.isEmpty()) {
-          if (unk2700MABMPAAGHCJ_.isEmpty()) {
-            unk2700MABMPAAGHCJ_ = other.unk2700MABMPAAGHCJ_;
+        if (!other.selectedCardIdList_.isEmpty()) {
+          if (selectedCardIdList_.isEmpty()) {
+            selectedCardIdList_ = other.selectedCardIdList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureUnk2700MABMPAAGHCJIsMutable();
-            unk2700MABMPAAGHCJ_.addAll(other.unk2700MABMPAAGHCJ_);
+            ensureSelectedCardIdListIsMutable();
+            selectedCardIdList_.addAll(other.selectedCardIdList_);
           }
           onChanged();
         }
         if (other.getBuildingPoints() != 0) {
           setBuildingPoints(other.getBuildingPoints());
         }
-        if (other.getUnk2700CDOKENJJJMH() != 0) {
-          setUnk2700CDOKENJJJMH(other.getUnk2700CDOKENJJJMH());
+        if (other.getSettleScore() != 0) {
+          setSettleScore(other.getSettleScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -699,31 +699,31 @@ public final class IrodoriChessInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA mysteryInfo_;
+      private emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo mysteryInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA, emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.Builder, emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLAOrBuilder> mysteryInfoBuilder_;
+          emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder> mysteryInfoBuilder_;
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        * @return Whether the mysteryInfo field is set.
        */
       public boolean hasMysteryInfo() {
         return mysteryInfoBuilder_ != null || mysteryInfo_ != null;
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        * @return The mysteryInfo.
        */
-      public emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA getMysteryInfo() {
+      public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo() {
         if (mysteryInfoBuilder_ == null) {
-          return mysteryInfo_ == null ? emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.getDefaultInstance() : mysteryInfo_;
+          return mysteryInfo_ == null ? emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.getDefaultInstance() : mysteryInfo_;
         } else {
           return mysteryInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        */
-      public Builder setMysteryInfo(emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA value) {
+      public Builder setMysteryInfo(emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo value) {
         if (mysteryInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -737,10 +737,10 @@ public final class IrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        */
       public Builder setMysteryInfo(
-          emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.Builder builderForValue) {
+          emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder builderForValue) {
         if (mysteryInfoBuilder_ == null) {
           mysteryInfo_ = builderForValue.build();
           onChanged();
@@ -751,13 +751,13 @@ public final class IrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        */
-      public Builder mergeMysteryInfo(emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA value) {
+      public Builder mergeMysteryInfo(emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo value) {
         if (mysteryInfoBuilder_ == null) {
           if (mysteryInfo_ != null) {
             mysteryInfo_ =
-              emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.newBuilder(mysteryInfo_).mergeFrom(value).buildPartial();
+              emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.newBuilder(mysteryInfo_).mergeFrom(value).buildPartial();
           } else {
             mysteryInfo_ = value;
           }
@@ -769,7 +769,7 @@ public final class IrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        */
       public Builder clearMysteryInfo() {
         if (mysteryInfoBuilder_ == null) {
@@ -783,33 +783,33 @@ public final class IrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.Builder getMysteryInfoBuilder() {
+      public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder getMysteryInfoBuilder() {
         
         onChanged();
         return getMysteryInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLAOrBuilder getMysteryInfoOrBuilder() {
+      public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder() {
         if (mysteryInfoBuilder_ != null) {
           return mysteryInfoBuilder_.getMessageOrBuilder();
         } else {
           return mysteryInfo_ == null ?
-              emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.getDefaultInstance() : mysteryInfo_;
+              emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.getDefaultInstance() : mysteryInfo_;
         }
       }
       /**
-       * <code>.Unk2700_IBEKDNOGMLA mystery_info = 3;</code>
+       * <code>.IrodoriChessMysteryInfo mystery_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA, emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.Builder, emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLAOrBuilder> 
+          emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder> 
           getMysteryInfoFieldBuilder() {
         if (mysteryInfoBuilder_ == null) {
           mysteryInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA, emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLA.Builder, emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.Unk2700_IBEKDNOGMLAOrBuilder>(
+              emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder>(
                   getMysteryInfo(),
                   getParentForChildren(),
                   isClean());
@@ -849,80 +849,80 @@ public final class IrodoriChessInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2700MABMPAAGHCJ_ = emptyIntList();
-      private void ensureUnk2700MABMPAAGHCJIsMutable() {
+      private com.google.protobuf.Internal.IntList selectedCardIdList_ = emptyIntList();
+      private void ensureSelectedCardIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700MABMPAAGHCJ_ = mutableCopy(unk2700MABMPAAGHCJ_);
+          selectedCardIdList_ = mutableCopy(selectedCardIdList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-       * @return A list containing the unk2700MABMPAAGHCJ.
+       * <code>repeated uint32 selected_card_id_list = 13;</code>
+       * @return A list containing the selectedCardIdList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2700MABMPAAGHCJList() {
+          getSelectedCardIdListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2700MABMPAAGHCJ_) : unk2700MABMPAAGHCJ_;
+                 java.util.Collections.unmodifiableList(selectedCardIdList_) : selectedCardIdList_;
       }
       /**
-       * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-       * @return The count of unk2700MABMPAAGHCJ.
+       * <code>repeated uint32 selected_card_id_list = 13;</code>
+       * @return The count of selectedCardIdList.
        */
-      public int getUnk2700MABMPAAGHCJCount() {
-        return unk2700MABMPAAGHCJ_.size();
+      public int getSelectedCardIdListCount() {
+        return selectedCardIdList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
+       * <code>repeated uint32 selected_card_id_list = 13;</code>
        * @param index The index of the element to return.
-       * @return The unk2700MABMPAAGHCJ at the given index.
+       * @return The selectedCardIdList at the given index.
        */
-      public int getUnk2700MABMPAAGHCJ(int index) {
-        return unk2700MABMPAAGHCJ_.getInt(index);
+      public int getSelectedCardIdList(int index) {
+        return selectedCardIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
+       * <code>repeated uint32 selected_card_id_list = 13;</code>
        * @param index The index to set the value at.
-       * @param value The unk2700MABMPAAGHCJ to set.
+       * @param value The selectedCardIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700MABMPAAGHCJ(
+      public Builder setSelectedCardIdList(
           int index, int value) {
-        ensureUnk2700MABMPAAGHCJIsMutable();
-        unk2700MABMPAAGHCJ_.setInt(index, value);
+        ensureSelectedCardIdListIsMutable();
+        selectedCardIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-       * @param value The unk2700MABMPAAGHCJ to add.
+       * <code>repeated uint32 selected_card_id_list = 13;</code>
+       * @param value The selectedCardIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2700MABMPAAGHCJ(int value) {
-        ensureUnk2700MABMPAAGHCJIsMutable();
-        unk2700MABMPAAGHCJ_.addInt(value);
+      public Builder addSelectedCardIdList(int value) {
+        ensureSelectedCardIdListIsMutable();
+        selectedCardIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
-       * @param values The unk2700MABMPAAGHCJ to add.
+       * <code>repeated uint32 selected_card_id_list = 13;</code>
+       * @param values The selectedCardIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2700MABMPAAGHCJ(
+      public Builder addAllSelectedCardIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2700MABMPAAGHCJIsMutable();
+        ensureSelectedCardIdListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2700MABMPAAGHCJ_);
+            values, selectedCardIdList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_MABMPAAGHCJ = 13;</code>
+       * <code>repeated uint32 selected_card_id_list = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700MABMPAAGHCJ() {
-        unk2700MABMPAAGHCJ_ = emptyIntList();
+      public Builder clearSelectedCardIdList() {
+        selectedCardIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -959,33 +959,33 @@ public final class IrodoriChessInfoOuterClass {
         return this;
       }
 
-      private int unk2700CDOKENJJJMH_ ;
+      private int settleScore_ ;
       /**
-       * <code>uint32 Unk2700_CDOKENJJJMH = 4;</code>
-       * @return The unk2700CDOKENJJJMH.
+       * <code>uint32 settle_score = 4;</code>
+       * @return The settleScore.
        */
       @java.lang.Override
-      public int getUnk2700CDOKENJJJMH() {
-        return unk2700CDOKENJJJMH_;
+      public int getSettleScore() {
+        return settleScore_;
       }
       /**
-       * <code>uint32 Unk2700_CDOKENJJJMH = 4;</code>
-       * @param value The unk2700CDOKENJJJMH to set.
+       * <code>uint32 settle_score = 4;</code>
+       * @param value The settleScore to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700CDOKENJJJMH(int value) {
+      public Builder setSettleScore(int value) {
         
-        unk2700CDOKENJJJMH_ = value;
+        settleScore_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_CDOKENJJJMH = 4;</code>
+       * <code>uint32 settle_score = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700CDOKENJJJMH() {
+      public Builder clearSettleScore() {
         
-        unk2700CDOKENJJJMH_ = 0;
+        settleScore_ = 0;
         onChanged();
         return this;
       }
@@ -1056,26 +1056,26 @@ public final class IrodoriChessInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026IrodoriChessInfo.proto\032\031Unk2700_IBEKDN" +
-      "OGMLA.proto\"\250\001\n\020IrodoriChessInfo\022*\n\014myst" +
-      "ery_info\030\003 \001(\0132\024.Unk2700_IBEKDNOGMLA\022\025\n\r" +
-      "left_monsters\030\014 \001(\r\022\033\n\023Unk2700_MABMPAAGH" +
-      "CJ\030\r \003(\r\022\027\n\017building_points\030\007 \001(\r\022\033\n\023Unk" +
-      "2700_CDOKENJJJMH\030\004 \001(\rB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n\026IrodoriChessInfo.proto\032\035IrodoriChessMy" +
+      "steryInfo.proto\"\247\001\n\020IrodoriChessInfo\022.\n\014" +
+      "mystery_info\030\003 \001(\0132\030.IrodoriChessMystery" +
+      "Info\022\025\n\rleft_monsters\030\014 \001(\r\022\035\n\025selected_" +
+      "card_id_list\030\r \003(\r\022\027\n\017building_points\030\007 " +
+      "\001(\r\022\024\n\014settle_score\030\004 \001(\rB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.getDescriptor(),
+          emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.getDescriptor(),
         });
     internal_static_IrodoriChessInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_IrodoriChessInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriChessInfo_descriptor,
-        new java.lang.String[] { "MysteryInfo", "LeftMonsters", "Unk2700MABMPAAGHCJ", "BuildingPoints", "Unk2700CDOKENJJJMH", });
-    emu.grasscutter.net.proto.Unk2700IBEKDNOGMLA.getDescriptor();
+        new java.lang.String[] { "MysteryInfo", "LeftMonsters", "SelectedCardIdList", "BuildingPoints", "SettleScore", });
+    emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

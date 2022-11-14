@@ -48,10 +48,10 @@ public final class GachaInfoOuterClass {
     int getDisplayUp4ItemList(int index);
 
     /**
-     * <code>uint32 Unk3100_JKILPCKLNPI = 469;</code>
-     * @return The unk3100JKILPCKLNPI.
+     * <code>uint32 cur_schedule_daily_gacha_times = 469;</code>
+     * @return The curScheduleDailyGachaTimes.
      */
-    int getUnk3100JKILPCKLNPI();
+    int getCurScheduleDailyGachaTimes();
 
     /**
      * <code>repeated .GachaUpInfo gacha_up_info_list = 1233;</code>
@@ -393,7 +393,7 @@ public final class GachaInfoOuterClass {
             }
             case 3752: {
 
-              unk3100JKILPCKLNPI_ = input.readUInt32();
+              curScheduleDailyGachaTimes_ = input.readUInt32();
               break;
             }
             case 5864: {
@@ -576,15 +576,15 @@ public final class GachaInfoOuterClass {
     }
     private int displayUp4ItemListMemoizedSerializedSize = -1;
 
-    public static final int UNK3100_JKILPCKLNPI_FIELD_NUMBER = 469;
-    private int unk3100JKILPCKLNPI_;
+    public static final int CUR_SCHEDULE_DAILY_GACHA_TIMES_FIELD_NUMBER = 469;
+    private int curScheduleDailyGachaTimes_;
     /**
-     * <code>uint32 Unk3100_JKILPCKLNPI = 469;</code>
-     * @return The unk3100JKILPCKLNPI.
+     * <code>uint32 cur_schedule_daily_gacha_times = 469;</code>
+     * @return The curScheduleDailyGachaTimes.
      */
     @java.lang.Override
-    public int getUnk3100JKILPCKLNPI() {
-      return unk3100JKILPCKLNPI_;
+    public int getCurScheduleDailyGachaTimes() {
+      return curScheduleDailyGachaTimes_;
     }
 
     public static final int GACHA_UP_INFO_LIST_FIELD_NUMBER = 1233;
@@ -1124,8 +1124,8 @@ public final class GachaInfoOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaPrefabPath_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 15, gachaPrefabPath_);
       }
-      if (unk3100JKILPCKLNPI_ != 0) {
-        output.writeUInt32(469, unk3100JKILPCKLNPI_);
+      if (curScheduleDailyGachaTimes_ != 0) {
+        output.writeUInt32(469, curScheduleDailyGachaTimes_);
       }
       if (isNewWish_ != false) {
         output.writeBool(733, isNewWish_);
@@ -1230,9 +1230,9 @@ public final class GachaInfoOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaPrefabPath_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, gachaPrefabPath_);
       }
-      if (unk3100JKILPCKLNPI_ != 0) {
+      if (curScheduleDailyGachaTimes_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(469, unk3100JKILPCKLNPI_);
+          .computeUInt32Size(469, curScheduleDailyGachaTimes_);
       }
       if (isNewWish_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -1312,8 +1312,8 @@ public final class GachaInfoOuterClass {
           != other.getEndTime()) return false;
       if (!getDisplayUp4ItemListList()
           .equals(other.getDisplayUp4ItemListList())) return false;
-      if (getUnk3100JKILPCKLNPI()
-          != other.getUnk3100JKILPCKLNPI()) return false;
+      if (getCurScheduleDailyGachaTimes()
+          != other.getCurScheduleDailyGachaTimes()) return false;
       if (!getGachaUpInfoListList()
           .equals(other.getGachaUpInfoListList())) return false;
       if (!getGachaProbUrl()
@@ -1377,8 +1377,8 @@ public final class GachaInfoOuterClass {
         hash = (37 * hash) + DISPLAY_UP4_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDisplayUp4ItemListList().hashCode();
       }
-      hash = (37 * hash) + UNK3100_JKILPCKLNPI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3100JKILPCKLNPI();
+      hash = (37 * hash) + CUR_SCHEDULE_DAILY_GACHA_TIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getCurScheduleDailyGachaTimes();
       if (getGachaUpInfoListCount() > 0) {
         hash = (37 * hash) + GACHA_UP_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getGachaUpInfoListList().hashCode();
@@ -1568,7 +1568,7 @@ public final class GachaInfoOuterClass {
 
         displayUp4ItemList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        unk3100JKILPCKLNPI_ = 0;
+        curScheduleDailyGachaTimes_ = 0;
 
         if (gachaUpInfoListBuilder_ == null) {
           gachaUpInfoList_ = java.util.Collections.emptyList();
@@ -1652,7 +1652,7 @@ public final class GachaInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.displayUp4ItemList_ = displayUp4ItemList_;
-        result.unk3100JKILPCKLNPI_ = unk3100JKILPCKLNPI_;
+        result.curScheduleDailyGachaTimes_ = curScheduleDailyGachaTimes_;
         if (gachaUpInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             gachaUpInfoList_ = java.util.Collections.unmodifiableList(gachaUpInfoList_);
@@ -1751,8 +1751,8 @@ public final class GachaInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getUnk3100JKILPCKLNPI() != 0) {
-          setUnk3100JKILPCKLNPI(other.getUnk3100JKILPCKLNPI());
+        if (other.getCurScheduleDailyGachaTimes() != 0) {
+          setCurScheduleDailyGachaTimes(other.getCurScheduleDailyGachaTimes());
         }
         if (gachaUpInfoListBuilder_ == null) {
           if (!other.gachaUpInfoList_.isEmpty()) {
@@ -2028,33 +2028,33 @@ public final class GachaInfoOuterClass {
         return this;
       }
 
-      private int unk3100JKILPCKLNPI_ ;
+      private int curScheduleDailyGachaTimes_ ;
       /**
-       * <code>uint32 Unk3100_JKILPCKLNPI = 469;</code>
-       * @return The unk3100JKILPCKLNPI.
+       * <code>uint32 cur_schedule_daily_gacha_times = 469;</code>
+       * @return The curScheduleDailyGachaTimes.
        */
       @java.lang.Override
-      public int getUnk3100JKILPCKLNPI() {
-        return unk3100JKILPCKLNPI_;
+      public int getCurScheduleDailyGachaTimes() {
+        return curScheduleDailyGachaTimes_;
       }
       /**
-       * <code>uint32 Unk3100_JKILPCKLNPI = 469;</code>
-       * @param value The unk3100JKILPCKLNPI to set.
+       * <code>uint32 cur_schedule_daily_gacha_times = 469;</code>
+       * @param value The curScheduleDailyGachaTimes to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3100JKILPCKLNPI(int value) {
+      public Builder setCurScheduleDailyGachaTimes(int value) {
         
-        unk3100JKILPCKLNPI_ = value;
+        curScheduleDailyGachaTimes_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3100_JKILPCKLNPI = 469;</code>
+       * <code>uint32 cur_schedule_daily_gacha_times = 469;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3100JKILPCKLNPI() {
+      public Builder clearCurScheduleDailyGachaTimes() {
         
-        unk3100JKILPCKLNPI_ = 0;
+        curScheduleDailyGachaTimes_ = 0;
         onChanged();
         return this;
       }
@@ -3379,26 +3379,26 @@ public final class GachaInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017GachaInfo.proto\032\021GachaUpInfo.proto\"\276\005\n" +
+      "\n\017GachaInfo.proto\032\021GachaUpInfo.proto\"\311\005\n" +
       "\tGachaInfo\022\030\n\020ten_cost_item_id\030\002 \001(\r\022\020\n\010" +
       "end_time\030\016 \001(\r\022\036\n\025display_up4_item_list\030" +
-      "\323\016 \003(\r\022\034\n\023Unk3100_JKILPCKLNPI\030\325\003 \001(\r\022)\n\022" +
-      "gacha_up_info_list\030\321\t \003(\0132\014.GachaUpInfo\022" +
-      "\026\n\016gacha_prob_url\030\010 \001(\t\022\031\n\021gacha_prefab_" +
-      "path\030\017 \001(\t\022\025\n\014wish_item_id\030\345\014 \001(\r\022\022\n\nbeg" +
-      "in_time\030\001 \001(\r\022\032\n\021wish_max_progress\030\306\t \001(" +
-      "\r\022\023\n\013schedule_id\030\n \001(\r\022\037\n\026gacha_prob_url" +
-      "_oversea\030\311\013 \001(\t\022\022\n\ngacha_type\030\r \001(\r\022\030\n\020l" +
-      "eft_gacha_times\030\005 \001(\r\022\036\n\025display_up5_ite" +
-      "m_list\030\326\017 \003(\r\022\031\n\021gacha_times_limit\030\013 \001(\r" +
-      "\022\025\n\rcost_item_num\030\003 \001(\r\022\024\n\013is_new_wish\030\335" +
-      "\005 \001(\010\022\024\n\014cost_item_id\030\t \001(\r\022\031\n\021ten_cost_" +
-      "item_num\030\006 \001(\r\022!\n\031gacha_preview_prefab_p" +
-      "ath\030\004 \001(\t\022\026\n\rwish_progress\030\233\016 \001(\r\022\026\n\rtit" +
-      "le_textmap\030\340\005 \001(\t\022!\n\030gacha_record_url_ov" +
-      "ersea\030\276\016 \001(\t\022\025\n\rgacha_sort_id\030\007 \001(\r\022\030\n\020g" +
-      "acha_record_url\030\014 \001(\tB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\323\016 \003(\r\022\'\n\036cur_schedule_daily_gacha_times" +
+      "\030\325\003 \001(\r\022)\n\022gacha_up_info_list\030\321\t \003(\0132\014.G" +
+      "achaUpInfo\022\026\n\016gacha_prob_url\030\010 \001(\t\022\031\n\021ga" +
+      "cha_prefab_path\030\017 \001(\t\022\025\n\014wish_item_id\030\345\014" +
+      " \001(\r\022\022\n\nbegin_time\030\001 \001(\r\022\032\n\021wish_max_pro" +
+      "gress\030\306\t \001(\r\022\023\n\013schedule_id\030\n \001(\r\022\037\n\026gac" +
+      "ha_prob_url_oversea\030\311\013 \001(\t\022\022\n\ngacha_type" +
+      "\030\r \001(\r\022\030\n\020left_gacha_times\030\005 \001(\r\022\036\n\025disp" +
+      "lay_up5_item_list\030\326\017 \003(\r\022\031\n\021gacha_times_" +
+      "limit\030\013 \001(\r\022\025\n\rcost_item_num\030\003 \001(\r\022\024\n\013is" +
+      "_new_wish\030\335\005 \001(\010\022\024\n\014cost_item_id\030\t \001(\r\022\031" +
+      "\n\021ten_cost_item_num\030\006 \001(\r\022!\n\031gacha_previ" +
+      "ew_prefab_path\030\004 \001(\t\022\026\n\rwish_progress\030\233\016" +
+      " \001(\r\022\026\n\rtitle_textmap\030\340\005 \001(\t\022!\n\030gacha_re" +
+      "cord_url_oversea\030\276\016 \001(\t\022\025\n\rgacha_sort_id" +
+      "\030\007 \001(\r\022\030\n\020gacha_record_url\030\014 \001(\tB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3410,7 +3410,7 @@ public final class GachaInfoOuterClass {
     internal_static_GachaInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GachaInfo_descriptor,
-        new java.lang.String[] { "TenCostItemId", "EndTime", "DisplayUp4ItemList", "Unk3100JKILPCKLNPI", "GachaUpInfoList", "GachaProbUrl", "GachaPrefabPath", "WishItemId", "BeginTime", "WishMaxProgress", "ScheduleId", "GachaProbUrlOversea", "GachaType", "LeftGachaTimes", "DisplayUp5ItemList", "GachaTimesLimit", "CostItemNum", "IsNewWish", "CostItemId", "TenCostItemNum", "GachaPreviewPrefabPath", "WishProgress", "TitleTextmap", "GachaRecordUrlOversea", "GachaSortId", "GachaRecordUrl", });
+        new java.lang.String[] { "TenCostItemId", "EndTime", "DisplayUp4ItemList", "CurScheduleDailyGachaTimes", "GachaUpInfoList", "GachaProbUrl", "GachaPrefabPath", "WishItemId", "BeginTime", "WishMaxProgress", "ScheduleId", "GachaProbUrlOversea", "GachaType", "LeftGachaTimes", "DisplayUp5ItemList", "GachaTimesLimit", "CostItemNum", "IsNewWish", "CostItemId", "TenCostItemNum", "GachaPreviewPrefabPath", "WishProgress", "TitleTextmap", "GachaRecordUrlOversea", "GachaSortId", "GachaRecordUrl", });
     emu.grasscutter.net.proto.GachaUpInfoOuterClass.getDescriptor();
   }
 

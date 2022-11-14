@@ -223,9 +223,9 @@ public final class PBNavMeshPolyOuterClass {
        */
       EDGE_TYPE_TILE_BOUND_UNCONNECT(2),
       /**
-       * <code>EDGE_TYPE_Unk2700_BFOKBOEBPJF = 3;</code>
+       * <code>EDGE_TYPE_TILE_BOUND_OVERIDE = 3;</code>
        */
-      EDGE_TYPE_Unk2700_BFOKBOEBPJF(3),
+      EDGE_TYPE_TILE_BOUND_OVERIDE(3),
       UNRECOGNIZED(-1),
       ;
 
@@ -242,9 +242,9 @@ public final class PBNavMeshPolyOuterClass {
        */
       public static final int EDGE_TYPE_TILE_BOUND_UNCONNECT_VALUE = 2;
       /**
-       * <code>EDGE_TYPE_Unk2700_BFOKBOEBPJF = 3;</code>
+       * <code>EDGE_TYPE_TILE_BOUND_OVERIDE = 3;</code>
        */
-      public static final int EDGE_TYPE_Unk2700_BFOKBOEBPJF_VALUE = 3;
+      public static final int EDGE_TYPE_TILE_BOUND_OVERIDE_VALUE = 3;
 
 
       public final int getNumber() {
@@ -274,7 +274,7 @@ public final class PBNavMeshPolyOuterClass {
           case 0: return EDGE_TYPE_INNER;
           case 1: return EDGE_TYPE_TILE_BOUND;
           case 2: return EDGE_TYPE_TILE_BOUND_UNCONNECT;
-          case 3: return EDGE_TYPE_Unk2700_BFOKBOEBPJF;
+          case 3: return EDGE_TYPE_TILE_BOUND_OVERIDE;
           default: return null;
         }
       }
@@ -1134,14 +1134,13 @@ public final class PBNavMeshPolyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023PBNavMeshPoly.proto\"\334\001\n\rPBNavMeshPoly\022" +
+      "\n\023PBNavMeshPoly.proto\"\332\001\n\rPBNavMeshPoly\022" +
       "+\n\nedge_types\030\n \003(\0162\027.PBNavMeshPoly.Edge" +
-      "Type\022\014\n\004area\030\006 \001(\005\022\r\n\005vects\030\007 \003(\005\"\200\001\n\010Ed" +
-      "geType\022\023\n\017EDGE_TYPE_INNER\020\000\022\030\n\024EDGE_TYPE" +
-      "_TILE_BOUND\020\001\022\"\n\036EDGE_TYPE_TILE_BOUND_UN" +
-      "CONNECT\020\002\022!\n\035EDGE_TYPE_Unk2700_BFOKBOEBP" +
-      "JF\020\003B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "Type\022\014\n\004area\030\006 \001(\005\022\r\n\005vects\030\007 \003(\005\"\177\n\010Edg" +
+      "eType\022\023\n\017EDGE_TYPE_INNER\020\000\022\030\n\024EDGE_TYPE_" +
+      "TILE_BOUND\020\001\022\"\n\036EDGE_TYPE_TILE_BOUND_UNC" +
+      "ONNECT\020\002\022 \n\034EDGE_TYPE_TILE_BOUND_OVERIDE" +
+      "\020\003B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

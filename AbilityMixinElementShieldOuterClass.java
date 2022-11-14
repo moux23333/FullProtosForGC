@@ -37,10 +37,10 @@ public final class AbilityMixinElementShieldOuterClass {
     int getAbsorbType();
 
     /**
-     * <code>uint32 Unk2700_PBKBDDLNBEA = 4;</code>
-     * @return The unk2700PBKBDDLNBEA.
+     * <code>uint32 player_num = 4;</code>
+     * @return The playerNum.
      */
-    int getUnk2700PBKBDDLNBEA();
+    int getPlayerNum();
 
     /**
      * <code>bool is_shield_broken = 9;</code>
@@ -106,7 +106,7 @@ public final class AbilityMixinElementShieldOuterClass {
             }
             case 32: {
 
-              unk2700PBKBDDLNBEA_ = input.readUInt32();
+              playerNum_ = input.readUInt32();
               break;
             }
             case 69: {
@@ -194,15 +194,15 @@ public final class AbilityMixinElementShieldOuterClass {
       return absorbType_;
     }
 
-    public static final int UNK2700_PBKBDDLNBEA_FIELD_NUMBER = 4;
-    private int unk2700PBKBDDLNBEA_;
+    public static final int PLAYER_NUM_FIELD_NUMBER = 4;
+    private int playerNum_;
     /**
-     * <code>uint32 Unk2700_PBKBDDLNBEA = 4;</code>
-     * @return The unk2700PBKBDDLNBEA.
+     * <code>uint32 player_num = 4;</code>
+     * @return The playerNum.
      */
     @java.lang.Override
-    public int getUnk2700PBKBDDLNBEA() {
-      return unk2700PBKBDDLNBEA_;
+    public int getPlayerNum() {
+      return playerNum_;
     }
 
     public static final int IS_SHIELD_BROKEN_FIELD_NUMBER = 9;
@@ -244,8 +244,8 @@ public final class AbilityMixinElementShieldOuterClass {
       if (absorbType_ != 0) {
         output.writeUInt32(1, absorbType_);
       }
-      if (unk2700PBKBDDLNBEA_ != 0) {
-        output.writeUInt32(4, unk2700PBKBDDLNBEA_);
+      if (playerNum_ != 0) {
+        output.writeUInt32(4, playerNum_);
       }
       if (shield_ != 0F) {
         output.writeFloat(8, shield_);
@@ -272,9 +272,9 @@ public final class AbilityMixinElementShieldOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, absorbType_);
       }
-      if (unk2700PBKBDDLNBEA_ != 0) {
+      if (playerNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, unk2700PBKBDDLNBEA_);
+          .computeUInt32Size(4, playerNum_);
       }
       if (shield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
@@ -315,8 +315,8 @@ public final class AbilityMixinElementShieldOuterClass {
               other.getShield())) return false;
       if (getAbsorbType()
           != other.getAbsorbType()) return false;
-      if (getUnk2700PBKBDDLNBEA()
-          != other.getUnk2700PBKBDDLNBEA()) return false;
+      if (getPlayerNum()
+          != other.getPlayerNum()) return false;
       if (getIsShieldBroken()
           != other.getIsShieldBroken()) return false;
       if (java.lang.Float.floatToIntBits(getMaxShield())
@@ -341,8 +341,8 @@ public final class AbilityMixinElementShieldOuterClass {
           getShield());
       hash = (37 * hash) + ABSORB_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getAbsorbType();
-      hash = (37 * hash) + UNK2700_PBKBDDLNBEA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700PBKBDDLNBEA();
+      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerNum();
       hash = (37 * hash) + IS_SHIELD_BROKEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShieldBroken());
@@ -488,7 +488,7 @@ public final class AbilityMixinElementShieldOuterClass {
 
         absorbType_ = 0;
 
-        unk2700PBKBDDLNBEA_ = 0;
+        playerNum_ = 0;
 
         isShieldBroken_ = false;
 
@@ -523,7 +523,7 @@ public final class AbilityMixinElementShieldOuterClass {
         result.subShield_ = subShield_;
         result.shield_ = shield_;
         result.absorbType_ = absorbType_;
-        result.unk2700PBKBDDLNBEA_ = unk2700PBKBDDLNBEA_;
+        result.playerNum_ = playerNum_;
         result.isShieldBroken_ = isShieldBroken_;
         result.maxShield_ = maxShield_;
         onBuilt();
@@ -583,8 +583,8 @@ public final class AbilityMixinElementShieldOuterClass {
         if (other.getAbsorbType() != 0) {
           setAbsorbType(other.getAbsorbType());
         }
-        if (other.getUnk2700PBKBDDLNBEA() != 0) {
-          setUnk2700PBKBDDLNBEA(other.getUnk2700PBKBDDLNBEA());
+        if (other.getPlayerNum() != 0) {
+          setPlayerNum(other.getPlayerNum());
         }
         if (other.getIsShieldBroken() != false) {
           setIsShieldBroken(other.getIsShieldBroken());
@@ -714,33 +714,33 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
 
-      private int unk2700PBKBDDLNBEA_ ;
+      private int playerNum_ ;
       /**
-       * <code>uint32 Unk2700_PBKBDDLNBEA = 4;</code>
-       * @return The unk2700PBKBDDLNBEA.
+       * <code>uint32 player_num = 4;</code>
+       * @return The playerNum.
        */
       @java.lang.Override
-      public int getUnk2700PBKBDDLNBEA() {
-        return unk2700PBKBDDLNBEA_;
+      public int getPlayerNum() {
+        return playerNum_;
       }
       /**
-       * <code>uint32 Unk2700_PBKBDDLNBEA = 4;</code>
-       * @param value The unk2700PBKBDDLNBEA to set.
+       * <code>uint32 player_num = 4;</code>
+       * @param value The playerNum to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700PBKBDDLNBEA(int value) {
+      public Builder setPlayerNum(int value) {
         
-        unk2700PBKBDDLNBEA_ = value;
+        playerNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_PBKBDDLNBEA = 4;</code>
+       * <code>uint32 player_num = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700PBKBDDLNBEA() {
+      public Builder clearPlayerNum() {
         
-        unk2700PBKBDDLNBEA_ = 0;
+        playerNum_ = 0;
         onChanged();
         return this;
       }
@@ -873,12 +873,12 @@ public final class AbilityMixinElementShieldOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037AbilityMixinElementShield.proto\"\237\001\n\031Ab" +
+      "\n\037AbilityMixinElementShield.proto\"\226\001\n\031Ab" +
       "ilityMixinElementShield\022\022\n\nsub_shield\030\n " +
       "\001(\002\022\016\n\006shield\030\010 \001(\002\022\023\n\013absorb_type\030\001 \001(\r" +
-      "\022\033\n\023Unk2700_PBKBDDLNBEA\030\004 \001(\r\022\030\n\020is_shie" +
-      "ld_broken\030\t \001(\010\022\022\n\nmax_shield\030\014 \001(\002B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\022\022\n\nplayer_num\030\004 \001(\r\022\030\n\020is_shield_broken" +
+      "\030\t \001(\010\022\022\n\nmax_shield\030\014 \001(\002B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -889,7 +889,7 @@ public final class AbilityMixinElementShieldOuterClass {
     internal_static_AbilityMixinElementShield_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinElementShield_descriptor,
-        new java.lang.String[] { "SubShield", "Shield", "AbsorbType", "Unk2700PBKBDDLNBEA", "IsShieldBroken", "MaxShield", });
+        new java.lang.String[] { "SubShield", "Shield", "AbsorbType", "PlayerNum", "IsShieldBroken", "MaxShield", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

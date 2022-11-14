@@ -19,74 +19,74 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC> 
-        getUnk2700MPNNMCPOLAMList();
+    java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo> 
+        getChallengePosListList();
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
-    emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC getUnk2700MPNNMCPOLAM(int index);
+    emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo getChallengePosList(int index);
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
-    int getUnk2700MPNNMCPOLAMCount();
+    int getChallengePosListCount();
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder> 
-        getUnk2700MPNNMCPOLAMOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder> 
+        getChallengePosListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
-    emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder getUnk2700MPNNMCPOLAMOrBuilder(
+    emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder getChallengePosListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 Unk2700_MAOAHHBCKIA = 13;</code>
-     * @return The unk2700MAOAHHBCKIA.
+     * <code>uint32 gain_crystal_exp = 13;</code>
+     * @return The gainCrystalExp.
      */
-    int getUnk2700MAOAHHBCKIA();
+    int getGainCrystalExp();
 
     /**
-     * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-     * @return A list containing the unk2700BEHAAHHGCLK.
+     * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+     * @return A list containing the unlockedCrystalSkillList.
      */
-    java.util.List<java.lang.Integer> getUnk2700BEHAAHHGCLKList();
+    java.util.List<java.lang.Integer> getUnlockedCrystalSkillListList();
     /**
-     * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-     * @return The count of unk2700BEHAAHHGCLK.
+     * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+     * @return The count of unlockedCrystalSkillList.
      */
-    int getUnk2700BEHAAHHGCLKCount();
+    int getUnlockedCrystalSkillListCount();
     /**
-     * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
+     * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
      * @param index The index of the element to return.
-     * @return The unk2700BEHAAHHGCLK at the given index.
+     * @return The unlockedCrystalSkillList at the given index.
      */
-    int getUnk2700BEHAAHHGCLK(int index);
+    int getUnlockedCrystalSkillList(int index);
 
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG> 
-        getUnk2700LEKHKNKHIPOList();
+    java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo> 
+        getChestPosListList();
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
-    emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG getUnk2700LEKHKNKHIPO(int index);
+    emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo getChestPosList(int index);
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
-    int getUnk2700LEKHKNKHIPOCount();
+    int getChestPosListCount();
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder> 
-        getUnk2700LEKHKNKHIPOOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder> 
+        getChestPosListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
-    emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder getUnk2700LEKHKNKHIPOOrBuilder(
+    emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder getChestPosListOrBuilder(
         int index);
 
     /**
@@ -126,9 +126,9 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       super(builder);
     }
     private MichiaeMatsuriActivityDetailInfo() {
-      unk2700MPNNMCPOLAM_ = java.util.Collections.emptyList();
-      unk2700BEHAAHHGCLK_ = emptyIntList();
-      unk2700LEKHKNKHIPO_ = java.util.Collections.emptyList();
+      challengePosList_ = java.util.Collections.emptyList();
+      unlockedCrystalSkillList_ = emptyIntList();
+      chestPosList_ = java.util.Collections.emptyList();
       stageList_ = java.util.Collections.emptyList();
     }
 
@@ -165,46 +165,46 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
               break;
             case 16: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk2700BEHAAHHGCLK_ = newIntList();
+                unlockedCrystalSkillList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              unk2700BEHAAHHGCLK_.addInt(input.readUInt32());
+              unlockedCrystalSkillList_.addInt(input.readUInt32());
               break;
             }
             case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2700BEHAAHHGCLK_ = newIntList();
+                unlockedCrystalSkillList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2700BEHAAHHGCLK_.addInt(input.readUInt32());
+                unlockedCrystalSkillList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700MPNNMCPOLAM_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC>();
+                challengePosList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700MPNNMCPOLAM_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.parser(), extensionRegistry));
+              challengePosList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.parser(), extensionRegistry));
               break;
             }
             case 82: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                unk2700LEKHKNKHIPO_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG>();
+                chestPosList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo>();
                 mutable_bitField0_ |= 0x00000004;
               }
-              unk2700LEKHKNKHIPO_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.parser(), extensionRegistry));
+              chestPosList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.parser(), extensionRegistry));
               break;
             }
             case 104: {
 
-              unk2700MAOAHHBCKIA_ = input.readUInt32();
+              gainCrystalExp_ = input.readUInt32();
               break;
             }
             case 114: {
@@ -232,13 +232,13 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unk2700BEHAAHHGCLK_.makeImmutable(); // C
+          unlockedCrystalSkillList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700MPNNMCPOLAM_ = java.util.Collections.unmodifiableList(unk2700MPNNMCPOLAM_);
+          challengePosList_ = java.util.Collections.unmodifiableList(challengePosList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          unk2700LEKHKNKHIPO_ = java.util.Collections.unmodifiableList(unk2700LEKHKNKHIPO_);
+          chestPosList_ = java.util.Collections.unmodifiableList(chestPosList_);
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
           stageList_ = java.util.Collections.unmodifiableList(stageList_);
@@ -260,123 +260,123 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo.class, emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo.Builder.class);
     }
 
-    public static final int UNK2700_MPNNMCPOLAM_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC> unk2700MPNNMCPOLAM_;
+    public static final int CHALLENGE_POS_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo> challengePosList_;
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC> getUnk2700MPNNMCPOLAMList() {
-      return unk2700MPNNMCPOLAM_;
+    public java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo> getChallengePosListList() {
+      return challengePosList_;
     }
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder> 
-        getUnk2700MPNNMCPOLAMOrBuilderList() {
-      return unk2700MPNNMCPOLAM_;
+    public java.util.List<? extends emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder> 
+        getChallengePosListOrBuilderList() {
+      return challengePosList_;
     }
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
     @java.lang.Override
-    public int getUnk2700MPNNMCPOLAMCount() {
-      return unk2700MPNNMCPOLAM_.size();
+    public int getChallengePosListCount() {
+      return challengePosList_.size();
     }
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC getUnk2700MPNNMCPOLAM(int index) {
-      return unk2700MPNNMCPOLAM_.get(index);
+    public emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo getChallengePosList(int index) {
+      return challengePosList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+     * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder getUnk2700MPNNMCPOLAMOrBuilder(
+    public emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder getChallengePosListOrBuilder(
         int index) {
-      return unk2700MPNNMCPOLAM_.get(index);
+      return challengePosList_.get(index);
     }
 
-    public static final int UNK2700_MAOAHHBCKIA_FIELD_NUMBER = 13;
-    private int unk2700MAOAHHBCKIA_;
+    public static final int GAIN_CRYSTAL_EXP_FIELD_NUMBER = 13;
+    private int gainCrystalExp_;
     /**
-     * <code>uint32 Unk2700_MAOAHHBCKIA = 13;</code>
-     * @return The unk2700MAOAHHBCKIA.
+     * <code>uint32 gain_crystal_exp = 13;</code>
+     * @return The gainCrystalExp.
      */
     @java.lang.Override
-    public int getUnk2700MAOAHHBCKIA() {
-      return unk2700MAOAHHBCKIA_;
+    public int getGainCrystalExp() {
+      return gainCrystalExp_;
     }
 
-    public static final int UNK2700_BEHAAHHGCLK_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList unk2700BEHAAHHGCLK_;
+    public static final int UNLOCKED_CRYSTAL_SKILL_LIST_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.IntList unlockedCrystalSkillList_;
     /**
-     * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-     * @return A list containing the unk2700BEHAAHHGCLK.
+     * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+     * @return A list containing the unlockedCrystalSkillList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2700BEHAAHHGCLKList() {
-      return unk2700BEHAAHHGCLK_;
+        getUnlockedCrystalSkillListList() {
+      return unlockedCrystalSkillList_;
     }
     /**
-     * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-     * @return The count of unk2700BEHAAHHGCLK.
+     * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+     * @return The count of unlockedCrystalSkillList.
      */
-    public int getUnk2700BEHAAHHGCLKCount() {
-      return unk2700BEHAAHHGCLK_.size();
+    public int getUnlockedCrystalSkillListCount() {
+      return unlockedCrystalSkillList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
+     * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
      * @param index The index of the element to return.
-     * @return The unk2700BEHAAHHGCLK at the given index.
+     * @return The unlockedCrystalSkillList at the given index.
      */
-    public int getUnk2700BEHAAHHGCLK(int index) {
-      return unk2700BEHAAHHGCLK_.getInt(index);
+    public int getUnlockedCrystalSkillList(int index) {
+      return unlockedCrystalSkillList_.getInt(index);
     }
-    private int unk2700BEHAAHHGCLKMemoizedSerializedSize = -1;
+    private int unlockedCrystalSkillListMemoizedSerializedSize = -1;
 
-    public static final int UNK2700_LEKHKNKHIPO_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG> unk2700LEKHKNKHIPO_;
+    public static final int CHEST_POS_LIST_FIELD_NUMBER = 10;
+    private java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo> chestPosList_;
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG> getUnk2700LEKHKNKHIPOList() {
-      return unk2700LEKHKNKHIPO_;
+    public java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo> getChestPosListList() {
+      return chestPosList_;
     }
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder> 
-        getUnk2700LEKHKNKHIPOOrBuilderList() {
-      return unk2700LEKHKNKHIPO_;
+    public java.util.List<? extends emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder> 
+        getChestPosListOrBuilderList() {
+      return chestPosList_;
     }
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
     @java.lang.Override
-    public int getUnk2700LEKHKNKHIPOCount() {
-      return unk2700LEKHKNKHIPO_.size();
+    public int getChestPosListCount() {
+      return chestPosList_.size();
     }
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG getUnk2700LEKHKNKHIPO(int index) {
-      return unk2700LEKHKNKHIPO_.get(index);
+    public emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo getChestPosList(int index) {
+      return chestPosList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+     * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder getUnk2700LEKHKNKHIPOOrBuilder(
+    public emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder getChestPosListOrBuilder(
         int index) {
-      return unk2700LEKHKNKHIPO_.get(index);
+      return chestPosList_.get(index);
     }
 
     public static final int STAGE_LIST_FIELD_NUMBER = 14;
@@ -434,21 +434,21 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getUnk2700BEHAAHHGCLKList().size() > 0) {
+      if (getUnlockedCrystalSkillListList().size() > 0) {
         output.writeUInt32NoTag(18);
-        output.writeUInt32NoTag(unk2700BEHAAHHGCLKMemoizedSerializedSize);
+        output.writeUInt32NoTag(unlockedCrystalSkillListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2700BEHAAHHGCLK_.size(); i++) {
-        output.writeUInt32NoTag(unk2700BEHAAHHGCLK_.getInt(i));
+      for (int i = 0; i < unlockedCrystalSkillList_.size(); i++) {
+        output.writeUInt32NoTag(unlockedCrystalSkillList_.getInt(i));
       }
-      for (int i = 0; i < unk2700MPNNMCPOLAM_.size(); i++) {
-        output.writeMessage(6, unk2700MPNNMCPOLAM_.get(i));
+      for (int i = 0; i < challengePosList_.size(); i++) {
+        output.writeMessage(6, challengePosList_.get(i));
       }
-      for (int i = 0; i < unk2700LEKHKNKHIPO_.size(); i++) {
-        output.writeMessage(10, unk2700LEKHKNKHIPO_.get(i));
+      for (int i = 0; i < chestPosList_.size(); i++) {
+        output.writeMessage(10, chestPosList_.get(i));
       }
-      if (unk2700MAOAHHBCKIA_ != 0) {
-        output.writeUInt32(13, unk2700MAOAHHBCKIA_);
+      if (gainCrystalExp_ != 0) {
+        output.writeUInt32(13, gainCrystalExp_);
       }
       for (int i = 0; i < stageList_.size(); i++) {
         output.writeMessage(14, stageList_.get(i));
@@ -464,29 +464,29 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2700BEHAAHHGCLK_.size(); i++) {
+        for (int i = 0; i < unlockedCrystalSkillList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2700BEHAAHHGCLK_.getInt(i));
+            .computeUInt32SizeNoTag(unlockedCrystalSkillList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2700BEHAAHHGCLKList().isEmpty()) {
+        if (!getUnlockedCrystalSkillListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2700BEHAAHHGCLKMemoizedSerializedSize = dataSize;
+        unlockedCrystalSkillListMemoizedSerializedSize = dataSize;
       }
-      for (int i = 0; i < unk2700MPNNMCPOLAM_.size(); i++) {
+      for (int i = 0; i < challengePosList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, unk2700MPNNMCPOLAM_.get(i));
+          .computeMessageSize(6, challengePosList_.get(i));
       }
-      for (int i = 0; i < unk2700LEKHKNKHIPO_.size(); i++) {
+      for (int i = 0; i < chestPosList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, unk2700LEKHKNKHIPO_.get(i));
+          .computeMessageSize(10, chestPosList_.get(i));
       }
-      if (unk2700MAOAHHBCKIA_ != 0) {
+      if (gainCrystalExp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, unk2700MAOAHHBCKIA_);
+          .computeUInt32Size(13, gainCrystalExp_);
       }
       for (int i = 0; i < stageList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -507,14 +507,14 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo other = (emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo) obj;
 
-      if (!getUnk2700MPNNMCPOLAMList()
-          .equals(other.getUnk2700MPNNMCPOLAMList())) return false;
-      if (getUnk2700MAOAHHBCKIA()
-          != other.getUnk2700MAOAHHBCKIA()) return false;
-      if (!getUnk2700BEHAAHHGCLKList()
-          .equals(other.getUnk2700BEHAAHHGCLKList())) return false;
-      if (!getUnk2700LEKHKNKHIPOList()
-          .equals(other.getUnk2700LEKHKNKHIPOList())) return false;
+      if (!getChallengePosListList()
+          .equals(other.getChallengePosListList())) return false;
+      if (getGainCrystalExp()
+          != other.getGainCrystalExp()) return false;
+      if (!getUnlockedCrystalSkillListList()
+          .equals(other.getUnlockedCrystalSkillListList())) return false;
+      if (!getChestPosListList()
+          .equals(other.getChestPosListList())) return false;
       if (!getStageListList()
           .equals(other.getStageListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -528,19 +528,19 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getUnk2700MPNNMCPOLAMCount() > 0) {
-        hash = (37 * hash) + UNK2700_MPNNMCPOLAM_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700MPNNMCPOLAMList().hashCode();
+      if (getChallengePosListCount() > 0) {
+        hash = (37 * hash) + CHALLENGE_POS_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getChallengePosListList().hashCode();
       }
-      hash = (37 * hash) + UNK2700_MAOAHHBCKIA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700MAOAHHBCKIA();
-      if (getUnk2700BEHAAHHGCLKCount() > 0) {
-        hash = (37 * hash) + UNK2700_BEHAAHHGCLK_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700BEHAAHHGCLKList().hashCode();
+      hash = (37 * hash) + GAIN_CRYSTAL_EXP_FIELD_NUMBER;
+      hash = (53 * hash) + getGainCrystalExp();
+      if (getUnlockedCrystalSkillListCount() > 0) {
+        hash = (37 * hash) + UNLOCKED_CRYSTAL_SKILL_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getUnlockedCrystalSkillListList().hashCode();
       }
-      if (getUnk2700LEKHKNKHIPOCount() > 0) {
-        hash = (37 * hash) + UNK2700_LEKHKNKHIPO_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700LEKHKNKHIPOList().hashCode();
+      if (getChestPosListCount() > 0) {
+        hash = (37 * hash) + CHEST_POS_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getChestPosListList().hashCode();
       }
       if (getStageListCount() > 0) {
         hash = (37 * hash) + STAGE_LIST_FIELD_NUMBER;
@@ -674,29 +674,29 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2700MPNNMCPOLAMFieldBuilder();
-          getUnk2700LEKHKNKHIPOFieldBuilder();
+          getChallengePosListFieldBuilder();
+          getChestPosListFieldBuilder();
           getStageListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          unk2700MPNNMCPOLAM_ = java.util.Collections.emptyList();
+        if (challengePosListBuilder_ == null) {
+          challengePosList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2700MPNNMCPOLAMBuilder_.clear();
+          challengePosListBuilder_.clear();
         }
-        unk2700MAOAHHBCKIA_ = 0;
+        gainCrystalExp_ = 0;
 
-        unk2700BEHAAHHGCLK_ = emptyIntList();
+        unlockedCrystalSkillList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          unk2700LEKHKNKHIPO_ = java.util.Collections.emptyList();
+        if (chestPosListBuilder_ == null) {
+          chestPosList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          unk2700LEKHKNKHIPOBuilder_.clear();
+          chestPosListBuilder_.clear();
         }
         if (stageListBuilder_ == null) {
           stageList_ = java.util.Collections.emptyList();
@@ -731,29 +731,29 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo result = new emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
+        if (challengePosListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2700MPNNMCPOLAM_ = java.util.Collections.unmodifiableList(unk2700MPNNMCPOLAM_);
+            challengePosList_ = java.util.Collections.unmodifiableList(challengePosList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2700MPNNMCPOLAM_ = unk2700MPNNMCPOLAM_;
+          result.challengePosList_ = challengePosList_;
         } else {
-          result.unk2700MPNNMCPOLAM_ = unk2700MPNNMCPOLAMBuilder_.build();
+          result.challengePosList_ = challengePosListBuilder_.build();
         }
-        result.unk2700MAOAHHBCKIA_ = unk2700MAOAHHBCKIA_;
+        result.gainCrystalExp_ = gainCrystalExp_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          unk2700BEHAAHHGCLK_.makeImmutable();
+          unlockedCrystalSkillList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.unk2700BEHAAHHGCLK_ = unk2700BEHAAHHGCLK_;
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
+        result.unlockedCrystalSkillList_ = unlockedCrystalSkillList_;
+        if (chestPosListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
-            unk2700LEKHKNKHIPO_ = java.util.Collections.unmodifiableList(unk2700LEKHKNKHIPO_);
+            chestPosList_ = java.util.Collections.unmodifiableList(chestPosList_);
             bitField0_ = (bitField0_ & ~0x00000004);
           }
-          result.unk2700LEKHKNKHIPO_ = unk2700LEKHKNKHIPO_;
+          result.chestPosList_ = chestPosList_;
         } else {
-          result.unk2700LEKHKNKHIPO_ = unk2700LEKHKNKHIPOBuilder_.build();
+          result.chestPosList_ = chestPosListBuilder_.build();
         }
         if (stageListBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0)) {
@@ -812,68 +812,68 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.MichiaeMatsuriActivityDetailInfoOuterClass.MichiaeMatsuriActivityDetailInfo.getDefaultInstance()) return this;
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          if (!other.unk2700MPNNMCPOLAM_.isEmpty()) {
-            if (unk2700MPNNMCPOLAM_.isEmpty()) {
-              unk2700MPNNMCPOLAM_ = other.unk2700MPNNMCPOLAM_;
+        if (challengePosListBuilder_ == null) {
+          if (!other.challengePosList_.isEmpty()) {
+            if (challengePosList_.isEmpty()) {
+              challengePosList_ = other.challengePosList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2700MPNNMCPOLAMIsMutable();
-              unk2700MPNNMCPOLAM_.addAll(other.unk2700MPNNMCPOLAM_);
+              ensureChallengePosListIsMutable();
+              challengePosList_.addAll(other.challengePosList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700MPNNMCPOLAM_.isEmpty()) {
-            if (unk2700MPNNMCPOLAMBuilder_.isEmpty()) {
-              unk2700MPNNMCPOLAMBuilder_.dispose();
-              unk2700MPNNMCPOLAMBuilder_ = null;
-              unk2700MPNNMCPOLAM_ = other.unk2700MPNNMCPOLAM_;
+          if (!other.challengePosList_.isEmpty()) {
+            if (challengePosListBuilder_.isEmpty()) {
+              challengePosListBuilder_.dispose();
+              challengePosListBuilder_ = null;
+              challengePosList_ = other.challengePosList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2700MPNNMCPOLAMBuilder_ = 
+              challengePosListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700MPNNMCPOLAMFieldBuilder() : null;
+                   getChallengePosListFieldBuilder() : null;
             } else {
-              unk2700MPNNMCPOLAMBuilder_.addAllMessages(other.unk2700MPNNMCPOLAM_);
+              challengePosListBuilder_.addAllMessages(other.challengePosList_);
             }
           }
         }
-        if (other.getUnk2700MAOAHHBCKIA() != 0) {
-          setUnk2700MAOAHHBCKIA(other.getUnk2700MAOAHHBCKIA());
+        if (other.getGainCrystalExp() != 0) {
+          setGainCrystalExp(other.getGainCrystalExp());
         }
-        if (!other.unk2700BEHAAHHGCLK_.isEmpty()) {
-          if (unk2700BEHAAHHGCLK_.isEmpty()) {
-            unk2700BEHAAHHGCLK_ = other.unk2700BEHAAHHGCLK_;
+        if (!other.unlockedCrystalSkillList_.isEmpty()) {
+          if (unlockedCrystalSkillList_.isEmpty()) {
+            unlockedCrystalSkillList_ = other.unlockedCrystalSkillList_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureUnk2700BEHAAHHGCLKIsMutable();
-            unk2700BEHAAHHGCLK_.addAll(other.unk2700BEHAAHHGCLK_);
+            ensureUnlockedCrystalSkillListIsMutable();
+            unlockedCrystalSkillList_.addAll(other.unlockedCrystalSkillList_);
           }
           onChanged();
         }
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          if (!other.unk2700LEKHKNKHIPO_.isEmpty()) {
-            if (unk2700LEKHKNKHIPO_.isEmpty()) {
-              unk2700LEKHKNKHIPO_ = other.unk2700LEKHKNKHIPO_;
+        if (chestPosListBuilder_ == null) {
+          if (!other.chestPosList_.isEmpty()) {
+            if (chestPosList_.isEmpty()) {
+              chestPosList_ = other.chestPosList_;
               bitField0_ = (bitField0_ & ~0x00000004);
             } else {
-              ensureUnk2700LEKHKNKHIPOIsMutable();
-              unk2700LEKHKNKHIPO_.addAll(other.unk2700LEKHKNKHIPO_);
+              ensureChestPosListIsMutable();
+              chestPosList_.addAll(other.chestPosList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700LEKHKNKHIPO_.isEmpty()) {
-            if (unk2700LEKHKNKHIPOBuilder_.isEmpty()) {
-              unk2700LEKHKNKHIPOBuilder_.dispose();
-              unk2700LEKHKNKHIPOBuilder_ = null;
-              unk2700LEKHKNKHIPO_ = other.unk2700LEKHKNKHIPO_;
+          if (!other.chestPosList_.isEmpty()) {
+            if (chestPosListBuilder_.isEmpty()) {
+              chestPosListBuilder_.dispose();
+              chestPosListBuilder_ = null;
+              chestPosList_ = other.chestPosList_;
               bitField0_ = (bitField0_ & ~0x00000004);
-              unk2700LEKHKNKHIPOBuilder_ = 
+              chestPosListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700LEKHKNKHIPOFieldBuilder() : null;
+                   getChestPosListFieldBuilder() : null;
             } else {
-              unk2700LEKHKNKHIPOBuilder_.addAllMessages(other.unk2700LEKHKNKHIPO_);
+              chestPosListBuilder_.addAllMessages(other.chestPosList_);
             }
           }
         }
@@ -933,594 +933,594 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC> unk2700MPNNMCPOLAM_ =
+      private java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo> challengePosList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700MPNNMCPOLAMIsMutable() {
+      private void ensureChallengePosListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700MPNNMCPOLAM_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC>(unk2700MPNNMCPOLAM_);
+          challengePosList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo>(challengePosList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder> unk2700MPNNMCPOLAMBuilder_;
+          emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder> challengePosListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC> getUnk2700MPNNMCPOLAMList() {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700MPNNMCPOLAM_);
+      public java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo> getChallengePosListList() {
+        if (challengePosListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(challengePosList_);
         } else {
-          return unk2700MPNNMCPOLAMBuilder_.getMessageList();
+          return challengePosListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public int getUnk2700MPNNMCPOLAMCount() {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          return unk2700MPNNMCPOLAM_.size();
+      public int getChallengePosListCount() {
+        if (challengePosListBuilder_ == null) {
+          return challengePosList_.size();
         } else {
-          return unk2700MPNNMCPOLAMBuilder_.getCount();
+          return challengePosListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC getUnk2700MPNNMCPOLAM(int index) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          return unk2700MPNNMCPOLAM_.get(index);
+      public emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo getChallengePosList(int index) {
+        if (challengePosListBuilder_ == null) {
+          return challengePosList_.get(index);
         } else {
-          return unk2700MPNNMCPOLAMBuilder_.getMessage(index);
+          return challengePosListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder setUnk2700MPNNMCPOLAM(
-          int index, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC value) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
+      public Builder setChallengePosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo value) {
+        if (challengePosListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700MPNNMCPOLAMIsMutable();
-          unk2700MPNNMCPOLAM_.set(index, value);
+          ensureChallengePosListIsMutable();
+          challengePosList_.set(index, value);
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.setMessage(index, value);
+          challengePosListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder setUnk2700MPNNMCPOLAM(
-          int index, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder builderForValue) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          ensureUnk2700MPNNMCPOLAMIsMutable();
-          unk2700MPNNMCPOLAM_.set(index, builderForValue.build());
+      public Builder setChallengePosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder builderForValue) {
+        if (challengePosListBuilder_ == null) {
+          ensureChallengePosListIsMutable();
+          challengePosList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.setMessage(index, builderForValue.build());
+          challengePosListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder addUnk2700MPNNMCPOLAM(emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC value) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
+      public Builder addChallengePosList(emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo value) {
+        if (challengePosListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700MPNNMCPOLAMIsMutable();
-          unk2700MPNNMCPOLAM_.add(value);
+          ensureChallengePosListIsMutable();
+          challengePosList_.add(value);
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.addMessage(value);
+          challengePosListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder addUnk2700MPNNMCPOLAM(
-          int index, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC value) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
+      public Builder addChallengePosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo value) {
+        if (challengePosListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700MPNNMCPOLAMIsMutable();
-          unk2700MPNNMCPOLAM_.add(index, value);
+          ensureChallengePosListIsMutable();
+          challengePosList_.add(index, value);
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.addMessage(index, value);
+          challengePosListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder addUnk2700MPNNMCPOLAM(
-          emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder builderForValue) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          ensureUnk2700MPNNMCPOLAMIsMutable();
-          unk2700MPNNMCPOLAM_.add(builderForValue.build());
+      public Builder addChallengePosList(
+          emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder builderForValue) {
+        if (challengePosListBuilder_ == null) {
+          ensureChallengePosListIsMutable();
+          challengePosList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.addMessage(builderForValue.build());
+          challengePosListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder addUnk2700MPNNMCPOLAM(
-          int index, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder builderForValue) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          ensureUnk2700MPNNMCPOLAMIsMutable();
-          unk2700MPNNMCPOLAM_.add(index, builderForValue.build());
+      public Builder addChallengePosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder builderForValue) {
+        if (challengePosListBuilder_ == null) {
+          ensureChallengePosListIsMutable();
+          challengePosList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.addMessage(index, builderForValue.build());
+          challengePosListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder addAllUnk2700MPNNMCPOLAM(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC> values) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          ensureUnk2700MPNNMCPOLAMIsMutable();
+      public Builder addAllChallengePosList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo> values) {
+        if (challengePosListBuilder_ == null) {
+          ensureChallengePosListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700MPNNMCPOLAM_);
+              values, challengePosList_);
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.addAllMessages(values);
+          challengePosListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder clearUnk2700MPNNMCPOLAM() {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          unk2700MPNNMCPOLAM_ = java.util.Collections.emptyList();
+      public Builder clearChallengePosList() {
+        if (challengePosListBuilder_ == null) {
+          challengePosList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.clear();
+          challengePosListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public Builder removeUnk2700MPNNMCPOLAM(int index) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          ensureUnk2700MPNNMCPOLAMIsMutable();
-          unk2700MPNNMCPOLAM_.remove(index);
+      public Builder removeChallengePosList(int index) {
+        if (challengePosListBuilder_ == null) {
+          ensureChallengePosListIsMutable();
+          challengePosList_.remove(index);
           onChanged();
         } else {
-          unk2700MPNNMCPOLAMBuilder_.remove(index);
+          challengePosListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder getUnk2700MPNNMCPOLAMBuilder(
+      public emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder getChallengePosListBuilder(
           int index) {
-        return getUnk2700MPNNMCPOLAMFieldBuilder().getBuilder(index);
+        return getChallengePosListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder getUnk2700MPNNMCPOLAMOrBuilder(
+      public emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder getChallengePosListOrBuilder(
           int index) {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          return unk2700MPNNMCPOLAM_.get(index);  } else {
-          return unk2700MPNNMCPOLAMBuilder_.getMessageOrBuilder(index);
+        if (challengePosListBuilder_ == null) {
+          return challengePosList_.get(index);  } else {
+          return challengePosListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder> 
-           getUnk2700MPNNMCPOLAMOrBuilderList() {
-        if (unk2700MPNNMCPOLAMBuilder_ != null) {
-          return unk2700MPNNMCPOLAMBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder> 
+           getChallengePosListOrBuilderList() {
+        if (challengePosListBuilder_ != null) {
+          return challengePosListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700MPNNMCPOLAM_);
+          return java.util.Collections.unmodifiableList(challengePosList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder addUnk2700MPNNMCPOLAMBuilder() {
-        return getUnk2700MPNNMCPOLAMFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.getDefaultInstance());
+      public emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder addChallengePosListBuilder() {
+        return getChallengePosListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder addUnk2700MPNNMCPOLAMBuilder(
+      public emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder addChallengePosListBuilder(
           int index) {
-        return getUnk2700MPNNMCPOLAMFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.getDefaultInstance());
+        return getChallengePosListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;</code>
+       * <code>repeated .MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder> 
-           getUnk2700MPNNMCPOLAMBuilderList() {
-        return getUnk2700MPNNMCPOLAMFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder> 
+           getChallengePosListBuilderList() {
+        return getChallengePosListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder> 
-          getUnk2700MPNNMCPOLAMFieldBuilder() {
-        if (unk2700MPNNMCPOLAMBuilder_ == null) {
-          unk2700MPNNMCPOLAMBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNC.Builder, emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.Unk2700_HGFFGMCODNCOrBuilder>(
-                  unk2700MPNNMCPOLAM_,
+          emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder> 
+          getChallengePosListFieldBuilder() {
+        if (challengePosListBuilder_ == null) {
+          challengePosListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfoOrBuilder>(
+                  challengePosList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700MPNNMCPOLAM_ = null;
+          challengePosList_ = null;
         }
-        return unk2700MPNNMCPOLAMBuilder_;
+        return challengePosListBuilder_;
       }
 
-      private int unk2700MAOAHHBCKIA_ ;
+      private int gainCrystalExp_ ;
       /**
-       * <code>uint32 Unk2700_MAOAHHBCKIA = 13;</code>
-       * @return The unk2700MAOAHHBCKIA.
+       * <code>uint32 gain_crystal_exp = 13;</code>
+       * @return The gainCrystalExp.
        */
       @java.lang.Override
-      public int getUnk2700MAOAHHBCKIA() {
-        return unk2700MAOAHHBCKIA_;
+      public int getGainCrystalExp() {
+        return gainCrystalExp_;
       }
       /**
-       * <code>uint32 Unk2700_MAOAHHBCKIA = 13;</code>
-       * @param value The unk2700MAOAHHBCKIA to set.
+       * <code>uint32 gain_crystal_exp = 13;</code>
+       * @param value The gainCrystalExp to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700MAOAHHBCKIA(int value) {
+      public Builder setGainCrystalExp(int value) {
         
-        unk2700MAOAHHBCKIA_ = value;
+        gainCrystalExp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_MAOAHHBCKIA = 13;</code>
+       * <code>uint32 gain_crystal_exp = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700MAOAHHBCKIA() {
+      public Builder clearGainCrystalExp() {
         
-        unk2700MAOAHHBCKIA_ = 0;
+        gainCrystalExp_ = 0;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2700BEHAAHHGCLK_ = emptyIntList();
-      private void ensureUnk2700BEHAAHHGCLKIsMutable() {
+      private com.google.protobuf.Internal.IntList unlockedCrystalSkillList_ = emptyIntList();
+      private void ensureUnlockedCrystalSkillListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          unk2700BEHAAHHGCLK_ = mutableCopy(unk2700BEHAAHHGCLK_);
+          unlockedCrystalSkillList_ = mutableCopy(unlockedCrystalSkillList_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-       * @return A list containing the unk2700BEHAAHHGCLK.
+       * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+       * @return A list containing the unlockedCrystalSkillList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2700BEHAAHHGCLKList() {
+          getUnlockedCrystalSkillListList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2700BEHAAHHGCLK_) : unk2700BEHAAHHGCLK_;
+                 java.util.Collections.unmodifiableList(unlockedCrystalSkillList_) : unlockedCrystalSkillList_;
       }
       /**
-       * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-       * @return The count of unk2700BEHAAHHGCLK.
+       * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+       * @return The count of unlockedCrystalSkillList.
        */
-      public int getUnk2700BEHAAHHGCLKCount() {
-        return unk2700BEHAAHHGCLK_.size();
+      public int getUnlockedCrystalSkillListCount() {
+        return unlockedCrystalSkillList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
+       * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
        * @param index The index of the element to return.
-       * @return The unk2700BEHAAHHGCLK at the given index.
+       * @return The unlockedCrystalSkillList at the given index.
        */
-      public int getUnk2700BEHAAHHGCLK(int index) {
-        return unk2700BEHAAHHGCLK_.getInt(index);
+      public int getUnlockedCrystalSkillList(int index) {
+        return unlockedCrystalSkillList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
+       * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
        * @param index The index to set the value at.
-       * @param value The unk2700BEHAAHHGCLK to set.
+       * @param value The unlockedCrystalSkillList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700BEHAAHHGCLK(
+      public Builder setUnlockedCrystalSkillList(
           int index, int value) {
-        ensureUnk2700BEHAAHHGCLKIsMutable();
-        unk2700BEHAAHHGCLK_.setInt(index, value);
+        ensureUnlockedCrystalSkillListIsMutable();
+        unlockedCrystalSkillList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-       * @param value The unk2700BEHAAHHGCLK to add.
+       * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+       * @param value The unlockedCrystalSkillList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2700BEHAAHHGCLK(int value) {
-        ensureUnk2700BEHAAHHGCLKIsMutable();
-        unk2700BEHAAHHGCLK_.addInt(value);
+      public Builder addUnlockedCrystalSkillList(int value) {
+        ensureUnlockedCrystalSkillListIsMutable();
+        unlockedCrystalSkillList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
-       * @param values The unk2700BEHAAHHGCLK to add.
+       * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
+       * @param values The unlockedCrystalSkillList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2700BEHAAHHGCLK(
+      public Builder addAllUnlockedCrystalSkillList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2700BEHAAHHGCLKIsMutable();
+        ensureUnlockedCrystalSkillListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2700BEHAAHHGCLK_);
+            values, unlockedCrystalSkillList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_BEHAAHHGCLK = 2;</code>
+       * <code>repeated uint32 unlocked_crystal_skill_list = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700BEHAAHHGCLK() {
-        unk2700BEHAAHHGCLK_ = emptyIntList();
+      public Builder clearUnlockedCrystalSkillList() {
+        unlockedCrystalSkillList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG> unk2700LEKHKNKHIPO_ =
+      private java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo> chestPosList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700LEKHKNKHIPOIsMutable() {
+      private void ensureChestPosListIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          unk2700LEKHKNKHIPO_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG>(unk2700LEKHKNKHIPO_);
+          chestPosList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo>(chestPosList_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder> unk2700LEKHKNKHIPOBuilder_;
+          emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder> chestPosListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG> getUnk2700LEKHKNKHIPOList() {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700LEKHKNKHIPO_);
+      public java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo> getChestPosListList() {
+        if (chestPosListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(chestPosList_);
         } else {
-          return unk2700LEKHKNKHIPOBuilder_.getMessageList();
+          return chestPosListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public int getUnk2700LEKHKNKHIPOCount() {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          return unk2700LEKHKNKHIPO_.size();
+      public int getChestPosListCount() {
+        if (chestPosListBuilder_ == null) {
+          return chestPosList_.size();
         } else {
-          return unk2700LEKHKNKHIPOBuilder_.getCount();
+          return chestPosListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG getUnk2700LEKHKNKHIPO(int index) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          return unk2700LEKHKNKHIPO_.get(index);
+      public emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo getChestPosList(int index) {
+        if (chestPosListBuilder_ == null) {
+          return chestPosList_.get(index);
         } else {
-          return unk2700LEKHKNKHIPOBuilder_.getMessage(index);
+          return chestPosListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder setUnk2700LEKHKNKHIPO(
-          int index, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG value) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
+      public Builder setChestPosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo value) {
+        if (chestPosListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700LEKHKNKHIPOIsMutable();
-          unk2700LEKHKNKHIPO_.set(index, value);
+          ensureChestPosListIsMutable();
+          chestPosList_.set(index, value);
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.setMessage(index, value);
+          chestPosListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder setUnk2700LEKHKNKHIPO(
-          int index, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder builderForValue) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          ensureUnk2700LEKHKNKHIPOIsMutable();
-          unk2700LEKHKNKHIPO_.set(index, builderForValue.build());
+      public Builder setChestPosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder builderForValue) {
+        if (chestPosListBuilder_ == null) {
+          ensureChestPosListIsMutable();
+          chestPosList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.setMessage(index, builderForValue.build());
+          chestPosListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder addUnk2700LEKHKNKHIPO(emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG value) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
+      public Builder addChestPosList(emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo value) {
+        if (chestPosListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700LEKHKNKHIPOIsMutable();
-          unk2700LEKHKNKHIPO_.add(value);
+          ensureChestPosListIsMutable();
+          chestPosList_.add(value);
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.addMessage(value);
+          chestPosListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder addUnk2700LEKHKNKHIPO(
-          int index, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG value) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
+      public Builder addChestPosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo value) {
+        if (chestPosListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700LEKHKNKHIPOIsMutable();
-          unk2700LEKHKNKHIPO_.add(index, value);
+          ensureChestPosListIsMutable();
+          chestPosList_.add(index, value);
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.addMessage(index, value);
+          chestPosListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder addUnk2700LEKHKNKHIPO(
-          emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder builderForValue) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          ensureUnk2700LEKHKNKHIPOIsMutable();
-          unk2700LEKHKNKHIPO_.add(builderForValue.build());
+      public Builder addChestPosList(
+          emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder builderForValue) {
+        if (chestPosListBuilder_ == null) {
+          ensureChestPosListIsMutable();
+          chestPosList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.addMessage(builderForValue.build());
+          chestPosListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder addUnk2700LEKHKNKHIPO(
-          int index, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder builderForValue) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          ensureUnk2700LEKHKNKHIPOIsMutable();
-          unk2700LEKHKNKHIPO_.add(index, builderForValue.build());
+      public Builder addChestPosList(
+          int index, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder builderForValue) {
+        if (chestPosListBuilder_ == null) {
+          ensureChestPosListIsMutable();
+          chestPosList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.addMessage(index, builderForValue.build());
+          chestPosListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder addAllUnk2700LEKHKNKHIPO(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG> values) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          ensureUnk2700LEKHKNKHIPOIsMutable();
+      public Builder addAllChestPosList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo> values) {
+        if (chestPosListBuilder_ == null) {
+          ensureChestPosListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700LEKHKNKHIPO_);
+              values, chestPosList_);
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.addAllMessages(values);
+          chestPosListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder clearUnk2700LEKHKNKHIPO() {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          unk2700LEKHKNKHIPO_ = java.util.Collections.emptyList();
+      public Builder clearChestPosList() {
+        if (chestPosListBuilder_ == null) {
+          chestPosList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.clear();
+          chestPosListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public Builder removeUnk2700LEKHKNKHIPO(int index) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          ensureUnk2700LEKHKNKHIPOIsMutable();
-          unk2700LEKHKNKHIPO_.remove(index);
+      public Builder removeChestPosList(int index) {
+        if (chestPosListBuilder_ == null) {
+          ensureChestPosListIsMutable();
+          chestPosList_.remove(index);
           onChanged();
         } else {
-          unk2700LEKHKNKHIPOBuilder_.remove(index);
+          chestPosListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder getUnk2700LEKHKNKHIPOBuilder(
+      public emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder getChestPosListBuilder(
           int index) {
-        return getUnk2700LEKHKNKHIPOFieldBuilder().getBuilder(index);
+        return getChestPosListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder getUnk2700LEKHKNKHIPOOrBuilder(
+      public emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder getChestPosListOrBuilder(
           int index) {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          return unk2700LEKHKNKHIPO_.get(index);  } else {
-          return unk2700LEKHKNKHIPOBuilder_.getMessageOrBuilder(index);
+        if (chestPosListBuilder_ == null) {
+          return chestPosList_.get(index);  } else {
+          return chestPosListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder> 
-           getUnk2700LEKHKNKHIPOOrBuilderList() {
-        if (unk2700LEKHKNKHIPOBuilder_ != null) {
-          return unk2700LEKHKNKHIPOBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder> 
+           getChestPosListOrBuilderList() {
+        if (chestPosListBuilder_ != null) {
+          return chestPosListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700LEKHKNKHIPO_);
+          return java.util.Collections.unmodifiableList(chestPosList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder addUnk2700LEKHKNKHIPOBuilder() {
-        return getUnk2700LEKHKNKHIPOFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.getDefaultInstance());
+      public emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder addChestPosListBuilder() {
+        return getChestPosListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder addUnk2700LEKHKNKHIPOBuilder(
+      public emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder addChestPosListBuilder(
           int index) {
-        return getUnk2700LEKHKNKHIPOFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.getDefaultInstance());
+        return getChestPosListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;</code>
+       * <code>repeated .MichiaeMatsuriChestPositionInfo chest_pos_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder> 
-           getUnk2700LEKHKNKHIPOBuilderList() {
-        return getUnk2700LEKHKNKHIPOFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder> 
+           getChestPosListBuilderList() {
+        return getChestPosListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder> 
-          getUnk2700LEKHKNKHIPOFieldBuilder() {
-        if (unk2700LEKHKNKHIPOBuilder_ == null) {
-          unk2700LEKHKNKHIPOBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFG.Builder, emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.Unk2700_NAFAIMHFEFGOrBuilder>(
-                  unk2700LEKHKNKHIPO_,
+          emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder> 
+          getChestPosListFieldBuilder() {
+        if (chestPosListBuilder_ == null) {
+          chestPosListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfo.Builder, emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.MichiaeMatsuriChestPositionInfoOrBuilder>(
+                  chestPosList_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700LEKHKNKHIPO_ = null;
+          chestPosList_ = null;
         }
-        return unk2700LEKHKNKHIPOBuilder_;
+        return chestPosListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.MichiaeMatsuriStageOuterClass.MichiaeMatsuriStage> stageList_ =
@@ -1830,32 +1830,34 @@ public final class MichiaeMatsuriActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&MichiaeMatsuriActivityDetailInfo.proto" +
-      "\032\031MichiaeMatsuriStage.proto\032\031Unk2700_HGF" +
-      "FGMCODNC.proto\032\031Unk2700_NAFAIMHFEFG.prot" +
-      "o\"\354\001\n MichiaeMatsuriActivityDetailInfo\0221" +
-      "\n\023Unk2700_MPNNMCPOLAM\030\006 \003(\0132\024.Unk2700_HG" +
-      "FFGMCODNC\022\033\n\023Unk2700_MAOAHHBCKIA\030\r \001(\r\022\033" +
-      "\n\023Unk2700_BEHAAHHGCLK\030\002 \003(\r\0221\n\023Unk2700_L" +
-      "EKHKNKHIPO\030\n \003(\0132\024.Unk2700_NAFAIMHFEFG\022(" +
-      "\n\nstage_list\030\016 \003(\0132\024.MichiaeMatsuriStage" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\032)MichiaeMatsuriChallengePositionInfo.pr" +
+      "oto\032%MichiaeMatsuriChestPositionInfo.pro" +
+      "to\032\031MichiaeMatsuriStage.proto\"\207\002\n Michia" +
+      "eMatsuriActivityDetailInfo\022@\n\022challenge_" +
+      "pos_list\030\006 \003(\0132$.MichiaeMatsuriChallenge" +
+      "PositionInfo\022\030\n\020gain_crystal_exp\030\r \001(\r\022#" +
+      "\n\033unlocked_crystal_skill_list\030\002 \003(\r\0228\n\016c" +
+      "hest_pos_list\030\n \003(\0132 .MichiaeMatsuriChes" +
+      "tPositionInfo\022(\n\nstage_list\030\016 \003(\0132\024.Mich" +
+      "iaeMatsuriStageB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MichiaeMatsuriStageOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.getDescriptor(),
         });
     internal_static_MichiaeMatsuriActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_MichiaeMatsuriActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MichiaeMatsuriActivityDetailInfo_descriptor,
-        new java.lang.String[] { "Unk2700MPNNMCPOLAM", "Unk2700MAOAHHBCKIA", "Unk2700BEHAAHHGCLK", "Unk2700LEKHKNKHIPO", "StageList", });
+        new java.lang.String[] { "ChallengePosList", "GainCrystalExp", "UnlockedCrystalSkillList", "ChestPosList", "StageList", });
+    emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MichiaeMatsuriChestPositionInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MichiaeMatsuriStageOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Unk2700HGFFGMCODNC.getDescriptor();
-    emu.grasscutter.net.proto.Unk2700NAFAIMHFEFG.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

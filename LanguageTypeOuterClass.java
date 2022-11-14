@@ -76,13 +76,13 @@ public final class LanguageTypeOuterClass {
      */
     LANGUAGE_TYPE_ID(13),
     /**
-     * <code>LANGUAGE_TYPE_Unk2700_IBFJDMFLFII = 14;</code>
+     * <code>LANGUAGE_TYPE_TR = 14;</code>
      */
-    LANGUAGE_TYPE_Unk2700_IBFJDMFLFII(14),
+    LANGUAGE_TYPE_TR(14),
     /**
-     * <code>LANGUAGE_TYPE_Unk2700_PACIPAIFJCN = 15;</code>
+     * <code>LANGUAGE_TYPE_IT = 15;</code>
      */
-    LANGUAGE_TYPE_Unk2700_PACIPAIFJCN(15),
+    LANGUAGE_TYPE_IT(15),
     UNRECOGNIZED(-1),
     ;
 
@@ -143,13 +143,13 @@ public final class LanguageTypeOuterClass {
      */
     public static final int LANGUAGE_TYPE_ID_VALUE = 13;
     /**
-     * <code>LANGUAGE_TYPE_Unk2700_IBFJDMFLFII = 14;</code>
+     * <code>LANGUAGE_TYPE_TR = 14;</code>
      */
-    public static final int LANGUAGE_TYPE_Unk2700_IBFJDMFLFII_VALUE = 14;
+    public static final int LANGUAGE_TYPE_TR_VALUE = 14;
     /**
-     * <code>LANGUAGE_TYPE_Unk2700_PACIPAIFJCN = 15;</code>
+     * <code>LANGUAGE_TYPE_IT = 15;</code>
      */
-    public static final int LANGUAGE_TYPE_Unk2700_PACIPAIFJCN_VALUE = 15;
+    public static final int LANGUAGE_TYPE_IT_VALUE = 15;
 
 
     public final int getNumber() {
@@ -190,8 +190,8 @@ public final class LanguageTypeOuterClass {
         case 11: return LANGUAGE_TYPE_TH;
         case 12: return LANGUAGE_TYPE_VN;
         case 13: return LANGUAGE_TYPE_ID;
-        case 14: return LANGUAGE_TYPE_Unk2700_IBFJDMFLFII;
-        case 15: return LANGUAGE_TYPE_Unk2700_PACIPAIFJCN;
+        case 14: return LANGUAGE_TYPE_TR;
+        case 15: return LANGUAGE_TYPE_IT;
         default: return null;
       }
     }
@@ -257,7 +257,7 @@ public final class LanguageTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022LanguageType.proto*\222\003\n\014LanguageType\022\026\n" +
+      "\n\022LanguageType.proto*\360\002\n\014LanguageType\022\026\n" +
       "\022LANGUAGE_TYPE_NONE\020\000\022\024\n\020LANGUAGE_TYPE_E" +
       "N\020\001\022\024\n\020LANGUAGE_TYPE_SC\020\002\022\024\n\020LANGUAGE_TY" +
       "PE_TC\020\003\022\024\n\020LANGUAGE_TYPE_FR\020\004\022\024\n\020LANGUAG" +
@@ -265,10 +265,9 @@ public final class LanguageTypeOuterClass {
       "GUAGE_TYPE_PT\020\007\022\024\n\020LANGUAGE_TYPE_RU\020\010\022\024\n" +
       "\020LANGUAGE_TYPE_JP\020\t\022\024\n\020LANGUAGE_TYPE_KR\020" +
       "\n\022\024\n\020LANGUAGE_TYPE_TH\020\013\022\024\n\020LANGUAGE_TYPE" +
-      "_VN\020\014\022\024\n\020LANGUAGE_TYPE_ID\020\r\022%\n!LANGUAGE_" +
-      "TYPE_Unk2700_IBFJDMFLFII\020\016\022%\n!LANGUAGE_T" +
-      "YPE_Unk2700_PACIPAIFJCN\020\017B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "_VN\020\014\022\024\n\020LANGUAGE_TYPE_ID\020\r\022\024\n\020LANGUAGE_" +
+      "TYPE_TR\020\016\022\024\n\020LANGUAGE_TYPE_IT\020\017B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

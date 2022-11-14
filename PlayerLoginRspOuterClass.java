@@ -206,10 +206,10 @@ public final class PlayerLoginRspOuterClass {
         getRegisterCpsBytes();
 
     /**
-     * <code>bool Unk3100_EDIDPOKBKHG = 1649;</code>
-     * @return The unk3100EDIDPOKBKHG.
+     * <code>bool is_login_rsp_split = 1649;</code>
+     * @return The isLoginRspSplit.
      */
-    boolean getUnk3100EDIDPOKBKHG();
+    boolean getIsLoginRspSplit();
 
     /**
      * <code>bool is_use_ability_hash = 2;</code>
@@ -626,7 +626,7 @@ public final class PlayerLoginRspOuterClass {
             }
             case 13192: {
 
-              unk3100EDIDPOKBKHG_ = input.readBool();
+              isLoginRspSplit_ = input.readBool();
               break;
             }
             case 13480: {
@@ -1173,15 +1173,15 @@ public final class PlayerLoginRspOuterClass {
       }
     }
 
-    public static final int UNK3100_EDIDPOKBKHG_FIELD_NUMBER = 1649;
-    private boolean unk3100EDIDPOKBKHG_;
+    public static final int IS_LOGIN_RSP_SPLIT_FIELD_NUMBER = 1649;
+    private boolean isLoginRspSplit_;
     /**
-     * <code>bool Unk3100_EDIDPOKBKHG = 1649;</code>
-     * @return The unk3100EDIDPOKBKHG.
+     * <code>bool is_login_rsp_split = 1649;</code>
+     * @return The isLoginRspSplit.
      */
     @java.lang.Override
-    public boolean getUnk3100EDIDPOKBKHG() {
-      return unk3100EDIDPOKBKHG_;
+    public boolean getIsLoginRspSplit() {
+      return isLoginRspSplit_;
     }
 
     public static final int IS_USE_ABILITY_HASH_FIELD_NUMBER = 2;
@@ -1687,8 +1687,8 @@ public final class PlayerLoginRspOuterClass {
       if (nextResVersionConfig_ != null) {
         output.writeMessage(1573, getNextResVersionConfig());
       }
-      if (unk3100EDIDPOKBKHG_ != false) {
-        output.writeBool(1649, unk3100EDIDPOKBKHG_);
+      if (isLoginRspSplit_ != false) {
+        output.writeBool(1649, isLoginRspSplit_);
       }
       if (isAudit_ != false) {
         output.writeBool(1685, isAudit_);
@@ -1834,9 +1834,9 @@ public final class PlayerLoginRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1573, getNextResVersionConfig());
       }
-      if (unk3100EDIDPOKBKHG_ != false) {
+      if (isLoginRspSplit_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1649, unk3100EDIDPOKBKHG_);
+          .computeBoolSize(1649, isLoginRspSplit_);
       }
       if (isAudit_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -1925,8 +1925,8 @@ public final class PlayerLoginRspOuterClass {
           != other.getAbilityHashCode()) return false;
       if (!getRegisterCps()
           .equals(other.getRegisterCps())) return false;
-      if (getUnk3100EDIDPOKBKHG()
-          != other.getUnk3100EDIDPOKBKHG()) return false;
+      if (getIsLoginRspSplit()
+          != other.getIsLoginRspSplit()) return false;
       if (getIsUseAbilityHash()
           != other.getIsUseAbilityHash()) return false;
       if (!internalGetAbilityHashMap().equals(
@@ -2021,9 +2021,9 @@ public final class PlayerLoginRspOuterClass {
       hash = (53 * hash) + getAbilityHashCode();
       hash = (37 * hash) + REGISTER_CPS_FIELD_NUMBER;
       hash = (53 * hash) + getRegisterCps().hashCode();
-      hash = (37 * hash) + UNK3100_EDIDPOKBKHG_FIELD_NUMBER;
+      hash = (37 * hash) + IS_LOGIN_RSP_SPLIT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3100EDIDPOKBKHG());
+          getIsLoginRspSplit());
       hash = (37 * hash) + IS_USE_ABILITY_HASH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsUseAbilityHash());
@@ -2272,7 +2272,7 @@ public final class PlayerLoginRspOuterClass {
 
         registerCps_ = "";
 
-        unk3100EDIDPOKBKHG_ = false;
+        isLoginRspSplit_ = false;
 
         isUseAbilityHash_ = false;
 
@@ -2365,7 +2365,7 @@ public final class PlayerLoginRspOuterClass {
         result.scInfo_ = scInfo_;
         result.abilityHashCode_ = abilityHashCode_;
         result.registerCps_ = registerCps_;
-        result.unk3100EDIDPOKBKHG_ = unk3100EDIDPOKBKHG_;
+        result.isLoginRspSplit_ = isLoginRspSplit_;
         result.isUseAbilityHash_ = isUseAbilityHash_;
         result.abilityHashMap_ = internalGetAbilityHashMap();
         result.abilityHashMap_.makeImmutable();
@@ -2513,8 +2513,8 @@ public final class PlayerLoginRspOuterClass {
           registerCps_ = other.registerCps_;
           onChanged();
         }
-        if (other.getUnk3100EDIDPOKBKHG() != false) {
-          setUnk3100EDIDPOKBKHG(other.getUnk3100EDIDPOKBKHG());
+        if (other.getIsLoginRspSplit() != false) {
+          setIsLoginRspSplit(other.getIsLoginRspSplit());
         }
         if (other.getIsUseAbilityHash() != false) {
           setIsUseAbilityHash(other.getIsUseAbilityHash());
@@ -3670,33 +3670,33 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
 
-      private boolean unk3100EDIDPOKBKHG_ ;
+      private boolean isLoginRspSplit_ ;
       /**
-       * <code>bool Unk3100_EDIDPOKBKHG = 1649;</code>
-       * @return The unk3100EDIDPOKBKHG.
+       * <code>bool is_login_rsp_split = 1649;</code>
+       * @return The isLoginRspSplit.
        */
       @java.lang.Override
-      public boolean getUnk3100EDIDPOKBKHG() {
-        return unk3100EDIDPOKBKHG_;
+      public boolean getIsLoginRspSplit() {
+        return isLoginRspSplit_;
       }
       /**
-       * <code>bool Unk3100_EDIDPOKBKHG = 1649;</code>
-       * @param value The unk3100EDIDPOKBKHG to set.
+       * <code>bool is_login_rsp_split = 1649;</code>
+       * @param value The isLoginRspSplit to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3100EDIDPOKBKHG(boolean value) {
+      public Builder setIsLoginRspSplit(boolean value) {
         
-        unk3100EDIDPOKBKHG_ = value;
+        isLoginRspSplit_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3100_EDIDPOKBKHG = 1649;</code>
+       * <code>bool is_login_rsp_split = 1649;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3100EDIDPOKBKHG() {
+      public Builder clearIsLoginRspSplit() {
         
-        unk3100EDIDPOKBKHG_ = false;
+        isLoginRspSplit_ = false;
         onChanged();
         return this;
       }
@@ -4999,7 +4999,7 @@ public final class PlayerLoginRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\024PlayerLoginRsp.proto\032\017BlockInfo.proto\032" +
       "\026FeatureBlockInfo.proto\032\026ResVersionConfi" +
-      "g.proto\032\032ShortAbilityHashPair.proto\"\272\t\n\016" +
+      "g.proto\032\032ShortAbilityHashPair.proto\"\271\t\n\016" +
       "PlayerLoginRsp\022\033\n\023client_data_version\030\001 " +
       "\001(\r\022\023\n\nis_sc_open\030\225\013 \001(\010\022\017\n\007retcode\030\017 \001(" +
       "\005\022:\n\016block_info_map\030\273\004 \003(\0132!.PlayerLogin" +
@@ -5014,24 +5014,24 @@ public final class PlayerLoginRspOuterClass {
       "(\010\022\027\n\017total_tick_time\030} \001(\001\022$\n\033is_enable" +
       "_client_hash_debug\030\244\007 \001(\010\022\020\n\007sc_info\030\350\017 " +
       "\001(\014\022\031\n\021ability_hash_code\030\014 \001(\005\022\025\n\014regist" +
-      "er_cps\030\370\017 \001(\t\022\034\n\023Unk3100_EDIDPOKBKHG\030\361\014 " +
-      "\001(\010\022\033\n\023is_use_ability_hash\030\002 \001(\010\022=\n\020abil" +
-      "ity_hash_map\030\013 \003(\0132#.PlayerLoginRsp.Abil" +
-      "ityHashMapEntry\0226\n\026short_ability_hash_ma" +
-      "p\030\372\001 \003(\0132\025.ShortAbilityHashPair\022\023\n\nclien" +
-      "t_md5\030\246\016 \001(\t\022\025\n\014country_code\030\354\016 \001(\t\022\035\n\024i" +
-      "s_data_need_relogin\030\267\007 \001(\010\022.\n\022res_versio" +
-      "n_config\030\261\017 \001(\0132\021.ResVersionConfig\0223\n\027fe" +
-      "ature_block_info_list\030\310\n \003(\0132\021.FeatureBl" +
-      "ockInfo\022\021\n\010birthday\030\360\004 \001(\t\022\022\n\ntarget_uid" +
-      "\030\016 \001(\r\022\023\n\013player_data\030\r \001(\014\022&\n\035client_si" +
-      "lence_version_suffix\030\223\n \001(\t\022\036\n\025target_ho" +
-      "me_owner_uid\030\251\004 \001(\r\022\033\n\023player_data_versi" +
-      "on\030\007 \001(\r\032?\n\021BlockInfoMapEntry\022\013\n\003key\030\001 \001" +
-      "(\r\022\031\n\005value\030\002 \001(\0132\n.BlockInfo:\0028\001\0325\n\023Abi" +
-      "lityHashMapEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002" +
-      " \001(\005:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "er_cps\030\370\017 \001(\t\022\033\n\022is_login_rsp_split\030\361\014 \001" +
+      "(\010\022\033\n\023is_use_ability_hash\030\002 \001(\010\022=\n\020abili" +
+      "ty_hash_map\030\013 \003(\0132#.PlayerLoginRsp.Abili" +
+      "tyHashMapEntry\0226\n\026short_ability_hash_map" +
+      "\030\372\001 \003(\0132\025.ShortAbilityHashPair\022\023\n\nclient" +
+      "_md5\030\246\016 \001(\t\022\025\n\014country_code\030\354\016 \001(\t\022\035\n\024is" +
+      "_data_need_relogin\030\267\007 \001(\010\022.\n\022res_version" +
+      "_config\030\261\017 \001(\0132\021.ResVersionConfig\0223\n\027fea" +
+      "ture_block_info_list\030\310\n \003(\0132\021.FeatureBlo" +
+      "ckInfo\022\021\n\010birthday\030\360\004 \001(\t\022\022\n\ntarget_uid\030" +
+      "\016 \001(\r\022\023\n\013player_data\030\r \001(\014\022&\n\035client_sil" +
+      "ence_version_suffix\030\223\n \001(\t\022\036\n\025target_hom" +
+      "e_owner_uid\030\251\004 \001(\r\022\033\n\023player_data_versio" +
+      "n\030\007 \001(\r\032?\n\021BlockInfoMapEntry\022\013\n\003key\030\001 \001(" +
+      "\r\022\031\n\005value\030\002 \001(\0132\n.BlockInfo:\0028\001\0325\n\023Abil" +
+      "ityHashMapEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 " +
+      "\001(\005:\0028\001B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5046,7 +5046,7 @@ public final class PlayerLoginRspOuterClass {
     internal_static_PlayerLoginRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLoginRsp_descriptor,
-        new java.lang.String[] { "ClientDataVersion", "IsScOpen", "Retcode", "BlockInfoMap", "IsAudit", "IsTransfer", "ClientSilenceMd5", "NextResVersionConfig", "ClientSilenceDataVersion", "LoginRand", "IsNewPlayer", "ClientVersionSuffix", "GameBiz", "NextResourceUrl", "IsRelogin", "TotalTickTime", "IsEnableClientHashDebug", "ScInfo", "AbilityHashCode", "RegisterCps", "Unk3100EDIDPOKBKHG", "IsUseAbilityHash", "AbilityHashMap", "ShortAbilityHashMap", "ClientMd5", "CountryCode", "IsDataNeedRelogin", "ResVersionConfig", "FeatureBlockInfoList", "Birthday", "TargetUid", "PlayerData", "ClientSilenceVersionSuffix", "TargetHomeOwnerUid", "PlayerDataVersion", });
+        new java.lang.String[] { "ClientDataVersion", "IsScOpen", "Retcode", "BlockInfoMap", "IsAudit", "IsTransfer", "ClientSilenceMd5", "NextResVersionConfig", "ClientSilenceDataVersion", "LoginRand", "IsNewPlayer", "ClientVersionSuffix", "GameBiz", "NextResourceUrl", "IsRelogin", "TotalTickTime", "IsEnableClientHashDebug", "ScInfo", "AbilityHashCode", "RegisterCps", "IsLoginRspSplit", "IsUseAbilityHash", "AbilityHashMap", "ShortAbilityHashMap", "ClientMd5", "CountryCode", "IsDataNeedRelogin", "ResVersionConfig", "FeatureBlockInfoList", "Birthday", "TargetUid", "PlayerData", "ClientSilenceVersionSuffix", "TargetHomeOwnerUid", "PlayerDataVersion", });
     internal_static_PlayerLoginRsp_BlockInfoMapEntry_descriptor =
       internal_static_PlayerLoginRsp_descriptor.getNestedTypes().get(0);
     internal_static_PlayerLoginRsp_BlockInfoMapEntry_fieldAccessorTable = new

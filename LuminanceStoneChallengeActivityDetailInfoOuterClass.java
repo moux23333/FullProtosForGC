@@ -31,16 +31,16 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
     boolean getIsContentClosed();
 
     /**
-     * <code>bool Unk2700_CKGMNLPDFCI = 12;</code>
-     * @return The unk2700CKGMNLPDFCI.
+     * <code>bool is_final_gallery_complete = 12;</code>
+     * @return The isFinalGalleryComplete.
      */
-    boolean getUnk2700CKGMNLPDFCI();
+    boolean getIsFinalGalleryComplete();
 
     /**
-     * <code>uint32 Unk2700_NNLBIAFMHPA = 15;</code>
-     * @return The unk2700NNLBIAFMHPA.
+     * <code>uint32 current_stage_id = 15;</code>
+     * @return The currentStageId.
      */
-    int getUnk2700NNLBIAFMHPA();
+    int getCurrentStageId();
   }
   /**
    * Protobuf type {@code LuminanceStoneChallengeActivityDetailInfo}
@@ -99,12 +99,12 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
             }
             case 96: {
 
-              unk2700CKGMNLPDFCI_ = input.readBool();
+              isFinalGalleryComplete_ = input.readBool();
               break;
             }
             case 120: {
 
-              unk2700NNLBIAFMHPA_ = input.readUInt32();
+              currentStageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,26 +161,26 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int UNK2700_CKGMNLPDFCI_FIELD_NUMBER = 12;
-    private boolean unk2700CKGMNLPDFCI_;
+    public static final int IS_FINAL_GALLERY_COMPLETE_FIELD_NUMBER = 12;
+    private boolean isFinalGalleryComplete_;
     /**
-     * <code>bool Unk2700_CKGMNLPDFCI = 12;</code>
-     * @return The unk2700CKGMNLPDFCI.
+     * <code>bool is_final_gallery_complete = 12;</code>
+     * @return The isFinalGalleryComplete.
      */
     @java.lang.Override
-    public boolean getUnk2700CKGMNLPDFCI() {
-      return unk2700CKGMNLPDFCI_;
+    public boolean getIsFinalGalleryComplete() {
+      return isFinalGalleryComplete_;
     }
 
-    public static final int UNK2700_NNLBIAFMHPA_FIELD_NUMBER = 15;
-    private int unk2700NNLBIAFMHPA_;
+    public static final int CURRENT_STAGE_ID_FIELD_NUMBER = 15;
+    private int currentStageId_;
     /**
-     * <code>uint32 Unk2700_NNLBIAFMHPA = 15;</code>
-     * @return The unk2700NNLBIAFMHPA.
+     * <code>uint32 current_stage_id = 15;</code>
+     * @return The currentStageId.
      */
     @java.lang.Override
-    public int getUnk2700NNLBIAFMHPA() {
-      return unk2700NNLBIAFMHPA_;
+    public int getCurrentStageId() {
+      return currentStageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,11 +203,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       if (bestScore_ != 0) {
         output.writeUInt32(11, bestScore_);
       }
-      if (unk2700CKGMNLPDFCI_ != false) {
-        output.writeBool(12, unk2700CKGMNLPDFCI_);
+      if (isFinalGalleryComplete_ != false) {
+        output.writeBool(12, isFinalGalleryComplete_);
       }
-      if (unk2700NNLBIAFMHPA_ != 0) {
-        output.writeUInt32(15, unk2700NNLBIAFMHPA_);
+      if (currentStageId_ != 0) {
+        output.writeUInt32(15, currentStageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,13 +226,13 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, bestScore_);
       }
-      if (unk2700CKGMNLPDFCI_ != false) {
+      if (isFinalGalleryComplete_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, unk2700CKGMNLPDFCI_);
+          .computeBoolSize(12, isFinalGalleryComplete_);
       }
-      if (unk2700NNLBIAFMHPA_ != 0) {
+      if (currentStageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, unk2700NNLBIAFMHPA_);
+          .computeUInt32Size(15, currentStageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,10 +253,10 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
           != other.getBestScore()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (getUnk2700CKGMNLPDFCI()
-          != other.getUnk2700CKGMNLPDFCI()) return false;
-      if (getUnk2700NNLBIAFMHPA()
-          != other.getUnk2700NNLBIAFMHPA()) return false;
+      if (getIsFinalGalleryComplete()
+          != other.getIsFinalGalleryComplete()) return false;
+      if (getCurrentStageId()
+          != other.getCurrentStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,11 +273,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + UNK2700_CKGMNLPDFCI_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FINAL_GALLERY_COMPLETE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700CKGMNLPDFCI());
-      hash = (37 * hash) + UNK2700_NNLBIAFMHPA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700NNLBIAFMHPA();
+          getIsFinalGalleryComplete());
+      hash = (37 * hash) + CURRENT_STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCurrentStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -415,9 +415,9 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
 
         isContentClosed_ = false;
 
-        unk2700CKGMNLPDFCI_ = false;
+        isFinalGalleryComplete_ = false;
 
-        unk2700NNLBIAFMHPA_ = 0;
+        currentStageId_ = 0;
 
         return this;
       }
@@ -447,8 +447,8 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo result = new emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo(this);
         result.bestScore_ = bestScore_;
         result.isContentClosed_ = isContentClosed_;
-        result.unk2700CKGMNLPDFCI_ = unk2700CKGMNLPDFCI_;
-        result.unk2700NNLBIAFMHPA_ = unk2700NNLBIAFMHPA_;
+        result.isFinalGalleryComplete_ = isFinalGalleryComplete_;
+        result.currentStageId_ = currentStageId_;
         onBuilt();
         return result;
       }
@@ -503,11 +503,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
         }
-        if (other.getUnk2700CKGMNLPDFCI() != false) {
-          setUnk2700CKGMNLPDFCI(other.getUnk2700CKGMNLPDFCI());
+        if (other.getIsFinalGalleryComplete() != false) {
+          setIsFinalGalleryComplete(other.getIsFinalGalleryComplete());
         }
-        if (other.getUnk2700NNLBIAFMHPA() != 0) {
-          setUnk2700NNLBIAFMHPA(other.getUnk2700NNLBIAFMHPA());
+        if (other.getCurrentStageId() != 0) {
+          setCurrentStageId(other.getCurrentStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -600,64 +600,64 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         return this;
       }
 
-      private boolean unk2700CKGMNLPDFCI_ ;
+      private boolean isFinalGalleryComplete_ ;
       /**
-       * <code>bool Unk2700_CKGMNLPDFCI = 12;</code>
-       * @return The unk2700CKGMNLPDFCI.
+       * <code>bool is_final_gallery_complete = 12;</code>
+       * @return The isFinalGalleryComplete.
        */
       @java.lang.Override
-      public boolean getUnk2700CKGMNLPDFCI() {
-        return unk2700CKGMNLPDFCI_;
+      public boolean getIsFinalGalleryComplete() {
+        return isFinalGalleryComplete_;
       }
       /**
-       * <code>bool Unk2700_CKGMNLPDFCI = 12;</code>
-       * @param value The unk2700CKGMNLPDFCI to set.
+       * <code>bool is_final_gallery_complete = 12;</code>
+       * @param value The isFinalGalleryComplete to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700CKGMNLPDFCI(boolean value) {
+      public Builder setIsFinalGalleryComplete(boolean value) {
         
-        unk2700CKGMNLPDFCI_ = value;
+        isFinalGalleryComplete_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_CKGMNLPDFCI = 12;</code>
+       * <code>bool is_final_gallery_complete = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700CKGMNLPDFCI() {
+      public Builder clearIsFinalGalleryComplete() {
         
-        unk2700CKGMNLPDFCI_ = false;
+        isFinalGalleryComplete_ = false;
         onChanged();
         return this;
       }
 
-      private int unk2700NNLBIAFMHPA_ ;
+      private int currentStageId_ ;
       /**
-       * <code>uint32 Unk2700_NNLBIAFMHPA = 15;</code>
-       * @return The unk2700NNLBIAFMHPA.
+       * <code>uint32 current_stage_id = 15;</code>
+       * @return The currentStageId.
        */
       @java.lang.Override
-      public int getUnk2700NNLBIAFMHPA() {
-        return unk2700NNLBIAFMHPA_;
+      public int getCurrentStageId() {
+        return currentStageId_;
       }
       /**
-       * <code>uint32 Unk2700_NNLBIAFMHPA = 15;</code>
-       * @param value The unk2700NNLBIAFMHPA to set.
+       * <code>uint32 current_stage_id = 15;</code>
+       * @param value The currentStageId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700NNLBIAFMHPA(int value) {
+      public Builder setCurrentStageId(int value) {
         
-        unk2700NNLBIAFMHPA_ = value;
+        currentStageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_NNLBIAFMHPA = 15;</code>
+       * <code>uint32 current_stage_id = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700NNLBIAFMHPA() {
+      public Builder clearCurrentStageId() {
         
-        unk2700NNLBIAFMHPA_ = 0;
+        currentStageId_ = 0;
         onChanged();
         return this;
       }
@@ -729,11 +729,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n/LuminanceStoneChallengeActivityDetailI" +
-      "nfo.proto\"\224\001\n)LuminanceStoneChallengeAct" +
+      "nfo.proto\"\227\001\n)LuminanceStoneChallengeAct" +
       "ivityDetailInfo\022\022\n\nbest_score\030\013 \001(\r\022\031\n\021i" +
-      "s_content_closed\030\006 \001(\010\022\033\n\023Unk2700_CKGMNL" +
-      "PDFCI\030\014 \001(\010\022\033\n\023Unk2700_NNLBIAFMHPA\030\017 \001(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "s_content_closed\030\006 \001(\010\022!\n\031is_final_galle" +
+      "ry_complete\030\014 \001(\010\022\030\n\020current_stage_id\030\017 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -744,7 +744,7 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
     internal_static_LuminanceStoneChallengeActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LuminanceStoneChallengeActivityDetailInfo_descriptor,
-        new java.lang.String[] { "BestScore", "IsContentClosed", "Unk2700CKGMNLPDFCI", "Unk2700NNLBIAFMHPA", });
+        new java.lang.String[] { "BestScore", "IsContentClosed", "IsFinalGalleryComplete", "CurrentStageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

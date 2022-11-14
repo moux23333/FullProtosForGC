@@ -244,9 +244,9 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
        */
       ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG(2),
       /**
-       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF = 3;</code>
+       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK = 3;</code>
        */
-      ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF(3),
+      ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK(3),
       UNRECOGNIZED(-1),
       ;
 
@@ -263,9 +263,9 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
        */
       public static final int ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_VALUE = 2;
       /**
-       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF = 3;</code>
+       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK = 3;</code>
        */
-      public static final int ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF_VALUE = 3;
+      public static final int ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK_VALUE = 3;
 
 
       public final int getNumber() {
@@ -295,7 +295,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
           case 0: return ITEM_EXCEED_LIMIT_MSG_TYPE_DEFAULT;
           case 1: return ITEM_EXCEED_LIMIT_MSG_TYPE_TEXT;
           case 2: return ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG;
-          case 3: return ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF;
+          case 3: return ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK;
           default: return null;
         }
       }
@@ -1222,18 +1222,18 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#CheckAddItemExceedLimitNotify.proto\"\211\003" +
+      "\n#CheckAddItemExceedLimitNotify.proto\"\205\003" +
       "\n\035CheckAddItemExceedLimitNotify\022\017\n\007is_dr" +
       "op\030\005 \001(\010\022G\n\010msg_type\030\004 \001(\01625.CheckAddIte" +
       "mExceedLimitNotify.ItemExceedLimitMsgTyp" +
       "e\022\037\n\027exceeded_item_type_list\030\n \003(\r\022\032\n\022ex" +
-      "ceeded_item_list\030\014 \003(\r\022\016\n\006reason\030\016 \001(\r\"\300" +
+      "ceeded_item_list\030\014 \003(\r\022\016\n\006reason\030\016 \001(\r\"\274" +
       "\001\n\026ItemExceedLimitMsgType\022&\n\"ITEM_EXCEED" +
       "_LIMIT_MSG_TYPE_DEFAULT\020\000\022#\n\037ITEM_EXCEED" +
       "_LIMIT_MSG_TYPE_TEXT\020\001\022%\n!ITEM_EXCEED_LI" +
-      "MIT_MSG_TYPE_DIALOG\020\002\0222\n.ITEM_EXCEED_LIM" +
-      "IT_MSG_TYPE_Unk2700_BONLGEEEBBF\020\003B\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "MIT_MSG_TYPE_DIALOG\020\002\022.\n*ITEM_EXCEED_LIM" +
+      "IT_MSG_TYPE_DIALOG_NONBLOCK\020\003B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

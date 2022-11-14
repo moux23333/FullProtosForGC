@@ -25,10 +25,10 @@ public final class HomeTransferReqOuterClass {
     int getGuid();
 
     /**
-     * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
-     * @return The unk3100KEMFDDMEBIG.
+     * <code>bool is_transfer_to_safe_point = 12;</code>
+     * @return The isTransferToSafePoint.
      */
-    boolean getUnk3100KEMFDDMEBIG();
+    boolean getIsTransferToSafePoint();
   }
   /**
    * <pre>
@@ -89,7 +89,7 @@ public final class HomeTransferReqOuterClass {
             }
             case 96: {
 
-              unk3100KEMFDDMEBIG_ = input.readBool();
+              isTransferToSafePoint_ = input.readBool();
               break;
             }
             default: {
@@ -135,15 +135,15 @@ public final class HomeTransferReqOuterClass {
       return guid_;
     }
 
-    public static final int UNK3100_KEMFDDMEBIG_FIELD_NUMBER = 12;
-    private boolean unk3100KEMFDDMEBIG_;
+    public static final int IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER = 12;
+    private boolean isTransferToSafePoint_;
     /**
-     * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
-     * @return The unk3100KEMFDDMEBIG.
+     * <code>bool is_transfer_to_safe_point = 12;</code>
+     * @return The isTransferToSafePoint.
      */
     @java.lang.Override
-    public boolean getUnk3100KEMFDDMEBIG() {
-      return unk3100KEMFDDMEBIG_;
+    public boolean getIsTransferToSafePoint() {
+      return isTransferToSafePoint_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -163,8 +163,8 @@ public final class HomeTransferReqOuterClass {
       if (guid_ != 0) {
         output.writeUInt32(1, guid_);
       }
-      if (unk3100KEMFDDMEBIG_ != false) {
-        output.writeBool(12, unk3100KEMFDDMEBIG_);
+      if (isTransferToSafePoint_ != false) {
+        output.writeBool(12, isTransferToSafePoint_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,9 +179,9 @@ public final class HomeTransferReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, guid_);
       }
-      if (unk3100KEMFDDMEBIG_ != false) {
+      if (isTransferToSafePoint_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, unk3100KEMFDDMEBIG_);
+          .computeBoolSize(12, isTransferToSafePoint_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -200,8 +200,8 @@ public final class HomeTransferReqOuterClass {
 
       if (getGuid()
           != other.getGuid()) return false;
-      if (getUnk3100KEMFDDMEBIG()
-          != other.getUnk3100KEMFDDMEBIG()) return false;
+      if (getIsTransferToSafePoint()
+          != other.getIsTransferToSafePoint()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -215,9 +215,9 @@ public final class HomeTransferReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + getGuid();
-      hash = (37 * hash) + UNK3100_KEMFDDMEBIG_FIELD_NUMBER;
+      hash = (37 * hash) + IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3100KEMFDDMEBIG());
+          getIsTransferToSafePoint());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -360,7 +360,7 @@ public final class HomeTransferReqOuterClass {
         super.clear();
         guid_ = 0;
 
-        unk3100KEMFDDMEBIG_ = false;
+        isTransferToSafePoint_ = false;
 
         return this;
       }
@@ -389,7 +389,7 @@ public final class HomeTransferReqOuterClass {
       public emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq buildPartial() {
         emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq result = new emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq(this);
         result.guid_ = guid_;
-        result.unk3100KEMFDDMEBIG_ = unk3100KEMFDDMEBIG_;
+        result.isTransferToSafePoint_ = isTransferToSafePoint_;
         onBuilt();
         return result;
       }
@@ -441,8 +441,8 @@ public final class HomeTransferReqOuterClass {
         if (other.getGuid() != 0) {
           setGuid(other.getGuid());
         }
-        if (other.getUnk3100KEMFDDMEBIG() != false) {
-          setUnk3100KEMFDDMEBIG(other.getUnk3100KEMFDDMEBIG());
+        if (other.getIsTransferToSafePoint() != false) {
+          setIsTransferToSafePoint(other.getIsTransferToSafePoint());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -504,33 +504,33 @@ public final class HomeTransferReqOuterClass {
         return this;
       }
 
-      private boolean unk3100KEMFDDMEBIG_ ;
+      private boolean isTransferToSafePoint_ ;
       /**
-       * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
-       * @return The unk3100KEMFDDMEBIG.
+       * <code>bool is_transfer_to_safe_point = 12;</code>
+       * @return The isTransferToSafePoint.
        */
       @java.lang.Override
-      public boolean getUnk3100KEMFDDMEBIG() {
-        return unk3100KEMFDDMEBIG_;
+      public boolean getIsTransferToSafePoint() {
+        return isTransferToSafePoint_;
       }
       /**
-       * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
-       * @param value The unk3100KEMFDDMEBIG to set.
+       * <code>bool is_transfer_to_safe_point = 12;</code>
+       * @param value The isTransferToSafePoint to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3100KEMFDDMEBIG(boolean value) {
+      public Builder setIsTransferToSafePoint(boolean value) {
         
-        unk3100KEMFDDMEBIG_ = value;
+        isTransferToSafePoint_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3100_KEMFDDMEBIG = 12;</code>
+       * <code>bool is_transfer_to_safe_point = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3100KEMFDDMEBIG() {
+      public Builder clearIsTransferToSafePoint() {
         
-        unk3100KEMFDDMEBIG_ = false;
+        isTransferToSafePoint_ = false;
         onChanged();
         return this;
       }
@@ -601,10 +601,10 @@ public final class HomeTransferReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025HomeTransferReq.proto\"<\n\017HomeTransferR" +
-      "eq\022\014\n\004guid\030\001 \001(\r\022\033\n\023Unk3100_KEMFDDMEBIG\030" +
-      "\014 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\025HomeTransferReq.proto\"B\n\017HomeTransferR" +
+      "eq\022\014\n\004guid\030\001 \001(\r\022!\n\031is_transfer_to_safe_" +
+      "point\030\014 \001(\010B\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -615,7 +615,7 @@ public final class HomeTransferReqOuterClass {
     internal_static_HomeTransferReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeTransferReq_descriptor,
-        new java.lang.String[] { "Guid", "Unk3100KEMFDDMEBIG", });
+        new java.lang.String[] { "Guid", "IsTransferToSafePoint", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

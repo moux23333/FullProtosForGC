@@ -19,22 +19,22 @@ public final class FishtankFishInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float Unk3000_KNOBDDHIONH = 1;</code>
-     * @return The unk3000KNOBDDHIONH.
+     * <code>float fish_distance_from_water = 1;</code>
+     * @return The fishDistanceFromWater.
      */
-    float getUnk3000KNOBDDHIONH();
+    float getFishDistanceFromWater();
 
     /**
-     * <code>float Unk3000_NDBJCJEIEEO = 2;</code>
-     * @return The unk3000NDBJCJEIEEO.
+     * <code>float fish_scale = 2;</code>
+     * @return The fishScale.
      */
-    float getUnk3000NDBJCJEIEEO();
+    float getFishScale();
 
     /**
-     * <code>float Unk3000_CGBHKPEGBOD = 3;</code>
-     * @return The unk3000CGBHKPEGBOD.
+     * <code>float initial_rotation_y = 3;</code>
+     * @return The initialRotationY.
      */
-    float getUnk3000CGBHKPEGBOD();
+    float getInitialRotationY();
   }
   /**
    * Protobuf type {@code FishtankFishInfo}
@@ -83,17 +83,17 @@ public final class FishtankFishInfoOuterClass {
               break;
             case 13: {
 
-              unk3000KNOBDDHIONH_ = input.readFloat();
+              fishDistanceFromWater_ = input.readFloat();
               break;
             }
             case 21: {
 
-              unk3000NDBJCJEIEEO_ = input.readFloat();
+              fishScale_ = input.readFloat();
               break;
             }
             case 29: {
 
-              unk3000CGBHKPEGBOD_ = input.readFloat();
+              initialRotationY_ = input.readFloat();
               break;
             }
             default: {
@@ -128,37 +128,37 @@ public final class FishtankFishInfoOuterClass {
               emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo.class, emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo.Builder.class);
     }
 
-    public static final int UNK3000_KNOBDDHIONH_FIELD_NUMBER = 1;
-    private float unk3000KNOBDDHIONH_;
+    public static final int FISH_DISTANCE_FROM_WATER_FIELD_NUMBER = 1;
+    private float fishDistanceFromWater_;
     /**
-     * <code>float Unk3000_KNOBDDHIONH = 1;</code>
-     * @return The unk3000KNOBDDHIONH.
+     * <code>float fish_distance_from_water = 1;</code>
+     * @return The fishDistanceFromWater.
      */
     @java.lang.Override
-    public float getUnk3000KNOBDDHIONH() {
-      return unk3000KNOBDDHIONH_;
+    public float getFishDistanceFromWater() {
+      return fishDistanceFromWater_;
     }
 
-    public static final int UNK3000_NDBJCJEIEEO_FIELD_NUMBER = 2;
-    private float unk3000NDBJCJEIEEO_;
+    public static final int FISH_SCALE_FIELD_NUMBER = 2;
+    private float fishScale_;
     /**
-     * <code>float Unk3000_NDBJCJEIEEO = 2;</code>
-     * @return The unk3000NDBJCJEIEEO.
+     * <code>float fish_scale = 2;</code>
+     * @return The fishScale.
      */
     @java.lang.Override
-    public float getUnk3000NDBJCJEIEEO() {
-      return unk3000NDBJCJEIEEO_;
+    public float getFishScale() {
+      return fishScale_;
     }
 
-    public static final int UNK3000_CGBHKPEGBOD_FIELD_NUMBER = 3;
-    private float unk3000CGBHKPEGBOD_;
+    public static final int INITIAL_ROTATION_Y_FIELD_NUMBER = 3;
+    private float initialRotationY_;
     /**
-     * <code>float Unk3000_CGBHKPEGBOD = 3;</code>
-     * @return The unk3000CGBHKPEGBOD.
+     * <code>float initial_rotation_y = 3;</code>
+     * @return The initialRotationY.
      */
     @java.lang.Override
-    public float getUnk3000CGBHKPEGBOD() {
-      return unk3000CGBHKPEGBOD_;
+    public float getInitialRotationY() {
+      return initialRotationY_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class FishtankFishInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3000KNOBDDHIONH_ != 0F) {
-        output.writeFloat(1, unk3000KNOBDDHIONH_);
+      if (fishDistanceFromWater_ != 0F) {
+        output.writeFloat(1, fishDistanceFromWater_);
       }
-      if (unk3000NDBJCJEIEEO_ != 0F) {
-        output.writeFloat(2, unk3000NDBJCJEIEEO_);
+      if (fishScale_ != 0F) {
+        output.writeFloat(2, fishScale_);
       }
-      if (unk3000CGBHKPEGBOD_ != 0F) {
-        output.writeFloat(3, unk3000CGBHKPEGBOD_);
+      if (initialRotationY_ != 0F) {
+        output.writeFloat(3, initialRotationY_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class FishtankFishInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3000KNOBDDHIONH_ != 0F) {
+      if (fishDistanceFromWater_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(1, unk3000KNOBDDHIONH_);
+          .computeFloatSize(1, fishDistanceFromWater_);
       }
-      if (unk3000NDBJCJEIEEO_ != 0F) {
+      if (fishScale_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, unk3000NDBJCJEIEEO_);
+          .computeFloatSize(2, fishScale_);
       }
-      if (unk3000CGBHKPEGBOD_ != 0F) {
+      if (initialRotationY_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, unk3000CGBHKPEGBOD_);
+          .computeFloatSize(3, initialRotationY_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,15 +220,15 @@ public final class FishtankFishInfoOuterClass {
       }
       emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo other = (emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo) obj;
 
-      if (java.lang.Float.floatToIntBits(getUnk3000KNOBDDHIONH())
+      if (java.lang.Float.floatToIntBits(getFishDistanceFromWater())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3000KNOBDDHIONH())) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3000NDBJCJEIEEO())
+              other.getFishDistanceFromWater())) return false;
+      if (java.lang.Float.floatToIntBits(getFishScale())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3000NDBJCJEIEEO())) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3000CGBHKPEGBOD())
+              other.getFishScale())) return false;
+      if (java.lang.Float.floatToIntBits(getInitialRotationY())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3000CGBHKPEGBOD())) return false;
+              other.getInitialRotationY())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -240,15 +240,15 @@ public final class FishtankFishInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3000_KNOBDDHIONH_FIELD_NUMBER;
+      hash = (37 * hash) + FISH_DISTANCE_FROM_WATER_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3000KNOBDDHIONH());
-      hash = (37 * hash) + UNK3000_NDBJCJEIEEO_FIELD_NUMBER;
+          getFishDistanceFromWater());
+      hash = (37 * hash) + FISH_SCALE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3000NDBJCJEIEEO());
-      hash = (37 * hash) + UNK3000_CGBHKPEGBOD_FIELD_NUMBER;
+          getFishScale());
+      hash = (37 * hash) + INITIAL_ROTATION_Y_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3000CGBHKPEGBOD());
+          getInitialRotationY());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,11 +382,11 @@ public final class FishtankFishInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3000KNOBDDHIONH_ = 0F;
+        fishDistanceFromWater_ = 0F;
 
-        unk3000NDBJCJEIEEO_ = 0F;
+        fishScale_ = 0F;
 
-        unk3000CGBHKPEGBOD_ = 0F;
+        initialRotationY_ = 0F;
 
         return this;
       }
@@ -414,9 +414,9 @@ public final class FishtankFishInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo buildPartial() {
         emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo result = new emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo(this);
-        result.unk3000KNOBDDHIONH_ = unk3000KNOBDDHIONH_;
-        result.unk3000NDBJCJEIEEO_ = unk3000NDBJCJEIEEO_;
-        result.unk3000CGBHKPEGBOD_ = unk3000CGBHKPEGBOD_;
+        result.fishDistanceFromWater_ = fishDistanceFromWater_;
+        result.fishScale_ = fishScale_;
+        result.initialRotationY_ = initialRotationY_;
         onBuilt();
         return result;
       }
@@ -465,14 +465,14 @@ public final class FishtankFishInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo other) {
         if (other == emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo.getDefaultInstance()) return this;
-        if (other.getUnk3000KNOBDDHIONH() != 0F) {
-          setUnk3000KNOBDDHIONH(other.getUnk3000KNOBDDHIONH());
+        if (other.getFishDistanceFromWater() != 0F) {
+          setFishDistanceFromWater(other.getFishDistanceFromWater());
         }
-        if (other.getUnk3000NDBJCJEIEEO() != 0F) {
-          setUnk3000NDBJCJEIEEO(other.getUnk3000NDBJCJEIEEO());
+        if (other.getFishScale() != 0F) {
+          setFishScale(other.getFishScale());
         }
-        if (other.getUnk3000CGBHKPEGBOD() != 0F) {
-          setUnk3000CGBHKPEGBOD(other.getUnk3000CGBHKPEGBOD());
+        if (other.getInitialRotationY() != 0F) {
+          setInitialRotationY(other.getInitialRotationY());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -503,95 +503,95 @@ public final class FishtankFishInfoOuterClass {
         return this;
       }
 
-      private float unk3000KNOBDDHIONH_ ;
+      private float fishDistanceFromWater_ ;
       /**
-       * <code>float Unk3000_KNOBDDHIONH = 1;</code>
-       * @return The unk3000KNOBDDHIONH.
+       * <code>float fish_distance_from_water = 1;</code>
+       * @return The fishDistanceFromWater.
        */
       @java.lang.Override
-      public float getUnk3000KNOBDDHIONH() {
-        return unk3000KNOBDDHIONH_;
+      public float getFishDistanceFromWater() {
+        return fishDistanceFromWater_;
       }
       /**
-       * <code>float Unk3000_KNOBDDHIONH = 1;</code>
-       * @param value The unk3000KNOBDDHIONH to set.
+       * <code>float fish_distance_from_water = 1;</code>
+       * @param value The fishDistanceFromWater to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000KNOBDDHIONH(float value) {
+      public Builder setFishDistanceFromWater(float value) {
         
-        unk3000KNOBDDHIONH_ = value;
+        fishDistanceFromWater_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3000_KNOBDDHIONH = 1;</code>
+       * <code>float fish_distance_from_water = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000KNOBDDHIONH() {
+      public Builder clearFishDistanceFromWater() {
         
-        unk3000KNOBDDHIONH_ = 0F;
+        fishDistanceFromWater_ = 0F;
         onChanged();
         return this;
       }
 
-      private float unk3000NDBJCJEIEEO_ ;
+      private float fishScale_ ;
       /**
-       * <code>float Unk3000_NDBJCJEIEEO = 2;</code>
-       * @return The unk3000NDBJCJEIEEO.
+       * <code>float fish_scale = 2;</code>
+       * @return The fishScale.
        */
       @java.lang.Override
-      public float getUnk3000NDBJCJEIEEO() {
-        return unk3000NDBJCJEIEEO_;
+      public float getFishScale() {
+        return fishScale_;
       }
       /**
-       * <code>float Unk3000_NDBJCJEIEEO = 2;</code>
-       * @param value The unk3000NDBJCJEIEEO to set.
+       * <code>float fish_scale = 2;</code>
+       * @param value The fishScale to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000NDBJCJEIEEO(float value) {
+      public Builder setFishScale(float value) {
         
-        unk3000NDBJCJEIEEO_ = value;
+        fishScale_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3000_NDBJCJEIEEO = 2;</code>
+       * <code>float fish_scale = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000NDBJCJEIEEO() {
+      public Builder clearFishScale() {
         
-        unk3000NDBJCJEIEEO_ = 0F;
+        fishScale_ = 0F;
         onChanged();
         return this;
       }
 
-      private float unk3000CGBHKPEGBOD_ ;
+      private float initialRotationY_ ;
       /**
-       * <code>float Unk3000_CGBHKPEGBOD = 3;</code>
-       * @return The unk3000CGBHKPEGBOD.
+       * <code>float initial_rotation_y = 3;</code>
+       * @return The initialRotationY.
        */
       @java.lang.Override
-      public float getUnk3000CGBHKPEGBOD() {
-        return unk3000CGBHKPEGBOD_;
+      public float getInitialRotationY() {
+        return initialRotationY_;
       }
       /**
-       * <code>float Unk3000_CGBHKPEGBOD = 3;</code>
-       * @param value The unk3000CGBHKPEGBOD to set.
+       * <code>float initial_rotation_y = 3;</code>
+       * @param value The initialRotationY to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000CGBHKPEGBOD(float value) {
+      public Builder setInitialRotationY(float value) {
         
-        unk3000CGBHKPEGBOD_ = value;
+        initialRotationY_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3000_CGBHKPEGBOD = 3;</code>
+       * <code>float initial_rotation_y = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000CGBHKPEGBOD() {
+      public Builder clearInitialRotationY() {
         
-        unk3000CGBHKPEGBOD_ = 0F;
+        initialRotationY_ = 0F;
         onChanged();
         return this;
       }
@@ -662,11 +662,11 @@ public final class FishtankFishInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026FishtankFishInfo.proto\"i\n\020FishtankFish" +
-      "Info\022\033\n\023Unk3000_KNOBDDHIONH\030\001 \001(\002\022\033\n\023Unk" +
-      "3000_NDBJCJEIEEO\030\002 \001(\002\022\033\n\023Unk3000_CGBHKP" +
-      "EGBOD\030\003 \001(\002B\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\026FishtankFishInfo.proto\"d\n\020FishtankFish" +
+      "Info\022 \n\030fish_distance_from_water\030\001 \001(\002\022\022" +
+      "\n\nfish_scale\030\002 \001(\002\022\032\n\022initial_rotation_y" +
+      "\030\003 \001(\002B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -677,7 +677,7 @@ public final class FishtankFishInfoOuterClass {
     internal_static_FishtankFishInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishtankFishInfo_descriptor,
-        new java.lang.String[] { "Unk3000KNOBDDHIONH", "Unk3000NDBJCJEIEEO", "Unk3000CGBHKPEGBOD", });
+        new java.lang.String[] { "FishDistanceFromWater", "FishScale", "InitialRotationY", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

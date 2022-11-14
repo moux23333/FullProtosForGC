@@ -19,10 +19,10 @@ public final class EvtBulletHitNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk2700_FEALLBIBHOL = 8;</code>
-     * @return The unk2700FEALLBIBHOL.
+     * <code>uint32 single_bullet_id = 8;</code>
+     * @return The singleBulletId.
      */
-    int getUnk2700FEALLBIBHOL();
+    int getSingleBulletId();
 
     /**
      * <code>.Vector hit_point = 15;</code>
@@ -183,7 +183,7 @@ public final class EvtBulletHitNotifyOuterClass {
             }
             case 64: {
 
-              unk2700FEALLBIBHOL_ = input.readUInt32();
+              singleBulletId_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -249,15 +249,15 @@ public final class EvtBulletHitNotifyOuterClass {
               emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify.class, emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify.Builder.class);
     }
 
-    public static final int UNK2700_FEALLBIBHOL_FIELD_NUMBER = 8;
-    private int unk2700FEALLBIBHOL_;
+    public static final int SINGLE_BULLET_ID_FIELD_NUMBER = 8;
+    private int singleBulletId_;
     /**
-     * <code>uint32 Unk2700_FEALLBIBHOL = 8;</code>
-     * @return The unk2700FEALLBIBHOL.
+     * <code>uint32 single_bullet_id = 8;</code>
+     * @return The singleBulletId.
      */
     @java.lang.Override
-    public int getUnk2700FEALLBIBHOL() {
-      return unk2700FEALLBIBHOL_;
+    public int getSingleBulletId() {
+      return singleBulletId_;
     }
 
     public static final int HIT_POINT_FIELD_NUMBER = 15;
@@ -423,8 +423,8 @@ public final class EvtBulletHitNotifyOuterClass {
       if (forwardPeer_ != 0) {
         output.writeUInt32(7, forwardPeer_);
       }
-      if (unk2700FEALLBIBHOL_ != 0) {
-        output.writeUInt32(8, unk2700FEALLBIBHOL_);
+      if (singleBulletId_ != 0) {
+        output.writeUInt32(8, singleBulletId_);
       }
       if (hitBoxIndex_ != 0) {
         output.writeInt32(9, hitBoxIndex_);
@@ -464,9 +464,9 @@ public final class EvtBulletHitNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, forwardPeer_);
       }
-      if (unk2700FEALLBIBHOL_ != 0) {
+      if (singleBulletId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, unk2700FEALLBIBHOL_);
+          .computeUInt32Size(8, singleBulletId_);
       }
       if (hitBoxIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -495,8 +495,8 @@ public final class EvtBulletHitNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify other = (emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify) obj;
 
-      if (getUnk2700FEALLBIBHOL()
-          != other.getUnk2700FEALLBIBHOL()) return false;
+      if (getSingleBulletId()
+          != other.getSingleBulletId()) return false;
       if (hasHitPoint() != other.hasHitPoint()) return false;
       if (hasHitPoint()) {
         if (!getHitPoint()
@@ -528,8 +528,8 @@ public final class EvtBulletHitNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_FEALLBIBHOL_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700FEALLBIBHOL();
+      hash = (37 * hash) + SINGLE_BULLET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSingleBulletId();
       if (hasHitPoint()) {
         hash = (37 * hash) + HIT_POINT_FIELD_NUMBER;
         hash = (53 * hash) + getHitPoint().hashCode();
@@ -690,7 +690,7 @@ public final class EvtBulletHitNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700FEALLBIBHOL_ = 0;
+        singleBulletId_ = 0;
 
         if (hitPointBuilder_ == null) {
           hitPoint_ = null;
@@ -742,7 +742,7 @@ public final class EvtBulletHitNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify buildPartial() {
         emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify result = new emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify(this);
-        result.unk2700FEALLBIBHOL_ = unk2700FEALLBIBHOL_;
+        result.singleBulletId_ = singleBulletId_;
         if (hitPointBuilder_ == null) {
           result.hitPoint_ = hitPoint_;
         } else {
@@ -807,8 +807,8 @@ public final class EvtBulletHitNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify other) {
         if (other == emu.grasscutter.net.proto.EvtBulletHitNotifyOuterClass.EvtBulletHitNotify.getDefaultInstance()) return this;
-        if (other.getUnk2700FEALLBIBHOL() != 0) {
-          setUnk2700FEALLBIBHOL(other.getUnk2700FEALLBIBHOL());
+        if (other.getSingleBulletId() != 0) {
+          setSingleBulletId(other.getSingleBulletId());
         }
         if (other.hasHitPoint()) {
           mergeHitPoint(other.getHitPoint());
@@ -863,33 +863,33 @@ public final class EvtBulletHitNotifyOuterClass {
         return this;
       }
 
-      private int unk2700FEALLBIBHOL_ ;
+      private int singleBulletId_ ;
       /**
-       * <code>uint32 Unk2700_FEALLBIBHOL = 8;</code>
-       * @return The unk2700FEALLBIBHOL.
+       * <code>uint32 single_bullet_id = 8;</code>
+       * @return The singleBulletId.
        */
       @java.lang.Override
-      public int getUnk2700FEALLBIBHOL() {
-        return unk2700FEALLBIBHOL_;
+      public int getSingleBulletId() {
+        return singleBulletId_;
       }
       /**
-       * <code>uint32 Unk2700_FEALLBIBHOL = 8;</code>
-       * @param value The unk2700FEALLBIBHOL to set.
+       * <code>uint32 single_bullet_id = 8;</code>
+       * @param value The singleBulletId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700FEALLBIBHOL(int value) {
+      public Builder setSingleBulletId(int value) {
         
-        unk2700FEALLBIBHOL_ = value;
+        singleBulletId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_FEALLBIBHOL = 8;</code>
+       * <code>uint32 single_bullet_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700FEALLBIBHOL() {
+      public Builder clearSingleBulletId() {
         
-        unk2700FEALLBIBHOL_ = 0;
+        singleBulletId_ = 0;
         onChanged();
         return this;
       }
@@ -1432,14 +1432,14 @@ public final class EvtBulletHitNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030EvtBulletHitNotify.proto\032\021ForwardType." +
       "proto\032\025HitColliderType.proto\032\014Vector.pro" +
-      "to\"\222\002\n\022EvtBulletHitNotify\022\033\n\023Unk2700_FEA" +
-      "LLBIBHOL\030\010 \001(\r\022\032\n\thit_point\030\017 \001(\0132\007.Vect" +
-      "or\022\033\n\nhit_normal\030\013 \001(\0132\007.Vector\022\025\n\rhit_b" +
-      "ox_index\030\t \001(\005\022\025\n\rhit_entity_id\030\003 \001(\r\022\021\n" +
-      "\tentity_id\030\005 \001(\r\022\024\n\014forward_peer\030\007 \001(\r\022\"" +
-      "\n\014forward_type\030\002 \001(\0162\014.ForwardType\022+\n\021hi" +
-      "t_collider_type\030\006 \001(\0162\020.HitColliderTypeB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "to\"\217\002\n\022EvtBulletHitNotify\022\030\n\020single_bull" +
+      "et_id\030\010 \001(\r\022\032\n\thit_point\030\017 \001(\0132\007.Vector\022" +
+      "\033\n\nhit_normal\030\013 \001(\0132\007.Vector\022\025\n\rhit_box_" +
+      "index\030\t \001(\005\022\025\n\rhit_entity_id\030\003 \001(\r\022\021\n\ten" +
+      "tity_id\030\005 \001(\r\022\024\n\014forward_peer\030\007 \001(\r\022\"\n\014f" +
+      "orward_type\030\002 \001(\0162\014.ForwardType\022+\n\021hit_c" +
+      "ollider_type\030\006 \001(\0162\020.HitColliderTypeB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1453,7 +1453,7 @@ public final class EvtBulletHitNotifyOuterClass {
     internal_static_EvtBulletHitNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtBulletHitNotify_descriptor,
-        new java.lang.String[] { "Unk2700FEALLBIBHOL", "HitPoint", "HitNormal", "HitBoxIndex", "HitEntityId", "EntityId", "ForwardPeer", "ForwardType", "HitColliderType", });
+        new java.lang.String[] { "SingleBulletId", "HitPoint", "HitNormal", "HitBoxIndex", "HitEntityId", "EntityId", "ForwardPeer", "ForwardType", "HitColliderType", });
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HitColliderTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();

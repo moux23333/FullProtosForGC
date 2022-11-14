@@ -31,27 +31,27 @@ public final class CutSceneBeginNotifyOuterClass {
     int getCutsceneId();
 
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC> 
+    java.util.List<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam> 
         getExtraParamListList();
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
-    emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC getExtraParamList(int index);
+    emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam getExtraParamList(int index);
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
     int getExtraParamListCount();
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder> 
         getExtraParamListOrBuilderList();
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
-    emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder getExtraParamListOrBuilder(
+    emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder getExtraParamListOrBuilder(
         int index);
   }
   /**
@@ -109,11 +109,11 @@ public final class CutSceneBeginNotifyOuterClass {
               break;
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                extraParamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC>();
+                extraParamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam>();
                 mutable_bitField0_ |= 0x00000001;
               }
               extraParamList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.parser(), extensionRegistry));
               break;
             }
             case 72: {
@@ -184,41 +184,41 @@ public final class CutSceneBeginNotifyOuterClass {
     }
 
     public static final int EXTRA_PARAM_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC> extraParamList_;
+    private java.util.List<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam> extraParamList_;
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC> getExtraParamListList() {
+    public java.util.List<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam> getExtraParamListList() {
       return extraParamList_;
     }
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder> 
         getExtraParamListOrBuilderList() {
       return extraParamList_;
     }
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
     @java.lang.Override
     public int getExtraParamListCount() {
       return extraParamList_.size();
     }
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC getExtraParamList(int index) {
+    public emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam getExtraParamList(int index) {
       return extraParamList_.get(index);
     }
     /**
-     * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+     * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder getExtraParamListOrBuilder(
+    public emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder getExtraParamListOrBuilder(
         int index) {
       return extraParamList_.get(index);
     }
@@ -668,22 +668,22 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC> extraParamList_ =
+      private java.util.List<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam> extraParamList_ =
         java.util.Collections.emptyList();
       private void ensureExtraParamListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          extraParamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC>(extraParamList_);
+          extraParamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam>(extraParamList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder> extraParamListBuilder_;
+          emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder> extraParamListBuilder_;
 
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC> getExtraParamListList() {
+      public java.util.List<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam> getExtraParamListList() {
         if (extraParamListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(extraParamList_);
         } else {
@@ -691,7 +691,7 @@ public final class CutSceneBeginNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public int getExtraParamListCount() {
         if (extraParamListBuilder_ == null) {
@@ -701,9 +701,9 @@ public final class CutSceneBeginNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC getExtraParamList(int index) {
+      public emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam getExtraParamList(int index) {
         if (extraParamListBuilder_ == null) {
           return extraParamList_.get(index);
         } else {
@@ -711,10 +711,10 @@ public final class CutSceneBeginNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder setExtraParamList(
-          int index, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC value) {
+          int index, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam value) {
         if (extraParamListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -728,10 +728,10 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder setExtraParamList(
-          int index, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder builderForValue) {
         if (extraParamListBuilder_ == null) {
           ensureExtraParamListIsMutable();
           extraParamList_.set(index, builderForValue.build());
@@ -742,9 +742,9 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public Builder addExtraParamList(emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC value) {
+      public Builder addExtraParamList(emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam value) {
         if (extraParamListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -758,10 +758,10 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder addExtraParamList(
-          int index, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC value) {
+          int index, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam value) {
         if (extraParamListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -775,10 +775,10 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder addExtraParamList(
-          emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder builderForValue) {
+          emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder builderForValue) {
         if (extraParamListBuilder_ == null) {
           ensureExtraParamListIsMutable();
           extraParamList_.add(builderForValue.build());
@@ -789,10 +789,10 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder addExtraParamList(
-          int index, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder builderForValue) {
         if (extraParamListBuilder_ == null) {
           ensureExtraParamListIsMutable();
           extraParamList_.add(index, builderForValue.build());
@@ -803,10 +803,10 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder addAllExtraParamList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam> values) {
         if (extraParamListBuilder_ == null) {
           ensureExtraParamListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -818,7 +818,7 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder clearExtraParamList() {
         if (extraParamListBuilder_ == null) {
@@ -831,7 +831,7 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
       public Builder removeExtraParamList(int index) {
         if (extraParamListBuilder_ == null) {
@@ -844,16 +844,16 @@ public final class CutSceneBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder getExtraParamListBuilder(
+      public emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder getExtraParamListBuilder(
           int index) {
         return getExtraParamListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder getExtraParamListOrBuilder(
+      public emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder getExtraParamListOrBuilder(
           int index) {
         if (extraParamListBuilder_ == null) {
           return extraParamList_.get(index);  } else {
@@ -861,9 +861,9 @@ public final class CutSceneBeginNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder> 
            getExtraParamListOrBuilderList() {
         if (extraParamListBuilder_ != null) {
           return extraParamListBuilder_.getMessageOrBuilderList();
@@ -872,33 +872,33 @@ public final class CutSceneBeginNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder addExtraParamListBuilder() {
+      public emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder addExtraParamListBuilder() {
         return getExtraParamListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.getDefaultInstance());
+            emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder addExtraParamListBuilder(
+      public emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder addExtraParamListBuilder(
           int index) {
         return getExtraParamListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.getDefaultInstance());
+            index, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3100_LFIMJOCPILC extra_param_list = 3;</code>
+       * <code>repeated .CutSceneExtraParam extra_param_list = 3;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder> 
            getExtraParamListBuilderList() {
         return getExtraParamListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder> 
+          emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder> 
           getExtraParamListFieldBuilder() {
         if (extraParamListBuilder_ == null) {
           extraParamListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILC.Builder, emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.Unk3100_LFIMJOCPILCOrBuilder>(
+              emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParam.Builder, emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.CutSceneExtraParamOrBuilder>(
                   extraParamList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -974,17 +974,17 @@ public final class CutSceneBeginNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031CutSceneBeginNotify.proto\032\031Unk3100_LFI" +
-      "MJOCPILC.proto\"r\n\023CutSceneBeginNotify\022\026\n" +
-      "\016is_wait_others\030\t \001(\010\022\023\n\013cutscene_id\030\016 \001" +
-      "(\r\022.\n\020extra_param_list\030\003 \003(\0132\024.Unk3100_L" +
-      "FIMJOCPILCB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\031CutSceneBeginNotify.proto\032\030CutSceneExt" +
+      "raParam.proto\"q\n\023CutSceneBeginNotify\022\026\n\016" +
+      "is_wait_others\030\t \001(\010\022\023\n\013cutscene_id\030\016 \001(" +
+      "\r\022-\n\020extra_param_list\030\003 \003(\0132\023.CutSceneEx" +
+      "traParamB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.getDescriptor(),
+          emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.getDescriptor(),
         });
     internal_static_CutSceneBeginNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -992,7 +992,7 @@ public final class CutSceneBeginNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CutSceneBeginNotify_descriptor,
         new java.lang.String[] { "IsWaitOthers", "CutsceneId", "ExtraParamList", });
-    emu.grasscutter.net.proto.Unk3100LFIMJOCPILC.getDescriptor();
+    emu.grasscutter.net.proto.CutSceneExtraParamOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

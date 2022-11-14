@@ -25,10 +25,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     int getProgress();
 
     /**
-     * <code>uint32 Unk3000_MONNEPNGNCA = 14;</code>
-     * @return The unk3000MONNEPNGNCA.
+     * <code>uint32 goal = 14;</code>
+     * @return The goal.
      */
-    int getUnk3000MONNEPNGNCA();
+    int getGoal();
   }
   /**
    * Protobuf type {@code SceneGalleryTreasureSeelieInfo}
@@ -77,7 +77,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
               break;
             case 112: {
 
-              unk3000MONNEPNGNCA_ = input.readUInt32();
+              goal_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -128,15 +128,15 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       return progress_;
     }
 
-    public static final int UNK3000_MONNEPNGNCA_FIELD_NUMBER = 14;
-    private int unk3000MONNEPNGNCA_;
+    public static final int GOAL_FIELD_NUMBER = 14;
+    private int goal_;
     /**
-     * <code>uint32 Unk3000_MONNEPNGNCA = 14;</code>
-     * @return The unk3000MONNEPNGNCA.
+     * <code>uint32 goal = 14;</code>
+     * @return The goal.
      */
     @java.lang.Override
-    public int getUnk3000MONNEPNGNCA() {
-      return unk3000MONNEPNGNCA_;
+    public int getGoal() {
+      return goal_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,8 +153,8 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3000MONNEPNGNCA_ != 0) {
-        output.writeUInt32(14, unk3000MONNEPNGNCA_);
+      if (goal_ != 0) {
+        output.writeUInt32(14, goal_);
       }
       if (progress_ != 0) {
         output.writeUInt32(15, progress_);
@@ -168,9 +168,9 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3000MONNEPNGNCA_ != 0) {
+      if (goal_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unk3000MONNEPNGNCA_);
+          .computeUInt32Size(14, goal_);
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -193,8 +193,8 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
 
       if (getProgress()
           != other.getProgress()) return false;
-      if (getUnk3000MONNEPNGNCA()
-          != other.getUnk3000MONNEPNGNCA()) return false;
+      if (getGoal()
+          != other.getGoal()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -208,8 +208,8 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getProgress();
-      hash = (37 * hash) + UNK3000_MONNEPNGNCA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3000MONNEPNGNCA();
+      hash = (37 * hash) + GOAL_FIELD_NUMBER;
+      hash = (53 * hash) + getGoal();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,7 +345,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         super.clear();
         progress_ = 0;
 
-        unk3000MONNEPNGNCA_ = 0;
+        goal_ = 0;
 
         return this;
       }
@@ -374,7 +374,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo result = new emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo(this);
         result.progress_ = progress_;
-        result.unk3000MONNEPNGNCA_ = unk3000MONNEPNGNCA_;
+        result.goal_ = goal_;
         onBuilt();
         return result;
       }
@@ -426,8 +426,8 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         if (other.getProgress() != 0) {
           setProgress(other.getProgress());
         }
-        if (other.getUnk3000MONNEPNGNCA() != 0) {
-          setUnk3000MONNEPNGNCA(other.getUnk3000MONNEPNGNCA());
+        if (other.getGoal() != 0) {
+          setGoal(other.getGoal());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -489,33 +489,33 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return this;
       }
 
-      private int unk3000MONNEPNGNCA_ ;
+      private int goal_ ;
       /**
-       * <code>uint32 Unk3000_MONNEPNGNCA = 14;</code>
-       * @return The unk3000MONNEPNGNCA.
+       * <code>uint32 goal = 14;</code>
+       * @return The goal.
        */
       @java.lang.Override
-      public int getUnk3000MONNEPNGNCA() {
-        return unk3000MONNEPNGNCA_;
+      public int getGoal() {
+        return goal_;
       }
       /**
-       * <code>uint32 Unk3000_MONNEPNGNCA = 14;</code>
-       * @param value The unk3000MONNEPNGNCA to set.
+       * <code>uint32 goal = 14;</code>
+       * @param value The goal to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000MONNEPNGNCA(int value) {
+      public Builder setGoal(int value) {
         
-        unk3000MONNEPNGNCA_ = value;
+        goal_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3000_MONNEPNGNCA = 14;</code>
+       * <code>uint32 goal = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000MONNEPNGNCA() {
+      public Builder clearGoal() {
         
-        unk3000MONNEPNGNCA_ = 0;
+        goal_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +586,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$SceneGalleryTreasureSeelieInfo.proto\"O" +
+      "\n$SceneGalleryTreasureSeelieInfo.proto\"@" +
       "\n\036SceneGalleryTreasureSeelieInfo\022\020\n\010prog" +
-      "ress\030\017 \001(\r\022\033\n\023Unk3000_MONNEPNGNCA\030\016 \001(\rB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "ress\030\017 \001(\r\022\014\n\004goal\030\016 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +600,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     internal_static_SceneGalleryTreasureSeelieInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryTreasureSeelieInfo_descriptor,
-        new java.lang.String[] { "Progress", "Unk3000MONNEPNGNCA", });
+        new java.lang.String[] { "Progress", "Goal", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

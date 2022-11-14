@@ -19,15 +19,15 @@ public final class PlayerLuaShellNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-     * @return The enum numeric value on the wire for unk2700JJMHFFHNJJO.
+     * <code>.LuaShellType shell_type = 7;</code>
+     * @return The enum numeric value on the wire for shellType.
      */
-    int getUnk2700JJMHFFHNJJOValue();
+    int getShellTypeValue();
     /**
-     * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-     * @return The unk2700JJMHFFHNJJO.
+     * <code>.LuaShellType shell_type = 7;</code>
+     * @return The shellType.
      */
-    emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH getUnk2700JJMHFFHNJJO();
+    emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType getShellType();
 
     /**
      * <code>uint32 id = 5;</code>
@@ -66,7 +66,7 @@ public final class PlayerLuaShellNotifyOuterClass {
       super(builder);
     }
     private PlayerLuaShellNotify() {
-      unk2700JJMHFFHNJJO_ = 0;
+      shellType_ = 0;
       luaShell_ = com.google.protobuf.ByteString.EMPTY;
     }
 
@@ -108,7 +108,7 @@ public final class PlayerLuaShellNotifyOuterClass {
             case 56: {
               int rawValue = input.readEnum();
 
-              unk2700JJMHFFHNJJO_ = rawValue;
+              shellType_ = rawValue;
               break;
             }
             case 80: {
@@ -153,23 +153,23 @@ public final class PlayerLuaShellNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify.class, emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify.Builder.class);
     }
 
-    public static final int UNK2700_JJMHFFHNJJO_FIELD_NUMBER = 7;
-    private int unk2700JJMHFFHNJJO_;
+    public static final int SHELL_TYPE_FIELD_NUMBER = 7;
+    private int shellType_;
     /**
-     * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-     * @return The enum numeric value on the wire for unk2700JJMHFFHNJJO.
+     * <code>.LuaShellType shell_type = 7;</code>
+     * @return The enum numeric value on the wire for shellType.
      */
-    @java.lang.Override public int getUnk2700JJMHFFHNJJOValue() {
-      return unk2700JJMHFFHNJJO_;
+    @java.lang.Override public int getShellTypeValue() {
+      return shellType_;
     }
     /**
-     * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-     * @return The unk2700JJMHFFHNJJO.
+     * <code>.LuaShellType shell_type = 7;</code>
+     * @return The shellType.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH getUnk2700JJMHFFHNJJO() {
+    @java.lang.Override public emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType getShellType() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH result = emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH.valueOf(unk2700JJMHFFHNJJO_);
-      return result == null ? emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType result = emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.valueOf(shellType_);
+      return result == null ? emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.UNRECOGNIZED : result;
     }
 
     public static final int ID_FIELD_NUMBER = 5;
@@ -222,8 +222,8 @@ public final class PlayerLuaShellNotifyOuterClass {
       if (id_ != 0) {
         output.writeUInt32(5, id_);
       }
-      if (unk2700JJMHFFHNJJO_ != emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH.Unk2700_JOEPIGNPDGH_Unk2700_GIGONJIGKBM.getNumber()) {
-        output.writeEnum(7, unk2700JJMHFFHNJJO_);
+      if (shellType_ != emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.LUA_SHELL_TYPE_LUASHELL_NONE.getNumber()) {
+        output.writeEnum(7, shellType_);
       }
       if (useType_ != 0) {
         output.writeUInt32(10, useType_);
@@ -244,9 +244,9 @@ public final class PlayerLuaShellNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, id_);
       }
-      if (unk2700JJMHFFHNJJO_ != emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH.Unk2700_JOEPIGNPDGH_Unk2700_GIGONJIGKBM.getNumber()) {
+      if (shellType_ != emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.LUA_SHELL_TYPE_LUASHELL_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, unk2700JJMHFFHNJJO_);
+          .computeEnumSize(7, shellType_);
       }
       if (useType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -271,7 +271,7 @@ public final class PlayerLuaShellNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify other = (emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify) obj;
 
-      if (unk2700JJMHFFHNJJO_ != other.unk2700JJMHFFHNJJO_) return false;
+      if (shellType_ != other.shellType_) return false;
       if (getId()
           != other.getId()) return false;
       if (!getLuaShell()
@@ -289,8 +289,8 @@ public final class PlayerLuaShellNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_JJMHFFHNJJO_FIELD_NUMBER;
-      hash = (53 * hash) + unk2700JJMHFFHNJJO_;
+      hash = (37 * hash) + SHELL_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + shellType_;
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
       hash = (37 * hash) + LUA_SHELL_FIELD_NUMBER;
@@ -436,7 +436,7 @@ public final class PlayerLuaShellNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700JJMHFFHNJJO_ = 0;
+        shellType_ = 0;
 
         id_ = 0;
 
@@ -470,7 +470,7 @@ public final class PlayerLuaShellNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify result = new emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify(this);
-        result.unk2700JJMHFFHNJJO_ = unk2700JJMHFFHNJJO_;
+        result.shellType_ = shellType_;
         result.id_ = id_;
         result.luaShell_ = luaShell_;
         result.useType_ = useType_;
@@ -522,8 +522,8 @@ public final class PlayerLuaShellNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify.getDefaultInstance()) return this;
-        if (other.unk2700JJMHFFHNJJO_ != 0) {
-          setUnk2700JJMHFFHNJJOValue(other.getUnk2700JJMHFFHNJJOValue());
+        if (other.shellType_ != 0) {
+          setShellTypeValue(other.getShellTypeValue());
         }
         if (other.getId() != 0) {
           setId(other.getId());
@@ -563,56 +563,56 @@ public final class PlayerLuaShellNotifyOuterClass {
         return this;
       }
 
-      private int unk2700JJMHFFHNJJO_ = 0;
+      private int shellType_ = 0;
       /**
-       * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-       * @return The enum numeric value on the wire for unk2700JJMHFFHNJJO.
+       * <code>.LuaShellType shell_type = 7;</code>
+       * @return The enum numeric value on the wire for shellType.
        */
-      @java.lang.Override public int getUnk2700JJMHFFHNJJOValue() {
-        return unk2700JJMHFFHNJJO_;
+      @java.lang.Override public int getShellTypeValue() {
+        return shellType_;
       }
       /**
-       * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-       * @param value The enum numeric value on the wire for unk2700JJMHFFHNJJO to set.
+       * <code>.LuaShellType shell_type = 7;</code>
+       * @param value The enum numeric value on the wire for shellType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JJMHFFHNJJOValue(int value) {
+      public Builder setShellTypeValue(int value) {
         
-        unk2700JJMHFFHNJJO_ = value;
+        shellType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-       * @return The unk2700JJMHFFHNJJO.
+       * <code>.LuaShellType shell_type = 7;</code>
+       * @return The shellType.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH getUnk2700JJMHFFHNJJO() {
+      public emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType getShellType() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH result = emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH.valueOf(unk2700JJMHFFHNJJO_);
-        return result == null ? emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType result = emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.valueOf(shellType_);
+        return result == null ? emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
-       * @param value The unk2700JJMHFFHNJJO to set.
+       * <code>.LuaShellType shell_type = 7;</code>
+       * @param value The shellType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JJMHFFHNJJO(emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.Unk2700_JOEPIGNPDGH value) {
+      public Builder setShellType(emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        unk2700JJMHFFHNJJO_ = value.getNumber();
+        shellType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;</code>
+       * <code>.LuaShellType shell_type = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700JJMHFFHNJJO() {
+      public Builder clearShellType() {
         
-        unk2700JJMHFFHNJJO_ = 0;
+        shellType_ = 0;
         onChanged();
         return this;
       }
@@ -779,25 +779,24 @@ public final class PlayerLuaShellNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032PlayerLuaShellNotify.proto\032\031Unk2700_JO" +
-      "EPIGNPDGH.proto\"z\n\024PlayerLuaShellNotify\022" +
-      "1\n\023Unk2700_JJMHFFHNJJO\030\007 \001(\0162\024.Unk2700_J" +
-      "OEPIGNPDGH\022\n\n\002id\030\005 \001(\r\022\021\n\tlua_shell\030\014 \001(" +
-      "\014\022\020\n\010use_type\030\n \001(\rB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\032PlayerLuaShellNotify.proto\032\022LuaShellTy" +
+      "pe.proto\"j\n\024PlayerLuaShellNotify\022!\n\nshel" +
+      "l_type\030\007 \001(\0162\r.LuaShellType\022\n\n\002id\030\005 \001(\r\022" +
+      "\021\n\tlua_shell\030\014 \001(\014\022\020\n\010use_type\030\n \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.getDescriptor(),
+          emu.grasscutter.net.proto.LuaShellTypeOuterClass.getDescriptor(),
         });
     internal_static_PlayerLuaShellNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlayerLuaShellNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLuaShellNotify_descriptor,
-        new java.lang.String[] { "Unk2700JJMHFFHNJJO", "Id", "LuaShell", "UseType", });
-    emu.grasscutter.net.proto.Unk2700JOEPIGNPDGH.getDescriptor();
+        new java.lang.String[] { "ShellType", "Id", "LuaShell", "UseType", });
+    emu.grasscutter.net.proto.LuaShellTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

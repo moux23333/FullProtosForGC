@@ -46,10 +46,10 @@ public final class GroupLinkBundleOuterClass {
     int getBundleId();
 
     /**
-     * <code>bool Unk2700_JKDNOPGKJAC = 14;</code>
-     * @return The unk2700JKDNOPGKJAC.
+     * <code>bool is_show_mark = 14;</code>
+     * @return The isShowMark.
      */
-    boolean getUnk2700JKDNOPGKJAC();
+    boolean getIsShowMark();
 
     /**
      * <code>uint32 scene_id = 5;</code>
@@ -143,7 +143,7 @@ public final class GroupLinkBundleOuterClass {
             }
             case 112: {
 
-              unk2700JKDNOPGKJAC_ = input.readBool();
+              isShowMark_ = input.readBool();
               break;
             }
             default: {
@@ -226,15 +226,15 @@ public final class GroupLinkBundleOuterClass {
       return bundleId_;
     }
 
-    public static final int UNK2700_JKDNOPGKJAC_FIELD_NUMBER = 14;
-    private boolean unk2700JKDNOPGKJAC_;
+    public static final int IS_SHOW_MARK_FIELD_NUMBER = 14;
+    private boolean isShowMark_;
     /**
-     * <code>bool Unk2700_JKDNOPGKJAC = 14;</code>
-     * @return The unk2700JKDNOPGKJAC.
+     * <code>bool is_show_mark = 14;</code>
+     * @return The isShowMark.
      */
     @java.lang.Override
-    public boolean getUnk2700JKDNOPGKJAC() {
-      return unk2700JKDNOPGKJAC_;
+    public boolean getIsShowMark() {
+      return isShowMark_;
     }
 
     public static final int SCENE_ID_FIELD_NUMBER = 5;
@@ -288,8 +288,8 @@ public final class GroupLinkBundleOuterClass {
       if (isActivated_ != false) {
         output.writeBool(12, isActivated_);
       }
-      if (unk2700JKDNOPGKJAC_ != false) {
-        output.writeBool(14, unk2700JKDNOPGKJAC_);
+      if (isShowMark_ != false) {
+        output.writeBool(14, isShowMark_);
       }
       unknownFields.writeTo(output);
     }
@@ -320,9 +320,9 @@ public final class GroupLinkBundleOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(12, isActivated_);
       }
-      if (unk2700JKDNOPGKJAC_ != false) {
+      if (isShowMark_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, unk2700JKDNOPGKJAC_);
+          .computeBoolSize(14, isShowMark_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,8 +348,8 @@ public final class GroupLinkBundleOuterClass {
           != other.getIsActivated()) return false;
       if (getBundleId()
           != other.getBundleId()) return false;
-      if (getUnk2700JKDNOPGKJAC()
-          != other.getUnk2700JKDNOPGKJAC()) return false;
+      if (getIsShowMark()
+          != other.getIsShowMark()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (getRadius()
@@ -374,9 +374,9 @@ public final class GroupLinkBundleOuterClass {
           getIsActivated());
       hash = (37 * hash) + BUNDLE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBundleId();
-      hash = (37 * hash) + UNK2700_JKDNOPGKJAC_FIELD_NUMBER;
+      hash = (37 * hash) + IS_SHOW_MARK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700JKDNOPGKJAC());
+          getIsShowMark());
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + RADIUS_FIELD_NUMBER;
@@ -524,7 +524,7 @@ public final class GroupLinkBundleOuterClass {
 
         bundleId_ = 0;
 
-        unk2700JKDNOPGKJAC_ = false;
+        isShowMark_ = false;
 
         sceneId_ = 0;
 
@@ -563,7 +563,7 @@ public final class GroupLinkBundleOuterClass {
         }
         result.isActivated_ = isActivated_;
         result.bundleId_ = bundleId_;
-        result.unk2700JKDNOPGKJAC_ = unk2700JKDNOPGKJAC_;
+        result.isShowMark_ = isShowMark_;
         result.sceneId_ = sceneId_;
         result.radius_ = radius_;
         onBuilt();
@@ -623,8 +623,8 @@ public final class GroupLinkBundleOuterClass {
         if (other.getBundleId() != 0) {
           setBundleId(other.getBundleId());
         }
-        if (other.getUnk2700JKDNOPGKJAC() != false) {
-          setUnk2700JKDNOPGKJAC(other.getUnk2700JKDNOPGKJAC());
+        if (other.getIsShowMark() != false) {
+          setIsShowMark(other.getIsShowMark());
         }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
@@ -842,33 +842,33 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
 
-      private boolean unk2700JKDNOPGKJAC_ ;
+      private boolean isShowMark_ ;
       /**
-       * <code>bool Unk2700_JKDNOPGKJAC = 14;</code>
-       * @return The unk2700JKDNOPGKJAC.
+       * <code>bool is_show_mark = 14;</code>
+       * @return The isShowMark.
        */
       @java.lang.Override
-      public boolean getUnk2700JKDNOPGKJAC() {
-        return unk2700JKDNOPGKJAC_;
+      public boolean getIsShowMark() {
+        return isShowMark_;
       }
       /**
-       * <code>bool Unk2700_JKDNOPGKJAC = 14;</code>
-       * @param value The unk2700JKDNOPGKJAC to set.
+       * <code>bool is_show_mark = 14;</code>
+       * @param value The isShowMark to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JKDNOPGKJAC(boolean value) {
+      public Builder setIsShowMark(boolean value) {
         
-        unk2700JKDNOPGKJAC_ = value;
+        isShowMark_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_JKDNOPGKJAC = 14;</code>
+       * <code>bool is_show_mark = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700JKDNOPGKJAC() {
+      public Builder clearIsShowMark() {
         
-        unk2700JKDNOPGKJAC_ = false;
+        isShowMark_ = false;
         onChanged();
         return this;
       }
@@ -1001,12 +1001,12 @@ public final class GroupLinkBundleOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GroupLinkBundle.proto\032\014Vector.proto\"\222\001" +
+      "\n\025GroupLinkBundle.proto\032\014Vector.proto\"\213\001" +
       "\n\017GroupLinkBundle\022\027\n\006center\030\004 \001(\0132\007.Vect" +
       "or\022\024\n\014is_activated\030\014 \001(\010\022\021\n\tbundle_id\030\003 " +
-      "\001(\r\022\033\n\023Unk2700_JKDNOPGKJAC\030\016 \001(\010\022\020\n\010scen" +
-      "e_id\030\005 \001(\r\022\016\n\006radius\030\001 \001(\rB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\001(\r\022\024\n\014is_show_mark\030\016 \001(\010\022\020\n\010scene_id\030\005 " +
+      "\001(\r\022\016\n\006radius\030\001 \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1018,7 +1018,7 @@ public final class GroupLinkBundleOuterClass {
     internal_static_GroupLinkBundle_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GroupLinkBundle_descriptor,
-        new java.lang.String[] { "Center", "IsActivated", "BundleId", "Unk2700JKDNOPGKJAC", "SceneId", "Radius", });
+        new java.lang.String[] { "Center", "IsActivated", "BundleId", "IsShowMark", "SceneId", "Radius", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

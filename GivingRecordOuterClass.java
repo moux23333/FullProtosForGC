@@ -31,10 +31,10 @@ public final class GivingRecordOuterClass {
     int getGroupId();
 
     /**
-     * <code>bool Unk2800_JBPPNEHPACC = 8;</code>
-     * @return The unk2800JBPPNEHPACC.
+     * <code>bool is_gadget_giving = 8;</code>
+     * @return The isGadgetGiving.
      */
-    boolean getUnk2800JBPPNEHPACC();
+    boolean getIsGadgetGiving();
 
     /**
      * <code>uint32 giving_id = 3;</code>
@@ -55,37 +55,37 @@ public final class GivingRecordOuterClass {
     int getConfigId();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
-    int getUnk2800BDKKENPEEGDCount();
+    int getMaterialCntMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
-    boolean containsUnk2800BDKKENPEEGD(
+    boolean containsMaterialCntMap(
         int key);
     /**
-     * Use {@link #getUnk2800BDKKENPEEGDMap()} instead.
+     * Use {@link #getMaterialCntMapMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk2800BDKKENPEEGD();
+    getMaterialCntMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnk2800BDKKENPEEGDMap();
+    getMaterialCntMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
 
-    int getUnk2800BDKKENPEEGDOrDefault(
+    int getMaterialCntMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
 
-    int getUnk2800BDKKENPEEGDOrThrow(
+    int getMaterialCntMapOrThrow(
         int key);
   }
   /**
@@ -156,7 +156,7 @@ public final class GivingRecordOuterClass {
             }
             case 64: {
 
-              unk2800JBPPNEHPACC_ = input.readBool();
+              isGadgetGiving_ = input.readBool();
               break;
             }
             case 72: {
@@ -166,15 +166,15 @@ public final class GivingRecordOuterClass {
             }
             case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2800BDKKENPEEGD_ = com.google.protobuf.MapField.newMapField(
-                    Unk2800BDKKENPEEGDDefaultEntryHolder.defaultEntry);
+                materialCntMap_ = com.google.protobuf.MapField.newMapField(
+                    MaterialCntMapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              unk2800BDKKENPEEGD__ = input.readMessage(
-                  Unk2800BDKKENPEEGDDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              unk2800BDKKENPEEGD_.getMutableMap().put(
-                  unk2800BDKKENPEEGD__.getKey(), unk2800BDKKENPEEGD__.getValue());
+              materialCntMap__ = input.readMessage(
+                  MaterialCntMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              materialCntMap_.getMutableMap().put(
+                  materialCntMap__.getKey(), materialCntMap__.getValue());
               break;
             }
             default: {
@@ -207,7 +207,7 @@ public final class GivingRecordOuterClass {
         int number) {
       switch (number) {
         case 15:
-          return internalGetUnk2800BDKKENPEEGD();
+          return internalGetMaterialCntMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -243,15 +243,15 @@ public final class GivingRecordOuterClass {
       return groupId_;
     }
 
-    public static final int UNK2800_JBPPNEHPACC_FIELD_NUMBER = 8;
-    private boolean unk2800JBPPNEHPACC_;
+    public static final int IS_GADGET_GIVING_FIELD_NUMBER = 8;
+    private boolean isGadgetGiving_;
     /**
-     * <code>bool Unk2800_JBPPNEHPACC = 8;</code>
-     * @return The unk2800JBPPNEHPACC.
+     * <code>bool is_gadget_giving = 8;</code>
+     * @return The isGadgetGiving.
      */
     @java.lang.Override
-    public boolean getUnk2800JBPPNEHPACC() {
-      return unk2800JBPPNEHPACC_;
+    public boolean getIsGadgetGiving() {
+      return isGadgetGiving_;
     }
 
     public static final int GIVING_ID_FIELD_NUMBER = 3;
@@ -287,81 +287,81 @@ public final class GivingRecordOuterClass {
       return configId_;
     }
 
-    public static final int UNK2800_BDKKENPEEGD_FIELD_NUMBER = 15;
-    private static final class Unk2800BDKKENPEEGDDefaultEntryHolder {
+    public static final int MATERIAL_CNT_MAP_FIELD_NUMBER = 15;
+    private static final class MaterialCntMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GivingRecordOuterClass.internal_static_GivingRecord_Unk2800BDKKENPEEGDEntry_descriptor, 
+                  emu.grasscutter.net.proto.GivingRecordOuterClass.internal_static_GivingRecord_MaterialCntMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> unk2800BDKKENPEEGD_;
+        java.lang.Integer, java.lang.Integer> materialCntMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetUnk2800BDKKENPEEGD() {
-      if (unk2800BDKKENPEEGD_ == null) {
+    internalGetMaterialCntMap() {
+      if (materialCntMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            Unk2800BDKKENPEEGDDefaultEntryHolder.defaultEntry);
+            MaterialCntMapDefaultEntryHolder.defaultEntry);
       }
-      return unk2800BDKKENPEEGD_;
+      return materialCntMap_;
     }
 
-    public int getUnk2800BDKKENPEEGDCount() {
-      return internalGetUnk2800BDKKENPEEGD().getMap().size();
+    public int getMaterialCntMapCount() {
+      return internalGetMaterialCntMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
 
     @java.lang.Override
-    public boolean containsUnk2800BDKKENPEEGD(
+    public boolean containsMaterialCntMap(
         int key) {
       
-      return internalGetUnk2800BDKKENPEEGD().getMap().containsKey(key);
+      return internalGetMaterialCntMap().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getUnk2800BDKKENPEEGDMap()} instead.
+     * Use {@link #getMaterialCntMapMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2800BDKKENPEEGD() {
-      return getUnk2800BDKKENPEEGDMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getMaterialCntMap() {
+      return getMaterialCntMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2800BDKKENPEEGDMap() {
-      return internalGetUnk2800BDKKENPEEGD().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getMaterialCntMapMap() {
+      return internalGetMaterialCntMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     @java.lang.Override
 
-    public int getUnk2800BDKKENPEEGDOrDefault(
+    public int getMaterialCntMapOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk2800BDKKENPEEGD().getMap();
+          internalGetMaterialCntMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     @java.lang.Override
 
-    public int getUnk2800BDKKENPEEGDOrThrow(
+    public int getMaterialCntMapOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnk2800BDKKENPEEGD().getMap();
+          internalGetMaterialCntMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
@@ -394,8 +394,8 @@ public final class GivingRecordOuterClass {
       if (lastGroupId_ != 0) {
         output.writeUInt32(6, lastGroupId_);
       }
-      if (unk2800JBPPNEHPACC_ != false) {
-        output.writeBool(8, unk2800JBPPNEHPACC_);
+      if (isGadgetGiving_ != false) {
+        output.writeBool(8, isGadgetGiving_);
       }
       if (isFinished_ != false) {
         output.writeBool(9, isFinished_);
@@ -403,8 +403,8 @@ public final class GivingRecordOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetUnk2800BDKKENPEEGD(),
-          Unk2800BDKKENPEEGDDefaultEntryHolder.defaultEntry,
+          internalGetMaterialCntMap(),
+          MaterialCntMapDefaultEntryHolder.defaultEntry,
           15);
       unknownFields.writeTo(output);
     }
@@ -431,23 +431,23 @@ public final class GivingRecordOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, lastGroupId_);
       }
-      if (unk2800JBPPNEHPACC_ != false) {
+      if (isGadgetGiving_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, unk2800JBPPNEHPACC_);
+          .computeBoolSize(8, isGadgetGiving_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(9, isFinished_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUnk2800BDKKENPEEGD().getMap().entrySet()) {
+           : internalGetMaterialCntMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        unk2800BDKKENPEEGD__ = Unk2800BDKKENPEEGDDefaultEntryHolder.defaultEntry.newBuilderForType()
+        materialCntMap__ = MaterialCntMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, unk2800BDKKENPEEGD__);
+            .computeMessageSize(15, materialCntMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -468,16 +468,16 @@ public final class GivingRecordOuterClass {
           != other.getIsFinished()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
-      if (getUnk2800JBPPNEHPACC()
-          != other.getUnk2800JBPPNEHPACC()) return false;
+      if (getIsGadgetGiving()
+          != other.getIsGadgetGiving()) return false;
       if (getGivingId()
           != other.getGivingId()) return false;
       if (getLastGroupId()
           != other.getLastGroupId()) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
-      if (!internalGetUnk2800BDKKENPEEGD().equals(
-          other.internalGetUnk2800BDKKENPEEGD())) return false;
+      if (!internalGetMaterialCntMap().equals(
+          other.internalGetMaterialCntMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -494,18 +494,18 @@ public final class GivingRecordOuterClass {
           getIsFinished());
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + UNK2800_JBPPNEHPACC_FIELD_NUMBER;
+      hash = (37 * hash) + IS_GADGET_GIVING_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2800JBPPNEHPACC());
+          getIsGadgetGiving());
       hash = (37 * hash) + GIVING_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGivingId();
       hash = (37 * hash) + LAST_GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLastGroupId();
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
-      if (!internalGetUnk2800BDKKENPEEGD().getMap().isEmpty()) {
-        hash = (37 * hash) + UNK2800_BDKKENPEEGD_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetUnk2800BDKKENPEEGD().hashCode();
+      if (!internalGetMaterialCntMap().getMap().isEmpty()) {
+        hash = (37 * hash) + MATERIAL_CNT_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetMaterialCntMap().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -619,7 +619,7 @@ public final class GivingRecordOuterClass {
           int number) {
         switch (number) {
           case 15:
-            return internalGetUnk2800BDKKENPEEGD();
+            return internalGetMaterialCntMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -630,7 +630,7 @@ public final class GivingRecordOuterClass {
           int number) {
         switch (number) {
           case 15:
-            return internalGetMutableUnk2800BDKKENPEEGD();
+            return internalGetMutableMaterialCntMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -666,7 +666,7 @@ public final class GivingRecordOuterClass {
 
         groupId_ = 0;
 
-        unk2800JBPPNEHPACC_ = false;
+        isGadgetGiving_ = false;
 
         givingId_ = 0;
 
@@ -674,7 +674,7 @@ public final class GivingRecordOuterClass {
 
         configId_ = 0;
 
-        internalGetMutableUnk2800BDKKENPEEGD().clear();
+        internalGetMutableMaterialCntMap().clear();
         return this;
       }
 
@@ -704,12 +704,12 @@ public final class GivingRecordOuterClass {
         int from_bitField0_ = bitField0_;
         result.isFinished_ = isFinished_;
         result.groupId_ = groupId_;
-        result.unk2800JBPPNEHPACC_ = unk2800JBPPNEHPACC_;
+        result.isGadgetGiving_ = isGadgetGiving_;
         result.givingId_ = givingId_;
         result.lastGroupId_ = lastGroupId_;
         result.configId_ = configId_;
-        result.unk2800BDKKENPEEGD_ = internalGetUnk2800BDKKENPEEGD();
-        result.unk2800BDKKENPEEGD_.makeImmutable();
+        result.materialCntMap_ = internalGetMaterialCntMap();
+        result.materialCntMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -764,8 +764,8 @@ public final class GivingRecordOuterClass {
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
-        if (other.getUnk2800JBPPNEHPACC() != false) {
-          setUnk2800JBPPNEHPACC(other.getUnk2800JBPPNEHPACC());
+        if (other.getIsGadgetGiving() != false) {
+          setIsGadgetGiving(other.getIsGadgetGiving());
         }
         if (other.getGivingId() != 0) {
           setGivingId(other.getGivingId());
@@ -776,8 +776,8 @@ public final class GivingRecordOuterClass {
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
         }
-        internalGetMutableUnk2800BDKKENPEEGD().mergeFrom(
-            other.internalGetUnk2800BDKKENPEEGD());
+        internalGetMutableMaterialCntMap().mergeFrom(
+            other.internalGetMaterialCntMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -870,33 +870,33 @@ public final class GivingRecordOuterClass {
         return this;
       }
 
-      private boolean unk2800JBPPNEHPACC_ ;
+      private boolean isGadgetGiving_ ;
       /**
-       * <code>bool Unk2800_JBPPNEHPACC = 8;</code>
-       * @return The unk2800JBPPNEHPACC.
+       * <code>bool is_gadget_giving = 8;</code>
+       * @return The isGadgetGiving.
        */
       @java.lang.Override
-      public boolean getUnk2800JBPPNEHPACC() {
-        return unk2800JBPPNEHPACC_;
+      public boolean getIsGadgetGiving() {
+        return isGadgetGiving_;
       }
       /**
-       * <code>bool Unk2800_JBPPNEHPACC = 8;</code>
-       * @param value The unk2800JBPPNEHPACC to set.
+       * <code>bool is_gadget_giving = 8;</code>
+       * @param value The isGadgetGiving to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800JBPPNEHPACC(boolean value) {
+      public Builder setIsGadgetGiving(boolean value) {
         
-        unk2800JBPPNEHPACC_ = value;
+        isGadgetGiving_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2800_JBPPNEHPACC = 8;</code>
+       * <code>bool is_gadget_giving = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800JBPPNEHPACC() {
+      public Builder clearIsGadgetGiving() {
         
-        unk2800JBPPNEHPACC_ = false;
+        isGadgetGiving_ = false;
         onChanged();
         return this;
       }
@@ -995,99 +995,99 @@ public final class GivingRecordOuterClass {
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> unk2800BDKKENPEEGD_;
+          java.lang.Integer, java.lang.Integer> materialCntMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUnk2800BDKKENPEEGD() {
-        if (unk2800BDKKENPEEGD_ == null) {
+      internalGetMaterialCntMap() {
+        if (materialCntMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              Unk2800BDKKENPEEGDDefaultEntryHolder.defaultEntry);
+              MaterialCntMapDefaultEntryHolder.defaultEntry);
         }
-        return unk2800BDKKENPEEGD_;
+        return materialCntMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUnk2800BDKKENPEEGD() {
+      internalGetMutableMaterialCntMap() {
         onChanged();;
-        if (unk2800BDKKENPEEGD_ == null) {
-          unk2800BDKKENPEEGD_ = com.google.protobuf.MapField.newMapField(
-              Unk2800BDKKENPEEGDDefaultEntryHolder.defaultEntry);
+        if (materialCntMap_ == null) {
+          materialCntMap_ = com.google.protobuf.MapField.newMapField(
+              MaterialCntMapDefaultEntryHolder.defaultEntry);
         }
-        if (!unk2800BDKKENPEEGD_.isMutable()) {
-          unk2800BDKKENPEEGD_ = unk2800BDKKENPEEGD_.copy();
+        if (!materialCntMap_.isMutable()) {
+          materialCntMap_ = materialCntMap_.copy();
         }
-        return unk2800BDKKENPEEGD_;
+        return materialCntMap_;
       }
 
-      public int getUnk2800BDKKENPEEGDCount() {
-        return internalGetUnk2800BDKKENPEEGD().getMap().size();
+      public int getMaterialCntMapCount() {
+        return internalGetMaterialCntMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
 
       @java.lang.Override
-      public boolean containsUnk2800BDKKENPEEGD(
+      public boolean containsMaterialCntMap(
           int key) {
         
-        return internalGetUnk2800BDKKENPEEGD().getMap().containsKey(key);
+        return internalGetMaterialCntMap().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getUnk2800BDKKENPEEGDMap()} instead.
+       * Use {@link #getMaterialCntMapMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2800BDKKENPEEGD() {
-        return getUnk2800BDKKENPEEGDMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getMaterialCntMap() {
+        return getMaterialCntMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk2800BDKKENPEEGDMap() {
-        return internalGetUnk2800BDKKENPEEGD().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getMaterialCntMapMap() {
+        return internalGetMaterialCntMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
       @java.lang.Override
 
-      public int getUnk2800BDKKENPEEGDOrDefault(
+      public int getMaterialCntMapOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk2800BDKKENPEEGD().getMap();
+            internalGetMaterialCntMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
       @java.lang.Override
 
-      public int getUnk2800BDKKENPEEGDOrThrow(
+      public int getMaterialCntMapOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnk2800BDKKENPEEGD().getMap();
+            internalGetMaterialCntMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearUnk2800BDKKENPEEGD() {
-        internalGetMutableUnk2800BDKKENPEEGD().getMutableMap()
+      public Builder clearMaterialCntMap() {
+        internalGetMutableMaterialCntMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
 
-      public Builder removeUnk2800BDKKENPEEGD(
+      public Builder removeMaterialCntMap(
           int key) {
         
-        internalGetMutableUnk2800BDKKENPEEGD().getMutableMap()
+        internalGetMutableMaterialCntMap().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1096,28 +1096,28 @@ public final class GivingRecordOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUnk2800BDKKENPEEGD() {
-        return internalGetMutableUnk2800BDKKENPEEGD().getMutableMap();
+      getMutableMaterialCntMap() {
+        return internalGetMutableMaterialCntMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
-      public Builder putUnk2800BDKKENPEEGD(
+      public Builder putMaterialCntMap(
           int key,
           int value) {
         
         
-        internalGetMutableUnk2800BDKKENPEEGD().getMutableMap()
+        internalGetMutableMaterialCntMap().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk2800_BDKKENPEEGD = 15;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
 
-      public Builder putAllUnk2800BDKKENPEEGD(
+      public Builder putAllMaterialCntMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableUnk2800BDKKENPEEGD().getMutableMap()
+        internalGetMutableMaterialCntMap().getMutableMap()
             .putAll(values);
         return this;
       }
@@ -1180,10 +1180,10 @@ public final class GivingRecordOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GivingRecord_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GivingRecord_Unk2800BDKKENPEEGDEntry_descriptor;
+    internal_static_GivingRecord_MaterialCntMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GivingRecord_Unk2800BDKKENPEEGDEntry_fieldAccessorTable;
+      internal_static_GivingRecord_MaterialCntMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1193,15 +1193,14 @@ public final class GivingRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022GivingRecord.proto\"\216\002\n\014GivingRecord\022\023\n" +
-      "\013is_finished\030\t \001(\010\022\020\n\010group_id\030\005 \001(\r\022\033\n\023" +
-      "Unk2800_JBPPNEHPACC\030\010 \001(\010\022\021\n\tgiving_id\030\003" +
-      " \001(\r\022\025\n\rlast_group_id\030\006 \001(\r\022\021\n\tconfig_id" +
-      "\030\002 \001(\r\022B\n\023Unk2800_BDKKENPEEGD\030\017 \003(\0132%.Gi" +
-      "vingRecord.Unk2800BDKKENPEEGDEntry\0329\n\027Un" +
-      "k2800BDKKENPEEGDEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005va" +
-      "lue\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\022GivingRecord.proto\"\200\002\n\014GivingRecord\022\023\n" +
+      "\013is_finished\030\t \001(\010\022\020\n\010group_id\030\005 \001(\r\022\030\n\020" +
+      "is_gadget_giving\030\010 \001(\010\022\021\n\tgiving_id\030\003 \001(" +
+      "\r\022\025\n\rlast_group_id\030\006 \001(\r\022\021\n\tconfig_id\030\002 " +
+      "\001(\r\022;\n\020material_cnt_map\030\017 \003(\0132!.GivingRe" +
+      "cord.MaterialCntMapEntry\0325\n\023MaterialCntM" +
+      "apEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1212,12 +1211,12 @@ public final class GivingRecordOuterClass {
     internal_static_GivingRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GivingRecord_descriptor,
-        new java.lang.String[] { "IsFinished", "GroupId", "Unk2800JBPPNEHPACC", "GivingId", "LastGroupId", "ConfigId", "Unk2800BDKKENPEEGD", });
-    internal_static_GivingRecord_Unk2800BDKKENPEEGDEntry_descriptor =
+        new java.lang.String[] { "IsFinished", "GroupId", "IsGadgetGiving", "GivingId", "LastGroupId", "ConfigId", "MaterialCntMap", });
+    internal_static_GivingRecord_MaterialCntMapEntry_descriptor =
       internal_static_GivingRecord_descriptor.getNestedTypes().get(0);
-    internal_static_GivingRecord_Unk2800BDKKENPEEGDEntry_fieldAccessorTable = new
+    internal_static_GivingRecord_MaterialCntMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GivingRecord_Unk2800BDKKENPEEGDEntry_descriptor,
+        internal_static_GivingRecord_MaterialCntMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 
